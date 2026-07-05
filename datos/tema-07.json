@@ -1,0 +1,686 @@
+{
+  "tema": 7,
+  "nombre": "Adelantamientos",
+  "preguntas": [
+    {
+      "id": "ADE-001",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Está permitido adelantar en un cambio de rasante de visibilidad reducida?",
+      "opciones": [
+        "Sí, siempre que se avise con el intermitente",
+        "Sí, si no viene ningún vehículo de frente en ese momento",
+        "No, salvo que exista una marca vial que expresamente lo permita"
+      ],
+      "correcta": 2,
+      "explicacion": "En un cambio de rasante no sabes qué hay al otro lado: puede venir un coche de frente y no te daría tiempo a reaccionar. Solo se puede si una marca vial (línea discontinua) lo autoriza expresamente.",
+      "mnemotecnia": "Si no ves el final de la cuesta, no adelantes.",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-002",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Como norma general, ¿se puede adelantar en una curva de visibilidad reducida?",
+      "opciones": [
+        "Sí, si reduces la velocidad antes de iniciar la maniobra",
+        "Sí, siempre que sea de día y con buena visibilidad atmosférica",
+        "No, porque no puedes ver si viene un vehículo en sentido contrario"
+      ],
+      "correcta": 2,
+      "explicacion": "En una curva cerrada no ves lo que hay detrás de ella. Adelantar ahí significa invadir el carril contrario a ciegas, con riesgo de colisión frontal.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-003",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Vas a entrar en un túnel iluminado y con dos carriles por sentido claramente separados. ¿Puedes adelantar dentro de él?",
+      "opciones": [
+        "Sí, porque al haber carriles suficientes para cada sentido la maniobra no invade el contrario",
+        "No, en los túneles el adelantamiento está siempre prohibido sin excepción",
+        "Solo si el túnel mide menos de 200 metros"
+      ],
+      "correcta": 0,
+      "explicacion": "La prohibición de adelantar en túneles existe para evitar invadir el sentido contrario en un espacio cerrado. Si hay carriles suficientes en tu mismo sentido, adelantar sin salir de ellos sí está permitido.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-004",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Está prohibido adelantar al aproximarte a un paso a nivel sin barrera?",
+      "opciones": [
+        "No, solo está prohibido cruzarlo si el tren está cerca",
+        "Sí, y también en sus proximidades",
+        "Sí, pero únicamente si el paso a nivel tiene semáforo"
+      ],
+      "correcta": 1,
+      "explicacion": "Los pasos a nivel son puntos de máximo riesgo: necesitas toda tu atención y el carril libre para poder parar si hace falta. Por eso se prohíbe adelantar tanto en el cruce como en sus proximidades.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-005",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Te acercas a una intersección sin ninguna señal que regule la prioridad. ¿Puedes adelantar a otro vehículo justo antes de llegar a ella?",
+      "opciones": [
+        "No, como norma general está prohibido adelantar en las intersecciones y sus proximidades",
+        "Sí, mientras el otro vehículo no gire",
+        "Sí, si tu vía tiene prioridad sobre la que cruza"
+      ],
+      "correcta": 0,
+      "explicacion": "Cerca de un cruce puede aparecer un vehículo por cualquiera de las vías que se cortan, y el adelantamiento te resta capacidad de reacción y visión. Por eso, como norma general, no se puede adelantar ahí.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-006",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Circulas por una carretera convencional y ves que se acerca una intersección con un carril adicional señalizado exclusivamente para adelantar. ¿Se aplica la prohibición general de adelantar en intersecciones?",
+      "opciones": [
+        "Sí, la prohibición es absoluta y nunca admite señalización en sentido contrario",
+        "No, la señalización de ese carril habilita expresamente el adelantamiento en ese tramo",
+        "Solo se puede usar ese carril para adelantar a bicicletas"
+      ],
+      "correcta": 1,
+      "explicacion": "Las prohibiciones de adelantamiento en intersecciones, túneles, etc. son la norma general, pero ceden cuando existe señalización específica que autoriza la maniobra en ese punto.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-007",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿En qué lugar de los siguientes está prohibido adelantar, salvo que la señalización indique lo contrario?",
+      "opciones": [
+        "En una curva de visibilidad reducida",
+        "En un tramo recto y llano con buena visibilidad",
+        "En un carril adicional de una autovía"
+      ],
+      "correcta": 0,
+      "explicacion": "Las curvas sin visibilidad son zonas de alto riesgo porque no sabes si viene un vehículo de frente. Ahí no se debe adelantar salvo que una marca vial lo permita.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-008",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Es correcto adelantar justo antes de un cambio de rasante donde no se ve lo que hay al otro lado?",
+      "opciones": [
+        "No, porque no puedes garantizar que el carril contrario esté libre",
+        "Sí, si tu vehículo tiene buena aceleración",
+        "Sí, siempre que circules por debajo del límite de velocidad"
+      ],
+      "correcta": 0,
+      "explicacion": "La clave no es la velocidad ni la potencia del coche, sino la falta de visibilidad: no puedes saber si hay tráfico de frente al otro lado de la cuesta.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-009",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Un túnel corto tiene un único carril por sentido y no está iluminado. Delante circula un ciclomotor muy lento. ¿Puedes adelantarlo dentro del túnel?",
+      "opciones": [
+        "Sí, si activas las luces largas para ver mejor",
+        "Sí, siempre que toques el claxon antes de iniciar la maniobra",
+        "No, porque para adelantar tendrías que invadir el carril contrario dentro del túnel"
+      ],
+      "correcta": 2,
+      "explicacion": "Con un solo carril por sentido, adelantar en un túnel obliga a invadir el sentido contrario, algo expresamente prohibido por el riesgo de colisión frontal en un espacio cerrado y con poca visibilidad.",
+      "mnemotecnia": "",
+      "imagen": "r305-adelantamiento"
+    },
+    {
+      "id": "ADE-010",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "¿La prohibición de adelantar en las proximidades de un paso a nivel afecta solo a los pasos a nivel sin barreras?",
+      "opciones": [
+        "Sí, los pasos a nivel con barreras están exceptuados de la prohibición",
+        "No, solo se aplica a los pasos a nivel situados en poblado",
+        "No, se aplica también a los pasos a nivel con barreras o semibarreras"
+      ],
+      "correcta": 2,
+      "explicacion": "Da igual que el paso a nivel tenga barreras: la prohibición de adelantar se mantiene porque sigue siendo un punto de riesgo donde necesitas plena capacidad de reacción y visión.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-011",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Como norma general, ¿dónde está prohibido adelantar además de en curvas y cambios de rasante con poca visibilidad?",
+      "opciones": [
+        "En túneles y pasos a nivel, y en las intersecciones y sus proximidades",
+        "En cualquier recta de una autopista",
+        "Únicamente dentro de los núcleos urbanos"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley agrupa varios puntos de alto riesgo bajo la misma prohibición: cambios de rasante y curvas sin visibilidad, túneles, pasos a nivel e intersecciones, salvo que la señalización indique otra cosa.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-012",
+      "tema": 7,
+      "subtema": "donde-esta-prohibido",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Circulas por una intersección con semáforo en verde para ti y quieres adelantar a un vehículo lento justo dentro del cruce. ¿Está permitido porque el semáforo te da preferencia?",
+      "opciones": [
+        "No, la preferencia del semáforo no anula la prohibición general de adelantar en la intersección",
+        "Sí, el semáforo en verde autoriza cualquier maniobra dentro del cruce",
+        "Sí, pero solo si el vehículo lento circula por el carril izquierdo"
+      ],
+      "correcta": 0,
+      "explicacion": "Tener el semáforo en verde te da prioridad de paso, pero no te habilita para adelantar dentro del cruce: la prohibición de adelantamiento en intersecciones sigue vigente.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-013",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Antes de iniciar un adelantamiento, ¿qué debes hacer obligatoriamente?",
+      "opciones": [
+        "Encender las luces de emergencia",
+        "Señalizar la maniobra con el intermitente correspondiente",
+        "Tocar el claxon para avisar al vehículo de delante"
+      ],
+      "correcta": 1,
+      "explicacion": "Señalizar con el intermitente izquierdo avisa a los demás de tu intención antes de moverte, dándoles tiempo para reaccionar. Es un paso obligatorio previo a cualquier adelantamiento.",
+      "mnemotecnia": "Primero avisa, luego actúa.",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-014",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Para adelantar a otro vehículo, ¿qué debes hacer tras comprobar que puedes hacerlo con seguridad?",
+      "opciones": [
+        "Reducir la velocidad antes de cambiar de carril",
+        "Permanecer en tu carril y acelerar hasta superarlo",
+        "Desplazarte a la izquierda dejando la distancia lateral suficiente"
+      ],
+      "correcta": 2,
+      "explicacion": "El adelantamiento exige salir de tu carril hacia la izquierda con espacio suficiente para no rozar al vehículo adelantado, antes de volver a tu carril con seguridad.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-015",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Después de adelantar, ¿cuándo puedes volver a tu carril de origen?",
+      "opciones": [
+        "Inmediatamente después de que el morro de tu coche supere al otro vehículo",
+        "Solo cuando el vehículo adelantado active las luces largas",
+        "Cuando puedas hacerlo sin obligar al vehículo adelantado a modificar bruscamente su velocidad o trayectoria"
+      ],
+      "correcta": 2,
+      "explicacion": "No basta con haberlo superado un poco: debes tener margen suficiente para reincorporarte sin que el otro conductor tenga que frenar de golpe o dar un volantazo.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-016",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Qué debe hacer un conductor antes de adelantar, además de señalizarlo?",
+      "opciones": [
+        "Asegurarse de que el carril contrario está libre y de que puede completar la maniobra sin peligro",
+        "Avisar por teléfono al conductor de delante",
+        "Esperar a que el vehículo de delante reduzca la velocidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Adelantar exige comprobar que tienes visibilidad y espacio suficientes para completar toda la maniobra sin invadir el carril contrario en el peor momento posible.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-017",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Vas a adelantar y el vehículo que va delante empieza a acelerar. ¿Qué debes hacer?",
+      "opciones": [
+        "Insistir en la maniobra acelerando aún más para no perder la oportunidad",
+        "Desistir del adelantamiento si no puedes completarlo con seguridad y volver a tu posición",
+        "Adelantar igualmente invadiendo el arcén contrario si existe"
+      ],
+      "correcta": 1,
+      "explicacion": "Si las condiciones cambian y ya no puedes completar el adelantamiento con seguridad, lo correcto es abandonar la maniobra a tiempo, no forzarla.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-018",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "¿Es suficiente con señalizar el adelantamiento con el intermitente para poder iniciarlo?",
+      "opciones": [
+        "Sí, la señalización por sí sola autoriza la maniobra",
+        "No, además debes comprobar que puedes realizarlo sin peligro para nadie",
+        "No, hace falta además la autorización del vehículo adelantado"
+      ],
+      "correcta": 1,
+      "explicacion": "Señalizar es obligatorio pero no basta: antes de moverte tienes que verificar que el carril contrario está despejado y que hay espacio para completar toda la maniobra con seguridad.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-019",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿En qué orden se realiza correctamente un adelantamiento?",
+      "opciones": [
+        "Señalizar, comprobar que es seguro, desplazarse a la izquierda, adelantar y volver al carril sin frenar bruscamente al otro",
+        "Acelerar, adelantar y señalizar después de completar la maniobra",
+        "Desplazarse a la izquierda y señalizar solo si viene otro vehículo de frente"
+      ],
+      "correcta": 0,
+      "explicacion": "El orden lógico protege a todos: primero avisas, luego confirmas que es seguro, te desplazas, adelantas y vuelves a tu carril con margen suficiente.",
+      "mnemotecnia": "Avisar, mirar, mover, volver.",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-020",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Si al iniciar el adelantamiento otro vehículo aparece de frente, ¿qué debes hacer?",
+      "opciones": [
+        "Abortar la maniobra y volver a tu carril si aún es posible hacerlo con seguridad",
+        "Continuar adelantando y confiar en que el otro vehículo frene",
+        "Acelerar al máximo para terminar antes de que se cruce"
+      ],
+      "correcta": 0,
+      "explicacion": "La prioridad siempre es evitar la colisión frontal. Si ves que ya no es seguro completar el adelantamiento, lo correcto es desistir y regresar a tu carril.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-021",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Al volver a tu carril tras adelantar, el vehículo adelantado tiene que levantar el pie del acelerador ligeramente porque te has incorporado algo justo. ¿Se considera correctamente ejecutado el adelantamiento?",
+      "opciones": [
+        "No, cualquier variación de velocidad del adelantado invalida la maniobra",
+        "Sí, porque la norma solo prohíbe adelantar, no volver al carril",
+        "Sí, siempre que no haya sido necesario frenar bruscamente ni dar un volantazo"
+      ],
+      "correcta": 2,
+      "explicacion": "La norma exige no obligar a frenar bruscamente ni maniobrar de forma brusca; un pequeño ajuste de velocidad sin brusquedad no incumple la obligación, aunque lo ideal es dejar más margen.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-022",
+      "tema": 7,
+      "subtema": "como-adelantar",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué distancia lateral debes mantener respecto al vehículo que adelantas, como norma general?",
+      "opciones": [
+        "Da igual, lo importante es la velocidad",
+        "Ninguna distancia mínima, basta con no tocarlo",
+        "La suficiente para no poner en peligro a quien adelantas"
+      ],
+      "correcta": 2,
+      "explicacion": "El adelantamiento debe realizarse dejando el espacio lateral necesario para que ambos vehículos circulen con seguridad, sin rozarse ni sorprender al otro conductor.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-023",
+      "tema": 7,
+      "subtema": "ser-adelantado",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Si observas que un vehículo te va a adelantar, ¿qué debes hacer como conductor adelantado?",
+      "opciones": [
+        "Acelerar para que el adelantamiento sea más rápido",
+        "Ceñirte hacia la derecha de tu carril y no aumentar la velocidad",
+        "Desplazarte hacia la izquierda para facilitarle sitio"
+      ],
+      "correcta": 1,
+      "explicacion": "Debes facilitar la maniobra al que te adelanta: ceñirte a la derecha le da más espacio, y no acelerar evita que la maniobra se alargue o se vuelva peligrosa.",
+      "mnemotecnia": "Cede sitio, no compitas.",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-024",
+      "tema": 7,
+      "subtema": "ser-adelantado",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Un vehículo te está adelantando y, por orgullo, aceleras para que no lo consiga. ¿Es correcta esta actitud?",
+      "opciones": [
+        "Sí, si mantienes tu carril sin invadir el contrario",
+        "Sí, siempre que no superes el límite de velocidad de la vía",
+        "No, está expresamente prohibido acelerar cuando te están adelantando"
+      ],
+      "correcta": 2,
+      "explicacion": "Acelerar mientras te adelantan alarga la maniobra del otro conductor y aumenta muchísimo el riesgo de colisión, especialmente si viene tráfico de frente. Por eso está prohibido.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-025",
+      "tema": 7,
+      "subtema": "ser-adelantado",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué debe hacer el conductor adelantado en cuanto a su posición en el carril?",
+      "opciones": [
+        "Situarse en el centro del carril",
+        "Ceñirse a la derecha del carril",
+        "Desplazarse hacia el arcén contrario"
+      ],
+      "correcta": 1,
+      "explicacion": "Ceñirse a la derecha dentro de tu propio carril facilita que el vehículo que te adelanta tenga más margen y pueda completar la maniobra con más seguridad.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-026",
+      "tema": 7,
+      "subtema": "ser-adelantado",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Mientras te adelantan, ¿está permitido aumentar tu velocidad?",
+      "opciones": [
+        "Sí, si el vehículo que te adelanta circula muy despacio",
+        "No, como norma general no se puede acelerar mientras te adelantan",
+        "Sí, siempre que no rebases el límite de la vía"
+      ],
+      "correcta": 1,
+      "explicacion": "La norma es clara: el conductor adelantado no debe acelerar durante la maniobra, porque eso pone en peligro a quien te está adelantando al alargar su tiempo de exposición al carril contrario.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-027",
+      "tema": 7,
+      "subtema": "ser-adelantado",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Vas a 80 km/h en una vía de 90 y otro coche inicia el adelantamiento. Para no reducir tu marcha habitual, mantienes exactamente esa velocidad sin variarla. ¿Es correcto?",
+      "opciones": [
+        "No, debes reducir siempre la velocidad en cuanto detectes que te adelantan",
+        "No, debes detenerte por completo hasta que termine la maniobra",
+        "Sí, siempre que no aumentes la velocidad, mantenerla no está prohibido"
+      ],
+      "correcta": 2,
+      "explicacion": "La obligación del adelantado es no acelerar y ceñirse a la derecha; no exige frenar. Mantener tu velocidad habitual sin aumentarla es correcto y facilita el adelantamiento.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-028",
+      "tema": 7,
+      "subtema": "ser-adelantado",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Si el vehículo que te está adelantando tarda más de lo normal en completar la maniobra, ¿qué debes hacer?",
+      "opciones": [
+        "Acelerar para obligarle a desistir cuanto antes",
+        "Facilitarle la maniobra ciñéndote a la derecha y, si es posible con seguridad, reducir ligeramente la velocidad",
+        "Cambiar bruscamente de carril hacia la izquierda para advertirle"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuanto más facilites la maniobra al que te adelanta, antes terminará el momento de mayor riesgo, que es cuando invade el carril contrario.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-029",
+      "tema": 7,
+      "subtema": "adelantar-ciclistas-y-peatones",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué separación lateral mínima debes dejar al adelantar a un ciclista fuera de poblado?",
+      "opciones": [
+        "1,5 metros",
+        "0,5 metros",
+        "3 metros"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley obliga a dejar al menos 1,5 metros de separación lateral al adelantar a un ciclista, porque cualquier movimiento inesperado de la bici puede provocar una caída si vas demasiado cerca.",
+      "mnemotecnia": "Ciclista: metro y medio, sin excusas.",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-030",
+      "tema": 7,
+      "subtema": "adelantar-ciclistas-y-peatones",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Para respetar la distancia de 1,5 metros al adelantar a un ciclista, ¿puedes invadir el carril contrario si es necesario?",
+      "opciones": [
+        "No, invadir el carril contrario está prohibido en cualquier caso",
+        "Sí, siempre que la maniobra se pueda hacer sin poner en peligro a nadie",
+        "Solo si el ciclista te lo indica con la mano"
+      ],
+      "correcta": 1,
+      "explicacion": "Si tu carril no tiene anchura suficiente para dejar 1,5 metros, la norma permite invadir parcialmente el carril contrario, siempre que compruebes que no viene nadie y la maniobra es segura.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-031",
+      "tema": 7,
+      "subtema": "adelantar-ciclistas-y-peatones",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "¿La distancia mínima de 1,5 metros al adelantar a un ciclista se exige solo en carretera, o también dentro de poblado?",
+      "opciones": [
+        "Solo fuera de poblado, dentro de poblado no se exige distancia mínima",
+        "Solo se exige si el ciclista circula solo, no en grupo",
+        "Se exige tanto dentro como fuera de poblado"
+      ],
+      "correcta": 2,
+      "explicacion": "La obligación de guardar 1,5 metros al adelantar a ciclistas se aplica en toda la vía, dentro y fuera de poblado, precisamente porque en ciudad hay más obstáculos y distracciones.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-032",
+      "tema": 7,
+      "subtema": "adelantar-ciclistas-y-peatones",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Pueden circular los ciclistas en paralelo, en columna de a dos, fuera de poblado?",
+      "opciones": [
+        "Sí, está permitido circular en paralelo en columna de a dos",
+        "No, siempre deben ir en fila de uno",
+        "Solo si la carretera tiene arcén"
+      ],
+      "correcta": 0,
+      "explicacion": "La normativa permite a los ciclistas circular en paralelo, formando columna de a dos, tanto dentro como fuera de poblado, salvo en tramos donde esté expresamente prohibido o sea peligroso.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-033",
+      "tema": 7,
+      "subtema": "adelantar-ciclistas-y-peatones",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Vas a adelantar a un grupo de ciclistas que circulan en columna de a dos. ¿Debes tratarlos como si fuera un único vehículo largo a efectos de mantener la distancia lateral?",
+      "opciones": [
+        "No, la distancia solo se exige al pasar junto al primer ciclista del grupo",
+        "No, con grupos de ciclistas no es obligatorio guardar distancia lateral",
+        "Sí, debes mantener la separación de 1,5 metros respecto al ciclista más próximo a ti durante toda la maniobra"
+      ],
+      "correcta": 2,
+      "explicacion": "Mientras dure el adelantamiento, debes mantener en todo momento al menos 1,5 metros respecto al ciclista que tengas más cerca, no solo en el primer instante de la maniobra.",
+      "mnemotecnia": "",
+      "imagen": "r305-adelantamiento"
+    },
+    {
+      "id": "ADE-034",
+      "tema": 7,
+      "subtema": "adelantar-ciclistas-y-peatones",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Al adelantar a un peatón que camina por el arcén de una carretera sin acera, ¿qué debes hacer?",
+      "opciones": [
+        "Reducir la velocidad y dejar la máxima distancia lateral posible",
+        "Adelantarlo sin variar tu velocidad ni tu trayectoria",
+        "Tocar el claxon justo antes de pasar a su altura"
+      ],
+      "correcta": 0,
+      "explicacion": "Los peatones son los usuarios más vulnerables de la vía: reducir velocidad y dejar el máximo espacio posible reduce muchísimo el riesgo si el peatón hace un movimiento brusco.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-035",
+      "tema": 7,
+      "subtema": "adelantar-ciclistas-y-peatones",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Adelantas a un ciclista dejando 1 metro de separación porque el carril contrario tiene tráfico denso y no puedes invadirlo. ¿Es correcta la maniobra?",
+      "opciones": [
+        "Sí, porque 1 metro es una distancia razonable si no hay más espacio disponible",
+        "No, si no puedes garantizar los 1,5 metros debes esperar a que la situación lo permita antes de adelantar",
+        "Sí, siempre que reduzcas la velocidad al pasar junto al ciclista"
+      ],
+      "correcta": 1,
+      "explicacion": "Si no puedes dejar la separación mínima exigida de 1,5 metros con seguridad, lo correcto es esperar el momento oportuno para adelantar, no reducir la distancia por debajo del mínimo legal.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-036",
+      "tema": 7,
+      "subtema": "excepciones",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Como norma general está prohibido adelantar por la derecha. ¿Cuándo se permite esta excepción?",
+      "opciones": [
+        "Siempre que el carril derecho esté libre de tráfico",
+        "Cuando el conductor de delante ha indicado claramente que va a girar a la izquierda y ha dejado espacio a su derecha",
+        "Nunca, adelantar por la derecha está prohibido sin excepciones"
+      ],
+      "correcta": 1,
+      "explicacion": "Si el vehículo de delante señaliza un giro a la izquierda y se sitúa hacia esa parte del carril dejando hueco a su derecha, se puede adelantar por ese lado porque no invade el sentido contrario.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-037",
+      "tema": 7,
+      "subtema": "excepciones",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "En una calzada urbana con varios carriles por sentido y con retención de tráfico, ¿está permitido adelantar por la derecha a un vehículo que circula más despacio?",
+      "opciones": [
+        "Sí, esta es una excepción admitida en calzadas de varios carriles en poblado con circulación retenida",
+        "No, adelantar por la derecha nunca está permitido en poblado",
+        "Solo si el vehículo adelantado circula por el carril izquierdo de forma indebida"
+      ],
+      "correcta": 0,
+      "explicacion": "En situaciones de retención dentro de poblado, con varios carriles en el mismo sentido, se admite avanzar por la derecha respecto a otros vehículos, ya que no hay una única fila obligatoria de circulación.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-038",
+      "tema": 7,
+      "subtema": "excepciones",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Qué caracteriza a un adelantamiento por la derecha permitido, frente al adelantamiento normal?",
+      "opciones": [
+        "Que se puede hacer en cualquier vía y circunstancia",
+        "Que se produce en una situación excepcional prevista por la norma, como un giro a la izquierda del vehículo de delante",
+        "Que solo pueden hacerlo los vehículos prioritarios"
+      ],
+      "correcta": 1,
+      "explicacion": "Adelantar por la derecha no es la norma general, sino una excepción que la ley reserva para casos concretos, como cuando el vehículo de delante prepara un giro a la izquierda.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-039",
+      "tema": 7,
+      "subtema": "excepciones",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Cuál es la regla general sobre el lado por el que se debe adelantar?",
+      "opciones": [
+        "Por la izquierda, salvo las excepciones previstas en la norma",
+        "Por la derecha, salvo que el vehículo de delante circule muy despacio",
+        "Por cualquier lado, según convenga al conductor"
+      ],
+      "correcta": 0,
+      "explicacion": "La regla general de todo adelantamiento es hacerlo por la izquierda del vehículo adelantado; adelantar por la derecha solo se permite en los casos excepcionales que marca la ley.",
+      "mnemotecnia": "Izquierda es la norma; derecha, la excepción.",
+      "imagen": ""
+    },
+    {
+      "id": "ADE-040",
+      "tema": 7,
+      "subtema": "excepciones",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Circulas en poblado por una avenida con dos carriles en tu sentido y el tráfico avanza muy lento por retención. El vehículo del carril izquierdo va más despacio que tú. ¿Puedes rebasarlo circulando por tu carril de la derecha?",
+      "opciones": [
+        "No, aunque haya retención sigue estando prohibido adelantar por la derecha",
+        "Solo si el vehículo del carril izquierdo tiene una avería visible",
+        "Sí, es una de las excepciones a la prohibición general de adelantar por la derecha"
+      ],
+      "correcta": 2,
+      "explicacion": "La normativa contempla como excepción precisamente este supuesto: calzadas de varios carriles por sentido en poblado con la circulación retenida, donde sí se permite avanzar por el carril derecho.",
+      "mnemotecnia": "",
+      "imagen": ""
+    }
+  ]
+}

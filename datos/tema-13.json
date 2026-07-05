@@ -1,0 +1,686 @@
+{
+  "tema": 13,
+  "nombre": "Documentación y permiso por puntos",
+  "preguntas": [
+    {
+      "id": "DOC-001",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué documentos debe poder acreditar el conductor cuando circula con su vehículo?",
+      "opciones": [
+        "El permiso de conducir, el permiso de circulación, la ficha técnica (o tarjeta ITV) y el seguro obligatorio.",
+        "Solo el permiso de conducir; el resto puede quedarse en casa.",
+        "Únicamente el DNI, es suficiente para circular."
+      ],
+      "correcta": 0,
+      "explicacion": "El conductor debe poder mostrar en cualquier control que el vehículo está en regla: quién puede conducirlo, que está autorizado a circular, que ha pasado la ITV y que tiene seguro. Sin alguno de ellos puedes ser sancionado.",
+      "mnemotecnia": "Piensa en las 4 patas de la mesa: conducir, circular, ITV y seguro.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-002",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "El permiso de circulación de un vehículo sirve para acreditar...",
+      "opciones": [
+        "Que el conductor tiene puntos suficientes en su carnet.",
+        "Que el vehículo está autorizado a circular y contiene sus datos de matriculación.",
+        "Que el vehículo ha superado la última ITV."
+      ],
+      "correcta": 1,
+      "explicacion": "El permiso de circulación es del vehículo, no del conductor: recoge la matrícula, marca, modelo y demás datos que acreditan que ese coche puede circular legalmente.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-003",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Si llevas toda la documentación del vehículo guardada en la app oficial miDGT del móvil, ¿es válida ante un control de tráfico?",
+      "opciones": [
+        "No, siempre hay que llevar los documentos en papel original.",
+        "Solo vale si además llevas una fotocopia impresa.",
+        "Sí, la app miDGT es un medio válido para acreditar la documentación del vehículo y del conductor."
+      ],
+      "correcta": 2,
+      "explicacion": "Desde hace años la DGT admite la documentación digital a través de miDGT como equivalente al papel. Es un matiz que mucha gente desconoce y que suele preguntarse en los exámenes.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-004",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "La ficha técnica o tarjeta ITV de un vehículo recoge...",
+      "opciones": [
+        "Sus características técnicas y el historial de inspecciones.",
+        "El número de puntos que le quedan al conductor.",
+        "Las coberturas contratadas en el seguro."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el documento técnico del coche: motor, peso, dimensiones, emisiones... y ahí se van anotando los resultados de las inspecciones ITV.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-005",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Qué documento acredita que, en caso de accidente, los daños causados a terceros están cubiertos?",
+      "opciones": [
+        "El permiso de circulación.",
+        "El recibo o la tarjeta del seguro obligatorio en vigor.",
+        "La ficha técnica del vehículo."
+      ],
+      "correcta": 1,
+      "explicacion": "El seguro es el que responde económicamente ante terceros si provocas un accidente; por eso hay que poder acreditar que está pagado y vigente.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-006",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Un conductor circula sin llevar encima el permiso de conducir físico, aunque está en vigor y sin ninguna sanción pendiente. ¿Qué puede ocurrir?",
+      "opciones": [
+        "Puede ser sancionado por no poder acreditar el documento en el momento del control, aunque el permiso exista y esté en regla.",
+        "No pasa nada, porque el permiso figura en la base de datos de la DGT.",
+        "Se le retira automáticamente el vehículo aunque el permiso sea válido."
+      ],
+      "correcta": 0,
+      "explicacion": "No basta con que el permiso exista: hay que poder acreditarlo en el momento, ya sea en papel o mediante la app miDGT. Si no lo llevas de ninguna forma, te pueden sancionar por no acreditarlo.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-007",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 3,
+      "esTrampa": false,
+      "pregunta": "¿Quién debe poder acreditar la documentación del vehículo (permiso de circulación, ficha técnica y seguro) durante un control?",
+      "opciones": [
+        "Solo el propietario legal del vehículo, aunque no vaya dentro.",
+        "Solo si el vehículo tiene menos de un año.",
+        "El conductor, sea o no al mismo tiempo el titular del vehículo."
+      ],
+      "correcta": 2,
+      "explicacion": "Da igual que el coche sea tuyo o prestado: quien lo conduce en ese momento es quien debe responder por la documentación ante un agente.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-008",
+      "tema": 13,
+      "subtema": "documentacion",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Si cambias de domicilio, ¿qué debes hacer respecto a la documentación de tu vehículo y tu permiso de conducir?",
+      "opciones": [
+        "Nada, no es obligatorio actualizar los datos.",
+        "Solicitar una ITV extraordinaria por el cambio de dirección.",
+        "Comunicar el cambio de domicilio a la Jefatura de Tráfico para mantener actualizados el permiso de conducir y el de circulación."
+      ],
+      "correcta": 2,
+      "explicacion": "La DGT necesita tener tu dirección actualizada para notificaciones oficiales (multas, avisos de puntos, citaciones...). Es una obligación del titular.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-009",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Cuántos puntos tiene, con carácter general, el permiso de conducir de un conductor no novel?",
+      "opciones": [
+        "12 puntos.",
+        "8 puntos.",
+        "15 puntos."
+      ],
+      "correcta": 0,
+      "explicacion": "El saldo inicial general es de 12 puntos. Solo baja a 8 en los casos de conductores noveles o cuando se recupera el permiso tras haberlo perdido.",
+      "mnemotecnia": "12 = docena general; 8 = novel.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-010",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 1,
+      "esTrampa": true,
+      "pregunta": "Un conductor que acaba de sacarse el permiso B por primera vez, ¿con cuántos puntos empieza?",
+      "opciones": [
+        "Con 12 puntos, igual que cualquier conductor.",
+        "Con 8 puntos, por ser conductor novel durante los primeros años.",
+        "Con 15 puntos, como premio por aprobar el examen."
+      ],
+      "correcta": 1,
+      "explicacion": "Ojo con este matiz: los conductores noveles empiezan con 8 puntos, no con 12. Es de las trampas más repetidas en los exámenes DGT.",
+      "mnemotecnia": "Novel = 8 (piensa en una 'N' pequeña de novato).",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-011",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Cuál es el máximo de puntos que puede llegar a tener un conductor?",
+      "opciones": [
+        "12 puntos, ese es siempre el tope.",
+        "10 puntos, si acumula varios cursos de formación.",
+        "15 puntos, si pasa 3 años seguidos sin perder ninguno."
+      ],
+      "correcta": 2,
+      "explicacion": "Como premio a la buena conducción, tras 3 años consecutivos sin perder puntos, el saldo puede subir hasta 15.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-012",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Un conductor pierde todos sus puntos y recupera el permiso tras el curso correspondiente. ¿Con cuántos puntos vuelve a empezar?",
+      "opciones": [
+        "Con 8 puntos, como si fuera de nuevo un conductor novel.",
+        "Con 12 puntos, porque ya tenía experiencia previa al volante.",
+        "Con 4 puntos, como sanción añadida por haber perdido el carnet."
+      ],
+      "correcta": 0,
+      "explicacion": "Al recuperar el permiso tras una pérdida total de puntos, se vuelve a empezar con el saldo de novel: 8 puntos, aunque llevaras años conduciendo antes.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-013",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Usar el teléfono móvil sujeto con la mano mientras se conduce hace perder...",
+      "opciones": [
+        "4 puntos.",
+        "6 puntos.",
+        "2 puntos."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una de las infracciones que más puntos quita porque implica una distracción grave: 6 puntos, además de la multa.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-014",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "No llevar puesto el cinturón de seguridad supone la pérdida de...",
+      "opciones": [
+        "6 puntos, igual que usar el móvil en la mano.",
+        "2 puntos, por tratarse de una infracción leve.",
+        "4 puntos."
+      ],
+      "correcta": 2,
+      "explicacion": "No confundir: el móvil en la mano resta 6 puntos, pero no usar cinturón, casco o sistema de retención infantil resta 4 puntos.",
+      "mnemotecnia": "Móvil = 6, cinturón/casco/SRI = 4.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-015",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 3,
+      "esTrampa": false,
+      "pregunta": "¿Qué ocurre cuando un conductor se queda sin ningún punto?",
+      "opciones": [
+        "Pierde la vigencia del permiso, no puede conducir y debe superar un curso de sensibilización y reeducación vial para recuperarlo.",
+        "Recupera automáticamente 4 puntos y puede seguir circulando con normalidad.",
+        "Solo recibe una multa económica, pero conserva el permiso intacto."
+      ],
+      "correcta": 0,
+      "explicacion": "Perder todos los puntos equivale a perder el permiso: hay que dejar de conducir y aprobar un curso específico antes de poder recuperarlo.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-016",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿A quién va dirigido el curso de sensibilización y reeducación vial por pérdida de puntos?",
+      "opciones": [
+        "Únicamente a los conductores noveles.",
+        "Únicamente a los conductores profesionales.",
+        "A los conductores que han perdido todos sus puntos o el permiso, para poder recuperarlo."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el curso obligatorio para quien se ha quedado a 0 puntos: sin superarlo no se recupera el permiso de conducir.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-017",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Un conductor con 12 puntos comete una infracción por usar el móvil en la mano, que resta 6 puntos. ¿Con cuántos puntos se queda?",
+      "opciones": [
+        "Con 8 puntos, como si pasara a ser novel.",
+        "Con 12 puntos, porque las primeras infracciones no descuentan puntos.",
+        "Con 6 puntos."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una simple resta: 12 menos 6 son 6 puntos. Las infracciones descuentan siempre, sin excepción por ser la primera vez.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-018",
+      "tema": 13,
+      "subtema": "permiso-por-puntos",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Puede un conductor consultar cuántos puntos le quedan en su permiso?",
+      "opciones": [
+        "Sí, a través de la Sede Electrónica de la DGT o la app miDGT.",
+        "No, es un dato confidencial que solo conoce la DGT internamente.",
+        "Solo pueden consultarlo las autoescuelas en nombre del conductor."
+      ],
+      "correcta": 0,
+      "explicacion": "Cualquier conductor puede y debe consultar su saldo de puntos cuando quiera, de forma sencilla, a través de los canales oficiales de la DGT.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-019",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Cuándo debe pasar un turismo su primera inspección técnica (ITV)?",
+      "opciones": [
+        "Al año de su matriculación.",
+        "A los 4 años de su matriculación.",
+        "A los 2 años de su matriculación."
+      ],
+      "correcta": 1,
+      "explicacion": "Los turismos nuevos tienen un margen de 4 años antes de pasar por la ITV por primera vez.",
+      "mnemotecnia": "4 - 2 - 1: primero a los 4, luego cada 2, y desde los 10 cada 1 año.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-020",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Un turismo de 6 años de antigüedad, ¿cada cuánto tiempo debe pasar la ITV?",
+      "opciones": [
+        "Cada año, por tener ya más de 5 años.",
+        "Cada 4 años, igual que la primera inspección.",
+        "Cada 2 años, hasta que cumpla los 10 años de antigüedad."
+      ],
+      "correcta": 2,
+      "explicacion": "Entre los 4 y los 10 años de vida del vehículo, la periodicidad es bienal (cada 2 años), no anual todavía.",
+      "mnemotecnia": "4 - 2 - 1.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-021",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "A partir de los 10 años de antigüedad, ¿con qué frecuencia debe pasar la ITV un turismo?",
+      "opciones": [
+        "Anualmente, cada año.",
+        "Cada 2 años, igual que antes de los 10 años.",
+        "Cada 6 meses."
+      ],
+      "correcta": 0,
+      "explicacion": "Superados los 10 años, el vehículo se considera más propenso a fallos y la inspección pasa a ser anual.",
+      "mnemotecnia": "4 - 2 - 1.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-022",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Un turismo con 3 años y medio de antigüedad, ¿ya debe pasar la ITV?",
+      "opciones": [
+        "Sí, todos los turismos deben pasarla a partir de los 3 años.",
+        "No, la primera inspección se realiza a los 4 años de la matriculación.",
+        "Sí, pero solo si ha superado los 100.000 km recorridos."
+      ],
+      "correcta": 1,
+      "explicacion": "Antes de los 4 años no es obligatorio pasar la ITV en turismos, independientemente de los kilómetros recorridos.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-023",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué comprueba fundamentalmente la inspección técnica de vehículos (ITV)?",
+      "opciones": [
+        "El número de puntos que le quedan al conductor.",
+        "Que el vehículo cumple las condiciones técnicas y de seguridad necesarias para circular.",
+        "Que el seguro del vehículo está al corriente de pago."
+      ],
+      "correcta": 1,
+      "explicacion": "La ITV es una revisión técnica del vehículo (frenos, luces, emisiones, neumáticos...), no tiene relación con los puntos del conductor ni con el seguro.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-024",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Qué ocurre si circulas con la ITV caducada?",
+      "opciones": [
+        "Nada, mientras el vehículo funcione correctamente.",
+        "Solo se sanciona si además se produce un accidente.",
+        "Es una infracción sancionable, aunque el vehículo esté mecánicamente en buen estado."
+      ],
+      "correcta": 2,
+      "explicacion": "La obligación es formal: hay que tener la inspección en vigor, independientemente del estado real del coche. No pasarla a tiempo ya es sancionable.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-025",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Cuando el resultado de una ITV es 'desfavorable', significa que...",
+      "opciones": [
+        "El vehículo tiene defectos que deben repararse en un plazo, y debe volver a inspeccionarse.",
+        "El vehículo queda inutilizado para circular de forma definitiva.",
+        "Es solo una recomendación sin ninguna obligación asociada."
+      ],
+      "correcta": 0,
+      "explicacion": "Un resultado desfavorable da un plazo para corregir los defectos y volver a pasar la revisión; no es lo mismo que un resultado negativo (que sí impide circular).",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-026",
+      "tema": 13,
+      "subtema": "itv",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Un turismo de 9 años de antigüedad, ¿debe pasar la ITV cada año o cada 2 años?",
+      "opciones": [
+        "Cada año, porque se acerca a los 10 años de antigüedad.",
+        "Cada 2 años, ya que hasta cumplir los 10 años la periodicidad sigue siendo bienal.",
+        "Cada 6 meses, por precaución al acercarse al límite."
+      ],
+      "correcta": 1,
+      "explicacion": "El cambio a periodicidad anual no se aplica hasta que el vehículo cumple realmente los 10 años, ni un día antes.",
+      "mnemotecnia": "4 - 2 - 1.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-027",
+      "tema": 13,
+      "subtema": "seguro-obligatorio",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué es obligatorio contratar para poder circular con cualquier vehículo a motor?",
+      "opciones": [
+        "Un seguro de responsabilidad civil (seguro obligatorio).",
+        "Un seguro a todo riesgo sin franquicia.",
+        "Solo se exige seguro a los vehículos de más de 10 años."
+      ],
+      "correcta": 0,
+      "explicacion": "La ley exige, como mínimo, el seguro obligatorio de responsabilidad civil para cualquier vehículo que circule, sea cual sea su antigüedad.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-028",
+      "tema": 13,
+      "subtema": "seguro-obligatorio",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "El seguro obligatorio de responsabilidad civil cubre principalmente...",
+      "opciones": [
+        "Los daños que sufra tu propio vehículo en cualquier circunstancia.",
+        "Los daños personales y materiales que puedas causar a terceros.",
+        "El robo o el incendio de tu propio vehículo."
+      ],
+      "correcta": 1,
+      "explicacion": "Su función es proteger a las víctimas de un accidente que tú provoques, no reparar tu propio coche.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-029",
+      "tema": 13,
+      "subtema": "seguro-obligatorio",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Si contratas un seguro a todo riesgo, ¿ya no necesitas el seguro obligatorio de responsabilidad civil?",
+      "opciones": [
+        "Correcto, el todo riesgo sustituye por completo al seguro obligatorio.",
+        "Solo en el caso de vehículos nuevos con menos de un año.",
+        "No hace falta pensar en ello: el seguro obligatorio va siempre incluido dentro de cualquier póliza, sea la modalidad que sea."
+      ],
+      "correcta": 2,
+      "explicacion": "El todo riesgo es una ampliación de coberturas, pero por dentro siempre incluye el seguro obligatorio de responsabilidad civil; no son cosas independientes.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-030",
+      "tema": 13,
+      "subtema": "seguro-obligatorio",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué puede ocurrir si circulas sin el seguro obligatorio en vigor?",
+      "opciones": [
+        "No pasa nada mientras no tengas un accidente.",
+        "Es una infracción grave y el vehículo puede ser inmovilizado.",
+        "Solo recibirás un aviso verbal la primera vez."
+      ],
+      "correcta": 1,
+      "explicacion": "Circular sin seguro es una infracción grave por sí misma, independientemente de que haya accidente o no, y puede acarrear la inmovilización del vehículo.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-031",
+      "tema": 13,
+      "subtema": "seguro-obligatorio",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Si provocas un accidente, el seguro obligatorio cubre a terceros. ¿Cubre también los daños de tu propio vehículo?",
+      "opciones": [
+        "No; para cubrir los daños propios hace falta una cobertura adicional (daños propios o todo riesgo).",
+        "Sí, siempre cubre por igual a ambos vehículos implicados.",
+        "Sí, pero únicamente si el accidente ocurre en autopista."
+      ],
+      "correcta": 0,
+      "explicacion": "El seguro obligatorio protege a la otra parte, no a tu coche. Para que también te cubran a ti necesitas contratar coberturas extra.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-032",
+      "tema": 13,
+      "subtema": "seguro-obligatorio",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Es necesario llevar algún justificante del seguro en el vehículo?",
+      "opciones": [
+        "No, basta con haberlo pagado, no hace falta ningún papel.",
+        "Solo en vehículos de más de 10 años de antigüedad.",
+        "Sí, el recibo o la tarjeta acreditativa del seguro en vigor."
+      ],
+      "correcta": 2,
+      "explicacion": "Igual que con el resto de documentación, hay que poder acreditar en el momento que el seguro está pagado y en vigor.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-033",
+      "tema": 13,
+      "subtema": "seguro-obligatorio",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "El seguro obligatorio es exigible...",
+      "opciones": [
+        "A todos los vehículos a motor que circulen, salvo contadas excepciones.",
+        "Solo a los vehículos matriculados después de 2010.",
+        "Solo a los vehículos con más de 9 plazas."
+      ],
+      "correcta": 0,
+      "explicacion": "La obligatoriedad del seguro es prácticamente universal para todo vehículo a motor que circule por vías públicas.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-034",
+      "tema": 13,
+      "subtema": "permiso-b",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué autoriza a conducir, con carácter general, el permiso de la clase B?",
+      "opciones": [
+        "Camiones con una masa máxima autorizada superior a 3.500 kg.",
+        "Automóviles cuya masa máxima autorizada no supere los 3.500 kg y hasta 9 plazas, incluido el conductor.",
+        "Motocicletas de gran cilindrada sin ninguna limitación."
+      ],
+      "correcta": 1,
+      "explicacion": "El permiso B es el habitual para turismos: hasta 3.500 kg de peso máximo autorizado y un máximo de 9 plazas contando la del conductor.",
+      "mnemotecnia": "B de 'básico': 3.500 kg y 9 plazas.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-035",
+      "tema": 13,
+      "subtema": "permiso-b",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "¿Necesitas algún permiso especial para viajar como pasajero (no como conductor) en un vehículo de 9 plazas?",
+      "opciones": [
+        "Sí, sin el permiso B nunca podrías ir dentro de un vehículo de 9 plazas.",
+        "Sí, se necesitaría el permiso D, propio de autobuses.",
+        "No; el permiso B autoriza a conducir vehículos de hasta 9 plazas, pero ir de simple pasajero no exige ningún permiso."
+      ],
+      "correcta": 2,
+      "explicacion": "El permiso solo lo necesita quien conduce. Cualquier persona puede viajar como pasajero sin tener ningún carnet de conducir.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-036",
+      "tema": 13,
+      "subtema": "permiso-b",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Puede un conductor con permiso B enganchar un remolque a su vehículo?",
+      "opciones": [
+        "No, el permiso B nunca autoriza a llevar remolque de ningún tipo.",
+        "Sí, puede llevar un remolque ligero de hasta 750 kg de masa máxima autorizada.",
+        "Sí, puede llevar cualquier remolque, sin ningún límite de peso."
+      ],
+      "correcta": 1,
+      "explicacion": "El permiso B incluye de forma automática la posibilidad de arrastrar un remolque ligero, siempre que no supere los 750 kg de MMA.",
+      "mnemotecnia": "750 = remolque ligero.",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-037",
+      "tema": 13,
+      "subtema": "permiso-b",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Si el remolque que quieres enganchar pesa más de 750 kg, ¿te sigue autorizando el permiso B sin ningún matiz adicional?",
+      "opciones": [
+        "Sí, siempre; no existe ningún límite adicional una vez tienes el permiso B.",
+        "Depende: superados los 750 kg existen condiciones adicionales sobre el conjunto vehículo-remolque que hay que respetar.",
+        "No, en ningún caso se puede enganchar un remolque de más de 750 kg con el permiso B."
+      ],
+      "correcta": 1,
+      "explicacion": "Con el permiso B puedes llevar un remolque de más de 750 kg solo si la masa del conjunto (vehículo + remolque) no supera los 3.500 kg. Si el conjunto llega hasta 4.250 kg necesitas el código 96 o el permiso B+E.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-038",
+      "tema": 13,
+      "subtema": "permiso-b",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "La masa máxima autorizada (MMA) que puede tener un vehículo conducido con permiso B es de...",
+      "opciones": [
+        "5.000 kg.",
+        "2.000 kg.",
+        "3.500 kg."
+      ],
+      "correcta": 2,
+      "explicacion": "El límite que marca la clase B es 3.500 kg de MMA; por encima de eso ya se necesita otra categoría de permiso.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-039",
+      "tema": 13,
+      "subtema": "permiso-b",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Cuántas plazas como máximo, incluida la del conductor, puede tener un vehículo conducido con permiso B?",
+      "opciones": [
+        "9 plazas.",
+        "5 plazas.",
+        "12 plazas."
+      ],
+      "correcta": 0,
+      "explicacion": "El límite de plazas del permiso B es de 9, contando siempre la del propio conductor.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "DOC-040",
+      "tema": 13,
+      "subtema": "permiso-b",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "El permiso B te permite conducir, entre otros, cuál de estos vehículos:",
+      "opciones": [
+        "Un autobús urbano con capacidad para 20 plazas.",
+        "Un camión articulado con remolque pesado.",
+        "Un turismo particular de hasta 9 plazas y 3.500 kg de masa máxima autorizada."
+      ],
+      "correcta": 2,
+      "explicacion": "El ejemplo típico del permiso B es el turismo familiar: hasta 9 plazas y 3.500 kg, ni autobuses ni camiones articulados.",
+      "mnemotecnia": "",
+      "imagen": ""
+    }
+  ]
+}

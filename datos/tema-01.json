@@ -1,0 +1,686 @@
+{
+  "tema": 1,
+  "nombre": "Conceptos básicos y la vía",
+  "preguntas": [
+    {
+      "id": "CON-001",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Qué es la calzada según el Reglamento General de Circulación?",
+      "opciones": [
+        "La parte de la vía destinada a la circulación de vehículos",
+        "La zona de la vía destinada a la circulación de peatones",
+        "El espacio reservado para el estacionamiento de vehículos"
+      ],
+      "correcta": 0,
+      "explicacion": "La calzada es la parte de la carretera o calle por donde circulan los vehículos. No incluye el arcén ni la acera, que tienen otros usos.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-002",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "El arcén es la franja longitudinal contigua a la calzada que, entre otras funciones, sirve para...",
+      "opciones": [
+        "circular habitualmente con el turismo para adelantar",
+        "servir de refugio en caso de emergencia o avería",
+        "aparcar el vehículo toda la noche sin restricción"
+      ],
+      "correcta": 1,
+      "explicacion": "El arcén no es un carril de circulación normal: está pensado para paradas de emergencia, refugio de peatones o ciclistas y maniobras de urgencia, no para circular ni aparcar libremente.",
+      "mnemotecnia": "Arcén: para emergencias, no para conducir.",
+      "imagen": ""
+    },
+    {
+      "id": "CON-003",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Según la normativa, un carril debe tener anchura suficiente para...",
+      "opciones": [
+        "dos motocicletas en paralelo únicamente",
+        "cualquier vehículo agrícola de gran anchura",
+        "una fila de vehículos que no sean motocicletas"
+      ],
+      "correcta": 2,
+      "explicacion": "Un carril es cada una de las bandas en que se puede dividir la calzada, con anchura suficiente para que pase una fila de vehículos que no sean motocicletas (estas pueden circular por carriles más estrechos).",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-004",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 3,
+      "esTrampa": false,
+      "pregunta": "La mediana de una autovía es...",
+      "opciones": [
+        "la zona longitudinal que separa las calzadas de sentidos opuestos",
+        "un carril adicional para adelantamientos de emergencia",
+        "el arcén derecho reservado a bicicletas"
+      ],
+      "correcta": 0,
+      "explicacion": "La mediana separa físicamente las dos calzadas de sentido contrario. Nunca debe usarse para circular, adelantar ni cruzar salvo por los pasos habilitados.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-005",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Un refugio en la vía pública es...",
+      "opciones": [
+        "un aparcamiento cubierto municipal",
+        "una zona elevada o señalizada para proteger a los peatones que cruzan",
+        "el arcén de una autopista"
+      ],
+      "correcta": 1,
+      "explicacion": "El refugio es esa pequeña isla en medio de la calzada, a veces elevada, donde el peatón puede pararse a salvo mientras cruza una vía ancha en dos tiempos.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-006",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "La zona peatonal es...",
+      "opciones": [
+        "cualquier acera de una calle con tráfico normal",
+        "un carril bici delimitado por marcas",
+        "una zona urbana especialmente acondicionada para la circulación de peatones, con acceso restringido a vehículos"
+      ],
+      "correcta": 2,
+      "explicacion": "Las zonas peatonales son espacios reservados a personas a pie, con entrada de vehículos muy limitada (solo residentes, cargas autorizadas, etc.).",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-007",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "Una isleta señalizada en el centro de un cruce sirve para...",
+      "opciones": [
+        "ordenar la circulación o servir de refugio, y no puede ser ocupada por vehículos salvo para evitar un obstáculo",
+        "aparcar temporalmente si no hay otro sitio",
+        "permitir el adelantamiento de dos vehículos a la vez"
+      ],
+      "correcta": 0,
+      "explicacion": "La isleta es una parte de la calzada delimitada para ordenar el tráfico o proteger peatones. Un vehículo solo puede pisarla para esquivar un obstáculo, nunca para aparcar ni adelantar.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-008",
+      "tema": 1,
+      "subtema": "partes-de-la-via",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "¿Se puede circular habitualmente por el arcén con un turismo para ir más rápido en una carretera con retenciones?",
+      "opciones": [
+        "Sí, siempre que se respete el límite de velocidad",
+        "No, el arcén no es un carril de circulación y solo se usa en casos excepcionales tasados",
+        "Sí, pero solo los fines de semana"
+      ],
+      "correcta": 1,
+      "explicacion": "El arcén está para emergencias, paradas de asistencia o uso puntual de ciclistas y VMP en carretera, no para adelantar retenciones ni circular con normalidad.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-009",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Qué diferencia principal hay entre una vía urbana y una vía interurbana?",
+      "opciones": [
+        "La vía urbana siempre tiene más de dos carriles por sentido",
+        "La vía interurbana está prohibida para turismos",
+        "La vía urbana discurre dentro del casco de población y la interurbana fuera de él"
+      ],
+      "correcta": 2,
+      "explicacion": "La clave es la ubicación: dentro de poblado es vía urbana, fuera de poblado es interurbana. Esto afecta a los límites de velocidad y a otras normas.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-010",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "El 'poblado' se define como...",
+      "opciones": [
+        "el espacio con edificaciones agrupadas cuyo acceso está delimitado por señales de entrada y salida",
+        "cualquier zona con más de tres viviendas juntas",
+        "solo el centro histórico de una ciudad"
+      ],
+      "correcta": 0,
+      "explicacion": "El poblado empieza y termina donde lo marcan las señales de entrada (fondo blanco, letras negras) y salida (con raya roja diagonal).",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-011",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 1,
+      "esTrampa": true,
+      "pregunta": "Una travesía es...",
+      "opciones": [
+        "una calle exclusivamente peatonal en el centro urbano",
+        "el tramo de una carretera que atraviesa un poblado sin perder su condición de vía interurbana",
+        "un carril reservado a autobuses"
+      ],
+      "correcta": 1,
+      "explicacion": "La travesía es un tramo de carretera (normalmente estatal o autonómica) que pasa por dentro de un pueblo o ciudad, pero conserva su naturaleza de carretera interurbana a efectos de titularidad y algunas normas.",
+      "mnemotecnia": "Travesía: carretera que 'atraviesa' el pueblo.",
+      "imagen": ""
+    },
+    {
+      "id": "CON-012",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "En cuanto al límite de velocidad, una travesía se comporta, como norma general, igual que...",
+      "opciones": [
+        "una autovía, a 120 km/h",
+        "una carretera convencional, a 90 km/h",
+        "una vía urbana, a 50 km/h"
+      ],
+      "correcta": 2,
+      "explicacion": "Aunque la travesía sigue siendo jurídicamente una carretera, el límite genérico que se aplica es el de 50 km/h propio de zonas urbanas, salvo que haya señalización distinta.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-013",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Una autopista se caracteriza por...",
+      "opciones": [
+        "no tener cruces a nivel con otras vías, ferrocarril o paso de peatones",
+        "tener cruces a nivel señalizados con semáforo",
+        "permitir el acceso directo desde cualquier finca colindante"
+      ],
+      "correcta": 0,
+      "explicacion": "La autopista está especialmente proyectada para que nunca se crucen a nivel con otras vías: todos los accesos son mediante enlaces (entradas y salidas específicas).",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-014",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "A diferencia de la autopista, la autovía...",
+      "opciones": [
+        "nunca puede tener calzadas separadas",
+        "puede tener cruces a nivel y accesos directos a fincas colindantes en algunos tramos",
+        "está reservada solo a vehículos de más de 3.500 kg"
+      ],
+      "correcta": 1,
+      "explicacion": "La autovía también tiene calzadas separadas para cada sentido, pero a diferencia de la autopista puede presentar cruces a nivel y accesos directos, por lo que exige más precaución.",
+      "mnemotecnia": "Autopista sin cruces, autovía con matices.",
+      "imagen": ""
+    },
+    {
+      "id": "CON-015",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Es obligatorio pagar peaje para circular por una autovía?",
+      "opciones": [
+        "Sí, siempre",
+        "Solo los fines de semana",
+        "No, las autovías son de uso gratuito, a diferencia de algunas autopistas de peaje"
+      ],
+      "correcta": 2,
+      "explicacion": "Las autovías son gratuitas. Algunas autopistas sí cobran peaje, pero eso depende de la concesión concreta, no de la definición de autopista en sí.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-016",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Una carretera convencional es...",
+      "opciones": [
+        "la que no reúne las características propias de autopista ni de autovía",
+        "cualquier vía con calzadas separadas por mediana",
+        "exclusivamente un camino rural sin asfaltar"
+      ],
+      "correcta": 0,
+      "explicacion": "Se llama convencional a la carretera 'normal', sin las condiciones especiales de autopista o autovía: suele tener un único carril por sentido y cruces directos.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-017",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "¿Qué es una autorización especial de circulación?",
+      "opciones": [
+        "El permiso de conducir de un conductor novel",
+        "El permiso que expide el organismo competente para transportes o vehículos que exceden las masas o dimensiones autorizadas",
+        "El permiso B ampliado para conducir camiones"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuando un vehículo o su carga superan los límites normales de peso o tamaño, necesita una autorización especial que fija por dónde y cómo puede circular.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-018",
+      "tema": 1,
+      "subtema": "definiciones",
+      "dificultad": 3,
+      "esTrampa": false,
+      "pregunta": "Un camino que discurre por fincas privadas pero se abre habitualmente al tránsito general...",
+      "opciones": [
+        "nunca se considera vía a efectos del Reglamento de Circulación",
+        "solo es vía pública si tiene semáforos",
+        "puede considerarse vía pública si es de uso común indeterminado"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo decisivo no es quién sea el dueño, sino si el camino se usa habitualmente por un número indeterminado de personas. En ese caso se le aplican las normas de circulación.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-019",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "El carril bici es...",
+      "opciones": [
+        "la parte de la vía destinada al tránsito de ciclos, señalizada específicamente",
+        "cualquier acera ancha donde también caben bicicletas",
+        "un carril reservado para motocicletas de baja cilindrada"
+      ],
+      "correcta": 0,
+      "explicacion": "El carril bici está reservado para bicicletas (y en su caso VMP si lo permite la ordenanza), separado del resto de la calzada mediante marcas o elementos físicos.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-020",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Un carril BUS-VAO permite circular a...",
+      "opciones": [
+        "cualquier vehículo, sin excepción",
+        "autobuses y vehículos de alta ocupación según la señalización",
+        "solo motocicletas"
+      ],
+      "correcta": 1,
+      "explicacion": "El carril BUS-VAO está reservado a autobuses y turismos con el número mínimo de ocupantes que indique la señal; el resto de vehículos no puede usarlo salvo excepción señalizada.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-021",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 1,
+      "esTrampa": true,
+      "pregunta": "Una vía de servicio tiene como función principal...",
+      "opciones": [
+        "sustituir a la autovía principal en caso de obras",
+        "servir exclusivamente de aparcamiento para camiones",
+        "facilitar el acceso a fincas o urbanizaciones sin que los vehículos tengan que incorporarse directamente a una vía de intenso tráfico"
+      ],
+      "correcta": 2,
+      "explicacion": "Las vías de servicio discurren en paralelo a una vía principal para dar acceso a fincas, gasolineras o urbanizaciones, evitando incorporaciones peligrosas directas.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-022",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Una zona de estacionamiento limitado (tipo ORA) es...",
+      "opciones": [
+        "una zona urbana señalizada donde aparcar está sujeto a un horario y/o pago",
+        "un aparcamiento gratuito ilimitado para residentes",
+        "un carril reservado a vehículos de emergencia"
+      ],
+      "correcta": 0,
+      "explicacion": "En las zonas ORA solo puedes aparcar el tiempo que marca el tique o la app, y normalmente pagando, salvo excepciones para residentes.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-023",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Un área de servicio en una autovía ofrece...",
+      "opciones": [
+        "únicamente plazas de aparcamiento gratuito",
+        "combustible, restauración y otros servicios al viajero, además de aparcamiento",
+        "el único lugar permitido para hacer un cambio de sentido"
+      ],
+      "correcta": 1,
+      "explicacion": "Las áreas de servicio combinan gasolinera, restaurante, tienda y aparcamiento para que el conductor pueda descansar, repostar y comer sin salir de la vía principal.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-024",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 3,
+      "esTrampa": false,
+      "pregunta": "En una vía de doble sentido sin carriles delimitados por marcas, cada conductor debe circular...",
+      "opciones": [
+        "por el lado que le resulte más cómodo según el tráfico",
+        "siempre pegado al centro de la calzada",
+        "lo más cerca posible del borde derecho de la calzada, salvo que vaya a adelantar o girar a la izquierda"
+      ],
+      "correcta": 2,
+      "explicacion": "Aunque no haya marcas pintadas, la norma general obliga a circular cerca del borde derecho, dejando libre el resto de la calzada para el sentido contrario y los adelantamientos.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-025",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Las carreteras interurbanas se clasifican, según sus características, en...",
+      "opciones": [
+        "autopistas, autovías y carreteras convencionales",
+        "urbanas, peatonales y ciclistas",
+        "de peaje y gratuitas únicamente"
+      ],
+      "correcta": 0,
+      "explicacion": "Fuera de poblado, la red viaria se divide principalmente en autopistas, autovías y carreteras convencionales, según su diseño y prestaciones.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-026",
+      "tema": 1,
+      "subtema": "tipos-de-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "¿Qué es una vía pública a efectos de tráfico?",
+      "opciones": [
+        "Solo las calles de titularidad municipal",
+        "Toda vía o terreno de uso público, o en su defecto privado pero de uso general",
+        "Exclusivamente las autopistas de peaje"
+      ],
+      "correcta": 1,
+      "explicacion": "Vía pública es toda vía destinada al uso general, sea de titularidad pública o, en algunos casos, privada, mientras se use habitualmente por un número indeterminado de personas.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-027",
+      "tema": 1,
+      "subtema": "usuarios-de-la-via",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "¿Se considera 'peatón' a la persona que empuja una bicicleta llevándola de la mano por la acera?",
+      "opciones": [
+        "No, mientras tenga la bicicleta consigo siempre es 'ciclista'",
+        "No, debe bajarla a la calzada obligatoriamente",
+        "Sí, se asimila a peatón mientras la lleva a mano y no monta en ella"
+      ],
+      "correcta": 2,
+      "explicacion": "El Reglamento asimila a peatón a quien conduce a mano una bicicleta o un VMP, igual que a quien empuja un cochecito o va en silla de ruedas. Solo es 'ciclista' cuando monta y pedalea.",
+      "mnemotecnia": "Si la llevas de la mano, eres peatón.",
+      "imagen": ""
+    },
+    {
+      "id": "CON-028",
+      "tema": 1,
+      "subtema": "usuarios-de-la-via",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Según la normativa, el concepto de 'conductor' incluye también a...",
+      "opciones": [
+        "quien maneja el mecanismo de dirección de un vehículo o va al mando del mismo, incluida la persona que guía animales en la vía",
+        "solamente quien tiene el permiso de conducir en vigor",
+        "únicamente a los profesionales del transporte"
+      ],
+      "correcta": 0,
+      "explicacion": "El Reglamento amplía 'conductor' más allá del vehículo a motor: también se considera conductor a quien guía o conduce animales por la vía, porque asume responsabilidades similares.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-029",
+      "tema": 1,
+      "subtema": "usuarios-de-la-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Un 'usuario de la vía' es...",
+      "opciones": [
+        "únicamente el titular del vehículo",
+        "toda persona que utiliza la vía: conductores, peatones, pasajeros y demás",
+        "solo los agentes de la autoridad"
+      ],
+      "correcta": 1,
+      "explicacion": "El término 'usuario de la vía' es muy amplio: engloba a cualquiera que la use, vaya a pie, en bici, en coche o como pasajero.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-030",
+      "tema": 1,
+      "subtema": "usuarios-de-la-via",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Los ciclistas, motoristas, peatones, niños, personas mayores o con movilidad reducida se consideran, en conjunto...",
+      "opciones": [
+        "infractores habituales",
+        "usuarios exentos de cumplir el Reglamento",
+        "usuarios vulnerables de la vía"
+      ],
+      "correcta": 2,
+      "explicacion": "Se llama usuarios vulnerables a quienes, en caso de accidente, sufren consecuencias más graves: peatones, ciclistas, motoristas, niños, mayores y personas con movilidad reducida.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-031",
+      "tema": 1,
+      "subtema": "usuarios-de-la-via",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "Un pasajero de un vehículo es...",
+      "opciones": [
+        "la persona transportada en un vehículo que no es su conductor",
+        "siempre el propietario del vehículo",
+        "quien va sentado en el asiento delantero únicamente"
+      ],
+      "correcta": 0,
+      "explicacion": "El pasajero es cualquier ocupante que no conduce, esté delante o detrás, y tiene también obligaciones, como llevar puesto el cinturón.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-032",
+      "tema": 1,
+      "subtema": "usuarios-de-la-via",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "Un usuario de un VMP (patinete eléctrico) que circula por la calzada tiene la consideración de...",
+      "opciones": [
+        "peatón en todo momento",
+        "conductor, con derechos y obligaciones similares a los de otros conductores",
+        "pasajero sin responsabilidad"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuando circula montado y en marcha, el usuario de un VMP es conductor: debe respetar semáforos, prioridades y tasas de alcoholemia, aunque no necesite carnet.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-033",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 2,
+      "esTrampa": false,
+      "pregunta": "La 'parada' de un vehículo se define como...",
+      "opciones": [
+        "dejar el coche aparcado toda la noche en la calle",
+        "cualquier detención impuesta por un semáforo en rojo",
+        "la inmovilización del vehículo durante un tiempo inferior a dos minutos, sin que el conductor lo abandone (salvo excepciones tasadas)"
+      ],
+      "correcta": 2,
+      "explicacion": "La parada es breve (menos de 2 minutos) y el conductor debe quedarse junto al vehículo, salvo para dar paso a otro vehículo o hacer una gestión rápida como carga y descarga.",
+      "mnemotecnia": "Parada: menos de 2 minutos y sin abandonar el coche.",
+      "imagen": ""
+    },
+    {
+      "id": "CON-034",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 3,
+      "esTrampa": false,
+      "pregunta": "Si un conductor deja el vehículo inmovilizado 3 minutos para entrar a comprar el pan, sin nadie dentro, esto se considera...",
+      "opciones": [
+        "estacionamiento, porque supera el tiempo y las condiciones propias de la parada",
+        "parada, porque ha sido una gestión rápida",
+        "detención, porque ha sido una exigencia de la circulación"
+      ],
+      "correcta": 0,
+      "explicacion": "En cuanto se supera el tiempo de la parada o el conductor abandona el vehículo sin justificación tasada, la inmovilización pasa a considerarse estacionamiento, con sus propias normas de zona y señalización.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-035",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "El estacionamiento es...",
+      "opciones": [
+        "siempre una infracción si dura más de una hora",
+        "la inmovilización de un vehículo que no puede considerarse parada",
+        "exclusivo de los vehículos pesados"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuando la inmovilización no cumple los requisitos de la parada (por tiempo o porque el conductor se aleja), hablamos de estacionamiento, sujeto a sus propias normas.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-036",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "La detención de un vehículo se diferencia de la parada y el estacionamiento en que...",
+      "opciones": [
+        "siempre es voluntaria y planificada por el conductor",
+        "solo puede producirse dentro de un garaje",
+        "es una inmovilización forzada por las exigencias de la circulación, como un atasco o la orden de un agente"
+      ],
+      "correcta": 2,
+      "explicacion": "La detención no la decide el conductor: viene impuesta por el tráfico, un semáforo, un agente o un obstáculo. Por eso no se sanciona igual que una parada o un estacionamiento indebidos.",
+      "mnemotecnia": "Detención: te paran las circunstancias, no tú.",
+      "imagen": ""
+    },
+    {
+      "id": "CON-037",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 3,
+      "esTrampa": true,
+      "pregunta": "Un vehículo detenido por un atasco en mitad de un carril, ¿está cometiendo una infracción de estacionamiento?",
+      "opciones": [
+        "No, porque se trata de una detención impuesta por la circulación, no de un estacionamiento voluntario",
+        "Sí, porque todo vehículo parado en la calzada es sancionable",
+        "Sí, salvo que ponga las luces de emergencia"
+      ],
+      "correcta": 0,
+      "explicacion": "La clave está en la voluntariedad: si el vehículo no avanza porque hay un atasco, es una detención obligada por el tráfico, no una parada ni un estacionamiento decididos por el conductor.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-038",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 3,
+      "esTrampa": false,
+      "pregunta": "Como norma general, ¿puede un conductor abandonar brevemente su vehículo durante una parada para hacer una gestión de carga y descarga?",
+      "opciones": [
+        "No, abandonar el vehículo siempre lo convierte en estacionamiento",
+        "Sí, la parada admite ausencias breves justificadas como dar paso a otro vehículo o hacer carga y descarga",
+        "No, está prohibido salvo autorización policial expresa"
+      ],
+      "correcta": 1,
+      "explicacion": "La definición de parada permite alejarse un momento del vehículo solo para dos casos: dejar paso a otro vehículo o realizar operaciones de carga y descarga, siempre que sea rápido.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-039",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 2,
+      "esTrampa": true,
+      "pregunta": "A efectos del Reglamento de Circulación, ¿se considera 'vehículo' a una bicicleta o un VMP?",
+      "opciones": [
+        "No, solo lo son los vehículos con motor",
+        "Sí, pero solo si el usuario es mayor de edad",
+        "Sí, el concepto de vehículo incluye a los ciclos y VMP, aunque no necesiten matrícula ni permiso de conducir"
+      ],
+      "correcta": 2,
+      "explicacion": "El término 'vehículo' es muy amplio y engloba también a bicicletas y VMP, por eso deben respetar semáforos, prioridades y en general las normas de circulación.",
+      "mnemotecnia": "",
+      "imagen": ""
+    },
+    {
+      "id": "CON-040",
+      "tema": 1,
+      "subtema": "conceptos",
+      "dificultad": 1,
+      "esTrampa": false,
+      "pregunta": "¿Cuánto tiempo máximo se admite, como norma general, para que una inmovilización se considere 'parada' y no estacionamiento?",
+      "opciones": [
+        "2 minutos",
+        "10 minutos",
+        "30 minutos"
+      ],
+      "correcta": 0,
+      "explicacion": "El límite de referencia son 2 minutos sin abandonar el vehículo (salvo las excepciones ya vistas). Superado ese tiempo, pasa a ser estacionamiento.",
+      "mnemotecnia": "2 minutos y sigues al volante: eso es parada.",
+      "imagen": ""
+    }
+  ]
+}

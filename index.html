@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <title>Carnet Quest · Aprueba la teórica del coche en 21 días</title>
+  <meta name="description" content="El videojuego para aprobar la teórica del carnet de coche (DGT, permiso B) en 21 días jugando 15 minutos al día. Repetición espaciada, simulacros y modo examen real.">
+  <meta name="theme-color" content="#0e1220">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%97%3C/text%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Carnet Quest">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-logo">🚗</div>
+    <div class="spin"></div>
+    <div class="loader-txt">Cargando Carnet Quest…</div>
+  </div>
+
+  <main id="app"></main>
+
+  <!-- Módulos (orden de dependencia) -->
+  <script src="js/contenido.js"></script>
+  <script src="js/senales.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/banco.js"></script>
+  <script src="js/motor-repaso.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/mezclador.js"></script>
+  <script src="js/gamification.js"></script>
+  <script src="js/juice.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
