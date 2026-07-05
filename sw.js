@@ -1,7 +1,7 @@
 /* sw.js — Service Worker: PWA offline-first para Carnet Quest.
    Cachea el "app shell" + los datos. Estrategia: cache-first con
    actualización en segundo plano (stale-while-revalidate) para los JSON. */
-var VERSION = 'carnetquest-v1';
+var VERSION = 'carnetquest-v2';
 var CORE = [
   './',
   './index.html',
@@ -15,6 +15,8 @@ var CORE = [
   './js/mezclador.js',
   './js/gamification.js',
   './js/juice.js',
+  './js/aventura.js',
+  './js/conduccion.js',
   './js/app.js',
   './manifest.webmanifest'
 ];

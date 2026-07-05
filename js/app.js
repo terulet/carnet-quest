@@ -26,6 +26,7 @@
       $('#loader').classList.add('oculto');
       window.addEventListener('hashchange', router);
       router();
+      if (!Store.state.viajeIntro) setTimeout(mostrarIntro, 500);
     }).catch(function (e) {
       $('#loader').innerHTML = '<p style="color:#fff;padding:2rem">No se pudo cargar el contenido. Recarga la página.</p>';
       console.error(e);
@@ -105,10 +106,10 @@
       '</div>' +
 
       '<div class="grid2">' +
-      '<button class="card mini" data-accion="pildora" data-tema="' + temaActual + '"><span>📖</span>Píldora de teoría</button>' +
+      '<a class="card mini" href="#/mapa"><span>🗺️</span>El Gran Viaje</a>' +
+      '<button class="card mini" data-accion="conduccion" data-tema="0"><span>🏎️</span>Modo Conducción</button>' +
       '<button class="card mini" data-accion="repaso"><span>🔁</span>Repaso inteligente</button>' +
-      '<a class="card mini" href="#/modos"><span>🎮</span>Modos de juego</a>' +
-      '<a class="card mini" href="#/plan"><span>📅</span>Plan de 21 días</a>' +
+      '<a class="card mini" href="#/modos"><span>🎮</span>Más modos</a>' +
       '</div>' +
 
       progresoSimulacros() +
@@ -130,29 +131,39 @@
     }).join('') + (listo ? '<p class="listo">🥇 ¡Estás LISTO para el examen real!</p>' : '') + '</div>';
   }
 
-  // ================= MAPA DE MUNDOS =================
+  // ================= EL GRAN VIAJE (mapa aventura) =================
+  function desbloqueadoMundo(num) {
+    return num === 1 || bossPasado(num - 1) || Radar.dominioTema(num - 1) >= 0.6;
+  }
+  function estrellasMundo(num) {
+    var w = Store.state.worlds[num] || {}; var d = Radar.dominioTema(num);
+    return w.boss ? '⭐⭐⭐' : d >= 0.5 ? '⭐⭐' : d > 0 ? '⭐' : '';
+  }
+
   function pantallaMapa() {
-    var html = '<div class="screen mapa">' + cabeceraXP() +
-      '<div class="pad"><h1 class="titp">🗺️ Mapa de mundos</h1>' +
-      '<p class="sub">15 mundos, del principiante a la leyenda del asfalto.</p>' +
-      '<div class="mundos">';
-    for (var i = 0; i < MUNDOS.length; i++) {
-      var m = MUNDOS[i];
-      var d = Radar.dominioTema(m.num);
-      var w = Store.state.worlds[m.num] || {};
-      var desbloq = i === 0 || bossPasado(MUNDOS[i - 1].num) || Radar.dominioTema(MUNDOS[i - 1].num) >= 0.6;
-      var estrellas = w.boss ? '⭐⭐⭐' : d >= 0.5 ? '⭐⭐' : d > 0 ? '⭐' : '';
-      html += '<a class="mundo' + (desbloq ? '' : ' lock') + (w.boss ? ' done' : '') + '" ' +
-        (desbloq ? 'href="#/mundo/' + m.num + '"' : '') + ' style="--acc:' + m.color + '">' +
-        '<span class="mnum">' + m.num + '</span>' +
-        '<span class="memo">' + (desbloq ? m.emoji : '🔒') + '</span>' +
-        '<span class="mname">' + esc(m.nombre) + '</span>' +
-        '<span class="mstar">' + estrellas + '</span>' +
-        '<span class="mbar"><i style="width:' + pct(d) + '%;background:' + m.color + '"></i></span>' +
-        '</a>';
-    }
-    html += '</div></div>' + navBar('mapa') + '</div>';
+    var current = temaDeHoy();
+    var et = Aventura.etapa(current);
+    var html = '<div class="screen viaje">' + cabeceraXP() +
+      '<div class="viaje-top">' +
+      '<div class="profe">🧑‍🏫</div>' +
+      '<div class="bocadillo"><b>Etapa ' + current + ': ' + esc(et.lugar) + '</b><p>' + esc(et.historia) + '</p></div>' +
+      '</div>' +
+      '<div id="viajeHost" class="viaje-host"></div>' +
+      navBar('mapa') + '</div>';
     render(html);
+
+    var host = document.getElementById('viajeHost');
+    var lastSeen = Store.state.viajeLastSeen || current;
+    Aventura.buildMapa(host, MUNDOS, {
+      current: current,
+      lastSeen: lastSeen,
+      desbloqueado: desbloqueadoMundo,
+      estrellas: estrellasMundo,
+      onNode: function (num) { ir('#/mundo/' + num); },
+      onArrive: function () { Store.state.viajeLastSeen = current; Store.save(); }
+    });
+    var nodo = host.querySelector('.viaje-nodo[data-num="' + current + '"]');
+    if (nodo) setTimeout(function () { nodo.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 250);
   }
 
   // ================= DETALLE DE MUNDO =================
@@ -174,19 +185,27 @@
         '</div>';
     }
 
+    var et = Aventura.etapa(num);
+    var jf = Aventura.jefe(num);
     var html = '<div class="screen mundo-d" style="--acc:' + m.color + '">' +
-      '<header class="topbar sub"><a class="back" href="#/mapa">‹</a><b>' + m.emoji + ' ' + esc(m.nombre) + '</b></header>' +
+      '<header class="topbar sub"><a class="back" href="#/mapa">‹</a><b>' + m.emoji + ' ' + esc(et.lugar) + '</b></header>' +
       '<div class="pad">' +
-      '<div class="card hero-mundo"><p class="lema">' + esc(m.lema) + '</p>' +
+      '<div class="card hero-mundo"><small class="etq">Etapa ' + num + ' · ' + esc(m.nombre) + '</small><p class="lema">' + esc(m.lema) + '</p>' +
       '<div class="mbar big"><i style="width:' + pct(d) + '%;background:' + m.color + '"></i></div>' +
       '<small>' + pct(d) + '% dominado · ' + nQ + ' preguntas</small></div>' +
 
       '<h3>Niveles</h3>' + niveles +
 
-      '<button class="btn boss" data-accion="boss" data-tema="' + num + '">👹 BOSS del mundo · 15 preguntas (≥80%)' +
-      (w.boss ? ' ✅' : '') + '</button>' +
+      '<div class="card boss-card' + (w.boss ? ' vencido' : '') + '">' +
+      '<div class="boss-cara">' + jf.cara + '</div>' +
+      '<div class="boss-info"><small>JEFE DE LA ETAPA</small><b>' + esc(jf.nombre) + '</b>' +
+      '<p>"' + esc(w.boss ? jf.muerte : jf.taunt) + '"</p></div>' +
+      '</div>' +
+      '<button class="btn boss" data-accion="boss" data-tema="' + num + '">' +
+      (w.boss ? '⚔️ Revancha contra ' + esc(jf.nombre) : '⚔️ ¡Batalla con ' + esc(jf.nombre) + '!') + '</button>' +
 
       '<button class="btn line trap" data-accion="trampasMundo" data-tema="' + num + '">⚠️ Las trampas del examen</button>' +
+      '<button class="btn line" data-accion="conduccion" data-tema="' + num + '">🏎️ Modo Conducción (reacciona a señales)</button>' +
 
       '</div>' + navBar('mapa') + '</div>';
     render(html);
@@ -247,7 +266,10 @@
       trampasSeguidas: 0,
       xpTotal: 0,
       tRestante: cfg.tiempoTotalSeg || 0,
-      timer: null
+      timer: null,
+      // batalla contra jefe
+      needed: cfg.boss ? Math.ceil(cfg.preguntas.length * 0.8) : 0,
+      maxWrong: cfg.boss ? (cfg.preguntas.length - Math.ceil(cfg.preguntas.length * 0.8)) : 0
     };
     if (!quiz.preguntas || !quiz.preguntas.length) { alert('No hay preguntas disponibles para este modo todavía.'); ir('#/'); return; }
     if (cfg.tiempoTotalSeg) arrancarTimer();
@@ -266,6 +288,7 @@
   function pintarPregunta() {
     var q = quiz, cfg = q.cfg, p = q.preguntas[q.i];
     q.respondida = false;
+    window.__cq = { correct: p.correcta, id: p.id }; // hook de prueba (inofensivo)
     var progreso = ((q.i) / q.preguntas.length) * 100;
     var imgHtml = p.imagen ? '<div class="q-img">' + Senales.get(p.imagen) + '</div>' : '';
     var timerHtml = cfg.tiempoTotalSeg ? '<span id="timer" class="qtimer">' + fmtTiempo(q.tRestante) + '</span>' : '';
@@ -276,10 +299,13 @@
       return '<button class="opcion" data-op="' + idx + '"><span class="oplabel">' + String.fromCharCode(65 + idx) + '</span>' + esc(o) + '</button>';
     }).join('');
 
-    var html = '<div class="screen quiz ' + (cfg.sobrio ? 'sobrio' : '') + '">' +
+    var bossHud = cfg.boss ? bossHudHTML() : '';
+
+    var html = '<div class="screen quiz ' + (cfg.sobrio ? 'sobrio' : '') + (cfg.boss ? ' batalla' : '') + '">' +
       '<header class="qbar"><button class="back" data-accion="salirQuiz">✕</button>' +
       '<div class="qprog"><i style="width:' + progreso + '%"></i></div>' +
       '<span class="qcount">' + (q.i + 1) + '/' + q.preguntas.length + '</span>' + timerHtml + '</header>' +
+      bossHud +
       '<div class="pad quiz-body">' +
       '<div class="qmeta">' + esc(cfg.titulo || '') + ' ' + badges + '</div>' +
       imgHtml +
@@ -288,6 +314,30 @@
       '<div class="feedback" id="feedback"></div>' +
       '</div></div>';
     render(html);
+  }
+
+  // HUD de batalla contra el jefe
+  function corazonesBoss() {
+    var c = '';
+    for (var i = 0; i < quiz.maxWrong; i++) c += (i < quiz.maxWrong - quiz.fallos) ? '❤️' : '🤍';
+    return c || '❤️';
+  }
+  function bossHudHTML() {
+    var jf = quiz.cfg.boss.jefe;
+    var hpPct = Math.max(0, Math.min(100, Math.round((1 - quiz.aciertos / quiz.needed) * 100)));
+    return '<div class="boss-hud">' +
+      '<div class="bh-cara" id="bhCara">' + jf.cara + '</div>' +
+      '<div class="bh-bars"><b>' + esc(jf.nombre) + '</b>' +
+      '<div class="bh-hp"><i id="bhHp" style="width:' + hpPct + '%"></i></div>' +
+      '<div class="bh-hearts" id="bhHearts">' + corazonesBoss() + '</div></div></div>';
+  }
+  function updateBossHUD(acierto) {
+    var hp = document.getElementById('bhHp');
+    if (hp) hp.style.width = Math.max(0, Math.min(100, Math.round((1 - quiz.aciertos / quiz.needed) * 100))) + '%';
+    var hearts = document.getElementById('bhHearts');
+    if (hearts) hearts.innerHTML = corazonesBoss();
+    var cara = document.getElementById('bhCara');
+    if (cara) { cara.classList.remove('golpe', 'ataca'); void cara.offsetWidth; cara.classList.add(acierto ? 'golpe' : 'ataca'); }
   }
 
   function responder(opIdx) {
@@ -312,9 +362,13 @@
       if (!cfg.sobrio) Juice.fallo();
     }
 
+    if (cfg.boss) updateBossHUD(acierto);
+
     // Muerte súbita
     if (cfg.muerteSubita && !acierto) { pintarSolucion(opIdx, p, acierto, cfg, true); return; }
-    pintarSolucion(opIdx, p, acierto, cfg, false);
+    // Batalla: victoria (jefe sin vida) o derrota (sin corazones) anticipadas
+    var bossEnd = cfg.boss && (q.aciertos >= q.needed || q.fallos > q.maxWrong);
+    pintarSolucion(opIdx, p, acierto, cfg, bossEnd);
   }
 
   function pintarSolucion(opIdx, p, acierto, cfg, finPorMuerte) {
@@ -366,7 +420,7 @@
     if (cfg.modo === 'nivel') {
       marcarNivel(cfg.tema, cfg.lvl);
     } else if (cfg.modo === 'boss') {
-      var passBoss = (q.aciertos / q.preguntas.length) >= 0.8;
+      var passBoss = q.aciertos >= (q.needed || Math.ceil(q.preguntas.length * 0.8));
       if (passBoss) marcarBoss(cfg.tema);
       ctxLogros.bossPasado = passBoss;
       resultado.aprobado = passBoss;
@@ -386,7 +440,14 @@
 
   function pantallaResultado(r, cfg, logros) {
     var bueno = true, titulo = '¡Sesión completada!';
-    if (cfg.modo === 'boss') { bueno = r.aprobado; titulo = r.aprobado ? '👹 ¡BOSS derrotado!' : '👹 El boss aguanta...'; }
+    var bossBloque = '';
+    if (cfg.modo === 'boss') {
+      bueno = r.aprobado;
+      var jf = cfg.boss.jefe;
+      titulo = r.aprobado ? '⚔️ ¡' + jf.nombre + ' derrotado!' : '🛡️ ' + jf.nombre + ' resiste...';
+      bossBloque = '<div class="boss-final ' + (bueno ? 'win' : 'lose') + '"><div class="bf-cara">' + jf.cara + '</div>' +
+        '<p>"' + esc(bueno ? jf.muerte : jf.taunt) + '"</p></div>';
+    }
     if (cfg.modo === 'simulacro' || cfg.modo === 'examen') { bueno = r.aprobado; titulo = r.aprobado ? '🎉 ¡APROBADO!' : '📋 Simulacro completado'; }
     if (cfg.modo === 'muerte-subita') { titulo = '💀 Muerte súbita'; }
 
@@ -403,8 +464,9 @@
 
     var html = '<div class="screen resultado">' +
       '<div class="pad res-body">' +
-      '<div class="res-emoji">' + (bueno ? '🏆' : '💪') + '</div>' +
+      (cfg.modo === 'boss' ? '' : '<div class="res-emoji">' + (bueno ? '🏆' : '💪') + '</div>') +
       '<h1>' + titulo + '</h1>' +
+      bossBloque +
       '<div class="res-score"><b>' + r.aciertos + '</b> / ' + r.total + '</div>' +
       '<p class="sub">' + r.fallos + ' fallo' + (r.fallos === 1 ? '' : 's') + ' · +' + r.xp + ' XP</p>' +
       (cfg.modo === 'simulacro' || cfg.modo === 'examen'
@@ -523,6 +585,7 @@
     var semana3 = diaDelPlan() >= 15 || Store.state.simulacros.length >= 1;
     var html = '<div class="screen modos">' + cabeceraXP() +
       '<div class="pad"><h1 class="titp">🎮 Modos de juego</h1>' +
+      modoCard('🏎️', 'Modo Conducción', 'Conduce, esquiva y métete en el carril correcto según la señal. ¡Reacción real!', 'conduccion') +
       modoCard('📋', 'Simulacro completo', '30 preguntas, 30 min, máx 3 fallos. Como el examen real.', 'simulacro') +
       modoCard('🎓', 'Modo Examen Real', 'Interfaz sobria, cronómetro, sin ayudas.' + (semana3 ? '' : ' 🔒 Se desbloquea en la semana 3.'), semana3 ? 'examen' : 'lock') +
       modoCard('⚡', 'Contrarreloj de señales', 'Blitz: identifica señales a toda pastilla.', 'blitz') +
@@ -593,8 +656,34 @@
       preguntas: Mezclador.shuffle(venc).slice(0, 10), feedbackInmediato: true, mostrarTrampa: true });
   }
   function lanzarBoss(tema) {
-    iniciarQuiz({ modo: 'boss', tema: tema, titulo: 'BOSS: ' + MUNDOS[tema - 1].nombre,
+    var jf = Aventura.jefe(tema);
+    iniciarQuiz({ modo: 'boss', tema: tema, titulo: '⚔️ ' + jf.nombre,
+      boss: { jefe: jf },
       preguntas: Mezclador.porTema(tema, 15), feedbackInmediato: true, mostrarTrampa: false });
+  }
+
+  // ================= MODO CONDUCCIÓN (minijuego arcade) =================
+  function lanzarConduccion(tema) {
+    cerrarQuiz();
+    render('<div class="screen cond-host" id="condHost"></div>');
+    var host = document.getElementById('condHost');
+    Conduccion.start(host, {
+      onEnd: function (r) {
+        if (r.salir) { ir('#/'); router(); return; }
+        var bonus = Math.floor(r.score / 10);
+        if (bonus > 0) Gamif.ganarXP(bonus);
+        var logros = Gamif.revisarLogros({});
+        var html = '<div class="screen resultado"><div class="pad res-body">' +
+          '<div class="res-emoji">🏎️</div><h1>¡Buen viaje!</h1>' +
+          '<div class="res-score"><b>' + r.score + '</b> pts</div>' +
+          '<p class="sub">' + r.gatesOK + ' señales correctas · ' + r.dist + ' m recorridos · +' + bonus + ' XP</p>' +
+          '<div class="res-acc"><button class="btn big" data-accion="home">Continuar</button>' +
+          '<button class="btn line" data-accion="conduccion" data-tema="' + (tema || 0) + '">🔁 Otra vuelta</button></div>' +
+          '</div></div>';
+        render(html);
+        if (logros && logros.length) setTimeout(function () { mostrarLogros(logros); }, 700);
+      }
+    });
   }
   function lanzarSimulacro() {
     iniciarQuiz({ modo: 'simulacro', titulo: 'Simulacro DGT',
@@ -620,6 +709,31 @@
   }
 
   function cerrarQuiz() { if (quiz && quiz.timer) clearInterval(quiz.timer); quiz = null; }
+
+  // ---------- Intro narrativa (primera vez) ----------
+  function mostrarIntro() {
+    var paneles = [
+      { cara: '🧑‍🏫', txt: '¡Bienvenido, futuro conductor! Soy el Profe. Voy a llevarte de cero hasta aprobar la teórica de la DGT.' },
+      { cara: '🗺️', txt: 'Haremos un GRAN VIAJE por España: 15 etapas, del pueblo a la gran ciudad. En cada una aprendes una parte del temario.' },
+      { cara: '⚔️', txt: 'Al final de cada etapa te espera un JEFE. Derrótalo respondiendo bien y desbloquea el camino.' },
+      { cara: '🏁', txt: '15-20 min al día y en 21 días estarás listo. ¿Arrancamos motor?' }
+    ];
+    var i = 0;
+    function panel() {
+      var p = paneles[i];
+      var ov = el('<div class="overlay intro"><div class="pop intro-pop">' +
+        '<div class="popemo">' + p.cara + '</div><p class="intro-txt">' + esc(p.txt) + '</p>' +
+        '<div class="intro-dots">' + paneles.map(function (_, k) { return '<span class="' + (k === i ? 'on' : '') + '"></span>'; }).join('') + '</div>' +
+        '<button class="btn" data-intro-next>' + (i < paneles.length - 1 ? 'Siguiente ›' : '¡Vamos! 🚗') + '</button></div></div>');
+      document.body.appendChild(ov);
+      ov.querySelector('[data-intro-next]').addEventListener('click', function () {
+        ov.remove(); i++;
+        if (i < paneles.length) panel();
+        else { Store.state.viajeIntro = true; Store.save(); }
+      });
+    }
+    panel();
+  }
 
   // ---------- Overlay de logros ----------
   function mostrarLogros(logros) {
@@ -653,6 +767,7 @@
       case 'pildora': return pantallaPildora(tema, lvl);
       case 'repaso': return lanzarRepaso();
       case 'boss': return lanzarBoss(tema);
+      case 'conduccion': return lanzarConduccion(tema);
       case 'trampasMundo': return pantallaTrampas(tema);
       case 'entrenarTrampas': return lanzarTrampas(tema);
       case 'trampasGlobal': return lanzarTrampas(0);
