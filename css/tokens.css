@@ -1,0 +1,81 @@
+/* CARNET QUEST — tokens "Señal Neón" (§9)
+   GTA loading screen × señalización vial española × noche de neón */
+
+@font-face {
+  font-family: 'Anton';
+  src: url('../fonts/anton-latin.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/overpass-latin-var.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  /* color */
+  --asfalto-950: #06080C;
+  --asfalto-900: #0B0D12;   /* fondo */
+  --asfalto-800: #10141D;
+  --asfalto-700: #161A26;   /* cards */
+  --asfalto-600: #1F2534;
+  --asfalto-500: #2A3145;
+  --linea-blanca: #F4F6FB;  /* texto */
+  --linea-gris: #9AA3B8;    /* texto secundario */
+  --linea-tenue: #5A6378;
+  --senal-rojo: #E2001A;    /* error / prohibición */
+  --senal-rojo-vivo: #FF3B4E;
+  --senal-azul: #0055B8;    /* info / obligación */
+  --senal-azul-vivo: #2E86FF;
+  --senal-verde: #007A3D;   /* acierto / autovía */
+  --senal-verde-vivo: #00C464;
+  --amarillo-obras: #FFC800;/* rachas, Chapas, avisos */
+  --neon-magenta: #FF2D78;  /* acento GTA */
+  --neon-cian: #00E5FF;     /* acento GTA */
+
+  /* glows */
+  --glow-cian: 0 0 12px rgba(0, 229, 255, .45), 0 0 32px rgba(0, 229, 255, .18);
+  --glow-magenta: 0 0 12px rgba(255, 45, 120, .5), 0 0 32px rgba(255, 45, 120, .2);
+  --glow-verde: 0 0 12px rgba(0, 196, 100, .45), 0 0 28px rgba(0, 196, 100, .18);
+  --glow-rojo: 0 0 12px rgba(226, 0, 26, .5), 0 0 28px rgba(226, 0, 26, .22);
+  --glow-amarillo: 0 0 10px rgba(255, 200, 0, .5), 0 0 26px rgba(255, 200, 0, .2);
+
+  /* tipografía */
+  --font-display: 'Anton', 'Arial Narrow', 'Helvetica Neue Condensed', sans-serif;
+  --font-ui: 'Overpass', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fs-hero: clamp(2.1rem, 9vw, 3.2rem);
+  --fs-h1: clamp(1.5rem, 6.5vw, 2.1rem);
+  --fs-h2: 1.25rem;
+  --fs-body: 1rem;
+  --fs-small: .84rem;
+  --fs-tiny: .72rem;
+
+  /* espaciado y forma */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-8: 32px; --sp-10: 40px;
+  --radio-s: 10px;
+  --radio-m: 16px;
+  --radio-l: 22px;
+  --borde-senal: 3px;      /* borde grueso tipo señal */
+  --tap-min: 48px;         /* zona táctil mínima */
+
+  /* sombras */
+  --sombra-card: 0 4px 14px rgba(0, 0, 0, .45), 0 1px 3px rgba(0, 0, 0, .5);
+  --sombra-flotante: 0 12px 40px rgba(0, 0, 0, .6);
+
+  /* movimiento */
+  --ease-pop: cubic-bezier(.2, 1.6, .35, 1);
+  --ease-out: cubic-bezier(.22, .9, .3, 1);
+  --dur-tap: 90ms;
+  --dur-corta: 180ms;
+  --dur-media: 320ms;
+  --dur-larga: 550ms;
+
+  /* safe areas iOS */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  color-scheme: dark;
+}

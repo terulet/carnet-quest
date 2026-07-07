@@ -1,0 +1,1325 @@
+[
+ {
+  "id": "M07-001",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Como norma general, ¿por qué lado debes adelantar a otro vehículo?",
+  "imagen": null,
+  "opciones": [
+   "Por la izquierda del vehículo que quieres adelantar.",
+   "Por la derecha, que es donde suele quedar más hueco.",
+   "Por el lado que tenga el carril más ancho."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "La norma general es clarísima: se adelanta por la izquierda. La derecha queda reservada para excepciones muy concretas.",
+  "truco": "Izquierda de serie; la derecha solo viene en el pack de excepciones (tranvía central y giro a la izquierda).",
+  "trampa": "El hueco no decide nada: aunque a la derecha haya sitio de sobra, la norma general te manda por la izquierda.",
+  "tags": [
+   "norma-general",
+   "adelantar-izquierda"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-002",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "El coche que te precede señaliza con el intermitente su intención de girar a la izquierda y se ciñe al centro de la calzada. ¿Puedes pasarlo?",
+  "imagen": null,
+  "opciones": [
+   "No, debes esperar detrás a que complete el giro.",
+   "Sí, por la derecha, si queda espacio suficiente para hacerlo con seguridad.",
+   "Sí, por la izquierda, aprovechando que se aparta hacia ese lado."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Es una de las excepciones a la norma general: al que se prepara para girar a la izquierda se le rebasa por la derecha si cabe la maniobra con seguridad.",
+  "truco": "Si él se va a la izquierda, tú por la derecha: intercambio de sitios y todos contentos.",
+  "trampa": "Pasarlo por la izquierda suena a norma general, pero te mete de lleno en la trayectoria de su giro: aquí la opción de siempre es la peligrosa.",
+  "tags": [
+   "adelantar-derecha",
+   "giro-izquierda"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-003",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Un tranvía circula por la zona central de la calzada. ¿Por dónde debes adelantarlo?",
+  "imagen": null,
+  "opciones": [
+   "Por la izquierda, como a cualquier otro vehículo.",
+   "A un tranvía no se le puede adelantar nunca.",
+   "Por la derecha."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Al tranvía que marcha por la zona central se le adelanta por la derecha: es la excepción clásica a la norma general.",
+  "truco": "El tranvía va por el medio, así que lo esquivas por fuera: por tu derecha.",
+  "trampa": "El «por la izquierda, como siempre» pica porque es la norma general, pero cruzarte al otro lado de las vías es justo lo que se quiere evitar.",
+  "tags": [
+   "adelantar-derecha",
+   "tranvia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-004",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Vía urbana con dos carriles por sentido y tráfico denso: tu carril avanza más deprisa que el de la izquierda. ¿Estás adelantando por la derecha de forma antirreglamentaria?",
+  "imagen": null,
+  "opciones": [
+   "No: con circulación congestionada, que un carril avance más rápido que otro no se considera adelantamiento.",
+   "Sí, y deberías frenar para no rebasar a nadie.",
+   "Sí, salvo que lleves el intermitente puesto todo el rato."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Cuando la densidad del tráfico hace que los vehículos ocupen todos los carriles al ritmo que les marca el de delante, cada fila lleva su velocidad y eso no cuenta como adelantar.",
+  "truco": "En atasco no adelantas a nadie: simplemente tu fila va mejor que la de al lado.",
+  "trampa": "Suena a «adelantar por la derecha prohibido», pero la norma excluye expresamente el avance entre carriles en circulación densa.",
+  "tags": [
+   "congestion",
+   "via-urbana",
+   "adelantar-derecha"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-005",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "¿En cuál de estos casos está permitido rebasar a otro vehículo por su derecha?",
+  "imagen": null,
+  "opciones": [
+   "Siempre que circules por autopista.",
+   "Cuando ha señalizado su desplazamiento a la izquierda para girar y queda espacio suficiente.",
+   "Cuando el de delante circula despacio sin motivo aparente."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Por la derecha solo se pasa en las excepciones: vehículo preparado para girar a la izquierda o tranvía que marcha por la zona central.",
+  "truco": "Derecha solo con invitación: tranvía por el centro o giro a la izquierda señalizado.",
+  "trampa": "La autopista tienta porque «allí todo el mundo lo hace», pero adelantar por la derecha sigue prohibido también en autopista.",
+  "tags": [
+   "adelantar-derecha",
+   "excepciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-006",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "En ciudad circulas por el carril derecho de una calzada con dos carriles en tu sentido, delimitados por marcas viales, y vas pasando a coches del carril izquierdo. ¿Cometes infracción?",
+  "imagen": null,
+  "opciones": [
+   "Sí: adelantar por la derecha está prohibido también dentro de poblado.",
+   "Solo si los rebasas a más de 50 km/h.",
+   "No: en poblado, con varios carriles por sentido delimitados, puedes usar el carril que mejor convenga a tu destino."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Dentro de poblado, en calzadas con al menos dos carriles por sentido marcados, cada conductor elige el carril que le conviene, y avanzar más rápido por el derecho no es adelantamiento antirreglamentario.",
+  "truco": "En ciudad, con carriles pintados, cada uno a su carril y sin dramas.",
+  "trampa": "Aplicar la regla de carretera («por la derecha jamás») a la ciudad es el fallo típico: en poblado con varios carriles la lógica cambia.",
+  "explicacion_larga": "Fuera de poblado rige la disciplina de carril: circula por el derecho y usa el izquierdo para adelantar, volviendo en cuanto puedas. Pero dentro de poblado, cuando la calzada tiene al menos dos carriles para tu sentido delimitados por marcas longitudinales, la norma te permite escoger el carril que mejor convenga a tu destino y mantenerte en él. Por eso, que tu carril derecho ruede más deprisa que el izquierdo no convierte tu avance en un adelantamiento ilegal. Eso sí: los cambios de carril siguen exigiendo señalización y ceder el paso a quien ya circula por el carril al que te mueves.",
+  "tags": [
+   "via-urbana",
+   "adelantar-derecha",
+   "carriles"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-007",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "En una carretera convencional, el vehículo que te precede circula muy pegado al eje de la calzada. ¿Puedes adelantarlo por la derecha usando el arcén?",
+  "imagen": null,
+  "opciones": [
+   "No: el arcén no es para adelantar y esa maniobra está prohibida.",
+   "Sí, si el arcén es ancho y está limpio.",
+   "Sí, pero solo a menos de 40 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Que el otro vaya mal colocado no te habilita a nada: el turismo no circula por el arcén y el adelantamiento por la derecha solo cabe en sus excepciones.",
+  "truco": "El arcén es el pasillo de emergencia, no el carril rápido.",
+  "trampa": "El «arcén ancho y limpio» tienta porque físicamente cabes, pero legalmente sigues adelantando por la derecha y encima fuera de la calzada.",
+  "tags": [
+   "arcen",
+   "adelantar-derecha"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-008",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Vas a iniciar un adelantamiento. ¿Cómo adviertes tu intención al resto de conductores?",
+  "imagen": null,
+  "opciones": [
+   "Con una ráfaga larga de luces, en cualquier tipo de vía.",
+   "Señalizando con el intermitente izquierdo con la antelación suficiente.",
+   "No hace falta avisar si el carril contrario está libre."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Toda maniobra de adelantamiento se advierte con el intermitente izquierdo y con antelación, haya o no tráfico a la vista.",
+  "truco": "RSM: Retrovisor, Señal, Maniobra. Siempre en ese orden, como el abecedario.",
+  "trampa": "Las señales ópticas o acústicas son un aviso extra que puedes usar fuera de poblado, pero nunca sustituyen al intermitente.",
+  "tags": [
+   "fase-antes",
+   "senalizacion-maniobra"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-009",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Por el retrovisor ves que el coche de detrás ya se ha lanzado a adelantarte. ¿Puedes iniciar a la vez tu propio adelantamiento a un tercero?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si tu coche es más rápido que el suyo.",
+   "Sí, siempre que pongas el intermitente antes que él.",
+   "No: tienes prohibido iniciarlo mientras otro te está adelantando a ti."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Antes de salir debes comprobar que ningún vehículo de detrás ha iniciado ya un adelantamiento sobre ti; si lo ha hecho, te toca esperar.",
+  "truco": "En el adelantamiento hay cola: el que ya salió de su carril va primero.",
+  "trampa": "El intermitente no reparte preferencias: avisar antes no te da derecho a cortarle la maniobra al que ya está en el carril contrario.",
+  "tags": [
+   "fase-antes",
+   "preferencia-adelantamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-010",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "El vehículo que te precede en tu mismo carril señaliza que va a desplazarse a la izquierda para adelantar a un camión. ¿Quién tiene preferencia para ocupar el carril contrario?",
+  "imagen": null,
+  "opciones": [
+   "Él: va delante y ya ha advertido su propósito de adelantar.",
+   "Tú, si llegas lanzado con bastante más velocidad.",
+   "El camión, por ser el vehículo de mayor tamaño."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Tampoco puedes iniciar tu adelantamiento cuando el que te precede en tu carril ya ha señalizado su desplazamiento a la izquierda.",
+  "truco": "Delante y con intermitente puesto: su ficha estaba sobre la mesa antes que la tuya.",
+  "trampa": "La velocidad no compra preferencias: llegar más rápido por detrás es justo lo que provoca los accidentes de triple fila.",
+  "tags": [
+   "fase-antes",
+   "preferencia-adelantamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-011",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Antes de lanzarte a adelantar en una carretera de doble sentido, respecto del carril contrario debes comprobar que…",
+  "imagen": null,
+  "opciones": [
+   "hay al menos 50 metros libres por delante.",
+   "está libre en una distancia suficiente para completar toda la maniobra sin entorpecer a quien venga de frente.",
+   "no se acerca ningún camión, aunque vengan turismos."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "No hay una cifra mágica: necesitas carril contrario libre para toda la maniobra, con margen para no poner en peligro ni molestar a nadie.",
+  "truco": "No midas metros sueltos: mide la maniobra entera más un colchón de propina.",
+  "trampa": "Los «50 metros» suenan a dato oficial de examen, pero son un número inventado: la referencia legal es que quepa la maniobra completa.",
+  "tags": [
+   "fase-antes",
+   "espacio-suficiente"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-012",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Miras los tres retrovisores y no ves a nadie detrás. ¿Es comprobación suficiente para cambiar de carril e iniciar el adelantamiento?",
+  "imagen": null,
+  "opciones": [
+   "Sí: para eso están precisamente los espejos.",
+   "Sí, siempre que además lleves el intermitente tres segundos puestos.",
+   "No: los espejos dejan ángulos muertos, así que conviene añadir un vistazo rápido lateral."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Los retrovisores no cubren todo el perímetro del coche: una moto puede viajar escondida en tu ángulo muerto justo cuando decides salir.",
+  "truco": "Espejo limpio no es carril limpio: giro corto de cabeza y luego sales.",
+  "trampa": "El «para eso están los espejos» pica porque es verdad a medias: están para eso, pero no llegan a todo.",
+  "explicacion_larga": "Todo vehículo tiene zonas que los retrovisores no alcanzan: los ángulos muertos, situados en diagonal hacia atrás a ambos lados. Un motorista o un coche que ya haya iniciado su adelantamiento puede estar exactamente ahí mientras tus tres espejos te dicen que no hay nadie. Por eso la comprobación completa antes de cambiar de carril es: retrovisores interior y exterior izquierdo, un vistazo rápido por encima del hombro hacia el lado al que te mueves, señalización con antelación y, solo entonces, el desplazamiento. Un giro de cabeza de medio segundo evita el susto más clásico de la carretera.",
+  "tags": [
+   "fase-antes",
+   "angulo-muerto",
+   "retrovisores"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-013",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Mientras adelantas a otro turismo debes…",
+  "imagen": null,
+  "opciones": [
+   "dejar una separación lateral de seguridad respecto a él.",
+   "pegarte a su costado para acortar la maniobra.",
+   "avisarle con el claxon de forma continua."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Durante el rebase hay que mantener una separación lateral suficiente con el vehículo adelantado.",
+  "truco": "Adelantar no es rozar: aire entre coches, siempre.",
+  "trampa": "«Pegarse para acortar» parece eficiencia, pero cualquier bandazo del otro se convierte en chapa y pintura, o algo peor.",
+  "tags": [
+   "fase-durante",
+   "separacion-lateral"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-014",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "¿Cómo debe ejecutarse la fase de rebase durante un adelantamiento?",
+  "imagen": null,
+  "opciones": [
+   "Muy despacio, para controlar mejor la situación.",
+   "Con decisión y en el menor tiempo posible, sin superar los límites de velocidad.",
+   "Acelerando sin límite hasta terminar la maniobra."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El adelantamiento se hace con decisión: cuanto menos tiempo pases en el carril contrario, menos riesgo para todos.",
+  "truco": "En el carril contrario eres un invitado: entra, haz lo tuyo y vete pronto.",
+  "trampa": "El «despacio es más seguro» funciona casi siempre en conducción, pero aquí alarga tu estancia en el carril de los que vienen de frente.",
+  "tags": [
+   "fase-durante",
+   "decision"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-015",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "A mitad de un adelantamiento ves que un vehículo se aproxima de frente y no te da tiempo a terminar. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Acelerar a fondo aunque superes el límite de velocidad.",
+   "Hacerle luces al que viene para que se aparte al arcén.",
+   "Desistir de la maniobra y volver a tu carril, detrás del vehículo que ibas a adelantar."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Si durante la maniobra aparece un riesgo, lo reglamentario es desistir y regresar a tu carril: nunca invadas el sentido contrario con vehículos de frente.",
+  "truco": "Retirarse a tiempo también es de valientes, y de aprobados.",
+  "trampa": "Acelerar «para acabar antes» es el instinto natural, pero apostar la vida a una décima nunca es la respuesta del examen ni de la carretera.",
+  "tags": [
+   "fase-durante",
+   "desistir",
+   "sentido-contrario"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-016",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "En una carretera convencional limitada a 90 km/h, ¿puedes superar ese límite para terminar antes un adelantamiento?",
+  "imagen": null,
+  "opciones": [
+   "No: el antiguo margen de 20 km/h para adelantar se eliminó y hoy no existe excepción alguna.",
+   "Sí, hasta 20 km/h por encima del límite mientras dure la maniobra.",
+   "Sí, pero solo si adelantas a un vehículo pesado."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Desde la reforma de 2022 no puedes rebasar el límite de la vía ni siquiera para adelantar: si la maniobra no cabe dentro del límite, no se hace.",
+  "truco": "El límite no tiene letra pequeña: 90 son 90, también con el intermitente puesto.",
+  "trampa": "El margen de 20 km/h existió durante años y media España todavía lo da por vigente; en el examen es carne de fallo.",
+  "tags": [
+   "velocidad",
+   "fase-durante",
+   "reforma-2022"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-017",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Estás adelantando y aparece de frente un vehículo todavía lejano; calculas que cabes «muy justo». ¿Qué exige la norma?",
+  "imagen": null,
+  "opciones": [
+   "Puedes seguir: si el otro frena un poco, no pasa nada.",
+   "Solo puedes continuar si vas a terminar sin obligar al que viene de frente ni al adelantado a modificar bruscamente su velocidad o trayectoria.",
+   "Tienes preferencia por haber iniciado antes la maniobra."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "El listón legal no es «pasar por los pelos»: es no poner en peligro ni entorpecer a nadie. Si el cálculo sale justo, la maniobra no procede.",
+  "truco": "Si la palabra que te sale es «justo», la respuesta es «no».",
+  "trampa": "El «que frene un poco el otro» convierte tu maniobra en problema ajeno, y eso es exactamente lo que el reglamento prohíbe.",
+  "explicacion_larga": "Adelantar solo es legal cuando puedes completar la maniobra sin riesgo y sin entorpecer a los demás usuarios: ni al que viene en sentido contrario, ni al vehículo adelantado, ni a los que te siguen. Contar con que el de enfrente levantará el pie o se arrimará al arcén es planificar la maniobra sobre una reacción ajena que nadie te garantiza. Haber empezado antes tampoco te concede preferencia alguna sobre el sentido contrario: quien invade el carril ajeno es siempre el responsable de que la cuenta salga con margen. En caso de duda, desiste y espera un tramo mejor.",
+  "tags": [
+   "fase-durante",
+   "sentido-contrario",
+   "espacio-suficiente"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-018",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Adelantas a una motocicleta en una vía interurbana. ¿Qué separación lateral mínima debes dejar?",
+  "imagen": null,
+  "opciones": [
+   "Un metro, si circulas despacio.",
+   "La mitad de la anchura de tu carril.",
+   "1,5 metros."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Fuera de poblado, al adelantar a vehículos de dos ruedas, peatones o animales la separación lateral mínima es de 1,5 metros.",
+  "truco": "Dos ruedas = metro y medio. Grábatelo a fuego.",
+  "trampa": "El «metro si vas despacio» pica porque parece razonable, pero la norma fija metro y medio sin descuentos por velocidad.",
+  "tags": [
+   "separacion-lateral",
+   "dos-ruedas",
+   "fase-durante"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-019",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Acabas de rebasar al vehículo adelantado. ¿Cuándo y cómo vuelves a tu carril?",
+  "imagen": null,
+  "opciones": [
+   "Cuando quieras: puedes seguir por el carril izquierdo unos kilómetros.",
+   "Lo antes posible y de forma gradual, sin obligar al adelantado a frenar.",
+   "De un volantazo, para salir cuanto antes del carril contrario."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Tras el rebase hay que regresar al carril propio en cuanto sea posible, con suavidad y sin cortar al vehículo adelantado.",
+  "truco": "Vuelve pronto y suave: ni te quedes de okupa en el otro carril ni cierres la puerta en las narices.",
+  "trampa": "El volantazo parece prudencia («salgo rápido de la zona mala»), pero la brusquedad es justo lo que la norma prohíbe al reincorporarte.",
+  "tags": [
+   "fase-despues",
+   "reincorporacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-020",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Como referencia práctica, ¿cuándo puedes empezar a volver a tu carril tras adelantar a otro vehículo?",
+  "imagen": null,
+  "opciones": [
+   "Cuando veas por el retrovisor interior el vehículo adelantado al completo.",
+   "Cuando dejes de verlo por la ventanilla lateral.",
+   "En cuanto tu parachoques delantero rebase al suyo."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La referencia de autoescuela de toda la vida: cuando el coche adelantado entra entero en tu espejo interior, ya tienes hueco para volver sin cortarle.",
+  "truco": "Coche entero en el espejo de dentro = billete de vuelta a tu carril.",
+  "trampa": "Rebasar su parachoques significa que vais a la par, no que haya hueco: si vuelves ahí, le echas el coche encima.",
+  "tags": [
+   "fase-despues",
+   "reincorporacion",
+   "referencias"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-021",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Tras adelantar, te reincorporas tan cerca del vehículo adelantado que le obligas a frenar. ¿Cómo se valora esa maniobra?",
+  "imagen": null,
+  "opciones": [
+   "Correcta, porque el adelantado debe facilitarte siempre la vuelta.",
+   "Correcta, si señalizaste el regreso con el intermitente.",
+   "Incorrecta: «cortar» al adelantado está prohibido; no puedes obligarle a modificar su velocidad ni su trayectoria."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La reincorporación debe ser gradual y sin brusquedades: obligar a frenar al adelantado convierte tu maniobra en antirreglamentaria.",
+  "truco": "Adelantas para ganar sitio, no para robárselo al de atrás.",
+  "trampa": "Es cierto que el adelantado debe facilitar la maniobra, pero ese deber suyo no te da derecho a echarte encima de su distancia de seguridad.",
+  "tags": [
+   "fase-despues",
+   "reincorporacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-022",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "¿Debes señalizar también la vuelta a tu carril al terminar el adelantamiento?",
+  "imagen": null,
+  "opciones": [
+   "Sí: con el intermitente derecho, igual que señalizaste la salida con el izquierdo.",
+   "No: la vuelta es el final natural de la maniobra y no requiere aviso.",
+   "Solo de noche o con mala visibilidad."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "El adelantamiento incluye dos cambios de carril, y los dos se señalizan: izquierdo para salir, derecho para volver.",
+  "truco": "Un adelantamiento son dos mudanzas: avisa en las dos.",
+  "trampa": "Como «se supone» que vas a volver, mucha gente se ahorra el segundo intermitente; el examen y los examinadores no se lo ahorran.",
+  "explicacion_larga": "La maniobra completa es una coreografía con orden fijo: comprobación de retrovisores y ángulo muerto, intermitente izquierdo con antelación, desplazamiento al carril contrario, rebase con separación lateral suficiente y con decisión, intermitente derecho y regreso gradual al carril propio sin cortar al adelantado. Cada cambio de carril es una maniobra en sí misma que afecta a otros usuarios: al que te sigue, al adelantado y a quien pueda venir de frente. Por eso ambos desplazamientos exigen su propia señalización, de día, de noche y aunque creas que nadie te ve.",
+  "tags": [
+   "fase-despues",
+   "senalizacion-maniobra"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-023",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Ruedas tras un ciclista en una carretera estrecha de doble sentido y, por más que lo intentas, no puedes dejarle los 1,5 m de separación sin invadir peligrosamente el carril contrario. ¿Qué haces?",
+  "imagen": null,
+  "opciones": [
+   "Lo adelantas igual, arrimándote a él lo justo para no salirte de tu carril.",
+   "Reduces la velocidad y esperas detrás hasta poder rebasarlo dejando el metro y medio con seguridad.",
+   "Le tocas el claxon con insistencia para que acelere y quitarte el problema de encima."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Si el metro y medio no cabe sin peligro, no hay adelantamiento: reduces y esperas. Esa separación no se recorta arrimándote al ciclista.",
+  "truco": "Si no entra el metro y medio, no entra el adelantamiento: detrás y con paciencia.",
+  "trampa": "«Arrimarme lo justo» suena a solución práctica, pero rebasar a menos de 1,5 m es exactamente la infracción que la norma persigue.",
+  "tags": [
+   "ciclistas",
+   "separacion-lateral",
+   "espacio-suficiente"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-024",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Quieres adelantar a un ciclista en una vía con dos carriles para tu sentido. ¿Basta con separarte 1,5 metros sin salir de tu carril?",
+  "imagen": null,
+  "opciones": [
+   "Sí: el metro y medio es lo único que exige la norma.",
+   "Sí, siempre que el ciclista circule por el arcén.",
+   "No: cuando hay más de un carril por sentido debes cambiarte de carril por completo."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "En vías con varios carriles por sentido el adelantamiento a ciclistas exige ocupar por completo el carril contiguo, no solo guardar la distancia.",
+  "truco": "Si hay carriles de sobra, al ciclista se le regala el carril entero.",
+  "trampa": "El «1,5 y listo» era la regla de siempre, pero la reforma añadió el cambio completo de carril cuando la vía lo permite.",
+  "tags": [
+   "ciclistas",
+   "cambio-carril",
+   "reforma-2022"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-025",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Circulas por un tramo con línea continua y delante rueda un ciclista. ¿Puedes pisar la línea para adelantarlo?",
+  "imagen": null,
+  "opciones": [
+   "Sí: está permitido rebasar la línea continua para adelantar a un ciclista, tras cerciorarte de que puedes hacerlo sin peligro.",
+   "No: la línea continua no se pisa jamás, bajo ningún supuesto.",
+   "Sí, pero solo si el ciclista te hace una señal para que pases."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "El reglamento permite ocupar el sentido contrario en tramos prohibidos para rebasar a ciclistas, siempre que antes te asegures de que no comprometes a nadie.",
+  "truco": "La continua tiene una gatera: bicis y obstáculos, solo si vas sobre seguro.",
+  "trampa": "El «jamás» de la línea continua es casi verdad, y por eso pica: los ciclistas y los obstáculos inmovilizados son la excepción legal.",
+  "tags": [
+   "ciclistas",
+   "linea-continua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-026",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Estás rebasando a un grupo grande de ciclistas que ruedan en fila. ¿Puedes ir reincorporándote en los huecos que quedan entre ellos?",
+  "imagen": null,
+  "opciones": [
+   "Sí: así acortas el tiempo que pasas en el carril contrario.",
+   "No: debes rebasar al grupo completo manteniendo la separación; meterte entre ciclistas es cortarles y ponerlos en peligro.",
+   "Sí, siempre que se lo adviertas antes con el claxon."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Un grupo de ciclistas se adelanta como un todo: si no tienes espacio y visibilidad para rebasarlo entero, no inicies la maniobra.",
+  "truco": "El pelotón es un tren con pedales: no te cueles entre vagones.",
+  "trampa": "Reincorporarse «para estar menos tiempo fuera» suena prudente, pero le cierras el paso a ciclistas lanzados que no pueden frenar como un coche.",
+  "explicacion_larga": "Antes de adelantar a un pelotón tienes que planificar la maniobra completa: calcular la longitud total del grupo, comprobar que el carril contrario queda libre en toda esa distancia y mantener la separación lateral mínima durante todo el rebase. Encajarte entre dos ciclistas equivale a reincorporarte cortando: les obligas a frenar en cadena, y una bicicleta no tiene ni el frenado ni la estabilidad de un coche para asumir ese regalo. Si el grupo es demasiado largo para tu ventana de visibilidad, la respuesta es sencilla: reduce, mantén distancia y espera un tramo con más recorrido despejado.",
+  "tags": [
+   "ciclistas",
+   "grupo",
+   "fase-durante"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-027",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Vas a adelantar a un ciclista en una carretera convencional. ¿Qué separación lateral mínima debes dejar entre tu vehículo y la bicicleta?",
+  "imagen": null,
+  "opciones": [
+   "Al menos 1 metro.",
+   "Al menos 1,5 metros.",
+   "No hay distancia fija: basta con no rozarlo."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Al adelantar a un ciclista debes dejar como mínimo 1,5 metros de separación lateral, y en vías de más de un carril por sentido, cambiarte de carril por completo. Hacerlo mal poniéndolo en peligro es de lo más castigado del permiso.",
+  "truco": "Ciclista = metro y medio de respeto. Y si hay otro carril, te cambias entero: no lo roces.",
+  "trampa": "El metro \"casi\" vale: te tientan con 1 m para que te olvides del medio metro que salva vidas. Son 1,5.",
+  "tags": [
+   "ciclistas",
+   "sanciones",
+   "separacion-lateral"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-028",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Carretera de un carril por sentido con línea continua. Delante, un ciclista a 15 km/h; de frente, un coche visible pero aún lejos. ¿Cómo actúas?",
+  "imagen": null,
+  "opciones": [
+   "Solo inicias el rebase si, contando con el coche que viene de frente, puedes pisar la continua sin entorpecer a nadie; ante la duda, esperas.",
+   "Esperas en todo caso a que la línea sea discontinua: la continua nunca puede pisarse.",
+   "Adelantas ya: el ciclista está obligado a apartarse al arcén para dejarte pasar."
+  ],
+  "correcta": 0,
+  "dificultad": 5,
+  "explicacion_corta": "La excepción del ciclista te deja pisar la continua, pero no te exime de lo esencial: comprobar que no comprometes al tráfico que viene de frente.",
+  "truco": "La gatera de la continua solo se abre con dos llaves: ciclista delante y vía libre de frente.",
+  "trampa": "Aquí pican las dos falsas seguridades: el «la continua jamás» ignora la excepción, y el «adelanto ya» olvida que la excepción exige seguridad total.",
+  "explicacion_larga": "Este supuesto combina dos normas que hay que aplicar a la vez. Primera: en tramos con prohibición de adelantar puedes rebasar a un ciclista ocupando parte del sentido contrario, incluso pisando la línea continua. Segunda: esa posibilidad queda condicionada a cerciorarte de que la maniobra no pone en peligro ni entorpece a nadie, y un vehículo que se aproxima de frente cuenta, por lejos que parezca. Calcula con su velocidad y la tuya; si el resultado no es holgado, reduce y rueda tras el ciclista unos segundos: perder medio minuto nunca ha suspendido a nadie. Y por supuesto, el ciclista no tiene ninguna obligación de apartarse al arcén para facilitarte la vida.",
+  "tags": [
+   "ciclistas",
+   "linea-continua",
+   "sentido-contrario"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-029",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Como norma general, ¿en cuál de estos lugares está prohibido adelantar?",
+  "imagen": null,
+  "opciones": [
+   "En las rectas largas de las carreteras convencionales.",
+   "En las autovías de tres carriles por sentido.",
+   "En las curvas y cambios de rasante de visibilidad reducida."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Donde no puedes ver si viene alguien de frente, no puedes invadir su carril: curvas y rasantes ciegas son terreno vetado.",
+  "truco": "Si no ves lo que viene, no te metas en su casa.",
+  "trampa": "Las autovías despistan porque «suenan a sitio serio», pero allí adelantar es el pan de cada día: el problema es la visibilidad, no la categoría de la vía.",
+  "tags": [
+   "prohibiciones",
+   "curvas",
+   "cambio-rasante"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-030",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "¿Cuándo está prohibido adelantar dentro de un túnel?",
+  "imagen": null,
+  "opciones": [
+   "Cuando solo hay un carril para tu sentido de circulación.",
+   "Siempre: en los túneles no se adelanta jamás.",
+   "Solo cuando el túnel está mal iluminado."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La prohibición en túneles y pasos inferiores rige cuando dispones de un único carril en tu sentido; con dos o más, se puede adelantar.",
+  "truco": "Túnel de carril único, paciencia; túnel de autovía, vida normal.",
+  "trampa": "El «jamás» es el anzuelo favorito del examen: en un túnel de autovía con varios carriles se adelanta con total normalidad.",
+  "tags": [
+   "prohibiciones",
+   "tuneles"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-031",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "¿Puedes adelantar en un paso a nivel o en sus proximidades?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si las barreras están levantadas.",
+   "No: está prohibido en cualquier caso.",
+   "Sí, cuando no se aproxime ningún tren."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "En los pasos a nivel y sus proximidades la prohibición de adelantar es absoluta, haya o no tren a la vista.",
+  "truco": "Donde cruzan trenes, cero alegrías: ni adelantar, ni parar, ni inventos.",
+  "trampa": "La barrera levantada tienta porque «da permiso» para cruzar, pero solo para cruzar: la prohibición de adelantar no se levanta con ella.",
+  "tags": [
+   "prohibiciones",
+   "paso-a-nivel"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-032",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "En un paso para peatones señalizado, ¿existe alguna posibilidad de adelantar a otro vehículo?",
+  "imagen": null,
+  "opciones": [
+   "No: la prohibición es absoluta, exactamente igual que en los pasos a nivel.",
+   "Sí, siempre que no haya ningún peatón a la vista.",
+   "Sí, solo a una velocidad tan reducida que te permita detenerte a tiempo ante un peligro de atropello."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "En los pasos de peatones cabe la excepción de la velocidad muy reducida; en los pasos a nivel, en cambio, no hay excepción posible.",
+  "truco": "Paso de cebra: se puede a paso de tortuga. Paso a nivel: no se puede ni así.",
+  "trampa": "Equiparar los dos pasos es el fallo clásico: comparten la prohibición general, pero solo el de peatones admite la excepción de ir al paso.",
+  "tags": [
+   "prohibiciones",
+   "paso-peatones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-033",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "En las intersecciones está prohibido adelantar como norma general. ¿En cuál de estos casos SÍ está permitido?",
+  "imagen": null,
+  "opciones": [
+   "Cuando la intersección es una glorieta.",
+   "Cuando el otro conductor te cede el paso con un gesto de la mano.",
+   "Cuando llevas prisa justificada por una urgencia."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Las glorietas son una de las excepciones donde sí se permite adelantar pese a tratarse de una intersección.",
+  "truco": "En cruce: glorieta, prioridad señalizada, dos ruedas o rebase por la derecha. Fuera de esa lista, nada.",
+  "trampa": "Ni los gestos amables ni las prisas cambian el reglamento: las excepciones están tasadas y son solo las que son.",
+  "tags": [
+   "prohibiciones",
+   "intersecciones",
+   "glorietas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-034",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Llegas a una curva de visibilidad reducida en una calzada con dos carriles para tu sentido, claramente delimitados. ¿Puedes adelantar?",
+  "imagen": null,
+  "opciones": [
+   "No: en una curva sin visibilidad no se adelanta nunca.",
+   "Sí, porque puedes completar la maniobra sin invadir el sentido contrario.",
+   "Solo si el vehículo adelantado es un camión."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La prohibición en curvas ciegas protege el sentido contrario: si tienes carril propio de sobra y no lo invades, la maniobra es legal.",
+  "truco": "La pregunta clave en curva no es «¿veo?», es «¿invado el carril de enfrente?».",
+  "trampa": "El «nunca» suena a respuesta segura de examen, pero la excepción existe justo cuando los sentidos están delimitados y no pisas el ajeno.",
+  "tags": [
+   "curvas",
+   "prohibiciones",
+   "excepciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-035",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Te acercas a una intersección y delante rueda un ciclomotor. ¿Puedes adelantarlo pese a estar en las proximidades del cruce?",
+  "imagen": null,
+  "opciones": [
+   "No: en las intersecciones y sus proximidades no se adelanta a ningún vehículo.",
+   "Solo si la intersección está regulada por semáforo en verde.",
+   "Sí: adelantar a vehículos de dos ruedas es una de las excepciones permitidas en las intersecciones."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Los vehículos de dos ruedas pueden adelantarse incluso en intersecciones: es una de las excepciones tasadas de la norma.",
+  "truco": "En el cruce, las dos ruedas tienen pase VIP: a ellas sí puedes pasarlas.",
+  "trampa": "El «a ningún vehículo» repite la norma general con tono rotundo, y eso engancha; el matiz de las dos ruedas es lo que separa el apto del no apto.",
+  "explicacion_larga": "La prohibición de adelantar en intersecciones y sus proximidades tiene cuatro excepciones que conviene memorizar en bloque: cuando se trata de una glorieta o plaza de circulación giratoria; cuando tu calzada goza de prioridad señalizada en el cruce; cuando el rebase se efectúa por la derecha a un vehículo que ha señalizado su giro a la izquierda; y cuando el vehículo adelantado es de dos ruedas, como este ciclomotor. Aun estando permitido, recuerda extremar la precaución: un cruce añade trayectorias imprevisibles, y el de dos ruedas puede girar o desplazarse dentro del carril con mucha más agilidad que un coche.",
+  "tags": [
+   "intersecciones",
+   "dos-ruedas",
+   "excepciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-036",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Circulas tras dos tractores que van en fila a 30 km/h. ¿Puedes adelantarlos a los dos de una sola vez?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si el carril contrario está libre en distancia suficiente para toda la maniobra y puedes volver a tu carril sin riesgo.",
+   "No: hay que adelantar de uno en uno, volviendo al carril entre ambos.",
+   "No: los vehículos agrícolas no pueden ser adelantados."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Ninguna norma obliga a adelantar de uno en uno: lo que exige la ley es que la maniobra completa, sea a uno o a varios, quepa con seguridad.",
+  "truco": "Uno o varios, da igual: lo que se mide es si la maniobra entera cabe con margen.",
+  "trampa": "El «de uno en uno» suena a prudencia de manual, pero encajarte en un hueco mínimo entre dos tractores puede ser peor que rebasarlos seguidos.",
+  "explicacion_larga": "Adelantar a varios vehículos en una sola maniobra es perfectamente legal si se cumplen las condiciones de siempre: carril contrario libre en toda la distancia necesaria, visibilidad suficiente, ningún tramo o señal que lo prohíba y un hueco real para reincorporarte al final sin entorpecer a nadie. De hecho, si el espacio entre los dos tractores es corto, volver al carril entre ambos te obligaría a frenar en seco y quedarte sin distancia de seguridad, así que puede ser la opción más arriesgada. La regla de oro no cambia: calcula la maniobra completa antes de sacar el morro, y si el total no cabe con holgura, espera.",
+  "tags": [
+   "prohibiciones",
+   "varios-vehiculos",
+   "espacio-suficiente"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-037",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Delante del vehículo que quieres adelantar el hueco es mínimo: si te reincorporas ahí, obligarás a otro a frenar. ¿Inicias la maniobra?",
+  "imagen": null,
+  "opciones": [
+   "Sí: ya se apartará alguien para hacerte sitio.",
+   "No: está prohibido adelantar si después no puedes reincorporarte sin poner en peligro ni entorpecer a otros.",
+   "Sí, siempre que completes la maniobra en menos de cinco segundos."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El adelantamiento incluye la vuelta al carril: si el aterrizaje no cabe, la maniobra entera está prohibida desde el principio.",
+  "truco": "Antes de despegar, mira dónde vas a aterrizar.",
+  "trampa": "El «ya se apartará alguien» delega tu seguridad en la buena voluntad ajena, y eso es justo lo contrario de lo que pide el reglamento.",
+  "tags": [
+   "prohibiciones",
+   "espacio-suficiente",
+   "reincorporacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-038",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "¿Cuál es la razón por la que se prohíbe adelantar en un cambio de rasante de reducida visibilidad?",
+  "imagen": null,
+  "opciones": [
+   "Porque los motores pierden potencia en las subidas.",
+   "Porque en pendiente aumenta mucho la distancia de frenado.",
+   "Porque no puedes ver si viene alguien de frente al otro lado."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Al otro lado de la rasante puede venir cualquiera y no lo verás hasta tenerlo encima: por eso no debes invadir el sentido contrario ahí.",
+  "truco": "La rasante es una pared con carretera detrás: nunca sabes qué asoma.",
+  "trampa": "Las respuestas de motor y frenada suenan técnicas y serias, pero el motivo real de la prohibición es pura visibilidad.",
+  "tags": [
+   "cambio-rasante",
+   "prohibiciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-039",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Túnel de carretera con un único carril para tu sentido; casualmente no hay línea continua pintada. ¿Puedes adelantar a un turismo lento?",
+  "imagen": null,
+  "opciones": [
+   "Sí: si no hay línea continua, no hay prohibición.",
+   "No: la prohibición en túneles de un carril por sentido rige por norma, haya o no marca vial que la refuerce.",
+   "Sí, pero solo llevando encendidas las luces de carretera."
+  ],
+  "correcta": 1,
+  "dificultad": 5,
+  "explicacion_corta": "Las prohibiciones de adelantar existen por norma en ciertos lugares; la marca vial las refuerza, pero su ausencia no las borra.",
+  "truco": "La pintura recuerda la norma, no la crea: túnel de carril único = prohibido, con raya o sin ella.",
+  "trampa": "El «sin línea, vía libre» es una trampa de lógica: confunde la señalización de una prohibición con la prohibición misma.",
+  "explicacion_larga": "Hay lugares donde el adelantamiento está prohibido directamente por el reglamento, sin necesidad de señal ni de marca vial: curvas y rasantes sin visibilidad, pasos a nivel, pasos para peatones (salvo la excepción de la velocidad reducida), intersecciones fuera de sus excepciones y túneles o pasos inferiores donde solo hay un carril para tu sentido. Que falte la línea continua no te habilita: la marca es un refuerzo visual, no la fuente de la obligación. Ojo al matiz que salva la lógica del sistema: dentro de ese mismo túnel sí podrías rebasar a un vehículo inmovilizado o a un ciclista, cerciorándote antes de que la maniobra es segura, porque esa excepción también viene de la norma.",
+  "tags": [
+   "tuneles",
+   "prohibiciones",
+   "marcas-viales"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-040",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Otro coche ha empezado a adelantarte. ¿Qué tienes terminantemente prohibido hacer?",
+  "imagen": null,
+  "opciones": [
+   "Aumentar tu velocidad.",
+   "Mantener tu velocidad.",
+   "Seguir circulando por tu carril."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Mientras te adelantan, acelerar está prohibido: alargarías la maniobra del otro y su tiempo en el carril contrario.",
+  "truco": "Cuando te pasan, tú como si nada: mismo gas o menos, nunca más.",
+  "trampa": "Acelerar «porque ibas a hacerlo igualmente» no cuela: desde que el otro inicia el adelantamiento, tu velocidad queda congelada como máximo.",
+  "tags": [
+   "adelantado",
+   "obligaciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-041",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Mientras te adelantan en una carretera de doble sentido, además de no aumentar la velocidad debes…",
+  "imagen": null,
+  "opciones": [
+   "meterte en el arcén de forma obligatoria.",
+   "ceñirte al borde derecho de la calzada para facilitar la maniobra.",
+   "hacer luces al tráfico que viene de frente para avisarle."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El adelantado colabora ciñéndose a la derecha de su carril, dejando así más espacio libre al que adelanta.",
+  "truco": "Te pasan: arrímate a tu cuneta como quien deja pasar en un pasillo.",
+  "trampa": "Ceñirse a la derecha no es meterse en el arcén: el turismo no debe circular por él; basta con apurar tu lado del carril.",
+  "tags": [
+   "adelantado",
+   "obligaciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-042",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Conduces un vehículo lento por una vía estrecha y llevas detrás una caravana de coches que no consigue adelantarte. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Seguir a lo tuyo: adelantar es problema de los demás.",
+   "Acelerar todo lo que el vehículo aguante.",
+   "Apartarte en el primer lugar adecuado para dejarlos pasar."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Quien circula anormalmente lento y acumula cola debe facilitar el paso apartándose en cuanto encuentre un sitio adecuado.",
+  "truco": "Si haces de tapón, sal de la botella.",
+  "trampa": "El «problema de los demás» pica porque técnicamente ellos son quienes adelantan, pero la norma también te reparte deberes a ti.",
+  "tags": [
+   "adelantado",
+   "vehiculo-lento",
+   "obligaciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-043",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Te están adelantando y aparece de frente un vehículo que compromete la maniobra del que te adelanta. ¿Qué debes hacer tú, como adelantado?",
+  "imagen": null,
+  "opciones": [
+   "Reducir tu velocidad si es preciso, para facilitarle la vuelta a tu carril.",
+   "Mantener exactamente tu velocidad: la ley te prohíbe cualquier variación.",
+   "Acelerar para abrirle un hueco por detrás de ti."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Si surge peligro durante el adelantamiento, el adelantado está obligado incluso a frenar para que el otro pueda meterse delante o volver atrás.",
+  "truco": "Al que se ve apurado en el carril contrario se le abre la puerta: levanta el pie.",
+  "trampa": "El «mantener exactamente» confunde: lo prohibido es acelerar; reducir no solo puedes, sino que debes si la situación lo exige.",
+  "tags": [
+   "adelantado",
+   "obligaciones",
+   "peligro"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-044",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Vas a ser adelantado y aceleras para impedirlo. ¿Cómo se califica ese comportamiento?",
+  "imagen": null,
+  "opciones": [
+   "Es legal mientras no superes el límite de velocidad de la vía.",
+   "Es una infracción: el adelantado tiene prohibido aumentar la velocidad y debe facilitar la maniobra.",
+   "Es una simple falta de cortesía sin consecuencias legales."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Acelerar cuando te adelantan es una infracción, aunque no superes el límite: dejas al otro vendido en el carril contrario.",
+  "truco": "El «a mí no me pasa nadie» se paga: en multa y en riesgo ajeno.",
+  "trampa": "El «mientras no superes el límite» es la trampa fina: la prohibición no va de límites de velocidad, va de no sabotear la maniobra del otro.",
+  "explicacion_larga": "La prohibición de acelerar durante un adelantamiento ajeno no depende de los límites de la vía: aunque fueras a 70 en un tramo de 90, aumentar la velocidad cuando ya han empezado a pasarte es infracción. El motivo es de pura física: el que adelanta calculó su maniobra con tu velocidad inicial, y cada km/h que añades alarga los metros y segundos que pasa expuesto en el sentido contrario. La norma te exige lo contrario: mantener o reducir la velocidad, ceñirte a la derecha y, si aparece peligro, frenar para que pueda completar la maniobra o regresar a su hueco detrás de ti.",
+  "tags": [
+   "adelantado",
+   "sanciones",
+   "obligaciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-045",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Un coche averiado ocupa parte de tu carril en un tramo con línea continua. ¿Puedes rebasarlo?",
+  "imagen": null,
+  "opciones": [
+   "Sí, invadiendo el sentido contrario si es imprescindible, tras cerciorarte de que no creas peligro alguno.",
+   "No: con línea continua debes detenerte y esperar a que se lo lleve la grúa.",
+   "Solo si antes avisas al 112 de la maniobra."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Rebasar un vehículo inmovilizado u otro obstáculo está permitido incluso en tramos prohibidos, siempre tras comprobar que la maniobra es segura.",
+  "truco": "Obstáculo parado no es adelantamiento: puedes pasar, pero con mil ojos.",
+  "trampa": "El «esperar a la grúa» exagera la norma hasta lo absurdo, y por eso pica: parece la opción más prudente del mundo.",
+  "tags": [
+   "obstaculos",
+   "vehiculo-inmovilizado",
+   "linea-continua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-046",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Atasco en un tramo de línea continua: el coche de delante está detenido por la retención. ¿Puedes invadir el sentido contrario para rebasarlo?",
+  "imagen": null,
+  "opciones": [
+   "Sí: un vehículo detenido siempre puede ser rebasado.",
+   "No: la excepción no vale cuando la inmovilización se debe a las necesidades del tráfico.",
+   "Sí, siempre que el sentido contrario también esté retenido."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La excepción del obstáculo cubre averías y bloqueos ajenos al tráfico; un atasco no te da permiso para saltarte la cola por el carril contrario.",
+  "truco": "Averiado te deja pasar; atasco te toca tragar.",
+  "trampa": "El «detenido siempre se rebasa» generaliza la excepción de los averiados; en la retención, el detenido eres tú también, y a esperar.",
+  "tags": [
+   "obstaculos",
+   "congestion",
+   "linea-continua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-047",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Fuera de poblado, unos peatones caminan por la calzada ocupando parte de tu carril en un tramo donde está prohibido adelantar. ¿Cómo actúas?",
+  "imagen": null,
+  "opciones": [
+   "Tocas el claxon con insistencia hasta que suban al talud.",
+   "No puedes rebasarlos: debes circular tras ellos hasta que acabe el tramo de prohibición.",
+   "Reduces la velocidad y los rebasas, ocupando el sentido contrario solo tras comprobar que puedes hacerlo sin peligro."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "A peatones, animales y vehículos inmovilizados se les puede rebasar incluso en tramo prohibido, con seguridad comprobada y la máxima prudencia.",
+  "truco": "Con peatones en la calzada: pie fuera del acelerador, ojos en el carril contrario y pásalos con espacio de sobra.",
+  "trampa": "El «no puedes rebasarlos» aplica la prohibición a rajatabla, pero condenarte a ir al paso kilómetros no es lo que quiere la norma: quiere que pases con seguridad.",
+  "explicacion_larga": "El reglamento contempla que en tramos con prohibición de adelantar puedas rebasar a peatones, animales, ciclistas o vehículos inmovilizados, ocupando parte del sentido contrario si hace falta, siempre después de cerciorarte de que la maniobra no crea peligro. Con peatones, además, se suma la regla de la separación: fuera de poblado, el margen lateral mínimo es de metro y medio, la misma distancia que protege a ciclistas y animales. Reduce claramente la velocidad al pasar: una persona a pie puede tropezar o cambiar de dirección sin previo aviso, y el claxon insistente solo sirve para asustarla, no para protegerla.",
+  "tags": [
+   "peatones",
+   "obstaculos",
+   "separacion-lateral"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-048",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Un camión averiado bloquea tu carril justo antes de un cambio de rasante sin visibilidad. ¿Qué haces?",
+  "imagen": null,
+  "opciones": [
+   "Solo lo rebasas cuando estés seguro de que no viene nadie de frente; si la rasante no te deja comprobarlo, esperas o avanzas con extrema precaución.",
+   "Pasas con decisión: el obstáculo te concede preferencia sobre el sentido contrario.",
+   "Está prohibido pasar: debes aguardar a que retiren el camión."
+  ],
+  "correcta": 0,
+  "dificultad": 5,
+  "explicacion_corta": "Puedes rebasar el obstáculo incluso ahí, pero cerciorarte de que no hay peligro es condición previa e innegociable, no un trámite.",
+  "truco": "El obstáculo te abre la puerta, pero la preferencia sigue siendo del que viene de frente.",
+  "trampa": "La palabra «preferencia» es el gran anzuelo: rebasar un obstáculo jamás te da prioridad sobre el carril ajeno; entras en él de prestado.",
+  "explicacion_larga": "Aquí se cruzan la excepción y su límite. La excepción: un vehículo inmovilizado puede rebasarse incluso en tramos donde adelantar está prohibido, ocupando el sentido contrario si es imprescindible. El límite: esa maniobra exige cerciorarse antes de que no genera riesgo, y una rasante ciega es precisamente el lugar donde no puedes cerciorarte desde atrás. La solución práctica es detenerte o avanzar muy despacio, ganando ángulo de visión hasta dominar el tramo oculto, y cruzar solo cuando la vista alcance lo suficiente. Recuerda que el sentido contrario conserva su prioridad en todo momento: si aparece alguien mientras dudas, el que cede eres tú.",
+  "tags": [
+   "obstaculos",
+   "cambio-rasante",
+   "sentido-contrario"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-049",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Ves una señal circular de borde rojo con dos coches dibujados, el de la izquierda en rojo. ¿Qué te indica?",
+  "imagen": null,
+  "opciones": [
+   "El fin de la prohibición de adelantar.",
+   "Que a partir de ese punto está prohibido adelantar a los vehículos de motor.",
+   "Peligro por tramo con adelantamientos frecuentes."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Es la R-305, adelantamiento prohibido: desde su vertical no puedes adelantar a los vehículos de motor que circulen por la calzada.",
+  "truco": "Coche rojo a la izquierda quieto en la señal: pues tú igual, quieto en tu carril.",
+  "trampa": "El «fin de prohibición» se dibuja en gris y con franjas: si la señal es de borde rojo, ahí empieza la fiesta, no acaba.",
+  "tags": [
+   "senales",
+   "r-305"
+  ],
+  "senalId": "R-305"
+ },
+ {
+  "id": "M07-050",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "¿Qué indica la señal R-502?",
+  "imagen": null,
+  "opciones": [
+   "Prohibición de adelantar durante los próximos 500 metros.",
+   "Adelantamiento obligatorio por la izquierda.",
+   "El fin de la prohibición de adelantamiento."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "La R-502 levanta la prohibición de adelantar impuesta por la R-305: desde ahí puedes volver a adelantar si las marcas y la vía lo permiten.",
+  "truco": "Señal grisácea y tachada: se acabó lo que prohibía la roja.",
+  "trampa": "El «502 = 500 metros» es un juego de números que cuela más de lo que parece; los códigos de señal no miden distancias.",
+  "tags": [
+   "senales",
+   "r-502",
+   "fin-prohibicion"
+  ],
+  "senalId": "R-502"
+ },
+ {
+  "id": "M07-051",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Conduces tu turismo y encuentras la señal R-306, adelantamiento prohibido para camiones. ¿Te afecta la prohibición?",
+  "imagen": null,
+  "opciones": [
+   "No: va dirigida a los camiones de más de 3.500 kg de MMA; tu turismo puede adelantar si el resto de normas lo permite.",
+   "Sí: bajo esa señal no adelanta nadie.",
+   "Solo te afecta si tu turismo lleva remolque enganchado."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La R-306 prohíbe adelantar únicamente a los camiones cuya MMA supera los 3.500 kg; los demás vehículos siguen con sus reglas de siempre.",
+  "truco": "Silueta de camión en la señal = carta dirigida a los camioneros, no a ti.",
+  "trampa": "El «no adelanta nadie» pica porque el pictograma impone, pero la señal retrata a su destinatario: el camión.",
+  "tags": [
+   "senales",
+   "r-306",
+   "camiones"
+  ],
+  "senalId": "R-306"
+ },
+ {
+  "id": "M07-052",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Bajo la prohibición de la señal R-305, ¿puedes adelantar a un ciclista?",
+  "imagen": null,
+  "opciones": [
+   "No: la R-305 prohíbe adelantar a cualquier usuario de la vía.",
+   "Sí: la señal prohíbe adelantar a vehículos de motor, y la bicicleta no lo es.",
+   "Solo si el ciclista circula por el arcén."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La R-305 veta el adelantamiento a vehículos de motor; la bicicleta queda fuera de esa categoría, así que puedes adelantarla si la maniobra es segura.",
+  "truco": "La R-305 va de motores: lo que funciona a pedales no entra en su lista negra.",
+  "trampa": "El «a cualquier usuario» redondea la prohibición y por eso engancha; el matiz «de motor» es la llave de esta pregunta.",
+  "tags": [
+   "senales",
+   "r-305",
+   "ciclistas"
+  ],
+  "senalId": "R-305"
+ },
+ {
+  "id": "M07-053",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Conduces un camión de 12 toneladas bajo la prohibición de la R-306. ¿Qué señal pone fin específicamente a esa prohibición?",
+  "imagen": null,
+  "opciones": [
+   "La R-502.",
+   "Ninguna: dura hasta el final de la vía.",
+   "La R-503, fin de la prohibición de adelantamiento para camiones."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Cada prohibición tiene su señal de fin emparejada: la R-503 levanta la de la R-306, igual que la R-502 levanta la de la R-305.",
+  "truco": "Van por parejas: 305 con 502 y 306 con 503. Como los bailes, cada uno con su pareja.",
+  "trampa": "La R-502 tienta porque también habla de adelantar, pero levanta la prohibición general, no la específica de camiones.",
+  "explicacion_larga": "Las señales de fin funcionan emparejadas con su prohibición: R-502 termina lo que impone la R-305 y R-503 termina lo que impone la R-306. Además conviene saber dos remates que caen en examen: la señal R-500, fin de prohibiciones, levanta de golpe todas las prohibiciones específicas anteriores, incluida la de adelantar; y si no aparece ninguna señal de fin, la prohibición de la señal se extiende, como regla general, hasta la intersección más próxima. Es decir, un camionero bajo R-306 recupera la posibilidad de adelantar al pasar la R-503, la R-500 o el siguiente cruce, lo que llegue antes.",
+  "tags": [
+   "senales",
+   "r-503",
+   "fin-prohibicion",
+   "camiones"
+  ],
+  "senalId": "R-503"
+ },
+ {
+  "id": "M07-054",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "En el centro de la calzada hay una marca de doble línea longitudinal continua. ¿Qué te indica?",
+  "imagen": null,
+  "opciones": [
+   "Que ningún conductor debe rebasarla ni circular sobre ella, en ninguno de los dos sentidos.",
+   "Que solo pueden cruzarla los vehículos prioritarios y los rápidos.",
+   "Que separa dos carriles del mismo sentido de circulación."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "La doble continua cierra el paso a los dos sentidos: nadie la cruza y nadie circula sobre ella.",
+  "truco": "Doble raya, doble candado: cerrado por los dos lados.",
+  "trampa": "Los «prioritarios y rápidos» suenan a excepción creíble, pero la doble continua no entiende de sirenas para adelantar ni de prisas.",
+  "tags": [
+   "marcas-viales",
+   "doble-continua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-055",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Hay una línea continua junto a otra discontinua, y la discontinua es la más próxima a tu lado. ¿Puedes adelantar cruzándolas?",
+  "imagen": null,
+  "opciones": [
+   "No: si en el paquete hay una continua, manda ella para todos.",
+   "Sí: a ti te obliga la línea de tu lado, y la tuya es discontinua.",
+   "Solo pueden hacerlo las motocicletas."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Con línea mixta, cada conductor obedece a la marca más próxima a su lado: discontinua a tu lado significa que puedes adelantar si es seguro.",
+  "truco": "En las dobles mixtas, cada uno obedece a la raya de su acera.",
+  "trampa": "El «manda la continua para todos» simplifica de más: la continua manda, sí, pero solo sobre los que la tienen en su lado.",
+  "tags": [
+   "marcas-viales",
+   "continua-discontinua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-056",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Línea continua junto a discontinua, con la continua en tu lado de la calzada. ¿Qué te supone esa marca?",
+  "imagen": null,
+  "opciones": [
+   "Nada especial: la discontinua del otro lado te ampara.",
+   "Puedes adelantar si prometes volver rápido a tu carril.",
+   "No puedes iniciar un adelantamiento que te obligue a cruzarla."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La marca que cuenta es la de tu lado: si es continua, para ti el adelantamiento que exija cruzarla está prohibido.",
+  "truco": "Mira solo tu raya: si es continua, tu turno todavía no ha llegado.",
+  "trampa": "La discontinua «de enfrente» es el espejismo: esa le da permiso al del otro sentido, no a ti.",
+  "tags": [
+   "marcas-viales",
+   "continua-discontinua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-057",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "Además de prohibirte cruzarla, una línea longitudinal continua te prohíbe…",
+  "imagen": null,
+  "opciones": [
+   "circular sobre ella.",
+   "reducir la velocidad en sus inmediaciones.",
+   "circular en paralelo a ella durante más de 200 metros."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La continua no se cruza y tampoco se pisa: circular sobre ella ya es infracción, aunque no llegues a pasar al otro lado.",
+  "truco": "La continua es un muro bajito: ni saltarlo ni caminar por encima.",
+  "trampa": "Mucha gente cree que la falta empieza al invadir el otro carril, pero rodar con las ruedas sobre la línea ya incumple la marca.",
+  "tags": [
+   "marcas-viales",
+   "linea-continua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M07-058",
+  "mundo": 7,
+  "tema": "Adelantamiento",
+  "pregunta": "En tu carril aparecen pintadas unas flechas ligeramente inclinadas hacia la derecha, las flechas de retorno. ¿Qué te están diciendo?",
+  "imagen": null,
+  "opciones": [
+   "Que hay una salida de autopista próxima.",
+   "Que debes volver cuanto antes a tu carril, porque se acerca un tramo con línea continua donde no podrás adelantar.",
+   "Que el carril derecho queda reservado a los vehículos lentos."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Las flechas de retorno anuncian la llegada de una línea continua: cierra tu adelantamiento y vuelve a tu carril antes de que empiece.",
+  "truco": "Flecha que apunta a tu carril = la carretera diciéndote «recogiendo, que cierran».",
+  "trampa": "Se confunden con las flechas de salida o de selección de carril, pero estas van inclinadas dentro de tu propio carril y avisan de la continua que viene.",
+  "explicacion_larga": "Las flechas de retorno son el preaviso oficial de que la línea discontinua está a punto de convertirse en continua: aparecen pintadas en tu carril, inclinadas hacia la derecha, para que nadie llegue a la prohibición con medio adelantamiento a medias. Si estás planteándote adelantar, descártalo; si ya estás en plena maniobra, complétala y regresa a tu carril antes de que empiece la continua, con suavidad y sin cortar al adelantado. Interpretarlas a tiempo es lo que diferencia una maniobra limpia de acabar atrapado en el carril contrario con la línea cerrada y un examen suspendido.",
+  "tags": [
+   "marcas-viales",
+   "flechas-retorno",
+   "linea-continua"
+  ],
+  "senalId": null
+ }
+]

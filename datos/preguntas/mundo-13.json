@@ -1,0 +1,854 @@
+[
+  {
+    "id": "M13-001", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "¿Cuándo debe comprobarse la presión de inflado de los neumáticos?",
+    "imagen": null,
+    "opciones": [
+      "Con los neumáticos fríos.",
+      "Justo después de un recorrido largo, con el neumático a su temperatura de trabajo.",
+      "Es indiferente, porque la presión no varía con la temperatura."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "La presión se mide en frío: con el neumático caliente el aire se dilata y la lectura sale más alta de la real.",
+    "truco": "Presión SIEMPRE en frío. En caliente, el manómetro te hace la pelota y te miente al alza.",
+    "trampa": "Lo de 'temperatura de trabajo' suena muy técnico, pero es justo al revés: caliente, la medida engaña.",
+    "tags": ["neumaticos", "presion", "mantenimiento"], "senalId": null
+  },
+  {
+    "id": "M13-002", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "Como norma general, ¿cada cuánto conviene revisar la presión de los neumáticos, incluida la rueda de repuesto?",
+    "imagen": null,
+    "opciones": [
+      "Solo antes de pasar la ITV.",
+      "Una vez al año, aprovechando el cambio de aceite.",
+      "Al menos una vez al mes y antes de cualquier viaje largo."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Los neumáticos pierden presión poco a poco: revísala al menos una vez al mes y antes de un viaje largo, sin olvidar la de repuesto.",
+    "truco": "Ritual de primeros de mes: nómina, alquiler… y presión de ruedas. Las cuatro y la quinta escondida.",
+    "trampa": "La rueda de repuesto es la gran olvidada: el día que la necesitas suele estar más desinflada que tú un lunes.",
+    "tags": ["neumaticos", "presion", "mantenimiento"], "senalId": null
+  },
+  {
+    "id": "M13-003", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "La profundidad mínima legal del dibujo de los neumáticos de un turismo es de…",
+    "imagen": null,
+    "opciones": [
+      "0,6 milímetros.",
+      "1,6 milímetros.",
+      "3 milímetros."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "El dibujo debe tener como mínimo 1,6 mm de profundidad en las ranuras principales. Por debajo, el neumático no evacúa agua y es ilegal.",
+    "truco": "1,6: como el examen teórico, si bajas de ahí, suspendes (y aquí encima con multa).",
+    "trampa": "El 0,6 y el 3 bailan alrededor de la cifra buena. Grábate el 1,6 a fuego.",
+    "tags": ["neumaticos", "dibujo", "profundidad-minima"], "senalId": null
+  },
+  {
+    "id": "M13-004", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "Observas que tus neumáticos se desgastan más por los bordes que por el centro de la banda de rodadura. ¿Cuál es la causa más probable?",
+    "imagen": null,
+    "opciones": [
+      "Circular con una presión inferior a la recomendada.",
+      "Circular con una presión superior a la recomendada.",
+      "Llevar los amortiguadores en mal estado."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Con poca presión el neumático se aplasta y apoya sobre todo por los hombros, así que se comen antes los bordes.",
+    "truco": "Rueda floja = se despanzurra y apoya por los BORDES. Rueda hinchada como un globo = apoya por el CENTRO.",
+    "trampa": "Es fácil cruzar los cables entre baja y alta presión. Piensa en un balón desinflado: se aplasta hacia los lados.",
+    "tags": ["neumaticos", "desgaste", "presion"], "senalId": null
+  },
+  {
+    "id": "M13-005", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "Un desgaste concentrado en la parte central de la banda de rodadura del neumático indica, generalmente…",
+    "imagen": null,
+    "opciones": [
+      "una presión de inflado demasiado baja.",
+      "un fallo en la alineación de la dirección.",
+      "una presión de inflado excesiva."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Con exceso de presión el neumático se abomba y solo apoya bien la zona central, que es la que se desgasta.",
+    "truco": "Mucho aire = barriga hinchada: el neumático anda de puntillas sobre el centro y lo gasta primero.",
+    "trampa": "Te ofrecen la presión baja para que piques por simetría. Baja = bordes; alta = centro. No lo mezcles.",
+    "tags": ["neumaticos", "desgaste", "presion"], "senalId": null
+  },
+  {
+    "id": "M13-006", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "Un neumático presenta un desgaste irregular, con zonas mucho más comidas que otras. ¿Qué puede estar fallando?",
+    "imagen": null,
+    "opciones": [
+      "Nada: es el desgaste normal por el uso.",
+      "Los amortiguadores o la alineación de la dirección.",
+      "La presión, que es demasiado alta en las cuatro ruedas."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El desgaste a bocados o irregular delata amortiguadores en mal estado o una dirección desalineada: la rueda no apoya de forma uniforme.",
+    "truco": "Desgaste 'a mordiscos' = la rueda va dando botes o torcida: amortiguadores o alineación al taller.",
+    "trampa": "El desgaste normal es uniforme. Si hay calvas y escalones, algo mecánico está bailando.",
+    "tags": ["neumaticos", "desgaste", "amortiguadores", "alineacion"], "senalId": null
+  },
+  {
+    "id": "M13-007", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "Circulando por autovía revienta un neumático delantero. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Sujetar el volante con firmeza y dejar que el vehículo pierda velocidad sin frenar bruscamente.",
+      "Pisar el freno a fondo de inmediato para detenerte cuanto antes.",
+      "Dar un golpe de volante hacia el arcén para salir rápido de la calzada."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Ante un reventón: volante bien agarrado, nada de frenazos ni volantazos, y dejar que el coche pierda velocidad de forma progresiva.",
+    "truco": "Reventón = modo estatua: manos firmes al volante, pies quietos y suavidad total hasta parar en sitio seguro.",
+    "trampa": "El cuerpo te pide frenar a muerte, y eso es justo lo que desestabiliza el coche con una rueda reventada.",
+    "explicacion_larga": "Cuando revienta un neumático, el vehículo tiende a irse hacia el lado de la rueda dañada. Si además frenas bruscamente, trasladas todo el peso al eje delantero y la pérdida de control está casi garantizada. Lo correcto es sujetar el volante con las dos manos y firmeza para mantener la trayectoria, levantar el pie del acelerador, ayudarte del freno motor y, solo cuando el coche esté controlado y a poca velocidad, frenar con suavidad y apartarte a un lugar seguro. Señaliza con las luces de emergencia y la baliza V-16 conectada antes de tocar nada.",
+    "tags": ["neumaticos", "reventon", "emergencias"], "senalId": null
+  },
+  {
+    "id": "M13-008", "mundo": 13, "tema": "Neumáticos",
+    "pregunta": "Sales de viaje con el coche a plena carga: maletero lleno y cinco ocupantes. Respecto a la presión de los neumáticos…",
+    "imagen": null,
+    "opciones": [
+      "se mantiene la de uso normal, porque la carga no influye.",
+      "se ajusta a la presión que el fabricante indica para plena carga.",
+      "conviene bajarla un poco para que el neumático amortigüe el peso extra."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El fabricante indica dos presiones: para uso normal y para plena carga. Con el coche cargado, toca la segunda.",
+    "truco": "Más peso, más aire. Busca la pegatina del marco de la puerta o la tapa del depósito: ahí están las dos presiones.",
+    "trampa": "Bajar la presión 'para amortiguar' parece lógico y es lo peor que puedes hacer: rueda cargada y floja se calienta y puede reventar.",
+    "tags": ["neumaticos", "presion", "carga"], "senalId": null
+  },
+  {
+    "id": "M13-009", "mundo": 13, "tema": "Frenos",
+    "pregunta": "En un descenso largo y pronunciado, ¿cómo conviene controlar la velocidad?",
+    "imagen": null,
+    "opciones": [
+      "Pisando el freno de servicio de manera continua durante toda la bajada.",
+      "Bajando en punto muerto y frenando solo cuando haga falta.",
+      "Utilizando el freno motor con una marcha corta, ayudándote del freno de servicio a intervalos."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "En bajadas largas se usa el freno motor con marchas cortas; el freno de servicio, solo como apoyo puntual para que no se sobrecaliente.",
+    "truco": "La misma marcha que te subió, te baja. Que frene el motor, que él no se cansa.",
+    "trampa": "El punto muerto es trampa mortal: sin freno motor, toda la retención recae en unos frenos que acabarán fritos.",
+    "tags": ["frenos", "freno-motor", "descensos"], "senalId": null
+  },
+  {
+    "id": "M13-010", "mundo": 13, "tema": "Frenos",
+    "pregunta": "La llamada fatiga del freno consiste en…",
+    "imagen": null,
+    "opciones": [
+      "una pérdida de eficacia de los frenos por sobrecalentamiento tras un uso prolongado.",
+      "el cansancio muscular de la pierna derecha en viajes largos.",
+      "una avería electrónica del ABS que obliga a frenar con más fuerza."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Si abusas del freno de servicio, por ejemplo en un descenso largo, se sobrecalienta y pierde eficacia: eso es la fatiga del freno o 'fading'.",
+    "truco": "Freno que trabaja sin descanso = freno quemado. Como tú sin dormir: sigue ahí, pero no rinde.",
+    "trampa": "La palabra 'fatiga' te lleva a pensar en el conductor. Aquí el que se fatiga es el freno, no tu pierna.",
+    "explicacion_larga": "Los frenos transforman la energía del movimiento en calor. Si los usas de forma continua, por ejemplo en un puerto de montaña, las pastillas y los discos alcanzan temperaturas enormes y el rozamiento pierde eficacia; incluso el líquido de frenos puede llegar a hervir y crear burbujas de vapor, dejando el pedal blando. Es la fatiga del freno. La prevención es sencilla: en descensos prolongados, marcha corta y freno motor, reservando el freno de servicio para apoyos breves e intermitentes.",
+    "tags": ["frenos", "fatiga-freno", "descensos"], "senalId": null
+  },
+  {
+    "id": "M13-011", "mundo": 13, "tema": "Frenos",
+    "pregunta": "¿Cuál es la función principal del sistema antibloqueo de frenos (ABS)?",
+    "imagen": null,
+    "opciones": [
+      "Reducir el desgaste de las pastillas de freno.",
+      "Evitar que las ruedas se bloqueen en una frenada fuerte, manteniendo la capacidad de dirigir el vehículo.",
+      "Frenar automáticamente cuando detecta un obstáculo delante."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El ABS impide el bloqueo de las ruedas al frenar fuerte, de modo que el vehículo sigue obedeciendo al volante.",
+    "truco": "ABS = Aún puedes eSquivar. Rueda que gira, coche que gira; rueda bloqueada, trineo sin dirección.",
+    "trampa": "La frenada automática de emergencia es otro sistema distinto. El ABS no frena por ti: evita el bloqueo cuando frenas tú.",
+    "tags": ["frenos", "abs", "seguridad-activa"], "senalId": null
+  },
+  {
+    "id": "M13-012", "mundo": 13, "tema": "Frenos",
+    "pregunta": "Frenando a fondo con un vehículo equipado con ABS, ¿se consigue siempre la menor distancia de frenado posible?",
+    "imagen": null,
+    "opciones": [
+      "Sí, el ABS acorta la frenada en cualquier tipo de firme.",
+      "Sí, salvo que el sistema esté averiado.",
+      "No: su gran ventaja es conservar el control de la dirección, aunque en algunos firmes la distancia puede no ser menor."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "El ABS no es una garantía de frenar en menos metros: su ventaja decisiva es que el coche sigue siendo dirigible durante la frenada máxima.",
+    "truco": "El ABS no te vende metros, te vende volante. Frenas fuerte Y esquivas: ese es su superpoder.",
+    "trampa": "El examen adora colarte que el ABS 'siempre frena en menos distancia'. En firmes sueltos como gravilla o nieve blanda puede incluso necesitar más metros.",
+    "explicacion_larga": "El ABS regula la presión de frenado muchas veces por segundo para mantener las ruedas al límite del bloqueo sin llegar a él. Sobre asfalto seco o mojado suele lograr frenadas muy eficaces, pero en superficies sueltas (gravilla, nieve profunda) una rueda bloqueada formaría una cuña de material que ayuda a detener el vehículo, así que con ABS la distancia puede llegar a ser mayor. Lo que el ABS garantiza en todos los casos es que puedes seguir dirigiendo mientras frenas a fondo, y esa capacidad de esquivar es la que evita accidentes.",
+    "tags": ["frenos", "abs", "distancia-frenado"], "senalId": null
+  },
+  {
+    "id": "M13-013", "mundo": 13, "tema": "Frenos",
+    "pregunta": "Circulando, se enciende en el tablero el testigo de avería de los frenos. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Detenerte en cuanto puedas hacerlo con seguridad y comprobar el sistema antes de continuar.",
+      "Seguir hasta el destino: casi siempre es un fallo del sensor.",
+      "Bombear el pedal repetidamente hasta que el testigo se apague."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Un testigo de frenos encendido es aviso serio: nivel de líquido bajo, desgaste o avería. Se para en lugar seguro y se comprueba, no se sigue como si nada.",
+    "truco": "Con los frenos no se negocia: testigo rojo de freno = pie fuera del acelerador y parada en sitio seguro.",
+    "trampa": "El 'será el sensor' es la frase que precede a quedarte sin frenos en el peor sitio posible.",
+    "tags": ["frenos", "testigos", "averias"], "senalId": null
+  },
+  {
+    "id": "M13-014", "mundo": 13, "tema": "Frenos",
+    "pregunta": "El pedal de freno tiene un recorrido más largo de lo habitual y lo notas esponjoso. ¿A qué puede deberse?",
+    "imagen": null,
+    "opciones": [
+      "A que las pastillas son nuevas y aún no han asentado.",
+      "A la presencia de aire en el circuito o a la falta de líquido de frenos.",
+      "A un exceso de líquido de frenos en el depósito."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Un pedal esponjoso o con mucho recorrido suele indicar aire en el circuito hidráulico o falta de líquido: al taller sin demorarlo.",
+    "truco": "El aire se comprime, el líquido no. Pedal 'de chicle' = hay aire donde solo debería haber líquido.",
+    "trampa": "El exceso de líquido no da pedal blando; la falta o el aire, sí. Te cuelan el problema al revés.",
+    "tags": ["frenos", "liquido-frenos", "averias"], "senalId": null
+  },
+  {
+    "id": "M13-015", "mundo": 13, "tema": "Dirección y suspensión",
+    "pregunta": "Notas que puedes girar el volante varios grados sin que las ruedas respondan. ¿Qué indica esa holgura?",
+    "imagen": null,
+    "opciones": [
+      "Es el funcionamiento normal de una dirección asistida.",
+      "Falta de presión en las ruedas delanteras.",
+      "Desgaste u holguras en el mecanismo de la dirección: hay que revisarla en el taller."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Una holgura excesiva en el volante delata desgaste en la dirección. Es un fallo de seguridad y se revisa en el taller cuanto antes.",
+    "truco": "Volante que baila solo = dirección pidiendo taller a gritos. Tú giras, el coche tiene que girar: sin margen de cortesía.",
+    "trampa": "La dirección asistida quita esfuerzo, no precisión. Ningún juego 'de serie' justifica que las ruedas no respondan.",
+    "tags": ["direccion", "holguras", "averias"], "senalId": null
+  },
+  {
+    "id": "M13-016", "mundo": 13, "tema": "Dirección y suspensión",
+    "pregunta": "En una recta llana, el coche se va hacia un lado y tienes que corregir constantemente con el volante. ¿Causa más probable?",
+    "imagen": null,
+    "opciones": [
+      "Presiones desiguales en los neumáticos o una dirección mal alineada.",
+      "Un reglaje incorrecto de los faros.",
+      "El desgaste normal del embrague."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Si el coche 'tira' hacia un lado, sospecha de presiones desiguales entre ruedas o de una alineación de dirección desajustada.",
+    "truco": "Coche que se arrima solo a un lado: primero mira las presiones (gratis), luego la alineación (taller).",
+    "trampa": "Ni las luces ni el embrague tienen nada que ver con la trayectoria. Te meten ruido para despistarte del binomio presión-alineación.",
+    "tags": ["direccion", "alineacion", "presion"], "senalId": null
+  },
+  {
+    "id": "M13-017", "mundo": 13, "tema": "Dirección y suspensión",
+    "pregunta": "Circular con los amortiguadores en mal estado…",
+    "imagen": null,
+    "opciones": [
+      "solo afecta a la comodidad de los ocupantes.",
+      "alarga la distancia de frenado y empeora la estabilidad, porque las ruedas pierden contacto con el suelo.",
+      "mejora el agarre en curva al ir la suspensión más blanda."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Unos amortiguadores gastados dejan que la rueda rebote y pierda contacto con el asfalto: más metros para frenar y peor estabilidad en curva.",
+    "truco": "Amortiguador cascado = rueda a la pata coja: si no toca el suelo, ni frena ni agarra.",
+    "trampa": "Lo de 'solo comodidad' es el clásico. El amortiguador es pieza de seguridad activa de primera línea, no un cojín.",
+    "explicacion_larga": "El amortiguador mantiene la rueda pegada al pavimento controlando las oscilaciones del muelle. Cuando está gastado, la rueda rebota tras cada irregularidad y durante esos instantes no transmite ni frenada ni dirección. El resultado: distancias de frenado más largas, peor comportamiento en curva, más riesgo de aquaplaning, desgaste irregular de los neumáticos y un ABS y ESP trabajando con datos falsos. Por eso conviene revisarlos periódicamente, aunque el coche 'parezca' ir bien.",
+    "tags": ["suspension", "amortiguadores", "distancia-frenado"], "senalId": null
+  },
+  {
+    "id": "M13-018", "mundo": 13, "tema": "Dirección y suspensión",
+    "pregunta": "El volante vibra claramente a partir de cierta velocidad. ¿Cuál es la causa más probable?",
+    "imagen": null,
+    "opciones": [
+      "Las ruedas están mal equilibradas.",
+      "El nivel del líquido refrigerante está bajo.",
+      "La presión de los neumáticos traseros es demasiado alta."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "La vibración del volante que aparece a cierta velocidad suele deberse a un desequilibrio en las ruedas: toca equilibrarlas en el taller.",
+    "truco": "Volante con 'parkinson' a 100 por hora = ruedas desequilibradas. Se cura con contrapesos, no con apretar más fuerte.",
+    "trampa": "El refrigerante no hace temblar nada, y una rueda trasera rara la notarías en el culo del coche, no en el volante.",
+    "tags": ["direccion", "equilibrado", "neumaticos"], "senalId": null
+  },
+  {
+    "id": "M13-019", "mundo": 13, "tema": "Alumbrado",
+    "pregunta": "Cargas mucho el maletero y la parte delantera del vehículo queda apuntando ligeramente hacia arriba. Respecto al alumbrado…",
+    "imagen": null,
+    "opciones": [
+      "no hay que hacer nada, porque todos los faros se autorregulan.",
+      "conviene corregir la altura del haz con el mando de reglaje para no deslumbrar.",
+      "se debe circular con la luz de carretera para compensar la inclinación."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Con el coche cargado atrás, los faros apuntan más alto y deslumbran: se corrige con el regulador de altura del haz.",
+    "truco": "Culo abajo, morro arriba, faros a los ojos del de enfrente. La ruedecita de reglaje existe para ese momento.",
+    "trampa": "El autorreglaje solo lo llevan algunos vehículos. En la mayoría, la ruedecita la giras tú o deslumbras tú.",
+    "tags": ["alumbrado", "reglaje", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M13-020", "mundo": 13, "tema": "Alumbrado",
+    "pregunta": "¿Con qué frecuencia conviene comprobar el funcionamiento de las luces del vehículo?",
+    "imagen": null,
+    "opciones": [
+      "Solo cuando se funde una lámpara.",
+      "Basta con la revisión que hacen en la ITV.",
+      "Periódicamente, y siempre antes de emprender un viaje."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Las luces se comprueban con regularidad y antes de cada viaje: sirven para ver y, sobre todo, para que te vean.",
+    "truco": "Vuelta rápida al coche con las luces dadas: 30 segundos que valen más que cualquier testigo.",
+    "trampa": "Esperar a la ITV es dejar el alumbrado sin revisar hasta dos años. Una lámpara fundida no avisa con carta.",
+    "tags": ["alumbrado", "mantenimiento", "comprobaciones"], "senalId": null
+  },
+  {
+    "id": "M13-021", "mundo": 13, "tema": "Alumbrado",
+    "pregunta": "Un faro de cruce regulado demasiado alto…",
+    "imagen": null,
+    "opciones": [
+      "puede deslumbrar a los conductores que circulan en sentido contrario.",
+      "ilumina más lejos y por eso resulta recomendable.",
+      "no tiene importancia mientras el otro faro esté bien reglado."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El haz de cruce debe iluminar la calzada sin invadir los ojos de quien viene de frente; demasiado alto, deslumbra.",
+    "truco": "La luz de cruce se llama así porque permite CRUZARSE sin dejar ciego al otro. Si apunta alto, ya no cumple su apellido.",
+    "trampa": "Ver 'más lejos' a costa de cegar al de enfrente no es una ventaja, es un accidente esperando su turno.",
+    "tags": ["alumbrado", "reglaje", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M13-022", "mundo": 13, "tema": "Alumbrado",
+    "pregunta": "Llevar los cristales de los faros sucios de barro o polvo…",
+    "imagen": null,
+    "opciones": [
+      "apenas influye en la iluminación.",
+      "reduce de forma notable la luz que llega a la calzada.",
+      "solo tiene importancia cuando hay niebla."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "La suciedad en los faros puede recortar mucho la luz útil y además dispersa el haz, con riesgo de deslumbrar. Límpialos con frecuencia.",
+    "truco": "Faro sucio = linterna con calcetín puesto. Un trapo de vez en cuando te devuelve media iluminación gratis.",
+    "trampa": "Como el faro 'se enciende', parece que cumple. Encenderse no es iluminar: la mugre se queda con buena parte de la luz.",
+    "tags": ["alumbrado", "mantenimiento", "visibilidad"], "senalId": null
+  },
+  {
+    "id": "M13-023", "mundo": 13, "tema": "Niveles y mantenimiento",
+    "pregunta": "¿Cómo se comprueba correctamente el nivel de aceite del motor?",
+    "imagen": null,
+    "opciones": [
+      "Con el motor en marcha, para que el aceite circule.",
+      "Con el coche en una pendiente, para que el aceite se acumule junto a la varilla.",
+      "Con el motor parado y frío y el vehículo en un lugar llano, usando la varilla."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "El nivel se mira con la varilla, el motor parado y frío y el coche en llano; solo así la medida es fiable.",
+    "truco": "Las tres efes del aceite: motor Frío, suelo llano (Flat) y varilla Frotada antes de medir.",
+    "trampa": "Con el motor en marcha o en cuesta, el aceite está repartido o escorado y la varilla te cuenta un cuento.",
+    "tags": ["niveles", "aceite", "mantenimiento"], "senalId": null
+  },
+  {
+    "id": "M13-024", "mundo": 13, "tema": "Niveles y mantenimiento",
+    "pregunta": "Al medir el aceite, la varilla marca por encima del nivel máximo. ¿Supone algún problema?",
+    "imagen": null,
+    "opciones": [
+      "Sí: el exceso de aceite también puede dañar el motor.",
+      "No: cuanto más aceite, mejor lubricado va todo.",
+      "Solo si el aceite no es de la marca del fabricante."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "El nivel debe quedar entre las marcas de mínimo y máximo: pasarse de aceite es tan malo como quedarse corto.",
+    "truco": "El aceite es como la sal: ni soso ni salado. Entre MIN y MAX, y todos contentos.",
+    "trampa": "El 'más es mejor' funciona con los puntos del carnet, no con el aceite: el exceso también estropea.",
+    "explicacion_larga": "Con demasiado aceite, el cigüeñal bate el lubricante y lo llena de espuma, con lo que lubrica peor; además sube la presión interna, pueden reventar retenes y juntas, y el motor puede quemar el aceite sobrante, dañando el catalizador o el filtro de partículas. Por eso el nivel correcto está siempre entre las marcas de mínimo y máximo de la varilla, y si te pasas al rellenar hay que retirar el sobrante, no encogerse de hombros.",
+    "tags": ["niveles", "aceite", "averias"], "senalId": null
+  },
+  {
+    "id": "M13-025", "mundo": 13, "tema": "Niveles y mantenimiento",
+    "pregunta": "Con el motor caliente, ¿se puede abrir el tapón del circuito de refrigeración para comprobar el nivel?",
+    "imagen": null,
+    "opciones": [
+      "Sí, con cuidado y usando un trapo.",
+      "No: el líquido está a presión y muy caliente, y puede provocar quemaduras graves.",
+      "Sí, siempre que el nivel esté por debajo del mínimo."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Jamás se abre el tapón del refrigerante en caliente: el circuito va a presión y el líquido puede salir disparado hirviendo.",
+    "truco": "Tapón del refrigerante = olla exprés: no se abre en caliente ni con trapo, ni con prisa, ni con fe.",
+    "trampa": "El 'con cuidado y un trapo' suena prudente, pero contra un chorro a presión hirviendo el trapo no te salva.",
+    "tags": ["niveles", "refrigerante", "seguridad"], "senalId": null
+  },
+  {
+    "id": "M13-026", "mundo": 13, "tema": "Niveles y mantenimiento",
+    "pregunta": "El nivel del líquido de frenos ha bajado apreciablemente desde la última revisión. ¿Qué puede indicar?",
+    "imagen": null,
+    "opciones": [
+      "Nada anormal: el líquido de frenos se va consumiendo con el uso.",
+      "Que hay que rotar los neumáticos.",
+      "Desgaste de las pastillas de freno o una fuga en el circuito."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El líquido de frenos no se consume: si el nivel baja, o las pastillas están gastadas o hay una fuga. En ambos casos, revisión.",
+    "truco": "El líquido de frenos no se bebe solo: si falta, o se ha ido por una fuga o lo 'esconden' unas pastillas gastadas.",
+    "trampa": "A diferencia del aceite o el limpiaparabrisas, este líquido no se gasta con el uso. Que baje siempre significa algo.",
+    "tags": ["niveles", "liquido-frenos", "averias"], "senalId": null
+  },
+  {
+    "id": "M13-027", "mundo": 13, "tema": "Niveles y mantenimiento",
+    "pregunta": "Aunque el nivel sea correcto, ¿por qué debe sustituirse el líquido de frenos periódicamente?",
+    "imagen": null,
+    "opciones": [
+      "Porque absorbe humedad con el tiempo y puede perder eficacia en frenadas exigentes.",
+      "Porque pierde el color y ya no se ve bien en el depósito.",
+      "No es necesario sustituirlo si el nivel se mantiene entre mínimo y máximo."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "El líquido de frenos es higroscópico: va absorbiendo humedad y su punto de ebullición baja. Se cambia según el plazo que fije el fabricante.",
+    "truco": "El líquido de frenos es una esponja invisible: chupa humedad aunque no lo veas. Nivel bien no significa líquido bien.",
+    "trampa": "El nivel correcto te da falsa tranquilidad: el problema no es la cantidad, es el agua que lleva dentro.",
+    "explicacion_larga": "El líquido de frenos absorbe humedad del ambiente poco a poco (es higroscópico). Con agua en el circuito, su punto de ebullición baja: en una frenada exigente o un descenso largo puede hervir, formar burbujas de vapor y dejarte el pedal blando justo cuando más lo necesitas. Además, la humedad corroe el circuito por dentro. Por eso se sustituye periódicamente según el plan del fabricante, normalmente cada dos años aproximadamente, aunque el nivel esté perfecto.",
+    "tags": ["liquido-frenos", "mantenimiento", "frenos"], "senalId": null
+  },
+  {
+    "id": "M13-028", "mundo": 13, "tema": "Niveles y mantenimiento",
+    "pregunta": "¿Con qué conviene rellenar el depósito del lavaparabrisas?",
+    "imagen": null,
+    "opciones": [
+      "Con agua y detergente de lavavajillas, que desengrasa mejor.",
+      "Con agua y un líquido limpiacristales específico, con anticongelante en invierno.",
+      "Con agua del grifo únicamente; los aditivos dañan las escobillas."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Se usa líquido específico para lavaparabrisas, que limpia sin hacer espuma y en invierno evita que el agua se congele en el circuito.",
+    "truco": "El Fairy es para los platos: en el coche hace espuma, se carga la goma y en invierno se congela igual.",
+    "trampa": "El detergente doméstico parece apañado y barato, pero genera espuma que te deja sin ver, que es justo lo contrario del plan.",
+    "tags": ["niveles", "limpiaparabrisas", "visibilidad"], "senalId": null
+  },
+  {
+    "id": "M13-029", "mundo": 13, "tema": "Batería y arranque",
+    "pregunta": "Dejas los faros encendidos con el motor parado durante varias horas. Lo más probable es que…",
+    "imagen": null,
+    "opciones": [
+      "la batería se descargue y el motor no arranque.",
+      "no ocurra nada, porque el alternador sigue cargando.",
+      "se fundan las lámparas por el uso prolongado."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Con el motor parado, el alternador no carga: las luces tiran solo de la batería y acaban dejándola sin energía para arrancar.",
+    "truco": "Motor parado = batería sin sueldo: solo gasta. Cada luz encendida es un mordisco a la hucha del arranque.",
+    "trampa": "El alternador solo carga con el motor en marcha. Parado, es un adorno.",
+    "tags": ["bateria", "averias", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M13-030", "mundo": 13, "tema": "Batería y arranque",
+    "pregunta": "Para arrancar tu coche con la batería descargada usando pinzas y otro vehículo, debes…",
+    "imagen": null,
+    "opciones": [
+      "unir el borne positivo de una batería con el negativo de la otra.",
+      "usar cualquier batería auxiliar, aunque sea de distinto voltaje.",
+      "unir los bornes del mismo signo, con una batería de igual voltaje y siguiendo el orden que indica el fabricante."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Con pinzas: positivo con positivo, negativo con negativo (o masa), baterías del mismo voltaje y el orden de conexión del manual.",
+    "truco": "Rojo con rojo y negro con negro, como enchufar un altavoz: cruzar polos es cortocircuito y fuegos artificiales.",
+    "trampa": "Cruzar positivo con negativo parece 'cerrar el circuito', y lo que cierras es un cortocircuito con chispazo incluido.",
+    "explicacion_larga": "El procedimiento seguro: baterías del mismo voltaje, vehículos sin tocarse y contactos apagados. Se conecta primero la pinza roja al positivo de la batería descargada y al positivo de la auxiliar; después la negra al negativo de la auxiliar y, preferiblemente, a una masa metálica del coche averiado (lejos de la batería, para alejar cualquier chispa de los gases que desprende). Se arranca el coche auxiliar, luego el averiado, y se desconecta en orden inverso. El manual del vehículo siempre manda.",
+    "tags": ["bateria", "arranque", "emergencias"], "senalId": null
+  },
+  {
+    "id": "M13-031", "mundo": 13, "tema": "Batería y arranque",
+    "pregunta": "El motor se resiste a arrancar. ¿Cómo debe usarse el motor de arranque?",
+    "imagen": null,
+    "opciones": [
+      "Manteniéndolo accionado sin soltar hasta que el motor arranque.",
+      "En intentos breves y espaciados, para no agotar la batería ni dañar el motor de arranque.",
+      "Accionándolo siempre con el acelerador pisado a fondo."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El motor de arranque se usa en accionamientos cortos, de pocos segundos, dejando pausas: insistir sin soltar agota la batería y puede quemarlo.",
+    "truco": "Al motor de arranque, toques de timbre: cortos y con pausa. Nada de dejar el dedo pegado como un pesado.",
+    "trampa": "Aguantar la llave 'hasta que arranque' es la receta perfecta para quedarte sin batería y sin motor de arranque a la vez.",
+    "tags": ["arranque", "bateria", "mantenimiento"], "senalId": null
+  },
+  {
+    "id": "M13-032", "mundo": 13, "tema": "ITV",
+    "pregunta": "Un turismo particular nuevo, ¿cuándo debe pasar su primera inspección técnica (ITV)?",
+    "imagen": null,
+    "opciones": [
+      "A los 4 años de su matriculación.",
+      "A los 2 años de su matriculación.",
+      "Al año de la compra."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Los turismos están exentos de ITV durante sus primeros 4 años: la primera inspección toca al cumplir los 4.",
+    "truco": "Regla ITV del turismo: 4-2-1. Libre hasta los 4, cada 2 hasta los 10, y de ahí en adelante cada año.",
+    "trampa": "El '2' te lo ponen para adelantarte la cita. Los dos años son la periodicidad DESPUÉS de la primera, no el estreno.",
+    "tags": ["itv", "plazos", "turismo"], "senalId": null
+  },
+  {
+    "id": "M13-033", "mundo": 13, "tema": "ITV",
+    "pregunta": "¿Con qué periodicidad debe pasar la ITV un turismo de 6 años de antigüedad?",
+    "imagen": null,
+    "opciones": [
+      "Cada año.",
+      "Cada 4 años.",
+      "Cada 2 años."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Entre los 4 y los 10 años de antigüedad, los turismos pasan la ITV cada 2 años.",
+    "truco": "De los 4 a los 10, la ITV va en años pares para tu coche: cada 2. El 4-2-1 de siempre.",
+    "trampa": "El 'cada año' es para los veteranos de más de 10. A los 6 años, tu coche aún va al ritmo tranquilo.",
+    "tags": ["itv", "plazos", "turismo"], "senalId": null
+  },
+  {
+    "id": "M13-034", "mundo": 13, "tema": "ITV",
+    "pregunta": "Un turismo con más de 10 años de antigüedad debe pasar la ITV…",
+    "imagen": null,
+    "opciones": [
+      "cada 2 años.",
+      "cada año.",
+      "cada 6 meses."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "A partir de los 10 años de antigüedad, la ITV del turismo es anual.",
+    "truco": "Coche que sopla 10 velas = revisión médica anual, como tu abuelo. El final del 4-2-1.",
+    "trampa": "El 'cada 6 meses' existe, pero para otros vehículos muy veteranos (taxis, camiones viejos…), no para tu turismo.",
+    "tags": ["itv", "plazos", "turismo"], "senalId": null
+  },
+  {
+    "id": "M13-035", "mundo": 13, "tema": "ITV",
+    "pregunta": "El resultado de la ITV de tu coche es desfavorable por un defecto grave. ¿Puedes circular con él?",
+    "imagen": null,
+    "opciones": [
+      "No, en ningún caso: queda inmovilizado en la propia estación.",
+      "Solo para llevarlo al taller a reparar y volver a la estación para la nueva inspección.",
+      "Sí, con normalidad, siempre que repares antes de dos meses."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Con ITV desfavorable el vehículo solo puede circular para ir al taller y regresar a la estación a la reinspección, dentro del plazo fijado (dos meses).",
+    "truco": "Desfavorable = arresto domiciliario con permiso: solo trayectos taller-ITV. Nada de vida normal hasta el APTO.",
+    "trampa": "El plazo de dos meses es para SUBSANAR el defecto, no un vale para circular a tu aire mientras tanto.",
+    "explicacion_larga": "La ITV desfavorable significa que se han detectado defectos graves. El vehículo no queda inmovilizado, pero su circulación se limita a lo imprescindible: llevarlo al taller para reparar los defectos y volver a la estación para la reinspección. Dispones de un plazo de dos meses para subsanarlos y superar la nueva inspección; si lo dejas pasar, tocará repetir la inspección completa. Circular con normalidad con una ITV desfavorable es sancionable.",
+    "tags": ["itv", "desfavorable", "sanciones"], "senalId": null
+  },
+  {
+    "id": "M13-036", "mundo": 13, "tema": "ITV",
+    "pregunta": "La ITV de un vehículo resulta negativa por defectos muy graves. Su traslado hasta el taller…",
+    "imagen": null,
+    "opciones": [
+      "puede hacerse conduciéndolo con mucha precaución.",
+      "puede hacerse conduciéndolo, pero únicamente de día.",
+      "debe hacerse por medios ajenos al propio vehículo, por ejemplo una grúa."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "Con resultado negativo el vehículo no puede circular por sus propios medios: al taller se va en grúa o transporte.",
+    "truco": "Negativo = coche en camilla: al taller lo llevan, él no camina. Desfavorable aún anda; negativo, ni un metro.",
+    "trampa": "Aquí está el matiz estrella: desfavorable permite ir al taller conduciendo; NEGATIVO, no. Mezclar los dos niveles es el fallo típico.",
+    "explicacion_larga": "La inspección negativa se reserva a los defectos muy graves: deficiencias que suponen un riesgo directo para la seguridad vial o el medio ambiente. En ese caso el vehículo queda privado de circular por sus propios medios, y su traslado desde la estación hasta el taller debe realizarse por medios ajenos, normalmente una grúa. Es el escalón por encima del resultado desfavorable, en el que sí se permite el desplazamiento limitado al taller y de vuelta a la estación para la reinspección.",
+    "tags": ["itv", "negativa", "defectos-muy-graves"], "senalId": null
+  },
+  {
+    "id": "M13-037", "mundo": 13, "tema": "ITV",
+    "pregunta": "Circular con la ITV caducada…",
+    "imagen": null,
+    "opciones": [
+      "es una infracción que puede ser sancionada, aunque el vehículo esté en perfecto estado.",
+      "no es sancionable si después el vehículo pasa la inspección sin defectos.",
+      "solo constituye infracción pasado un mes desde la caducidad."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "La ITV en vigor es obligatoria: circular con ella caducada es una infracción sancionable con multa, funcione el coche como funcione.",
+    "truco": "La ITV es como el DNI del coche: caducada no vale, por muy nuevo que parezca el careto.",
+    "trampa": "No existe 'mes de cortesía' ni el aprobado posterior borra la multa: caducada un día ya es sancionable.",
+    "tags": ["itv", "sanciones", "documentacion"], "senalId": null
+  },
+  {
+    "id": "M13-038", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "En un turismo, ¿quiénes tienen la obligación de utilizar el cinturón de seguridad?",
+    "imagen": null,
+    "opciones": [
+      "Solo el conductor y el ocupante del asiento delantero.",
+      "Los ocupantes de los asientos delanteros; detrás es solo recomendable.",
+      "Todos los ocupantes, también en los asientos traseros y en trayectos urbanos."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "El cinturón es obligatorio para todos los ocupantes, delante y detrás, en ciudad y en carretera.",
+    "truco": "Cinturón: todos, siempre, a todas partes. Ni el trayecto a la panadería se libra.",
+    "trampa": "El mito de 'detrás no hace falta' mata: un pasajero trasero suelto sale disparado contra los de delante.",
+    "tags": ["cinturon", "seguridad-pasiva", "ocupantes"], "senalId": null
+  },
+  {
+    "id": "M13-039", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Para que el cinturón de seguridad proteja de verdad, debe llevarse…",
+    "imagen": null,
+    "opciones": [
+      "bien pegado al cuerpo y sin holguras, sin pinzas ni ropa muy gruesa de por medio.",
+      "algo holgado, para poder moverse con comodidad.",
+      "con la banda diagonal por debajo del brazo, para que no roce el cuello."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El cinturón trabaja bien solo si va pegado al cuerpo, sin holguras, pinzas ni abrigos gordos que amortigüen mal la retención.",
+    "truco": "Cinturón como un abrazo: pegado, firme y sin nada por medio. La holgura de hoy es el latigazo de mañana.",
+    "trampa": "Las pinzas 'para que no apriete' anulan el pretensado: con holgura, el cuerpo coge carrerilla antes de que el cinturón lo frene.",
+    "tags": ["cinturon", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-040", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Una mujer embarazada, ¿cómo debe colocarse el cinturón de seguridad?",
+    "imagen": null,
+    "opciones": [
+      "No debe usar el cinturón a partir del sexto mes de embarazo.",
+      "Con la banda inferior lo más baja posible, por debajo del abdomen, y la diagonal entre el pecho, sin pasar sobre la tripa.",
+      "Con la banda inferior centrada sobre el abdomen para sujetar bien al bebé."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Las embarazadas deben usar cinturón siempre: la banda ventral por debajo del abdomen, sobre las caderas, y la diagonal entre el pecho.",
+    "truco": "Banda de abajo, por DEBAJO de la tripa; banda de arriba, entre el pecho. La barriga, ni tocarla.",
+    "trampa": "Ni exención por embarazo ni banda sobre la tripa: lo primero desprotege a las dos vidas y lo segundo las pone en peligro en un golpe.",
+    "tags": ["cinturon", "embarazadas", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-041", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "El airbag frontal del vehículo…",
+    "imagen": null,
+    "opciones": [
+      "hace innecesario el uso del cinturón de seguridad.",
+      "solo resulta eficaz a velocidades superiores a 100 km/h.",
+      "es un complemento del cinturón; sin cinturón puede incluso causar lesiones."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "El airbag está diseñado para trabajar junto al cinturón, nunca en su lugar: sin cinturón, el cuerpo llega descontrolado a la bolsa y el golpe es peor.",
+    "truco": "Airbag y cinturón son pareja de baile: separados, el airbag te puede meter un puñetazo en vez de un abrazo.",
+    "trampa": "El 'ya llevo airbag' es la excusa clásica. La bolsa explota a más de 200 km/h: sin cinturón que te frene antes, te la comes.",
+    "tags": ["airbag", "cinturon", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-042", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Conduciendo un vehículo con airbag frontal, se recomienda mantener entre el pecho y el volante una distancia mínima aproximada de…",
+    "imagen": null,
+    "opciones": [
+      "25 centímetros.",
+      "5 centímetros.",
+      "60 centímetros."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Se recomienda una separación mínima de unos 25 cm entre el pecho y el volante para que el airbag se despliegue sin golpearte.",
+    "truco": "Un folio A4 de por medio con el volante, unos 25 cm. Pegado al volante, el airbag te recibe con un directo.",
+    "trampa": "Ir 'encima del volante' parece dar control, pero deja al airbag sin espacio para hincharse antes de que llegues tú.",
+    "explicacion_larga": "El airbag frontal se infla en milésimas de segundo y con una fuerza enorme. Si conduces pegado al volante, tu cuerpo recibe la bolsa en plena fase de expansión, que es cuando más daño puede hacer: por eso se recomienda mantener al menos unos 25 centímetros entre el pecho y el volante, regular la altura del volante hacia el pecho (no hacia la cara) y sujetar el aro por fuera. Con la distancia adecuada, el airbag te recibe ya desplegado y amortigua en vez de golpear.",
+    "tags": ["airbag", "posicion-conduccion", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-043", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "¿Puedes instalar una sillita infantil orientada hacia atrás (a contramarcha) en el asiento del pasajero delantero?",
+    "imagen": null,
+    "opciones": [
+      "Sí, en cualquier caso: delante va más vigilado.",
+      "Únicamente si el airbag frontal de ese asiento está desactivado.",
+      "Sí, siempre que el niño pese más de 9 kilos."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Una silla a contramarcha jamás se coloca frente a un airbag frontal activo: si va delante, ese airbag debe estar desactivado.",
+    "truco": "Sillita mirando atrás + airbag activo = prohibido absoluto. Primero se desconecta el airbag, luego se instala la silla.",
+    "trampa": "El peso del niño no cambia nada: el peligro es el airbag explotando a centímetros de la cabeza del bebé.",
+    "explicacion_larga": "En una silla a contramarcha, la cabeza del niño queda muy cerca del salpicadero. Si el airbag frontal se dispara, golpea directamente el respaldo de la silla con una violencia que puede causar lesiones mortales al bebé. Por eso la norma es tajante: nunca un sistema de retención orientado hacia atrás en un asiento con airbag frontal activo. Si no queda más remedio que llevarlo delante (por las excepciones legales), hay que desactivar ese airbag y retrasar el asiento al máximo.",
+    "tags": ["sri", "airbag", "contramarcha"], "senalId": null
+  },
+  {
+    "id": "M13-044", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "¿Cómo se regula correctamente el reposacabezas del asiento?",
+    "imagen": null,
+    "opciones": [
+      "Lo más bajo posible, apoyando la nuca en su borde superior.",
+      "Es preferible retirarlo, porque en un golpe puede lesionar.",
+      "Con su parte central a la altura de los ojos y lo más cerca posible de la cabeza."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El reposacabezas se ajusta con su zona central a la altura de los ojos y casi rozando la cabeza: así frena el latigazo cervical.",
+    "truco": "Centro del reposacabezas a la altura de tus ojos y a cuatro dedos de la cabeza como mucho. No es un cojín, es un airbag de nuca.",
+    "trampa": "Bajo y lejos, el reposacabezas hace de palanca en el cuello en vez de protegerlo. Y quitarlo es directamente jugarse las cervicales.",
+    "tags": ["reposacabezas", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-045", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Un reposacabezas bien regulado protege sobre todo…",
+    "imagen": null,
+    "opciones": [
+      "del latigazo cervical en caso de alcance por detrás.",
+      "del golpe frontal contra el volante.",
+      "del cansancio en los viajes largos, que es su función principal."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Su misión es frenar el movimiento brusco de la cabeza hacia atrás en un alcance: es la defensa contra el latigazo cervical.",
+    "truco": "Te dan por detrás, el cuerpo salta adelante y la cabeza se queda: el reposacabezas está ahí para recogerla.",
+    "trampa": "Que sea cómodo para apoyarse es un extra: su nombre engaña, es un elemento de seguridad pasiva, no de descanso.",
+    "tags": ["reposacabezas", "latigazo-cervical", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-046", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Como norma general, ¿hasta qué estatura deben los menores utilizar un sistema de retención infantil adaptado a su talla y peso?",
+    "imagen": null,
+    "opciones": [
+      "Hasta 150 centímetros.",
+      "Hasta 135 centímetros.",
+      "Hasta cumplir 12 años, sea cual sea su estatura."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los menores con estatura igual o inferior a 135 cm deben usar siempre un sistema de retención infantil homologado y adaptado.",
+    "truco": "El listón mágico está en 1,35: por debajo, sillita o alzador sí o sí. Manda la estatura, no la edad.",
+    "trampa": "El 150 existe como recomendación para seguir con alzador, y la edad no pinta nada: lo legalmente obligatorio va por centímetros, 135.",
+    "tags": ["sri", "menores", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-047", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Un menor de 1,20 m de estatura con su sistema de retención, ¿puede viajar en el asiento delantero de un turismo?",
+    "imagen": null,
+    "opciones": [
+      "No, nunca, bajo ninguna circunstancia.",
+      "Sí, siempre, con tal de que lleve su sillita o alzador.",
+      "Solo en casos excepcionales: si el vehículo no tiene asientos traseros, si están ocupados por otros menores con sus sistemas o si no se pueden instalar allí."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "La regla es que los menores de 135 cm o menos viajen detrás con su SRI; delante solo caben las excepciones legales tasadas.",
+    "truco": "Peques atrás por norma; delante solo si no hay más remedio: sin plazas traseras, traseras llenas de otros peques o silla que no cabe detrás.",
+    "trampa": "Ni el 'nunca' ni el 'siempre' son verdad: el examen te empuja a los extremos y la norma vive en las excepciones.",
+    "explicacion_larga": "Como norma general, los menores con estatura igual o inferior a 135 cm deben ocupar los asientos traseros con su sistema de retención adaptado. La ley admite tres excepciones para llevarlos delante, siempre con su SRI: que el vehículo carezca de asientos traseros, que todos los asientos traseros estén ya ocupados por otros menores con sus sistemas, o que no sea posible instalar allí todos los sistemas de retención. Y recuerda el candado extra: si la silla va a contramarcha en el asiento delantero, el airbag frontal debe estar desactivado.",
+    "tags": ["sri", "menores", "asiento-delantero"], "senalId": null
+  },
+  {
+    "id": "M13-048", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Llevar el casco de la moto sin abrochar…",
+    "imagen": null,
+    "opciones": [
+      "es casi tan peligroso como no llevarlo: en un impacto puede salir despedido.",
+      "protege prácticamente igual, porque lo importante es el material del casco.",
+      "es admisible en trayectos urbanos cortos y a poca velocidad."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "Un casco sin abrochar sale volando en el momento del golpe, justo cuando lo necesitas: debe ir siempre bien abrochado.",
+    "truco": "Casco sin abrochar = paraguas cerrado bajo la tormenta: lo llevas, pero no te sirve de nada.",
+    "trampa": "En ciudad ocurren muchísimas caídas, y a 30 km/h un casco suelto también se va de paseo antes del impacto.",
+    "tags": ["casco", "motocicletas", "seguridad-pasiva"], "senalId": null
+  },
+  {
+    "id": "M13-049", "mundo": 13, "tema": "Seguridad activa",
+    "pregunta": "Los elementos de seguridad activa de un vehículo son los que…",
+    "imagen": null,
+    "opciones": [
+      "reducen las lesiones cuando el accidente ya se ha producido.",
+      "ayudan a evitar que el accidente llegue a producirse, como los frenos, la dirección, los neumáticos o el alumbrado.",
+      "avisan automáticamente a los servicios de emergencia tras una colisión."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Seguridad activa es todo lo que ayuda a EVITAR el accidente: frenos, dirección, neumáticos, alumbrado, suspensión, ESP…",
+    "truco": "Activa = actúa ANTES del golpe para que no ocurra. Pasiva = te 'arropa' DESPUÉS, cuando ya ha pasado.",
+    "trampa": "Reducir lesiones tras el golpe es la definición de seguridad PASIVA: te cambian una palabra y media España pica.",
+    "tags": ["seguridad-activa", "conceptos"], "senalId": null
+  },
+  {
+    "id": "M13-050", "mundo": 13, "tema": "Seguridad activa",
+    "pregunta": "El control electrónico de estabilidad (ESP o ESC)…",
+    "imagen": null,
+    "opciones": [
+      "es un elemento de seguridad activa que ayuda a mantener la trayectoria del vehículo, evitando derrapes.",
+      "es un elemento de seguridad pasiva, como el airbag.",
+      "permite tomar las curvas a más velocidad de la aconsejada sin riesgo."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "El ESP frena selectivamente cada rueda para corregir derrapes y mantener la trayectoria: seguridad activa en estado puro.",
+    "truco": "ESP = Ese Socio que endereza el coche cuando se te va: actúa antes del accidente, así que es seguridad ACTIVA.",
+    "trampa": "El ESP corrige errores dentro de la física, no la deroga: si entras pasadísimo de velocidad, ni el mejor ESP te salva.",
+    "tags": ["esp", "seguridad-activa", "estabilidad"], "senalId": null
+  },
+  {
+    "id": "M13-051", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "¿Cuál de los siguientes es un elemento de seguridad pasiva?",
+    "imagen": null,
+    "opciones": [
+      "Los frenos.",
+      "El alumbrado.",
+      "El cinturón de seguridad."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "El cinturón no evita el accidente, pero reduce sus consecuencias: es el rey de la seguridad pasiva.",
+    "truco": "Pregúntate: ¿esto trabaja para que NO haya golpe o para que el golpe duela menos? El cinturón es de los segundos: pasiva.",
+    "trampa": "Frenos y luces evitan el accidente, así que son seguridad activa. El nombre 'pasiva' no significa que sea peor, sino que actúa después.",
+    "tags": ["seguridad-pasiva", "cinturon", "conceptos"], "senalId": null
+  },
+  {
+    "id": "M13-052", "mundo": 13, "tema": "Seguridad pasiva",
+    "pregunta": "Las zonas de deformación programada de la carrocería sirven para…",
+    "imagen": null,
+    "opciones": [
+      "abaratar las reparaciones tras un golpe leve.",
+      "absorber la energía del impacto y proteger el habitáculo: son un elemento de seguridad pasiva.",
+      "reducir el peso del vehículo y con ello el consumo."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "La carrocería se arruga a propósito por delante y por detrás para tragarse la energía del golpe y que al habitáculo llegue lo mínimo.",
+    "truco": "El coche se sacrifica para salvarte: mejor un capó hecho un acordeón que la energía entera en tus huesos.",
+    "trampa": "Ver el coche 'destrozado' tras un golpe no siempre es mala señal: puede significar que la carrocería hizo exactamente su trabajo.",
+    "tags": ["seguridad-pasiva", "carroceria", "deformacion-programada"], "senalId": null
+  },
+  {
+    "id": "M13-053", "mundo": 13, "tema": "Mantenimiento y medio ambiente",
+    "pregunta": "Circular con los neumáticos a menos presión de la recomendada…",
+    "imagen": null,
+    "opciones": [
+      "aumenta el consumo de combustible y acelera el desgaste del neumático.",
+      "reduce el consumo, porque el coche va más 'pegado' a la carretera.",
+      "no influye en el consumo, solo en la comodidad de marcha."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Con poca presión aumenta la resistencia a la rodadura: el motor trabaja más, gastas más combustible y el neumático se desgasta antes.",
+    "truco": "Rueda floja = ir en bici con las ruedas medio vacías: pedaleas el doble. En coche, ese doble lo paga el depósito.",
+    "trampa": "Lo de 'más pegado, menos gasto' suena a física de bar: más superficie en contacto es más rozamiento, no menos consumo.",
+    "tags": ["neumaticos", "consumo", "presion"], "senalId": null
+  },
+  {
+    "id": "M13-054", "mundo": 13, "tema": "Mantenimiento y medio ambiente",
+    "pregunta": "Un motor mal mantenido, con los filtros sucios y los reglajes atrasados…",
+    "imagen": null,
+    "opciones": [
+      "contamina lo mismo, porque las emisiones dependen solo del tipo de carburante.",
+      "solo pierde algo de potencia, sin más consecuencias.",
+      "consume más combustible y emite más contaminantes."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El mal mantenimiento dispara el consumo y las emisiones: un motor a punto gasta menos y contamina menos.",
+    "truco": "Motor descuidado = fumador con asma: se ahoga, gasta más y lo respira todo el barrio.",
+    "trampa": "Las emisiones no dependen solo del carburante: el mismo coche, mal mantenido, contamina bastante más.",
+    "tags": ["mantenimiento", "consumo", "contaminacion"], "senalId": null
+  },
+  {
+    "id": "M13-055", "mundo": 13, "tema": "Mantenimiento y medio ambiente",
+    "pregunta": "¿Cuál es la mejor pauta para el mantenimiento del vehículo?",
+    "imagen": null,
+    "opciones": [
+      "Reparar las averías a medida que vayan apareciendo.",
+      "Seguir las revisiones periódicas que establece el fabricante.",
+      "Confiar en la ITV, que ya revisa el vehículo a fondo."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "El mantenimiento preventivo del libro del fabricante evita averías, ahorra combustible y mantiene el coche seguro.",
+    "truco": "Mejor prevenir en el taller que rezar en el arcén: el libro de mantenimiento es el calendario que tu coche sí cumple.",
+    "trampa": "La ITV es un control periódico, no un mantenimiento: pasa la mano, pero no te cambia ni el aceite.",
+    "tags": ["mantenimiento", "revisiones", "prevencion"], "senalId": null
+  },
+  {
+    "id": "M13-056", "mundo": 13, "tema": "Mantenimiento y medio ambiente",
+    "pregunta": "Tras cambiar el aceite del motor, ¿qué debe hacerse con el aceite usado?",
+    "imagen": null,
+    "opciones": [
+      "Entregarlo en un taller o punto limpio para su gestión como residuo.",
+      "Verterlo por el desagüe bien diluido en agua.",
+      "Guardarlo para quemarlo, aprovechando que es combustible."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El aceite usado es un residuo muy contaminante: se entrega en el taller o en un punto limpio, nunca al desagüe ni al suelo.",
+    "truco": "Un litro de aceite usado ensucia miles de litros de agua: al punto limpio, que para eso está.",
+    "trampa": "Diluirlo en agua no lo neutraliza, lo reparte: contaminas más volumen con el mismo veneno.",
+    "tags": ["medio-ambiente", "aceite", "residuos"], "senalId": null
+  }
+]

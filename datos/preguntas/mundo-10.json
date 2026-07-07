@@ -1,0 +1,856 @@
+[
+  {
+    "id": "M10-001", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Como norma general, ¿durante qué periodo es obligatorio llevar encendido el alumbrado del vehículo?",
+    "imagen": null,
+    "opciones": [
+      "Desde las doce de la noche hasta las seis de la mañana.",
+      "Entre el ocaso y la salida del sol.",
+      "Solo cuando la oscuridad sea total."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "El alumbrado es obligatorio entre el ocaso (puesta de sol) y la salida del sol, no en un horario fijo ni cuando ya no se ve nada.",
+    "truco": "El ocaso enciende, el sol apaga: en cuanto el sol se esconde, tú das la luz.",
+    "trampa": "Te tientan con 'oscuridad total': si esperas a no ver nada, ya llevas un rato circulando a ciegas e infringiendo.",
+    "tags": ["alumbrado", "ocaso"], "senalId": null
+  },
+  {
+    "id": "M10-002", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Son las doce del mediodía con un sol espléndido y vas a atravesar un túnel. ¿Debes encender el alumbrado?",
+    "imagen": null,
+    "opciones": [
+      "Sí, en túneles y pasos inferiores el alumbrado es obligatorio a cualquier hora.",
+      "Solo si el túnel carece de iluminación artificial.",
+      "No, de día el alumbrado nunca es obligatorio."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "En túneles y pasos inferiores hay que llevar el alumbrado encendido a cualquier hora del día, tenga o no iluminación el tramo.",
+    "truco": "Túnel = noche portátil: entras, luces.",
+    "trampa": "La iluminación artificial del túnel no te libra: la obligación es por circular por el túnel, no por lo oscuro que esté.",
+    "tags": ["alumbrado", "tunel"], "senalId": null
+  },
+  {
+    "id": "M10-003", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Circulas de día por una carretera convencional y entra una niebla que reduce mucho la visibilidad. ¿Qué haces con las luces?",
+    "imagen": null,
+    "opciones": [
+      "Nada, porque es de día.",
+      "Enciendo solo las luces de posición.",
+      "Enciendo el alumbrado: la luz de cruce o la antiniebla delantera."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Cuando las condiciones meteorológicas disminuyen sensiblemente la visibilidad, el alumbrado es obligatorio aunque sea pleno día.",
+    "truco": "Con niebla no enciendes para ver: enciendes para que TE vean.",
+    "trampa": "El 'es de día' pica mucho: la obligación de alumbrado no va de hora, va de visibilidad.",
+    "tags": ["alumbrado", "niebla", "meteorologia"], "senalId": null
+  },
+  {
+    "id": "M10-004", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Circulas por un carril reversible a las cuatro de la tarde de un día soleado. ¿Qué alumbrado debes llevar?",
+    "imagen": null,
+    "opciones": [
+      "Al menos la luz de cruce, encendida de día y de noche.",
+      "Ninguno, porque hay luz solar suficiente.",
+      "Las luces de posición únicamente."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "En los carriles reversibles es obligatorio circular con la luz de cruce encendida, sea de día o de noche.",
+    "truco": "Reversible = luz visible: en ese carril, cruce siempre, llueva, nieve o haga sol.",
+    "trampa": "El sol te relaja. En un carril reversible te vienen vehículos de frente por tu misma calzada: la luz avisa de que estás ahí.",
+    "tags": ["alumbrado", "carril-reversible"], "senalId": null
+  },
+  {
+    "id": "M10-005", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De día, circulas por un carril habilitado para circular en sentido contrario al habitual, balizado con conos. ¿Alumbrado?",
+    "imagen": null,
+    "opciones": [
+      "No es necesario si la visibilidad es buena.",
+      "Sí, al menos la luz de corto alcance (cruce), también de día.",
+      "Solo la luz antiniebla delantera."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "En carriles habilitados en sentido contrario y en carriles adicionales circunstanciales debes llevar al menos la luz de cruce, de día y de noche.",
+    "truco": "Si el carril es 'raro' (reversible, adicional o a contramano), la luz de cruce va de serie.",
+    "trampa": "La buena visibilidad no te exime: la regla existe para que el que viene de frente te identifique al instante en una situación anómala.",
+    "tags": ["alumbrado", "carril-sentido-contrario"], "senalId": null
+  },
+  {
+    "id": "M10-006", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "El sol acaba de ponerse pero todavía queda bastante claridad. ¿Estás obligado a encender el alumbrado?",
+    "imagen": null,
+    "opciones": [
+      "No, hasta que anochezca del todo.",
+      "Solo si los demás vehículos ya lo llevan encendido.",
+      "Sí, la obligación empieza en el ocaso, aunque quede claridad."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "La norma marca el ocaso como inicio de la obligación, no la sensación de oscuridad que tengas tú.",
+    "truco": "No negocies con el crepúsculo: sol fuera, luces dentro.",
+    "trampa": "'Todavía se ve bien' es la excusa clásica: al atardecer tú ves, pero a ti te ven fatal, que es justo lo que evita la luz.",
+    "tags": ["alumbrado", "ocaso"], "senalId": null
+  },
+  {
+    "id": "M10-007", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Siempre que sea obligatorio utilizar el alumbrado, la luz de posición…",
+    "imagen": null,
+    "opciones": [
+      "debe estar encendida junto con la luz de cruce o de carretera que corresponda.",
+      "puede apagarse si ya llevas encendida la luz de cruce.",
+      "solo es exigible cuando el vehículo está detenido."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "La luz de posición acompaña siempre al resto del alumbrado: va encendida junto con la de cruce o la de carretera.",
+    "truco": "La posición es la 'base' del alumbrado: las demás luces se suman a ella, nunca la sustituyen.",
+    "trampa": "Suena lógico que el cruce 'incluya' la posición y por eso pica, pero la norma exige la de posición encendida siempre que uses alumbrado.",
+    "tags": ["alumbrado", "luz-posicion"], "senalId": null
+  },
+  {
+    "id": "M10-008", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Te encuentras una señal circular azul con el símbolo de una luz encendida. ¿Qué te obliga a hacer?",
+    "imagen": null,
+    "opciones": [
+      "A encender las luces de emergencia.",
+      "A llevar encendido, al menos, el alumbrado de corto alcance.",
+      "A cambiar a la luz de carretera."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Es la señal de alumbrado de corto alcance obligatorio: como mínimo debes circular con la luz de cruce encendida.",
+    "truco": "Círculo azul manda: si dibuja una luz, tú enciendes la de cruce como mínimo.",
+    "trampa": "La 'luz de carretera' suena a más seguridad, pero la señal pide corto alcance: con largas podrías deslumbrar justo donde la vía lo prohíbe.",
+    "tags": ["alumbrado", "senales", "luz-cruce"], "senalId": "R-413"
+  },
+  {
+    "id": "M10-009", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿Para qué sirve principalmente la luz de posición?",
+    "imagen": null,
+    "opciones": [
+      "Para iluminar la vía a corta distancia.",
+      "Para iluminar la placa de matrícula.",
+      "Para señalizar la presencia y la anchura del vehículo."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "La luz de posición no ilumina la vía: indica a los demás dónde estás y cuánto ocupas.",
+    "truco": "Posición = 'estoy aquí y mido esto'. Cruce = 'veo'. Carretera = 'veo lejos'.",
+    "trampa": "Como algo alumbra, parece que sirve para ver. Error: con posición no ves la vía, solo te dejas ver.",
+    "tags": ["luz-posicion", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M10-010", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De noche circulas por una calle de poblado bien iluminada por farolas. ¿Qué luz debes llevar?",
+    "imagen": null,
+    "opciones": [
+      "La luz de cruce (corto alcance).",
+      "Solo las luces de posición, porque hay farolas.",
+      "La luz de carretera para ver mejor los cruces."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "En poblado, de noche, se circula con la luz de cruce, por muy iluminada que esté la calle.",
+    "truco": "En ciudad de noche, cruce y punto: las farolas alumbran la calle, tu cruce te hace visible a ti.",
+    "trampa": "Las farolas te invitan a quedarte solo con posición, pero la luz de posición no basta para circular.",
+    "tags": ["luz-cruce", "poblado", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M10-011", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De noche, por una carretera convencional sin iluminación y sin ningún vehículo a la vista, lo correcto es circular con…",
+    "imagen": null,
+    "opciones": [
+      "la luz de cruce, porque la de carretera solo se permite en autopista.",
+      "la luz de carretera (largo alcance).",
+      "las luces antiniebla delanteras."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Fuera de poblado, en vías insuficientemente iluminadas, procede la luz de carretera siempre que no deslumbres a nadie.",
+    "truco": "Campo oscuro y nadie enfrente: largas. Aparece alguien: cortas.",
+    "trampa": "Lo de 'solo en autopista' es inventado: las largas se permiten en cualquier vía interurbana sin iluminar, mientras no deslumbres.",
+    "tags": ["luz-carretera", "via-interurbana"], "senalId": null
+  },
+  {
+    "id": "M10-012", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿Puedes utilizar la luz de carretera circulando por una travesía o una calle dentro de poblado?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si no hay peatones cerca.",
+      "Sí, siempre que circules a menos de 50 km/h.",
+      "No, como norma general en poblado se circula con la luz de cruce."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "La luz de carretera es para vías interurbanas insuficientemente iluminadas; en poblado lo que corresponde es la luz de cruce.",
+    "truco": "Largas solo en despoblado: donde hay aceras y farolas, cortas.",
+    "trampa": "Ni la velocidad ni la ausencia de peatones lo arreglan: en poblado las largas deslumbran a todo el que se cruce contigo.",
+    "tags": ["luz-carretera", "poblado"], "senalId": null
+  },
+  {
+    "id": "M10-013", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿Es suficiente circular de noche por una carretera solo con las luces de posición encendidas?",
+    "imagen": null,
+    "opciones": [
+      "No, la luz de posición no ilumina la vía y no basta para circular.",
+      "Sí, si la luna ilumina lo suficiente.",
+      "Sí, siempre que circules por el arcén."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "Para circular de noche necesitas cruce o carretera; la posición sola no permite ver ni ser visto correctamente en marcha.",
+    "truco": "Posición sola = coche parado. Si ruedas, necesitas luz que alumbre por delante.",
+    "trampa": "La luna y el arcén son adornos de la pregunta: ninguna circunstancia convierte la posición en luz suficiente para circular.",
+    "tags": ["luz-posicion", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M10-014", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Estás detenido de noche en un stop, con otro vehículo esperando de frente. ¿Puedes mantener la luz de carretera encendida?",
+    "imagen": null,
+    "opciones": [
+      "Sí, mientras el vehículo esté detenido no deslumbra.",
+      "No, está prohibido llevar la luz de carretera con el vehículo parado o estacionado.",
+      "Sí, si es por menos de dos minutos."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Con el vehículo parado o estacionado está prohibido mantener encendida la luz de carretera.",
+    "truco": "Coche quieto, largas fuera: un foco parado deslumbra igual que uno en marcha.",
+    "trampa": "El razonamiento 'si no me muevo no molesto' es la trampa: las largas de un coche parado te clavan el foco en los ojos igualmente.",
+    "tags": ["luz-carretera", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M10-015", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De noche, con luz de cruce por una carretera sin iluminar, tu velocidad debe permitirte…",
+    "imagen": null,
+    "opciones": [
+      "mantener el límite genérico de la vía en todo momento.",
+      "llegar antes de que se haga completamente de noche.",
+      "detener el vehículo dentro de la zona que alcanza a iluminar tu alumbrado."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "De noche debes poder parar dentro de lo que ves: si tu luz alcanza menos que tu distancia de detención, vas demasiado rápido.",
+    "truco": "No corras más que tu luz: lo que no iluminas, no existe hasta que te lo comes.",
+    "trampa": "El límite de la vía es un máximo, no un derecho: de noche puede ser obligatorio ir bastante por debajo para poder frenar a tiempo.",
+    "explicacion_larga": "El límite de velocidad de una vía no garantiza nada de noche. La regla es que debes poder detener el vehículo dentro de los límites de tu campo de visión, y de noche tu campo de visión es la zona que ilumina tu alumbrado. Con luz de cruce, esa zona es corta: si circulas al límite genérico y aparece un obstáculo en el borde de lo iluminado, cuando lo veas ya no tendrás espacio para frenar. Por eso en tramos oscuros con cortas toca levantar el pie aunque la señal permita más.",
+    "tags": ["alumbrado", "velocidad", "noche"], "senalId": null
+  },
+  {
+    "id": "M10-016", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Como mínimo, ¿qué distancia por delante del vehículo debe iluminar la luz de cruce?",
+    "imagen": null,
+    "opciones": [
+      "40 metros.",
+      "100 metros.",
+      "10 metros."
+    ],
+    "correcta": 0, "dificultad": 5,
+    "explicacion_corta": "La luz de cruce debe iluminar la vía al menos 40 metros por delante; la de carretera, al menos 100 metros. [VERIFICAR DGT 2026]",
+    "truco": "40 de corto, 100 de largo: cruce 40 m, carretera 100 m.",
+    "trampa": "Los 100 metros son de la luz de carretera: el examen intercambia las cifras de cruce y carretera para ver si las tienes separadas.",
+    "explicacion_larga": "Las cifras oficiales son: luz de cruce, iluminación eficaz de al menos 40 metros por delante; luz de carretera, al menos 100 metros. Este dato explica la pregunta anterior sobre velocidad nocturna: a 90 o 100 km/h la distancia total de detención supera de largo esos 40 metros del cruce, así que con cortas y sin iluminación externa hay que moderar la velocidad sí o sí. Grábate el par 40/100 porque el examen lo pregunta de forma directa y también camuflado.",
+    "tags": ["luz-cruce", "luz-carretera", "alcance"], "senalId": null
+  },
+  {
+    "id": "M10-017", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De noche circulas por un tramo de autovía con buena iluminación artificial. ¿Qué luz corresponde?",
+    "imagen": null,
+    "opciones": [
+      "La de carretera, porque es vía interurbana.",
+      "La de cruce es suficiente en vías suficientemente iluminadas.",
+      "Ninguna, la iluminación de la vía te exime del alumbrado."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "En vías interurbanas suficientemente iluminadas se circula con luz de cruce; las largas son para tramos sin iluminar.",
+    "truco": "¿Hay farolas de sobra? Cortas. ¿Boca de lobo? Largas (si no deslumbras).",
+    "trampa": "El automatismo 'interurbana = largas' falla: lo que decide no es el tipo de vía, sino si está o no suficientemente iluminada.",
+    "tags": ["luz-cruce", "autovia", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M10-018", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Como norma general, de noche por una autovía sin iluminación circularás con la luz de carretera…",
+    "imagen": null,
+    "opciones": [
+      "nunca, porque en autovía está prohibida.",
+      "solo si circulas por el carril izquierdo.",
+      "siempre que no produzcas deslumbramiento a otros usuarios."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Fuera de poblado y sin iluminación suficiente, la luz de carretera es la adecuada, con un límite claro: no deslumbrar a nadie.",
+    "truco": "Las largas se prestan con una condición: al primer par de ojos enfrente, las devuelves.",
+    "trampa": "No hay ninguna prohibición de largas en autovía ni reglas por carril: la única frontera es el deslumbramiento.",
+    "tags": ["luz-carretera", "autovia", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M10-019", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Circulas con la luz de carretera y aparece un vehículo en sentido contrario. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Cambiar a la luz de cruce antes de deslumbrar a su conductor.",
+      "Mantener las largas hasta cruzarnos, para ver bien el tramo.",
+      "Apagar todas las luces un instante."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "Hay que sustituir la luz de carretera por la de cruce en cuanto haya riesgo de deslumbrar al que viene de frente.",
+    "truco": "Ojos enfrente, cortas al momento.",
+    "trampa": "Apagar todo es la opción absurda que a veces se marca por los nervios: te dejaría a ciegas a ti y sin referencia al otro.",
+    "tags": ["deslumbramiento", "luz-cruce"], "senalId": null
+  },
+  {
+    "id": "M10-020", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿En qué momento exacto debes pasar de la luz de carretera a la de cruce ante un vehículo que se aproxima de frente?",
+    "imagen": null,
+    "opciones": [
+      "Cuando estéis a punto de cruzaros.",
+      "Tan pronto aprecies la posibilidad de deslumbrarlo, aunque aún esté lejos.",
+      "Cuando el otro conductor te haga una ráfaga."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El cambio a cortas se hace en cuanto exista riesgo de deslumbrar, sin esperar a estar cerca ni a que el otro proteste.",
+    "truco": "No esperes la ráfaga del otro: si te la hace, ya has llegado tarde.",
+    "trampa": "El 'a punto de cruzaros' pica porque parece razonable, pero las largas deslumbran a cientos de metros: para entonces el daño está hecho.",
+    "tags": ["deslumbramiento", "luz-carretera"], "senalId": null
+  },
+  {
+    "id": "M10-021", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De noche alcanzas a otro vehículo y te colocas detrás de él con tu luz de carretera. ¿Es correcto?",
+    "imagen": null,
+    "opciones": [
+      "Sí, porque no le das la luz de cara.",
+      "Sí, si mantienes la distancia de seguridad.",
+      "No, debes llevar la de cruce: sus retrovisores le devuelven tu luz y lo deslumbras."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "También se deslumbra por el retrovisor: si sigues a otro vehículo de cerca, toca luz de cruce.",
+    "truco": "El retrovisor es un espejo, no un escudo: tus largas rebotan en él directas a sus ojos.",
+    "trampa": "Como no le das 'de cara', parece inofensivo. El deslumbramiento por espejo es igual de peligroso y la norma lo prohíbe igual.",
+    "tags": ["deslumbramiento", "retrovisor", "luz-carretera"], "senalId": null
+  },
+  {
+    "id": "M10-022", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "La obligación de cambiar a la luz de cruce para no deslumbrar, ¿a qué usuarios protege?",
+    "imagen": null,
+    "opciones": [
+      "A cualquiera: también a peatones, ciclistas y a quienes circulan delante en tu mismo sentido.",
+      "Únicamente a los conductores de vehículos que vienen de frente.",
+      "Solo a los vehículos de motor, no a los peatones."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "No puedes deslumbrar a ningún usuario de la vía: ni de frente, ni por el retrovisor, ni a peatones o ciclistas.",
+    "truco": "Cualquier par de ojos en la vía cuenta: si hay ojos, hay cortas.",
+    "trampa": "El examen reduce la regla a 'vehículos de frente' y mucha gente traga: la norma habla de otros usuarios en general, peatones incluidos.",
+    "explicacion_larga": "La norma obliga a sustituir la luz de carretera por la de cruce tan pronto exista posibilidad de deslumbrar a otros usuarios de la vía, y ese concepto es amplísimo: conductores que vienen de frente, conductores a los que sigues (los deslumbras a través de sus retrovisores), peatones que caminan por la vía o su arcén, ciclistas y cualquier otra persona que use la vía. Un peatón deslumbrado en un arcén oscuro puede desorientarse e invadir la calzada, así que la regla no es una cortesía entre coches: es seguridad para todos.",
+    "tags": ["deslumbramiento", "peatones", "luz-cruce"], "senalId": null
+  },
+  {
+    "id": "M10-023", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Un vehículo que viene de frente te deslumbra. ¿Cómo debes reaccionar?",
+    "imagen": null,
+    "opciones": [
+      "Acelerar para salir cuanto antes de la zona de deslumbramiento.",
+      "Reducir la velocidad e incluso detenerte si es preciso.",
+      "Cerrar los ojos un instante hasta que pase."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Ante un deslumbramiento hay que reducir la velocidad y, si hace falta, llegar a detenerse para no atropellar ni chocar con lo que no ves.",
+    "truco": "Si te deslumbran: pie fuera del gas. A ciegas, cuanto más despacio, mejor.",
+    "trampa": "Acelerar 'para pasar el mal trago antes' es la reacción instintiva y la más peligrosa: recorres a ciegas muchos más metros.",
+    "tags": ["deslumbramiento", "velocidad"], "senalId": null
+  },
+  {
+    "id": "M10-024", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "El que viene de frente no quita las largas y te está deslumbrando. ¿Le mantienes tú las tuyas para que 'aprenda'?",
+    "imagen": null,
+    "opciones": [
+      "Sí, es la forma admitida de avisarle.",
+      "Sí, pero solo durante un par de segundos.",
+      "No: nunca respondas deslumbrando; reduce la velocidad y sigue con tu luz de cruce."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Responder al deslumbramiento con tus largas solo consigue dos conductores ciegos de frente. Reduce y mantén el cruce.",
+    "truco": "Dos deslumbrados no ven el doble: no ven ninguno. La venganza lumínica no existe en el reglamento.",
+    "trampa": "La 'ráfaga educativa' está normalizada en la calle, y por eso tienta: pero convertir un deslumbramiento en dos multiplica el riesgo de frontal.",
+    "explicacion_larga": "Cuando alguien te deslumbra, tu prioridad es no perder el control: reduce la velocidad, no mires directamente al foco y guíate por la referencia del borde derecho de tu carril. Devolverle las largas es lo peor que puedes hacer, porque en ese momento los dos vehículos circulan uno hacia otro con los dos conductores cegados, a velocidad de carretera y separados por apenas unos metros de margen lateral. Una ráfaga breve para avisar es distinta de mantener las largas clavadas, pero en un cruce frontal la respuesta segura es siempre reducir y aguantar con tu cruce.",
+    "tags": ["deslumbramiento", "luz-carretera"], "senalId": null
+  },
+  {
+    "id": "M10-025", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Después de cruzarte con el vehículo que te deslumbró sigues viendo una mancha luminosa y apenas distingues la calzada. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Sigo reduciendo e incluso me detengo hasta recuperar la visión.",
+      "Sigo a la misma velocidad, la mancha desaparece sola.",
+      "Enciendo las largas para compensar la falta de visión."
+    ],
+    "correcta": 0, "dificultad": 5,
+    "explicacion_corta": "Si el deslumbramiento persiste, la única respuesta segura es reducir más y detenerte si es preciso hasta volver a ver con normalidad.",
+    "truco": "La mancha en los ojos no entiende de prisas: hasta que no se va, tú no vas.",
+    "trampa": "Como el otro coche ya pasó, parece que el peligro pasó también. Falso: el peligro es tu retina, que sigue sin ver la carretera.",
+    "explicacion_larga": "El deslumbramiento no termina cuando el otro vehículo pasa: la retina necesita un tiempo de readaptación a la oscuridad, y durante esos segundos circulas con visión reducida o casi nula. A 90 km/h, tres segundos de ceguera parcial son 75 metros recorridos sin ver: espacio de sobra para un peatón, un animal o un vehículo averiado. Por eso la norma no se queda en 'reducir': llega hasta detener el vehículo si es preciso. Encender las largas no compensa nada, porque el problema no está en la carretera sino en tus ojos.",
+    "tags": ["deslumbramiento", "vision", "noche"], "senalId": null
+  },
+  {
+    "id": "M10-026", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿En cuáles de estas situaciones está permitido usar la luz antiniebla delantera?",
+    "imagen": null,
+    "opciones": [
+      "Solo cuando haya niebla, nunca en otro caso.",
+      "Con niebla, lluvia intensa, nevada o nubes de polvo o humo.",
+      "Siempre que sea de noche, como refuerzo del cruce."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "La antiniebla delantera se puede usar cuando las condiciones reducen sensiblemente la visibilidad: niebla, lluvia intensa, nieve, polvo o humo.",
+    "truco": "La antiniebla delantera no es solo 'de niebla': vale para todo lo que ensucie el aire (agua, nieve, polvo, humo).",
+    "trampa": "El nombre engaña: 'antiniebla' parece que la limita a la niebla, y de noche sin causa tampoco se puede usar como refuerzo.",
+    "tags": ["antiniebla", "meteorologia"], "senalId": null
+  },
+  {
+    "id": "M10-027", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Sin niebla ni lluvia, ¿existe algún caso en que puedas llevar encendida la luz antiniebla delantera?",
+    "imagen": null,
+    "opciones": [
+      "No, sin fenómeno meteorológico está siempre prohibida.",
+      "Sí, en cualquier vía interurbana de noche.",
+      "Sí, en tramos de vías estrechas con muchas curvas."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Además de con mala visibilidad, la antiniebla delantera puede usarse en tramos estrechos y con muchas curvas, sola o con el cruce.",
+    "truco": "Curvas cerradas y carretera estrecha: la antiniebla delantera 'pinta' los bordes que el cruce no barre.",
+    "trampa": "La excepción de las curvas es la gran olvidada: casi todo el mundo marca que sin niebla está prohibida y ahí cae.",
+    "explicacion_larga": "La luz antiniebla delantera tiene un haz ancho y bajo, pensado para iluminar los bordes de la calzada sin reflejarse en la cortina de niebla. Ese mismo haz resulta útil en tramos de vías estrechas con muchas curvas, porque ilumina los márgenes hacia donde gira la carretera, cosa que el haz del cruce no hace tan bien. Por eso el reglamento permite usarla ahí, sola o junto con la luz de cruce, aunque no haya niebla ni lluvia. Ojo: esta excepción es solo de la delantera; la antiniebla trasera sigue reservada a condiciones especialmente desfavorables.",
+    "tags": ["antiniebla", "curvas"], "senalId": null
+  },
+  {
+    "id": "M10-028", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿Cuándo debes llevar encendida la luz antiniebla trasera?",
+    "imagen": null,
+    "opciones": [
+      "Solo cuando las condiciones meteorológicas o ambientales sean especialmente desfavorables.",
+      "Siempre que llueva, aunque sea poco.",
+      "Siempre que enciendas la antiniebla delantera."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "La antiniebla trasera es solo para condiciones muy malas: niebla espesa, lluvia muy intensa o nevada fuerte.",
+    "truco": "La antiniebla trasera es el botón del pánico: solo cuando casi no te verían de otra forma.",
+    "trampa": "No van en pareja: la delantera tiene usos más amplios; la trasera es tan potente que fuera de lo muy desfavorable deslumbra al de atrás.",
+    "tags": ["antiniebla", "meteorologia"], "senalId": null
+  },
+  {
+    "id": "M10-029", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Cae una llovizna suave y el coche de delante lleva la antiniebla trasera encendida, molestándote. ¿Está actuando bien?",
+    "imagen": null,
+    "opciones": [
+      "Sí, ante cualquier lluvia es obligatoria.",
+      "No, con lluvia débil no procede: esa luz deslumbra a quien circula detrás.",
+      "Sí, siempre que también lleve la de cruce."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Con llovizna no se dan las condiciones especialmente desfavorables que exige la antiniebla trasera; llevarla así deslumbra sin necesidad.",
+    "truco": "Si el limpiaparabrisas va al mínimo, la antiniebla trasera sobra.",
+    "trampa": "El 'ante la lluvia, por si acaso' pica mucho: la trasera no es una luz de precaución, es de emergencia visual.",
+    "tags": ["antiniebla", "lluvia", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M10-030", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Cruzaste un banco de niebla con la antiniebla trasera puesta y la niebla ya ha desaparecido. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Dejarla encendida por si vuelve la niebla.",
+      "Dejarla hasta salir de la vía interurbana.",
+      "Apagarla: sin causa que la justifique, deslumbra y confunde a los de detrás."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "En cuanto desaparecen las condiciones muy desfavorables, la antiniebla trasera debe apagarse.",
+    "truco": "Niebla fuera, botón fuera: esa luz se enciende y se apaga con el fenómeno, no con el viaje.",
+    "trampa": "El 'por si acaso' parece prudente, pero mantenerla sin niebla castiga los ojos del de atrás y puede tapar tu luz de freno.",
+    "tags": ["antiniebla", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M10-031", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Te metes en una niebla espesa de noche. Para ver más lejos, ¿es buena idea poner la luz de carretera?",
+    "imagen": null,
+    "opciones": [
+      "No: la niebla refleja el haz de las largas y te deslumbras a ti mismo.",
+      "Sí, cuanta más luz, más visibilidad.",
+      "Sí, alternando largas y cortas cada pocos segundos."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Con niebla espesa las largas crean una pantalla blanca delante de ti; lo correcto es cruce y, si la llevas, antiniebla.",
+    "truco": "En la niebla, la luz alta rebota: contra la niebla, luz baja y corta.",
+    "trampa": "El instinto de 'más luz = ver más' funciona en aire limpio; en niebla, cada gota es un espejo que te devuelve el foco a la cara.",
+    "explicacion_larga": "La niebla es una nube de microgotas de agua que dispersan la luz en todas direcciones. Un haz alto y potente como el de la luz de carretera choca contra esa cortina y se refleja hacia el propio conductor, creando el famoso efecto de pared blanca: cuanto más ilumina el foco, menos ves tú. Por eso con niebla se usa la luz de cruce, cuyo haz es bajo e inclinado hacia el asfalto, y la antiniebla delantera, todavía más baja y ancha. La regla práctica es sencilla: en niebla, la luz eficaz es la que va pegada al suelo.",
+    "tags": ["niebla", "luz-carretera", "antiniebla"], "senalId": null
+  },
+  {
+    "id": "M10-032", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Tu vehículo queda inmovilizado de noche en la calzada de una vía interurbana sin iluminación. ¿Qué luces debe tener encendidas?",
+    "imagen": null,
+    "opciones": [
+      "Ninguna, para no gastar batería mientras esperas ayuda.",
+      "Al menos las luces de posición.",
+      "La luz de carretera, para que se vea desde muy lejos."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Un vehículo inmovilizado de noche en vía interurbana debe mantener encendidas, como mínimo, las luces de posición.",
+    "truco": "Coche quieto en lo oscuro = posición encendida: es su forma de decir 'estoy aquí' sin cegar a nadie.",
+    "trampa": "La batería te la cuelan como excusa razonable: un bulto negro parado en la calzada de noche es una trampa mortal para el que llega.",
+    "tags": ["luz-posicion", "inmovilizado", "via-interurbana"], "senalId": null
+  },
+  {
+    "id": "M10-033", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Tu coche se avería de noche y logras dejarlo en el arcén de una carretera. Además de las luces de posición, ¿cómo lo señalizas?",
+    "imagen": null,
+    "opciones": [
+      "Con los triángulos de preseñalización colocados delante y detrás.",
+      "No hace falta nada más, con la posición basta.",
+      "Con las luces de emergencia y la baliza V-16 conectada colocada en lo alto del vehículo."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Desde el 1 de enero de 2026, la baliza V-16 conectada sustituye a los triángulos: emergencia encendida y baliza en el punto más alto, sin bajarte a la calzada.",
+    "truco": "V-16: se planta en el techo desde dentro y te ahorra el paseo suicida de los triángulos.",
+    "trampa": "Los triángulos fueron la respuesta correcta durante décadas y por inercia se siguen marcando, pero ya no son el medio vigente en España.",
+    "tags": ["averia", "v-16", "luces-emergencia"], "senalId": null
+  },
+  {
+    "id": "M10-034", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Estacionas de noche en una travesía con el alumbrado público apagado. ¿Debes dejar alguna luz encendida?",
+    "imagen": null,
+    "opciones": [
+      "Sí, las luces de posición, porque la vía está insuficientemente iluminada.",
+      "No, en travesía nunca es necesario.",
+      "Sí, las luces de emergencia toda la noche."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Estacionado de noche en travesía o vía interurbana insuficientemente iluminada, el vehículo debe quedar con las luces de posición encendidas.",
+    "truco": "La pregunta clave no es dónde aparcas, sino cuánta luz hay: sin luz que te delate, la posición se queda de guardia.",
+    "trampa": "El 'en travesía nunca' pica porque la travesía atraviesa poblado, pero la norma mira la iluminación de la vía, no el cartel de entrada al pueblo.",
+    "explicacion_larga": "La regla del vehículo parado o estacionado de noche gira en torno a la iluminación de la vía. En una calle de poblado suficientemente iluminada, un vehículo bien estacionado no necesita luces. Pero en una travesía o vía interurbana insuficientemente iluminada, el vehículo debe permanecer con las luces de posición encendidas (y las de gálibo, si por sus dimensiones debe llevarlas), porque un coche aparcado a oscuras junto a una calzada por la que se circula a velocidad de carretera es un obstáculo invisible. Las luces de emergencia no son para esto: señalizan un peligro o una inmovilización forzosa, no un estacionamiento correcto.",
+    "tags": ["luz-posicion", "estacionamiento", "travesia"], "senalId": null
+  },
+  {
+    "id": "M10-035", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Aparcas correctamente de noche en una calle de poblado bien iluminada por farolas. ¿Necesitas dejar luces encendidas?",
+    "imagen": null,
+    "opciones": [
+      "Sí, siempre las de posición.",
+      "No, en vía urbana suficientemente iluminada no es necesario.",
+      "Sí, la antiniebla trasera para que te vean bien."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Si la vía urbana está suficientemente iluminada y el vehículo está bien estacionado, no hace falta dejar ninguna luz.",
+    "truco": "Farolas trabajando = tu coche puede dormir con las luces apagadas.",
+    "trampa": "El 'siempre las de posición' tienta por prudente, pero la obligación solo existe donde la iluminación es insuficiente.",
+    "tags": ["estacionamiento", "poblado", "luz-posicion"], "senalId": null
+  },
+  {
+    "id": "M10-036", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Vas a cambiarte al carril de la izquierda para adelantar. ¿Cuándo pones el intermitente?",
+    "imagen": null,
+    "opciones": [
+      "Justo mientras giras el volante.",
+      "Después de cambiar de carril, para confirmar la maniobra.",
+      "Antes de iniciar el desplazamiento lateral, con antelación suficiente."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Todo desplazamiento lateral se advierte con el intermitente antes de iniciarlo, para que los demás puedan reaccionar.",
+    "truco": "El intermitente es un aviso, no una crónica: primero anuncia, luego mueve.",
+    "trampa": "Señalizar 'mientras' o 'después' convierte el aviso en decorado: para cuando lo ven, ya estás encima del otro carril.",
+    "tags": ["intermitentes", "cambio-carril"], "senalId": null
+  },
+  {
+    "id": "M10-037", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Estás estacionado junto a la acera y quieres incorporarte a la circulación. ¿Cómo procedes?",
+    "imagen": null,
+    "opciones": [
+      "Señalizo con el intermitente izquierdo y me incorporo cediendo el paso a los que circulan.",
+      "Me incorporo sin señalizar, porque salgo desde parado.",
+      "Enciendo las luces de emergencia mientras arranco."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "La incorporación a la circulación se señaliza con el intermitente y se hace cediendo el paso a los vehículos que ya circulan.",
+    "truco": "Al salir del aparcamiento eres el último en llegar a la fiesta: avisas y esperas tu hueco.",
+    "trampa": "El warning al arrancar es un vicio de calle: la emergencia señala peligro o inmovilización, no 'ahora salgo yo'.",
+    "tags": ["intermitentes", "incorporacion"], "senalId": null
+  },
+  {
+    "id": "M10-038", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Ya has terminado el cambio de dirección, pero el intermitente sigue encendido. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Dejarlo, se apagará solo tarde o temprano.",
+      "Apagarlo en cuanto finaliza la maniobra.",
+      "Dejarlo hasta el siguiente cruce por si giras otra vez."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "La señal de intermitente debe cesar en cuanto termina la maniobra; mantenerla confunde peligrosamente a los demás.",
+    "truco": "Intermitente: se pone antes de la maniobra y se quita justo después. Ni un metro de propina.",
+    "trampa": "Un intermitente olvidado es una mentira luminosa: alguien puede salir de un stop creyendo que vas a girar donde no vas a girar.",
+    "tags": ["intermitentes", "maniobras"], "senalId": null
+  },
+  {
+    "id": "M10-039", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿Para qué sirven las luces de emergencia (señalización de peligro o warning)?",
+    "imagen": null,
+    "opciones": [
+      "Para poder parar en doble fila unos minutos.",
+      "Para indicar que tienes prisa y pides paso.",
+      "Para advertir a los demás de un peligro: por ejemplo, un vehículo inmovilizado en lugar de riesgo."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "El warning advierte de una situación de peligro o emergencia, como una inmovilización forzosa en un lugar peligroso.",
+    "truco": "Warning = 'cuidado, peligro aquí'. No es la luz de 'aparco un momentito'.",
+    "trampa": "La doble fila con warning es el clásico de cada calle: las luces de emergencia no legalizan una parada prohibida, señalan un peligro real.",
+    "tags": ["luces-emergencia", "peligro"], "senalId": null
+  },
+  {
+    "id": "M10-040", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Circulas por autovía y de repente ves el tráfico completamente detenido más adelante. Además de frenar progresivamente, ¿qué es recomendable hacer?",
+    "imagen": null,
+    "opciones": [
+      "Encender las luces de emergencia para avisar a los que llegan por detrás.",
+      "Hacer ráfagas con las largas hacia delante.",
+      "Tocar el claxon de forma continua."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Ante una retención brusca, el warning avisa a los que se acercan por detrás y ayuda a evitar el alcance.",
+    "truco": "Atasco sorpresa: freno suave y warning; el peligro te viene por el retrovisor.",
+    "trampa": "Las ráfagas hacia delante no arreglan nada: el riesgo real es el que llega lanzado por detrás y aún no ha visto el atasco.",
+    "tags": ["luces-emergencia", "retencion", "autovia"], "senalId": null
+  },
+  {
+    "id": "M10-041", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "La luz de freno de tu vehículo se enciende…",
+    "imagen": null,
+    "opciones": [
+      "cuando la activas con un mando específico.",
+      "automáticamente, al pisar el pedal del freno.",
+      "solo si además llevas el alumbrado encendido."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "La luz de freno se activa sola al pisar el freno, de día y de noche, lleves o no el resto del alumbrado.",
+    "truco": "Pisas freno, luz roja detrás: automático, sin botones y a cualquier hora.",
+    "trampa": "Lo de 'solo con el alumbrado encendido' pica porque va detrás con las demás luces rojas, pero funciona de forma independiente.",
+    "tags": ["luz-freno"], "senalId": null
+  },
+  {
+    "id": "M10-042", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Quieres advertir a los que te siguen de que vas a frenar de forma considerable. ¿Cómo puedes hacerlo?",
+    "imagen": null,
+    "opciones": [
+      "Encendiendo la antiniebla trasera un momento.",
+      "Poniendo el intermitente derecho.",
+      "Con ligeros y repetidos toques de freno, o con el brazo en movimientos verticales."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "La frenada puede advertirse con toques breves y repetidos del freno (la luz parpadea) o con el brazo, moviéndolo de arriba abajo.",
+    "truco": "Freno anunciado, alcance evitado: tres toques suaves antes del frenazo valen más que un pisotón.",
+    "trampa": "El intermitente derecho indica desplazamiento a la derecha, no frenada: usarlo para frenar despista al de atrás justo cuando menos margen tiene.",
+    "explicacion_larga": "El reglamento prevé dos formas de advertir la intención de frenar de modo importante: la señal luminosa, que consiste en accionar el freno de forma breve y repetida para que la luz de freno parpadee y llame la atención, y la señal con el brazo, moviéndolo alternativamente de arriba abajo con movimientos cortos y rápidos. Esta advertencia es especialmente valiosa en carretera, donde el que te sigue circula rápido y quizá distraído: ese parpadeo rojo le regala metros de reacción. La antiniebla trasera no sirve para esto y además puede enmascarar la propia luz de freno.",
+    "tags": ["luz-freno", "senalizacion-optica", "brazo"], "senalId": null
+  },
+  {
+    "id": "M10-043", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "En una carretera convencional quieres advertir al vehículo que te precede de tu intención de adelantarlo. ¿Cómo puedes avisarle?",
+    "imagen": null,
+    "opciones": [
+      "Con una señal acústica o con ráfagas cortas de luz.",
+      "Acercándote mucho a su parachoques.",
+      "Encendiendo las luces de emergencia."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Fuera de poblado, el adelantamiento puede advertirse con el claxon o con una señal óptica: ráfagas breves con las luces.",
+    "truco": "Ráfaga = claxon de luz: mismo mensaje, cero ruido.",
+    "trampa": "Pegarte al de delante 'para que se aparte' no es una señal, es una imprudencia: reduces tu distancia de seguridad a cero.",
+    "tags": ["rafagas", "adelantamiento"], "senalId": null
+  },
+  {
+    "id": "M10-044", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De noche, en vía interurbana, ¿cuál es la forma más adecuada de advertir que vas a adelantar?",
+    "imagen": null,
+    "opciones": [
+      "El claxon prolongado, que de noche se oye mejor.",
+      "Las ráfagas de luz: de noche la señal óptica es preferible a la acústica.",
+      "No hace falta advertir nada si el carril izquierdo está libre."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "De noche la advertencia óptica (ráfagas) es la adecuada: se percibe perfectamente por los retrovisores y evita ruidos innecesarios.",
+    "truco": "De día puedes sonar; de noche, brilla: la ráfaga entra por el retrovisor directa al ojo.",
+    "trampa": "El claxon nocturno parece eficaz, pero la luz llega antes y más claro al conductor de delante, que te localiza al instante por el espejo.",
+    "tags": ["rafagas", "adelantamiento", "noche"], "senalId": null
+  },
+  {
+    "id": "M10-045", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "De noche, con luz de carretera en una vía sin iluminar, vas a adelantar a otro vehículo. ¿Cómo gestionas las luces durante la maniobra?",
+    "imagen": null,
+    "opciones": [
+      "Mantengo las largas todo el tiempo para ver bien la maniobra.",
+      "Apago las luces al ponerme a su altura para no molestarle.",
+      "Cambio a cruce al aproximarme por detrás y puedo volver a largas al llegar a su altura."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "Al acercarte por detrás usas la luz de cruce para no deslumbrar por sus retrovisores, y al ponerte a su altura puedes recuperar la de carretera.",
+    "truco": "Adelantamiento nocturno en tres tiempos: detrás cortas, a su altura largas otra vez, y carretera despejada por delante.",
+    "trampa": "Mantener las largas 'para ver la maniobra' es lo que pide el cuerpo, pero cegarías por el retrovisor justo al conductor al que vas a rebasar.",
+    "explicacion_larga": "El adelantamiento nocturno con luz de carretera tiene su coreografía. Mientras te aproximas por detrás, tus largas entran por los retrovisores del vehículo que vas a adelantar y deslumbran a su conductor, así que debes llevar la luz de cruce. En el momento en que llegas a su altura, tus faros ya no inciden en sus espejos: puedes volver a la luz de carretera, lo que además te permite ver bien el tramo por delante en la fase más delicada de la maniobra. Terminado el adelantamiento, sigues con las largas si la vía continúa sin iluminación y no hay nadie más a quien deslumbrar.",
+    "tags": ["adelantamiento", "luz-carretera", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M10-046", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "La luz de marcha atrás…",
+    "imagen": null,
+    "opciones": [
+      "es blanca y se enciende automáticamente al engranar la marcha atrás.",
+      "es roja y se activa junto a la luz de freno.",
+      "es amarilla y debe encenderla el conductor con un interruptor."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Al meter la marcha atrás se enciende sola una luz blanca trasera que avisa de la maniobra e ilumina la zona posterior.",
+    "truco": "Blanco atrás = coche que retrocede: si ves blanco en la trasera de un coche, va o irá hacia ti.",
+    "trampa": "El rojo tienta porque casi todo lo trasero es rojo, pero justo por eso la de marcha atrás es blanca: para distinguirse al primer vistazo.",
+    "tags": ["marcha-atras", "senalizacion-optica"], "senalId": null
+  },
+  {
+    "id": "M10-047", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Circulas por el interior de una glorieta y vas a tomar la próxima salida. ¿Qué señalizas?",
+    "imagen": null,
+    "opciones": [
+      "Nada, dentro de la glorieta no se señaliza.",
+      "El intermitente derecho antes de salir.",
+      "El intermitente izquierdo mientras permaneces en la glorieta."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "La salida de la glorieta es un desplazamiento lateral hacia la derecha: se anuncia con el intermitente derecho antes de iniciarla.",
+    "truco": "En la rotonda solo hay un aviso que importa: derecho para salir.",
+    "trampa": "Salir de una glorieta es abandonar la calzada circular por la derecha: eso es una maniobra, y toda maniobra se advierte.",
+    "tags": ["intermitentes", "glorieta"], "senalId": null
+  },
+  {
+    "id": "M10-048", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Los intermitentes de tu vehículo se han averiado a mitad de trayecto. ¿Cómo advertirás los giros hasta repararlos?",
+    "imagen": null,
+    "opciones": [
+      "No es necesario señalizar si conduces con precaución.",
+      "Con ráfagas de las luces largas.",
+      "Con el brazo, según las señales reglamentarias."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Si fallan los intermitentes, las maniobras se advierten con el brazo: es la señal reglamentaria sustitutoria.",
+    "truco": "Sin intermitentes, tu brazo es el intermitente: horizontal hacia el lado del giro (o doblado hacia arriba por la ventanilla izquierda para girar a la derecha).",
+    "trampa": "La avería no te exime de señalizar: 'conducir con precaución' no le dice al de atrás hacia dónde vas a moverte.",
+    "tags": ["senalizacion-optica", "brazo", "maniobras"], "senalId": null
+  },
+  {
+    "id": "M10-049", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿Cuándo debe estar encendido el alumbrado de la placa posterior de matrícula?",
+    "imagen": null,
+    "opciones": [
+      "Siempre que estén encendidas las luces de posición.",
+      "Solo al circular por autopista o autovía.",
+      "Únicamente cuando lo requiera un agente."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "La luz de la placa de matrícula va ligada a las de posición: si estas están encendidas, la placa debe estar iluminada.",
+    "truco": "Matrícula y posición van de la mano: donde se enciende una, se enciende la otra.",
+    "trampa": "Parece un detalle burocrático y por eso descoloca: es una luz obligatoria más del alumbrado, no un capricho para los radares.",
+    "tags": ["placa-matricula", "luz-posicion"], "senalId": null
+  },
+  {
+    "id": "M10-050", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Conduces una motocicleta a mediodía, con sol y visibilidad perfecta. ¿Debes llevar alguna luz encendida?",
+    "imagen": null,
+    "opciones": [
+      "No, solo entre el ocaso y la salida del sol.",
+      "Sí, la luz de cruce: en las motocicletas es obligatoria también de día.",
+      "Solo la luz de posición."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Las motocicletas deben circular con la luz de cruce encendida durante todo el día, no solo de noche.",
+    "truco": "Moto = cruce 24/7: la luz es su chaleco reflectante permanente.",
+    "trampa": "El 'sol y visibilidad perfecta' te empuja al no: en la moto la luz no es para ver, es para que un coche la detecte antes en el espejo.",
+    "tags": ["motocicletas", "luz-cruce"], "senalId": null
+  },
+  {
+    "id": "M10-051", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Un motorista te dice que la luz de cruce en la moto solo es obligatoria de día 'cuando hay poca visibilidad'. ¿Está en lo cierto?",
+    "imagen": null,
+    "opciones": [
+      "Sí, con buena visibilidad puede apagarla.",
+      "Sí, salvo en autopista y autovía.",
+      "No: en las motocicletas la luz de cruce es obligatoria durante todo el día, en cualquier circunstancia."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "La obligación de la luz de cruce en motocicleta es permanente durante el día: no depende de la visibilidad ni del tipo de vía.",
+    "truco": "En la moto no hay debate de luces: arrancas y el cruce va contigo hasta que apagas el motor.",
+    "trampa": "El matiz 'cuando hay poca visibilidad' suena a norma de verdad porque existe para otros vehículos, y ahí es donde te la cuelan.",
+    "explicacion_larga": "Para los turismos, el alumbrado diurno solo es obligatorio en situaciones concretas (túneles, carriles reversibles, mala visibilidad...). Para las motocicletas la regla es distinta y mucho más simple: luz de cruce encendida siempre que circulan, también de día y con sol radiante. La razón es pura supervivencia estadística: la silueta de una moto es estrecha y se pierde en el espejo retrovisor de un coche; el punto de luz del faro multiplica la distancia a la que se la detecta. Por eso la norma no admite excepciones de visibilidad ni de tipo de vía.",
+    "tags": ["motocicletas", "luz-cruce", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M10-052", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Circulas por un túnel largo con muy buena iluminación artificial. ¿Puedes apagar el alumbrado mientras lo atraviesas?",
+    "imagen": null,
+    "opciones": [
+      "No, dentro del túnel el alumbrado sigue siendo obligatorio aunque esté iluminado.",
+      "Sí, si ves con claridad la salida.",
+      "Sí, siempre que mantengas las luces de posición."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "En los túneles la obligación de llevar alumbrado se mantiene de principio a fin, por buena que sea su iluminación.",
+    "truco": "En el túnel, la luz no se discute: se enciende al entrar y se revisa al salir.",
+    "trampa": "La buena iluminación del túnel invita a apagar, pero la obligación no depende de lo que veas tú: ahí dentro todos deben llevar luces.",
+    "tags": ["tunel", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M10-053", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿De qué color son las luces de posición de un turismo?",
+    "imagen": null,
+    "opciones": [
+      "Blancas delante y detrás.",
+      "Blancas las delanteras y rojas las traseras.",
+      "Amarillas delante y rojas detrás."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Las luces de posición delanteras son blancas y las traseras rojas: así distingues de noche si un vehículo viene o se aleja.",
+    "truco": "Blanco viene, rojo se va: es el código de colores de toda la carretera nocturna.",
+    "trampa": "Blanco detrás significaría marcha atrás: si un coche 'se aleja' enseñando luz blanca, en realidad está retrocediendo hacia ti.",
+    "tags": ["luz-posicion", "colores"], "senalId": null
+  },
+  {
+    "id": "M10-054", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "Tu coche lleva luz de conducción diurna (DRL) que se enciende sola. Al hacerse de noche, ¿puedes seguir solo con ella?",
+    "imagen": null,
+    "opciones": [
+      "Sí, para eso es automática.",
+      "Sí, siempre que circules por poblado.",
+      "No: la luz diurna no sustituye al cruce y suele dejar la trasera del coche apagada."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "La luz diurna solo hace visible el frontal de día; de noche debes encender el alumbrado completo, con la luz de cruce y las traseras.",
+    "truco": "DRL = luz de día, y de día se queda: si anochece y tu salpicadero está a oscuras, te falta el cruce.",
+    "trampa": "El automatismo te la juega: muchos coches ruedan de noche 'creyéndose' iluminados, con el frontal encendido y la trasera negra como el carbón.",
+    "explicacion_larga": "La luz de conducción diurna (DRL) se enciende automáticamente con el motor y sirve para que el vehículo se vea de frente durante el día. El problema es que en muchos modelos la DRL no enciende las luces de posición traseras ni ilumina la placa de matrícula ni el cuadro. Resultado típico: conductor circulando de noche convencido de que lleva luces, con la parte trasera completamente apagada, invisible para quien lo alcanza. Al llegar el ocaso, un túnel o la niebla, hay que encender el alumbrado de verdad: la luz de cruce con sus posiciones delanteras y traseras.",
+    "tags": ["luz-diurna", "luz-cruce", "noche"], "senalId": null
+  },
+  {
+    "id": "M10-055", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿Qué vehículos deben llevar luces de gálibo?",
+    "imagen": null,
+    "opciones": [
+      "Los que superan los 2,10 metros de anchura.",
+      "Todos los que superan los 3.500 kg de masa máxima.",
+      "Únicamente los vehículos que transportan mercancías peligrosas."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Las luces de gálibo señalan el contorno de los vehículos anchos: son obligatorias cuando la anchura supera los 2,10 metros.",
+    "truco": "Gálibo = 'ojo, que soy ancho': más de 2,10 m de anchura y el vehículo lleva su contorno dibujado en luces.",
+    "trampa": "El peso despista porque los camiones pesados suelen ser también anchos, pero el criterio del gálibo es la anchura, no la masa.",
+    "explicacion_larga": "Las luces de gálibo van colocadas en los puntos más altos y externos del vehículo y sirven para que, de noche, los demás perciban el volumen real que ocupa: no es lo mismo cruzarse con dos puntos de luz a ras de suelo que con un rectángulo luminoso que anuncia un camión de casi tres metros de ancho. Por eso el criterio es puramente dimensional: anchura superior a 2,10 metros. Y recuerda que, cuando un vehículo con gálibo queda inmovilizado o estacionado donde deben encenderse las luces de posición, las de gálibo deben acompañarlas.",
+    "tags": ["galibo", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M10-056", "mundo": 10, "tema": "Alumbrado y señalización óptica",
+    "pregunta": "¿En cuál de estos casos NO es obligatorio llevar el alumbrado encendido durante el día?",
+    "imagen": null,
+    "opciones": [
+      "Al atravesar un paso inferior.",
+      "Con una lluvia débil que apenas afecta a la visibilidad.",
+      "Al circular por un carril reversible."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "El alumbrado diurno solo es obligatorio cuando las condiciones disminuyen sensiblemente la visibilidad; una lluvia débil no llega a ese umbral.",
+    "truco": "La palabra mágica es 'sensiblemente': lluvia de limpiaparabrisas al mínimo no obliga; cortina de agua, sí.",
+    "trampa": "Pregunta con NO: aquí las opciones 'correctas' de otros tests (túnel, reversible) son justo las que debes descartar. Lee dos veces antes de marcar.",
+    "explicacion_larga": "De día, el alumbrado es obligatorio en supuestos tasados: túneles y pasos inferiores, carriles reversibles, adicionales o en sentido contrario, y condiciones meteorológicas o ambientales que disminuyan sensiblemente la visibilidad (niebla, lluvia intensa, nevada, polvo, humo). La clave está en el adverbio: una llovizna que apenas empaña el parabrisas no reduce sensiblemente la visibilidad y, por tanto, no activa la obligación, aunque encender el cruce sea recomendable. El examen adora este formato en negativo: dominar la lista de supuestos obligatorios es lo que te permite detectar el que sobra.",
+    "tags": ["alumbrado", "lluvia", "meteorologia"], "senalId": null
+  }
+]

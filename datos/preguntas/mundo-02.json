@@ -1,0 +1,887 @@
+[
+  {
+    "id": "M02-001", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Te encuentras a la vez con señales de distintos tipos que se contradicen. ¿Cuál es el orden de prioridad correcto, de mayor a menor?",
+    "imagen": null,
+    "opciones": [
+      "Semáforos, señales verticales, órdenes de los agentes y marcas viales.",
+      "Órdenes de los agentes, señalización circunstancial y balizamiento, semáforos, señales verticales y marcas viales.",
+      "Señales verticales, semáforos, marcas viales y órdenes de los agentes."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El orden de prelación es: agentes, señalización circunstancial y de balizamiento, semáforos, señales verticales y, por último, marcas viales.",
+    "truco": "De más vivo a más pintado: primero el que respira (agente), luego lo provisional (obras y balizas), luego lo que se enciende (semáforo), lo clavado (vertical) y al final lo pintado en el suelo.",
+    "trampa": "El semáforo impone mucho, pero por encima de él hay dos escalones: la señalización circunstancial y, sobre todo, el agente.",
+    "tags": ["prelacion", "agentes", "semaforos"], "senalId": null
+  },
+  {
+    "id": "M02-002", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El semáforo está en verde, pero un agente de circulación te ordena con el brazo que te detengas. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Pasas, porque el semáforo en verde te da preferencia.",
+      "Pasas despacio, vigilando al agente por si cambia de idea.",
+      "Te detienes: las órdenes del agente están por encima de cualquier otra señal."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Las señales y órdenes de los agentes prevalecen sobre todas las demás señales, semáforo incluido.",
+    "truco": "Agente presente, semáforo obediente.",
+    "trampa": "El verde te da paso frente a otros vehículos, no frente a un agente: él ocupa el primer puesto de la prelación.",
+    "tags": ["prelacion", "agentes"], "senalId": null
+  },
+  {
+    "id": "M02-003", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un agente te indica claramente que avances aunque el semáforo de tu carril está en rojo. ¿Debes obedecerle?",
+    "imagen": null,
+    "opciones": [
+      "Sí: sus órdenes prevalecen sobre el semáforo.",
+      "No: con el semáforo en rojo nunca se puede pasar, diga lo que diga cualquier persona.",
+      "Solo si además hay una señal vertical que permita el paso."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El agente ocupa el primer lugar en el orden de prelación: si te manda pasar, pasas, aunque el semáforo esté en rojo.",
+    "truco": "Cuando hay agente dirigiendo, el semáforo se queda de adorno.",
+    "trampa": "El 'en rojo nunca se pasa' suena a regla sagrada, y por eso pica: la excepción es justo la orden del agente.",
+    "tags": ["prelacion", "agentes", "semaforos"], "senalId": null
+  },
+  {
+    "id": "M02-004", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "En una intersección, una señal vertical te obliga a detenerte, pero el semáforo que la regula está en verde y funcionando. Como norma general, ¿a cuál obedeces?",
+    "imagen": null,
+    "opciones": [
+      "A la señal vertical, porque es permanente y no depende de la electricidad.",
+      "Al semáforo: está por encima de las señales verticales en el orden de prelación.",
+      "A ninguna: ante la contradicción, te detienes siempre."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "En caso de contradicción prevalece la señal prioritaria: el semáforo va por delante de las señales verticales.",
+    "truco": "La bombilla manda sobre la chapa: semáforo antes que señal vertical.",
+    "trampa": "Lo permanente parece más 'oficial' que una luz, pero la prelación coloca el semáforo un escalón por encima.",
+    "tags": ["prelacion", "semaforos", "senales-verticales"], "senalId": null
+  },
+  {
+    "id": "M02-005", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Por unas obras, los paneles provisionales te desvían por un itinerario distinto del que marcan las señales verticales permanentes de la vía. ¿A cuál haces caso?",
+    "imagen": null,
+    "opciones": [
+      "A las señales permanentes, que son las que describen la vía de verdad.",
+      "A la que prefieras: si se contradicen, ninguna de las dos obliga.",
+      "A la señalización circunstancial de las obras, que modifica temporalmente el régimen de la vía."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "La señalización circunstancial que modifica el régimen normal de la vía prevalece sobre las señales verticales permanentes.",
+    "truco": "Lo provisional pisa a lo permanente: si hay obras, manda el plan B.",
+    "trampa": "Suena lógico fiarse de 'lo oficial de siempre', pero la señalización de obras existe precisamente para anularlo durante un tiempo.",
+    "tags": ["prelacion", "obras", "balizamiento"], "senalId": null
+  },
+  {
+    "id": "M02-006", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Dentro del orden de prelación entre los distintos tipos de señales, las marcas viales ocupan…",
+    "imagen": null,
+    "opciones": [
+      "el último lugar: cualquier otro tipo de señal prevalece sobre ellas.",
+      "el primer lugar, porque son las que tienes más cerca al conducir.",
+      "el mismo nivel que las señales verticales, al ser ambas fijas."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Las marcas viales cierran la lista: agentes, circunstanciales y balizamiento, semáforos y verticales van todas por delante.",
+    "truco": "Lo pintado en el suelo es lo último de la fila: todo lo demás lo pisa.",
+    "trampa": "Como las ves constantemente, parecen importantísimas. Importantes son; prioritarias, no.",
+    "tags": ["prelacion", "marcas-viales"], "senalId": null
+  },
+  {
+    "id": "M02-007", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "En un mismo tramo, dos señales del mismo tipo dan prescripciones contradictorias. ¿Cuál debes obedecer?",
+    "imagen": null,
+    "opciones": [
+      "La primera que encontraste, por orden de colocación en la vía.",
+      "La más restrictiva de las dos.",
+      "La que esté en mejor estado de conservación, por ser la más reciente."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Si las señales contradictorias son del mismo tipo, prevalece la más restrictiva.",
+    "truco": "A igualdad de rango, gana la más borde: en caso de duda, la que más te limita.",
+    "trampa": "El orden de colocación parece un criterio razonable, pero la norma no premia a la primera: premia a la más restrictiva.",
+    "explicacion_larga": "El Reglamento General de Circulación resuelve los conflictos entre señales con dos reglas. Primera: si las señales son de tipos distintos, prevalece la prioritaria según el orden de prelación (agentes, señalización circunstancial y balizamiento, semáforos, verticales y marcas viales). Segunda: si son del mismo tipo —dos verticales, dos marcas viales—, prevalece la más restrictiva. Esta segunda regla es pura lógica de seguridad: ante la duda, la interpretación que más te protege. En el examen te tentarán con criterios que suenan sensatos (la más nueva, la primera, la más visible), pero ninguno existe en el reglamento.",
+    "tags": ["prelacion", "contradiccion"], "senalId": null
+  },
+  {
+    "id": "M02-008", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un agente, en el centro del cruce, levanta el brazo verticalmente. ¿Qué significa esa señal?",
+    "imagen": null,
+    "opciones": [
+      "Que puedes pasar por su lado extremando la precaución.",
+      "Que deben detenerse todos los usuarios que se acerquen a él.",
+      "Que solo deben detenerse los vehículos que le vienen de frente."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "El brazo levantado verticalmente obliga a detenerse a todos los usuarios de la vía que se acerquen al agente.",
+    "truco": "Brazo al cielo, todos al pedal del freno.",
+    "trampa": "Te ofrecen el 'solo los de frente' para que confundas esta señal con la del brazo extendido en horizontal.",
+    "tags": ["agentes", "brazo-en-alto"], "senalId": null
+  },
+  {
+    "id": "M02-009", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El agente levanta el brazo verticalmente justo cuando llegas al cruce, y detenerte exigiría un frenazo peligroso. ¿Qué establece la norma?",
+    "imagen": null,
+    "opciones": [
+      "Debes detenerte igualmente: la orden del agente no admite excepciones.",
+      "Debes tocar el claxon para avisar al agente y continuar sin frenar.",
+      "La obligación de detenerse no alcanza al conductor que no pueda hacerlo en condiciones de seguridad suficientes."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "El brazo en alto obliga a detenerse a todos, salvo al conductor que ya no puede parar con seguridad suficiente.",
+    "truco": "La norma nunca te pide un frenazo suicida: si parar es más peligroso que pasar, pasa.",
+    "trampa": "El 'sin excepciones' tienta porque el agente es la máxima autoridad, pero hasta sus señales contemplan la física: un frenazo imposible no se exige.",
+    "explicacion_larga": "La señal de brazo levantado verticalmente obliga a detenerse a todos los usuarios que se acerquen al agente, con una única excepción expresa: los conductores que no puedan detenerse en condiciones de seguridad suficientes. Piénsalo con la distancia de frenado en la cabeza: si la orden llega cuando ya estás encima del punto de detención, clavar los frenos podría provocar un alcance o una pérdida de control, males mayores que cruzar. La detención, cuando procede, se hace ante la línea de detención o, si no existe, antes del propio cruce, sin entorpecer la circulación.",
+    "tags": ["agentes", "brazo-en-alto", "excepciones"], "senalId": null
+  },
+  {
+    "id": "M02-010", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un agente permanece con el brazo extendido horizontalmente. ¿A quién obliga a detenerse esa postura?",
+    "imagen": null,
+    "opciones": [
+      "A quienes se acerquen desde direcciones que corten la indicada por el brazo, sea cual sea su sentido de marcha.",
+      "Únicamente a los usuarios a los que el agente esté mirando de frente.",
+      "A todos los usuarios de la intersección, vengan por donde vengan."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "El brazo extendido horizontalmente detiene a quienes llegan por direcciones que cortan la que marca el brazo, en ambos sentidos.",
+    "truco": "El brazo es una barrera invisible: si tu trayectoria la corta, te paras.",
+    "trampa": "El 'a todos' es el señuelo: eso lo hace el brazo levantado en vertical, no el extendido en horizontal.",
+    "tags": ["agentes", "brazo-horizontal"], "senalId": null
+  },
+  {
+    "id": "M02-011", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El agente hizo la señal de brazo extendido horizontalmente y, al rato, baja el brazo sin moverse del sitio ni hacer otra señal. ¿Sigue vigente su orden de detención?",
+    "imagen": null,
+    "opciones": [
+      "No: en cuanto baja el brazo, la orden queda anulada automáticamente.",
+      "Sí: la señal sigue en vigor mientras el agente no cambie de posición o efectúe otra señal.",
+      "Solo si acompaña la postura con toques de silbato cortos y frecuentes."
+    ],
+    "correcta": 1, "dificultad": 5,
+    "explicacion_corta": "La señal de brazo extendido horizontalmente no se extingue porque el agente baje el brazo: sigue vigente mientras no cambie de posición ni haga otra señal.",
+    "truco": "El agente 'congela' la orden: aunque descanse el brazo, la barrera invisible sigue puesta hasta que se mueva o señale otra cosa.",
+    "trampa": "Lo intuitivo es pensar 'brazo abajo, orden fuera'. El reglamento dice lo contrario, y este matiz es de los favoritos del examen.",
+    "explicacion_larga": "Dirigir el tráfico con los brazos en cruz durante minutos es agotador, y el reglamento lo sabe: por eso establece expresamente que la señal de brazo o brazos extendidos horizontalmente no deja de estar en vigor por el hecho de que el agente baje el brazo, siempre que no cambie de posición ni efectúe otra señal. Traducción práctica: mientras el agente siga plantado en el mismo sitio con la misma orientación, tú sigues detenido. Solo cuando gire el cuerpo, se desplace o haga una señal nueva cambia la orden. Es uno de los detalles más preguntados del tema de agentes precisamente porque va contra la intuición.",
+    "tags": ["agentes", "brazo-horizontal"], "senalId": null
+  },
+  {
+    "id": "M02-012", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "De noche, un agente balancea una luz roja dirigiéndola hacia ti. ¿Qué te está ordenando?",
+    "imagen": null,
+    "opciones": [
+      "Que reduzcas la velocidad y pases pegado a su lado.",
+      "Que cambies a la luz de cruce para no deslumbrarle.",
+      "Que te detengas."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "El balanceo de una luz roja o amarilla obliga a detenerse a los usuarios hacia los que el agente dirige la luz.",
+    "truco": "Luz que se balancea hacia ti, freno que se hunde. Da igual que sea roja o amarilla.",
+    "trampa": "Como el balanceo recuerda a un 'pase usted' con linterna, muchos leen invitación donde hay orden de alto.",
+    "tags": ["agentes", "balanceo-luz"], "senalId": null
+  },
+  {
+    "id": "M02-013", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El agente extiende el brazo y lo mueve alternativamente de arriba abajo. Esa señal obliga a…",
+    "imagen": null,
+    "opciones": [
+      "disminuir la velocidad a los conductores que se acercan por el lado correspondiente al brazo.",
+      "detenerse de inmediato a todos los usuarios del cruce.",
+      "acelerar para despejar cuanto antes la intersección."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "El brazo que sube y baja ordena reducir la velocidad a quienes se acercan al agente por el lado del brazo que hace la señal.",
+    "truco": "Brazo que sube y baja, velocidad que baja.",
+    "trampa": "Cualquier gesto del agente te empuja a pensar en 'alto total'. Este solo pide bajar el ritmo, y solo por el lado del brazo.",
+    "tags": ["agentes", "reducir-velocidad"], "senalId": null
+  },
+  {
+    "id": "M02-014", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Oyes al agente dar una serie de toques de silbato cortos y frecuentes. ¿Qué significan?",
+    "imagen": null,
+    "opciones": [
+      "Que puedes reanudar la marcha.",
+      "Que debes detenerte.",
+      "Nada concreto: el silbato solo sirve para llamar la atención."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los toques cortos y frecuentes de silbato ordenan detenerse.",
+    "truco": "Pitidos cortos, frena en corto. Pitido largo, sigue de largo.",
+    "trampa": "El silbato sí tiene código propio: no es solo ruido para que mires al agente.",
+    "tags": ["agentes", "silbato"], "senalId": null
+  },
+  {
+    "id": "M02-015", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Estás detenido por orden de un agente y suena un toque largo de silbato. ¿Qué te indica?",
+    "imagen": null,
+    "opciones": [
+      "Que sigas detenido: el peligro continúa.",
+      "Que confirmes con el claxon que le has oído.",
+      "Que puedes reanudar la marcha."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Un toque largo de silbato significa reanudar la marcha.",
+    "truco": "Pitido laaaargo = camino largo por delante: arranca.",
+    "trampa": "Un sonido largo e insistente suena a alarma, y por eso muchos lo leen como 'quieto'. Es justo lo contrario.",
+    "tags": ["agentes", "silbato"], "senalId": null
+  },
+  {
+    "id": "M02-016", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "¿Puede un agente ordenarte que te detengas desde un vehículo en marcha?",
+    "imagen": null,
+    "opciones": [
+      "Sí; por ejemplo, mediante señales luminosas rojas o amarillas hacia delante, por megafonía o con el brazo.",
+      "No: las órdenes de los agentes solo son válidas si los dan a pie, sobre la calzada.",
+      "Solo dentro de poblado y a menos de 50 km/h."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Los agentes pueden dar órdenes desde un vehículo en movimiento, con señales luminosas, acústicas o con el brazo.",
+    "truco": "La ley también va en coche: si el patrulla te 'habla' con luces o megafonía, es una orden como otra cualquiera.",
+    "trampa": "Asociamos al agente con la figura de pie en el cruce; te cuelan que en movimiento 'no cuenta'. Cuenta igual.",
+    "tags": ["agentes", "vehiculo-policial"], "senalId": null
+  },
+  {
+    "id": "M02-017", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Para que sus señales obliguen a los usuarios, los agentes que regulan la circulación deben…",
+    "imagen": null,
+    "opciones": [
+      "ir siempre acompañados de un segundo agente que confirme las órdenes.",
+      "ser fácilmente reconocibles como tales a distancia, tanto de día como de noche.",
+      "actuar únicamente en intersecciones cuyo semáforo esté averiado."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Los agentes deben ser fácilmente identificables a distancia, de día y de noche, por ejemplo con uniformidad y elementos retrorreflectantes.",
+    "truco": "Si no parece un agente desde lejos, no puede mandarte de cerca.",
+    "trampa": "La del semáforo averiado pica porque es la escena típica; pero el agente puede regular el tráfico cuando haga falta, semáforo sano o no.",
+    "tags": ["agentes", "visibilidad"], "senalId": null
+  },
+  {
+    "id": "M02-018", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Las señales y órdenes de los agentes de circulación obligan…",
+    "imagen": null,
+    "opciones": [
+      "solo a los conductores de vehículos a motor.",
+      "solo a los conductores; los peatones se rigen por sus semáforos.",
+      "a todos los usuarios de la vía, peatones incluidos."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Las órdenes de los agentes deben ser obedecidas de inmediato por todos los usuarios de la vía.",
+    "truco": "Las órdenes del agente no miran carnet: van por todos, andando o rodando.",
+    "trampa": "Como el temario habla tanto de conductores, cuesta recordar que el peatón también es usuario y también obedece.",
+    "tags": ["agentes", "peatones"], "senalId": null
+  },
+  {
+    "id": "M02-019", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El semáforo muestra una luz roja fija. ¿Qué te indica?",
+    "imagen": null,
+    "opciones": [
+      "Prohibido el paso: no debes rebasar la línea de detención.",
+      "Que puedes pasar si compruebas que no se acerca nadie.",
+      "Precaución: cruza mirando a ambos lados."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "La luz roja fija prohíbe el paso: hay que detenerse sin rebasar la línea de detención más próxima.",
+    "truco": "Rojo fijo = muro. No hay lectura creativa posible.",
+    "trampa": "El 'si no viene nadie' es el clásico atajo mental de madrugada; el rojo prohíbe aunque la calle esté desierta.",
+    "tags": ["semaforos", "rojo-fijo"], "senalId": null
+  },
+  {
+    "id": "M02-020", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Llegas a un semáforo en rojo y no existe línea de detención pintada en la calzada. ¿Dónde debes detenerte?",
+    "imagen": null,
+    "opciones": [
+      "Unos metros más allá del semáforo, si desde ahí ves mejor el cruce.",
+      "Inmediatamente antes del semáforo, sin invadir la intersección ni el paso para peatones.",
+      "En cualquier punto, siempre que estés parado cuando se ponga verde."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Sin línea de detención, la parada se hace inmediatamente antes del semáforo, sin entrar en el cruce ni pisar el paso de peatones.",
+    "truco": "Si no hay línea pintada, el propio semáforo ES la línea.",
+    "trampa": "Adelantarse 'para ver mejor' te mete en el paso de peatones o en el cruce: justo lo que la detención debe evitar.",
+    "tags": ["semaforos", "linea-detencion"], "senalId": null
+  },
+  {
+    "id": "M02-021", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Ante un paso a nivel, una luz roja intermitente (o dos luces rojas que se encienden alternativamente) significa que…",
+    "imagen": null,
+    "opciones": [
+      "puedes cruzar si no ves ni oyes acercarse ningún tren.",
+      "el paso está libre, aunque conviene reducir la velocidad.",
+      "está prohibido el paso temporalmente, mientras la luz funcione."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "La luz roja intermitente, o dos rojas alternas, prohíben temporalmente el paso mientras están en funcionamiento.",
+    "truco": "Rojo que parpadea, barrera invisible: piensa en tren y quédate quieto.",
+    "trampa": "El 'si no ves el tren, pasa' mata gente de verdad: un tren a 140 aparece en segundos y no puede frenar por ti.",
+    "explicacion_larga": "El rojo intermitente (una luz que parpadea o dos que se alternan) es la versión 'temporal' del rojo fijo: prohíbe el paso mientras funciona, y se apaga cuando desaparece el motivo. Por eso se reserva para lugares donde el peligro va y viene: pasos a nivel, puentes móviles, embarcaderos, accesos a aeropuertos o salidas de vehículos de emergencia, como los parques de bomberos. La trampa clásica del examen es ofrecerte 'comprobar que no viene el tren': la luz no te pide que valores tú el riesgo, te ordena no pasar. Punto.",
+    "tags": ["semaforos", "rojo-intermitente", "paso-a-nivel"], "senalId": null
+  },
+  {
+    "id": "M02-022", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Se enciende la luz amarilla fija del semáforo cuando todavía estás lejos del cruce. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Detenerte, igual que si la luz fuera roja.",
+      "Acelerar con suavidad para cruzar antes de que se ponga en rojo.",
+      "Continuar: el amarillo permite el paso mientras no cambie."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El amarillo fijo obliga a detenerse en las mismas condiciones que el rojo, salvo que ya no puedas parar con seguridad.",
+    "truco": "Amarillo fijo = rojo con preaviso. Si te da tiempo a frenar bien, frenas.",
+    "trampa": "Media España pisa el acelerador al ver el ámbar; el examen cuenta con ese vicio para colártela.",
+    "tags": ["semaforos", "ambar-fijo"], "senalId": null
+  },
+  {
+    "id": "M02-023", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El semáforo pasa a amarillo fijo justo cuando llegas a la línea de detención, y parar exigiría un frenazo brusco. ¿Qué establece la norma?",
+    "imagen": null,
+    "opciones": [
+      "Debes detenerte de todos modos, aunque sea con un frenazo.",
+      "Puedes continuar, porque estás tan cerca que no cabe detenerse en condiciones de seguridad suficientes.",
+      "Debes detenerte pasado el cruce, en el primer hueco libre."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El amarillo fijo obliga a parar salvo que, al encenderse, estés tan cerca del punto de detención que no puedas hacerlo con seguridad.",
+    "truco": "El ámbar te pide frenar, no estamparte: si el frenazo es peor que pasar, pasa.",
+    "trampa": "La opción del frenazo tienta a los cumplidores extremos; la norma prefiere que cruces en ámbar a que te coman por detrás.",
+    "tags": ["semaforos", "ambar-fijo"], "senalId": null
+  },
+  {
+    "id": "M02-024", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Una luz amarilla intermitente en un semáforo te indica que…",
+    "imagen": null,
+    "opciones": [
+      "el semáforo está averiado y no obliga a nada.",
+      "tienes preferencia de paso sobre el resto de usuarios del cruce.",
+      "debes extremar la precaución y, en su caso, ceder el paso: no te exime de las demás señales."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El amarillo intermitente obliga a extremar la precaución y no exime de cumplir las demás señales ni las normas de prioridad.",
+    "truco": "Amarillo parpadeando: el semáforo se echa la siesta y vuelven a mandar las normas de siempre.",
+    "trampa": "Muchos lo leen como 'pasa, que estoy en ello'. No te da preferencia ninguna: te pide más atención, no menos.",
+    "tags": ["semaforos", "ambar-intermitente"], "senalId": null
+  },
+  {
+    "id": "M02-025", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Tu semáforo está en verde, pero al otro lado del cruce hay retención y, si entras, quedarás parado en medio bloqueando la circulación transversal. ¿Puedes entrar?",
+    "imagen": null,
+    "opciones": [
+      "No: aun con luz verde, está prohibido entrar en la intersección si previsiblemente quedarás inmovilizado obstruyéndola.",
+      "Sí: la luz verde te da derecho a ocupar la intersección.",
+      "Sí, siempre que enciendas las luces de emergencia al quedarte detenido dentro."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "La luz verde permite el paso, pero no autoriza a entrar en un cruce donde vayas a quedar atrapado bloqueando el tráfico transversal.",
+    "truco": "El verde te deja entrar, no quedarte a vivir en el cruce.",
+    "trampa": "El 'verde = derecho a pasar' es medio verdad: pasar sí, taponar no. El atasco al otro lado desactiva tu verde.",
+    "explicacion_larga": "El reglamento lo dice sin rodeos: aunque el semáforo esté en verde, el conductor no debe penetrar en la intersección si la situación de la circulación hace previsible que quede detenido dentro, obstruyendo la circulación transversal. La imagen que debes grabarte es la del cruce en hora punta convertido en aparcamiento: cada conductor que entró 'porque tenía verde' bloqueó después el verde de los demás. La conducta correcta es esperar antes de la línea, con tu verde encendido, hasta que haya hueco real al otro lado. El verde da permiso, no da derecho a estorbar.",
+    "tags": ["semaforos", "verde", "intersecciones"], "senalId": null
+  },
+  {
+    "id": "M02-026", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Junto a la luz roja del semáforo se enciende una flecha verde sobre fondo circular negro que apunta a la derecha. ¿Qué puedes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Nada distinto: mientras el rojo esté encendido, la flecha no surte efecto.",
+      "Girar a la derecha, cediendo el paso a los vehículos del carril al que te incorporas y sin poner en peligro a los peatones.",
+      "Girar a la derecha con preferencia sobre todos los demás usuarios."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "La flecha verde sobre fondo negro permite avanzar en su dirección aunque el resto del semáforo esté en rojo, pero cediendo el paso.",
+    "truco": "Flecha verde = puerta lateral abierta; entras, pero pidiendo permiso.",
+    "trampa": "Verde suena a preferencia y ahí picas: esta flecha te deja moverte, no te da prioridad sobre nadie.",
+    "explicacion_larga": "La flecha verde sobre fondo circular negro es una autorización 'de segunda categoría': puedes tomar la dirección y sentido que indica, cualquiera que sea la luz encendida en el semáforo principal, pero sin la preferencia que da el verde normal. Estás obligado a ceder el paso a los vehículos que circulan por el carril al que te incorporas y a no poner en peligro a los peatones que estén cruzando. Es decir, funciona casi como un ceda el paso luminoso para ese movimiento concreto. En el examen la trampa habitual es regalarte prioridad: si aparece la palabra 'preferencia' junto a esta flecha, desconfía.",
+    "tags": ["semaforos", "flecha-verde"], "senalId": null
+  },
+  {
+    "id": "M02-027", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Llegas a una intersección cuyo semáforo está completamente apagado por avería y no hay ningún agente regulando. ¿Cómo actúas?",
+    "imagen": null,
+    "opciones": [
+      "Mantienes tu preferencia: el último color que viste sigue valiendo.",
+      "Cruzas con decisión para no entorpecer a los que vienen detrás.",
+      "Aplicas las señales que existan en el cruce y, en su defecto, las normas generales de prioridad."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Con el semáforo apagado, el cruce se rige por las señales existentes y, si no las hay, por las normas generales de prioridad.",
+    "truco": "Semáforo muerto, vuelta a lo básico: mira qué señales quedan y, si no hay ninguna, la derecha manda.",
+    "trampa": "Lo del 'último color visto' es pura invención con aroma a lógica; apagado, el semáforo simplemente deja de existir.",
+    "explicacion_larga": "Un semáforo apagado o averiado desaparece del orden de prelación: no ordena nada. El cruce pasa a regirse por el siguiente escalón disponible: primero las señales verticales o marcas viales que existan (muchos cruces semaforizados conservan un ceda o un stop precisamente para estos casos) y, si no hay ninguna, las normas generales de prioridad, empezando por la regla de oro de ceder el paso a lo que se aproxima por la derecha. Entrar 'con decisión' o inventarse que conserva valor el último color son recetas para un susto: sin luz, toca bajar el ritmo y negociar el cruce como si nunca hubiera habido semáforo.",
+    "tags": ["semaforos", "averia", "prioridad"], "senalId": null
+  },
+  {
+    "id": "M02-028", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Con el semáforo en rojo y sin ninguna flecha encendida, ¿puedes girar a la derecha si no se acerca nadie?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si antes te detienes por completo en la línea.",
+      "No: el rojo prohíbe el paso, también para girar.",
+      "Sí, siempre que lo hagas a velocidad muy reducida."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "El rojo prohíbe rebasar la línea de detención en cualquier dirección; sin flecha verde, tampoco se gira.",
+    "truco": "El 'giro a la derecha en rojo' es cosa de películas americanas: en España, rojo es rojo.",
+    "trampa": "La opción de 'parar y girar' existe en otros países y por eso suena creíble; aquí solo la flecha verde abre esa puerta.",
+    "tags": ["semaforos", "rojo-fijo", "giros"], "senalId": null
+  },
+  {
+    "id": "M02-029", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un semáforo circular en rojo, sin semáforo específico para ciclos en el cruce, ¿obliga a un ciclista?",
+    "imagen": null,
+    "opciones": [
+      "Sí: obliga a todos los vehículos, bicicletas incluidas.",
+      "No: los ciclistas solo deben obedecer los semáforos con silueta de bicicleta.",
+      "Solo si el ciclista circula por el centro del carril."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Los semáforos circulares obligan a todos los vehículos; si no hay semáforo de ciclos, la bici obedece el general.",
+    "truco": "La bici también es un vehículo: el círculo rojo va por todos.",
+    "trampa": "Existir semáforos específicos de ciclos hace creer que son los únicos que valen para la bici; solo mandan donde los hay.",
+    "tags": ["semaforos", "ciclistas"], "senalId": null
+  },
+  {
+    "id": "M02-030", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "En un semáforo de tres luces colocado en vertical, la luz roja ocupa…",
+    "imagen": null,
+    "opciones": [
+      "la parte inferior, la más cercana a la vista del conductor.",
+      "la posición central, entre el ámbar y el verde.",
+      "la parte superior."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "En los semáforos verticales el rojo va arriba, el ámbar en el centro y el verde abajo.",
+    "truco": "El peligro, siempre arriba: así lo localizas por posición aunque no distingas bien los colores.",
+    "trampa": "Te reordenan las luces con lógicas inventadas; la posición fija existe precisamente para ayudar, por ejemplo, a los daltónicos.",
+    "tags": ["semaforos", "colocacion"], "senalId": null
+  },
+  {
+    "id": "M02-031", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Eres peatón y la silueta roja del semáforo de peatones está encendida. ¿Puedes cruzar?",
+    "imagen": null,
+    "opciones": [
+      "No: debes esperar a que se encienda la silueta verde.",
+      "Sí, si compruebas que no se acerca ningún vehículo.",
+      "Sí: por el paso de peatones se puede cruzar siempre."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "La silueta roja prohíbe a los peatones iniciar el cruce de la calzada.",
+    "truco": "Muñeco rojo quieto, tú también quieto.",
+    "trampa": "El paso de peatones da preferencia solo cuando tu semáforo lo permite; con silueta roja, el paso 'se apaga' para ti.",
+    "tags": ["semaforo-peatones"], "senalId": null
+  },
+  {
+    "id": "M02-032", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "La silueta verde del semáforo de peatones empieza a parpadear cuando aún no has empezado a cruzar. ¿Qué te indica?",
+    "imagen": null,
+    "opciones": [
+      "Que el semáforo está averiado y debes cruzar por otro sitio.",
+      "Que el tiempo para cruzar está a punto de agotarse: mejor no inicies el cruce.",
+      "Que los vehículos tienen ya su luz verde encendida."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El verde intermitente avisa de que el tiempo de cruce se acaba: quien no ha empezado, no debería empezar; quien está cruzando, que termine con rapidez.",
+    "truco": "Verde que parpadea, cruce que se te escapa.",
+    "trampa": "Parpadeo no es avería: es cuenta atrás. Y arrancar a correr para pillarlo es la receta clásica del susto.",
+    "tags": ["semaforo-peatones", "verde-intermitente"], "senalId": null
+  },
+  {
+    "id": "M02-033", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Giras a la derecha con tu semáforo en verde y los peatones del paso de la calle a la que entras también tienen su semáforo en verde. ¿Quién pasa primero?",
+    "imagen": null,
+    "opciones": [
+      "Tú, porque los vehículos tienen prioridad en los giros regulados.",
+      "El primero que llegue físicamente al paso de peatones.",
+      "Los peatones: debes dejarlos cruzar antes de completar el giro."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Al girar debes ceder el paso a los peatones que cruzan con su semáforo en verde por el paso de la calle a la que entras.",
+    "truco": "En el giro, el peatón con su verde es el rey: tu verde te deja girar, el suyo le deja cruzar, y cruza él primero.",
+    "trampa": "Dos verdes a la vez descolocan; recuerda que tu verde autoriza la maniobra, no te regala el paso sobre quien cruza legalmente.",
+    "explicacion_larga": "Es una situación diseñada así a propósito en muchos cruces: el verde de vehículos y el verde de peatones del paso lateral conviven. Tu luz verde te permite iniciar el giro, pero los peatones que atraviesan la calzada a la que te diriges lo hacen amparados por su propio semáforo, y la norma te obliga a dejarlos pasar. Lo correcto es girar despacio, detenerte antes del paso si hay gente cruzando y completar la maniobra cuando quede libre, sin invadir el paso mientras esperas. Este escenario cae muchísimo en el examen y, sobre todo, en la vida real: la mayoría de atropellos en giros urbanos ocurren exactamente así.",
+    "tags": ["semaforos", "giros", "peatones"], "senalId": null
+  },
+  {
+    "id": "M02-034", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Las luces de un semáforo muestran la silueta de una bicicleta. ¿A quién obligan sus indicaciones?",
+    "imagen": null,
+    "opciones": [
+      "Exclusivamente a los ciclos.",
+      "A todos los vehículos de dos ruedas, motocicletas y ciclomotores incluidos.",
+      "A cualquier vehículo que circule por ese carril, sea del tipo que sea."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Cuando las luces presentan la silueta de un ciclo, sus indicaciones se refieren únicamente a los ciclos; desde la reforma de 2025 los ciclomotores ya no están incluidos y obedecen el semáforo general.",
+    "truco": "Si la luz tiene forma de bici, habla solo con bicis: motos y ciclomotores van al semáforo general.",
+    "trampa": "Antes el ciclomotor entraba en el lote y por eso aún pica; desde 2025 el semáforo de silueta de ciclo es solo para ciclos, y ciclomotores y motos se rigen por el general.",
+    "tags": ["semaforos", "ciclos"], "senalId": null
+  },
+  {
+    "id": "M02-035", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Circulas en bici y tu semáforo específico de ciclos está en verde, aunque el semáforo general del cruce sigue en rojo. ¿Puedes avanzar?",
+    "imagen": null,
+    "opciones": [
+      "No: el semáforo general prevalece siempre sobre el de ciclos.",
+      "Sí: a ti te obliga el semáforo específico de ciclos.",
+      "Solo si desmontas de la bici y cruzas empujándola."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El semáforo con silueta de ciclo es el que rige para las bicicletas: si está en verde, el ciclista puede pasar.",
+    "truco": "Cada cual obedece a su semáforo: el tuyo es el que lleva tu silueta.",
+    "trampa": "El rojo 'grande' impresiona más, pero no va contigo: existe un semáforo específico justo para separar tu fase de la de los coches.",
+    "tags": ["semaforos", "ciclos"], "senalId": null
+  },
+  {
+    "id": "M02-036", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Sobre tu carril hay un semáforo cuadrado con un aspa roja iluminada. ¿Qué significa?",
+    "imagen": null,
+    "opciones": [
+      "Que el carril está reservado a vehículos prioritarios en servicio urgente.",
+      "Que puedes usar ese carril únicamente para adelantar.",
+      "Que está prohibido circular por ese carril."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "El aspa roja iluminada prohíbe ocupar el carril sobre el que está situada.",
+    "truco": "Aspa roja = carril tachado. Lo que está tachado, no se usa.",
+    "trampa": "El aspa no distingue usos ni permisos a medias: ese carril queda cerrado para ti, punto.",
+    "tags": ["carril-reversible", "aspa-roja"], "senalId": null
+  },
+  {
+    "id": "M02-037", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un semáforo cuadrado situado sobre el carril muestra una flecha verde que apunta hacia abajo. ¿Qué indica?",
+    "imagen": null,
+    "opciones": [
+      "Que está permitido circular por ese carril.",
+      "Que debes cambiarte a ese carril obligatoriamente.",
+      "Que ese carril está reservado a los vehículos lentos."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "La flecha verde hacia abajo indica que se puede circular por el carril situado bajo ella.",
+    "truco": "Flecha verde que te apunta desde arriba: alfombra puesta, puedes pasar.",
+    "trampa": "Permitir no es obligar: la flecha abre el carril, no te empuja a él.",
+    "tags": ["carril-reversible", "flecha-verde"], "senalId": null
+  },
+  {
+    "id": "M02-038", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Circulas por un carril reversible y el semáforo cuadrado pasa a mostrar una flecha amarilla intermitente que apunta hacia abajo en diagonal. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Detenerte dentro del propio carril y esperar a que cambie la indicación.",
+      "Abandonar el carril en la dirección que marca la flecha, porque va a quedar cerrado.",
+      "Acelerar para salir del tramo antes de que se encienda el aspa roja."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "La flecha amarilla intermitente en diagonal ordena abandonar ese carril hacia el lado que indica, porque va a cerrarse.",
+    "truco": "Flecha amarilla en diagonal: te están echando del carril por las buenas. Múdate hacia donde apunta.",
+    "trampa": "Ni frenar en seco ni echar la carrera: la flecha pide un cambio de carril ordenado, con intermitente y espejos.",
+    "explicacion_larga": "Los semáforos cuadrados de carril tienen tres mensajes: aspa roja (carril prohibido), flecha verde hacia abajo (carril abierto) y esta flecha amarilla intermitente apuntando en diagonal hacia abajo, que es el aviso de transición: el carril por el que circulas va a quedar cerrado y debes incorporarte al carril hacia el que apunta la flecha. Se usa mucho en carriles reversibles y en túneles o puentes con gestión dinámica de carriles. La maniobra correcta es la de cualquier cambio de carril: espejos, intermitente y hueco; quedarse parado dentro del carril o acelerar 'a ver si llego' son las dos respuestas trampa habituales.",
+    "tags": ["carril-reversible", "flecha-amarilla"], "senalId": null
+  },
+  {
+    "id": "M02-039", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Circulas por un carril reversible a mediodía, con sol. ¿Qué alumbrado debes llevar encendido?",
+    "imagen": null,
+    "opciones": [
+      "Ninguno: de día no es obligatorio ningún alumbrado.",
+      "Únicamente las luces de posición, para marcar el ancho del vehículo.",
+      "Al menos la luz de cruce, tanto de día como de noche."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "En un carril reversible es obligatorio circular al menos con la luz de cruce encendida, de día y de noche.",
+    "truco": "Carril reversible = cruce puesto a todas horas: ahí puedes tener tráfico de frente y más vale que te vean venir.",
+    "trampa": "El 'de día no hacen falta luces' funciona casi siempre, y por eso pica: el carril reversible es una de sus excepciones estrella.",
+    "explicacion_larga": "El carril reversible cambia de sentido según la hora o la demanda de tráfico, así que en él puedes encontrarte de frente vehículos separados de ti solo por marcas discontinuas dobles. Por eso el reglamento exige circular por él con, al menos, la luz de cruce encendida tanto de día como de noche: no es para ver, es para que te vean e identifiquen tu sentido de marcha cuanto antes. La misma lógica de 'hacerse ver' se repite en otras situaciones de riesgo especial. En el examen, cualquier respuesta que limite esta obligación a la noche o a los túneles es trampa segura.",
+    "tags": ["carril-reversible", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M02-040", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El semáforo de un carril reservado al transporte público muestra una franja blanca horizontal iluminada sobre fondo circular negro. Para esos vehículos equivale a…",
+    "imagen": null,
+    "opciones": [
+      "una prohibición de paso, como un semáforo en rojo.",
+      "una autorización para continuar de frente.",
+      "un permiso para girar hacia cualquiera de los dos lados."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "La franja blanca horizontal prohíbe el paso a los vehículos a los que va destinado el semáforo, igual que un rojo.",
+    "truco": "Franja tumbada, barrera echada; franja de pie, adelante.",
+    "trampa": "Al ser blanca y luminosa parece un 'adelante'; la clave no es el color sino la orientación de la franja.",
+    "explicacion_larga": "Los semáforos para tranvías y autobuses de transporte público sustituyen los colores por franjas blancas sobre fondo circular negro, para que sus conductores no las confundan con los semáforos generales del cruce (ni los demás conductores con los suyos). El código es geométrico: franja horizontal, prohibido el paso; franja vertical, paso permitido de frente; franja oblicua hacia un lado, permitido girar en esa dirección. Como aspirante al permiso B no los obedecerás, pero debes reconocerlos: te explican por qué ese autobús arranca cuando tu semáforo sigue en rojo.",
+    "tags": ["semaforos", "transporte-publico"], "senalId": null
+  },
+  {
+    "id": "M02-041", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "En los semáforos para el transporte público, la franja blanca vertical iluminada equivale a…",
+    "imagen": null,
+    "opciones": [
+      "una prohibición temporal de paso mientras esté encendida.",
+      "vía libre para continuar de frente.",
+      "la obligación de detenerse y reanudar la marcha inmediatamente después."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "La franja blanca vertical permite a esos vehículos seguir de frente, como un verde.",
+    "truco": "Franja de pie, camino de frente: la propia barra te dibuja la trayectoria.",
+    "trampa": "Si has memorizado que la horizontal prohíbe, te tientan con que la vertical también; son opuestas, como rojo y verde.",
+    "tags": ["semaforos", "transporte-publico"], "senalId": null
+  },
+  {
+    "id": "M02-042", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Conduces tu turismo y en el cruce hay, además del semáforo normal, uno de franjas blancas encendido. ¿Cuál de los dos te obliga a ti?",
+    "imagen": null,
+    "opciones": [
+      "El de franjas blancas, por ser el más específico del carril.",
+      "Los dos a la vez: debes cumplir siempre el más restrictivo de ambos.",
+      "El semáforo normal: el de franjas solo afecta a los vehículos a los que está destinado."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "Los semáforos de franjas blancas solo obligan a los vehículos para los que están destinados, como tranvías y autobuses; tu turismo se rige por el semáforo general.",
+    "truco": "Las franjas blancas hablan en idioma bus: si no conduces un bus o un tranvía, ese semáforo no va contigo.",
+    "trampa": "La regla de 'cumplir lo más restrictivo' existe, pero solo entre señales que te afectan; un semáforo destinado a otros vehículos ni te restringe ni te libera.",
+    "explicacion_larga": "Cada semáforo tiene sus destinatarios. Los circulares de colores rigen para los vehículos en general; los de silueta de ciclo, solo para los ciclos; y los de franjas blancas sobre fondo negro, exclusivamente para los vehículos a los que están destinados, normalmente tranvías y autobuses de líneas regulares. Por eso pueden convivir encendidos con indicaciones distintas sin contradecirse: cada usuario lee el suyo. La trampa de examen consiste en aplicarte la regla de la señal más restrictiva, que solo opera entre señales dirigidas a ti. Si vas en turismo, el semáforo de franjas es información ajena: te ayuda a anticipar el movimiento del bus, nada más.",
+    "tags": ["semaforos", "transporte-publico", "prelacion"], "senalId": null
+  },
+  {
+    "id": "M02-043", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Una fila de conos separa una parte de la calzada. ¿Qué suponen para ti?",
+    "imagen": null,
+    "opciones": [
+      "La prohibición de pasar a la zona que delimitan.",
+      "Una simple recomendación de trayectoria, sin valor de señal.",
+      "Un aviso de que en esa zona se puede parar en caso de emergencia."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Los conos son dispositivos de barrera: prohíben el paso a la parte de la vía que delimitan.",
+    "truco": "Cada cono es un mini muro naranja: la fila entera, una pared que no se cruza.",
+    "trampa": "Como son de plástico y se mueven de una patada, parecen decorado; legalmente valen lo que una barrera.",
+    "tags": ["balizamiento", "conos"], "senalId": null
+  },
+  {
+    "id": "M02-044", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "En un tramo balizado por obras ves una luz roja fija sobre la calzada. ¿Qué indica?",
+    "imagen": null,
+    "opciones": [
+      "El final del tramo en obras y la vuelta a la circulación normal.",
+      "Que la calzada está totalmente cerrada al tráfico.",
+      "Que hay maquinaria trabajando, aunque puedes pasar muy despacio."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "En el balizamiento, la luz roja fija indica que la calzada está totalmente cerrada al tráfico.",
+    "truco": "Roja y fija: cerrado a cal y canto. Es el semáforo rojo del mundo de las obras.",
+    "trampa": "El 'pasa despacio' es el comodín tentador de las zonas de obras; con luz roja fija no hay despacio que valga.",
+    "tags": ["balizamiento", "luz-roja", "obras"], "senalId": null
+  },
+  {
+    "id": "M02-045", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Las luces amarillas, fijas o intermitentes, que balizan una zona de obras te indican que…",
+    "imagen": null,
+    "opciones": [
+      "puedes atravesar la zona balizada si no hay operarios trabajando en ese momento.",
+      "la vía queda abierta y tienes preferencia sobre la maquinaria de obras.",
+      "está prohibido pasar a la parte de la vía que delimitan."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Las luces amarillas fijas o intermitentes son dispositivos de barrera: prohíben el paso a la zona que delimitan.",
+    "truco": "Amarillo balizando obras = 'por aquí no': dibuja con luz la frontera que no debes cruzar.",
+    "trampa": "El amarillo te suena a 'precaución, pero pasa' por los semáforos intermitentes; en balizamiento su papel es cerrar zona, haya o no operarios a la vista.",
+    "explicacion_larga": "En el capítulo de balizamiento, las luces amarillas fijas o intermitentes forman parte de los dispositivos de barrera, la familia que prohíbe el paso a la parte de vía que delimita (junto a barreras, conos, banderines y paneles direccionales provisionales). No las confundas con el ámbar intermitente de un semáforo, que solo pide precaución: aquí las luces trazan el contorno de una zona vetada, típicamente unas obras o un obstáculo, y cruzarlo está prohibido aunque parezca que hay hueco de sobra. De noche son a menudo lo único que te separa de una zanja: respétalas como respetarías un muro.",
+    "tags": ["balizamiento", "luces-amarillas", "obras"], "senalId": null
+  },
+  {
+    "id": "M02-046", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "¿Qué señala un hito de vértice, ese elemento semicilíndrico con triángulos reflectantes que encuentras en algunas bifurcaciones?",
+    "imagen": null,
+    "opciones": [
+      "El punto en el que se separan dos corrientes de circulación.",
+      "El borde derecho de la calzada en los tramos curvos.",
+      "La entrada a un túnel que carece de iluminación."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "El hito de vértice indica el punto donde se separan dos corrientes de circulación, como en una salida de autovía.",
+    "truco": "Vértice = punta de la V: justo donde el tráfico se parte en dos, como en las salidas de autovía.",
+    "trampa": "Marcar el borde de la calzada es trabajo de otros dispositivos de guía; el de vértice va colocado en la 'proa' de la divergencia.",
+    "explicacion_larga": "El hito de vértice es un dispositivo de guía del balizamiento: un elemento semicilíndrico, con triángulos o franjas retrorreflectantes, plantado exactamente en el punto donde la corriente de tráfico se divide en dos, por ejemplo en el arranque de una isleta que separa la autovía de su salida. Su misión es que ese obstáculo crítico se vea de lejos y de noche, porque chocar contra la punta de una divergencia es de los golpes más severos que existen. No lo confundas con los hitos de arista o de borde, que jalonan los laterales de la vía, ni con los paneles direccionales, que anuncian el sentido de una curva.",
+    "tags": ["balizamiento", "hito-de-vertice"], "senalId": null
+  },
+  {
+    "id": "M02-047", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Los captafaros ('ojos de gato') que ves incrustados en la calzada o en las barreras sirven para…",
+    "imagen": null,
+    "opciones": [
+      "iluminar la calzada con luz propia en los tramos sin farolas.",
+      "reflejar la luz de tus faros y guiarte marcando bordes y carriles.",
+      "avisar a los servicios de mantenimiento del desgaste del asfalto."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Los captafaros son dispositivos de guía retrorreflectantes: devuelven la luz de tus faros para marcar el trazado.",
+    "truco": "Ojos de gato: no dan luz, te la devuelven. Trabajan con tus propios faros.",
+    "trampa": "El brillo engaña y muchos juran que llevan bombilla; sin tus faros encendidos, un captafaros es un trozo de plástico mudo.",
+    "tags": ["balizamiento", "captafaros"], "senalId": null
+  },
+  {
+    "id": "M02-048", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un panel direccional provisional de franjas blancas y rojas cierra parte de tu carril en unas obras. ¿Qué te indica?",
+    "imagen": null,
+    "opciones": [
+      "Que puedes pasar indistintamente por cualquiera de los dos lados del panel.",
+      "Que el panel es meramente informativo mientras instalan la señalización definitiva.",
+      "Que prohíbe el paso al lado que delimita y te informa del sentido en que debes rodearlo."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El panel direccional provisional es un dispositivo de barrera: cierra el lado que delimita e indica hacia dónde esquivarlo.",
+    "truco": "El panel te tapa el lado malo y sus franjas te empujan hacia el bueno.",
+    "trampa": "El 'pasa por donde quieras' pinta bien porque el panel deja hueco a ambos lados; pero el lado cerrado lo elige el panel, no tú.",
+    "tags": ["balizamiento", "panel-direccional", "obras"], "senalId": null
+  },
+  {
+    "id": "M02-049", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "La semibarrera de un paso a nivel está bajada. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Detenerte y no cruzar mientras permanezca bajada.",
+      "Cruzar sorteándola en zigzag si no ves acercarse ningún tren.",
+      "Cruzar despacio: al ser media barrera, solo cierra el sentido contrario."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Las barreras y semibarreras son dispositivos de barrera: mientras estén bajadas o en movimiento, prohibido cruzar.",
+    "truco": "Media barrera cierra el paso entero. No es una puerta entreabierta, es una puerta cerrada.",
+    "trampa": "El hueco libre de la semibarrera parece una invitación; existe para que no te quedes encerrado dentro, no para que entres.",
+    "tags": ["balizamiento", "barreras", "paso-a-nivel"], "senalId": null
+  },
+  {
+    "id": "M02-050", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Dentro del balizamiento, ¿cuál de estos elementos es un dispositivo de guía y no de barrera?",
+    "imagen": null,
+    "opciones": [
+      "Los conos que delimitan una zona de obras.",
+      "Los captafaros.",
+      "La barrera fija que cierra una calzada."
+    ],
+    "correcta": 1, "dificultad": 5,
+    "explicacion_corta": "Los captafaros son dispositivos de guía; los conos y las barreras pertenecen a los dispositivos de barrera.",
+    "truco": "Barrera prohíbe, guía acompaña: el captafaros no te cierra el paso, te enseña el camino.",
+    "trampa": "Todo el balizamiento se parece a ojos del novato; la pregunta juega a mezclar las dos familias para ver si sabes quién prohíbe y quién orienta.",
+    "explicacion_larga": "El balizamiento se divide en dos familias con funciones opuestas. Los dispositivos de barrera prohíben el paso a la parte de vía que delimitan: barreras fijas y móviles, paneles direccionales provisionales, banderines, conos y luces rojas fijas o amarillas de delimitación. Los dispositivos de guía no prohíben nada: indican el borde de la calzada, la presencia de una curva o el punto donde se separan corrientes de tráfico; ahí viven los hitos de arista o borde, el hito de vértice, las balizas planas y los captafaros. En el examen, la pregunta trampa clásica consiste en colar un elemento de una familia en la lista de la otra: pregúntate siempre '¿esto me cierra el paso o solo me orienta?'.",
+    "tags": ["balizamiento", "dispositivos-guia", "dispositivos-barrera"], "senalId": null
+  },
+  {
+    "id": "M02-051", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Los hitos con material reflectante que jalonan a intervalos regulares el borde de la carretera sirven para…",
+    "imagen": null,
+    "opciones": [
+      "señalizar los puntos donde está permitido parar en emergencia.",
+      "delimitar las fincas privadas colindantes con la vía.",
+      "marcar el borde de la calzada, especialmente de noche o con niebla."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Los hitos de arista o de borde son dispositivos de guía que marcan el límite de la calzada cuando la visibilidad escasea.",
+    "truco": "Son las migas de pan del borde: con niebla o de noche, síguelos y no te saldrás del camino.",
+    "trampa": "No reservan sitio para parar ni marcan propiedades: su único mensaje es 'la carretera termina aquí'.",
+    "tags": ["balizamiento", "hitos", "niebla"], "senalId": null
+  },
+  {
+    "id": "M02-052", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un triángulo con fondo amarillo y el dibujo de un operario trabajando te avisa de…",
+    "imagen": null,
+    "opciones": [
+      "un paso habitual de maquinaria agrícola.",
+      "peligro por la proximidad de un tramo en obras.",
+      "una zona de descanso reservada a los trabajadores de la vía."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Es la señal de obras: el fondo amarillo delata que se trata de señalización provisional de un tramo en obras.",
+    "truco": "Fondo amarillo = aquí se está currando: toda la señalización de obras se viste de amarillo.",
+    "trampa": "El muñeco con la pala se presta a chistes de agricultores; el fondo amarillo te chiva que es señalización temporal de obras.",
+    "tags": ["obras", "senales-peligro"], "senalId": "P-18"
+  },
+  {
+    "id": "M02-053", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "En un tramo en obras conviven marcas viales amarillas provisionales y las marcas blancas de siempre. ¿Cuáles debes seguir?",
+    "imagen": null,
+    "opciones": [
+      "Las amarillas: las marcas provisionales de obras prevalecen sobre las blancas.",
+      "Las blancas, porque son las permanentes y definitivas de la vía.",
+      "La combinación de ambas que te resulte más cómoda para mantener la trayectoria."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Las marcas viales amarillas de obras prevalecen sobre las marcas blancas permanentes.",
+    "truco": "En obras, el amarillo es el jefe de la pintura: ignora el trazado blanco de debajo.",
+    "trampa": "Toda la vida obedeciendo líneas blancas juega en tu contra; en obras, la vía 'de verdad' es la que dibuja el amarillo.",
+    "tags": ["obras", "marcas-viales", "prelacion"], "senalId": null
+  },
+  {
+    "id": "M02-054", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "El señalista de unas obras te muestra una bandera roja. ¿Qué significa?",
+    "imagen": null,
+    "opciones": [
+      "Que hay peligro más adelante, pero puedes continuar con cuidado.",
+      "Que la calzada está temporalmente cerrada al tráfico: detente.",
+      "Que estás obligado a dar media vuelta y buscar otro itinerario."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "La bandera roja del señalista indica que la calzada queda temporalmente cerrada al tráfico.",
+    "truco": "Bandera roja = semáforo rojo de tela: calzada cerrada hasta nueva orden.",
+    "trampa": "No te manda dar la vuelta ni pasar con cuidado: te manda esperar a que el paso vuelva a abrirse.",
+    "tags": ["senalistas", "obras"], "senalId": null
+  },
+  {
+    "id": "M02-055", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Tras esperar detenido ante unas obras, el señalista pasa a mostrar la bandera verde. ¿Qué indica?",
+    "imagen": null,
+    "opciones": [
+      "Que comienza el turno de paso de los vehículos del sentido contrario.",
+      "Que las obras han finalizado definitivamente en ese tramo.",
+      "Que la calzada vuelve a estar abierta y puedes reanudar la marcha."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "La bandera verde indica que la calzada queda de nuevo abierta al tráfico.",
+    "truco": "Verde de tela = verde de semáforo: adelante.",
+    "trampa": "Verde significa vía abierta ya, para ti; no anuncia el fin de la obra ni el turno de los de enfrente.",
+    "tags": ["senalistas", "obras"], "senalId": null
+  },
+  {
+    "id": "M02-056", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "¿Estás obligado a obedecer las indicaciones del personal de obras habilitado para regular el paso en un tramo en obras?",
+    "imagen": null,
+    "opciones": [
+      "Sí: sus indicaciones para regular el paso en ese tramo son de obligado cumplimiento.",
+      "No: solo los agentes de la autoridad pueden dar órdenes a los conductores.",
+      "Únicamente si coinciden con lo que digan las señales verticales del tramo."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "El personal de obras habilitado (señalistas) puede regular el paso y sus indicaciones deben obedecerse.",
+    "truco": "En su tramo, el del chaleco manda: el señalista es la 'ley provisional' de la obra.",
+    "trampa": "Como no es agente de la autoridad, tienta pensar que sus gestos son consejos; están habilitados justo para que no lo sean.",
+    "tags": ["senalistas", "obras"], "senalId": null
+  },
+  {
+    "id": "M02-057", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "Un vehículo de mantenimiento avanza lento por la vía con su luz amarilla intermitente (rotativo) encendida. ¿Qué te indica esa luz?",
+    "imagen": null,
+    "opciones": [
+      "Que tiene prioridad absoluta, como una ambulancia en servicio urgente.",
+      "Que está realizando trabajos en la vía: extrema la precaución al acercarte o rebasarlo.",
+      "Que transporta mercancías peligrosas y debes mantener 100 metros de distancia."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El rotativo amarillo identifica a vehículos que realizan obras o servicios en la vía y te pide precaución, no cederles prioridad de urgencia.",
+    "truco": "Rotativo amarillo = curro en la vía, no urgencia: precaución sí, sirenas y preferencia no.",
+    "trampa": "Cualquier luz giratoria activa el chip de 'apártate como sea'; la preferencia de paso es de los prioritarios (azul), no del amarillo.",
+    "tags": ["obras", "luz-amarilla", "vehiculos-obras"], "senalId": null
+  },
+  {
+    "id": "M02-058", "mundo": 2, "tema": "Agentes, semáforos y balizamiento",
+    "pregunta": "En unas obras que dejan un solo carril con paso alternativo hay instalado un semáforo provisional. ¿Tiene la misma validez que uno definitivo?",
+    "imagen": null,
+    "opciones": [
+      "No: al ser provisional, sus luces son solo orientativas.",
+      "Solo durante el día; de noche deja de obligar porque no hay operarios.",
+      "Sí: sus luces obligan exactamente igual que las de cualquier otro semáforo."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Los semáforos provisionales de obras obligan igual que los definitivos: el rojo prohíbe el paso a cualquier hora.",
+    "truco": "Un semáforo de obra no es de juguete: mismo rojo, misma obligación.",
+    "trampa": "El aspecto portátil, con su batería y su trípode, invita a tomárselo a broma; saltárselo en un paso alternativo es jugarse un choque frontal.",
+    "tags": ["obras", "semaforos", "paso-alternativo"], "senalId": null
+  }
+]

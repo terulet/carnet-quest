@@ -1,0 +1,1326 @@
+[
+ {
+  "id": "M03-001",
+  "mundo": 3,
+  "tema": "Familias de señales",
+  "pregunta": "Por norma general, ¿qué forma tienen las señales de advertencia de peligro?",
+  "imagen": null,
+  "opciones": [
+   "Triangular, con borde rojo y fondo blanco.",
+   "Circular, con borde rojo y fondo blanco.",
+   "Cuadrada, con fondo azul."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Las señales de peligro son triángulos de borde rojo y fondo blanco con el símbolo del peligro en negro.",
+  "truco": "Triángulo avisa, círculo manda, cuadrado informa. Grábatelo: es media Señalópolis resuelta.",
+  "trampa": "El círculo con borde rojo también existe, pero ese no avisa: prohíbe. Te mezclan las familias a ver si picas.",
+  "tags": [
+   "senales",
+   "peligro",
+   "formas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M03-002",
+  "mundo": 3,
+  "tema": "Familias de señales",
+  "pregunta": "Una señal circular con el borde rojo y el fondo blanco, ¿qué te está diciendo en general?",
+  "imagen": null,
+  "opciones": [
+   "Que más adelante hay un peligro.",
+   "Que tienes una obligación que cumplir.",
+   "Que algo está prohibido o restringido."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "El círculo de borde rojo es la familia de la prohibición o restricción: lo que aparece dentro, no se puede hacer.",
+  "truco": "Círculo rojo = portero de discoteca: lo que hay dentro del círculo no entra.",
+  "trampa": "Las obligaciones también van en círculo, pero azul y sin borde rojo. El color del borde es lo que separa el 'prohibido' del 'obligado'.",
+  "tags": [
+   "senales",
+   "prohibicion",
+   "formas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M03-003",
+  "mundo": 3,
+  "tema": "Familias de señales",
+  "pregunta": "¿Y una señal cuadrada o rectangular con fondo azul, sin borde rojo?",
+  "imagen": null,
+  "opciones": [
+   "Prohíbe la maniobra que muestra su símbolo.",
+   "Informa o indica algo útil: es una señal de indicación.",
+   "Siempre advierte de un peligro inminente."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Los cuadrados y rectángulos azules son señales de indicación: informan, no ordenan ni avisan de peligros.",
+  "truco": "Cuadrado informa: es el cartel amable de la familia, el que te cuenta cosas sin regañarte.",
+  "trampa": "Como el azul también aparece en las de obligación, te empujan a pensar que el cuadrado ordena algo. El que manda es el círculo, no el cuadrado.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "formas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M03-004",
+  "mundo": 3,
+  "tema": "Familias de señales",
+  "pregunta": "Las señales circulares de fondo azul, sin borde rojo y con el símbolo en blanco, ¿a qué familia pertenecen?",
+  "imagen": null,
+  "opciones": [
+   "A las señales de obligación.",
+   "A las señales de indicación.",
+   "A las señales de fin de prohibición."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Círculo azul sin borde rojo = obligación: lo que muestra el símbolo hay que hacerlo sí o sí.",
+  "truco": "El círculo siempre manda: si es rojo te lo prohíbe, si es azul te lo ordena.",
+  "trampa": "El fondo azul te recuerda a las de indicación (cuadradas). La clave no es solo el color: la forma redonda es la que convierte la información en orden.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "formas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M03-005",
+  "mundo": 3,
+  "tema": "Familias de señales",
+  "pregunta": "Ves una señal triangular de borde rojo. ¿Te obliga a detenerte?",
+  "imagen": null,
+  "opciones": [
+   "Sí, toda señal con rojo obliga a detenerse.",
+   "Sí, pero solo si circulas por vía interurbana.",
+   "No: te advierte de un peligro para que adaptes tu conducción, sin imponerte ninguna detención."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Las señales de peligro avisan; no ordenan maniobras concretas. Tú decides cómo adaptar velocidad y atención al peligro anunciado.",
+  "truco": "El triángulo es un colega que te da un codazo: 'ojo con lo que viene'. Ni te para ni te multa, te avisa.",
+  "trampa": "El rojo impone respeto y por eso te ofrecen la detención. Solo el STOP (y algunas señales muy concretas) obligan a parar; el triángulo nunca.",
+  "tags": [
+   "senales",
+   "peligro"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M03-006",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "Como norma general, ¿a qué distancia del peligro se colocan las señales de advertencia en las vías interurbanas?",
+  "imagen": null,
+  "opciones": [
+   "Entre 50 y 100 metros antes.",
+   "Entre 150 y 250 metros antes, salvo que se indique otra cosa.",
+   "Justo en el punto donde empieza el peligro."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "En interurbana, la señal de peligro se planta entre 150 y 250 m antes del peligro, para darte tiempo a reaccionar; si va a otra distancia, lo indica un panel.",
+  "truco": "150-250: como el anuncio antes de la película, te lo ponen con margen para que te prepares.",
+  "trampa": "Si estuviera justo en el peligro ya no 'advertiría' nada. Las cifras cortas (50-100) suenan prudentes, pero a velocidad de carretera no dan margen.",
+  "tags": [
+   "peligro",
+   "colocacion",
+   "via-interurbana"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M03-007",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal triangular con una flecha que se dobla hacia la derecha te advierte de…",
+  "imagen": null,
+  "opciones": [
+   "un giro obligatorio a la derecha.",
+   "una curva peligrosa hacia la derecha.",
+   "un cambio de sentido permitido."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Es la P-13a: peligro por la proximidad de una curva peligrosa hacia la derecha.",
+  "truco": "Triángulo con flecha doblada = la carretera te avisa de que va a torcer el brazo. Tú levanta el pie antes.",
+  "trampa": "El giro obligatorio va en círculo azul. Misma flecha, familia distinta: el triángulo avisa de la curva, no te ordena girar.",
+  "tags": [
+   "peligro",
+   "curvas"
+  ],
+  "senalId": "P-13a"
+ },
+ {
+  "id": "M03-008",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "¿Qué anuncia la señal de peligro 'curvas peligrosas, la primera hacia la derecha'?",
+  "imagen": null,
+  "opciones": [
+   "Una única curva muy cerrada a la derecha.",
+   "Un tramo sinuoso solo apto para vehículos ligeros.",
+   "Una sucesión de curvas peligrosas próximas entre sí, empezando por una a la derecha."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La P-14a avisa de varias curvas peligrosas seguidas; la 'S' del símbolo te dice hacia dónde va la primera.",
+  "truco": "Si el símbolo hace la 'S', prepárate para bailar: no es una curva, son varias encadenadas.",
+  "trampa": "Confundirla con la curva única es el fallo típico: si tras la primera te relajas, la segunda te pilla cruzado.",
+  "tags": [
+   "peligro",
+   "curvas"
+  ],
+  "senalId": "P-14a"
+ },
+ {
+  "id": "M03-009",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "En la señal de bajada con fuerte pendiente aparece la cifra '10%'. ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Que debes reducir tu velocidad un 10 por ciento.",
+   "Que la vía desciende 10 metros por cada 100 metros de recorrido.",
+   "Que solo el 10 por ciento de los vehículos puede usar ese tramo."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El porcentaje es la inclinación: un 10 % significa que bajas 10 metros por cada 100 que avanzas.",
+  "truco": "Porcentaje de pendiente = metros que caes por cada 100 que ruedas. En bajadas fuertes, frena con el motor y no cocines los frenos.",
+  "trampa": "Como huele a matemáticas, te cuelan el 'reduce un 10 % la velocidad'. El número describe la cuesta, no te da instrucciones.",
+  "tags": [
+   "peligro",
+   "pendientes"
+  ],
+  "senalId": "P-16a"
+ },
+ {
+  "id": "M03-010",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal de peligro por estrechamiento de la calzada te advierte de que…",
+  "imagen": null,
+  "opciones": [
+   "más adelante la calzada se hace más angosta y puede costar cruzarse con otros vehículos.",
+   "está prohibido el paso a vehículos anchos.",
+   "la calzada pasa a ser de sentido único."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La P-17 anuncia un tramo más estrecho: modera la velocidad y calcula bien los cruces con los que vienen de frente.",
+  "truco": "El dibujo lo canta: la carretera se pone a dieta. Tú llega despacio por si no cabéis los dos.",
+  "trampa": "Prohibir el paso por anchura es cosa de la señal redonda de limitación de anchura. El triángulo solo avisa; no echa a nadie.",
+  "tags": [
+   "peligro",
+   "estrechamiento"
+  ],
+  "senalId": "P-17"
+ },
+ {
+  "id": "M03-011",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "Las señales que advierten peligros en un tramo en obras tienen una particularidad. ¿Cuál?",
+  "imagen": null,
+  "opciones": [
+   "Su fondo es amarillo, porque son señales de empleo temporal.",
+   "Son cuadradas en lugar de triangulares.",
+   "Solo son válidas de día, mientras trabajan los operarios."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La señalización de obras usa versiones de fondo amarillo (serie TP): mismo mensaje, pero de carácter temporal.",
+  "truco": "Amarillo obras: como los chalecos de los operarios. Si la señal viste de amarillo, es que está 'trabajando' temporalmente.",
+  "trampa": "Pensar que solo valen en horario de trabajo es un clásico: el peligro (zanjas, gravilla, desvíos) sigue ahí aunque los obreros se hayan ido a comer.",
+  "explicacion_larga": "En los tramos en obras se emplea señalización temporal: son las mismas señales de siempre, pero con el fondo amarillo en lugar de blanco (por ejemplo, la TP-18 de obras). Ese color avisa de que la situación es provisional y modifica el régimen normal de la vía mientras dure. Siguen siendo plenamente obligatorias a cualquier hora, haya o no operarios a la vista, porque los peligros de la obra no fichan al salir. Al cruzar una zona así: reduce, aumenta la distancia de seguridad y espera cambios bruscos de trazado o pavimento.",
+  "tags": [
+   "peligro",
+   "obras",
+   "senalizacion-temporal"
+  ],
+  "senalId": "P-18"
+ },
+ {
+  "id": "M03-012",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "¿Qué te anuncia la señal de peligro con un coche derrapando sobre dos trazos ondulados?",
+  "imagen": null,
+  "opciones": [
+   "Un tramo reservado para prácticas de conducción.",
+   "Peligro por viento fuerte lateral.",
+   "Un tramo donde el pavimento puede resultar deslizante."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Es la P-19, pavimento deslizante: el firme puede perder adherencia por lluvia, grasa, barro… Suaviza volante y frenos.",
+  "truco": "Coche haciendo eses = suelo con jabón. Toca todo con delicadeza: acelerador, freno y volante.",
+  "trampa": "El coche torcido también aparece en la de viento, pero aquella lleva una manga catavientos. Fíjate en el detalle del dibujo, no solo en el derrape.",
+  "tags": [
+   "peligro",
+   "pavimento-deslizante"
+  ],
+  "senalId": "P-19"
+ },
+ {
+  "id": "M03-013",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal triangular con un peatón caminando te advierte del peligro por la proximidad de una zona frecuentada por peatones. ¿En qué se diferencia de la señal cuadrada azul con el peatón sobre un paso?",
+  "imagen": null,
+  "opciones": [
+   "La triangular avisa del peligro con antelación; la cuadrada azul indica la situación misma del paso para peatones.",
+   "Son idénticas: se usan indistintamente.",
+   "La triangular obliga a ceder el paso y la azul no."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La P-20 es el aviso previo (peligro, peatones cerca); la S-13 marca dónde está exactamente el paso.",
+  "truco": "Triángulo = tráiler de la película; cuadrado azul = la película. Uno anuncia, el otro señala el sitio.",
+  "trampa": "Como ambas llevan peatón, parecen gemelas. Pregúntate siempre: ¿me avisa de algo que viene o me dice que ya estoy en ello?",
+  "tags": [
+   "peligro",
+   "peatones"
+  ],
+  "senalId": "P-20"
+ },
+ {
+  "id": "M03-014",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "¿Dónde es habitual encontrar la señal de peligro por la proximidad de niños?",
+  "imagen": null,
+  "opciones": [
+   "Solo en autopistas y autovías.",
+   "Cerca de colegios, parques o zonas de juego frecuentadas por niños.",
+   "Únicamente en calles residenciales con velocidad limitada a 10 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La P-21 se coloca donde es fácil que aparezcan niños: colegios, parques, zonas de recreo. Con niños, espera lo inesperado.",
+  "truco": "Niños en la señal = balón en la calzada en 3, 2, 1… El pie cerca del freno y los ojos en las aceras.",
+  "trampa": "La calle residencial tiene su propia señal (la del 20 con la casita). La de niños es un aviso de peligro que puede aparecer en cualquier vía.",
+  "tags": [
+   "peligro",
+   "ninos"
+  ],
+  "senalId": "P-21"
+ },
+ {
+  "id": "M03-015",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal triangular con una bicicleta te advierte de…",
+  "imagen": null,
+  "opciones": [
+   "la proximidad de un paso para ciclistas o de un lugar donde frecuentemente irrumpen en la vía.",
+   "una vía reservada exclusivamente para ciclos.",
+   "la prohibición de adelantar a ciclistas en ese tramo."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La P-22 avisa: zona con ciclistas cruzando o incorporándose. Reduce y dales espacio de sobra.",
+  "truco": "Bici en triángulo: 'van a aparecer pedales'. Bici en círculo azul: 'esto es suyo'. Avisar no es reservar.",
+  "trampa": "La vía reservada para ciclos es redonda y azul. Te juegan con el mismo dibujo en dos marcos distintos.",
+  "tags": [
+   "peligro",
+   "ciclistas"
+  ],
+  "senalId": "P-22"
+ },
+ {
+  "id": "M03-016",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "¿Qué diferencia hay entre la señal de peligro con una vaca y la que muestra un ciervo?",
+  "imagen": null,
+  "opciones": [
+   "Ninguna: ambas avisan de animales sueltos de cualquier tipo.",
+   "La de la vaca se usa solo en vías pecuarias señalizadas.",
+   "La vaca avisa de paso de animales domésticos y el ciervo, de animales en libertad (salvajes)."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "P-23 (vaca) = animales domésticos que cruzan, típico de zonas ganaderas; P-24 (ciervo) = animales salvajes en libertad, típico de zonas de monte.",
+  "truco": "Vaca con dueño, ciervo sin dueño. El de la cornamenta es el que se te cruza de noche sin avisar.",
+  "trampa": "Meter a los dos animales en el mismo saco es tentador, pero el examen adora esta pareja: doméstico contra salvaje.",
+  "tags": [
+   "peligro",
+   "animales"
+  ],
+  "senalId": "P-24"
+ },
+ {
+  "id": "M03-017",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "Circulas por una calzada de sentido único y encuentras la señal triangular con dos flechas verticales opuestas. ¿Qué te anuncia?",
+  "imagen": null,
+  "opciones": [
+   "Que puedes cambiar de sentido en ese punto.",
+   "Que a partir de ahí circularás por una calzada con tráfico en los dos sentidos.",
+   "Que está prohibido adelantar en el tramo."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La P-25 avisa de que se acaba el sentido único: vas a compartir calzada con vehículos de frente.",
+  "truco": "Dos flechas enfrentadas = 'ya no estás solo': deja de mirar la calzada como si fuera toda tuya.",
+  "trampa": "Tras un buen rato en sentido único, adelantar ocupando toda la calzada se vuelve costumbre. Esta señal es justo el aviso de que esa costumbre ahora mata.",
+  "tags": [
+   "peligro",
+   "dos-sentidos"
+  ],
+  "senalId": "P-25"
+ },
+ {
+  "id": "M03-018",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal de peligro por desprendimiento te advierte de…",
+  "imagen": null,
+  "opciones": [
+   "la posibilidad de encontrar piedras caídas en la vía o de que caigan desde un talud.",
+   "un firme hundido por el paso de vehículos pesados.",
+   "una zona de carga y descarga de áridos."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La P-26 avisa de rocas que pueden caer o haber caído a la calzada, típica de zonas de montaña y taludes.",
+  "truco": "Piedras rodando en el dibujo = piedras posibles en tu carril. En montaña, mira la carretera y de reojo la pared.",
+  "trampa": "No hace falta ver caer la piedra: el peligro incluye la que ya está en el asfalto esperándote en plena curva.",
+  "tags": [
+   "peligro",
+   "desprendimientos"
+  ],
+  "senalId": "P-26"
+ },
+ {
+  "id": "M03-019",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "¿Qué riesgo principal te anuncia la señal de proyección de gravilla?",
+  "imagen": null,
+  "opciones": [
+   "Que el firme está recién asfaltado y pegajoso.",
+   "Que hay obras con maquinaria pesada cruzando.",
+   "Que las ruedas pueden lanzar piedrecitas sueltas contra otros vehículos o peatones."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La P-28 avisa de gravilla suelta: los neumáticos la disparan como perdigones. Baja la velocidad y separa distancias.",
+  "truco": "Gravilla = metralla barata: cuanto más rápido pases, más balas repartes (y más recibes en tu luna).",
+  "trampa": "El riesgo no es solo para tu coche: la trampa está en olvidar que TÚ también proyectas piedras al de al lado si no reduces.",
+  "tags": [
+   "peligro",
+   "gravilla"
+  ],
+  "senalId": "P-28"
+ },
+ {
+  "id": "M03-020",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal triangular con una manga de viento te advierte de viento transversal. ¿Qué harás al pasar por el tramo?",
+  "imagen": null,
+  "opciones": [
+   "Acelerar para atravesarlo lo antes posible.",
+   "Reducir la velocidad y sujetar el volante con firmeza, atento a las rachas laterales.",
+   "Circular por el centro de la calzada con las luces encendidas."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La P-29 avisa de rachas laterales que empujan el vehículo: menos velocidad y ambas manos al volante.",
+  "truco": "La manga hinchada te dice de dónde sopla: viento de lado + puente o salida de desmonte = volantazo invisible.",
+  "trampa": "Acelerar 'para pasar antes' es la peor idea: a más velocidad, más te desplaza la misma racha.",
+  "tags": [
+   "peligro",
+   "viento"
+  ],
+  "senalId": "P-29"
+ },
+ {
+  "id": "M03-021",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "¿De qué te advierte la señal de peligro por visibilidad reducida?",
+  "imagen": null,
+  "opciones": [
+   "De tramos donde niebla, lluvia, humo o polvo pueden impedirte ver con claridad.",
+   "De que es obligatorio encender la luz de largo alcance.",
+   "De la proximidad de un túnel sin iluminación."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La P-33 marca zonas donde la visibilidad puede caer de golpe: niebla, lluvia intensa, humo, polvo… Adapta velocidad y distancia.",
+  "truco": "Si no ves, no corras: la regla de oro es poder detenerte dentro de lo que alcanzas a ver.",
+  "trampa": "Con niebla, la larga es contraproducente (rebota y deslumbra). Te ofrecen la respuesta 'iluminar más' porque suena lógica; la correcta es ver el peligro y adaptarte.",
+  "tags": [
+   "peligro",
+   "visibilidad-reducida"
+  ],
+  "senalId": "P-33"
+ },
+ {
+  "id": "M03-022",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "En invierno encuentras la señal de pavimento deslizante por hielo o nieve. ¿Significa que la calzada está helada en ese momento?",
+  "imagen": null,
+  "opciones": [
+   "Sí: si está la señal, hay hielo seguro.",
+   "No: advierte de que en ese tramo el firme PUEDE estar deslizante por hielo o nieve; el riesgo existe aunque no lo veas.",
+   "Solo si la acompaña un semáforo en ámbar."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La P-34 avisa de riesgo posible, no de certeza: el hielo puede estar ahí (o no), y lo más traicionero es que casi nunca se ve.",
+  "truco": "El copo en la señal no es un parte meteorológico: es un 'aquí hiela cuando hiela'. Trata el tramo como si patinara siempre.",
+  "trampa": "Como no ves hielo, te relajas: esa es exactamente la trampa. La placa de hielo transparente (el famoso hielo negro) no avisa; la señal sí.",
+  "explicacion_larga": "Las señales de peligro anuncian la posibilidad de un riesgo, no su presencia garantizada. La P-34 se coloca en tramos propensos a helarse: umbrías, puentes, zonas altas. El hielo en calzada es de lo más peligroso que existe porque a menudo es invisible: una placa transparente sobre asfalto oscuro. Al cruzar un tramo así en época fría: reduce antes de llegar, no frenes ni gires bruscamente encima, aumenta la distancia de seguridad y desconfía especialmente de puentes y viaductos, que se hielan antes que el resto de la vía porque el frío los ataca por arriba y por abajo.",
+  "tags": [
+   "peligro",
+   "hielo",
+   "pavimento-deslizante"
+  ],
+  "senalId": "P-34"
+ },
+ {
+  "id": "M03-023",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "¿Para qué sirve la señal triangular que muestra un semáforo?",
+  "imagen": null,
+  "opciones": [
+   "Indica que el semáforo siguiente está averiado.",
+   "Advierte de la proximidad de un semáforo, especialmente útil donde no se ve con suficiente antelación.",
+   "Obliga a detenerse antes del semáforo aunque esté en verde."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La P-3 te avisa de que viene un semáforo, muy útil tras curvas o cambios de rasante donde lo verías demasiado tarde.",
+  "truco": "Semáforo dentro de un triángulo = spoiler del semáforo real. Si te lo anuncian, es que puede pillarte a traición.",
+  "trampa": "Nada de averías ni detenciones automáticas: el triángulo solo avisa. Quien manda después es el propio semáforo con su color.",
+  "tags": [
+   "peligro",
+   "semaforos"
+  ],
+  "senalId": "P-3"
+ },
+ {
+  "id": "M03-024",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal triangular con tres flechas formando un círculo, ¿te obliga a entrar en la glorieta y rodearla?",
+  "imagen": null,
+  "opciones": [
+   "No: es la señal de peligro que advierte de la proximidad de una intersección con circulación giratoria; la que obliga es la circular azul.",
+   "Sí: toda señal con flechas circulares impone el sentido giratorio.",
+   "Solo obliga si la glorieta carece de marcas viales."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La P-4 (triángulo) avisa de que se acerca una glorieta; la obligación de rodearla la impone la señal azul de sentido giratorio obligatorio.",
+  "truco": "Mismo remolino, dos trabajos: en triángulo te lo anuncia, en círculo azul te lo ordena. Triángulo avisa, círculo manda.",
+  "trampa": "El dibujo es casi idéntico al de la señal azul de obligación y ahí está el cebo: contestar por el símbolo sin mirar la forma de la señal.",
+  "explicacion_larga": "La P-4 pertenece a la familia de advertencia de peligro: te informa con antelación de que vas a llegar a una intersección donde el tráfico gira alrededor de una isleta central, para que llegues con la velocidad adecuada. La orden de circular en sentido giratorio corresponde a la señal de obligación R-402, circular y azul, colocada en la propia glorieta. En el examen juegan con la pareja: si la pregunta habla de 'advertir' o 'proximidad', es la triangular; si habla de 'obligar', es la azul. Y recuerda que al llegar a una glorieta normalmente encontrarás además un ceda el paso para los que ya circulan por ella.",
+  "tags": [
+   "peligro",
+   "glorieta"
+  ],
+  "senalId": "P-4"
+ },
+ {
+  "id": "M03-025",
+  "mundo": 3,
+  "tema": "Señales de peligro",
+  "pregunta": "La señal de 'otros peligros' (triángulo con un signo de exclamación) tiene algo que no tiene ninguna otra señal de peligro. ¿Qué es?",
+  "imagen": null,
+  "opciones": [
+   "Que solo se emplea de noche.",
+   "Que es la única con fondo amarillo permanente.",
+   "Que no concreta el peligro: avisa de uno distinto a los demás, y suele precisar un panel que lo aclare."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La P-50 es el comodín: peligro distinto de los que tienen señal propia. Un panel complementario suele decirte cuál es.",
+  "truco": "La exclamación es la señal diciendo '¡ojo, esto no viene en el catálogo!'. Lee el cartelito de debajo, ahí está la pista.",
+  "trampa": "Como no concreta nada, hay quien la trata como decorativa. Error: peligro sin nombre sigue siendo peligro, y a veces el más serio.",
+  "tags": [
+   "peligro",
+   "otros-peligros"
+  ],
+  "senalId": "P-50"
+ },
+ {
+  "id": "M03-026",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "Llegas a un ceda el paso y no se aproxima ningún vehículo por la vía preferente. ¿Estás obligado a detenerte?",
+  "imagen": null,
+  "opciones": [
+   "Sí, siempre: el ceda exige detención completa.",
+   "Solo de noche o con mala visibilidad.",
+   "No: debes ceder el paso y detenerte solo si es necesario para no obligar a otros a modificar su trayectoria o velocidad."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "El ceda (R-1) obliga a ceder la preferencia; la detención solo es obligatoria cuando hace falta para cumplirlo.",
+  "truco": "Ceda = 'para si hace falta'; STOP = 'para siempre'. El ceda te deja pasar de largo si el camino está limpio.",
+  "trampa": "Convertir el ceda en un STOP es el fallo del alumno aplicado: parar sin necesidad también puede liarla con el que te sigue.",
+  "tags": [
+   "prioridad",
+   "ceda-el-paso"
+  ],
+  "senalId": "R-1"
+ },
+ {
+  "id": "M03-027",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "¿Por qué el ceda el paso es la única señal triangular con el vértice hacia abajo?",
+  "imagen": null,
+  "opciones": [
+   "Para que puedas reconocerla por su simple forma, incluso vista por detrás o cubierta de nieve.",
+   "Por tradición: antiguamente todas las señales de prioridad eran triangulares.",
+   "Para diferenciar las vías urbanas de las interurbanas."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Su forma exclusiva (triángulo invertido) permite identificarla en cualquier circunstancia: de espaldas, sucia o nevada, sabes que ahí alguien cede.",
+  "truco": "Triángulo cabeza abajo = señal 'humilde': agacha la cabeza y cede. Si ves su trasera en el cruce, el que cede es el otro.",
+  "trampa": "Saber leer las señales 'por detrás' cae en examen: la forma única del ceda (y el octógono del STOP) existe justo para eso.",
+  "tags": [
+   "prioridad",
+   "ceda-el-paso",
+   "formas"
+  ],
+  "senalId": "R-1"
+ },
+ {
+  "id": "M03-028",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "Ante una señal de STOP sin línea de detención pintada en la calzada, ¿dónde debes detenerte?",
+  "imagen": null,
+  "opciones": [
+   "A la altura exacta del poste de la señal.",
+   "No es necesario detenerse si la intersección se ve despejada.",
+   "Inmediatamente antes de la intersección, en un punto desde el que tengas visibilidad suficiente."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "El STOP obliga a detenerse SIEMPRE: ante la línea de detención y, si no existe, justo antes de la intersección donde puedas ver bien.",
+  "truco": "STOP sin línea: para donde VEAS, no donde esté el poste. Detenerse a ciegas es parar por parar.",
+  "trampa": "La opción de 'no parar si está despejado' es puro veneno: eso vale para el ceda, jamás para el STOP. Con STOP se detiene hasta el más listo de la clase.",
+  "explicacion_larga": "La señal R-2 impone dos obligaciones: detener el vehículo por completo (las ruedas deben dejar de girar; no vale el 'stop rodado') y ceder el paso a los vehículos de la vía preferente. El punto de detención es la línea de marca vial si existe; si no la hay, debes parar inmediatamente antes de entrar en la intersección, en el lugar desde donde tengas visibilidad para incorporarte con seguridad. Si desde ese punto sigues sin ver bien, puedes avanzar con máxima precaución hasta lograr visibilidad, pero la detención previa es innegociable, aunque no venga nadie y sean las cuatro de la madrugada.",
+  "tags": [
+   "prioridad",
+   "stop"
+  ],
+  "senalId": "R-2"
+ },
+ {
+  "id": "M03-029",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "¿Qué forma tiene la señal de detención obligatoria (STOP)?",
+  "imagen": null,
+  "opciones": [
+   "Circular con borde rojo.",
+   "Octogonal.",
+   "Triangular con el vértice hacia abajo."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "El STOP es la única señal octogonal: ocho lados que se reconocen a la primera desde cualquier ángulo.",
+  "truco": "Ocho lados, cero excusas. Si en el cruce ves un octógono aunque sea por detrás, el otro conductor tiene un STOP.",
+  "trampa": "El triángulo invertido es el ceda, su hermano 'blando'. Comparten cruce muchas veces, no las confundas.",
+  "tags": [
+   "prioridad",
+   "stop",
+   "formas"
+  ],
+  "senalId": "R-2"
+ },
+ {
+  "id": "M03-030",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "La señal cuadrada con forma de rombo, fondo blanco y centro amarillo indica…",
+  "imagen": null,
+  "opciones": [
+   "que circulas por una calzada con prioridad frente a las vías que la cruzan.",
+   "la proximidad de una zona de obras.",
+   "que debes ceder el paso en la próxima intersección."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "El rombo (R-3) te corona: tu calzada tiene prioridad en las intersecciones mientras otra señal no diga lo contrario.",
+  "truco": "El rombo amarillo es tu 'carné VIP' de la carretera: en los cruces, los demás te esperan a ti.",
+  "trampa": "Tener prioridad no te libra de mirar: el rombo no frena al despistado que se salta su ceda.",
+  "tags": [
+   "prioridad",
+   "calzada-con-prioridad"
+  ],
+  "senalId": "R-3"
+ },
+ {
+  "id": "M03-031",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "Pasas junto a la señal de fin de prioridad (el rombo tachado con una franja negra). A partir de ahí, ¿quién tiene preferencia en los cruces sin señalizar?",
+  "imagen": null,
+  "opciones": [
+   "Sigues teniéndola tú hasta la próxima población.",
+   "La tienen siempre los vehículos más pesados.",
+   "Rige la norma general: preferencia para el que se aproxima por la derecha."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La R-4 te quita la corona: se acabó la prioridad de tu calzada y vuelve la norma general de la derecha.",
+  "truco": "Rombo tachado = fin del pase VIP. Sin señales, la derecha manda.",
+  "trampa": "Muchos siguen conduciendo 'como reyes' tras la R-4. La señal existe justo para avisarte de que has vuelto a ser uno más.",
+  "tags": [
+   "prioridad",
+   "fin-de-prioridad"
+  ],
+  "senalId": "R-4"
+ },
+ {
+  "id": "M03-032",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "Llegas a un puente estrecho con la señal circular de borde rojo con dos flechas: la roja apunta hacia arriba en tu sentido. Un vehículo se acerca de frente. ¿Qué haces?",
+  "imagen": null,
+  "opciones": [
+   "Pasas primero: la flecha de tu sentido siempre da preferencia.",
+   "Esperas: esa señal da la prioridad al sentido contrario y no puedes entrar si obligas al otro a detenerse.",
+   "Pasáis a la vez, cada uno pegado a su derecha."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La R-5 (círculo rojo) da prioridad al sentido contrario: no entres en el estrechamiento si el que viene de frente tendría que parar por tu culpa.",
+  "truco": "En estas señales el rojo pierde: si la flecha roja es la tuya, tú esperas. Rojo cede, blanco pasa.",
+  "trampa": "Su gemela azul y cuadrada (R-6) dice justo lo contrario. Mismo dibujo de flechas, resultado opuesto: mira el marco antes que las flechas.",
+  "explicacion_larga": "En los estrechamientos donde no caben dos vehículos a la vez, la pareja R-5/R-6 reparte los turnos. La R-5 es circular con borde rojo (familia de prohibición): te prohíbe entrar en el paso estrecho mientras no puedas atravesarlo sin obligar a detenerse a los que vienen en sentido contrario; la flecha roja representa tu sentido, el que cede. En el otro extremo del estrechamiento estará la R-6, cuadrada y azul (familia de indicación), diciéndole al de enfrente que él tiene prioridad. Truco de examen: la forma y el color mandan más que las flechas — círculo rojo, cedes; cuadrado azul, pasas.",
+  "tags": [
+   "prioridad",
+   "estrechamiento",
+   "sentido-contrario"
+  ],
+  "senalId": "R-5"
+ },
+ {
+  "id": "M03-033",
+  "mundo": 3,
+  "tema": "Señales de prioridad",
+  "pregunta": "En un estrechamiento ves la señal cuadrada azul con una flecha blanca hacia arriba (tu sentido) y una roja hacia abajo. ¿Qué te indica?",
+  "imagen": null,
+  "opciones": [
+   "Que tienes prioridad de paso respecto a los vehículos que vienen en sentido contrario.",
+   "Que tienes prohibido entrar hasta que el tramo quede libre.",
+   "Que el tramo es de sentido único en tu dirección."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La R-6 te da la preferencia en el paso estrecho: los del sentido contrario tienen la R-5 y deben esperarte.",
+  "truco": "Cuadrado azul con tu flecha en blanco: alfombra azul para ti. El rojo (el de enfrente) espera.",
+  "trampa": "Prioridad no es inmunidad: si el de enfrente ya está dentro del estrechamiento, déjale salir. La señal reparte turnos, no repara chapas.",
+  "tags": [
+   "prioridad",
+   "estrechamiento",
+   "sentido-contrario"
+  ],
+  "senalId": "R-6"
+ },
+ {
+  "id": "M03-034",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "La señal circular de borde rojo y fondo blanco, sin ningún símbolo en su interior, prohíbe…",
+  "imagen": null,
+  "opciones": [
+   "la entrada únicamente a los vehículos de motor.",
+   "la circulación de toda clase de vehículos en ambos sentidos.",
+   "el paso de peatones y animales."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La R-100 (círculo 'vacío') cierra la vía del todo: ningún vehículo puede circular por ella, en ningún sentido.",
+  "truco": "Círculo rojo sin dibujo = prohibido TODO lo que ruede, vengas por donde vengas. El círculo en blanco no perdona a nadie.",
+  "trampa": "Que no haya símbolo despista: parece que no prohíbe nada y en realidad lo prohíbe todo. Es la más severa de la familia.",
+  "tags": [
+   "prohibicion",
+   "circulacion-prohibida"
+  ],
+  "senalId": "R-100"
+ },
+ {
+  "id": "M03-035",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "¿Qué prohíbe la señal circular roja con una franja horizontal blanca (el 'disco de dirección prohibida')?",
+  "imagen": null,
+  "opciones": [
+   "La circulación en ambos sentidos de la vía.",
+   "La entrada solo a los vehículos de cuatro o más ruedas.",
+   "La entrada a toda clase de vehículos por ese sentido."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La R-101 prohíbe entrar por ahí a cualquier vehículo: la calle sigue funcionando, pero en el otro sentido.",
+  "truco": "El 'ladrillo' rojo: por aquí no entra ni uno. Si la ves de frente, esa boca de calle no es la tuya.",
+  "trampa": "Se confunde con la R-100: la de la franja prohíbe ENTRAR por ese sentido; la vacía prohíbe CIRCULAR en ambos. Franja = dirección; vacía = clausura total.",
+  "tags": [
+   "prohibicion",
+   "entrada-prohibida"
+  ],
+  "senalId": "R-101"
+ },
+ {
+  "id": "M03-036",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "Circulas en bicicleta y en la boca de una calle encuentras la señal de entrada prohibida (círculo rojo con franja blanca). ¿Puedes entrar pedaleando?",
+  "imagen": null,
+  "opciones": [
+   "Sí: solo afecta a los vehículos de motor.",
+   "No: prohíbe la entrada a toda clase de vehículos, y la bicicleta lo es.",
+   "Sí, siempre que circules pegado a la derecha."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La R-101 no distingue motores: prohíbe la entrada a todos los vehículos, bicicletas incluidas.",
+  "truco": "La bici es vehículo con todas las letras: donde no entra 'toda clase de vehículos', tampoco entran tus pedales.",
+  "trampa": "El ciclista se cree peatón rápido y ahí pica: solo bajándote y empujando la bici pasas a ser peatón de verdad.",
+  "explicacion_larga": "La señal R-101 prohíbe la entrada a toda clase de vehículos, sin excepciones por tipo de propulsión: coches, motos, ciclomotores y también ciclos, porque la bicicleta es legalmente un vehículo. La única forma de que un ciclista 'entre' por esa calle es desmontar y caminar empujando la bicicleta: en ese momento la normativa lo considera peatón y las prohibiciones de entrada a vehículos dejan de afectarle (le regirán entonces las normas de los peatones, como usar la acera si existe). Ojo, este truco no convierte la calle en un carril bici: es circular a pie, no pedaleando despacito.",
+  "tags": [
+   "prohibicion",
+   "entrada-prohibida",
+   "ciclistas"
+  ],
+  "senalId": "R-101"
+ },
+ {
+  "id": "M03-037",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "La señal de 'entrada prohibida a vehículos de motor' (círculo rojo con un coche y una moto), ¿prohíbe también la entrada a los ciclomotores?",
+  "imagen": null,
+  "opciones": [
+   "Sí: cualquier vehículo con motor tiene prohibida la entrada.",
+   "No: a efectos legales el ciclomotor no es un vehículo de motor, así que puede entrar.",
+   "Solo prohíbe los ciclomotores de tres ruedas."
+  ],
+  "correcta": 1,
+  "dificultad": 5,
+  "explicacion_corta": "Sorpresa legal: el ciclomotor lleva motor pero NO es 'vehículo de motor' según la norma, así que la R-102 no le afecta.",
+  "truco": "El ciclomotor es el eterno alumno de la ESO: tiene motor, pero la ley no lo deja entrar en el club de los 'de motor'. Donde prohíben 'vehículos de motor', el ciclo y el ciclomotor se cuelan.",
+  "trampa": "El sentido común grita 'tiene motor, está prohibido' y por eso cae media clase. La definición legal excluye expresamente a los ciclomotores (y tranvías) de los vehículos de motor.",
+  "explicacion_larga": "La Ley de Tráfico define 'vehículo de motor' como el provisto de motor para su propulsión, pero excluye expresamente de esa definición a los ciclomotores, a los tranvías y a los vehículos para personas de movilidad reducida. Por eso la señal R-102 (entrada prohibida a vehículos de motor) no cierra el paso a un ciclomotor: si se quiere vetar también a los ciclomotores, se coloca además la señal específica R-105. Esta pregunta es un clásico del examen precisamente porque la lógica cotidiana ('si lleva motor, es de motor') choca con la definición legal. Quédate con la excepción y tendrás un punto casi regalado.",
+  "tags": [
+   "prohibicion",
+   "entrada-prohibida",
+   "ciclomotor",
+   "definiciones"
+  ],
+  "senalId": "R-102"
+ },
+ {
+  "id": "M03-038",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "La señal circular de borde rojo con una motocicleta en su interior prohíbe la entrada a…",
+  "imagen": null,
+  "opciones": [
+   "todos los vehículos de dos ruedas, incluidas las bicicletas.",
+   "los ciclomotores de dos ruedas.",
+   "las motocicletas."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "La R-104 veta la entrada a las motocicletas. Cada vehículo de dos ruedas tiene su propia señal.",
+  "truco": "En Señalópolis cada uno tiene su cara en el cartel: moto es moto, ciclomotor es ciclomotor y bici es bici. Prohíben solo al retratado.",
+  "trampa": "Generalizar a 'todo lo de dos ruedas' es el anzuelo: las prohibiciones de entrada afectan solo al vehículo dibujado.",
+  "tags": [
+   "prohibicion",
+   "entrada-prohibida",
+   "motocicletas"
+  ],
+  "senalId": "R-104"
+ },
+ {
+  "id": "M03-039",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "¿A quién prohíbe la entrada la señal circular roja con un ciclomotor en su interior?",
+  "imagen": null,
+  "opciones": [
+   "A los ciclomotores.",
+   "A las motocicletas de menos de 125 cc.",
+   "A cualquier vehículo que no alcance los 45 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La R-105 es la señal específica contra ciclomotores: como no son 'vehículos de motor', necesitan su propio cartel para quedarse fuera.",
+  "truco": "Para echar al ciclomotor hay que ponerle su foto: sin R-105, el ciclomotor se cuela donde prohíben 'vehículos de motor'.",
+  "trampa": "La moto de 125 es motocicleta con todas las de la ley: su señal es otra. Cilindrada pequeña no convierte una moto en ciclomotor.",
+  "tags": [
+   "prohibicion",
+   "entrada-prohibida",
+   "ciclomotor"
+  ],
+  "senalId": "R-105"
+ },
+ {
+  "id": "M03-040",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "La señal de entrada prohibida a vehículos de transporte de mercancías muestra la cifra '5,5 t'. ¿A quién afecta?",
+  "imagen": null,
+  "opciones": [
+   "A todos los vehículos de mercancías, pesen lo que pesen.",
+   "A los vehículos de transporte de mercancías cuya masa máxima autorizada supere las 5,5 toneladas.",
+   "A cualquier vehículo cuya masa real en ese momento supere las 5,5 toneladas."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Con cifra es la R-107: solo afecta a los camiones de mercancías cuya MMA supere ese valor. Sin cifra (R-106), a todos ellos pesen lo que pesen.",
+  "truco": "En la R-107 manda el papel (la MMA de la ficha técnica), no la báscula. Aunque el camión vaya vacío, si su MMA pasa de la cifra, fuera.",
+  "trampa": "Aquí cuenta la MMA, y en la señal de limitación de masa (la del número solo, sin camión) cuenta la masa real. Te cruzan los criterios para que confundas las dos señales.",
+  "explicacion_larga": "La señal R-106 prohíbe la entrada a todos los vehículos destinados al transporte de mercancías. Cuando lleva una cifra de tonelaje pasa a ser la R-107: la prohibición se limita entonces a aquellos cuya masa máxima autorizada (MMA) supere esa cifra, un criterio 'de ficha técnica' independiente de lo cargado que vaya el vehículo ese día. No la confundas con la R-201 de limitación de masa, donde lo que cuenta es la masa en carga real en ese momento. Regla para el examen: camión dibujado con cifra, piensa en MMA; solo el número de toneladas, piensa en lo que marca la báscula.",
+  "tags": [
+   "prohibicion",
+   "entrada-prohibida",
+   "mercancias",
+   "mma"
+  ],
+  "senalId": "R-107"
+ },
+ {
+  "id": "M03-041",
+  "mundo": 3,
+  "tema": "Prohibición de entrada",
+  "pregunta": "Un ciclista llega a la señal de entrada prohibida a ciclos. ¿Puede continuar por esa vía bajándose de la bicicleta y empujándola a pie?",
+  "imagen": null,
+  "opciones": [
+   "Sí: al ir andando se le considera peatón y la prohibición de entrada a ciclos ya no le afecta.",
+   "No: la bicicleta no puede pasar de ninguna manera, ni siquiera empujada.",
+   "Solo si la vía carece de acera."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La R-114 prohíbe entrar circulando en bici; quien empuja la bicicleta a pie es legalmente un peatón y puede pasar.",
+  "truco": "Bajarte de la bici es como quitarte el disfraz: de vehículo pasas a peatón en un segundo.",
+  "trampa": "La prohibición afecta al ciclo CIRCULANDO. Te pintan la bici como apestada total para ver si olvidas la figura del peatón que empuja su vehículo.",
+  "tags": [
+   "prohibicion",
+   "entrada-prohibida",
+   "ciclistas",
+   "peatones"
+  ],
+  "senalId": "R-114"
+ },
+ {
+  "id": "M03-042",
+  "mundo": 3,
+  "tema": "Restricción de paso",
+  "pregunta": "La señal circular con la inscripción 'ADUANA' te obliga a…",
+  "imagen": null,
+  "opciones": [
+   "reducir la velocidad a 30 km/h y continuar.",
+   "detenerte solo si el agente te lo indica.",
+   "detenerte siempre, y no reanudar la marcha hasta que te autoricen."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La R-200 prohíbe pasar sin detenerse: parada obligatoria en la aduana (o control policial o peaje, según su inscripción) hasta recibir autorización.",
+  "truco": "ADUANA en señal = STOP con ventanilla: paras sí o sí, y arrancas cuando te den luz verde.",
+  "trampa": "El 'me detengo si me lo mandan' vale para un control aleatorio, no aquí: esta señal ES la orden de detenerse, sin esperar gestos de nadie.",
+  "tags": [
+   "restriccion-paso",
+   "aduana"
+  ],
+  "senalId": "R-200"
+ },
+ {
+  "id": "M03-043",
+  "mundo": 3,
+  "tema": "Restricción de paso",
+  "pregunta": "Conduces un camión de MMA 6.000 kg que circula casi vacío, con una masa real de 4.500 kg. Llegas a la señal de limitación de masa '5 t'. ¿Puedes pasar?",
+  "imagen": null,
+  "opciones": [
+   "Sí: la señal se refiere a la masa en carga real del vehículo, y ahora mismo no superas las 5 toneladas.",
+   "No: tu MMA supera las 5 toneladas y eso te excluye.",
+   "Solo si obtienes una autorización especial de la DGT."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La R-201 prohíbe el paso a los vehículos cuya masa EN CARGA (la real de ese momento) supere la cifra: con 4.500 kg reales, pasas.",
+  "truco": "Limitación de masa = báscula, no ficha técnica. Lo que pesas hoy es lo que cuenta; lo que 'podrías pesar' da igual.",
+  "trampa": "El examen te tienta con la MMA porque es el criterio de OTRA señal (la de mercancías con cifra). Aquí, número solo = peso real.",
+  "explicacion_larga": "La señal R-201 protege infraestructuras que no aguantan más peso del indicado: puentes, pontones, firmes débiles. Por eso su criterio es físico, no administrativo: prohíbe el paso a los vehículos cuya masa en carga —lo que realmente pesan en ese instante, vehículo más carga más ocupantes— supere la cifra de la señal. Un camión de MMA 6 t circulando con 4,5 t reales puede cruzar; el mismo camión cargado a 5,8 t, no. Contrasta esto con la R-107 (entrada prohibida a mercancías con cifra), que sí se basa en la MMA de la ficha técnica. Báscula contra papeles: cada señal usa su criterio y el examen vive de mezclártelos.",
+  "tags": [
+   "restriccion-paso",
+   "masa",
+   "mma"
+  ],
+  "senalId": "R-201"
+ },
+ {
+  "id": "M03-044",
+  "mundo": 3,
+  "tema": "Restricción de paso",
+  "pregunta": "La señal de limitación de anchura indica '2 m'. Tu vehículo mide 1,90 m, pero la carga sobresale hasta los 2,10 m. ¿Puedes pasar?",
+  "imagen": null,
+  "opciones": [
+   "Sí, porque lo que cuenta es la anchura del vehículo sin carga.",
+   "No: la limitación se refiere a la anchura total, carga incluida, y superas los 2 metros.",
+   "Sí, si pasas despacio y con las luces de emergencia."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La R-204 prohíbe el paso cuando la anchura total —con la carga— supera la cifra. 2,10 m no caben en un hueco de 2.",
+  "truco": "Las señales de limitación miden el 'paquete completo': tú, tu coche y todo lo que le cuelgue.",
+  "trampa": "El 'mi coche mide menos' es el espejismo: los bolardos y los muros no distinguen entre chapa y carga.",
+  "tags": [
+   "restriccion-paso",
+   "anchura",
+   "carga"
+  ],
+  "senalId": "R-204"
+ },
+ {
+  "id": "M03-045",
+  "mundo": 3,
+  "tema": "Restricción de paso",
+  "pregunta": "¿Qué prohíbe la señal circular de borde rojo con dos flechas verticales enfrentadas y la cifra '3,5 m'?",
+  "imagen": null,
+  "opciones": [
+   "Circular a más de 3,5 metros del vehículo que te precede.",
+   "El paso a vehículos que midan más de 3,5 metros de longitud.",
+   "El paso a los vehículos cuya altura, incluida la carga, supere los 3,5 metros."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Es la R-205, limitación de altura: si con carga superas la cifra, ese paso (túnel, puente…) no es para ti.",
+  "truco": "Flechas apuntándose en vertical = techo bajo. Piensa en un párking: '¿quepo por altura?'",
+  "trampa": "Las flechas verticales despistan hacia la 'longitud' o la 'distancia'. Verticales = de suelo a techo: pura altura.",
+  "tags": [
+   "restriccion-paso",
+   "altura"
+  ],
+  "senalId": "R-205"
+ },
+ {
+  "id": "M03-046",
+  "mundo": 3,
+  "tema": "Restricción de paso",
+  "pregunta": "Tu furgoneta mide 3,40 m de altura, pero llevas en la baca un bulto que llega a los 3,60 m. Ante la señal de limitación de altura '3,5 m', ¿qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "No pasar: la altura que cuenta es la total con la carga, y con 3,60 m superas el límite.",
+   "Pasar, porque el vehículo en sí no llega a 3,5 m.",
+   "Pasar por el centro de la vía, donde el gálibo siempre es mayor."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La R-205 mide el conjunto vehículo + carga: 3,60 m no pasan bajo un gálibo de 3,5, lleve lo que lleve la ficha técnica.",
+  "truco": "Tu altura legal es la de tu punto más alto, aunque sea una caja de cartón mal atada. La baca también cuenta.",
+  "trampa": "El dato del vehículo 'pelado' es el cebo perfecto: la señal no examina tu furgoneta, examina todo lo que se acerca al techo del túnel.",
+  "explicacion_larga": "Las señales de restricción de paso por dimensiones (R-204 anchura, R-205 altura) siempre se refieren a la medida total del conjunto, incluida la carga y cualquier accesorio que sobresalga. Da igual que tu vehículo de fábrica pase de sobra: si el bulto de la baca eleva el conjunto a 3,60 m, un gálibo señalizado a 3,5 m te está vetado. Estas señales protegen estructuras reales (túneles, puentes, marquesinas) y los golpes por exceso de altura son de los accidentes más tontos y más caros que existen. Antes de un viaje con carga en la baca, mide y apunta tu altura total: te ahorrarás sustos y desvíos.",
+  "tags": [
+   "restriccion-paso",
+   "altura",
+   "carga"
+  ],
+  "senalId": "R-205"
+ },
+ {
+  "id": "M03-047",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "La señal circular de borde rojo con el número 50 en negro prohíbe…",
+  "imagen": null,
+  "opciones": [
+   "circular a menos de 50 km/h.",
+   "circular a una velocidad superior a 50 km/h.",
+   "circular a exactamente 50 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Es la R-301, velocidad máxima: de esa cifra no se pasa. Ir más despacio, dentro de lo razonable, sí puedes.",
+  "truco": "Borde rojo = techo; azul = suelo. El 50 en rojo te pone techo: como máximo, 50.",
+  "trampa": "Su gemela azul (velocidad mínima) invierte el mensaje. Mismo número, marco distinto, sentido opuesto.",
+  "tags": [
+   "prohibicion",
+   "velocidad"
+  ],
+  "senalId": "R-301"
+ },
+ {
+  "id": "M03-048",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "Como norma general, ¿hasta dónde mantiene su efecto una señal de velocidad máxima colocada en la vía?",
+  "imagen": null,
+  "opciones": [
+   "Exactamente hasta 250 metros después de la señal.",
+   "Hasta el final de la vía, aunque atravieses varias intersecciones.",
+   "Hasta la próxima intersección o hasta otra señal que la modifique o anule (otra velocidad máxima o un fin de limitación)."
+  ],
+  "correcta": 2,
+  "dificultad": 5,
+  "explicacion_corta": "La R-301 rige hasta que otra señal la cambie o la anule y, como norma general, hasta la próxima intersección si antes no se repite.",
+  "truco": "Las prohibiciones caducan en el cruce: si tras la intersección no repiten la señal, vuelve el límite genérico de la vía.",
+  "trampa": "Ni las señales miden 250 metros ni duran para siempre: te ofrecen los dos extremos para que descartes la respuesta 'de libro', que es la buena.",
+  "explicacion_larga": "Una limitación de velocidad señalizada no es eterna: deja de aplicarse cuando aparece una señal que la anula (fin de limitación de velocidad, fin de prohibiciones) o la sustituye (otra velocidad máxima distinta) y, como norma general, al llegar a la próxima intersección, salvo que tras ella se repita la señal. Si el tramo limitado es largo, lo normal es encontrar recordatorios periódicos. Terminada la limitación específica, no conduces 'a tu aire': recuperas el límite genérico que corresponda a esa vía y a tu vehículo. En el examen, desconfía de los 'para siempre' y de las distancias exactas inventadas.",
+  "tags": [
+   "prohibicion",
+   "velocidad",
+   "ambito-senales"
+  ],
+  "senalId": "R-301"
+ },
+ {
+  "id": "M03-049",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "La señal circular con una flecha que gira a la derecha tachada en rojo te prohíbe…",
+  "imagen": null,
+  "opciones": [
+   "girar a la derecha en la próxima intersección.",
+   "circular por el carril derecho.",
+   "estacionar a la derecha de la calzada."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Es la R-302: nada de girar a la derecha donde está colocada. Sigue de frente o busca otra opción permitida.",
+  "truco": "Flecha tachada = maniobra tachada. Lo que el rojo cruza, tú no lo haces.",
+  "trampa": "Prohibir el giro no toca carriles ni estacionamientos: cíñete a la maniobra dibujada y no le añadas extras a la señal.",
+  "tags": [
+   "prohibicion",
+   "giros"
+  ],
+  "senalId": "R-302"
+ },
+ {
+  "id": "M03-050",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "Encuentras la señal de giro a la izquierda prohibido. Además del giro, ¿qué otra maniobra te está prohibiendo?",
+  "imagen": null,
+  "opciones": [
+   "Adelantar por la izquierda.",
+   "El cambio de sentido (media vuelta).",
+   "Detenerte en el lado izquierdo."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La R-303 prohíbe girar a la izquierda Y dar media vuelta: si no puedes empezar el giro, menos aún completarlo hasta el sentido contrario.",
+  "truco": "Media vuelta = giro a la izquierda con propina. Si te prohíben el giro, la propina cae con él.",
+  "trampa": "Es de las preguntas más repetidas del examen: todos recuerdan el giro y casi nadie el cambio de sentido que va de regalo en la prohibición.",
+  "explicacion_larga": "La señal R-303 prohíbe el giro a la izquierda en el lugar donde está situada, y con él también el cambio de sentido de la marcha: la media vuelta arranca exactamente igual que un giro a la izquierda, así que sería absurdo prohibir lo uno y permitir lo otro. Cuidado con la lógica inversa, porque NO funciona: la señal de media vuelta prohibida (R-304) prohíbe únicamente el cambio de sentido y sí te deja girar a la izquierda para tomar otra vía. Resumen para el examen: prohibido girar a la izquierda arrastra la media vuelta; prohibida la media vuelta no arrastra el giro.",
+  "tags": [
+   "prohibicion",
+   "giros",
+   "cambio-de-sentido"
+  ],
+  "senalId": "R-303"
+ },
+ {
+  "id": "M03-051",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "La señal de media vuelta prohibida (la flecha en 'U' tachada), ¿te impide también girar a la izquierda para entrar en otra calle?",
+  "imagen": null,
+  "opciones": [
+   "Sí: media vuelta y giro a la izquierda van siempre unidos.",
+   "Sí, salvo que la calle sea de sentido único.",
+   "No: solo prohíbe el cambio de sentido; el giro a la izquierda sigue permitido."
+  ],
+  "correcta": 2,
+  "dificultad": 5,
+  "explicacion_corta": "La R-304 prohíbe únicamente la media vuelta (cambiar de sentido): girar a la izquierda hacia otra vía sigue estando permitido.",
+  "truco": "La 'U' tachada solo mata a la 'U': girar a la izquierda es una 'L', y a la 'L' nadie la ha tachado.",
+  "trampa": "Aquí caen los que se aprendieron la R-303 ('giro prohibido incluye media vuelta') y aplican la lógica al revés. La implicación solo funciona en un sentido, y el examen lo sabe.",
+  "explicacion_larga": "La R-304 prohíbe efectuar el cambio de sentido de la marcha en el lugar donde está colocada y hasta la próxima intersección. Pero no dice nada del giro a la izquierda: entrar en una calle perpendicular sigue permitido, porque son maniobras distintas con riesgos distintos. La confusión viene de su señal hermana: la R-303 (giro a la izquierda prohibido) sí arrastra consigo la prohibición de la media vuelta, porque toda media vuelta comienza girando a la izquierda. La relación es de ida, no de vuelta: prohibir lo pequeño (el inicio del giro) prohíbe lo grande; prohibir lo grande (la vuelta completa) deja vivo lo pequeño.",
+  "tags": [
+   "prohibicion",
+   "cambio-de-sentido",
+   "giros"
+  ],
+  "senalId": "R-304"
+ },
+ {
+  "id": "M03-052",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "En un tramo con la señal de adelantamiento prohibido, ¿puedes adelantar a un ciclista que circula muy despacio?",
+  "imagen": null,
+  "opciones": [
+   "Sí: la señal prohíbe adelantar a los vehículos de motor, y la bicicleta no lo es, siempre que la maniobra sea segura y permitida.",
+   "No: la señal prohíbe adelantar a cualquier vehículo sin excepción.",
+   "Solo si el ciclista te hace una señal con el brazo."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La R-305 prohíbe adelantar a los VEHÍCULOS DE MOTOR: a bicicletas (y otros vehículos sin motor) puedes adelantar si lo haces con seguridad y respetando las normas de la maniobra.",
+  "truco": "La R-305 caza motores: lo que no lleva motor (o no cuenta como 'de motor') se queda fuera de la prohibición.",
+  "trampa": "El 'prohibido es prohibido para todos' suena rotundo y por eso pica. Lee la letra pequeña de la señal: su objetivo son los vehículos de motor.",
+  "explicacion_larga": "La señal R-305 prohíbe a todos los vehículos adelantar a los vehículos de motor que circulen por la calzada; el catálogo oficial exceptúa además el adelantamiento a motocicletas de dos ruedas siempre que no se invada la parte de la calzada reservada al sentido contrario. Como la bicicleta no es un vehículo de motor, adelantarla bajo esta señal es posible, pero solo si cumples todas las condiciones generales del adelantamiento (visibilidad, separación lateral suficiente y las reglas específicas para adelantar a ciclistas). La señal te quita una prohibición concreta, no te regala la maniobra: la seguridad sigue mandando.",
+  "tags": [
+   "prohibicion",
+   "adelantamiento",
+   "ciclistas"
+  ],
+  "senalId": "R-305"
+ },
+ {
+  "id": "M03-053",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "¿Qué prohíbe la señal circular de borde rojo con la cifra '70 m' entre dos vehículos dibujados?",
+  "imagen": null,
+  "opciones": [
+   "Circular a más de 70 km/h en ese tramo.",
+   "Circular sin mantener con el vehículo precedente una separación de al menos la indicada.",
+   "Adelantar en los próximos 70 metros."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Es la R-300, separación mínima: prohibido pegarse al de delante a menos de la distancia indicada en la señal.",
+  "truco": "Dos coches y una cifra en metros = 'no te arrimes tanto'. Es la señal anti-lapa.",
+  "trampa": "El número con 'm' de metros se disfraza de velocidad o de distancia de adelantamiento. Fíjate en los dos coches en fila: la clave es la separación entre ellos.",
+  "tags": [
+   "prohibicion",
+   "separacion-minima",
+   "distancia-seguridad"
+  ],
+  "senalId": "R-300"
+ },
+ {
+  "id": "M03-054",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "La señal circular azul con borde rojo y un aspa roja completa, ¿qué prohíbe exactamente?",
+  "imagen": null,
+  "opciones": [
+   "Solo el estacionamiento.",
+   "El paso a vehículos con remolque.",
+   "Tanto la parada como el estacionamiento en ese lado de la vía."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "El aspa completa (R-307) lo prohíbe todo: ahí no puedes ni parar ni estacionar.",
+  "truco": "Aspa entera = dos rayas = dos prohibiciones (parada Y estacionamiento). Una sola raya = una prohibición (solo estacionar).",
+  "trampa": "El fondo azul de estas señales despista, pero el borde rojo y el aspa mandan: es familia de prohibición, no de indicación.",
+  "tags": [
+   "prohibicion",
+   "parada",
+   "estacionamiento"
+  ],
+  "senalId": "R-307"
+ },
+ {
+  "id": "M03-055",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "Bajo la señal de estacionamiento prohibido (una sola franja roja sobre fondo azul), ¿puedes detenerte menos de dos minutos a recoger a un pasajero, sin abandonar el vehículo?",
+  "imagen": null,
+  "opciones": [
+   "Sí: eso es una parada, y esta señal prohíbe solo el estacionamiento.",
+   "No: cualquier inmovilización está prohibida.",
+   "Solo si dejas el motor apagado."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La R-308 prohíbe estacionar, pero permite la parada: inmovilización de menos de 2 minutos sin que el conductor abandone el vehículo.",
+  "truco": "Una raya te deja respirar: puedes parar un momentito. Dos rayas (el aspa), ni eso.",
+  "trampa": "Confundir parada con estacionamiento es EL clásico: si dura menos de 2 minutos y no te bajas dejando el coche solo, sigue siendo parada.",
+  "tags": [
+   "prohibicion",
+   "estacionamiento",
+   "parada"
+  ],
+  "senalId": "R-308"
+ },
+ {
+  "id": "M03-056",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "En poblado, una señal de estacionamiento prohibido colocada en el lado derecho de una calle, ¿en qué zona prohíbe estacionar, como norma general?",
+  "imagen": null,
+  "opciones": [
+   "En ambos lados de la calle hasta el final de la población.",
+   "En el lado donde está colocada, desde la señal hasta la próxima intersección.",
+   "Solo en los 25 metros siguientes a la señal."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Las prohibiciones de parada y estacionamiento rigen en el lado de la calzada donde está la señal y, como norma general, hasta la próxima intersección.",
+  "truco": "Estas señales son de barrio: mandan en SU acera y solo hasta la esquina. Cruzas el cruce y se les acaba el mandato (salvo que se repitan).",
+  "trampa": "Los paneles complementarios pueden cambiar el alcance (flechas de inicio, fin…), y de ahí las respuestas con metros inventados. Sin panel, la regla es lado + hasta la intersección.",
+  "explicacion_larga": "Las señales de prohibición de parada y estacionamiento tienen un ámbito muy concreto: afectan al lado de la calzada en el que están colocadas (la acera de enfrente queda fuera) y su efecto se extiende desde la sección donde está la señal hasta la próxima intersección, salvo que un panel complementario indique otra cosa (por ejemplo, flechas que marquen el inicio, la continuación o el fin de la prohibición, o una distancia concreta). Por eso en las calles largas verás la señal repetida tras cada cruce. En el examen, cualquier respuesta que hable de 'ambos lados' o de distancias fijas sin panel debe hacerte sospechar.",
+  "tags": [
+   "prohibicion",
+   "estacionamiento",
+   "ambito-senales"
+  ],
+  "senalId": "R-308"
+ },
+ {
+  "id": "M03-057",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "Entras en una 'zona de estacionamiento limitado' señalizada con la señal cuadrada azul. ¿Qué implica estacionar ahí?",
+  "imagen": null,
+  "opciones": [
+   "Que solo puedes estacionar durante un tiempo limitado y acreditando el inicio, con ticket o el sistema que indique la señal.",
+   "Que el estacionamiento es gratuito e ilimitado para residentes y visitantes.",
+   "Que está prohibido estacionar salvo vehículos oficiales."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La R-309 marca la típica zona azul: estacionamiento permitido, pero con tiempo limitado y obligación de acreditarlo (ticket, disco o distintivo).",
+  "truco": "Zona azul = párking con cuenta atrás: puedes quedarte, pero el reloj corre y hay que enseñar el comprobante.",
+  "trampa": "No es una prohibición total ni barra libre: es el término medio regulado. Las condiciones exactas (horario, tarifa) las ponen los paneles y la ordenanza del municipio.",
+  "tags": [
+   "prohibicion",
+   "estacionamiento",
+   "zona-azul"
+  ],
+  "senalId": "R-309"
+ },
+ {
+  "id": "M03-058",
+  "mundo": 3,
+  "tema": "Otras prohibiciones",
+  "pregunta": "En un tramo con la señal de advertencias acústicas prohibidas, ¿puedes tocar el claxon en algún caso?",
+  "imagen": null,
+  "opciones": [
+   "No, en ningún caso: la prohibición es absoluta.",
+   "Sí, para saludar o avisar de tu presencia a conocidos.",
+   "Sí, para evitar un accidente: esa excepción siempre está permitida."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La R-310 prohíbe el uso del claxon salvo para evitar un accidente: la seguridad está por encima de la prohibición.",
+  "truco": "El claxon en modo silencio… con botón del pánico: solo suena si es para salvar el pellejo (el tuyo o el de otro).",
+  "trampa": "El 'en ningún caso' suena serio y por eso engancha: casi ninguna prohibición de tráfico es absoluta cuando se trata de evitar un accidente inminente.",
+  "tags": [
+   "prohibicion",
+   "claxon",
+   "advertencias-acusticas"
+  ],
+  "senalId": "R-310"
+ }
+]

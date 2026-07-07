@@ -1,0 +1,8 @@
+# Nunca subir códigos del Pase generados (cualquiera con acceso los podría canjear)
+codigos*.txt
+codigos*.csv
+*.codes
+
+# temporales
+.DS_Store
+node_modules/

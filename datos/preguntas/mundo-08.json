@@ -1,0 +1,1296 @@
+[
+  {
+    "id": "M08-001",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Antes de iniciar un cambio de dirección, ¿qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Tocar el claxon para que los demás sepan que vas a girar.",
+      "Advertirlo con suficiente antelación y comprobar que no creas peligro para otros usuarios.",
+      "Reducir la velocidad al mínimo y girar sin más, porque el que gira tiene preferencia."
+    ],
+    "correcta": 1,
+    "dificultad": 1,
+    "explicacion_corta": "Todo cambio de dirección se avisa con antelación suficiente y solo se hace si no pone en peligro ni entorpece a nadie.",
+    "truco": "Regla de toda maniobra: primero MIRO, luego AVISO, luego ACTÚO. En ese orden, siempre.",
+    "trampa": "El claxon no señaliza maniobras: para eso están los intermitentes. Y girar NO te da preferencia sobre nadie.",
+    "tags": [
+      "cambio-direccion",
+      "senalizacion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-002",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Vas a girar a la derecha en una intersección. ¿Dónde debes colocar tu vehículo antes del giro?",
+    "imagen": null,
+    "opciones": [
+      "Lo más cerca posible del borde derecho de la calzada.",
+      "En el centro de la calzada, para trazar el giro más abierto.",
+      "En cualquier carril, siempre que lleves el intermitente puesto."
+    ],
+    "correcta": 0,
+    "dificultad": 2,
+    "explicacion_corta": "Para girar a la derecha te ciñes al borde derecho de la calzada con la antelación necesaria.",
+    "truco": "Giras hacia donde te arrimas: a la derecha, pegado a la derecha. Sin inventos.",
+    "trampa": "El intermitente avisa, pero no te permite girar desde donde te dé la gana: la posición correcta es parte de la maniobra.",
+    "tags": [
+      "cambio-direccion",
+      "posicion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-003",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "En una calzada de doble sentido de circulación, para girar a la izquierda debes situarte…",
+    "imagen": null,
+    "opciones": [
+      "ceñido al borde izquierdo de la calzada.",
+      "ceñido al borde derecho, para dejar pasar a los demás.",
+      "junto al eje de la calzada, sin invadir el sentido contrario."
+    ],
+    "correcta": 2,
+    "dificultad": 3,
+    "explicacion_corta": "En doble sentido, el giro a la izquierda se prepara aproximándose al eje de la calzada, pero sin pisar la zona del sentido contrario.",
+    "truco": "Doble sentido = al EJE (la costura del medio). Un solo sentido = al BORDE izquierdo. Eje o borde, según la vía.",
+    "trampa": "Ceñirse al borde izquierdo solo vale en vías de sentido ÚNICO: en doble sentido eso sería meterte de frente contra los que vienen.",
+    "tags": [
+      "cambio-direccion",
+      "giro-izquierda",
+      "posicion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-004",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Circulas por una vía de sentido único y vas a girar a la izquierda. ¿Cuál es la posición correcta?",
+    "imagen": null,
+    "opciones": [
+      "Junto al eje de la calzada, como en cualquier giro a la izquierda.",
+      "Lo más cerca posible del borde izquierdo de la calzada.",
+      "En el carril central, para poder rectificar si te arrepientes."
+    ],
+    "correcta": 1,
+    "dificultad": 2,
+    "explicacion_corta": "En sentido único no hay tráfico de frente, así que puedes y debes ceñirte al borde izquierdo para girar a la izquierda.",
+    "truco": "Si nadie viene de frente, aprovecha la pared: sentido único = borde izquierdo del todo.",
+    "trampa": "El 'eje de la calzada' es la respuesta estrella… en DOBLE sentido. Aquí te la cuelan reciclándola donde no toca.",
+    "tags": [
+      "cambio-direccion",
+      "giro-izquierda",
+      "sentido-unico"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-005",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "La calzada tiene carriles con flechas pintadas que indican el destino de cada uno. ¿Cómo te colocas para girar?",
+    "imagen": null,
+    "opciones": [
+      "Siguiendo lo que marquen las flechas de los carriles, aunque no coincida con la norma general de posición.",
+      "Aplicando siempre la norma general: derecha pegado al borde, izquierda junto al eje.",
+      "Por el carril que lleve menos cola, señalizando con más antelación de lo normal."
+    ],
+    "correcta": 0,
+    "dificultad": 3,
+    "explicacion_corta": "Cuando existen carriles señalizados para cada movimiento, manda la señalización: el giro se hace desde el carril que lo indica.",
+    "truco": "Si el suelo habla (flechas), el suelo manda. La norma general es solo para cuando la vía se queda muda.",
+    "trampa": "La 'norma general' de posición es la excepción aquí: existe justo para cuando NO hay carriles señalizados.",
+    "tags": [
+      "cambio-direccion",
+      "carriles",
+      "marcas-viales"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-006",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Has señalizado el giro con el intermitente. ¿Hasta cuándo debes mantener la advertencia?",
+    "imagen": null,
+    "opciones": [
+      "Solo hasta que empiezas a mover el volante.",
+      "Un mínimo de 10 segundos, aunque ya hayas girado.",
+      "Hasta finalizar la maniobra, y quitarla en cuanto termines."
+    ],
+    "correcta": 2,
+    "dificultad": 2,
+    "explicacion_corta": "La señal se mantiene durante toda la maniobra y debe cesar en cuanto acaba: un intermitente olvidado desinforma a los demás.",
+    "truco": "El intermitente es como el ruido del microondas: suena mientras trabaja y se calla al terminar.",
+    "trampa": "Dejarlo puesto 'por si acaso' también es un error: un intermitente que miente confunde tanto como no ponerlo.",
+    "tags": [
+      "cambio-direccion",
+      "senalizacion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-007",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Los intermitentes de tu coche dejan de funcionar. ¿Puedes señalizar el giro de otra forma?",
+    "imagen": null,
+    "opciones": [
+      "Sí, con el brazo.",
+      "No, debes detenerte y no circular hasta repararlos.",
+      "Sí, dando ráfagas con las luces de carretera."
+    ],
+    "correcta": 0,
+    "dificultad": 1,
+    "explicacion_corta": "Si falla la señalización luminosa, las maniobras se advierten con el brazo.",
+    "truco": "Plan B de toda la vida: sin luces, habla el brazo por la ventanilla.",
+    "trampa": "Las ráfagas sirven para advertir presencia, no para indicar hacia dónde vas a girar.",
+    "tags": [
+      "cambio-direccion",
+      "senalizacion",
+      "brazo"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-008",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "¿A qué distancia exacta de la intersección obliga la norma a conectar el intermitente para girar?",
+    "imagen": null,
+    "opciones": [
+      "A 50 metros en poblado y 100 metros fuera de poblado.",
+      "No hay una distancia fija: debe hacerse con la antelación suficiente según las circunstancias.",
+      "A 25 metros como mínimo, en cualquier tipo de vía."
+    ],
+    "correcta": 1,
+    "dificultad": 3,
+    "explicacion_corta": "El reglamento no fija metros: exige advertir la maniobra con suficiente antelación, que depende de la velocidad y del tráfico.",
+    "truco": "Cuando una pregunta te da cifras muy redondas para señalizar giros, sospecha: aquí la ley dice 'suficiente antelación' y punto.",
+    "trampa": "Los '50 y 100 metros' suenan a norma de verdad porque existen en otros contextos, pero para el intermitente no hay tarifa fija.",
+    "tags": [
+      "cambio-direccion",
+      "senalizacion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-009",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Un ciclomotor de dos ruedas circula por una vía interurbana sin carril acondicionado para girar a la izquierda. ¿Cómo debe hacer ese giro su conductor?",
+    "imagen": null,
+    "opciones": [
+      "Situándose junto al eje de la calzada, como cualquier turismo.",
+      "Girando directamente desde su carril, porque los ciclomotores tienen prioridad en los giros.",
+      "Situándose a la derecha, fuera de la calzada siempre que sea posible, e iniciando el giro desde ahí."
+    ],
+    "correcta": 2,
+    "dificultad": 4,
+    "explicacion_corta": "Ciclos y ciclomotores de dos ruedas en vías interurbanas sin carril para el giro a la izquierda deben apartarse a la derecha, fuera de la calzada si pueden, y girar desde ese lugar.",
+    "truco": "Bici o ciclomotor fuera de poblado: para girar a la izquierda, primero a la DERECHA. Suena absurdo y por eso no se olvida.",
+    "trampa": "Colocarse en el eje es la norma de los coches: un ciclomotor parado en mitad de una interurbana es un blanco fácil, y el reglamento lo saca de ahí.",
+    "explicacion_larga": "El artículo 76 del Reglamento General de Circulación crea una excepción de seguridad para los vehículos más vulnerables: en vías interurbanas, si no existe un carril especialmente acondicionado para el giro a la izquierda, los conductores de ciclos y ciclomotores de dos ruedas no deben cruzar la calzada para colocarse junto al eje, como haría un turismo. Lo correcto es situarse a la derecha, fuera de la calzada siempre que sea posible, esperar a que la vía esté libre en ambos sentidos y solo entonces atravesarla para completar el giro. La razón es pura física: un ciclomotor detenido en el centro de una vía rápida, esperando hueco, queda expuesto a alcances a alta velocidad.",
+    "tags": [
+      "cambio-direccion",
+      "giro-izquierda",
+      "ciclomotor",
+      "via-interurbana"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-010",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Giras para entrar en otra calle y hay peatones cruzando la calzada a la que te incorporas. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Pasar primero, porque llevas el intermitente puesto desde antes.",
+      "Cederles el paso y completar el giro cuando hayan cruzado.",
+      "Avisarles con una ráfaga para que esperen en la acera."
+    ],
+    "correcta": 1,
+    "dificultad": 2,
+    "explicacion_corta": "Al girar para entrar en otra vía, los peatones que la están cruzando tienen prioridad, haya o no paso de peatones marcado.",
+    "truco": "El que gira, espera. Tu intermitente avisa de tus planes, no borra los derechos de nadie.",
+    "trampa": "El intermitente encendido te tienta a creer que ya 'has pedido la vez'. Señalizar es obligatorio, pero no reparte prioridades.",
+    "tags": [
+      "cambio-direccion",
+      "peatones",
+      "prioridad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-011",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Si señalizas con el brazo un giro hacia el lado por el que sacas el brazo, la posición correcta es…",
+    "imagen": null,
+    "opciones": [
+      "el brazo extendido horizontalmente, con la palma hacia abajo.",
+      "el brazo doblado hacia arriba, con la palma extendida.",
+      "el brazo moviéndose arriba y abajo de forma repetida."
+    ],
+    "correcta": 0,
+    "dificultad": 4,
+    "explicacion_corta": "Giro hacia el lado del brazo: brazo horizontal extendido con la palma hacia abajo. Doblado hacia arriba señaliza el giro hacia el lado contrario.",
+    "truco": "Recto = 'voy hacia donde apunto'. Doblado en L = 'la flecha rebota al otro lado'. Y arriba-abajo no es girar: es frenar.",
+    "trampa": "El brazo doblado hacia arriba existe, pero indica el giro hacia el lado CONTRARIO al del brazo. Te cambian el significado, no el gesto.",
+    "explicacion_larga": "Las señales de brazo sustituyen a los intermitentes cuando estos no existen o no funcionan, y el examen adora preguntarlas porque casi nadie las estudia. Para desplazarte o girar hacia el lado del brazo que sacas: brazo extendido horizontalmente con la palma hacia abajo. Para girar hacia el lado contrario: mismo brazo, pero doblado hacia arriba con la palma extendida (formando una L). Y mover el brazo verticalmente de arriba abajo advierte de un frenazo. Piensa que el conductor solo puede sacar un brazo (normalmente el izquierdo en España), así que necesita dos gestos distintos para dos direcciones distintas.",
+    "tags": [
+      "cambio-direccion",
+      "senalizacion",
+      "brazo"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-012",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Pasar del carril derecho al carril izquierdo de tu mismo sentido para seguir por la misma vía, ¿qué maniobra es?",
+    "imagen": null,
+    "opciones": [
+      "Un cambio de dirección, porque mueves el volante.",
+      "Un cambio de sentido parcial.",
+      "Un desplazamiento lateral (cambio de carril), que también debe señalizarse."
+    ],
+    "correcta": 2,
+    "dificultad": 4,
+    "explicacion_corta": "Cambiar de carril sin abandonar la vía es un desplazamiento lateral, no un cambio de dirección; aun así, hay que advertirlo y ceder el paso a quien ya circula por ese carril.",
+    "truco": "Cambio de DIRECCIÓN = cambias de vía o de rumbo. Cambio de CARRIL = misma carretera, otra fila. Distinto nombre, mismo ritual: mirar, señalizar, ceder.",
+    "trampa": "Que muevas el volante no convierte la maniobra en cambio de dirección: si fuera así, esquivar un bache también lo sería.",
+    "explicacion_larga": "El examen juega mucho con los nombres de las maniobras. El cambio de dirección implica abandonar la vía por la que circulas para entrar en otra (girar en una intersección, por ejemplo). El desplazamiento lateral, en cambio, es moverte dentro de la misma calzada: cambiar de carril, apartarte hacia el arcén o volver de él. Aunque la etiqueta sea distinta, las obligaciones se parecen: comprobar por los espejos que puedes hacerlo, señalizar con antelación suficiente y ceder el paso a los vehículos que ya circulan por el carril al que pretendes pasar. Confundir los términos te puede costar una pregunta; saltarte las obligaciones, un susto.",
+    "tags": [
+      "cambio-direccion",
+      "carriles",
+      "desplazamiento-lateral"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-013",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "Estás junto al eje de la calzada esperando para girar a la izquierda y vienen vehículos de frente. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Cederles el paso y girar solo cuando puedas cruzar su trayectoria sin riesgo.",
+      "Girar rápido antes de que lleguen, para no bloquear tu carril.",
+      "Avanzar poco a poco invadiendo su carril hasta que alguien te deje pasar."
+    ],
+    "correcta": 0,
+    "dificultad": 2,
+    "explicacion_corta": "Al girar a la izquierda cruzas la trayectoria del sentido contrario: los que vienen de frente tienen prioridad y debes esperar.",
+    "truco": "El que corta camino, cede. Girar a la izquierda es cruzarte en la vida de otros: espera tu hueco.",
+    "trampa": "El 'giro rápido para no estorbar' es la maniobra que llena los partes de accidente: la prisa no es una prioridad reconocida.",
+    "tags": [
+      "cambio-direccion",
+      "giro-izquierda",
+      "prioridad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-014",
+    "mundo": 8,
+    "tema": "Cambio de dirección",
+    "pregunta": "¿Cuál es el orden correcto de las fases de un cambio de dirección?",
+    "imagen": null,
+    "opciones": [
+      "Señalizar, mirar los espejos, colocarse y girar.",
+      "Observar por los espejos, señalizar, colocarse en la posición correcta y ejecutar el giro cediendo el paso a quien corresponda.",
+      "Colocarse en el carril del giro, señalizar en el último momento y girar con decisión."
+    ],
+    "correcta": 1,
+    "dificultad": 5,
+    "explicacion_corta": "Primero se observa (espejos y ángulo muerto), después se advierte, luego se adopta la posición correcta y por último se ejecuta el giro cediendo el paso.",
+    "truco": "RSM al revés no funciona: Retrovisor, Señal, Maniobra. Mirar antes de avisar, avisar antes de moverte.",
+    "trampa": "'Señalizar y luego mirar' suena casi igual, pero es peligroso: si señalizas sin haber mirado, puedes anunciar una maniobra que ya es imposible hacer con seguridad.",
+    "explicacion_larga": "Un cambio de dirección bien hecho es una coreografía con orden fijo. Uno: observación, con espejos y comprobación del ángulo muerto, porque no puedes anunciar una intención sin saber si el hueco existe. Dos: advertencia, con el intermitente (o el brazo) y con antelación suficiente. Tres: posicionamiento, ciñéndote al borde derecho para ir a la derecha, al eje de la calzada en doble sentido para ir a la izquierda, o al borde izquierdo si la vía es de sentido único, salvo que haya carriles señalizados que dispongan otra cosa. Cuatro: ejecución, a velocidad moderada, cediendo el paso a los vehículos que vienen de frente y a los peatones que cruzan la vía de destino. Alterar el orden es lo que convierte una maniobra rutinaria en un cruce de trayectorias sin aviso.",
+    "tags": [
+      "cambio-direccion",
+      "fases",
+      "senalizacion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-015",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "Llegas a una glorieta. ¿Quién tiene prioridad de paso?",
+    "imagen": null,
+    "opciones": [
+      "Tú, porque el que entra por la derecha tiene preferencia.",
+      "Los vehículos que ya circulan por el interior de la glorieta.",
+      "El vehículo más grande, por seguridad."
+    ],
+    "correcta": 1,
+    "dificultad": 1,
+    "explicacion_corta": "En las glorietas, quien está dentro manda: los que llegan deben ceder el paso a los que ya circulan por el anillo.",
+    "truco": "La rotonda es una fiesta: los de dentro bailan, los de fuera esperan en la puerta.",
+    "trampa": "La regla de 'preferencia del que viene por la derecha' es para intersecciones sin señalizar: en la glorieta te la cuelan porque suena a norma general.",
+    "tags": [
+      "glorieta",
+      "prioridad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-016",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "¿Desde qué carril debes abandonar una glorieta de varios carriles?",
+    "imagen": null,
+    "opciones": [
+      "Desde el carril exterior, el más próximo a la salida.",
+      "Desde el carril interior, que es el que da más ángulo.",
+      "Desde cualquiera, si señalizas con antelación."
+    ],
+    "correcta": 0,
+    "dificultad": 2,
+    "explicacion_corta": "La salida de la glorieta se toma siempre desde el carril exterior; salir cortando desde el interior cruza la trayectoria de otros vehículos.",
+    "truco": "De la rotonda se sale por la puerta, no saltando la valla: carril exterior siempre.",
+    "trampa": "'Cualquiera si señalizas' es la excusa del que corta desde dentro: el intermitente no te autoriza a cruzarte por delante de nadie.",
+    "tags": [
+      "glorieta",
+      "carriles",
+      "salida"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-017",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "Circulas por el carril interior de la glorieta y tu salida está justo ahí. Hay vehículos en el carril exterior. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Salir cortando, porque tu salida tiene preferencia.",
+      "Frenar dentro del anillo hasta que el exterior quede libre.",
+      "Continuar dando la vuelta, pasarte al carril exterior cuando puedas y salir en la siguiente pasada."
+    ],
+    "correcta": 2,
+    "dificultad": 3,
+    "explicacion_corta": "Si no puedes colocarte en el carril exterior a tiempo, no se corta ni se frena en seco: se da otra vuelta y se sale bien.",
+    "truco": "En rotonda, otra vuelta es gratis. Un golpe, no.",
+    "trampa": "Frenar dentro del anillo parece prudente, pero crea un obstáculo inesperado: la glorieta está pensada para fluir, no para esperar.",
+    "tags": [
+      "glorieta",
+      "salida",
+      "carriles"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-018",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "¿Cómo se señaliza correctamente la salida de una glorieta?",
+    "imagen": null,
+    "opciones": [
+      "Con las luces de emergencia al reducir la velocidad.",
+      "Con el intermitente derecho, con antelación suficiente antes de la salida que vas a tomar.",
+      "No hace falta señalizarla: la trayectoria ya lo indica."
+    ],
+    "correcta": 1,
+    "dificultad": 2,
+    "explicacion_corta": "Abandonar la glorieta es un cambio de dirección: se advierte con el intermitente derecho antes de llegar a tu salida.",
+    "truco": "En la rotonda tu intermitente derecho es tu despedida: dilo antes de irte, no mientras te vas.",
+    "trampa": "'La trayectoria ya lo indica' es lo que piensa el 90 % de los que luego te cierran: dentro del anillo todas las trayectorias parecen iguales hasta el último metro.",
+    "tags": [
+      "glorieta",
+      "senalizacion",
+      "salida"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-019",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "En una glorieta situada en vía interurbana, como norma general debes circular…",
+    "imagen": null,
+    "opciones": [
+      "por el carril de la derecha, utilizando los demás si las circunstancias lo aconsejan, como para adelantar.",
+      "por el carril interior, que es el más rápido.",
+      "por el carril que quieras, igual que en ciudad."
+    ],
+    "correcta": 0,
+    "dificultad": 3,
+    "explicacion_corta": "Fuera de poblado rige la norma general: circular por el carril derecho y usar los demás solo cuando convenga, por ejemplo para adelantar.",
+    "truco": "La rotonda interurbana no borra la regla madre: la derecha es tu casa, el resto son visitas.",
+    "trampa": "Elegir 'el carril que quieras' vale en poblado; en interurbana te la cuelan trasplantando la norma urbana donde no aplica.",
+    "tags": [
+      "glorieta",
+      "carriles",
+      "via-interurbana"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-020",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "En una glorieta urbana con varios carriles en tu sentido, ¿qué carril puedes utilizar?",
+    "imagen": null,
+    "opciones": [
+      "Solo el exterior, en cualquier circunstancia.",
+      "El que mejor convenga a tu destino, sin abandonarlo hasta la salida más que con seguridad.",
+      "El interior, reservado a los turismos."
+    ],
+    "correcta": 1,
+    "dificultad": 3,
+    "explicacion_corta": "En poblado puedes usar el carril que mejor convenga a tu destino; eso sí, para salir tendrás que ganarte el exterior con tiempo y señalización.",
+    "truco": "En ciudad eliges carril según tu plan de viaje; lo que no eliges es cómo salir: siempre desde fuera.",
+    "trampa": "'Solo el exterior' parece la respuesta prudente, pero en poblado la norma te deja elegir carril: la obligación es salir bien, no circular siempre pegado al borde.",
+    "tags": [
+      "glorieta",
+      "carriles",
+      "poblado"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-021",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "La señal R-402, un círculo azul con tres flechas en anillo, ¿qué te obliga a hacer?",
+    "imagen": null,
+    "opciones": [
+      "Te concede prioridad sobre los que circulan por la glorieta.",
+      "Te avisa de que la glorieta es de un solo carril.",
+      "Circular en el sentido giratorio que marcan las flechas, dejando la isleta central a tu izquierda."
+    ],
+    "correcta": 2,
+    "dificultad": 2,
+    "explicacion_corta": "La R-402 es una señal de obligación: impone seguir el sentido giratorio del anillo. No reparte prioridades ni describe la glorieta.",
+    "truco": "Círculo azul = obligación. La R-402 te obliga a girar como las agujas del reloj al revés: el centro siempre a tu izquierda.",
+    "trampa": "Ver una señal al entrar te tienta a pensar que te da paso. Al contrario: la prioridad la suelen tener los de dentro, marcada con el ceda.",
+    "tags": [
+      "glorieta",
+      "senales",
+      "obligacion"
+    ],
+    "senalId": "R-402"
+  },
+  {
+    "id": "M08-022",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "Vas a tomar la primera salida de una glorieta de dos carriles de entrada. ¿Por cuál conviene entrar?",
+    "imagen": null,
+    "opciones": [
+      "Por el carril de la derecha, señalizando la salida.",
+      "Por el de la izquierda, para ver mejor el anillo.",
+      "Es indiferente, porque dentro te recolocas."
+    ],
+    "correcta": 0,
+    "dificultad": 3,
+    "explicacion_corta": "El carril de entrada se elige según la salida: para la primera salida o para seguir por el exterior, entra por la derecha.",
+    "truco": "Entra por donde vas a salir: salida cercana, carril derecho; salida lejana, puedes apoyarte en el interior.",
+    "trampa": "El 'dentro te recolocas' es el origen de la mitad de los sustos en rotonda: cada recolocación dentro del anillo es una maniobra extra que pudiste evitar eligiendo bien antes.",
+    "tags": [
+      "glorieta",
+      "carriles",
+      "entrada"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-023",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "Te has pasado tu salida en la glorieta. ¿Cuál es la reacción correcta?",
+    "imagen": null,
+    "opciones": [
+      "Frenar en seco e intentar salir todavía.",
+      "Dar marcha atrás unos metros dentro del anillo.",
+      "Seguir circulando y completar otra vuelta hasta tu salida."
+    ],
+    "correcta": 2,
+    "dificultad": 1,
+    "explicacion_corta": "Pasarse de salida no se arregla frenando ni reculando: se da otra vuelta tranquilamente y listo.",
+    "truco": "La rotonda tiene la mejor tecla de la carretera: la de repetir. Úsala.",
+    "trampa": "La marcha atrás dentro de una glorieta es de lo más peligroso que existe: nadie espera encontrarse un coche retrocediendo en un anillo de circulación.",
+    "tags": [
+      "glorieta",
+      "salida",
+      "marcha-atras"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-024",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "Dentro de una glorieta sin más señalización que los cedas de las entradas, un vehículo pretende entrar por tu derecha. ¿Debes cederle el paso?",
+    "imagen": null,
+    "opciones": [
+      "No: la prioridad de la derecha no se aplica; quien circula por el anillo tiene preferencia sobre quien entra.",
+      "Sí, porque viene por tu derecha y no hay agente regulando.",
+      "Solo si la glorieta es urbana."
+    ],
+    "correcta": 0,
+    "dificultad": 4,
+    "explicacion_corta": "En las glorietas la señalización de ceda en los accesos invierte la norma general: el de dentro pasa, el que entra espera, venga por donde venga.",
+    "truco": "En rotonda, olvida la derecha y recuerda el anillo: el anillo es el rey.",
+    "trampa": "La 'prioridad del que viene por la derecha' es verdad en intersecciones sin señalizar, y por eso pica tanto: aquí las entradas SÍ están señalizadas con ceda el paso.",
+    "explicacion_larga": "La norma general de prioridad (en intersecciones sin señalizar, pasa antes quien se aproxima por la derecha) es la trampa favorita del examen cuando aparece una glorieta. Las glorietas llevan en sus accesos señales o marcas de ceda el paso precisamente para invertir esa regla: el tráfico del anillo no debe detenerse nunca por culpa de los que entran, porque una glorieta bloqueada por dentro colapsa todas sus entradas a la vez. Así que, circulando por el anillo, no cedes a quien pretende entrar, ni aunque llegue por tu derecha; y cuando el que llega eres tú, cedes a todo lo que ya gira, venga del lado que venga.",
+    "tags": [
+      "glorieta",
+      "prioridad",
+      "ceda-el-paso"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-025",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "Dentro del anillo de la glorieta quieres pasar del carril interior al exterior para preparar tu salida. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Cambiar de carril sin señalizar, porque dentro de la glorieta no es obligatorio.",
+      "Señalizar el desplazamiento y ceder el paso a quien ya circula por el carril exterior.",
+      "Reducir mucho la velocidad y esperar a que alguien te ceda por cortesía."
+    ],
+    "correcta": 1,
+    "dificultad": 4,
+    "explicacion_corta": "El cambio de carril dentro del anillo es un desplazamiento lateral como cualquier otro: se señaliza y se cede el paso al que ya ocupa el carril de destino.",
+    "truco": "La rotonda no es zona sin ley: cambiar de carril dentro tiene las mismas normas que fuera. Espejo, intermitente, hueco.",
+    "trampa": "Mucha gente cree que dentro de la glorieta 'todo vale' porque la trayectoria es curva: el que va por el carril exterior no tiene por qué frenar para que tú salgas.",
+    "explicacion_larga": "El error más repetido de España en glorietas: salir en diagonal desde el carril interior sin mirar. La norma es sencilla: dentro del anillo, cada cambio de carril es un desplazamiento lateral y exige lo de siempre, observar por los espejos, señalizar con antelación y ceder el paso a los vehículos que ya circulan por el carril al que quieres pasar. Si el carril exterior va ocupado y tu salida se acerca, la respuesta no es forzar el hueco ni frenar dentro del anillo: es dar otra vuelta. Planifícalo al revés: sal del centro pronto, no tarde, y llega a tu salida ya colocado en el exterior con el intermitente derecho puesto.",
+    "tags": [
+      "glorieta",
+      "carriles",
+      "desplazamiento-lateral"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-026",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "pregunta": "Entras en una glorieta de dos carriles para tomar la tercera salida, casi enfrente de tu entrada. ¿Cuál es la forma más correcta de hacerlo?",
+    "imagen": null,
+    "opciones": [
+      "Entrar y quedarte todo el rato en el carril exterior, frenando en cada salida por si acaso.",
+      "Entrar por el interior y salir directamente desde él, que para eso vas por dentro.",
+      "Apoyarte en el carril interior, y antes de tu salida señalizar, pasarte al exterior con seguridad y salir desde él."
+    ],
+    "correcta": 2,
+    "dificultad": 5,
+    "explicacion_corta": "Para salidas lejanas conviene circular por el interior y planificar la vuelta al exterior con tiempo: la salida, siempre desde el carril exterior.",
+    "truco": "Piensa en la rotonda como una autovía circular: por dentro se viaja, por fuera se sale. Y el trasbordo, con billete: intermitente y hueco.",
+    "trampa": "Salir 'directamente desde el interior' es la opción que pinta lógica si vas por dentro, pero cruza la trayectoria del carril exterior: es la maniobra que más golpes produce en glorieta.",
+    "explicacion_larga": "En glorietas con salidas lejanas (la tercera, la cuarta, o un cambio de sentido completo), quedarte en el carril exterior toda la vuelta genera conflicto con los que entran y salen en cada acceso. La técnica correcta que enseña la DGT: entra apoyándote en el carril interior, circula por él mientras pasas las salidas que no son la tuya y, una salida antes de la que quieres tomar, comprueba el carril exterior, señaliza el desplazamiento, pásate a él con seguridad y abandona la glorieta desde el exterior con el intermitente derecho. Si al llegar tu salida no has conseguido colocarte fuera, no cortes: otra vuelta y a repetir la jugada con más antelación.",
+    "tags": [
+      "glorieta",
+      "carriles",
+      "salida",
+      "trayectoria"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-027",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "La señal R-304 (media vuelta prohibida), ¿qué maniobra prohíbe exactamente?",
+    "imagen": null,
+    "opciones": [
+      "El cambio de sentido de la marcha.",
+      "El cambio de sentido y también el giro a la izquierda.",
+      "Circular en sentido contrario por la vía."
+    ],
+    "correcta": 0,
+    "dificultad": 2,
+    "explicacion_corta": "La R-304 prohíbe la media vuelta, es decir, el cambio de sentido. El giro a la izquierda lo prohíbe otra señal: la R-303.",
+    "truco": "R-303 = izquierda prohibida. R-304 = la U prohibida. Van en orden: primero el giro, luego la vuelta entera.",
+    "trampa": "Como la media vuelta 'pasa por' girar a la izquierda, mucha gente cree que la R-304 prohíbe ambas cosas. No: girar a la izquierda para entrar en otra vía sigue permitido.",
+    "tags": [
+      "cambio-sentido",
+      "senales",
+      "prohibicion"
+    ],
+    "senalId": "R-304"
+  },
+  {
+    "id": "M08-028",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "¿Se puede efectuar un cambio de sentido sobre un paso a nivel?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si no se acerca ningún tren.",
+      "No, está expresamente prohibido.",
+      "Solo si el paso a nivel tiene barreras y están levantadas."
+    ],
+    "correcta": 1,
+    "dificultad": 2,
+    "explicacion_corta": "El reglamento prohíbe cambiar de sentido en los pasos a nivel: es de los peores sitios del mundo para quedarse atravesado.",
+    "truco": "Donde pasan trenes no se hacen filigranas: en paso a nivel, ni media vuelta ni medias tintas.",
+    "trampa": "'Si no viene ningún tren' apela a tu lógica, pero la norma no admite excepciones: un calado a mitad de maniobra sobre la vía no da segundas oportunidades.",
+    "tags": [
+      "cambio-sentido",
+      "prohibicion",
+      "paso-a-nivel"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-029",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Circulas por un tramo señalizado con la señal de túnel. ¿Puedes cambiar de sentido?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si el túnel tiene doble sentido y buena iluminación.",
+      "Sí, pero solo a menos de 20 km/h.",
+      "No: en túneles y pasos inferiores señalizados está prohibido."
+    ],
+    "correcta": 2,
+    "dificultad": 2,
+    "explicacion_corta": "En los tramos afectados por la señal de túnel está prohibido el cambio de sentido, tenga el túnel la iluminación que tenga.",
+    "truco": "Dentro de un tubo no se dan vueltas. Túnel = prohibido girar en redondo, pare, o dé marcha atrás.",
+    "trampa": "La 'buena iluminación' te invita a pensar que el problema es ver: el problema es quedarte cruzado en un sitio sin escapatoria.",
+    "tags": [
+      "cambio-sentido",
+      "prohibicion",
+      "tunel"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-030",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "En autopistas y autovías, el cambio de sentido está…",
+    "imagen": null,
+    "opciones": [
+      "prohibido, salvo en los lugares habilitados al efecto.",
+      "permitido por la mediana si no viene nadie.",
+      "permitido solo de noche, cuando hay menos tráfico."
+    ],
+    "correcta": 0,
+    "dificultad": 3,
+    "explicacion_corta": "En autopista y autovía solo puede cambiarse de sentido en los lugares habilitados para ello; fuera de ellos, prohibición total.",
+    "truco": "En autopista, para volver atrás solo hay un camino: la siguiente salida o un paso habilitado. La mediana no es una rotonda.",
+    "trampa": "El 'si no viene nadie' es la mentira más cara de la autopista: a 120 km/h, el nadie de ahora es un coche encima en cuatro segundos.",
+    "tags": [
+      "cambio-sentido",
+      "prohibicion",
+      "autopista"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-031",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Como norma general, ¿se permite el cambio de sentido en una intersección?",
+    "imagen": null,
+    "opciones": [
+      "No, las intersecciones figuran entre los lugares prohibidos.",
+      "Sí, si hay visibilidad y no lo prohíbe ninguna señal ni marca vial.",
+      "Solo en intersecciones reguladas por semáforo."
+    ],
+    "correcta": 1,
+    "dificultad": 4,
+    "explicacion_corta": "Las intersecciones no están en la lista de lugares prohibidos: de hecho suelen ser el sitio adecuado para cambiar de sentido, salvo señal en contra.",
+    "truco": "La lista negra del cambio de sentido: paso a nivel, túnel, autopista-autovía y donde no se ve o no se puede adelantar. La intersección NO está en ella.",
+    "trampa": "Como en las intersecciones se prohíben otras cosas (parar, estacionar, dar marcha atrás invadiéndolas), el examen cuenta con que metas también el cambio de sentido en el mismo saco.",
+    "explicacion_larga": "El artículo 79 del Reglamento General de Circulación enumera dónde está prohibido cambiar de sentido: en toda situación que impida comprobar que la maniobra es segura (curvas y cambios de rasante sin visibilidad), en los pasos a nivel, en los tramos señalizados como túnel y en autopistas y autovías salvo lugares habilitados, además de, en general, los tramos donde está prohibido adelantar. Las intersecciones no aparecen en esa lista; al contrario, una intersección con visibilidad suele ser el lugar natural para dar media vuelta, siempre que no exista una señal R-304, marcas viales que lo impidan o una regulación específica. Ojo al matiz: que esté permitido no te exime de señalizar, ceder el paso y no entorpecer.",
+    "tags": [
+      "cambio-sentido",
+      "interseccion",
+      "normativa"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-032",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Te apetece dar media vuelta justo después de un cambio de rasante que impide ver si viene alguien. ¿Puedes?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si lo haces rápido y señalizando.",
+      "Sí, tocando el claxon para avisar a los que no ves.",
+      "No: está prohibido cambiar de sentido en cualquier situación que impida comprobar que no creas peligro."
+    ],
+    "correcta": 2,
+    "dificultad": 3,
+    "explicacion_corta": "Sin visibilidad no hay maniobra: el cambio de sentido está prohibido en toda situación que impida comprobar que no pones en peligro a otros.",
+    "truco": "Si no ves lo que viene, no existe la maniobra segura: primero visibilidad, después intención.",
+    "trampa": "'Rápido y señalizando' suena diligente, pero el intermitente no atraviesa los cambios de rasante: el que aparece por detrás no ha visto nada.",
+    "tags": [
+      "cambio-sentido",
+      "prohibicion",
+      "visibilidad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-033",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Para efectuar un cambio de sentido correctamente debes elegir…",
+    "imagen": null,
+    "opciones": [
+      "un lugar adecuado con visibilidad, advertir la maniobra y no poner en peligro ni entorpecer a otros usuarios.",
+      "el primer hueco disponible, aunque tengas que hacer la maniobra en varias veces sobre la calzada.",
+      "un tramo recto cualquiera, sin necesidad de señalizar si no ves a nadie."
+    ],
+    "correcta": 0,
+    "dificultad": 2,
+    "explicacion_corta": "Cambio de sentido de libro: sitio adecuado y visible, señalización con antelación e interceptar la vía el menor tiempo posible.",
+    "truco": "Tres condiciones: buen SITIO, buen AVISO y poco RATO estorbando. Si falla una, no es tu sitio.",
+    "trampa": "Señalizar es obligatorio aunque 'no veas a nadie': las maniobras se advierten siempre, no solo cuando hay público.",
+    "tags": [
+      "cambio-sentido",
+      "ejecucion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-034",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Para cambiar de sentido necesitas esperar a que pasen varios vehículos. ¿Dónde debes esperar?",
+    "imagen": null,
+    "opciones": [
+      "En mitad de la calzada, con las luces de emergencia.",
+      "Fuera de la calzada, siempre que sea posible.",
+      "En el carril contrario, ya medio girado, para acabar antes."
+    ],
+    "correcta": 1,
+    "dificultad": 3,
+    "explicacion_corta": "Si la espera es necesaria, se hace fuera de la calzada siempre que se pueda: un coche parado esperando en el carril es un obstáculo.",
+    "truco": "Esperar se espera en el arcén o fuera, no en el escenario: la calzada es para circular.",
+    "trampa": "Las luces de emergencia no convierten un mal sitio en bueno: avisan del estorbo, pero no lo eliminan.",
+    "tags": [
+      "cambio-sentido",
+      "ejecucion",
+      "espera"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-035",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Te has equivocado de dirección en una autovía. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Dar media vuelta con cuidado aprovechando un hueco de la mediana.",
+      "Dar marcha atrás por el arcén hasta la salida anterior.",
+      "Continuar hasta la próxima salida y reincorporarte desde allí."
+    ],
+    "correcta": 2,
+    "dificultad": 1,
+    "explicacion_corta": "En autovía, un error de dirección se paga con kilómetros, no con maniobras: sigue hasta la próxima salida.",
+    "truco": "En autopista y autovía el navegador tiene razón cuando dice 'recalculando': ni marcha atrás ni media vuelta, siguiente salida.",
+    "trampa": "El hueco de la mediana existe para servicios y emergencias autorizadas, no para arrepentidos: usarlo es de lo más grave que puedes hacer al volante.",
+    "tags": [
+      "cambio-sentido",
+      "autopista",
+      "prohibicion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-036",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Quieres cambiar de sentido y ves que un vehículo se acerca de frente y tendría que frenar por tu maniobra. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Esperar y no iniciar la maniobra: no puedes obligar a otros a modificar bruscamente su marcha.",
+      "Hacer la maniobra, porque ya la habías señalizado antes de que apareciera.",
+      "Hacer la mitad de la maniobra y terminar cuando pase."
+    ],
+    "correcta": 0,
+    "dificultad": 4,
+    "explicacion_corta": "El cambio de sentido solo procede si no pones en peligro ni obligas a otros a frenar o desviarse bruscamente; si dudas, esperas.",
+    "truco": "Tu maniobra es válida solo si el resto del mundo puede seguir a lo suyo como si no existieras.",
+    "trampa": "'Ya lo había señalizado' es la falsa licencia de siempre: el intermitente comunica tu intención, no obliga a nadie a frenar para hacértela posible.",
+    "explicacion_larga": "El requisito central de la maniobra de cambio de sentido no es el intermitente, sino la comprobación previa: cerciorarte de que puedes hacerla sin riesgo ni entorpecimiento. Eso significa que si un vehículo que se aproxima, por delante o por detrás, tuviera que frenar o desviarse de forma apreciable por tu culpa, la maniobra no procede todavía. La media maniobra es aún peor: un vehículo atravesado ocupando parcialmente ambos sentidos es el obstáculo más imprevisible que existe. El orden mental correcto es: sitio adecuado, visibilidad suficiente, hueco real en ambos sentidos, aviso con antelación y ejecución interceptando la calzada el menor tiempo posible.",
+    "tags": [
+      "cambio-sentido",
+      "ejecucion",
+      "prioridad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-037",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Para cambiar de sentido en una vía de doble sentido tendrías que cruzar una marca longitudinal continua. ¿Puedes hacerlo?",
+    "imagen": null,
+    "opciones": [
+      "Sí, porque la línea continua solo afecta a los adelantamientos.",
+      "No: la línea continua no debe cruzarse, así que ahí no puedes cambiar de sentido.",
+      "Sí, si la cruzas en menos de 5 segundos."
+    ],
+    "correcta": 1,
+    "dificultad": 3,
+    "explicacion_corta": "La marca longitudinal continua prohíbe atravesarla: donde la hay, no hay cambio de sentido posible.",
+    "truco": "La continua es un muro pintado: si tu maniobra lo atraviesa, tu maniobra no existe.",
+    "trampa": "Reducir la continua a 'cosa de adelantamientos' es el fallo clásico: prohíbe cruzarla para cualquier maniobra, también para girar o dar la vuelta.",
+    "tags": [
+      "cambio-sentido",
+      "marcas-viales",
+      "prohibicion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-038",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "pregunta": "Un tramo recto con buena visibilidad está señalizado con prohibición de adelantar. Como norma general, ¿puedes cambiar de sentido en él?",
+    "imagen": null,
+    "opciones": [
+      "Sí, porque la prohibición de adelantar no tiene nada que ver.",
+      "Sí, siempre que tardes menos de 15 segundos.",
+      "No: en los tramos donde está prohibido adelantar también lo está, en general, cambiar de sentido."
+    ],
+    "correcta": 2,
+    "dificultad": 5,
+    "explicacion_corta": "La regla general extiende la prohibición: donde no se puede adelantar, tampoco se puede cambiar de sentido, aunque a ti te parezca que se ve bien.",
+    "truco": "La prohibición de adelantar es un dos por uno: te prohíbe pasar a otros y también dar la vuelta. Mismo motivo, mismo tramo.",
+    "trampa": "La 'buena visibilidad' que tú aprecias es el cebo: si la autoridad prohibió adelantar en ese tramo es porque hay un riesgo que desde el coche no siempre se ve.",
+    "explicacion_larga": "El artículo 79 del Reglamento General de Circulación cierra su lista de prohibiciones con una cláusula general que casi nadie estudia: el cambio de sentido queda prohibido, en general, en todos los tramos de vía en que esté prohibido el adelantamiento, salvo que la maniobra esté expresamente autorizada. La lógica es aplastante: ambas maniobras exigen ocupar o cruzar el espacio del sentido contrario, así que si el tramo se consideró peligroso para una, lo es para la otra. La trampa del enunciado está en tu percepción: que el tramo te parezca recto y despejado no deroga la señalización. Donde veas prohibido adelantar, da por prohibida la media vuelta salvo autorización expresa.",
+    "tags": [
+      "cambio-sentido",
+      "prohibicion",
+      "adelantamiento"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-039",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "¿Está permitido circular hacia atrás como maniobra normal de circulación?",
+    "imagen": null,
+    "opciones": [
+      "Sí, siempre que sea a poca velocidad.",
+      "No: solo como maniobra complementaria de otra o cuando sea imposible seguir hacia delante o cambiar de sentido.",
+      "Sí, en vías urbanas de un solo carril."
+    ],
+    "correcta": 1,
+    "dificultad": 1,
+    "explicacion_corta": "La marcha atrás no es una forma de circular: solo se admite como complemento de otra maniobra (parar, estacionar, incorporarse) o por imposibilidad de continuar.",
+    "truco": "El coche tiene cinco marchas para avanzar y una para apaños: la R es la marcha del 'no me queda otra'.",
+    "trampa": "'A poca velocidad' te hace creer que la lentitud lo legaliza todo: la prohibición es de la maniobra en sí, no del ritmo.",
+    "tags": [
+      "marcha-atras",
+      "prohibicion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-040",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "Como maniobra complementaria de una parada, un estacionamiento o una incorporación, la marcha atrás tiene un recorrido máximo de…",
+    "imagen": null,
+    "opciones": [
+      "15 metros.",
+      "25 metros.",
+      "50 metros, si hay visibilidad."
+    ],
+    "correcta": 0,
+    "dificultad": 2,
+    "explicacion_corta": "El recorrido en marcha atrás como maniobra complementaria no puede superar los 15 metros.",
+    "truco": "Marcha atrás = 15 metros, más o menos tres coches y medio aparcados. Si necesitas más, tu maniobra está mal planteada.",
+    "trampa": "El 25 y el 50 son cifras que existen en otros artículos del reglamento y el examen las recicla para despistarte: aquí la cifra buena es 15.",
+    "tags": [
+      "marcha-atras",
+      "limite"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-041",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "Además de no superar los 15 metros, la marcha atrás complementaria tiene otra limitación. ¿Cuál?",
+    "imagen": null,
+    "opciones": [
+      "Debe hacerse siempre con las luces de emergencia conectadas.",
+      "Solo puede hacerse en horario diurno.",
+      "No puede invadir un cruce de vías."
+    ],
+    "correcta": 2,
+    "dificultad": 2,
+    "explicacion_corta": "La marcha atrás nunca debe invadir un cruce de vías, aunque el recorrido total no llegue a los 15 metros.",
+    "truco": "Doble candado de la marcha atrás: 15 metros de cuerda y prohibido asomarla al cruce. Los dos a la vez, no uno u otro.",
+    "trampa": "Muchos se quedan solo con los 15 metros y olvidan el cruce: reculando 8 metros dentro de una intersección también estás infringiendo.",
+    "tags": [
+      "marcha-atras",
+      "limite",
+      "interseccion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-042",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "Te pasas la salida de la autopista por unos metros. ¿Puedes retroceder marcha atrás por el arcén?",
+    "imagen": null,
+    "opciones": [
+      "Sí, por el arcén y a menos de 20 km/h.",
+      "No: la marcha atrás está prohibida en autopistas y autovías.",
+      "Sí, si son menos de 15 metros."
+    ],
+    "correcta": 1,
+    "dificultad": 2,
+    "explicacion_corta": "En autopista y autovía la marcha atrás está prohibida siempre, también por el arcén y también unos pocos metros.",
+    "truco": "En autopista la R del cambio no existe: te pasas la salida, sigues hasta la siguiente. Sin excepciones.",
+    "trampa": "Los '15 metros' de la marcha atrás complementaria no valen aquí: en autopista y autovía la prohibición es total, sin cupos de metros.",
+    "tags": [
+      "marcha-atras",
+      "autopista",
+      "prohibicion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-043",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "¿Cómo debe efectuarse la maniobra de marcha atrás?",
+    "imagen": null,
+    "opciones": [
+      "Lentamente, tras advertirla y cerciorándote, incluso con ayuda de otra persona si no hay visibilidad, de que no creas peligro.",
+      "Con decisión y rapidez, para ocupar la calzada el menor tiempo posible.",
+      "Con las luces de emergencia y el claxon sonando de forma intermitente."
+    ],
+    "correcta": 0,
+    "dificultad": 3,
+    "explicacion_corta": "Marcha atrás: despacio, avisando y comprobando antes y durante toda la maniobra; si no ves, pide a alguien que te guíe.",
+    "truco": "Hacia atrás se conduce con los ojos, no con el acelerador. Si tus ojos no llegan, préstate los de otro.",
+    "trampa": "El 'menor tiempo posible' vale para el cambio de sentido y te lo cuelan aquí: la marcha atrás exige justo lo contrario, lentitud y comprobación continua.",
+    "tags": [
+      "marcha-atras",
+      "ejecucion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-044",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "Te metes en una calle cortada por obras y es imposible seguir o dar la vuelta. Para salir necesitas retroceder 40 metros. ¿Puedes?",
+    "imagen": null,
+    "opciones": [
+      "No, en ningún caso: el límite de 15 metros es absoluto.",
+      "Solo si un agente te lo autoriza expresamente.",
+      "Sí: por imposibilidad de continuar, puedes recorrer hacia atrás el trayecto mínimo indispensable, aunque supere los 15 metros."
+    ],
+    "correcta": 2,
+    "dificultad": 4,
+    "explicacion_corta": "El tope de 15 metros es para la marcha atrás complementaria; si es imposible seguir o girar, puedes retroceder lo mínimo indispensable para salir del atolladero.",
+    "truco": "15 metros es el límite de la marcha atrás 'de cortesía'; la marcha atrás 'de rescate' dura lo que dure el rescate, ni un metro más.",
+    "trampa": "El '15 metros en ningún caso' pica porque es la cifra estrella del tema: pero esa cifra regula la maniobra complementaria, no los casos de imposibilidad de continuar.",
+    "explicacion_larga": "El artículo 80 del Reglamento General de Circulación distingue dos situaciones que el examen mezcla a propósito. Primera: la marcha atrás como maniobra complementaria de una parada, un estacionamiento o una incorporación; ahí rigen los dos límites, máximo 15 metros y prohibido invadir un cruce de vías. Segunda: la marcha atrás por necesidad, cuando es imposible continuar hacia delante o cambiar de sentido (calle cortada, obstáculo, vía sin salida); en ese caso se permite retroceder el recorrido mínimo indispensable, aunque supere los 15 metros, siempre lentamente, advirtiéndolo y comprobando que no creas peligro. Lo que no cambia nunca: en autopistas y autovías, prohibida en todos los supuestos.",
+    "tags": [
+      "marcha-atras",
+      "limite",
+      "excepcion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-045",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "Retroceder marcha atrás un tramo largo de vía porque te has saltado tu calle, ¿cómo puede calificarse?",
+    "imagen": null,
+    "opciones": [
+      "Como maniobra permitida si no hay tráfico en ese momento.",
+      "Como infracción muy grave, por suponer circular en sentido contrario al establecido.",
+      "Como infracción leve, si se hace despacio."
+    ],
+    "correcta": 1,
+    "dificultad": 4,
+    "explicacion_corta": "Recorrer marcha atrás un tramo largo equivale a circular en sentido contrario: infracción muy grave, con retirada de puntos incluida.",
+    "truco": "Un coche mucho rato en marcha atrás es un kamikaze a cámara lenta: la ley lo trata igual de duro.",
+    "trampa": "'Despacio' y 'sin tráfico' rebajan la infracción en tu cabeza, pero no en la ley: lo que se sanciona es circular al revés, no la velocidad a la que lo hagas.",
+    "explicacion_larga": "La marcha atrás tiene una frontera peligrosa: cuando deja de ser una maniobra puntual y se convierte en una forma de desplazarse, la normativa la equipara a circular en sentido contrario al establecido, que es una de las infracciones muy graves del catálogo de la Ley de Tráfico, con su correspondiente multa y detracción de puntos. Da igual que vayas despacio o que la calle parezca vacía: el resto de usuarios organiza su conducción asumiendo que todos circulan en el sentido correcto, y un vehículo retrocediendo por la vía rompe esa expectativa básica. Si te pasas tu calle, el procedimiento es aburrido pero legal: continúa, busca un lugar adecuado y cambia de sentido como manda el reglamento.",
+    "tags": [
+      "marcha-atras",
+      "infraccion",
+      "sentido-contrario"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-046",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "Antes de iniciar la marcha atrás, y si la visibilidad es mala, ¿qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Cerciorarte de que puedes hacerla sin peligro, incluso bajándote del coche o pidiendo a otra persona que te guíe.",
+      "Dar un toque de claxon largo y retroceder confiando en que se aparten.",
+      "Retroceder muy despacio: la lentitud ya garantiza la seguridad."
+    ],
+    "correcta": 0,
+    "dificultad": 1,
+    "explicacion_corta": "Si no ves lo que hay detrás, no retrocedes: baja a comprobarlo o busca a alguien que te dirija la maniobra.",
+    "truco": "Regla del retrovisor honesto: si no lo ves, no existe el hueco. Bájate o pide ojos prestados.",
+    "trampa": "Ir 'muy despacio' no salva al peatón bajito o al bolardo que no aparece en los espejos: la lentitud sin comprobación es solo un atropello en cámara lenta.",
+    "tags": [
+      "marcha-atras",
+      "ejecucion",
+      "visibilidad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-047",
+    "mundo": 8,
+    "tema": "Marcha atrás",
+    "pregunta": "Sales marcha atrás de una plaza de aparcamiento en batería hacia la calzada. ¿Qué maniobra estás realizando realmente?",
+    "imagen": null,
+    "opciones": [
+      "Solo una marcha atrás, así que tienes preferencia mientras dure.",
+      "Una incorporación a la circulación (con marcha atrás como complemento): cedes el paso a todos los que circulan.",
+      "Un cambio de sentido en toda regla."
+    ],
+    "correcta": 1,
+    "dificultad": 5,
+    "explicacion_corta": "Salir de un estacionamiento es incorporarse a la circulación, aunque lo hagas reculando: la marcha atrás es solo la parte complementaria y cedes el paso a todo el mundo.",
+    "truco": "Da igual con qué marcha salgas del aparcamiento: sales al tráfico, y el que entra al tráfico entra pidiendo permiso.",
+    "trampa": "Nombrar la maniobra 'marcha atrás' te despista de lo importante: ninguna maniobra de las dos te da preferencia, y como incorporación te obliga a ceder a vehículos y peatones.",
+    "explicacion_larga": "El examen adora esta muñeca rusa: dentro de una maniobra hay otra. Al abandonar un estacionamiento en batería reculando estás ejecutando dos cosas a la vez: una incorporación a la circulación (la maniobra principal, artículo 72 del reglamento) y una marcha atrás (la complementaria, con sus límites de lentitud, comprobación y recorrido máximo de 15 metros sin invadir cruces). Las obligaciones se suman, no se eligen: debes señalizar, retroceder despacio comprobando en todo momento, y ceder el paso a todos los vehículos, ciclistas y peatones que circulen, porque quien se incorpora nunca tiene prioridad. Y recuerda que la visibilidad saliendo en batería marcha atrás es pésima: asoma el coche centímetro a centímetro.",
+    "tags": [
+      "marcha-atras",
+      "incorporacion",
+      "estacionamiento"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-048",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "Vas a incorporarte a la circulación desde un estacionamiento. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Salir con decisión: el que está parado tiene preferencia para arrancar.",
+      "Esperar a que otro conductor te haga luces y salir entonces.",
+      "Cerciorarte de que puedes hacerlo sin peligro, ceder el paso a los que circulan y señalizar la maniobra."
+    ],
+    "correcta": 2,
+    "dificultad": 1,
+    "explicacion_corta": "Quien se incorpora cede el paso a quienes ya circulan y advierte la maniobra con antelación.",
+    "truco": "Incorporarse es como entrar en una cinta de correr en marcha: mira, avisa y entra cuando la cinta te deje.",
+    "trampa": "'El parado tiene preferencia para arrancar' es justo lo contrario de la norma: parado no molestas; es al entrar cuando puedes crear el peligro.",
+    "tags": [
+      "incorporacion",
+      "prioridad",
+      "senalizacion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-049",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "Entre quien se incorpora a la vía y quien ya circula por ella, ¿quién tiene prioridad?",
+    "imagen": null,
+    "opciones": [
+      "Quien ya circula por la vía.",
+      "Quien se incorpora, si señaliza correctamente.",
+      "El que llegue antes al punto de conflicto."
+    ],
+    "correcta": 0,
+    "dificultad": 2,
+    "explicacion_corta": "La prioridad es de quien circula: incorporarse no debe obligar a nadie a modificar bruscamente su trayectoria o velocidad.",
+    "truco": "El tráfico es un río: el que ya nada en él, sigue; el que se tira desde la orilla, mira antes.",
+    "trampa": "Señalizar es obligatorio pero no compra prioridad: el intermitente es una petición, no una orden.",
+    "tags": [
+      "incorporacion",
+      "prioridad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-050",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "¿Para qué sirve el carril de aceleración?",
+    "imagen": null,
+    "opciones": [
+      "Para adelantar a los vehículos lentos antes de entrar en la vía.",
+      "Para alcanzar la velocidad adecuada al tráfico de la vía antes de incorporarte a ella.",
+      "Para detenerte y observar con calma el tráfico que se aproxima."
+    ],
+    "correcta": 1,
+    "dificultad": 2,
+    "explicacion_corta": "El carril de aceleración existe para que entres en la vía ya a una velocidad similar a la del tráfico que circula por ella.",
+    "truco": "El carril de aceleración es la pista de despegue: se usa para coger velocidad, no para quedarse mirando el cielo.",
+    "trampa": "Detenerse 'para observar con calma' es el error del novato: entrar a 40 donde todos van a 100 provoca el frenazo en cadena que la norma quiere evitar.",
+    "tags": [
+      "incorporacion",
+      "carril-aceleracion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-051",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "Circulas por el carril de aceleración de una autovía. ¿Tienes prioridad sobre los que van por la calzada principal?",
+    "imagen": null,
+    "opciones": [
+      "Sí, porque el carril de aceleración forma parte de la autovía.",
+      "Sí, si ya circulas a la misma velocidad que ellos.",
+      "No: debes ceder el paso; el carril facilita la maniobra, pero no te da preferencia."
+    ],
+    "correcta": 2,
+    "dificultad": 3,
+    "explicacion_corta": "En el carril de aceleración sigues siendo el que se incorpora: cedes el paso a quienes circulan por la calzada principal.",
+    "truco": "El carril de aceleración te presta metros, no derechos: velocidad sí, preferencia no.",
+    "trampa": "'Forma parte de la autovía' es cierto y por eso engaña: estar dentro del recinto no te convierte en tráfico principal hasta que completas la incorporación.",
+    "tags": [
+      "incorporacion",
+      "carril-aceleracion",
+      "prioridad"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-052",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "Llegas al final del carril de aceleración. ¿Debes detenerte para incorporarte?",
+    "imagen": null,
+    "opciones": [
+      "Solo si es imprescindible: lo correcto es ajustar la velocidad y entrar en un hueco sin llegar a pararte.",
+      "Sí, siempre: es obligatorio detenerse al final del carril.",
+      "Sí, y además poner las luces de emergencia mientras esperas."
+    ],
+    "correcta": 0,
+    "dificultad": 3,
+    "explicacion_corta": "El objetivo del carril de aceleración es incorporarse en marcha; detenerse solo procede cuando no queda más remedio.",
+    "truco": "Pararse al final del carril de aceleración es desperdiciar la pista de despegue: luego toca despegar desde cero con la vía encima.",
+    "trampa": "El 'sí, siempre' confunde ceder el paso con detenerse: ceder es no estorbar, y muchas veces se cede mejor ajustando la velocidad que clavando el freno.",
+    "tags": [
+      "incorporacion",
+      "carril-aceleracion",
+      "ejecucion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-053",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "Sales con tu coche del garaje de tu casa cruzando la acera. ¿A quién debes ceder el paso?",
+    "imagen": null,
+    "opciones": [
+      "Solo a los vehículos que circulen por la calzada.",
+      "A los peatones que pasan por la acera y a los vehículos que circulan por la vía.",
+      "A nadie: la salida de tu propiedad tiene preferencia señalizada con vado."
+    ],
+    "correcta": 1,
+    "dificultad": 2,
+    "explicacion_corta": "Al incorporarte desde un inmueble o camino de acceso cedes el paso a todos: primero a los peatones de la acera y después al tráfico de la calzada.",
+    "truco": "Saliendo del garaje eres el último de la fila: primero la acera, luego la calzada, y por fin tú.",
+    "trampa": "El vado te reserva el hueco para entrar y salir, pero no te da preferencia sobre nadie: es un permiso de paso, no un cetro.",
+    "tags": [
+      "incorporacion",
+      "peatones",
+      "acceso"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-054",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "En poblado, un autobús señaliza su intención de salir de una parada señalizada. ¿Qué deben hacer los demás conductores?",
+    "imagen": null,
+    "opciones": [
+      "Nada especial: el autobús cede el paso como cualquiera que se incorpora.",
+      "Adelantarlo rápidamente antes de que arranque.",
+      "Facilitarle la incorporación, reduciendo la velocidad o deteniéndose si es preciso."
+    ],
+    "correcta": 2,
+    "dificultad": 3,
+    "explicacion_corta": "En poblado, los conductores deben facilitar la salida de los transportes colectivos desde sus paradas señalizadas.",
+    "truco": "El bus en su parada es la excepción del tema: al que lleva a cuarenta personas, en ciudad, se le abre hueco.",
+    "trampa": "La regla general ('el que se incorpora cede') es verdad casi siempre, y por eso pica: los transportes colectivos saliendo de parada señalizada en poblado son el caso especial que el examen adora.",
+    "tags": [
+      "incorporacion",
+      "autobus",
+      "poblado"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-055",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "Antes de incorporarte desde el borde de la calzada, miras por los retrovisores y no ves a nadie. ¿Es suficiente comprobación?",
+    "imagen": null,
+    "opciones": [
+      "No: debes comprobar también el ángulo muerto, porque los espejos no cubren toda la zona lateral.",
+      "Sí: los retrovisores bien regulados lo muestran todo.",
+      "Sí, siempre que además señalices durante 5 segundos."
+    ],
+    "correcta": 0,
+    "dificultad": 4,
+    "explicacion_corta": "Los retrovisores dejan zonas sin cubrir: la comprobación completa incluye un giro de cabeza al ángulo muerto antes de moverte.",
+    "truco": "El ángulo muerto se llama así por algo: lo que vive ahí no sale en tus espejos. Gira el cuello, que es gratis.",
+    "trampa": "Los '5 segundos de intermitente' visten mucho, pero señalizar más rato no ilumina el ángulo muerto: el problema es de visión, no de aviso.",
+    "explicacion_larga": "La incorporación a la circulación exige cerciorarse de que no se pone en peligro a ningún otro usuario, y esa comprobación tiene un enemigo silencioso: el ángulo muerto, la zona lateral trasera que ni el retrovisor interior ni los exteriores alcanzan a mostrar. Una moto o una bici caben enteras en él. Por eso la secuencia correcta es: espejos, señalización con antelación suficiente y, justo antes de iniciar el movimiento, un giro rápido de cabeza hacia el lado por el que vas a salir. Este triple chequeo es el que valoran los examinadores en las pruebas prácticas y el que la teórica pregunta con enunciados como este, donde la opción incompleta suena razonable.",
+    "tags": [
+      "incorporacion",
+      "angulo-muerto",
+      "observacion"
+    ],
+    "senalId": null
+  },
+  {
+    "id": "M08-056",
+    "mundo": 8,
+    "tema": "Incorporación a la circulación",
+    "pregunta": "Tras resolver una avería, estás detenido en el arcén de una autovía y quieres reincorporarte. ¿Cómo lo haces?",
+    "imagen": null,
+    "opciones": [
+      "Entras directamente al carril derecho a baja velocidad: los demás deben facilitarte el paso.",
+      "Señalizas, cedes el paso y, si el arcén es practicable, lo aprovechas para ganar velocidad antes de entrar en un hueco seguro.",
+      "Cruzas al carril izquierdo, que suele venir más despejado."
+    ],
+    "correcta": 1,
+    "dificultad": 4,
+    "explicacion_corta": "Desde el arcén de una autovía te incorporas cediendo el paso y sin obligar a frenar a nadie: si el arcén lo permite, úsalo para acercar tu velocidad a la del tráfico.",
+    "truco": "El arcén es tu mini carril de aceleración de emergencia: coge carrerilla en él y entra cuando el hueco sea de verdad.",
+    "trampa": "'Los demás deben facilitarte el paso' vale para el bus en su parada urbana, no para ti en una autovía: entrar a 30 donde circulan a 120 es fabricar un alcance.",
+    "explicacion_larga": "Reincorporarse desde una inmovilización en el arcén de una autopista o autovía es una de las maniobras con mayor diferencial de velocidad que existen, y por eso se hace en dos tiempos. Primero, la preparación: intermitente izquierdo con antelación y observación del tráfico por espejos y ángulo muerto. Segundo, la ejecución: quien se incorpora cede el paso siempre, así que no debes invadir el carril hasta disponer de un hueco que no obligue a nadie a frenar ni desviarse; si el arcén es practicable y suficientemente largo, es correcto avanzar por él para ganar velocidad y reducir ese diferencial antes de entrar. Lo que jamás debes hacer es plantarte en el carril a baja velocidad confiando en la buena voluntad ajena.",
+    "tags": [
+      "incorporacion",
+      "arcen",
+      "autovia"
+    ],
+    "senalId": null
+  }
+]

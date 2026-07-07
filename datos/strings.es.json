@@ -1,0 +1,202 @@
+{
+  "app": {
+    "nombre": "CARNET QUEST",
+    "claim": "Sácate el teórico jugando",
+    "cargando": "Arrancando motores…",
+    "offline": "Sin conexión. Tranqui: el juego va contigo.",
+    "instalar": "Añádelo a tu pantalla de inicio para jugar a pantalla completa"
+  },
+  "nav": {
+    "mapa": "Mapa",
+    "taller": "Taller",
+    "torre": "Torre",
+    "album": "Álbum",
+    "perfil": "Tú"
+  },
+  "mapa": {
+    "titulo": "N-CQ · Ruta del Carnet",
+    "bloqueado": "Vence al boss anterior para desbloquear",
+    "bloqueadoPase": "Se desbloquea con el Pase Carnet",
+    "bossDisponible": "BOSS DISPONIBLE",
+    "estrellas": "estrellas",
+    "jugar": "JUGAR"
+  },
+  "mundo": {
+    "mision": "Misión",
+    "boss": "BOSS",
+    "bossBloqueado": "Consigue {n} ★ en este mundo para retar al boss",
+    "superado": "SUPERADO",
+    "elegirMision": "Elige tu próxima misión"
+  },
+  "mision": {
+    "pregunta": "Pregunta",
+    "de": "de",
+    "combo": "COMBO",
+    "enRacha": "EN RACHA.",
+    "comboRoto": "Combo roto",
+    "siguiente": "SIGUIENTE",
+    "verTrampa": "Mira la trampa 👇",
+    "trampa": "LA TRAMPA",
+    "truco": "EL TRUCO",
+    "porQue": "POR QUÉ",
+    "abandonar": "¿Abandonar la misión? El progreso de esta misión se pierde.",
+    "salir": "Salir",
+    "seguir": "Seguir jugando"
+  },
+  "feedback": {
+    "aciertos": ["LIMPIO.", "Ni un radar te pilla.", "Eso es conducir con cabeza.", "Fino.", "Ese cruce ya es tuyo.", "Aprobado andante.", "Sin despeinarte."],
+    "fallos": ["PILLADO.", "Te la han colado.", "El examen hace exactamente esto.", "Tranqui, aquí es gratis fallar.", "Esta te la guardas."]
+  },
+  "resultado": {
+    "misionSuperada": "MISIÓN SUPERADA",
+    "misionFallida": "MISIÓN FALLIDA",
+    "nearMiss": "Te ha faltado {n} para {estrellas}",
+    "revancha": "REVANCHA",
+    "otraMision": "OTRA MISIÓN",
+    "alMapa": "Al mapa",
+    "xpGanada": "XP",
+    "cofre": "TOCA EL COFRE",
+    "cofreChapas": "+{n} Chapas",
+    "cofreProtector": "Protector de racha",
+    "cofreSkin": "¡Pieza de skin!",
+    "aciertos": "aciertos"
+  },
+  "boss": {
+    "aviso": "SIMULACRO. {n} preguntas. {fallos} fallos máximo. Sin música. Como el día D.",
+    "empezar": "EMPEZAR",
+    "huir": "Hoy no",
+    "victoria": "BOSS DERROTADO",
+    "derrota": "TE HA GANADO… ESTA VEZ",
+    "derrotaSub": "Sus preguntas ya están en tu Taller. Repáralas y vuelve.",
+    "fallosRestantes": "fallos permitidos",
+    "desbloqueado": "HAS DESBLOQUEADO: {mundo}"
+  },
+  "torre": {
+    "titulo": "DGT TOWER",
+    "sub": "El examen de verdad: 30 preguntas, 30 minutos, máximo 3 fallos.",
+    "empezar": "SUBIR A LA TORRE",
+    "limiteGratis": "Simulacro diario agotado. Vuelve mañana o pilla el Pase Carnet.",
+    "apto": "APTO",
+    "noApto": "NO APTO",
+    "fallos": "fallos",
+    "tiempo": "Tiempo",
+    "correccion": "Ver corrección completa",
+    "historial": "Tus simulacros",
+    "consejo": "Reserva tu examen cuando lleves 5 simulacros APTO seguidos y el predictor esté en 90 % o más.",
+    "compartirApto": "Compartir el APTO",
+    "compartirAptoTexto": "APTO en el simulacro de la DGT con solo {fallos} fallos, jugando a CARNET QUEST 🏁 Me saco el teórico jugando. ¿Te vienes?"
+  },
+  "taller": {
+    "titulo": "Taller de Errores",
+    "vacio": "Taller vacío. Ni un coche averiado. Máquina.",
+    "coche": "Avería",
+    "reparar": "REPARAR ({n}/2)",
+    "reparado": "REPARADO",
+    "seBusca": "SE BUSCA",
+    "recompensa": "Recompensa: {n} Chapas",
+    "bossSemanal": "BOSS DEL TALLER",
+    "bossSemanalSub": "Solo tus fallos. 10 preguntas. Sin piedad.",
+    "fallada": "Fallada {n} veces",
+    "sesionReparacion": "SESIÓN DE REPARACIÓN"
+  },
+  "album": {
+    "titulo": "Álbum de Señales",
+    "sub": "Acierta una señal 2 veces y es tuya para siempre.",
+    "completada": "COLECCIONADA",
+    "porCoger": "???",
+    "categoriaCompleta": "CATEGORÍA COMPLETA",
+    "progreso": "{n} de {total}"
+  },
+  "perfil": {
+    "titulo": "Tu carrera",
+    "rango": "Rango",
+    "predictor": "Predictor de Aprobado",
+    "predictorSub": "Calculado con tu precisión real, la cobertura del temario y tus simulacros. No infla. No miente.",
+    "predictorPocosDatos": "Juega más misiones para calibrar tu predictor. Necesita datos de verdad, no buenas intenciones.",
+    "racha": "Racha",
+    "dias": "días",
+    "protectores": "Protectores",
+    "chapas": "Chapas",
+    "estadisticas": "Estadísticas",
+    "precision": "Precisión (últimas 200)",
+    "cobertura": "Temario cubierto",
+    "respondidas": "Preguntas respondidas",
+    "ajustes": "Ajustes",
+    "sonido": "Sonido",
+    "haptics": "Vibración",
+    "exportar": "Exportar progreso",
+    "importar": "Importar progreso",
+    "importado": "Progreso importado. Bienvenido de vuelta.",
+    "importarError": "Ese archivo no es un progreso válido de Carnet Quest.",
+    "borrar": "Borrar progreso",
+    "borrarConfirma": "¿Seguro? Se borra TODO: XP, estrellas, álbum, racha. No hay vuelta atrás.",
+    "avisoLegal": "Carnet Quest es un preparador independiente del examen teórico. No somos la DGT ni tenemos relación con ella."
+  },
+  "diarias": {
+    "titulo": "Misiones del día",
+    "completada": "HECHA",
+    "recompensa": "+{n} Chapas",
+    "tipos": {
+      "aciertos": "Acierta {n} preguntas",
+      "aciertosMundo": "Acierta {n} en {mundo}",
+      "misiones": "Completa {n} misiones",
+      "reparar": "Repara {n} coches del Taller",
+      "boss": "Vence a {n} boss",
+      "combo": "Consigue un combo de {n}"
+    }
+  },
+  "racha": {
+    "titulo": "Racha",
+    "dia": "Día {n}",
+    "protegida": "Racha protegida con un protector. De nada.",
+    "perdida": "Racha perdida. El asfalto perdona, pero no olvida. Hoy empieza otra.",
+    "frases": {
+      "3": "Tres días. Esto empieza a ser costumbre.",
+      "7": "Una semana entera. Respeto.",
+      "12": "El asfalto ya te conoce.",
+      "30": "Un mes. Esto ya no es suerte, es oficio."
+    }
+  },
+  "contrarreloj": {
+    "titulo": "Contrarreloj semanal",
+    "sub": "90 segundos. Todas las que puedas. Contra tu récord.",
+    "record": "Tu récord",
+    "empezar": "A POR ÉL",
+    "nuevoRecord": "NUEVO RÉCORD",
+    "compartir": "Compartir tarjeta",
+    "compartirTexto": "He clavado {n} preguntas del teórico en 90 segundos en CARNET QUEST 🏁 ¿Me lo superas?"
+  },
+  "rango": {
+    "subida": "NUEVO RANGO",
+    "eres": "Ya eres"
+  },
+  "paywall": {
+    "titulo": "PASE CARNET",
+    "precio": "49,99 € · pago único · para siempre",
+    "gancho": "Llevas un {pct} % del temario dominado. Desbloquea el resto y ve a por el APTO.",
+    "beneficios": [
+      "Los 15 mundos completos, hasta el último boss",
+      "DGT Tower ilimitada: todos los simulacros que necesites",
+      "Taller avanzado: carteles SE BUSCA y boss semanal de tus fallos",
+      "Predictor de Aprobado y estadísticas completas",
+      "Álbum de Señales completo",
+      "Cosméticos exclusivos para tu coche"
+    ],
+    "honesto": "Sin suscripción. Sin anuncios. Lo gratis no caduca ni se recorta.",
+    "comprar": "DESBLOQUEAR TODO",
+    "canjear": "Ya tengo un código",
+    "canjearTitulo": "Introduce tu código",
+    "canjearOk": "PASE ACTIVADO. La N-CQ es toda tuya.",
+    "canjearError": "Código no válido. Revisa que esté bien escrito.",
+    "sinPasarela": "La tienda abre pronto. Si ya tienes un código, pégalo aquí.",
+    "luego": "Seguir con lo gratis"
+  },
+  "onboarding": {
+    "titulo": "CARNET QUEST",
+    "sub": "El juego con el que te sacas el teórico",
+    "regla1": "Juegas misiones cortas. Nada de temarios infinitos.",
+    "regla2": "Fallar mola: cada fallo te enseña la trampa del examen.",
+    "regla3": "El Predictor te dice, sin mentir, cuándo estás para aprobar.",
+    "empezar": "ARRANCAR"
+  }
+}

@@ -1,0 +1,842 @@
+{
+  "version": 2,
+  "categorias": [
+    {
+      "id": "peligro",
+      "nombre": "Peligro",
+      "icono": "⚠️",
+      "recompensaChapas": 150
+    },
+    {
+      "id": "prioridad",
+      "nombre": "Prioridad",
+      "icono": "🔻",
+      "recompensaChapas": 100
+    },
+    {
+      "id": "prohibicion",
+      "nombre": "Prohibición y restricción",
+      "icono": "⛔",
+      "recompensaChapas": 150
+    },
+    {
+      "id": "obligacion",
+      "nombre": "Obligación",
+      "icono": "🔵",
+      "recompensaChapas": 100
+    },
+    {
+      "id": "fin",
+      "nombre": "Fin de prohibición",
+      "icono": "⚪",
+      "recompensaChapas": 80
+    },
+    {
+      "id": "indicacion",
+      "nombre": "Indicación",
+      "icono": "🟦",
+      "recompensaChapas": 120
+    }
+  ],
+  "senales": [
+    {
+      "id": "P-1",
+      "nombre": "Intersección con prioridad",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "╋"
+    },
+    {
+      "id": "P-1a",
+      "nombre": "Intersección con prioridad sobre vía a la derecha",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "├"
+    },
+    {
+      "id": "P-2",
+      "nombre": "Intersección con prioridad de la derecha",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "+"
+    },
+    {
+      "id": "P-3",
+      "nombre": "Semáforos",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🚦"
+    },
+    {
+      "id": "P-4",
+      "nombre": "Intersección con circulación giratoria",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🔄"
+    },
+    {
+      "id": "P-5",
+      "nombre": "Puente móvil",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🌉"
+    },
+    {
+      "id": "P-6",
+      "nombre": "Cruce de tranvía",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🚊"
+    },
+    {
+      "id": "P-7",
+      "nombre": "Paso a nivel con barreras",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🚧"
+    },
+    {
+      "id": "P-8",
+      "nombre": "Paso a nivel sin barreras",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🚂"
+    },
+    {
+      "id": "P-13a",
+      "nombre": "Curva peligrosa hacia la derecha",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "↱"
+    },
+    {
+      "id": "P-13b",
+      "nombre": "Curva peligrosa hacia la izquierda",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "↰"
+    },
+    {
+      "id": "P-14a",
+      "nombre": "Curvas peligrosas hacia la derecha",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "∿"
+    },
+    {
+      "id": "P-14b",
+      "nombre": "Curvas peligrosas hacia la izquierda",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "∿"
+    },
+    {
+      "id": "P-15",
+      "nombre": "Perfil irregular",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "〰"
+    },
+    {
+      "id": "P-15a",
+      "nombre": "Resalto",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "⌒"
+    },
+    {
+      "id": "P-15b",
+      "nombre": "Badén",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "⌄"
+    },
+    {
+      "id": "P-16a",
+      "nombre": "Bajada con fuerte pendiente",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "10%↓"
+    },
+    {
+      "id": "P-16b",
+      "nombre": "Subida con fuerte pendiente",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "10%↑"
+    },
+    {
+      "id": "P-17",
+      "nombre": "Estrechamiento de calzada",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": ")("
+    },
+    {
+      "id": "P-18",
+      "nombre": "Obras",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "👷"
+    },
+    {
+      "id": "P-19",
+      "nombre": "Pavimento deslizante",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🚗〰"
+    },
+    {
+      "id": "P-20",
+      "nombre": "Peatones",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🚶"
+    },
+    {
+      "id": "P-21",
+      "nombre": "Niños",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🧒"
+    },
+    {
+      "id": "P-22",
+      "nombre": "Ciclistas",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🚲"
+    },
+    {
+      "id": "P-23",
+      "nombre": "Paso de animales domésticos",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🐄"
+    },
+    {
+      "id": "P-24",
+      "nombre": "Paso de animales en libertad",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🦌"
+    },
+    {
+      "id": "P-25",
+      "nombre": "Circulación en los dos sentidos",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "⇅"
+    },
+    {
+      "id": "P-26",
+      "nombre": "Desprendimiento",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🪨"
+    },
+    {
+      "id": "P-28",
+      "nombre": "Proyección de gravilla",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "∴"
+    },
+    {
+      "id": "P-29",
+      "nombre": "Viento transversal",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🌬"
+    },
+    {
+      "id": "P-33",
+      "nombre": "Visibilidad reducida",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🌫"
+    },
+    {
+      "id": "P-34",
+      "nombre": "Pavimento deslizante por hielo o nieve",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "❄"
+    },
+    {
+      "id": "P-35",
+      "nombre": "Trenzado",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "🔀"
+    },
+    {
+      "id": "P-50",
+      "nombre": "Otros peligros",
+      "categoria": "peligro",
+      "forma": "triangulo",
+      "glifo": "!"
+    },
+    {
+      "id": "R-1",
+      "nombre": "Ceda el paso",
+      "categoria": "prioridad",
+      "forma": "triangulo-inv",
+      "glifo": ""
+    },
+    {
+      "id": "R-2",
+      "nombre": "Detención obligatoria o stop",
+      "categoria": "prioridad",
+      "forma": "octogono",
+      "glifo": "STOP"
+    },
+    {
+      "id": "R-3",
+      "nombre": "Calzada con prioridad",
+      "categoria": "prioridad",
+      "forma": "rombo",
+      "glifo": ""
+    },
+    {
+      "id": "R-4",
+      "nombre": "Fin de prioridad",
+      "categoria": "prioridad",
+      "forma": "rombo",
+      "glifo": "",
+      "barra": true
+    },
+    {
+      "id": "R-5",
+      "nombre": "Prioridad al sentido contrario",
+      "categoria": "prioridad",
+      "forma": "circulo-rojo",
+      "glifo": "⇅"
+    },
+    {
+      "id": "R-6",
+      "nombre": "Prioridad respecto al sentido contrario",
+      "categoria": "prioridad",
+      "forma": "cuadrado-azul",
+      "glifo": "⇅"
+    },
+    {
+      "id": "R-100",
+      "nombre": "Circulación prohibida",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": ""
+    },
+    {
+      "id": "R-101",
+      "nombre": "Entrada prohibida",
+      "categoria": "prohibicion",
+      "forma": "circulo-direccion-prohibida",
+      "glifo": "▬"
+    },
+    {
+      "id": "R-102",
+      "nombre": "Entrada prohibida a vehículos de motor",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚗🏍"
+    },
+    {
+      "id": "R-104",
+      "nombre": "Entrada prohibida a motocicletas",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🏍"
+    },
+    {
+      "id": "R-105",
+      "nombre": "Entrada prohibida a ciclomotores",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🛵"
+    },
+    {
+      "id": "R-106",
+      "nombre": "Entrada prohibida a vehículos destinados al transporte de mercancías",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚚"
+    },
+    {
+      "id": "R-107",
+      "nombre": "Entrada prohibida a vehículos destinados al transporte de mercancías con mayor masa autorizada que la indicada",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚚5,5t"
+    },
+    {
+      "id": "R-108",
+      "nombre": "Entrada prohibida a vehículos que transporten mercancías peligrosas",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚚⚠"
+    },
+    {
+      "id": "R-109",
+      "nombre": "Entrada prohibida a vehículos que transporten mercancías explosivas o inflamables",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚚🔥"
+    },
+    {
+      "id": "R-113",
+      "nombre": "Entrada prohibida a vehículos de tracción animal",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🐴"
+    },
+    {
+      "id": "R-114",
+      "nombre": "Entrada prohibida a ciclos",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚲"
+    },
+    {
+      "id": "R-116",
+      "nombre": "Entrada prohibida a peatones",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚶"
+    },
+    {
+      "id": "R-118",
+      "nombre": "Entrada prohibida a vehículos de movilidad personal",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🛴"
+    },
+    {
+      "id": "R-120",
+      "nombre": "Zona de bajas emisiones",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚗💨"
+    },
+    {
+      "id": "R-200",
+      "nombre": "Prohibición de pasar sin detenerse",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "ADUANA"
+    },
+    {
+      "id": "R-201",
+      "nombre": "Limitación de masa",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "5,5t"
+    },
+    {
+      "id": "R-202",
+      "nombre": "Limitación de masa por eje",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "2t/eje"
+    },
+    {
+      "id": "R-203",
+      "nombre": "Limitación de longitud",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "⟷10m"
+    },
+    {
+      "id": "R-204",
+      "nombre": "Limitación de anchura",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "⟷2m"
+    },
+    {
+      "id": "R-205",
+      "nombre": "Limitación de altura",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "↕3,5m"
+    },
+    {
+      "id": "R-300",
+      "nombre": "Separación mínima",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "70m"
+    },
+    {
+      "id": "R-301",
+      "nombre": "Velocidad máxima",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "50"
+    },
+    {
+      "id": "R-302",
+      "nombre": "Giro a la derecha prohibido",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "↱",
+      "barra": true
+    },
+    {
+      "id": "R-303",
+      "nombre": "Giro a la izquierda prohibido",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "↰",
+      "barra": true
+    },
+    {
+      "id": "R-304",
+      "nombre": "Media vuelta prohibida",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "↩",
+      "barra": true
+    },
+    {
+      "id": "R-305",
+      "nombre": "Adelantamiento prohibido",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚗🚗"
+    },
+    {
+      "id": "R-306",
+      "nombre": "Adelantamiento prohibido para camiones",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "🚚🚗"
+    },
+    {
+      "id": "R-307",
+      "nombre": "Parada y estacionamiento prohibido",
+      "categoria": "prohibicion",
+      "forma": "circulo-azul-rojo",
+      "glifo": "✕"
+    },
+    {
+      "id": "R-308",
+      "nombre": "Estacionamiento prohibido",
+      "categoria": "prohibicion",
+      "forma": "circulo-azul-rojo",
+      "glifo": "／"
+    },
+    {
+      "id": "R-309",
+      "nombre": "Zona de estacionamiento limitado",
+      "categoria": "prohibicion",
+      "forma": "cuadrado-azul",
+      "glifo": "ZONA"
+    },
+    {
+      "id": "R-310",
+      "nombre": "Advertencias acústicas prohibidas",
+      "categoria": "prohibicion",
+      "forma": "circulo-rojo",
+      "glifo": "📯",
+      "barra": true
+    },
+    {
+      "id": "R-400a",
+      "nombre": "Sentido obligatorio",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "→"
+    },
+    {
+      "id": "R-400c",
+      "nombre": "Sentido obligatorio",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "↑"
+    },
+    {
+      "id": "R-401a",
+      "nombre": "Paso obligatorio",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "↘"
+    },
+    {
+      "id": "R-402",
+      "nombre": "Intersección de sentido giratorio obligatorio",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "🔄"
+    },
+    {
+      "id": "R-403a",
+      "nombre": "Únicas direcciones y sentidos permitidos",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "↑↱"
+    },
+    {
+      "id": "R-407a",
+      "nombre": "Vía reservada para ciclos o vía ciclista",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "🚲"
+    },
+    {
+      "id": "R-410",
+      "nombre": "Camino reservado para peatones",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "🚶"
+    },
+    {
+      "id": "R-411",
+      "nombre": "Velocidad mínima",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "30"
+    },
+    {
+      "id": "R-413",
+      "nombre": "Alumbrado de corto alcance (luces de cruce)",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "💡"
+    },
+    {
+      "id": "R-414",
+      "nombre": "Cadenas para nieve",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "⛓"
+    },
+    {
+      "id": "R-420",
+      "nombre": "Vía reservada para vehículos de movilidad personal",
+      "categoria": "obligacion",
+      "forma": "circulo-azul",
+      "glifo": "🛴"
+    },
+    {
+      "id": "R-500",
+      "nombre": "Fin de prohibiciones",
+      "categoria": "fin",
+      "forma": "circulo-fin",
+      "glifo": ""
+    },
+    {
+      "id": "R-501",
+      "nombre": "Fin de limitación de velocidad",
+      "categoria": "fin",
+      "forma": "circulo-fin",
+      "glifo": "50"
+    },
+    {
+      "id": "R-502",
+      "nombre": "Fin de la prohibición de adelantamiento",
+      "categoria": "fin",
+      "forma": "circulo-fin",
+      "glifo": "🚗🚗"
+    },
+    {
+      "id": "R-503",
+      "nombre": "Fin de la prohibición de adelantamiento para camiones",
+      "categoria": "fin",
+      "forma": "circulo-fin",
+      "glifo": "🚚🚗"
+    },
+    {
+      "id": "R-504",
+      "nombre": "Fin de zona de estacionamiento limitado",
+      "categoria": "fin",
+      "forma": "cuadrado-azul",
+      "glifo": "ZONA",
+      "barra": true
+    },
+    {
+      "id": "R-505",
+      "nombre": "Fin de vía reservada para ciclos",
+      "categoria": "fin",
+      "forma": "circulo-azul",
+      "glifo": "🚲",
+      "barra": true
+    },
+    {
+      "id": "R-506",
+      "nombre": "Fin de velocidad mínima",
+      "categoria": "fin",
+      "forma": "circulo-azul",
+      "glifo": "30",
+      "barra": true
+    },
+    {
+      "id": "S-1",
+      "nombre": "Autopista",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🛣"
+    },
+    {
+      "id": "S-1a",
+      "nombre": "Autovía",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🛣"
+    },
+    {
+      "id": "S-2",
+      "nombre": "Fin de autopista",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🛣",
+      "barra": true
+    },
+    {
+      "id": "S-2a",
+      "nombre": "Fin de autovía",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🛣",
+      "barra": true
+    },
+    {
+      "id": "S-3",
+      "nombre": "Vía reservada para automóviles",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🚗"
+    },
+    {
+      "id": "S-4",
+      "nombre": "Fin de vía reservada para automóviles",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🚗",
+      "barra": true
+    },
+    {
+      "id": "S-5",
+      "nombre": "Túnel",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "∩"
+    },
+    {
+      "id": "S-6",
+      "nombre": "Fin de túnel",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "∩",
+      "barra": true
+    },
+    {
+      "id": "S-7",
+      "nombre": "Velocidad máxima aconsejada",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "70"
+    },
+    {
+      "id": "S-11",
+      "nombre": "Calzada de sentido único",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "⬆"
+    },
+    {
+      "id": "S-13",
+      "nombre": "Situación de un paso para peatones",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🚶🦓"
+    },
+    {
+      "id": "S-15a",
+      "nombre": "Preseñalización de calzada sin salida",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "⊤"
+    },
+    {
+      "id": "S-17",
+      "nombre": "Estacionamiento",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "P"
+    },
+    {
+      "id": "S-18",
+      "nombre": "Lugar reservado para taxis",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "TAXI"
+    },
+    {
+      "id": "S-19",
+      "nombre": "Parada de autobuses",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🚌"
+    },
+    {
+      "id": "S-28",
+      "nombre": "Zona de estancia y juego (antes calle residencial)",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🏠⚽"
+    },
+    {
+      "id": "S-29",
+      "nombre": "Fin de zona de estancia y juego",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🏠⚽",
+      "barra": true
+    },
+    {
+      "id": "S-30",
+      "nombre": "Zona a 30",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "30"
+    },
+    {
+      "id": "S-31",
+      "nombre": "Fin de zona a 30",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "30",
+      "barra": true
+    },
+    {
+      "id": "S-33",
+      "nombre": "Senda ciclable",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🚶🚲"
+    },
+    {
+      "id": "S-51",
+      "nombre": "Carril reservado para autobuses",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "BUS"
+    },
+    {
+      "id": "S-500",
+      "nombre": "Entrada a poblado",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🏘"
+    },
+    {
+      "id": "S-510",
+      "nombre": "Fin de poblado",
+      "categoria": "indicacion",
+      "forma": "cuadrado-azul",
+      "glifo": "🏘",
+      "barra": true
+    }
+  ]
+}

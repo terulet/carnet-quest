@@ -1,0 +1,1349 @@
+[
+ {
+  "id": "M04-001",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Te encuentras una señal circular azul con una flecha blanca que apunta hacia la derecha. ¿Qué te está ordenando?",
+  "imagen": null,
+  "opciones": [
+   "Que el único sentido permitido es el que marca la flecha: hacia la derecha.",
+   "Que se recomienda girar a la derecha si te viene bien.",
+   "Que está prohibido girar a la derecha."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Es la señal R-400a de sentido obligatorio: solo puedes seguir la dirección que marca la flecha.",
+  "truco": "Círculo azul = orden. Si el círculo azul lleva flecha, esa flecha es tu único camino.",
+  "trampa": "Con las prisas hay quien la lee al revés: 'prohibido a la derecha'. Prohibir es cosa del borde rojo; el azul liso obliga.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "sentido-obligatorio"
+  ],
+  "senalId": "R-400a"
+ },
+ {
+  "id": "M04-002",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Círculo azul con flecha blanca vertical hacia arriba (R-400c). ¿Puedes girar en el próximo cruce?",
+  "imagen": null,
+  "opciones": [
+   "Sí, la flecha solo indica el sentido preferente.",
+   "Sí, siempre que lo señalices con suficiente antelación.",
+   "No: estás obligado a seguir de frente, la flecha marca el único sentido permitido."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "El R-400c obliga a circular en el sentido de la flecha: de frente. Nada de girar mientras dure la obligación.",
+  "truco": "Flecha azul hacia arriba = 'tira p'alante': ni derecha, ni izquierda, ni excusas.",
+  "trampa": "El 'siempre que señalices' suena prudente y legal, pero señalizar no convierte en legal una maniobra prohibida.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "sentido-obligatorio"
+  ],
+  "senalId": "R-400c"
+ },
+ {
+  "id": "M04-003",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Ante un refugio para peatones ves la señal R-401a, un círculo azul con flecha inclinada hacia abajo y a la derecha. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Detenerte antes del refugio y ceder el paso.",
+   "Pasar obligatoriamente por el lado que indica la flecha: la derecha del obstáculo.",
+   "Cambiar de sentido, porque la calzada está cortada."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Es la señal de paso obligatorio: te ordena dejar el obstáculo por el lado que señala la flecha.",
+  "truco": "Paso obligatorio = 'esquiva por aquí'. La flecha te dice de qué lado sortear el mueble.",
+  "trampa": "La flecha inclinada despista y hay quien la lee como desvío o cambio de sentido. Solo te dice por dónde pasar, no a dónde ir.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "paso-obligatorio"
+  ],
+  "senalId": "R-401a"
+ },
+ {
+  "id": "M04-004",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "¿Qué diferencia hay entre la señal de paso obligatorio (R-401a) y una de sentido obligatorio (R-400)?",
+  "imagen": null,
+  "opciones": [
+   "El paso obligatorio te dice por qué lado sortear un obstáculo; el sentido obligatorio, la única dirección que puedes seguir.",
+   "Ninguna: ambas obligan exactamente a lo mismo.",
+   "El paso obligatorio es solo para peatones y el sentido obligatorio, para vehículos."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La R-401a se coloca ante obstáculos o isletas y ordena por qué lado pasarlos; la R-400 ordena la dirección de la marcha.",
+  "truco": "Paso = por dónde esquivas; sentido = hacia dónde sigues.",
+  "trampa": "Como las dos son círculos azules con flecha, el examen juega a que las confundas. Si la flecha inclinada está junto a un obstáculo, es paso obligatorio.",
+  "explicacion_larga": "Las dos familias comparten uniforme (círculo azul, flecha blanca), pero trabajan en cosas distintas. Las señales de sentido obligatorio (R-400) se plantan en un punto de la vía y te dicen la única dirección que puede seguir tu vehículo: de frente, a la derecha, a la izquierda. Las de paso obligatorio (R-401a y compañía) aparecen pegadas a un obstáculo —una isleta, un refugio de peatones, unas obras— y su flecha inclinada te ordena por qué lado dejarlo. En el examen, fíjate en el contexto: si hay un obstáculo en medio de la calzada, la señal te está diciendo cómo esquivarlo, no a dónde ir.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "paso-obligatorio",
+   "sentido-obligatorio"
+  ],
+  "senalId": "R-401a"
+ },
+ {
+  "id": "M04-005",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Círculo azul con tres flechas blancas formando un anillo (R-402). ¿Qué indica?",
+  "imagen": null,
+  "opciones": [
+   "Proximidad de una zona donde el adelantamiento es libre.",
+   "Peligro por intersección donde no se distingue quién tiene prioridad.",
+   "Que llegas a una intersección de sentido giratorio obligatorio: debes circular en el sentido de las flechas."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Es la señal de intersección de sentido giratorio obligatorio: en la glorieta se circula siguiendo el sentido que marcan las flechas.",
+  "truco": "Flechas en corro = rotonda a la vista: gira como marcan las flechas, nunca a contracorriente.",
+  "trampa": "Existe un triángulo casi gemelo (P-4) que solo avisa del peligro. El azul redondo no avisa: obliga.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "glorieta"
+  ],
+  "senalId": "R-402"
+ },
+ {
+  "id": "M04-006",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "¿Qué significa la señal R-407a, un círculo azul con una bicicleta blanca?",
+  "imagen": null,
+  "opciones": [
+   "Que esa vía queda reservada para los ciclos: los ciclistas deben usarla y el resto no puede.",
+   "Que está prohibida la circulación de bicicletas.",
+   "Que se recomienda a los ciclistas usar esa vía, sin obligación."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Es la vía reservada para ciclos: de uso obligatorio para ellos y vedada para los demás usuarios.",
+  "truco": "Bici en azul = carril VIP de las bicis: ellas deben entrar y tú no puedes.",
+  "trampa": "La bici prohibida va en círculo con borde rojo (R-114). El fondo azul liso cambia la película: de prohibición a reserva.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "via-ciclista"
+  ],
+  "senalId": "R-407a"
+ },
+ {
+  "id": "M04-007",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Conduces un ciclomotor y ves la señal de vía reservada para ciclos (R-407a). ¿Puedes circular por esa vía?",
+  "imagen": null,
+  "opciones": [
+   "Sí, porque el ciclomotor es un vehículo de dos ruedas, como el ciclo.",
+   "Sí, pero solo si en ese momento no circulan bicicletas por ella.",
+   "No: la vía está reservada a los ciclos, y un ciclomotor tiene motor y no lo es."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "El ciclomotor no es un ciclo: tiene motor. La reserva de la R-407a no le alcanza, así que tiene prohibido usarla.",
+  "truco": "Si tiene pedales, entra; si tiene motor, a la calzada.",
+  "trampa": "El parecido físico entre bici y ciclomotor es el anzuelo. La clave no es el tamaño, es la definición: ciclo = propulsado por personas.",
+  "explicacion_larga": "Un ciclo es un vehículo propulsado exclusivamente por el esfuerzo muscular de quien lo monta: la bicicleta es el ejemplo estrella. Un ciclomotor, en cambio, lleva motor y pertenece a otra categoría de vehículos. La señal R-407a reserva la vía a los ciclos: para ellos es de uso obligatorio y para el resto de usuarios —ciclomotores incluidos— queda prohibida. Que ambos tengan dos ruedas y tamaño parecido es irrelevante: en tráfico mandan las definiciones legales, no el parecido físico.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "via-ciclista",
+   "ciclomotor"
+  ],
+  "senalId": "R-407a"
+ },
+ {
+  "id": "M04-008",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Círculo azul con un peatón blanco caminando (R-410). ¿Qué indica?",
+  "imagen": null,
+  "opciones": [
+   "Peligro por la proximidad de peatones.",
+   "Camino reservado para peatones: ellos deben usarlo y los vehículos no pueden entrar.",
+   "Paso de peatones a 150 metros."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Es el camino reservado para peatones: de uso obligatorio para ellos y prohibido para los vehículos.",
+  "truco": "En este camino mandan las suelas, no las ruedas.",
+  "trampa": "El peatón también sale en un triángulo (peligro) y en señales de indicación. En azul redondo no avisa ni informa: reserva el camino.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "peatones"
+  ],
+  "senalId": "R-410"
+ },
+ {
+  "id": "M04-009",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Ves un círculo azul con el número 30 en blanco. ¿Qué te ordena?",
+  "imagen": null,
+  "opciones": [
+   "Circular como mínimo a 30 km/h, salvo causa justificada.",
+   "No superar los 30 km/h.",
+   "Que estás entrando en una zona 30."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Es la señal R-411 de velocidad mínima: prohíbe circular a menos de 30 km/h salvo casos justificados.",
+  "truco": "Azul empuja, rojo frena: el 30 azul te dice 'como mínimo, 30'.",
+  "trampa": "El mismo número en círculo con borde rojo o en cuadrado azul significa otra cosa (máxima y zona 30). Aquí el color y la forma son la pregunta entera.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "velocidad-minima"
+  ],
+  "senalId": "R-411"
+ },
+ {
+  "id": "M04-010",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Bajo una señal de velocidad mínima de 30 km/h, ¿en algún caso puedes circular más despacio?",
+  "imagen": null,
+  "opciones": [
+   "No, en ningún caso: la señal obliga siempre.",
+   "Sí, cuando exista una causa justificada, como tráfico denso, obras o mala visibilidad.",
+   "Sí, siempre que actives las luces de emergencia."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La velocidad mínima obliga salvo causa justificada: si la circulación, la vía o la visibilidad no permiten alcanzarla, puedes ir más despacio.",
+  "truco": "La mínima manda... hasta que la realidad mande más: atasco, niebla u obras te dan permiso para bajar.",
+  "trampa": "El 'en ningún caso' suena a disciplina de examen, pero la norma deja la puerta abierta a los casos justificados. Desconfía de los absolutos.",
+  "explicacion_larga": "La señal R-411 prohíbe circular por debajo de la velocidad indicada, pero la propia norma añade la válvula de escape: salvo casos justificados. Si hay congestión, obras, niebla, lluvia intensa o cualquier circunstancia que haga insegura esa velocidad, no solo puedes ir más despacio: debes hacerlo, porque la obligación de adecuar la velocidad a las condiciones está siempre por encima. La señal existe para evitar conductores injustificadamente lentos que entorpecen el tráfico, no para obligarte a correr cuando la vía no lo permite.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "velocidad-minima"
+  ],
+  "senalId": "R-411"
+ },
+ {
+  "id": "M04-011",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "La señal R-413 muestra un faro encendido sobre fondo azul. Si te la encuentras a mediodía con un sol espléndido, ¿qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Nada: solo obliga de noche o con poca visibilidad.",
+   "Encender la luz de posición como cortesía.",
+   "Encender al menos el alumbrado de corto alcance (luces de cruce), aunque sea de día."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La señal obliga a circular con el alumbrado de corto alcance encendido, como mínimo, también de día.",
+  "truco": "Bombilla azul = luces de cruce sí o sí, aunque luzca el sol.",
+  "trampa": "El sol es el cebo: parece absurdo dar las luces a mediodía, pero la señal no distingue entre día y noche. Túneles y tramos peligrosos la usan mucho.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "alumbrado"
+  ],
+  "senalId": "R-413"
+ },
+ {
+  "id": "M04-012",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "En un puerto de montaña te encuentras la señal R-414, con un neumático y cadenas. ¿Qué implica?",
+  "imagen": null,
+  "opciones": [
+   "Que a partir de ahí solo puedes circular con cadenas u otros dispositivos antideslizantes autorizados.",
+   "Que se recomienda llevar cadenas en el maletero por si acaso.",
+   "Que la vía está cerrada para todos los vehículos."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Obliga a circular usando cadenas para nieve u otros dispositivos antideslizantes autorizados, como los neumáticos de invierno.",
+  "truco": "Cadenas puestas o neumático de invierno: la señal no pide llevarlas, pide usarlas.",
+  "trampa": "Lo de 'llevarlas por si acaso' pica porque es lo que hacemos todos, pero la obligación es circular con ellas montadas, no de acompañantes.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "cadenas-nieve",
+   "invierno"
+  ],
+  "senalId": "R-414"
+ },
+ {
+  "id": "M04-013",
+  "mundo": 4,
+  "tema": "Señales de obligación",
+  "pregunta": "Círculo azul con dos flechas blancas: una recta hacia arriba y otra girando a la derecha (R-403a). ¿Qué movimientos puedes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Cualquiera, porque las flechas son orientativas.",
+   "Solo seguir de frente o girar a la derecha: son las únicas direcciones permitidas.",
+   "Solo girar a la derecha; la flecha recta es para otro carril."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La señal marca las únicas direcciones y sentidos permitidos en la intersección: de frente o a la derecha.",
+  "truco": "Las flechas azules son el menú completo: lo que no está en la carta, no se sirve.",
+  "trampa": "Pensar que cada flecha va con un carril distinto es un clásico. La señal vale para el punto donde está: dos opciones y ninguna más.",
+  "tags": [
+   "senales",
+   "obligacion",
+   "direcciones-permitidas"
+  ],
+  "senalId": "R-403a"
+ },
+ {
+  "id": "M04-014",
+  "mundo": 4,
+  "tema": "Fin de prohibición",
+  "pregunta": "¿Qué significa la señal R-500: un círculo blanco cruzado por una banda de trazos en diagonal?",
+  "imagen": null,
+  "opciones": [
+   "Que dejan de aplicarse todas las prohibiciones señaladas antes para los vehículos en movimiento.",
+   "Que empieza un tramo con prohibiciones más severas.",
+   "Que finaliza la vía y debes detenerte."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Es el fin de prohibiciones: desde ahí caducan las prohibiciones anteriores que afectan a los vehículos en movimiento.",
+  "truco": "La banda diagonal es la goma de borrar de las señales: pasa página con lo prohibido.",
+  "trampa": "Ese círculo apagado, sin rojo ni azul, hay quien lo lee como 'aquí acaba algo, quizá la vía'. Lo que acaba son las prohibiciones, no la carretera.",
+  "tags": [
+   "senales",
+   "fin-prohibicion"
+  ],
+  "senalId": "R-500"
+ },
+ {
+  "id": "M04-015",
+  "mundo": 4,
+  "tema": "Fin de prohibición",
+  "pregunta": "Pasas junto a una señal de fin de prohibiciones (R-500). Unos metros antes había una de estacionamiento prohibido. ¿Puedes aparcar ya?",
+  "imagen": null,
+  "opciones": [
+   "Sí: el fin de prohibiciones lo borra todo.",
+   "Sí, pero solo durante un máximo de 5 minutos.",
+   "No: la R-500 solo levanta las prohibiciones que afectan a los vehículos en movimiento, y aparcar no lo es."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "El fin de prohibiciones no alcanza a la parada ni al estacionamiento, que afectan a vehículos detenidos.",
+  "truco": "La goma de borrar solo borra lo que se mueve: velocidad, adelantamientos, bocinas... lo aparcado sigue prohibido.",
+  "trampa": "El nombre 'fin de prohibiciones' promete más de lo que da. El matiz 'vehículos en movimiento' es la letra pequeña que decide la pregunta.",
+  "explicacion_larga": "La R-500 señala el punto desde el que dejan de aplicarse todas las prohibiciones señaladas anteriormente... para los vehículos en movimiento. Esa coletilla es la clave: la limitación de velocidad, la prohibición de adelantar o la de usar señales acústicas afectan a vehículos que circulan, y todas caducan con la señal. La parada y el estacionamiento, en cambio, afectan a vehículos detenidos, así que sus prohibiciones sobreviven a la R-500 y solo terminan donde lo indique su propia señalización. Si antes no podías aparcar, después de esta señal sigues sin poder.",
+  "tags": [
+   "senales",
+   "fin-prohibicion",
+   "estacionamiento"
+  ],
+  "senalId": "R-500"
+ },
+ {
+  "id": "M04-016",
+  "mundo": 4,
+  "tema": "Fin de prohibición",
+  "pregunta": "¿Qué indica la señal R-501, un círculo blanco con un '50' en gris cruzado por una banda de trazos diagonal?",
+  "imagen": null,
+  "opciones": [
+   "Que la velocidad máxima pasa a ser de 50 km/h.",
+   "El fin de la limitación de 50 km/h: vuelven a regir los límites genéricos de la vía.",
+   "Que la velocidad mínima es de 50 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Marca el fin de la limitación de velocidad de 50 km/h: desde ahí se aplican los límites generales de esa vía.",
+  "truco": "Número gris y tachado = límite jubilado: vuelve a mandar el límite genérico de la vía.",
+  "trampa": "'Fin del límite' no significa 'barra libre': al caducar el 50 no corres lo que quieras, corres lo que diga el límite genérico de la vía.",
+  "tags": [
+   "senales",
+   "fin-prohibicion",
+   "velocidad"
+  ],
+  "senalId": "R-501"
+ },
+ {
+  "id": "M04-017",
+  "mundo": 4,
+  "tema": "Fin de prohibición",
+  "pregunta": "La señal R-502 muestra dos coches en gris con la banda diagonal de trazos. ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Fin de la prohibición de adelantamiento: puedes volver a adelantar si las normas generales lo permiten.",
+   "Que el adelantamiento pasa a estar prohibido.",
+   "Que puedes adelantar incluso pisando línea continua."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Es el fin de la prohibición de adelantamiento; a partir de ahí, adelantar vuelve a regirse por las normas generales.",
+  "truco": "Coches grises tachados = castigo cumplido: puedes adelantar... si el resto de normas te deja.",
+  "trampa": "La opción de la línea continua tienta al optimista. Que caduque una señal no te da superpoderes sobre las marcas viales.",
+  "tags": [
+   "senales",
+   "fin-prohibicion",
+   "adelantamiento"
+  ],
+  "senalId": "R-502"
+ },
+ {
+  "id": "M04-018",
+  "mundo": 4,
+  "tema": "Fin de prohibición",
+  "pregunta": "Conduces un turismo y ves la señal R-503, fin de la prohibición de adelantamiento para camiones. ¿Te afecta en algo?",
+  "imagen": null,
+  "opciones": [
+   "Sí: ahora tú tampoco puedes adelantar.",
+   "Sí: te obliga a facilitar el adelantamiento de los camiones.",
+   "No: solo levanta una prohibición que pesaba sobre los camiones; a tu turismo no le afecta."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La R-503 pone fin a la prohibición de adelantar impuesta a los camiones; al turismo ni le iba ni le viene.",
+  "truco": "Cada señal habla con su público: si el dibujo es un camión, el mensaje es para camiones.",
+  "trampa": "Ver 'prohibición' y 'adelantamiento' juntos activa la alarma general. Fíjate en quién protagoniza el pictograma antes de darte por aludido.",
+  "tags": [
+   "senales",
+   "fin-prohibicion",
+   "camiones"
+  ],
+  "senalId": "R-503"
+ },
+ {
+  "id": "M04-019",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "¿Qué indica la señal S-1, cuadrada azul con el pictograma de una calzada con puente?",
+  "imagen": null,
+  "opciones": [
+   "Que la autopista está cortada al tráfico.",
+   "El principio de una autopista, donde empiezan a regir sus normas especiales de circulación.",
+   "Una autopista de peaje a 300 metros."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La S-1 marca el principio de autopista y el punto desde el que se aplican las normas especiales de ese tipo de vía.",
+  "truco": "Cuadrado azul con 'puente y carriles' = bienvenida a la autopista: normas especiales desde ya.",
+  "trampa": "El cebo del peaje funciona porque asociamos autopista con pagar. La señal no habla de dinero, habla de normas.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "autopista"
+  ],
+  "senalId": "S-1"
+ },
+ {
+  "id": "M04-020",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "La señal S-1a se parece muchísimo a la de autopista. ¿Qué indica exactamente?",
+  "imagen": null,
+  "opciones": [
+   "El principio de una autovía, con sus normas especiales de circulación.",
+   "El principio de una vía reservada para automóviles.",
+   "Un área de servicio con acceso directo."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La S-1a indica el principio de autovía: desde ahí rigen las normas especiales de circulación en autovía.",
+  "truco": "Autopista y autovía son primas hermanas: mismas normas especiales, distinto apellido.",
+  "trampa": "La 'vía reservada para automóviles' también existe (S-3) y es el tercer primo que mete cizaña en el examen. Son tres pictogramas distintos.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "autovia"
+  ],
+  "senalId": "S-1a"
+ },
+ {
+  "id": "M04-021",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "¿Qué te dice la señal S-2, la de autopista cruzada por una franja roja?",
+  "imagen": null,
+  "opciones": [
+   "Que la autopista está en obras.",
+   "Que está prohibido entrar en la autopista.",
+   "Que la autopista termina: dejan de aplicarse sus normas especiales."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "La S-2 señala el fin de la autopista (y la S-2a, el de la autovía): ahí acaban sus normas especiales.",
+  "truco": "Franja roja encima = fin de la película: la vía especial se acaba.",
+  "trampa": "El rojo huele a prohibición y ahí pican muchos. En las señales de indicación, la franja no prohíbe: clausura.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "autopista"
+  ],
+  "senalId": "S-2"
+ },
+ {
+  "id": "M04-022",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Cuadrado azul con una gran flecha blanca vertical (S-11). ¿Qué te está contando?",
+  "imagen": null,
+  "opciones": [
+   "Que debes seguir obligatoriamente de frente.",
+   "Que la calzada es de sentido único: nadie circulará de frente en sentido contrario.",
+   "Que empieza un tramo con velocidad mínima obligatoria."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La S-11 indica calzada de sentido único: todos los vehículos circulan en el mismo sentido.",
+  "truco": "Cuadrado informa: 'tranquilo, de frente no viene nadie'.",
+  "trampa": "La misma flecha en círculo azul sí obliga. El cuadrado no te ordena ir recto: te describe cómo es la calzada.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "sentido-unico"
+  ],
+  "senalId": "S-11"
+ },
+ {
+  "id": "M04-023",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "¿En qué se diferencian la señal S-11 (cuadrada, flecha blanca) y la R-400c (circular, flecha blanca)?",
+  "imagen": null,
+  "opciones": [
+   "La cuadrada informa de que la calzada es de sentido único; la circular te obliga a seguir la dirección de la flecha.",
+   "Son equivalentes: ambas obligan a ir de frente.",
+   "La circular es para vías urbanas y la cuadrada para interurbanas."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La S-11 es de indicación: describe la calzada. La R-400c es de obligación: ordena tu movimiento.",
+  "truco": "Triángulo avisa, círculo manda, cuadrado informa: la misma flecha cambia de oficio según el marco.",
+  "trampa": "Mismo color, misma flecha... el examen cuenta con que solo mires el dibujo. La forma del cartel es la mitad del mensaje.",
+  "explicacion_larga": "La forma de la señal es su tono de voz. La R-400c es un círculo, y los círculos azules ordenan: en ese punto estás obligado a seguir de frente, sin alternativa. La S-11 es un cuadrado, y los cuadrados informan: te describen que la calzada por la que circulas es de sentido único, lo que te permite saber, por ejemplo, que nadie vendrá de frente. En la práctica sus efectos pueden parecerse, pero en el examen te preguntarán qué ES cada señal, y ahí la forma decide: círculo manda, cuadrado informa.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "obligacion",
+   "sentido-unico"
+  ],
+  "senalId": "S-11"
+ },
+ {
+  "id": "M04-024",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Antes de una intersección ves la señal S-15a: un cuadrado azul donde una de las calles dibujadas acaba en un tope rojo. ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Que esa calle está reservada a residentes.",
+   "Que hay un control policial en esa calle.",
+   "Que esa calle no tiene salida: si entras, tendrás que volver por donde viniste."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Es la preseñalización de calzada sin salida: te avisa antes de entrar de qué ramal de la intersección no tiene continuidad.",
+  "truco": "Es el plano del callejón: la rayita roja tapa la salida. Ahórrate el paseo.",
+  "trampa": "El toque rojo hace pensar en prohibiciones o controles. Solo es el 'tapón' del callejón en el mini-mapa de la señal.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "sin-salida"
+  ],
+  "senalId": "S-15a"
+ },
+ {
+  "id": "M04-025",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "¿Qué diferencia hay entre la señal S-13 (cuadrada azul, con un peatón sobre franjas) y el triángulo de peligro por peatones?",
+  "imagen": null,
+  "opciones": [
+   "Ninguna: ambas obligan a detenerse ante el paso.",
+   "La S-13 indica dónde está situado el paso de peatones; el triángulo solo advierte de que se aproxima uno.",
+   "La S-13 va dirigida a los peatones y el triángulo, a los conductores."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La S-13 señala la situación exacta de un paso de peatones; la de peligro únicamente avisa de su proximidad.",
+  "truco": "El triángulo dice 'ojo, que viene'; el cuadrado dice 'es aquí'.",
+  "trampa": "Lo de 'obligan a detenerse' suena responsable, pero ninguna de las dos ordena parar en seco: detenerte dependerá de si hay peatones cruzando.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "paso-peatones"
+  ],
+  "senalId": "S-13"
+ },
+ {
+  "id": "M04-026",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Un cuadrado azul con una gran 'P' blanca (S-17). ¿Qué indica?",
+  "imagen": null,
+  "opciones": [
+   "Un lugar donde el estacionamiento está permitido.",
+   "Que está prohibido estacionar a partir de la señal.",
+   "Una parada de autobús."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "La S-17 indica un emplazamiento donde puedes estacionar; sus paneles pueden matizar cómo, cuándo o para quién.",
+  "truco": "P de 'puedes aparcar'. La P amable siempre va en azul y sin tachar.",
+  "trampa": "La P con banda roja o el borde rojo cambian el mensaje a prohibición. Sin rojo de por medio, la P es una invitación.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "estacionamiento"
+  ],
+  "senalId": "S-17"
+ },
+ {
+  "id": "M04-027",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Buscas aparcamiento y ves un hueco libre justo donde está la señal S-18, con la palabra 'TAXI'. ¿Puedes dejar ahí el coche?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si es fuera del horario laboral.",
+   "Sí, mientras no molestes a ningún taxi.",
+   "No: ese espacio está reservado para la parada de los taxis."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La S-18 reserva ese lugar a los taxis; el resto de conductores no puede estacionar en él.",
+  "truco": "Donde pone TAXI, tu coche es un intruso con la grúa en camino.",
+  "trampa": "El 'mientras no molestes' es la excusa de bar que el examen adora. Reservado significa reservado, haya taxis a la vista o no.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "taxi",
+   "estacionamiento"
+  ],
+  "senalId": "S-18"
+ },
+ {
+  "id": "M04-028",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Entras en una calle residencial señalizada con la S-28. ¿A qué velocidad máxima puedes circular?",
+  "imagen": null,
+  "opciones": [
+   "A 30 km/h.",
+   "A 20 km/h (el límite antiguo, antes del RD 465/2025).",
+   "A 10 km/h."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Desde el RD 465/2025 la S-28 pasó a llamarse ‘zona de estancia y juego’ y su límite bajó de 20 a 10 km/h, siempre con prioridad peatonal total.",
+  "truco": "Zona de estancia y juego (la casita con el balón): 10 km/h, que aquí juegan los niños en la calzada.",
+  "trampa": "El 20 era el límite de siempre y por eso pica: desde 2025 son 10. El 30 es de las zonas 30, otra cosa.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "zona-estancia-juego",
+   "velocidad"
+  ],
+  "senalId": "S-28"
+ },
+ {
+  "id": "M04-029",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Dentro de una zona de estancia y juego (S-28, antigua calle residencial), ¿cuál de estas afirmaciones es correcta?",
+  "imagen": null,
+  "opciones": [
+   "Los peatones pueden usar toda la calzada y los juegos están permitidos; solo se estaciona en los lugares señalizados.",
+   "Los peatones deben ir por la acera y ceder el paso a los coches.",
+   "Se puede estacionar en cualquier punto mientras no se moleste."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "En la calle residencial los peatones tienen prioridad y pueden ocupar toda la vía; el estacionamiento se limita a los sitios marcados.",
+  "truco": "En la S-28 el coche es el invitado: peatones y juegos mandan, y tú aparcas solo donde te digan.",
+  "trampa": "Aplicar las normas urbanas 'de siempre' (acera para peatones, aparcar donde quepa) es el error natural. La residencial invierte los papeles.",
+  "explicacion_larga": "La zona de estancia y juego da la vuelta a la jerarquía habitual de la ciudad: la vía es primero de los peatones, que pueden caminar y cruzar por cualquier punto de la calzada, y hasta los juegos y deportes están autorizados en ella. Los vehículos entran como invitados: velocidad máxima de 10 km/h, obligación de ceder el paso a los peatones y estacionamiento permitido únicamente en los lugares designados por señales o marcas. La señal S-28 activa todas estas normas y la S-29 las desactiva. Si el examen te describe una calle donde los niños juegan legalmente en la calzada, ya sabes dónde estás.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "calle-residencial",
+   "peatones"
+  ],
+  "senalId": "S-28"
+ },
+ {
+  "id": "M04-030",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "¿Qué indica la señal S-29?",
+  "imagen": null,
+  "opciones": [
+   "El comienzo de una zona de estancia y juego.",
+   "Una zona de juegos infantiles.",
+   "El fin de la zona de estancia y juego: vuelven a regir las normas generales de circulación."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "La S-29 es la señal de zona de estancia y juego atravesada por una franja: marca su final y vuelven a regir las normas generales.",
+  "truco": "Señal repetida y tachada = capítulo cerrado: se acabó el paseo a 10.",
+  "trampa": "Al ver la casita y el balón, la mitad responde 'comienzo' sin fijarse en la franja que lo tacha todo.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "calle-residencial"
+  ],
+  "senalId": "S-29"
+ },
+ {
+  "id": "M04-031",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Pasas junto a la señal S-30, 'Zona a 30'. ¿Qué implica?",
+  "imagen": null,
+  "opciones": [
+   "Que solo la calle donde está colocada la señal se limita a 30 km/h.",
+   "Que en toda la zona la velocidad máxima es de 30 km/h, hasta la señal de fin de zona (S-31).",
+   "Que la velocidad mínima en la zona es de 30 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "La S-30 limita a 30 km/h todas las vías de la zona, hasta que la S-31 le pone fin.",
+  "truco": "Zona 30 = burbuja entera a 30: no caduca al girar la esquina, caduca con la señal tachada.",
+  "trampa": "Pensar que el límite muere en el primer cruce, como pasa con otras señales, es la trampa. Las señales de zona valen para toda la zona.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "zona-30",
+   "velocidad"
+  ],
+  "senalId": "S-30"
+ },
+ {
+  "id": "M04-032",
+  "mundo": 4,
+  "tema": "Señales de indicación",
+  "pregunta": "Cuadrado azul con un panel que muestra '70' (S-7, velocidad máxima aconsejada). ¿Estás obligado a no superar los 70 km/h?",
+  "imagen": null,
+  "opciones": [
+   "No: es una recomendación para condiciones favorables, no una obligación; el límite legal lo fijan otras señales.",
+   "Sí: equivale a una señal de velocidad máxima.",
+   "Sí, pero solo de noche."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La S-7 aconseja no superar esa velocidad ni siquiera con condiciones favorables; quien obliga es la señal de límite, no esta.",
+  "truco": "Cuadrado aconseja, círculo ordena. Eso sí: el consejo del cuadrado vale oro en curvas y salidas.",
+  "trampa": "Un número grande en una señal dispara el modo 'límite'. Mira el marco: azul cuadrado = sugerencia seria, no norma sancionable.",
+  "tags": [
+   "senales",
+   "indicacion",
+   "velocidad-aconsejada"
+  ],
+  "senalId": "S-7"
+ },
+ {
+  "id": "M04-033",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Como norma general, ¿de qué color son las marcas viales pintadas en la calzada?",
+  "imagen": null,
+  "opciones": [
+   "Amarillas.",
+   "Blancas.",
+   "Azules."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Las marcas viales son blancas por norma general; las amarillas y las azules son casos especiales con significados propios.",
+  "truco": "La carretera escribe en blanco; cuando escribe en amarillo o azul es que quiere contarte algo especial.",
+  "trampa": "Las zonas azules y los bordillos amarillos son tan visibles en ciudad que parecen la norma. Son la excepción.",
+  "tags": [
+   "marcas-viales",
+   "colores"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-034",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Una línea longitudinal continua separa los dos sentidos de la calzada. ¿Qué te prohíbe?",
+  "imagen": null,
+  "opciones": [
+   "Atravesarla y circular sobre ella.",
+   "Solo adelantar; puedes pisarla para girar.",
+   "Nada: es una simple referencia visual."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La línea continua no se cruza ni se pisa: prohíbe atravesarla y circular sobre ella.",
+  "truco": "Línea continua = muro pintado: bajito, pero muro.",
+  "trampa": "Lo de pisarla 'solo para girar' cuela porque parece poca cosa. Girar cruzándola es exactamente lo que prohíbe.",
+  "tags": [
+   "marcas-viales",
+   "linea-continua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-035",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "¿Qué te permite una línea longitudinal discontinua?",
+  "imagen": null,
+  "opciones": [
+   "Nada: tiene el mismo valor que la continua.",
+   "Estacionar sobre ella.",
+   "Rebasarla cuando la maniobra lo exija, por ejemplo para adelantar, siempre con seguridad."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "La discontinua puede cruzarse para adelantar, cambiar de carril o girar, siempre que la maniobra sea segura.",
+  "truco": "Discontinua = puerta entreabierta: pasa, pero mirando.",
+  "trampa": "Que se pueda cruzar no la convierte en alfombra: la maniobra tiene que estar justificada y hacerse con seguridad.",
+  "tags": [
+   "marcas-viales",
+   "linea-discontinua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-036",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "¿Qué significan dos líneas continuas adosadas en el centro de la calzada?",
+  "imagen": null,
+  "opciones": [
+   "Que esa calzada tiene prioridad sobre las transversales.",
+   "Lo mismo que una continua, para los dos sentidos: nadie puede cruzarlas ni circular sobre ellas.",
+   "Que está permitido adelantar extremando la precaución."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La doble continua funciona como una continua vista desde cualquiera de los dos sentidos: prohibido cruzarla y circular sobre ella.",
+  "truco": "Dos muros seguidos: da igual de qué lado vivas, no se salta.",
+  "trampa": "Lo de 'prioridad' suena a señal de calzada con prioridad y no tiene nada que ver: esto es separación de sentidos, no jerarquía.",
+  "tags": [
+   "marcas-viales",
+   "doble-continua"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-037",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "En el centro de la calzada hay una línea continua y una discontinua adosadas. ¿A cuál debes hacer caso?",
+  "imagen": null,
+  "opciones": [
+   "A la que tengas más cerca de tu lado.",
+   "Siempre a la continua, que es más restrictiva.",
+   "A ninguna: al estar juntas se anulan mutuamente."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Con líneas adosadas, cada conductor obedece la marca situada más cerca de su lado de circulación.",
+  "truco": "Manda la de tu lado: la otra línea es problema del que viene de frente.",
+  "trampa": "'Gana la más restrictiva' parece el criterio prudente y por eso engancha. La norma real es más simple: la tuya es la que toca tu carril.",
+  "tags": [
+   "marcas-viales",
+   "linea-adosada"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-038",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Empezaste a adelantar con línea discontinua a tu lado y, al ir a volver a tu carril, la línea de tu lado ya es continua adosada a la discontinua. ¿Puedes regresar?",
+  "imagen": null,
+  "opciones": [
+   "No: debes seguir por el carril izquierdo hasta que reaparezca la discontinua.",
+   "No: debes frenar y deshacer el adelantamiento marcha atrás.",
+   "Sí: la norma permite volver a tu posición normal en la calzada tras un adelantamiento iniciado de forma permitida."
+  ],
+  "correcta": 2,
+  "dificultad": 5,
+  "explicacion_corta": "Si el adelantamiento se inició legalmente, puedes volver a tu carril aunque la línea de tu lado haya pasado a ser continua.",
+  "truco": "Lo que empieza legal, acaba legal: la continua no te deja atrapado en el carril contrario.",
+  "trampa": "Quedarse circulando por la izquierda 'para no pisar la continua' es la respuesta de pánico, y es justo lo prohibido: volver a tu sitio es lo correcto y está permitido.",
+  "explicacion_larga": "La regla de las líneas adosadas dice que solo cuenta la línea situada más cerca de tu lado. Pero el reglamento añade una precisión pensada exactamente para este caso: esa regla no impide que el conductor que ha efectuado un adelantamiento permitido vuelva a ocupar su lugar normal en la calzada. Traducción: si iniciaste la maniobra cuando tu línea era discontinua (adelantamiento legal), completarla y regresar a tu carril no solo está permitido, es lo que debes hacer cuanto antes. Lo que sí sería infracción es iniciar un nuevo adelantamiento teniendo ya la continua de tu lado.",
+  "tags": [
+   "marcas-viales",
+   "linea-adosada",
+   "adelantamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-039",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Ante un stop, ¿qué indica la línea blanca continua pintada de lado a lado del carril (línea de detención)?",
+  "imagen": null,
+  "opciones": [
+   "El punto a partir del cual puedes acelerar.",
+   "El lugar donde debe detenerse tu vehículo, sin rebasarla.",
+   "Una zona reservada al cruce de peatones."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La línea de detención marca dónde parar cuando una señal, un semáforo o un agente te obligan a detenerte.",
+  "truco": "La raya gorda es tu freno pintado: el morro del coche se queda detrás de ella.",
+  "trampa": "Detenerse pasada la línea 'para ver mejor' es fallo doble: primero paras en la línea; si necesitas visibilidad, avanzas después con cuidado.",
+  "tags": [
+   "marcas-viales",
+   "linea-detencion",
+   "stop"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-040",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Cruzando tu carril hay una línea blanca discontinua transversal. ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "El lugar donde debes ceder el paso y, solo si hace falta, detenerte.",
+   "Detención obligatoria en cualquier caso, como un stop.",
+   "Un paso de peatones con la pintura desgastada."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La línea transversal discontinua marca el punto donde se cede el paso: solo te detienes si es necesario.",
+  "truco": "Raya a trocitos = 'frena si toca': es el stop de quita y pon.",
+  "trampa": "El clásico es tratarla como stop y clavarse sin necesidad. Si viene alguien, cedes; si no viene nadie, sigues sin detenerte.",
+  "tags": [
+   "marcas-viales",
+   "ceda-el-paso"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-041",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Pintado en tu carril ves un gran triángulo blanco con el vértice apuntando hacia ti. ¿Qué anuncia?",
+  "imagen": null,
+  "opciones": [
+   "Un badén a pocos metros.",
+   "Un carril reservado para bicicletas.",
+   "Que se aproxima un ceda el paso: deberás ceder en la próxima línea transversal discontinua."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Es la marca de ceda el paso: anticipa la obligación de ceder ante la próxima línea transversal discontinua.",
+  "truco": "Es el ceda con spoiler: el suelo te chiva la señal antes de llegar.",
+  "trampa": "Un triángulo en el suelo parece decoración o un aviso genérico. Es normativa pura: replica en el asfalto a la señal de ceda el paso.",
+  "tags": [
+   "marcas-viales",
+   "ceda-el-paso"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-042",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "En el asfalto de tu carril está pintada la palabra 'STOP'. ¿Qué te indica?",
+  "imagen": null,
+  "opciones": [
+   "El recuerdo de una antigua señal ya retirada.",
+   "Que más adelante tendrás que detenerte obligatoriamente, ante la próxima línea de detención.",
+   "Que debes detenerte justo encima de las letras."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La inscripción STOP anuncia una detención obligatoria próxima: pararás en la línea de detención, no sobre las letras.",
+  "truco": "Las letras avisan, la raya detiene: el STOP del suelo es el tráiler de la película que viene.",
+  "trampa": "Parar sobre la palabra parece lo literal, pero el punto de parada es la línea de detención que la acompaña más adelante.",
+  "tags": [
+   "marcas-viales",
+   "stop",
+   "inscripciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-043",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "¿Cómo es la marca vial de un paso para peatones?",
+  "imagen": null,
+  "opciones": [
+   "Una serie de bandas blancas anchas, paralelas al eje de la calzada.",
+   "Dos líneas continuas transversales a la calzada.",
+   "Bandas amarillas dispuestas en zigzag."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "El paso de peatones son bandas blancas anchas dispuestas en paralelo al eje de la calzada: la cebra de toda la vida.",
+  "truco": "Las rayas de la cebra están 'tumbadas' en tu sentido de la marcha: tú las cruzas, el peatón camina sobre ellas.",
+  "trampa": "'Paralelas al eje de la calzada' descoloca porque el paso se cruza de lado a lado. El eje es la dirección de los coches, y las bandas van así.",
+  "tags": [
+   "marcas-viales",
+   "paso-peatones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-044",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Te acercas a un paso para ciclistas, marcado con dos líneas discontinuas de cuadrados blancos, y una bici está cruzando. ¿Quién tiene prioridad?",
+  "imagen": null,
+  "opciones": [
+   "Tú, porque circulas por la calzada principal.",
+   "El ciclista: en un paso para ciclistas debidamente señalizado, su prioridad está protegida.",
+   "Nadie: se aplica la norma general de la derecha."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "En los pasos para ciclistas señalizados, los ciclos que cruzan tienen preferencia sobre los demás vehículos.",
+  "truco": "Cuadraditos en el suelo = alfombra roja para pedales: si la bici está en su paso, tú frenas.",
+  "trampa": "'La calzada principal manda' funciona en muchos cruces, pero el paso señalizado invierte la regla: ahí es territorio ciclista.",
+  "explicacion_larga": "El paso para ciclistas se marca con dos líneas discontinuas paralelas formadas por trazos cuadrados blancos. Cuando un ciclista cruza por un paso debidamente señalizado, los conductores del resto de vehículos deben cederle el paso: es una de las situaciones en las que el reglamento protege expresamente la prioridad de los ciclos. Fuera de esos pasos la historia cambia: un ciclista que cruza la calzada por un punto sin señalizar pierde esa protección. Para el examen: cuadraditos pintados más bici cruzando igual a tú cedes.",
+  "tags": [
+   "marcas-viales",
+   "paso-ciclistas",
+   "prioridad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-045",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Circulas por un carril con una flecha blanca pintada que solo señala giro a la izquierda. ¿Qué implica?",
+  "imagen": null,
+  "opciones": [
+   "Que el giro a la izquierda es opcional desde cualquier carril.",
+   "Que ese carril está reservado a los vehículos lentos.",
+   "Que desde ese carril únicamente puedes hacer el movimiento que marca la flecha: girar a la izquierda."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Las flechas de dirección indican los únicos movimientos permitidos desde el carril donde están pintadas.",
+  "truco": "La flecha del carril es un contrato: si sigues en él, firmas que harás lo que dibuja.",
+  "trampa": "Tomarla como sugerencia y seguir de frente 'porque no venía nadie' es de las multas más repetidas de ciudad. Si no quieres girar, cambia de carril mientras puedas.",
+  "tags": [
+   "marcas-viales",
+   "flechas",
+   "carriles"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-046",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Junto a la línea discontinua central hay pintada una flecha ligeramente curvada que apunta hacia tu derecha (flecha de retorno). ¿Qué te está avisando?",
+  "imagen": null,
+  "opciones": [
+   "Que la línea discontinua va a convertirse en continua: debes volver cuanto antes al carril de la derecha.",
+   "Que puedes dar media vuelta en ese punto.",
+   "Que hay una salida de autopista próxima."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La flecha de retorno anuncia la proximidad de una línea continua: incorpórate ya al carril derecho.",
+  "truco": "La flecha curvada dice 'vuelve a casa, que cierran la puerta': la discontinua tiene los días contados.",
+  "trampa": "'Retorno' suena a cambio de sentido y ahí caen a montones. No te manda dar la vuelta: te manda volver a tu carril.",
+  "explicacion_larga": "La flecha de retorno se pinta junto a la línea central discontinua, ligeramente curvada hacia el lado derecho, y su mensaje es puro aviso preventivo: la línea discontinua está a punto de convertirse en continua, así que si estás adelantando o circulando por el carril izquierdo, vuelve a tu carril derecho cuanto antes. No indica cambio de sentido, ni salida, ni desvío. Suele aparecer en serie, con varias flechas seguidas, para que a nadie le pille por sorpresa la continua que viene detrás.",
+  "tags": [
+   "marcas-viales",
+   "flecha-retorno",
+   "adelantamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-047",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "En la calzada hay una zona pintada con franjas oblicuas blancas paralelas, enmarcada por una línea continua (cebreado). ¿Puedes circular por ella?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si es para adelantar a un vehículo lento.",
+   "No: es una zona excluida del tráfico y ningún vehículo debe entrar en ella.",
+   "Sí, siempre que la ocupes menos de 50 metros."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "El cebreado enmarcado por línea continua es zona prohibida: ni entrar ni circular por ella.",
+  "truco": "El cebreado es una isla pintada: los coches no pisan islas.",
+  "trampa": "Usarlo de atajo o de carril extra tienta porque está 'vacío'. Está vacío precisamente porque nadie debe meterse.",
+  "explicacion_larga": "El cebreado (franjas oblicuas paralelas) delimita una zona excluida del tráfico: isletas, aproximaciones a bifurcaciones, zonas de protección. Si el marco es una línea continua, la prohibición es total: ningún vehículo debe penetrar en la zona. Si el marco fuera una línea discontinua, solo podrías pisarla en maniobras justificadas que no supongan peligro, por ejemplo para incorporarte a un giro. En la práctica del examen, cebreado igual a suelo prohibido, y el tipo de línea que lo rodea marca si la prohibición es absoluta o admite esa excepción puntual.",
+  "tags": [
+   "marcas-viales",
+   "cebreado"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-048",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "En tu carril hay pintado un '50' bien grande en blanco. ¿Qué valor tiene esa cifra?",
+  "imagen": null,
+  "opciones": [
+   "Es una recomendación de velocidad para ese tramo.",
+   "Indica la distancia en metros hasta el próximo cruce.",
+   "Es un límite: prohíbe superar los 50 km/h desde ese punto, igual que la señal vertical."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "La marca vial de velocidad máxima obliga: ningún vehículo debe sobrepasar la cifra pintada.",
+  "truco": "El número del suelo no es un grafiti motivacional: manda tanto como el redondo del poste.",
+  "trampa": "Como 'solo es pintura', muchos la degradan a consejo. Las marcas viales son señalización de pleno derecho.",
+  "explicacion_larga": "Las marcas viales no son decoración: son señalización con todas las de la ley. La cifra pintada en el carril indica la velocidad máxima a la que se puede circular desde ese punto, exactamente igual que la señal vertical de límite, y superarla es la misma infracción. Se pinta en el suelo precisamente en tramos donde conviene reforzar el mensaje (colegios, curvas, travesías) para que nadie pueda decir que no lo vio. Y recuerda la jerarquía: si una señal vertical fijara otro límite distinto, prevalecería la vertical, pero sin contradicción la marca obliga por sí sola.",
+  "tags": [
+   "marcas-viales",
+   "velocidad",
+   "inscripciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-049",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "La línea blanca continua que separa la calzada del arcén, ¿te impide salir de la calzada?",
+  "imagen": null,
+  "opciones": [
+   "No: es una línea de borde que delimita la calzada, y puedes rebasarla, por ejemplo, para parar en el arcén donde esté permitido.",
+   "Sí: como toda línea continua, jamás puede rebasarse.",
+   "Solo pueden cruzarla los vehículos prioritarios."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La línea de borde delimita la calzada; rebasarla para usar el arcén de forma legal no está prohibido.",
+  "truco": "El borde es el marco del cuadro, no una valla: solo marca dónde acaba la calzada.",
+  "trampa": "'Continua = intocable' es una regla que aquí se pasa de frenada: la línea de borde no es una línea de separación de carriles ni de sentidos.",
+  "tags": [
+   "marcas-viales",
+   "linea-borde",
+   "arcen"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-050",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Un carril lleva pintada la palabra 'BUS' en el pavimento. ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Que hay una parada de autobús a la derecha.",
+   "Que ese carril está reservado para determinados vehículos, como los autobuses; el resto no debe circular por él.",
+   "Que los autobuses tienen prohibido usar ese carril."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La inscripción BUS señala un carril reservado: si no eres uno de los vehículos autorizados, no lo uses.",
+  "truco": "Si el suelo lleva nombre, el carril tiene dueño: BUS es la matrícula del carril.",
+  "trampa": "Meterse 'solo un momentito' para saltarse el atasco es la tentación de cada mañana. Reservado significa que no es tu carril ni cinco segundos.",
+  "tags": [
+   "marcas-viales",
+   "carril-bus",
+   "inscripciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-051",
+  "mundo": 4,
+  "tema": "Marcas viales blancas",
+  "pregunta": "Una marca vial te permite seguir de frente, pero una señal vertical del cruce lo prohíbe. ¿A cuál obedeces?",
+  "imagen": null,
+  "opciones": [
+   "A la marca vial, que está más cerca de ti.",
+   "A la más reciente de las dos.",
+   "A la señal vertical: en el orden de prioridad de la señalización, las marcas viales son las últimas."
+  ],
+  "correcta": 2,
+  "dificultad": 5,
+  "explicacion_corta": "Cuando hay contradicción manda el orden de prioridad, y las marcas viales ocupan el último puesto: gana la señal vertical.",
+  "truco": "Agente > señalización de obras y balizamiento > semáforo > señal vertical > pintura. La pintura pierde contra todos.",
+  "trampa": "'La más cercana' o 'la más nueva' parecen criterios lógicos, pero el reglamento fija una jerarquía cerrada que no va de distancias ni de fechas.",
+  "explicacion_larga": "El Reglamento fija un orden de prioridad cerrado entre los tipos de señalización: primero, las señales y órdenes de los agentes de circulación; segundo, la señalización circunstancial que modifica el régimen normal de la vía y las señales de balizamiento; tercero, los semáforos; cuarto, las señales verticales; y quinto, las marcas viales. Ante indicaciones contradictorias, obedeces la de mayor rango. Por eso un agente puede mandarte pasar con el semáforo en rojo, un semáforo deja sin efecto a un ceda vertical y una señal vertical desmiente a la pintura del suelo. La marca vial es la última de la fila.",
+  "tags": [
+   "marcas-viales",
+   "jerarquia-senales"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-052",
+  "mundo": 4,
+  "tema": "Marcas amarillas",
+  "pregunta": "Junto al bordillo hay pintada una línea amarilla en zigzag. ¿Qué prohíbe?",
+  "imagen": null,
+  "opciones": [
+   "Estacionar en esa zona, que suele reservarse a usos como la carga y descarga o las paradas.",
+   "Parar y estacionar, incluso unos segundos.",
+   "Circular a más de 20 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "El zigzag amarillo prohíbe el estacionamiento: la zona queda libre para paradas y usos autorizados.",
+  "truco": "Zigzag = zona de 'baja y sube', no de 'deja el coche'.",
+  "trampa": "Confundirla con la prohibición total (parada incluida) es fácil; esa es la línea amarilla continua, no el zigzag.",
+  "tags": [
+   "marcas-viales",
+   "marcas-amarillas",
+   "estacionamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-053",
+  "mundo": 4,
+  "tema": "Marcas amarillas",
+  "pregunta": "¿Puedes detenerte unos instantes sobre un zigzag amarillo para que baje un pasajero?",
+  "imagen": null,
+  "opciones": [
+   "No: el zigzag prohíbe cualquier detención.",
+   "Sí: el zigzag prohíbe estacionar, no parar, y dejar a un pasajero es una parada.",
+   "Solo si enciendes las luces de emergencia."
+  ],
+  "correcta": 1,
+  "dificultad": 5,
+  "explicacion_corta": "El zigzag amarillo veta el estacionamiento; una parada breve para dejar o recoger a alguien sigue siendo posible si otra señal no la prohíbe.",
+  "truco": "En el zigzag se aparca cero y se para un pispás: bajar, cerrar y arrancar.",
+  "trampa": "'Prohibida cualquier detención' parece la respuesta segura de examen, pero el reglamento distingue con lupa entre parada y estacionamiento, y el zigzag solo caza al segundo.",
+  "explicacion_larga": "Parar y estacionar son cosas distintas para el reglamento: la parada es una inmovilización de menos de dos minutos, sin que el conductor abandone el vehículo; el estacionamiento es cualquier inmovilización que no sea parada ni detención por emergencia o circulación. El zigzag amarillo, habitual junto a colegios, hoteles o paradas de bus, prohíbe el estacionamiento: se pinta precisamente para que la zona quede libre y las paradas breves sean posibles. Eso sí: si la zona es una parada de bus reservada u otra señal prohíbe también la parada, esa restricción adicional se aplica igualmente.",
+  "tags": [
+   "marcas-viales",
+   "marcas-amarillas",
+   "parada",
+   "estacionamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-054",
+  "mundo": 4,
+  "tema": "Marcas amarillas",
+  "pregunta": "En medio de un cruce hay pintada una gran cuadrícula amarilla. Tu semáforo está en verde, pero el tráfico al otro lado del cruce está parado. ¿Qué haces?",
+  "imagen": null,
+  "opciones": [
+   "Avanzar: el verde te da derecho a entrar.",
+   "Entrar despacio y esperar dentro del cruce.",
+   "No entrar en la cuadrícula hasta estar seguro de poder salir sin quedarte bloqueando el paso transversal."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La cuadrícula amarilla prohíbe entrar en la intersección si es previsible quedarse detenido dentro, aunque el semáforo esté en verde.",
+  "truco": "La cuadrícula es la caja del cruce: no entres si no puedes salir.",
+  "trampa": "El semáforo en verde parece un salvoconducto total, y ahí está el cebo: el verde te permite pasar, la cuadrícula te exige además poder salir.",
+  "tags": [
+   "marcas-viales",
+   "marcas-amarillas",
+   "interseccion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-055",
+  "mundo": 4,
+  "tema": "Marcas amarillas",
+  "pregunta": "A lo largo del bordillo hay una línea amarilla continua. ¿Qué implica en ese lado de la calzada?",
+  "imagen": null,
+  "opciones": [
+   "Que la parada y el estacionamiento están prohibidos en toda su longitud.",
+   "Que solo está prohibido estacionar de noche.",
+   "Que es una zona de estacionamiento de pago."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La línea amarilla continua junto al borde prohíbe la parada y el estacionamiento en ese lado, en toda la longitud de la marca.",
+  "truco": "Amarillo continuo = ni un segundo: aquí no se para ni para mirar el móvil.",
+  "trampa": "El pago es cosa de las marcas azules. El amarillo nunca cobra: prohíbe.",
+  "tags": [
+   "marcas-viales",
+   "marcas-amarillas",
+   "parada",
+   "estacionamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-056",
+  "mundo": 4,
+  "tema": "Marcas amarillas",
+  "pregunta": "¿Y si la línea amarilla del bordillo es discontinua? ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Que se puede estacionar libremente: la discontinua siempre permite.",
+   "Que la parada y el estacionamiento están prohibidos o restringidos en ciertas condiciones, que concretan las señales de la zona.",
+   "Que ese tramo está reservado exclusivamente a motocicletas."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La amarilla discontinua indica prohibición o restricción de la parada y el estacionamiento en los términos que fijen las señales: horarios, usos concretos.",
+  "truco": "Amarillo continuo, veto total; amarillo a trozos, veto con letra pequeña: busca el cartel que lo explica.",
+  "trampa": "Extrapolar la lógica de las líneas blancas ('discontinua = se puede') es el patinazo típico: en amarillo, la discontinua también restringe.",
+  "explicacion_larga": "Las marcas amarillas de bordillo van por grados. La continua es el veto absoluto: ni parada ni estacionamiento en toda su longitud y en ese lado de la calzada. La discontinua rebaja el tono: la parada y el estacionamiento quedan prohibidos o sometidos a alguna restricción temporal —un horario, un uso reservado, una limitación concreta— que las señales de la zona se encargan de detallar. Por eso, ante una discontinua amarilla, la jugada correcta es levantar la vista y buscar el cartel que dice cuándo y quién puede detenerse ahí.",
+  "tags": [
+   "marcas-viales",
+   "marcas-amarillas",
+   "estacionamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-057",
+  "mundo": 4,
+  "tema": "Marcas azules",
+  "pregunta": "Las plazas de aparcamiento de una calle están delimitadas con marcas azules. ¿Qué te indica ese color?",
+  "imagen": null,
+  "opciones": [
+   "Que el estacionamiento es gratuito e ilimitado.",
+   "Que el estacionamiento está regulado: suele ser de duración limitada o de pago en ciertos horarios.",
+   "Que las plazas son solo para vehículos oficiales."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Las marcas azules delimitan zonas de estacionamiento regulado, normalmente con límite de tiempo o pago según la señalización.",
+  "truco": "Azul = con reloj o con ticket: busca el parquímetro antes de irte de tiendas.",
+  "trampa": "Que la plaza esté pintada y libre invita a pensar que es un regalo del ayuntamiento. El azul siempre viene con condiciones: léelas en la señal.",
+  "tags": [
+   "marcas-viales",
+   "marcas-azules",
+   "estacionamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M04-058",
+  "mundo": 4,
+  "tema": "Marcas azules",
+  "pregunta": "Aparcas en una plaza de zona azul en horario regulado. ¿Qué debes hacer para estacionar correctamente?",
+  "imagen": null,
+  "opciones": [
+   "Nada especial: si no ves un parquímetro cerca, es gratis.",
+   "Dejar una nota con tu teléfono en el parabrisas.",
+   "Obtener y colocar de forma visible el comprobante o distintivo que exija la señalización, y respetar el tiempo máximo."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "En zona azul debes cumplir la regulación local: ticket o disco de control visibles y sin exceder el tiempo máximo permitido.",
+  "truco": "En zona azul tu coche necesita entrada de cine: ticket a la vista o multa a la vista.",
+  "trampa": "Como cada ciudad regula la suya, hay quien cree que sin parquímetro delante no hay obligación. La señalización de la zona fija las reglas del juego, y toca buscarla.",
+  "tags": [
+   "marcas-viales",
+   "marcas-azules",
+   "estacionamiento"
+  ],
+  "senalId": null
+ }
+]

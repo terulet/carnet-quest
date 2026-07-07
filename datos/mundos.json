@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "rangos": [
+    { "nombre": "Peatón", "xp": 0, "icono": "🚶" },
+    { "nombre": "L Novato", "xp": 600, "icono": "🟩" },
+    { "nombre": "Dominguero", "xp": 1800, "icono": "🚗" },
+    { "nombre": "Conductor", "xp": 4200, "icono": "🛣️" },
+    { "nombre": "Piloto", "xp": 8500, "icono": "🏎️" },
+    { "nombre": "Leyenda del Asfalto", "xp": 15000, "icono": "👑" }
+  ],
+  "mundos": [
+    {
+      "n": 1, "nombre": "Villa Asfalto", "lema": "Todo el mundo empieza andando.",
+      "temario": "Conceptos, definiciones y vías", "icono": "🏘️", "color": "#00E5FF",
+      "gratis": true, "estrellasBoss": 8,
+      "boss": { "nombre": "El Inspector", "intro": "El Inspector se sabe el reglamento de memoria. Demuéstrale que tú también." },
+      "misiones": ["Bienvenido al Asfalto", "Carné de Peatón", "La Primera Llave", "Callejeo de Novato", "El Examen del Barrio", "Adiós, Villa Asfalto"]
+    },
+    {
+      "n": 2, "nombre": "Señalópolis Norte", "lema": "Aquí las luces hablan.",
+      "temario": "Agentes, semáforos y balizamiento", "icono": "🚦", "color": "#FFC800",
+      "gratis": true, "estrellasBoss": 8,
+      "boss": { "nombre": "El Municipal", "intro": "El Municipal dirige el tráfico con un silbato y cero paciencia. Sus brazos son ley." },
+      "misiones": ["El Lenguaje Secreto", "Semáforo en Ámbar", "El Brazo del Agente", "Luces en la Niebla", "Balizas y Conos", "Asalto al Cuartel Norte"]
+    },
+    {
+      "n": 3, "nombre": "Señalópolis Centro", "lema": "Triángulo avisa, círculo manda.",
+      "temario": "Señales de peligro y prohibición", "icono": "⚠️", "color": "#E2001A",
+      "gratis": true, "estrellasBoss": 8,
+      "boss": { "nombre": "La Ronda Roja", "intro": "La Ronda Roja prohíbe todo lo que puede. Encuentra el hueco legal." },
+      "misiones": ["Triángulos que Avisan", "Círculos que Mandan", "Peligro en el Centro", "Prohibido Prohibir", "El Cerco Rojo", "Grand Theft Señal"]
+    },
+    {
+      "n": 4, "nombre": "Señalópolis Sur", "lema": "Sigue la flecha azul.",
+      "temario": "Obligación, indicación y marcas viales", "icono": "🔵", "color": "#0055B8",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Pintor de Líneas", "intro": "El Pintor de Líneas ha pintado toda la ciudad esta noche. Léele la mente." },
+      "misiones": ["Flechas Azules", "El Pintor Fantasma", "Líneas en el Asfalto", "Cuadrados que Informan", "La Marca del Sur", "Fuga de Señalópolis"]
+    },
+    {
+      "n": 5, "nombre": "Autopista Límite", "lema": "La aguja no miente.",
+      "temario": "Velocidad", "icono": "🏁", "color": "#FF2D78",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Radar Fantasma", "intro": "El Radar Fantasma no avisa y no perdona. Sabe tu velocidad antes que tú." },
+      "misiones": ["Aguja al Rojo", "120 y Bajando", "Velocidad Terminal", "Cazado por el Cinemómetro", "Contrarreloj en la A-7", "Fin de Limitación"]
+    },
+    {
+      "n": 6, "nombre": "Cruce Salvaje", "lema": "Sin señales, la derecha manda.",
+      "temario": "Prioridad de paso", "icono": "✖️", "color": "#FFC800",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Stop Eterno", "intro": "El Stop Eterno lleva 30 años parado en el mismo cruce. Nadie le ha ganado una prioridad." },
+      "misiones": ["La Derecha Manda", "Stop o No Stop", "El Cruce del Diablo", "Prioridad Robada", "Duelo en la Intersección", "El Último Cruce"]
+    },
+    {
+      "n": 7, "nombre": "La Doble Continua", "lema": "Hay líneas que no se cruzan.",
+      "temario": "Adelantamiento", "icono": "⏩", "color": "#F4F6FB",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Kamikaze", "intro": "El Kamikaze adelanta donde no debe. Tú no eres como él. Demuéstralo." },
+      "misiones": ["Línea Prohibida", "Adelantamiento Limpio", "Ojo al Kamikaze", "El Tercio Imposible", "Doble o Nada", "Atraco a la Doble Continua"]
+    },
+    {
+      "n": 8, "nombre": "Rotonda Infernal", "lema": "El que está dentro, manda.",
+      "temario": "Cambios de dirección, de sentido y marcha atrás", "icono": "🔄", "color": "#00E5FF",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "La Glorieta", "intro": "La Glorieta gira desde 1987 y nunca ha dejado salir a nadie a la primera." },
+      "misiones": ["Grand Theft Rotonda", "Gira que te Gira", "Cambio de Sentido", "Marcha Atrás Maestra", "El Carrusel", "Escape de la Glorieta"]
+    },
+    {
+      "n": 9, "nombre": "Parking Wars", "lema": "Un hueco es un tesoro.",
+      "temario": "Parada y estacionamiento", "icono": "🅿️", "color": "#0055B8",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "La Grúa", "intro": "La Grúa huele un mal estacionamiento a tres manzanas. No le des motivos." },
+      "misiones": ["Hueco Imposible", "Zona Azul", "La Grúa Acecha", "Batalla en Doble Fila", "Parada y Fonda", "El Rey del Parking"]
+    },
+    {
+      "n": 10, "nombre": "Ciudad Nocturna", "lema": "Ver y ser visto.",
+      "temario": "Alumbrado y señalización óptica", "icono": "🌃", "color": "#FF2D78",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Apagón", "intro": "El Apagón ha fundido todas las farolas de la ciudad. Tus luces son lo único que queda." },
+      "misiones": ["Luces Cortas", "Antiniebla Cerrada", "Deslumbrado", "Noche Cerrada", "Neón y Asfalto", "El Apagón Llega"]
+    },
+    {
+      "n": 11, "nombre": "El Último Bar", "lema": "Si conduces, cero.",
+      "temario": "Alcohol, drogas y fármacos", "icono": "🍺", "color": "#FFC800",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Etilómetro", "intro": "El Etilómetro no escucha excusas. Solo mide. Y esta noche está de guardia." },
+      "misiones": ["La Última Ronda", "Cero Coma Nada", "Resaca Legal", "Fármacos al Volante", "Control Sorpresa", "Cierra el Bar"]
+    },
+    {
+      "n": 12, "nombre": "Zona Zombie", "lema": "El sueño conduce peor que tú.",
+      "temario": "Fatiga, distracciones y factores del conductor", "icono": "🧟", "color": "#007A3D",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Microsueño", "intro": "El Microsueño solo necesita 3 segundos. En 3 segundos a 120 recorres 100 metros a ciegas." },
+      "misiones": ["Microsueño Mortal", "El Móvil Ni Tocarlo", "Fatiga en la Nacional", "Zombis al Volante", "Distracción Fatal", "Amanecer Despierto"]
+    },
+    {
+      "n": 13, "nombre": "El Taller", "lema": "Un coche cuidado no traiciona.",
+      "temario": "Mecánica, mantenimiento y seguridad del vehículo", "icono": "🔧", "color": "#00E5FF",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El ITV Final", "intro": "El ITV Final revisa hasta el ambientador. Que no te pille ni una luz fundida." },
+      "misiones": ["Ruedas y Frenos", "Luz de Avería", "Mantenimiento Ninja", "Seguridad Activa", "Cinturones y Airbags", "Pasando la ITV"]
+    },
+    {
+      "n": 14, "nombre": "Código PAS", "lema": "Proteger. Avisar. Socorrer.",
+      "temario": "Accidentes y primeros auxilios", "icono": "🚨", "color": "#E2001A",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "Los 112", "intro": "Los 112 responden en segundos. Cuando llames, que sea para decir lo correcto." },
+      "misiones": ["Proteger, Avisar, Socorrer", "Llamada al 112", "La Luz V-16", "Primeros Auxilios", "No Muevas al Herido", "Héroe de la N-CQ"]
+    },
+    {
+      "n": 15, "nombre": "Eco Ruta & Papeleo", "lema": "Los papeles también conducen.",
+      "temario": "Medio ambiente, carga, pasajeros y documentación", "icono": "📄", "color": "#007A3D",
+      "gratis": false, "estrellasBoss": 8,
+      "boss": { "nombre": "El Funcionario", "intro": "El Funcionario pide TODOS los papeles. Y los mira. Uno. A. Uno." },
+      "misiones": ["Papeles en Regla", "Carga Bien Atada", "Eco Conducción", "Permiso por Puntos", "El Sello Definitivo", "Fin de Trayecto"]
+    }
+  ],
+  "torre": {
+    "nombre": "DGT TOWER",
+    "lema": "30 preguntas. 30 minutos. 3 fallos como máximo.",
+    "icono": "🏢",
+    "boss": { "nombre": "EL EXAMEN", "intro": "Esto es lo más parecido al día D. Sin música. Sin ayudas. Sin excusas." }
+  }
+}

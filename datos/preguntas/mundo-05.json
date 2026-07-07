@@ -1,0 +1,1358 @@
+[
+ {
+  "id": "M05-001",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Como norma general, ¿a qué velocidad máxima puede circular un turismo por una autopista?",
+  "imagen": null,
+  "opciones": [
+   "A 110 km/h.",
+   "A 120 km/h.",
+   "A 130 km/h si el tráfico es fluido."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "El límite genérico para turismos y motocicletas en autopista y autovía es de 120 km/h.",
+  "truco": "Turismo en autopista = 120. Uno-dos-cero, el número estrella del examen.",
+  "trampa": "El 130 'con tráfico fluido' existe en otros países. En España el techo es 120, haga el día que haga.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "autopista",
+   "turismo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-002",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Y por una carretera convencional, como norma general, un turismo puede circular como máximo a…",
+  "imagen": null,
+  "opciones": [
+   "90 km/h.",
+   "100 km/h.",
+   "80 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Desde 2019 el límite genérico en carretera convencional para turismos y motocicletas es de 90 km/h.",
+  "truco": "Convencional = 90 para turismos y motos. Si dudas entre 90 y 100, el 100 es el cebo antiguo.",
+  "trampa": "El 100 fue el límite en algunas convencionales hasta 2019. Ya no existe como genérico y el examen lo sabe.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-convencional",
+   "turismo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-003",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Circulas con tu motocicleta por una autovía sin señales de velocidad. ¿Cuál es tu límite genérico?",
+  "imagen": null,
+  "opciones": [
+   "100 km/h.",
+   "110 km/h.",
+   "120 km/h."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Motocicletas y turismos comparten límites: 120 km/h en autopista y autovía.",
+  "truco": "Moto y turismo van de la mano: 120 en autopista/autovía, 90 en convencional.",
+  "trampa": "Mucha gente cree que la moto tiene un límite menor que el coche. En velocidades genéricas son gemelos.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "autovia",
+   "motocicleta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-004",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Como norma general, una motocicleta que circula por una carretera convencional no debe superar…",
+  "imagen": null,
+  "opciones": [
+   "los 90 km/h.",
+   "los 80 km/h.",
+   "los 100 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "En carretera convencional el límite genérico de las motocicletas es 90 km/h, igual que el de los turismos.",
+  "truco": "Regla fácil: turismos y motos, mismos números en todas partes (120 y 90).",
+  "trampa": "El 80 es el límite de camiones y automóviles con remolque en convencional, no el de la moto.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-convencional",
+   "motocicleta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-005",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Conduces una furgoneta por una autopista. Como norma general, tu velocidad máxima es…",
+  "imagen": null,
+  "opciones": [
+   "90 km/h, como los camiones.",
+   "110 km/h.",
+   "120 km/h, como los turismos."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Las furgonetas de mercancías (categoría N1) comparten límite con camiones y furgones: 90 km/h en autopista y autovía.",
+  "truco": "Furgoneta de reparto = camión pequeño: 90 en autopista, 80 en convencional. Solo los derivados de turismo suben a 100.",
+  "trampa": "El 110 fue un límite del pasado y el 120 es de turismos: la furgoneta N1 va con los camiones, a 90.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "autopista",
+   "furgoneta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-006",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿Y a cuánto puede circular esa misma furgoneta, como máximo, por una carretera convencional?",
+  "imagen": null,
+  "opciones": [
+   "A 80 km/h.",
+   "A 100 km/h.",
+   "A 90 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "En carretera convencional, las furgonetas de mercancías (N1) tienen el mismo límite que camiones y furgones: 80 km/h.",
+  "truco": "La pareja de la furgoneta: 90-80 (autopista-convencional), diez menos que el turismo en cada vía.",
+  "trampa": "El 90 es el límite del turismo en convencional. La furgoneta va siempre un escalón por debajo: 80.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-convencional",
+   "furgoneta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-007",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Un camión de 18.000 kg de MMA circula por una autopista. Su velocidad máxima genérica es…",
+  "imagen": null,
+  "opciones": [
+   "100 km/h.",
+   "90 km/h.",
+   "110 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Camiones, tractocamiones y vehículos articulados: 90 km/h en autopista y autovía.",
+  "truco": "Camión = 90/80: 90 en autopista y autovía, 80 en el resto. Nueve-ocho y a rodar.",
+  "trampa": "El 100 es el límite del autobús en autopista, no el del camión. Son grandes pero no juegan en la misma liga.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "autopista",
+   "camion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-008",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Ese mismo camión, en una carretera convencional, no debe superar como norma general…",
+  "imagen": null,
+  "opciones": [
+   "los 80 km/h.",
+   "los 90 km/h.",
+   "los 70 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "En carretera convencional los camiones tienen un límite genérico de 80 km/h.",
+  "truco": "Sigue la regla 90/80 del camión: fuera de las vías rápidas, 80 y gracias.",
+  "trampa": "El 90 es lo que puede hacer un turismo en esa vía. El camión siempre va 10 por debajo en convencional.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-convencional",
+   "camion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-009",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Una autocaravana con MMA de 4.200 kg circula por autopista. ¿Cuál es su velocidad máxima genérica?",
+  "imagen": null,
+  "opciones": [
+   "120 km/h, porque es un vehículo de ocio.",
+   "100 km/h.",
+   "90 km/h."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Las autocaravanas de más de 3.500 kg siguen los límites de los camiones: 90 en autopista y autovía, 80 en convencional.",
+  "truco": "Autocaravana grande = camión con camas: 90/80.",
+  "trampa": "Que sea 'para ir de vacaciones' no la convierte en turismo. Pasa de 3.500 kg y eso es lo que manda.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "autocaravana",
+   "autopista"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-010",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Una autocaravana con MMA de 3.200 kg circula por una autovía. ¿Su velocidad máxima genérica?",
+  "imagen": null,
+  "opciones": [
+   "100 km/h.",
+   "120 km/h.",
+   "90 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Las autocaravanas de hasta 3.500 kg de MMA se rigen por los límites de los turismos: 120 en autopista/autovía y 90 en convencional.",
+  "truco": "Con las autocaravanas mira la báscula, no las camas: hasta 3.500 kg va como un turismo; por encima, como un camión.",
+  "trampa": "El examen te enseña una autocaravana y espera que pienses 'bicho grande = 90'. La frontera real son los 3.500 kg de MMA.",
+  "explicacion_larga": "Las autocaravanas se dividen en dos mundos según su masa máxima autorizada. Las de hasta 3.500 kg (la mayoría de las que se conducen con permiso B) siguen exactamente los límites de los turismos: 120 km/h en autopista y autovía y 90 km/h en carretera convencional. Las que superan los 3.500 kg pasan al grupo de los camiones: 90 y 80 km/h respectivamente. Por eso, ante una pregunta de autocaravanas, lo primero que debes buscar en el enunciado es la MMA: ese dato decide la respuesta.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "autocaravana",
+   "autovia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-011",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Enganchas un remolque ligero de 500 kg a tu turismo y sales a la autopista. ¿Tu velocidad máxima?",
+  "imagen": null,
+  "opciones": [
+   "90 km/h.",
+   "120 km/h, porque el remolque es ligero.",
+   "100 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Cualquier automóvil con remolque tiene como límite genérico 90 km/h en autopista y autovía, y 80 en el resto de vías interurbanas.",
+  "truco": "En cuanto cuelgas algo de la bola, tu turismo se vuelve camión a efectos de velocidad: 90/80.",
+  "trampa": "El 'es que pesa poco' no cuela: da igual que el remolque sea ligero o pesado, el conjunto va a 90/80.",
+  "explicacion_larga": "Desde la reforma de límites de 2019, todos los automóviles que arrastran un remolque, sea cual sea la masa de este, comparten grupo con camiones y furgones: 90 km/h en autopista y autovía y 80 km/h en las demás vías fuera de poblado. Antes existía una distinción según el remolque superara o no los 750 kg, y por eso las opciones con 100 km/h siguen apareciendo como cebo en los tests. Recuérdalo así: con remolque enganchado, tu turismo pierde 30 km/h de golpe en autopista.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "remolque",
+   "autopista"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-012",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Un autobús circula por una autopista. Como norma general, su velocidad máxima es…",
+  "imagen": null,
+  "opciones": [
+   "90 km/h.",
+   "120 km/h.",
+   "100 km/h."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Los autobuses tienen un límite genérico de 100 km/h en autopista y autovía, y de 90 km/h en carretera convencional.",
+  "truco": "El autobús es el del medio: ni los 120 del turismo ni los 90 del camión. 100 justos.",
+  "trampa": "Por tamaño lo meterías con los camiones, pero el autobús corre más: 100 en autopista y 90 en convencional.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "autobus",
+   "autopista"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-013",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Entras en una calle de plataforma única, con calzada y acera al mismo nivel. Sin señales, el límite es…",
+  "imagen": null,
+  "opciones": [
+   "30 km/h.",
+   "10 km/h.",
+   "20 km/h."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "En las vías urbanas de plataforma única, donde calzada y acera comparten nivel, el límite genérico es de 20 km/h.",
+  "truco": "Regla urbana 20-30-50: sin acera separada 20, un carril por sentido 30, dos o más por sentido 50.",
+  "trampa": "Si el peatón camina a tu misma altura, tú casi a su velocidad: 20, no 30. El 30 es para calles con un carril por sentido.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-urbana"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-014",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "En una vía urbana con un único carril por sentido de circulación, la velocidad máxima genérica es de…",
+  "imagen": null,
+  "opciones": [
+   "30 km/h.",
+   "50 km/h.",
+   "40 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Desde 2021, las vías urbanas de un solo carril por sentido están limitadas con carácter general a 30 km/h.",
+  "truco": "Ciudad de calle normal = 30. El 50 urbano quedó reservado para las avenidas con dos o más carriles por sentido.",
+  "trampa": "El 50 'de toda la vida' ya no es el genérico de cualquier calle: solo sobrevive donde hay dos o más carriles por sentido.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-urbana"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-015",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿En qué vías urbanas se mantiene el límite genérico de 50 km/h?",
+  "imagen": null,
+  "opciones": [
+   "En todas las travesías y rondas, sin excepción.",
+   "En las que tienen dos o más carriles por cada sentido de circulación.",
+   "En ninguna: el máximo urbano es siempre 30 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El 50 km/h urbano solo rige, como genérico, en vías con dos o más carriles por sentido de circulación.",
+  "truco": "Para ir a 50 en ciudad necesitas autopista de andar por casa: mínimo dos carriles en TU sentido.",
+  "trampa": "El 'siempre 30' es pasarse de frenada: el 30 es para un carril por sentido; con dos o más por sentido sigue habiendo 50.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-urbana"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-016",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Circulas por una calle con dos carriles en total, uno para cada sentido, sin señales de velocidad. ¿Límite?",
+  "imagen": null,
+  "opciones": [
+   "50 km/h, porque la calle tiene dos carriles.",
+   "30 km/h.",
+   "20 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Los carriles se cuentan por sentido: dos carriles totales pero uno por sentido significa límite de 30 km/h.",
+  "truco": "No cuentes los carriles de la calle, cuenta solo los que van en TU dirección. Uno = 30, dos o más = 50.",
+  "trampa": "La pregunta te enseña 'dos carriles' esperando que sueltes el 50 sin pensar. La ley dice 'por sentido de circulación', y ahí solo hay uno.",
+  "explicacion_larga": "El error más repetido con los límites urbanos de 2021 es contar los carriles totales de la calzada. La norma habla de carriles POR SENTIDO DE CIRCULACIÓN: una calle con un carril de ida y otro de vuelta es una vía de 'un único carril por sentido' y su genérico es 30 km/h. Para que rija el 50 hacen falta al menos dos carriles en el mismo sentido en que tú circulas. Y si la calle es de plataforma única, con calzada y acera al mismo nivel, el límite baja a 20 km/h aunque tenga marcados varios carriles.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-urbana"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-017",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "En una vía urbana de un único carril por sentido (genérico 30 km/h), ¿puede el ayuntamiento ampliar ese límite?",
+  "imagen": null,
+  "opciones": [
+   "Sí, puede aumentarlo hasta un máximo de 50 km/h señalizándolo expresamente.",
+   "No, los límites genéricos urbanos son inamovibles para todos.",
+   "Sí, hasta 60 km/h en horario nocturno."
+  ],
+  "correcta": 0,
+  "dificultad": 5,
+  "explicacion_corta": "La autoridad municipal puede rebajar los límites urbanos y también aumentar hasta 50 km/h el de las vías de un carril por sentido, previa señalización expresa.",
+  "truco": "El ayuntamiento tiene mando a distancia sobre el 30: puede bajarlo o subirlo hasta 50, pero siempre con señal a la vista.",
+  "trampa": "El 'inamovible' suena serio y por eso pica. Los genéricos urbanos son el punto de partida, no una jaula: con señalización, el municipio puede ajustarlos.",
+  "explicacion_larga": "Los límites urbanos 20-30-50 son genéricos, es decir, se aplican cuando no hay señalización que diga otra cosa. La norma permite a los ayuntamientos moverlos en ambas direcciones: rebajarlos donde convenga (por ejemplo, un 20 o un 10 junto a un colegio) y, en el caso concreto de las vías de un único carril por sentido, elevarlos hasta un máximo de 50 km/h si las condiciones de la vía lo permiten. Eso sí, cualquier modificación exige señalización específica: sin señal, mandan los genéricos. Por eso en la calle real siempre gana lo que diga la placa que tienes delante.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "via-urbana",
+   "normativa"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-018",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Quieres adelantar a un coche que va a 85 km/h en una carretera convencional limitada a 90. Durante la maniobra puedes…",
+  "imagen": null,
+  "opciones": [
+   "superar los 90 km/h solo mientras dure el adelantamiento.",
+   "llegar hasta 110 km/h, el margen de 20 de toda la vida.",
+   "circular como máximo a 90 km/h; si no te da, no adelantes."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Adelantar no permite superar el límite de la vía: el máximo sigue siendo 90 km/h también durante la maniobra.",
+  "truco": "El límite no tiene modo turbo: adelantando también es límite. Si no cabes por debajo de 90, te quedas detrás.",
+  "trampa": "El famoso margen de 20 km/h para adelantar existió, y por eso suena tan convincente. Se eliminó en 2022: hoy es un mito.",
+  "tags": [
+   "velocidad",
+   "adelantamiento",
+   "via-convencional"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-019",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Tu cuñado jura que 'la ley te deja pasarte 20 km/h para adelantar en carretera'. ¿Qué hay de cierto?",
+  "imagen": null,
+  "opciones": [
+   "Tiene razón: sigue vigente para turismos y motocicletas.",
+   "Nada: ese margen se eliminó en 2022 y hoy adelantar no autoriza a superar el límite.",
+   "Es cierto, pero solo de día y con buena visibilidad."
+  ],
+  "correcta": 1,
+  "dificultad": 5,
+  "explicacion_corta": "El margen de 20 km/h para adelantar en convencional desapareció con la reforma de la Ley de Tráfico de marzo de 2022; ya no existe.",
+  "truco": "Frase para el asador familiar: 'eso lo quitaron en 2022'. Adelantar ya no da derecho a un solo km/h extra.",
+  "trampa": "Es la pregunta perfecta para cazar a quien estudió hace años: la regla existió de verdad para turismos y motos, así que la opción falsa suena a normativa auténtica.",
+  "explicacion_larga": "Hasta marzo de 2022, los turismos y motocicletas podían rebasar en 20 km/h el límite genérico de las carreteras convencionales para completar un adelantamiento. La reforma de la Ley de Tráfico suprimió esa excepción con un argumento simple: la mayoría de los accidentes mortales ocurren en convencionales y los adelantamientos a mayor velocidad los agravan. Hoy la regla es única y sin letra pequeña: el límite de la vía es infranqueable también durante el adelantamiento. Si el vehículo que te precede va tan rápido que necesitarías superar el límite para pasarlo, la maniobra sencillamente no procede.",
+  "tags": [
+   "velocidad",
+   "adelantamiento",
+   "normativa"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-020",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Como norma general, ¿cuál es la velocidad mínima exigible en una vía?",
+  "imagen": null,
+  "opciones": [
+   "La mitad de la velocidad máxima genérica que te corresponda, salvo excepciones.",
+   "Un tercio de la velocidad máxima genérica.",
+   "No existe velocidad mínima en España."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "No se debe circular, sin causa justificada, por debajo de la mitad de la velocidad máxima genérica que corresponde a tu vehículo; en autopista y autovía la mínima es 60 km/h para todos.",
+  "truco": "Mínima = máxima partida por dos. En autopista (120) no bajes de 60; en convencional (90), de 45.",
+  "trampa": "El 'no existe mínima' tienta porque nadie habla de multas por ir lento. Pero entorpecer la circulación también es infracción.",
+  "tags": [
+   "velocidad",
+   "velocidad-minima"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-021",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Circulas con tu turismo por una autopista. Salvo excepciones, no debes bajar de…",
+  "imagen": null,
+  "opciones": [
+   "40 km/h.",
+   "50 km/h.",
+   "60 km/h."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "En autopista la velocidad mínima es 60 km/h, la mitad del límite genérico de 120.",
+  "truco": "Autopista: 120 de techo, 60 de suelo. Justo la mitad, sin calculadora.",
+  "trampa": "De hecho, un vehículo que por construcción no alcance los 60 km/h ni siquiera puede entrar en autopista o autovía.",
+  "tags": [
+   "velocidad",
+   "velocidad-minima",
+   "autopista"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-022",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿En qué caso puedes circular por debajo de la velocidad mínima sin cometer infracción?",
+  "imagen": null,
+  "opciones": [
+   "Nunca: la mínima es tan rígida como la máxima.",
+   "Cuando lo justifiquen las condiciones del tráfico, de la vía o meteorológicas, o al acompañar un transporte especial.",
+   "Solo si circulas con las luces de emergencia encendidas."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La mínima cede ante causas justificadas: atasco, niebla, firme helado, protección de un transporte especial o de ciclistas, etc.",
+  "truco": "La máxima no se negocia; la mínima sí tiene excepciones con causa justificada. Techo duro, suelo flexible.",
+  "trampa": "Los warnings no convierten en legal ir lento sin motivo: la excepción la da la CAUSA (tráfico, tiempo, vía), no el botón rojo.",
+  "tags": [
+   "velocidad",
+   "velocidad-minima",
+   "excepciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-023",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Una avería te impide superar los 40 km/h en una carretera convencional. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Seguir por tu carril: tienes el mismo derecho que los demás.",
+   "Circular por el arcén si es transitable y, si no lo hay, lo más a la derecha posible.",
+   "Detenerte en el carril y señalizarlo hasta que llegue asistencia."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Quien circula a velocidad anormalmente reducida por emergencia debe hacerlo por el arcén transitable para no entorpecer.",
+  "truco": "Si vas a paso de tortuga por avería, tu sitio es el arcén: el 'banquillo' de la vía existe justo para esto.",
+  "trampa": "El 'mismo derecho' suena justo, pero entorpecer gravemente la circulación es infracción: la vía es de todos, el carril no es tu salón.",
+  "tags": [
+   "velocidad",
+   "velocidad-minima",
+   "arcen"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-024",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "En una carretera convencional con límite genérico de 90 km/h, la velocidad mínima exigible a un turismo es de…",
+  "imagen": null,
+  "opciones": [
+   "30 km/h.",
+   "50 km/h.",
+   "45 km/h."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "La mínima es la mitad de la máxima genérica: en una convencional a 90, son 45 km/h.",
+  "truco": "No memorices mínimas: memoriza la operación. Máxima genérica entre dos y listo: 120→60, 90→45.",
+  "trampa": "El 45 descoloca porque no es un número redondo de señal. Precisamente por eso lo preguntan: quieren ver si sabes la regla o solo cifras bonitas.",
+  "explicacion_larga": "La velocidad mínima no es una cifra fija que haya que memorizar vía por vía: es siempre la mitad de la velocidad máxima genérica que corresponda. En autopista y autovía (120 km/h para turismos) la mínima es 60; en una convencional a 90, es 45. Esta regla decae cuando existe causa justificada: condiciones meteorológicas adversas, congestión, características de la vía o acompañamiento de vehículos especiales. Fuera de esos casos, circular anormalmente despacio entorpece la circulación y es sancionable, igual que correr de más.",
+  "tags": [
+   "velocidad",
+   "velocidad-minima",
+   "via-convencional"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-025",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Empieza a llover con ganas en la autovía. ¿Qué haces con la velocidad?",
+  "imagen": null,
+  "opciones": [
+   "Mantenerla: mientras no supere el límite señalizado, voy bien.",
+   "Reducirla y aumentar la distancia de seguridad.",
+   "Aumentarla un poco para salir antes de la zona de lluvia."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Con lluvia debes adaptar la velocidad a las condiciones: reducirla y ampliar la distancia con el que va delante.",
+  "truco": "El límite es un techo, no un objetivo. Lluvia, niebla o noche cerrada bajan tu velocidad adecuada aunque la señal no cambie.",
+  "trampa": "Ir 'dentro del límite' no es salvoconducto: si las condiciones son malas y pasa algo, tu velocidad era inadecuada igualmente.",
+  "tags": [
+   "velocidad",
+   "velocidad-adecuada",
+   "lluvia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-026",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Te metes en un banco de niebla espesa. Lo correcto es…",
+  "imagen": null,
+  "opciones": [
+   "reducir la velocidad hasta poder detenerte dentro del tramo que ves libre.",
+   "pegarte a las luces traseras del vehículo de delante para no perder la referencia.",
+   "mantener la velocidad para que no te alcancen por detrás."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Con niebla debes poder detenerte dentro de tu campo de visión: si ves 50 metros, tu velocidad debe permitirte parar en 50 metros.",
+  "truco": "Regla de la niebla: nunca corras más de lo que ves. Tu freno tiene que caber dentro de tus ojos.",
+  "trampa": "Seguir las luces del de delante te da falsa seguridad: si él se estrella o frena en seco, llegas de paquete al mismo sitio.",
+  "tags": [
+   "velocidad",
+   "velocidad-adecuada",
+   "niebla"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-027",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿Cuál es la forma correcta de tomar una curva cerrada?",
+  "imagen": null,
+  "opciones": [
+   "Entrar rápido y corregir con el freno dentro de la curva.",
+   "Reducir la velocidad antes de entrar y mantenerla estable durante el trazado.",
+   "Acelerar en la entrada para ganar estabilidad."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La velocidad se reduce ANTES de la curva; frenar fuerte dentro puede hacer perder adherencia y trazada.",
+  "truco": "La curva se frena antes y se acelera después. Frenar dentro es jugártela con la adherencia.",
+  "trampa": "Frenar 'cuando lo veas venir' dentro de la curva parece natural, pero es justo cuando el coche menos agarre lateral tiene de sobra.",
+  "tags": [
+   "velocidad",
+   "velocidad-adecuada",
+   "curvas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-028",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿En cuál de estas situaciones estás obligado a moderar la velocidad e incluso a detenerte si fuera preciso?",
+  "imagen": null,
+  "opciones": [
+   "En autopista con tráfico fluido y buen tiempo.",
+   "Siempre que circules de noche por una vía bien iluminada.",
+   "Al aproximarte a un paso de peatones o a una zona escolar en hora de entrada."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "El reglamento obliga a moderar la velocidad, y detenerse si hace falta, ante pasos de peatones, zonas escolares, mercados y situaciones similares.",
+  "truco": "Donde pueda aparecer gente a pie de golpe (paso de cebra, cole, mercadillo), levanta el pie ANTES de verla.",
+  "trampa": "La noche con buena iluminación no exige moderar por sí sola: la obligación nace del riesgo concreto, no del reloj.",
+  "tags": [
+   "velocidad",
+   "moderacion",
+   "peatones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-029",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Con el firme mojado, la distancia de frenado de tu vehículo…",
+  "imagen": null,
+  "opciones": [
+   "aumenta.",
+   "no varía si los neumáticos están en buen estado.",
+   "disminuye ligeramente si frenas con suavidad."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "El agua reduce la adherencia entre neumático y asfalto, así que necesitas más metros para detenerte.",
+  "truco": "Mojado = jabón para tus ruedas. Menos agarre, más metros de frenada, siempre.",
+  "trampa": "Los buenos neumáticos ayudan mucho, pero no anulan la física: sobre mojado, hasta el mejor neumático frena peor que en seco.",
+  "tags": [
+   "velocidad",
+   "distancia-frenado",
+   "lluvia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-030",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿Cómo se aplica la regla de los 2 segundos para comprobar la distancia de seguridad?",
+  "imagen": null,
+  "opciones": [
+   "Contando dos segundos desde que pisas el freno hasta detenerte.",
+   "Dejando dos coches de longitud por cada 10 km/h de velocidad.",
+   "Eligiendo una referencia fija: cuando el de delante la pasa, tú debes tardar al menos 2 segundos en llegar a ella."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Se toma una referencia fija (poste, señal, sombra) y se cuenta el tiempo entre que la pasa el vehículo de delante y la pasas tú: mínimo 2 segundos.",
+  "truco": "Poste, y a contar: 'mil ciento uno, mil ciento dos'. Si llegas antes de terminar, vas pegado.",
+  "trampa": "La regla mide TIEMPO entre coches, no lo que tardas en frenar. Por eso funciona a cualquier velocidad: a más rapidez, los 2 segundos son más metros.",
+  "tags": [
+   "velocidad",
+   "distancia-seguridad",
+   "regla-2-segundos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-031",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "La distancia de seguridad con el vehículo que te precede debe permitirte, como mínimo…",
+  "imagen": null,
+  "opciones": [
+   "mantener contacto visual con su conductor por el retrovisor.",
+   "detenerte sin colisionar con él si frena bruscamente.",
+   "adelantarlo en cualquier momento sin señalizar."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Esa es su definición legal: un espacio libre que te permita detenerte, sin chocar, ante un frenazo brusco del de delante.",
+  "truco": "Pregunta clave ante cualquier distancia: 'si ese frena a muerte AHORA, ¿paro sin tocarlo?'. Si dudas, es que no.",
+  "trampa": "No va de ver ni de adelantar: va de FRENAR. La distancia buena es la que absorbe el frenazo del otro más tu despiste.",
+  "tags": [
+   "velocidad",
+   "distancia-seguridad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-032",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Llueve y el asfalto está encharcado. La regla de los 2 segundos…",
+  "imagen": null,
+  "opciones": [
+   "se queda corta: conviene ampliar el margen, y contar unos 4 segundos es una buena referencia.",
+   "sigue siendo suficiente: para eso es una regla de seguridad.",
+   "deja de aplicarse: con lluvia mandan solo los límites de velocidad."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Los 2 segundos están pensados para condiciones normales; con firme mojado la frenada se alarga y conviene, al menos, doblar el margen.",
+  "truco": "Lluvia = doble ración: si en seco cuentas 2, en mojado cuenta 4. Tus frenos te lo agradecerán.",
+  "trampa": "Pensar que una regla de seguridad 'ya lleva margen para todo' es el fallo: la regla se calculó para asfalto seco y conductor atento.",
+  "tags": [
+   "velocidad",
+   "distancia-seguridad",
+   "lluvia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-033",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Fuera de poblado, un camión de 12.000 kg que no pretende adelantar sigue a otro vehículo. ¿Qué separación mínima debe guardar?",
+  "imagen": null,
+  "opciones": [
+   "25 metros.",
+   "100 metros.",
+   "50 metros."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Los vehículos de más de 3.500 kg de MMA y los conjuntos de más de 10 metros deben dejar al menos 50 metros con el que les precede.",
+  "truco": "Bicho grande, hueco grande: más de 3.500 kg o más de 10 metros de largo, deja 50 metros por delante.",
+  "trampa": "Los 100 metros son la distancia de los túneles, no la de los camiones en carretera abierta. No mezcles los dos números.",
+  "explicacion_larga": "Fuera de poblado, los vehículos con MMA superior a 3.500 kg y los vehículos o conjuntos de más de 10 metros de longitud deben guardar una separación mínima de 50 metros respecto al que les precede cuando no pretenden adelantar. El objetivo no es solo frenar a tiempo: es dejar hueco suficiente para que quien os adelante pueda intercalarse entre ambos sin peligro. Esta obligación extra no rige en poblado, en los tramos donde el adelantamiento está prohibido, en vías con más de un carril por sentido ni cuando el tráfico está tan saturado que adelantar es inviable.",
+  "tags": [
+   "velocidad",
+   "distancia-seguridad",
+   "camion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-034",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Conduces tu turismo por un túnel con un carril por sentido y no vas a adelantar. ¿Qué distancia mínima debes mantener con el vehículo de delante?",
+  "imagen": null,
+  "opciones": [
+   "50 metros o el equivalente a 2 segundos.",
+   "100 metros o el equivalente a 4 segundos.",
+   "150 metros o el equivalente a 6 segundos."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "En túneles sin intención de adelantar, los vehículos de hasta 3.500 kg deben guardar al menos 100 metros o 4 segundos.",
+  "truco": "Túnel para turismo: 100 y 4. Si conduces algo de más de 3.500 kg, sube a 150 y 6.",
+  "trampa": "El 150/6 existe, pero es la cifra de los vehículos de más de 3.500 kg. Te dan el dato bueno del vehículo equivocado, marca de la casa DGT.",
+  "explicacion_larga": "Dentro de túneles y pasos inferiores, cuando no se pretende adelantar, la distancia de seguridad se endurece: los vehículos de hasta 3.500 kg de MMA deben mantener como mínimo 100 metros o un margen de 4 segundos con el que les precede, y los de más de 3.500 kg, 150 metros o 6 segundos. La razón es que en un túnel un alcance se complica muchísimo: no hay arcén de escape, la evacuación es difícil y un incendio en espacio cerrado es devastador. Por eso incluso deteniéndote por congestión conviene conservar hueco con el vehículo de delante.",
+  "tags": [
+   "velocidad",
+   "distancia-seguridad",
+   "tunel"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-035",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "En una carretera convencional sigues a un coche sin intención de adelantarlo. Además de poder frenar sin chocar, tu separación debe…",
+  "imagen": null,
+  "opciones": [
+   "permitir que quien os adelante pueda intercalarse entre ambos con seguridad.",
+   "impedir que nadie se meta entre los dos vehículos.",
+   "ser exactamente de 50 metros, como la de los camiones."
+  ],
+  "correcta": 0,
+  "dificultad": 5,
+  "explicacion_corta": "Fuera de poblado, quien no va a adelantar debe dejar hueco suficiente para que el que adelanta a ambos pueda incorporarse entre los dos.",
+  "truco": "Tu hueco no es solo tu freno: también es el aparcamiento de emergencia de quien adelanta. Déjale sitio para 'aterrizar'.",
+  "trampa": "Cerrar el hueco 'para que no se cuelen' es lo intuitivo y lo contrario a la norma: sin ese espacio, obligas al que adelanta a jugarse un frontal.",
+  "explicacion_larga": "La distancia con el vehículo que te precede tiene dos funciones legales. La primera, la evidente: poder detenerte sin colisionar si frena bruscamente. La segunda se aplica fuera de poblado a quien no está adelantando ni se dispone a hacerlo: dejar espacio suficiente para que otro conductor que esté adelantando pueda intercalarse entre tu vehículo y el que va delante sin peligro. Para vehículos de más de 3.500 kg de MMA y conjuntos de más de 10 metros, ese espacio se concreta en un mínimo de 50 metros; para un turismo no hay cifra fija, pero la obligación de facilitar el hueco existe igualmente.",
+  "tags": [
+   "velocidad",
+   "distancia-seguridad",
+   "adelantamiento"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-036",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "La distancia total que necesitas para detener el vehículo ante un imprevisto se compone de…",
+  "imagen": null,
+  "opciones": [
+   "únicamente la distancia de frenado.",
+   "la distancia de frenado menos la de reacción.",
+   "la distancia recorrida durante el tiempo de reacción más la distancia de frenado."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Distancia de detención = distancia de reacción + distancia de frenado. Primero reaccionas (sin frenar), luego frenas.",
+  "truco": "Parar es una peli en dos actos: acto 1, te das cuenta (reacción); acto 2, frenas. La entrada la pagas en metros.",
+  "trampa": "Olvidar la reacción es el clásico: antes de que el pie llegue al pedal ya has recorrido un buen puñado de metros sin frenar nada.",
+  "tags": [
+   "velocidad",
+   "distancia-detencion",
+   "distancia-reaccion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-037",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Durante el tiempo de reacción, que en un conductor atento ronda un segundo, el vehículo…",
+  "imagen": null,
+  "opciones": [
+   "empieza ya a frenar suavemente.",
+   "sigue avanzando a la misma velocidad: todavía no has pisado el freno.",
+   "reduce su velocidad aproximadamente a la mitad."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Mientras percibes el peligro y mueves el pie al freno, el coche sigue a la velocidad que llevaba, sin reducirla nada.",
+  "truco": "A 90 km/h, un segundo de reacción son unos 25 metros a toda mecha sin tocar el freno. Tu 'segundito' mide medio campo de fútbol… bueno, un cuarto.",
+  "trampa": "Suena lógico que 'algo ya frenas', pero no: hasta que el pedal baja, la física sigue a lo suyo y tú de pasajero.",
+  "tags": [
+   "velocidad",
+   "distancia-reaccion",
+   "tiempo-reaccion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-038",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Con el mismo tiempo de reacción, si circulas al doble de velocidad, la distancia de reacción…",
+  "imagen": null,
+  "opciones": [
+   "se duplica.",
+   "se cuadruplica.",
+   "no cambia: depende solo de tus reflejos."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La distancia de reacción es proporcional a la velocidad: mismo tiempo, doble velocidad, doble distancia recorrida.",
+  "truco": "Reacción crece en línea recta (x2 velocidad = x2 metros); la de FRENADO es la que se dispara al cuadrado (x4).",
+  "trampa": "El x4 pica porque es verdad… para la distancia de frenado. La de reacción es una simple regla de tres: tiempo fijo por velocidad.",
+  "tags": [
+   "velocidad",
+   "distancia-reaccion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-039",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Pasas de circular a 50 km/h a hacerlo a 100 km/h. Tu distancia de frenado, aproximadamente…",
+  "imagen": null,
+  "opciones": [
+   "se duplica.",
+   "aumenta un 50 por ciento.",
+   "se multiplica por cuatro."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "La distancia de frenado crece con el cuadrado de la velocidad: al doblarla, se multiplica aproximadamente por cuatro.",
+  "truco": "Doble de velocidad, cuádruple de frenada. El velocímetro suma, pero la frenada multiplica.",
+  "trampa": "El 'doble de velocidad = doble de frenada' es la intuición que mata: la energía que hay que disipar va al cuadrado, no en línea recta.",
+  "explicacion_larga": "La energía cinética de un vehículo depende del cuadrado de su velocidad: a doble velocidad, cuatro veces más energía que los frenos deben transformar en calor. Por eso la distancia de frenado no crece en proporción a la velocidad, sino mucho más deprisa: pasar de 50 a 100 km/h multiplica la frenada por cuatro, y pasar de 50 a 150 la multiplica por nueve. Este dato explica media asignatura de velocidad: por qué los límites urbanos bajaron a 30, por qué en mojado hay que ampliar tanto la distancia y por qué 'ir un poco más rápido' cuesta tantos metros cuando algo se cruza.",
+  "tags": [
+   "velocidad",
+   "distancia-frenado"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-040",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿Cuál de estos factores NO influye en la distancia de frenado?",
+  "imagen": null,
+  "opciones": [
+   "El tiempo que tardas en darte cuenta del peligro.",
+   "El estado de los neumáticos y del firme.",
+   "La carga que transporta el vehículo."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Percatarse del peligro pertenece a la fase de reacción; la de frenado depende del vehículo, la carga, el firme y la velocidad.",
+  "truco": "Separa las dos fases: lo que pasa en tu cabeza es reacción; lo que pasa entre rueda y asfalto es frenado.",
+  "trampa": "Todo influye en la distancia TOTAL de detención, y ahí está el lío: la pregunta acota solo la fase de frenado, lee con lupa.",
+  "tags": [
+   "velocidad",
+   "distancia-frenado",
+   "factores"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-041",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "La fatiga, el alcohol o ir mirando el móvil alargan sobre todo…",
+  "imagen": null,
+  "opciones": [
+   "la distancia de frenado, porque el vehículo frena peor.",
+   "el tiempo de reacción y, con él, los metros que recorres sin frenar.",
+   "nada medible: son leyendas de autoescuela."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Esos factores actúan sobre el conductor: tardas más en percibir y decidir, así que la distancia de reacción se dispara.",
+  "truco": "Lo que afecta al PILOTO alarga la reacción; lo que afecta a la MÁQUINA (frenos, ruedas, firme, carga) alarga el frenado.",
+  "trampa": "El coche frena igual de bien con el conductor cansado; el problema es que la orden de frenar llega tarde. El eslabón débil eres tú.",
+  "tags": [
+   "velocidad",
+   "distancia-reaccion",
+   "factores"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-042",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "En una bajada prolongada, a igual velocidad, la distancia de frenado…",
+  "imagen": null,
+  "opciones": [
+   "es la misma que en llano.",
+   "disminuye, porque el motor retiene más.",
+   "aumenta: la pendiente empuja el vehículo mientras frenas."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Cuesta abajo la gravedad juega en tu contra: los frenos trabajan más y necesitas más metros para detenerte.",
+  "truco": "En bajada, el coche 'pesa hacia delante': anticípate, baja de marcha y deja que el motor retenga en vez de cocer los frenos.",
+  "trampa": "La retención del motor ayuda a no acelerar, pero no acorta una frenada de emergencia: la pendiente sigue sumando metros.",
+  "tags": [
+   "velocidad",
+   "distancia-frenado",
+   "pendiente"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-043",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Una señal circular con orla roja y el número 50 en su interior te indica…",
+  "imagen": null,
+  "opciones": [
+   "la velocidad aconsejada para ese tramo.",
+   "que está prohibido circular a más de 50 km/h a partir de la señal.",
+   "que debes circular exactamente a 50 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Es la R-301, velocidad máxima: prohíbe superar los 50 km/h desde el lugar donde está colocada.",
+  "truco": "Triángulo avisa, círculo manda, cuadrado informa. Círculo con borde rojo y número = techo obligatorio.",
+  "trampa": "No te obliga a ir A 50, sino a no PASAR de 50. Puedes ir más despacio siempre que no entorpezcas.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "limites"
+  ],
+  "senalId": "R-301"
+ },
+ {
+  "id": "M05-044",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿Qué señal pone fin a una limitación de 50 km/h establecida por una R-301?",
+  "imagen": null,
+  "opciones": [
+   "La R-501: círculo blanco con el 50 en gris cruzado por una franja.",
+   "Una señal cuadrada azul con un número más alto.",
+   "Ninguna: la limitación caduca automáticamente a los dos kilómetros."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La R-501, fin de la limitación de velocidad, levanta la prohibición; también lo haría un fin de prohibiciones (R-500) o una nueva limitación distinta.",
+  "truco": "Señal 'en gris y tachada' = se acabó lo que se daba. El 50 desteñido con franja es el fin del 50.",
+  "trampa": "La cuadrada azul con número es la S-7, una velocidad ACONSEJADA: informa, pero no anula ninguna prohibición.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "fin-limitacion"
+  ],
+  "senalId": "R-501"
+ },
+ {
+  "id": "M05-045",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Señal circular AZUL con el número 30 en blanco (R-411). ¿A qué te obliga?",
+  "imagen": null,
+  "opciones": [
+   "A no superar los 30 km/h.",
+   "A circular exactamente a 30 km/h, sin variación.",
+   "A circular al menos a 30 km/h, salvo que las circunstancias no lo permitan."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Es la señal de velocidad mínima: obliga a no bajar de 30 km/h mientras las condiciones lo permitan.",
+  "truco": "Círculo azul = obligación. Si lleva un número, te obliga a NO BAJAR de él: es un suelo, no un techo.",
+  "trampa": "El color lo es todo: mismo número en rojo sería un máximo. En azul, es un mínimo. Quien no mira el color, pica.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "velocidad-minima"
+  ],
+  "senalId": "R-411"
+ },
+ {
+  "id": "M05-046",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Bajo una señal R-411 de velocidad mínima 40, ¿puedes circular a 30 km/h?",
+  "imagen": null,
+  "opciones": [
+   "Sí, siempre: la velocidad mínima es solo orientativa.",
+   "Solo si las condiciones del tráfico, del vehículo o de la vía te impiden alcanzar los 40.",
+   "No: si no puedes mantener 40, debes detenerte en el arcén."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La R-411 obliga, pero cede ante lo imposible: atasco, avería, meteorología… con causa justificada puedes ir más despacio.",
+  "truco": "Las mínimas mandan 'siempre que se pueda'. La causa justificada es tu única llave para bajar del número azul.",
+  "trampa": "Ni 'orientativa' (es una señal de obligación) ni 'detente' (parar en el arcén sin emergencia es peor). El matiz está en el término medio legal.",
+  "explicacion_larga": "La señal R-411 impone una velocidad mínima obligatoria desde su ubicación hasta la próxima intersección o hasta una señal de fin de velocidad mínima. Ahora bien, ninguna obligación de velocidad exige lo imposible: si el tráfico está congestionado, las condiciones meteorológicas son adversas o tu vehículo sufre un problema, circular por debajo del mínimo está justificado. Lo que sanciona la norma es ir despacio SIN causa: entorpecer la circulación por comodidad o distracción. Como siempre, la velocidad debe adaptarse primero a las circunstancias y después a los números.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "velocidad-minima"
+  ],
+  "senalId": "R-411"
+ },
+ {
+  "id": "M05-047",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Señal cuadrada azul con el número 70 en blanco (S-7). ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Velocidad máxima aconsejada de 70 km/h en condiciones favorables.",
+   "Velocidad mínima obligatoria de 70 km/h.",
+   "Velocidad máxima obligatoria de 70 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La S-7 recomienda no superar esa velocidad mientras las condiciones del tramo lo aconsejen; es indicación, no prohibición.",
+  "truco": "Cuadrado azul informa, no manda: el 70 es un consejo de la vía, como el del amigo que conoce la curva.",
+  "trampa": "El círculo azul con número sí obliga (velocidad mínima R-411); el cuadrado azul solo aconseja. Forma y color son el examen entero.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "velocidad-aconsejada"
+  ],
+  "senalId": "S-7"
+ },
+ {
+  "id": "M05-048",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "En un tramo con señal S-7 de 80, y sin superar el límite genérico de la vía, ¿puedes circular a 90 km/h?",
+  "imagen": null,
+  "opciones": [
+   "No: la S-7 fija un máximo cuya superación se sanciona como exceso de velocidad.",
+   "Sí, en cualquier circunstancia: total, es un consejo.",
+   "Puedes, porque es una recomendación, pero solo si las condiciones de la vía y del tráfico lo hacen seguro."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "La S-7 no es un límite sancionable por sí mismo, pero superarla solo es admisible cuando las circunstancias garantizan la seguridad.",
+  "truco": "La S-7 es el 'yo que tú no correría' de la carretera: puedes ignorarla, pero si pasa algo, la culpa apunta a tu velocidad.",
+  "trampa": "El 'sí, total, es un consejo' se pasa de listo: si superas la aconsejada y hay incidente, tu velocidad puede calificarse de inadecuada con todas sus consecuencias.",
+  "explicacion_larga": "La señal S-7 indica la velocidad máxima aconsejada para un tramo (una curva, un desnivel, una zona de incorporaciones) en condiciones favorables. No establece una prohibición, así que superarla no es, por sí sola, una infracción por exceso de velocidad siempre que respetes los límites obligatorios de la vía. Pero cuidado con la letra pequeña: la obligación de adecuar la velocidad a las circunstancias sigue vigente. Si sobrepasas la aconsejada con lluvia, tráfico denso o mala visibilidad y ocurre algo, tu velocidad se considerará inadecuada, con responsabilidad incluida. En condiciones desfavorables, la aconsejada es, en la práctica, tu techo sensato.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "velocidad-aconsejada"
+  ],
+  "senalId": "S-7"
+ },
+ {
+  "id": "M05-049",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Entras en una zona señalizada con la S-30, 'Zona a 30'. ¿Qué implica?",
+  "imagen": null,
+  "opciones": [
+   "Solo la calle donde está colocada la señal queda limitada a 30.",
+   "Es una recomendación pensada para calles con niños.",
+   "Todas las vías de la zona quedan limitadas a 30 km/h hasta la señal de fin de zona (S-31)."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La S-30 delimita una ZONA completa: el 30 rige en todas sus calles hasta que la S-31 marca la salida.",
+  "truco": "La palabra clave es 'zona': no es una señal de calle, es la frontera de un barrio entero a 30.",
+  "trampa": "No confundas con una R-301 de 30, que rige en esa vía: la S-30 te mete en un territorio completo con sus propias reglas.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "zona-30"
+  ],
+  "senalId": "S-30"
+ },
+ {
+  "id": "M05-050",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Señal S-28 (zona de estancia y juego, antigua calle residencial). ¿Qué velocidad máxima rige y quién tiene prioridad?",
+  "imagen": null,
+  "opciones": [
+   "10 km/h, y los peatones tienen prioridad: pueden usar toda la calle e incluso jugar en ella.",
+   "30 km/h, y la prioridad es de los vehículos, como en cualquier calle.",
+   "20 km/h, el límite de siempre, sin ninguna prioridad especial para el peatón."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "En la S-28 (zona de estancia y juego) el límite es 10 km/h desde el RD 465/2025 y los peatones mandan: pueden ocupar toda la vía y están permitidos los juegos.",
+  "truco": "La casita con el balón: 10 km/h y el peatón (o el balón) manda.",
+  "trampa": "El 20 era el límite hasta 2025 y por eso lo recuerdas mal. Hoy son 10.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "calle-residencial"
+  ],
+  "senalId": "S-28"
+ },
+ {
+  "id": "M05-051",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿En qué se diferencia una calle residencial (S-28) de una calle de plataforma única sin esa señal?",
+  "imagen": null,
+  "opciones": [
+   "En nada: son exactamente lo mismo.",
+   "La plataforma única sin señal va a 20 km/h; la S-28 baja a 10 km/h y da prioridad total al peatón, con juegos permitidos.",
+   "Ambas van a 10 km/h, pero solo la plataforma única permite juegos."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La calle de plataforma única sin señal tiene límite de 20 km/h; la S-28 (zona de estancia y juego) lo baja a 10 y añade prioridad peatonal total, juegos permitidos y estacionamiento solo en lugares señalizados.",
+  "truco": "Plataforma única: 20. La casita con el balón (S-28): 10 y manda el peatón.",
+  "trampa": "Antes ambas iban a 20 y de ahí la confusión; desde 2025 la S-28 baja a 10.",
+  "tags": [
+   "velocidad",
+   "senales",
+   "calle-residencial",
+   "via-urbana"
+  ],
+  "senalId": "S-28"
+ },
+ {
+  "id": "M05-052",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Ves dos señales con un '60': una circular con orla roja y otra cuadrada azul. ¿Cuál te obliga?",
+  "imagen": null,
+  "opciones": [
+   "Las dos por igual: ambas fijan velocidades.",
+   "La circular con orla roja (R-301); la cuadrada azul (S-7) solo aconseja.",
+   "La cuadrada azul, porque las señales azules son las de obligación."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El círculo con borde rojo prohíbe superar los 60; el cuadrado azul solo recomienda esa velocidad máxima.",
+  "truco": "Triángulo avisa, círculo manda, cuadrado informa. Con velocidades: rojo redondo obliga, azul cuadrado aconseja.",
+  "trampa": "El azul despista porque las señales de obligación SÍ son azules… pero redondas. El cuadrado azul es de indicación, no de obligación.",
+  "tags": [
+   "velocidad",
+   "senales"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-053",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Atraviesas un pueblo por una travesía sin señales de velocidad. ¿Cuál es el límite genérico?",
+  "imagen": null,
+  "opciones": [
+   "50 km/h.",
+   "70 km/h.",
+   "90 km/h, porque sigue siendo carretera."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "En las travesías el límite genérico es de 50 km/h para todos los vehículos, salvo señalización distinta.",
+  "truco": "Si la carretera se mete en el pueblo, el pueblo manda: 50 y ojos bien abiertos.",
+  "trampa": "El asfalto es el mismo que fuera, pero hay peatones, comercios y cruces: por eso el 'sigue siendo carretera' es la opción venenosa.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "travesia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-054",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Te aproximas a un paso a nivel sin barreras. En cuanto a la velocidad, debes…",
+  "imagen": null,
+  "opciones": [
+   "mantenerla para cruzar cuanto antes.",
+   "aumentarla ligeramente si no ves ningún tren.",
+   "moderarla y estar en condiciones de detenerte si fuera necesario."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Ante un paso a nivel hay que moderar la velocidad y poder detenerse: solo se cruza tras comprobar que no se acerca ningún tren.",
+  "truco": "Contra un tren no hay empate: al acercarte, pie fuera del acelerador y prepárate para parar.",
+  "trampa": "'No veo tren' no es 'no viene tren': curvas, vegetación o el segundo tren que no esperabas. La velocidad se modera ANTES de comprobar.",
+  "tags": [
+   "velocidad",
+   "moderacion",
+   "paso-a-nivel"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-055",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Ya has comprobado que puedes cruzar un paso a nivel con seguridad. ¿Cómo debes atravesarlo?",
+  "imagen": null,
+  "opciones": [
+   "Muy despacio, en primera, mirando a ambos lados durante todo el cruce.",
+   "Sin demora, a una velocidad que te permita cruzarlo con rapidez y sin riesgo de quedarte detenido encima.",
+   "Deteniéndote un instante en el centro para comprobar el otro sentido."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Una vez decidido el cruce, se atraviesa sin demora: lo peligroso es entretenerse o quedarse parado sobre las vías.",
+  "truco": "Antes del paso, prudencia; encima del paso, decisión. Las vías no son sitio para pensárselo.",
+  "trampa": "El 'despacito y con cuidado' suena prudente, pero alarga tu estancia en el punto más letal de la vía. La prudencia va ANTES, no encima.",
+  "tags": [
+   "velocidad",
+   "paso-a-nivel"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-056",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿Existe algún margen legal que permita al conductor circular 'un poco' por encima del límite sin cometer infracción?",
+  "imagen": null,
+  "opciones": [
+   "No: superar el límite, aunque sea por poco, ya es infracción.",
+   "Sí, un 10 por ciento en todas las vías.",
+   "Sí, 5 km/h, pero solo dentro de poblado."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Para el conductor no existe margen alguno: el límite es exigible desde el primer km/h de exceso.",
+  "truco": "Los márgenes que circulan por internet son de los radares, para corregir SU error de medición. A ti no te regalan nada: el límite es el límite.",
+  "trampa": "Confundir la tolerancia técnica de un cinemómetro con un 'derecho a pasarse' es el bulo favorito de las sobremesas. La norma no te concede ni uno.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "radares"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-057",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "¿Qué vehículos pueden rebasar los límites de velocidad sin ser sancionados?",
+  "imagen": null,
+  "opciones": [
+   "Los taxis, cuando el pasajero tiene una prisa justificada.",
+   "Las motocicletas, por su mayor agilidad y menor tamaño.",
+   "Los vehículos prioritarios (policía, ambulancias, bomberos) en servicio urgente, extremando la precaución."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Solo los vehículos prioritarios en servicio urgente pueden superar los límites, sin poner en riesgo a nadie y señalizando su presencia.",
+  "truco": "Sirena y rotativos en servicio urgente = pase VIP de velocidad. Todo lo demás, incluida tu prisa, paga tarifa normal.",
+  "trampa": "La 'prisa justificada' del taxi no existe en el reglamento: la urgencia tiene que ser del SERVICIO del vehículo prioritario, no del cliente.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "vehiculos-prioritarios"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M05-058",
+  "mundo": 5,
+  "tema": "Velocidad",
+  "pregunta": "Acabas de aprobar y estrenas la 'L'. En autopista, tu velocidad máxima como conductor novel es…",
+  "imagen": null,
+  "opciones": [
+   "100 km/h durante el primer año de permiso.",
+   "120 km/h: los noveles ya no tienen límites especiales de velocidad.",
+   "90 km/h hasta cumplir dos años de carnet."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Los conductores noveles tienen los mismos límites de velocidad que el resto: 120 km/h en autopista con un turismo.",
+  "truco": "La 'L' avisa a los demás, no te frena a ti: mismos límites de velocidad que cualquiera desde el día uno.",
+  "trampa": "El límite especial para noveles existió hace décadas y sobrevive en la memoria colectiva. Hoy sus restricciones van por otro lado (como la tasa de alcohol), no por la velocidad.",
+  "explicacion_larga": "Durante años los conductores noveles tuvieron un límite propio de velocidad, y ese recuerdo sigue alimentando preguntas trampa. La realidad actual es que quien acaba de obtener el permiso está sujeto exactamente a los mismos límites genéricos que un conductor veterano: 120 km/h en autopista y autovía con un turismo, 90 en convencional y los límites urbanos de 20/30/50. Donde sí hay diferencias para el novel es en otros frentes, como la tasa de alcohol más estricta durante los dos primeros años. En velocidad, la 'L' en la luna trasera es información para los demás, no una limitación para ti.",
+  "tags": [
+   "velocidad",
+   "limites",
+   "novel",
+   "autopista"
+  ],
+  "senalId": null
+ }
+]

@@ -1,0 +1,1338 @@
+[
+ {
+  "id": "M01-001",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "La calzada es…",
+  "imagen": null,
+  "opciones": [
+   "toda la superficie de la carretera, arcenes incluidos.",
+   "la parte de la vía destinada a la circulación de vehículos.",
+   "la franja lateral por la que pueden circular los peatones."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "La calzada es solo la parte por donde circulan los vehículos. La carretera es más: calzada + arcenes.",
+  "truco": "Carretera = calzada + arcenes. La calzada es solo el 'campo de juego' de los vehículos.",
+  "trampa": "Te cuelan la carretera entera. Los arcenes NO forman parte de la calzada.",
+  "tags": [
+   "definiciones",
+   "via"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-002",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Qué es el arcén?",
+  "imagen": null,
+  "opciones": [
+   "Un carril estrecho para vehículos lentos.",
+   "La franja longitudinal pegada a la calzada, no destinada a la circulación normal de automóviles.",
+   "La zona de la vía reservada a los peatones en poblado."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "El arcén va pegado a la calzada pero no es para que circulen los automóviles en condiciones normales.",
+  "truco": "Arcén = el 'banquillo' de la vía: se usa en emergencias y por los más lentos, no para jugar el partido.",
+  "trampa": "No es un carril: un carril forma parte de la calzada, el arcén no.",
+  "tags": [
+   "definiciones",
+   "arcen"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-003",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Un carril es una banda longitudinal en que puede estar subdividida la calzada, con anchura suficiente para permitir la circulación de…",
+  "imagen": null,
+  "opciones": [
+   "una fila de automóviles que no sean motocicletas.",
+   "cualquier fila de vehículos, incluidas las motocicletas.",
+   "dos filas de vehículos en paralelo."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La definición legal exige anchura para una fila de automóviles QUE NO SEAN MOTOCICLETAS.",
+  "truco": "Si cabe una moto pero no un coche, no es un carril. El coche es la 'unidad de medida' del carril.",
+  "trampa": "La coletilla 'que no sean motocicletas' es la parte que el examen espera que no te sepas.",
+  "tags": [
+   "definiciones",
+   "carril"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-004",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Puede una autopista tener cruces a nivel con otras carreteras?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si están debidamente señalizados.",
+   "No: no cruza a nivel ninguna otra vía, senda ni línea de ferrocarril.",
+   "Solo con vías pecuarias y caminos agrícolas."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La autopista está especialmente proyectada para que nada la cruce a su nivel: todo pasa por encima o por debajo.",
+  "truco": "Autopista = burbuja: nadie entra por sorpresa, nada la cruza a nivel.",
+  "trampa": "El 'si están señalizados' suena razonable. En autopista no hay cruce a nivel ni con señales.",
+  "tags": [
+   "via",
+   "autopista"
+  ],
+  "senalId": "S-1"
+ },
+ {
+  "id": "M01-005",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Cuál es una diferencia entre autovía y autopista?",
+  "imagen": null,
+  "opciones": [
+   "La autovía puede tener accesos a propiedades colindantes, aunque limitados.",
+   "La autovía puede tener cruces a nivel si hay poca circulación.",
+   "En la autovía las calzadas no están separadas para cada sentido."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La autovía comparte casi todo con la autopista (calzadas separadas, sin cruces a nivel), pero admite limitación de accesos a las propiedades colindantes en vez de prohibición total.",
+  "truco": "Autovía = autopista 'de andar por casa': mismas pintas, pero con alguna puerta lateral (accesos limitados).",
+  "trampa": "Cruces a nivel no hay NI en autovía ni en autopista. Te tientan con la opción falsa más famosa.",
+  "tags": [
+   "via",
+   "autovia"
+  ],
+  "senalId": "S-1a"
+ },
+ {
+  "id": "M01-006",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Un tramo de carretera que discurre por poblado se denomina…",
+  "imagen": null,
+  "opciones": [
+   "travesía.",
+   "vía de servicio.",
+   "calle residencial."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Travesía: tramo de carretera que atraviesa un poblado.",
+  "truco": "Travesía = la carretera 'atraviesa' el pueblo. La palabra se delata sola.",
+  "trampa": "La 'zona de estancia y juego' (señal S-28, antes 'calle residencial') es otra cosa: una zona urbana con prioridad peatonal, no un tramo de carretera que cruza el pueblo.",
+  "tags": [
+   "via",
+   "travesia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-007",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Una persona que empuja su bicicleta caminando por la vía, ¿qué se considera?",
+  "imagen": null,
+  "opciones": [
+   "Conductora, porque lleva un vehículo.",
+   "Peatona.",
+   "Usuaria mixta: conductora en calzada y peatona en acera."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Quien va a pie empujando una bicicleta o un ciclomotor es, a todos los efectos, peatón.",
+  "truco": "¿Pies en el suelo y manos en el manillar? Peatón. Solo eres conductor si vas MONTADO.",
+  "trampa": "Llevar un vehículo de la mano no te convierte en conductor: te la cuelan con la lógica de 'pero lleva una bici'.",
+  "tags": [
+   "definiciones",
+   "peaton"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-008",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Por construcción, un ciclomotor de dos ruedas no puede superar…",
+  "imagen": null,
+  "opciones": [
+   "los 45 km/h.",
+   "los 50 km/h.",
+   "los 40 km/h."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Ciclomotor: hasta 50 cm³ (si es de combustión) y velocidad máxima por construcción de 45 km/h.",
+  "truco": "Ciclomotor: 50 de cilindrada, 45 de velocidad. '50-45', como un marcador que pierde por poco.",
+  "trampa": "El 50 existe, pero es la cilindrada. Te cambian las dos cifras de sitio a ver si picas.",
+  "tags": [
+   "definiciones",
+   "ciclomotor"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-009",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "A efectos del Reglamento, ¿el ciclomotor es un vehículo de motor?",
+  "imagen": null,
+  "opciones": [
+   "Sí, porque lleva motor.",
+   "No: el reglamento lo excluye expresamente de la definición de vehículo de motor.",
+   "Solo si supera los 25 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Aunque parezca absurdo, la norma excluye a los ciclomotores (y a los tranvías) de la categoría 'vehículo de motor'. Son una categoría propia.",
+  "truco": "Ciclomotor: tiene motor, pero no es 'de motor'. Es el falso amigo favorito del examen.",
+  "trampa": "La lógica te empuja al 'sí, porque lleva motor'. El examen vive de esa lógica.",
+  "tags": [
+   "definiciones",
+   "ciclomotor"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-010",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Quién es conductor?",
+  "imagen": null,
+  "opciones": [
+   "Solo quien maneja un vehículo de motor.",
+   "Quien maneja el mecanismo de dirección de un vehículo, y también quien conduce animales por la vía.",
+   "Cualquier persona que ocupa el asiento delantero."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Conductor es quien maneja un vehículo… y también quien guía animales de tiro, carga o montura por la vía.",
+  "truco": "El pastor con su rebaño en la carretera también es 'conductor'. Conducir no es solo cosa de volantes.",
+  "trampa": "Ir sentado delante no te hace conductor; guiar un caballo, sí.",
+  "tags": [
+   "definiciones",
+   "conductor"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-011",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "La zona de la vía urbana destinada de forma exclusiva al tránsito de peatones, elevada normalmente sobre la calzada, es…",
+  "imagen": null,
+  "opciones": [
+   "el arcén.",
+   "la acera.",
+   "la zona de servidumbre."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "La acera es la parte urbana reservada a los peatones.",
+  "truco": "Acera en ciudad = arcén no existe. En poblado, el peatón tiene su 'carril VIP': la acera.",
+  "trampa": "El arcén es de carretera; la acera, de ciudad. Cambiarlos de sitio es el truco más viejo del manual.",
+  "tags": [
+   "via",
+   "acera",
+   "peaton"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-012",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Qué es un paso a nivel?",
+  "imagen": null,
+  "opciones": [
+   "Un cruce a la misma altura entre una vía férrea y una carretera.",
+   "Un paso elevado para peatones sobre la autopista.",
+   "El tramo de calzada nivelado tras un cambio de rasante."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Paso a nivel = tren y carretera cruzándose a la misma altura.",
+  "truco": "'A nivel' = al mismo nivel. Si hay puente o túnel, ya no es 'a nivel'.",
+  "trampa": "Las otras opciones usan 'nivel' para despistar. Piensa en el tren y no fallas.",
+  "tags": [
+   "via",
+   "paso-a-nivel"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-013",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Se considera vía interurbana…",
+  "imagen": null,
+  "opciones": [
+   "toda vía pública situada fuera de poblado.",
+   "toda vía con velocidad superior a 50 km/h.",
+   "cualquier carretera de titularidad estatal."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Interurbana = fuera de poblado. Urbana = dentro. Travesía = carretera que cruza un poblado.",
+  "truco": "Urbana / interurbana no va de velocidades ni de dueños: va de si hay pueblo alrededor o no.",
+  "trampa": "La velocidad es consecuencia del tipo de vía, no su definición. Te invitan a razonar al revés.",
+  "tags": [
+   "via",
+   "interurbana"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-014",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "En una vía interurbana con arcén transitable y suficiente, ¿quiénes están obligados a circular por él?",
+  "imagen": null,
+  "opciones": [
+   "Las motocicletas y los turismos lentos.",
+   "Los ciclomotores, los ciclos y los vehículos de tracción animal, entre otros.",
+   "Únicamente la maquinaria agrícola."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Por el arcén transitable deben ir ciclos, ciclomotores, vehículos de tracción animal y otros vehículos lentos especiales. Las motocicletas circulan por la calzada.",
+  "truco": "Al arcén van los 'sin carné de la velocidad': bicis, ciclomotores y carros. La moto es calzada siempre.",
+  "trampa": "Meter a las motocicletas en el arcén es el error clásico: una moto es un vehículo de motor y va por la calzada.",
+  "tags": [
+   "arcen",
+   "circulacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-015",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Pueden los peatones circular por una autopista?",
+  "imagen": null,
+  "opciones": [
+   "Sí, por el arcén y en sentido contrario a la circulación.",
+   "No, lo tienen prohibido.",
+   "Solo de día y fuera de la calzada."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Peatones, ciclos, ciclomotores y vehículos de tracción animal tienen prohibido circular por autopistas y autovías.",
+  "truco": "En la 'burbuja' de la autopista solo entran los rápidos. Peatones y pedales, fuera.",
+  "trampa": "La regla del arcén en sentido contrario existe… pero en carreteras convencionales, no en autopista.",
+  "tags": [
+   "autopista",
+   "peaton"
+  ],
+  "senalId": "S-1"
+ },
+ {
+  "id": "M01-016",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Puede una persona de 20 años circular en bicicleta por una autovía?",
+  "imagen": null,
+  "opciones": [
+   "No, las bicicletas nunca pueden entrar en una autovía.",
+   "Sí, por el arcén, salvo que esté prohibido por señalización.",
+   "Sí, por el carril derecho de la calzada."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Los ciclistas mayores de 14 años pueden circular por el ARCÉN de las autovías, salvo que una señal lo prohíba expresamente.",
+  "truco": "Bici en autovía: arcén sí (con más de 14 años), calzada jamás. En autopista, nada de nada.",
+  "trampa": "El 'nunca' de la primera opción es el cebo: la prohibición total es en autopista, no en autovía.",
+  "explicacion_larga": "La norma general prohíbe a las bicicletas circular por autopistas y autovías. Pero hay UNA excepción que al examen le encanta: los ciclistas mayores de 14 años pueden usar el arcén de las AUTOVÍAS, salvo que exista señalización que lo prohíba expresamente por motivos de seguridad. Fíjate en los tres candados de la excepción: (1) solo autovía —nunca autopista—, (2) solo el arcén —nunca la calzada— y (3) solo mayores de 14 años. Si el enunciado rompe cualquiera de los tres candados, la respuesta es NO.",
+  "tags": [
+   "autovia",
+   "ciclistas"
+  ],
+  "senalId": "S-1a"
+ },
+ {
+  "id": "M01-017",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Una zona de la calzada delimitada para proteger a los peatones que cruzan, donde pueden esperar antes de seguir cruzando, se llama…",
+  "imagen": null,
+  "opciones": [
+   "refugio.",
+   "vado peatonal.",
+   "mediana."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "El refugio es esa 'isla' en medio de la calzada pensada para que el peatón espere protegido.",
+  "truco": "Refugio = isla salvavidas para peatones a mitad de cruce.",
+  "trampa": "La mediana separa calzadas, no protege peatones. Suenan parecido y ahí está el anzuelo.",
+  "tags": [
+   "via",
+   "peaton"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-018",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "En una zona señalizada con la señal S-28 (zona de estancia y juego, antigua «calle residencial»), la velocidad máxima es…",
+  "imagen": null,
+  "opciones": [
+   "10 km/h y los peatones tienen prioridad en toda la zona.",
+   "30 km/h, con prioridad para los vehículos.",
+   "20 km/h, y los peatones deben ir siempre por la acera."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La señal S-28, rebautizada 'zona de estancia y juego' por el RD 465/2025, fija 10 km/h, prioridad peatonal total y juegos permitidos en la vía; va acompañada de la señal R-301 de 10.",
+  "truco": "S-28 = el salón de casa: entras al paso (10 km/h), mandan los peatones y se puede jugar en la calle.",
+  "trampa": "El 20 era el límite ANTES de la reforma de 2025; hoy la S-28 baja a 10. Y el 30 es el de las 'zonas 30', que es otra historia.",
+  "tags": [
+   "via",
+   "calle-residencial",
+   "velocidad"
+  ],
+  "senalId": "S-28"
+ },
+ {
+  "id": "M01-019",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Se considera 'poblado' el espacio que comprende edificios agrupados y…",
+  "imagen": null,
+  "opciones": [
+   "cuyas entradas y salidas están señalizadas como tales.",
+   "que tiene al menos 500 habitantes censados.",
+   "que dispone de alumbrado público en toda la travesía."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Poblado: conjunto de edificaciones cuyas entradas y salidas están señalizadas (las típicas señales con el nombre del pueblo).",
+  "truco": "Un poblado 'nace' donde lo dice la señal de entrada y 'muere' donde la señal con la barra roja.",
+  "trampa": "Ni habitantes ni farolas: lo que define el poblado a efectos de tráfico es la señalización de entrada y salida.",
+  "tags": [
+   "definiciones",
+   "poblado"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-020",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Un turismo es un automóvil destinado al transporte de personas con capacidad máxima de…",
+  "imagen": null,
+  "opciones": [
+   "9 plazas, incluida la del conductor.",
+   "7 plazas, sin contar al conductor.",
+   "5 plazas, incluida la del conductor."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Turismo: hasta 9 plazas contando al conductor. Con más plazas ya hablamos de otro tipo de vehículo.",
+  "truco": "Turismo = 'el 9 incluido tú'. Más de 9 ya no es un coche, por grande que te parezca.",
+  "trampa": "El matiz 'incluida la del conductor' es donde te esperan. Cuenta siempre al que conduce.",
+  "tags": [
+   "definiciones",
+   "turismo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-021",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Cuál de estos NO se considera vehículo de motor a efectos del Reglamento?",
+  "imagen": null,
+  "opciones": [
+   "El tranvía.",
+   "La motocicleta.",
+   "El camión."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La definición legal de vehículo de motor excluye expresamente a los ciclomotores, los tranvías y los vehículos para personas de movilidad reducida (las sillas de ruedas a motor).",
+  "truco": "Los tres 'excluidos VIP': tranvía, ciclomotor y silla de ruedas de movilidad reducida. Tienen motor, pero no son 'de motor'.",
+  "trampa": "El tranvía lleva motor eléctrico enorme… y aun así está excluido. La lógica del tamaño no funciona aquí.",
+  "tags": [
+   "definiciones",
+   "vehiculo-motor"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-022",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Puede un vehículo de movilidad personal (patinete eléctrico) circular por la acera?",
+  "imagen": null,
+  "opciones": [
+   "Sí, a velocidad de peatón.",
+   "No, tiene prohibido circular por aceras y zonas peatonales.",
+   "Solo si tiene timbre y luz."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Los VMP no pueden circular por aceras ni zonas peatonales. Tampoco por travesías, vías interurbanas, autopistas ni autovías.",
+  "truco": "El patinete no es peatón ni quiere serlo: acera prohibida, y de ciudad no sale.",
+  "trampa": "El 'a velocidad de peatón' suena prudente y razonable. Da igual: la acera es del peatón, punto.",
+  "tags": [
+   "definiciones",
+   "vmp"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-023",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Un remolque ligero es aquel cuya masa máxima autorizada no excede de…",
+  "imagen": null,
+  "opciones": [
+   "750 kg.",
+   "1.000 kg.",
+   "500 kg."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Remolque ligero: MMA hasta 750 kg. Es la cifra que separa lo que puedes llevar con el permiso B sin más trámites.",
+  "truco": "750: recuérdalo como 'tres cuartos de tonelada'. Es LA cifra estrella de los remolques.",
+  "trampa": "El 1.000 redondo es tentador. El examen adora que redondees mal.",
+  "tags": [
+   "definiciones",
+   "remolque"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-024",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "El punto de una vía donde se encuentran dos tramos con distinta inclinación se denomina…",
+  "imagen": null,
+  "opciones": [
+   "cambio de rasante.",
+   "badén.",
+   "cota de paso."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "El cambio de rasante es donde la pendiente de la vía cambia: el típico 'lomo' que te tapa lo que viene de frente.",
+  "truco": "Rasante = la 'raya del horizonte' de la carretera. Donde cambia, hay cambio de rasante.",
+  "trampa": "El badén es un hundimiento puntual de la calzada, no un cambio de pendiente del trazado.",
+  "tags": [
+   "via",
+   "rasante"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-025",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Una vía ciclista que discurre adosada a la calzada, en un solo sentido o en doble sentido, es…",
+  "imagen": null,
+  "opciones": [
+   "un carril-bici.",
+   "una acera-bici.",
+   "una pista-bici."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Carril-bici: pegado a la calzada. Acera-bici: sobre la acera. Pista-bici: separada e independiente del tráfico.",
+  "truco": "Tres bicis, tres pisos: carril-bici (en la calzada), acera-bici (en la acera), pista-bici (por libre).",
+  "trampa": "Las tres opciones existen de verdad; la diferencia está solo en DÓNDE discurre. Lee 'adosada a la calzada' y no hay duda.",
+  "tags": [
+   "via",
+   "ciclistas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-026",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Cuál de estos vehículos NO es un automóvil?",
+  "imagen": null,
+  "opciones": [
+   "Un tractor agrícola.",
+   "Un autobús.",
+   "Una motocicleta."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Los vehículos especiales (como el tractor) quedan excluidos de la definición de automóvil.",
+  "truco": "Automóvil = motor para TRANSPORTAR. El tractor no transporta: trabaja. Vehículo especial, fuera de la lista.",
+  "trampa": "La moto pequeña y el tractor enorme: tu intuición elige mal cuál es 'menos automóvil'.",
+  "tags": [
+   "definiciones",
+   "automovil"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-027",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Una motocicleta de dos ruedas es un vehículo…",
+  "imagen": null,
+  "opciones": [
+   "de motor, de dos ruedas, con o sin sidecar.",
+   "de dos ruedas con cilindrada máxima de 50 cm³.",
+   "de tres ruedas simétricas con motor."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Motocicleta: vehículo de motor de dos ruedas, con o sin sidecar. Si no pasa de 50 cm³ y 45 km/h, entonces es ciclomotor.",
+  "truco": "50 cm³ y 45 km/h es la frontera: por debajo, ciclomotor; por encima, motocicleta.",
+  "trampa": "La opción del 50 cm³ describe al ciclomotor, su hermano pequeño. Es el cambiazo de siempre.",
+  "tags": [
+   "definiciones",
+   "motocicleta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-028",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Puede un ciclomotor circular por una autovía?",
+  "imagen": null,
+  "opciones": [
+   "Sí, por el arcén, como las bicicletas.",
+   "No: los ciclomotores tienen prohibidas las autopistas y las autovías.",
+   "Sí, si desarrolla al menos 45 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Los ciclomotores no pueden circular ni por autopista ni por autovía. La excepción del arcén es solo para ciclistas mayores de 14 años en autovía.",
+  "truco": "La excepción del arcén de autovía es de las bicis, no del ciclomotor. El ciclomotor se queda en la convencional.",
+  "trampa": "'Como las bicicletas' es la trampa entera: te regalan una excepción ajena para que la adoptes.",
+  "tags": [
+   "autovia",
+   "ciclomotor"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-029",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "La glorieta es un tipo especial de intersección caracterizada por…",
+  "imagen": null,
+  "opciones": [
+   "que los tramos que confluyen se comunican a través de un anillo con circulación rotatoria.",
+   "tener siempre semáforos en todas sus entradas.",
+   "permitir el cruce directo entre las vías que confluyen."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "En la glorieta no se cruza: se entra al anillo, se rota y se sale.",
+  "truco": "Glorieta = tiovivo de coches: todos giran en el anillo, nadie corta por el medio.",
+  "trampa": "Si permite cruce directo, no es glorieta: es un cruce normal disfrazado.",
+  "tags": [
+   "via",
+   "glorieta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-030",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "En una 'zona 30' señalizada con la señal S-30, la velocidad máxima para los vehículos es…",
+  "imagen": null,
+  "opciones": [
+   "30 km/h en todas las vías que comprende la zona.",
+   "30 km/h solo en los cruces.",
+   "20 km/h si hay peatones a la vista."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La señal S-30 delimita una zona completa donde el límite es 30 km/h hasta la señal de fin de zona (S-31).",
+  "truco": "Las señales de 'ZONA' funcionan como un perímetro: valen en toda la zona hasta la señal de fin, no solo donde las ves.",
+  "trampa": "No confundas la zona 30 (límite 30) con la S-28 'zona de estancia y juego', cuyo límite es aún más bajo y con prioridad peatonal.",
+  "tags": [
+   "via",
+   "zona-30",
+   "velocidad"
+  ],
+  "senalId": "S-30"
+ },
+ {
+  "id": "M01-031",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "La sigla MMA de un vehículo hace referencia a…",
+  "imagen": null,
+  "opciones": [
+   "la masa máxima autorizada para circular por las vías públicas con el vehículo cargado.",
+   "la masa del vehículo vacío, con sus herramientas y combustible.",
+   "la masa media que soporta cada eje del vehículo."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La MMA es el tope legal de masa con el que el vehículo puede circular cargado por las vías públicas.",
+  "truco": "MMA = 'Más Me Aguanta': el máximo que puede pesar el vehículo rodando, con toda la carga dentro.",
+  "trampa": "La masa en vacío con combustible y herramientas es la tara. Te cambian una definición por otra a ver si cuela.",
+  "tags": [
+   "definiciones",
+   "mma"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-032",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Qué es la tara de un vehículo?",
+  "imagen": null,
+  "opciones": [
+   "La masa del vehículo con el conductor y un pasajero incluidos.",
+   "La masa máxima que puede alcanzar el vehículo con toda su carga.",
+   "La masa del vehículo con su equipo fijo y su dotación de combustible y herramientas, pero sin carga ni personas."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Tara: el vehículo 'listo para salir' (equipo fijo, agua, combustible, herramientas…) pero sin carga y sin nadie a bordo.",
+  "truco": "Tara = el coche recién salido del taller: lleno de gasolina y herramientas, vacío de gente y de carga.",
+  "trampa": "En cuanto metes al conductor en la báscula ya no es la tara: te mezclan las masas para que piques.",
+  "tags": [
+   "definiciones",
+   "tara"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-033",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Como norma general, ¿cuál es la anchura máxima autorizada de un vehículo para poder circular por las vías públicas?",
+  "imagen": null,
+  "opciones": [
+   "2,50 metros.",
+   "2,55 metros.",
+   "3,00 metros."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La anchura máxima general es de 2,55 metros. Superarla exige autorización especial.",
+  "truco": "Ancho máximo: 2,55. Piensa en 'dos euros con cincuenta y cinco': el peaje exacto que te deja pasar.",
+  "trampa": "El 2,50 redondo suena de maravilla; el examen cuenta con que redondees a la baja.",
+  "explicacion_larga": "El Reglamento General de Vehículos fija las dimensiones máximas para circular sin autorización especial: 2,55 metros de anchura como regla general (con excepciones puntuales, como los 2,60 m de los vehículos acondicionados a temperatura, tipo frigorífico) y 4 metros de altura, carga incluida. Si un vehículo o su carga superan esos límites, no puede circular sin más: necesita autorización especial. Los vehículos especiales pueden exceder estas cifras de forma permanente precisamente porque su propia definición los excepciona.",
+  "tags": [
+   "dimensiones",
+   "vehiculos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-034",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "A efectos de la normativa, un cuadriciclo ligero se considera…",
+  "imagen": null,
+  "opciones": [
+   "un ciclomotor de cuatro ruedas.",
+   "un automóvil de tamaño reducido.",
+   "un vehículo especial."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Los típicos 'coches sin carnet' son cuadriciclos ligeros y la norma los mete en el saco de los ciclomotores.",
+  "truco": "Coche sin carnet = ciclomotor disfrazado de coche. Cuatro ruedas, alma de ciclomotor.",
+  "trampa": "Parece un coche pequeño y por eso te ofrecen 'automóvil'. La carrocería engaña; la categoría legal manda.",
+  "tags": [
+   "definiciones",
+   "cuadriciclo",
+   "ciclomotor"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-035",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Un cuadriciclo NO ligero (pesado), ¿se considera ciclomotor?",
+  "imagen": null,
+  "opciones": [
+   "Sí, todos los cuadriciclos son ciclomotores.",
+   "No: es un vehículo de motor; solo el cuadriciclo ligero entra en la categoría de ciclomotor.",
+   "Solo si su velocidad máxima no supera los 45 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 5,
+  "explicacion_corta": "El cuadriciclo ligero es ciclomotor; el pesado ya juega en la liga de los vehículos de motor.",
+  "truco": "Entre cuadriciclos, el apellido lo es todo: 'ligero' = ciclomotor; sin 'ligero' = vehículo de motor.",
+  "trampa": "Como el ligero sí es ciclomotor, te empujan a generalizar a toda la familia. El pesado se escapa del saco.",
+  "explicacion_larga": "Los cuadriciclos ligeros (masa en vacío reducida, potencia limitada y velocidad limitada por construcción) se consideran ciclomotores y se conducen con el permiso AM. Los cuadriciclos no ligeros o pesados superan alguno de esos límites y la normativa los trata como vehículos de motor: exigen otro permiso y no les valen las reglas del ciclomotor. En el examen, la palabra 'ligero' es el interruptor que cambia toda la respuesta: fíjate siempre en el apellido del cuadriciclo antes de contestar.",
+  "tags": [
+   "definiciones",
+   "cuadriciclo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-036",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Para qué está concebido y construido un vehículo especial?",
+  "imagen": null,
+  "opciones": [
+   "Para el transporte rápido de mercancías peligrosas.",
+   "Para transportar viajeros en trayectos urbanos.",
+   "Para realizar obras o servicios determinados, como la maquinaria agrícola."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "El vehículo especial no nace para transportar, sino para trabajar: obras y servicios (incluida la maquinaria agrícola y sus remolques).",
+  "truco": "Especial = mono de trabajo. Si el vehículo 'curra' (excava, siega, barre), es especial.",
+  "trampa": "Transportar personas o mercancías es cosa de los automóviles; el especial trabaja. Ese es el corte entre categorías.",
+  "tags": [
+   "definiciones",
+   "vehiculo-especial"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-037",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Puede un vehículo especial exceder de forma permanente las masas o dimensiones máximas establecidas con carácter general?",
+  "imagen": null,
+  "opciones": [
+   "Sí, la propia definición de vehículo especial lo contempla.",
+   "No, ningún vehículo puede superar esos límites.",
+   "Solo si circula en vacío, sin ninguna carga."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La definición de vehículo especial admite que esté exceptuado de alguna condición técnica o que exceda permanentemente los límites de masas o dimensiones.",
+  "truco": "Al vehículo especial le perdonan la báscula y el metro: por eso es 'especial'.",
+  "trampa": "El 'ningún vehículo puede' suena a regla sagrada. Para eso existen las excepciones: apréndete quién tiene bula.",
+  "tags": [
+   "vehiculo-especial",
+   "dimensiones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-038",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "El automóvil dispuesto para transportar, a la vez o no, mercancías y personas hasta un máximo de 9 incluido el conductor, en el que se puede sustituir la carga por personas añadiendo asientos, es…",
+  "imagen": null,
+  "opciones": [
+   "un derivado de turismo.",
+   "un vehículo mixto adaptable.",
+   "un turismo familiar."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El vehículo mixto adaptable es el 'transformista': hoy lleva carga, mañana personas, con solo añadir o quitar asientos.",
+  "truco": "Mixto adaptable = furgón con sillas de quita y pon. La palabra 'adaptable' te chiva que los asientos van y vienen.",
+  "trampa": "El derivado de turismo también lleva mercancías, pero solo tiene UNA fila de asientos y no se transforma.",
+  "tags": [
+   "definiciones",
+   "vehiculo-mixto"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-039",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Qué caracteriza a un 'derivado de turismo'?",
+  "imagen": null,
+  "opciones": [
+   "Que puede transportar personas y mercancías a la vez en dos filas de asientos.",
+   "Que es un turismo con un remolque ligero enganchado.",
+   "Que se destina al transporte exclusivo de mercancías y solo dispone de una fila de asientos."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Derivado de turismo: carrocería de turismo, pero dedicado en exclusiva a mercancías y con una única fila de asientos.",
+  "truco": "Derivado de turismo = coche reconvertido en furgo: por fuera coche, por dentro una sola fila de asientos y el resto para carga.",
+  "trampa": "El que mezcla personas y mercancías es el mixto adaptable. Al derivado no le dejan mezclar: solo mercancías.",
+  "explicacion_larga": "El derivado de turismo parte de la carrocería de un turismo normal, pero se destina a servicios o al transporte exclusivo de mercancías: conserva la pinta de coche, elimina las plazas traseras y se queda con una única fila de asientos. Su pareja de baile en el examen es el vehículo mixto adaptable, que sí puede llevar mercancías Y personas (hasta 9 incluido el conductor) intercambiando carga por asientos. Regla rápida: ¿una sola fila y solo carga? Derivado de turismo. ¿Asientos de quita y pon y mezcla de carga y gente? Mixto adaptable.",
+  "tags": [
+   "definiciones",
+   "derivado-turismo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-040",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Un automóvil que circula enganchado a un remolque forma…",
+  "imagen": null,
+  "opciones": [
+   "un tren de carretera.",
+   "un vehículo articulado.",
+   "un vehículo mixto adaptable."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Automóvil + remolque = tren de carretera. Automóvil + semirremolque = vehículo articulado.",
+  "truco": "Remolque completo detrás = 'tren' (vagones enteros). Semirremolque apoyado encima = 'articulado' (se dobla por la cintura).",
+  "trampa": "El articulado lleva SEMIrremolque, que se apoya en el tractor. Si el remolque va entero sobre sus propios ejes, es tren de carretera.",
+  "tags": [
+   "definiciones",
+   "conjunto-vehiculos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-041",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "En un vehículo articulado, el semirremolque…",
+  "imagen": null,
+  "opciones": [
+   "descansa por completo sobre sus propios ejes, sin apoyarse en el tractor.",
+   "se apoya sobre el vehículo tractor y le transmite parte de su peso.",
+   "no puede superar los 750 kg de masa máxima autorizada."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El semirremolque no tiene eje delantero: su parte delantera se apoya en el tractor, que carga con parte de su peso.",
+  "truco": "El semirremolque va 'a caballito' del tractor. Si el remolque camina solo sobre todos sus ejes, es un remolque normal.",
+  "trampa": "Descansar sobre sus propios ejes describe al remolque de un tren de carretera. Y los 750 kg son del remolque ligero: cifra real, sitio equivocado.",
+  "tags": [
+   "definiciones",
+   "conjunto-vehiculos",
+   "semirremolque"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-042",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "La franja longitudinal no destinada a la circulación que separa las dos calzadas de una vía es…",
+  "imagen": null,
+  "opciones": [
+   "el arcén central.",
+   "la isleta.",
+   "la mediana."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "La mediana va 'en medio': separa las calzadas de una vía con doble calzada y por ella no se circula.",
+  "truco": "Mediana = la que está en medio. El nombre hace todo el trabajo.",
+  "trampa": "La isleta encauza el tráfico en puntos concretos; la mediana separa calzadas a lo largo de la vía. Tamaño y función distintos.",
+  "tags": [
+   "via",
+   "mediana"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-043",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Para qué sirve una isleta situada en la calzada?",
+  "imagen": null,
+  "opciones": [
+   "Para encauzar y ordenar la circulación, quedando prohibido circular sobre ella.",
+   "Para que estacionen los vehículos de los servicios de urgencia.",
+   "Para adelantar por su izquierda en caso de retención."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La isleta canaliza el tráfico (y a veces sirve de apoyo a los peatones): es zona vetada a la circulación de vehículos.",
+  "truco": "Isleta = isla: los coches son el mar, y el mar no pasa por encima de la isla.",
+  "trampa": "Como está 'libre', en un atasco tienta usarla de atajo. Es zona excluida de la circulación: pisarla es sancionable.",
+  "tags": [
+   "via",
+   "isleta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-044",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Un ensanchamiento de la vía, de corta longitud, pensado para que los vehículos puedan detenerse sin estorbar la circulación es…",
+  "imagen": null,
+  "opciones": [
+   "una vía de servicio.",
+   "un apartadero.",
+   "un refugio."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El apartadero es ese ensanchamiento corto donde puedes detenerte sin interceptar el tráfico.",
+  "truco": "Apartadero = para 'apartarte' un momento. Corto y a un lado, como su propio nombre indica.",
+  "trampa": "El refugio es para peatones que cruzan; el apartadero, para vehículos que se detienen. No los mezcles.",
+  "tags": [
+   "via",
+   "apartadero"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-045",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "El camino sensiblemente paralelo a una carretera, de carácter secundario, conectado con ella en algunos puntos y que da acceso a los edificios y propiedades contiguos se llama…",
+  "imagen": null,
+  "opciones": [
+   "travesía.",
+   "carril de incorporación.",
+   "vía de servicio."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La vía de servicio corre en paralelo a la principal y 'sirve' a las fincas y edificios de al lado.",
+  "truco": "Vía de SERVICIO = está al servicio de los vecinos de la carretera: gasolineras, naves, casas…",
+  "trampa": "La travesía es la carretera cruzando el pueblo, no un camino paralelo. Te soplan otra definición del mismo tema.",
+  "tags": [
+   "via",
+   "via-de-servicio"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-046",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Qué es una intersección?",
+  "imagen": null,
+  "opciones": [
+   "La zona común en la que se cruzan o se unen dos o más vías al mismo nivel.",
+   "Cualquier curva cerrada con visibilidad reducida.",
+   "El cruce entre una carretera y una línea de ferrocarril."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Intersección: el punto donde dos o más vías se cruzan o se unen a nivel. Puede ser en T, en Y, en X o giratoria.",
+  "truco": "Intersección = donde las vías 'se dan la mano' al mismo nivel. Si hay tren de por medio, eso ya es un paso a nivel.",
+  "trampa": "El cruce con el ferrocarril tiene nombre propio (paso a nivel); reciclarlo aquí es el señuelo.",
+  "tags": [
+   "via",
+   "interseccion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-047",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Cuando dos vías se cruzan a distinto nivel y están comunicadas por ramales de conexión, hablamos de…",
+  "imagen": null,
+  "opciones": [
+   "una glorieta partida.",
+   "un enlace.",
+   "una intersección en estrella."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "El enlace es el 'nudo' de las vías rápidas: los cruces se resuelven a distinto nivel y se pasa de una vía a otra por ramales.",
+  "truco": "Enlace = escaléxtric: puentes, niveles y rampas para cambiar de vía sin cortar el paso a nadie.",
+  "trampa": "En la intersección clásica las vías se tocan al mismo nivel. Si hay puente y ramales, cambia el nombre: enlace.",
+  "explicacion_larga": "La intersección resuelve el cruce de vías al mismo nivel: por eso necesita reglas de prioridad, semáforos o glorietas. El enlace, en cambio, es la solución 'de ingeniería' de autopistas y autovías: las vías se cruzan a distinto nivel (una pasa por encima o por debajo de la otra) y unos ramales de conexión permiten pasar de una a otra sin cortar ninguna corriente de tráfico. De ahí que en autopista no existan cruces a nivel: todos sus nudos son enlaces. Si ves puentes y rampas, no lo llames cruce: llámalo enlace.",
+  "tags": [
+   "via",
+   "enlace",
+   "interseccion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-048",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Dentro de un túnel, ¿está permitido cambiar el sentido de la marcha?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si no viene nadie de frente.",
+   "Sí, en túneles con doble sentido de circulación.",
+   "No, está prohibido en túneles y pasos inferiores."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "En túneles y pasos inferiores está prohibido cambiar el sentido de la marcha (y también circular marcha atrás).",
+  "truco": "En un túnel solo hay un plan: entrar por un lado y salir por el otro. Maniobras raras, ninguna.",
+  "trampa": "El 'si no viene nadie' es el comodín falso de siempre: hay lugares donde la maniobra está prohibida aunque la vía parezca libre.",
+  "tags": [
+   "tunel",
+   "cambio-sentido"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-049",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Circulas con tu turismo por un túnel y no vas a adelantar. ¿Qué separación mínima debes mantener con el vehículo que te precede?",
+  "imagen": null,
+  "opciones": [
+   "100 metros o un intervalo mínimo de 4 segundos.",
+   "50 metros o un intervalo mínimo de 2 segundos.",
+   "150 metros o un intervalo mínimo de 8 segundos."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "En túneles, si no se va a adelantar, los vehículos de hasta 3.500 kg de MMA deben guardar al menos 100 metros o 4 segundos.",
+  "truco": "Túnel: 100 y 4 para los coches. Los de más de 3.500 kg suben a 150 y 6.",
+  "trampa": "Los 2 segundos de la regla general de distancia te suenan bien… pero el túnel tiene su propia norma, más exigente.",
+  "explicacion_larga": "Fuera de los túneles rige la regla general: distancia que permita detenerse sin colisionar (los famosos 2 segundos como referencia práctica). Dentro de un túnel o paso inferior la cosa se endurece: si no vas a adelantar, debes mantener como mínimo 100 metros o 4 segundos con el vehículo precedente si tu vehículo no pasa de 3.500 kg de MMA; los de más de 3.500 kg deben guardar 150 metros o 6 segundos. ¿El motivo? En un túnel un alcance se convierte en ratonera: sin escapatoria y con riesgo de incendio, ese espacio extra es tu salida de emergencia.",
+  "tags": [
+   "tunel",
+   "distancia-seguridad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-050",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Puedes detener tu vehículo unos instantes dentro de un paso inferior para consultar el navegador?",
+  "imagen": null,
+  "opciones": [
+   "Sí, la parada está permitida si dura menos de dos minutos.",
+   "No: en túneles y pasos inferiores están prohibidos tanto la parada como el estacionamiento.",
+   "Sí, siempre que dejes encendidas las luces de posición."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Túneles y pasos inferiores son zona cero de detenciones: prohibido parar y prohibido estacionar, salvo emergencia.",
+  "truco": "Dentro de un tubo no se aparca ni se 'para un segundito': lo que se detiene en un tubo, lo tapona entero.",
+  "trampa": "La parada de menos de 2 minutos existe como concepto… pero en los lugares prohibidos no hay parada corta que valga.",
+  "tags": [
+   "tunel",
+   "paso-inferior",
+   "parada"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-051",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "A efectos de la normativa de tráfico, ¿quiénes son usuarios de la vía?",
+  "imagen": null,
+  "opciones": [
+   "Únicamente los conductores de vehículos.",
+   "Solo los conductores y los peatones.",
+   "Los peatones, los conductores y también los pasajeros."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Usuario de la vía es todo el que la utiliza: quien conduce, quien camina y quien va de pasajero.",
+  "truco": "¿Estás en la vía o encima de algo que rueda por ella? Eres usuario. No hace falta volante.",
+  "trampa": "El pasajero parece 'de relleno', pero también es usuario y también tiene obligaciones (cinturón, no distraer…).",
+  "tags": [
+   "definiciones",
+   "usuarios"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-052",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿A quién corresponde la responsabilidad de señalizar las obras que se realizan en una vía?",
+  "imagen": null,
+  "opciones": [
+   "Siempre a la Dirección General de Tráfico.",
+   "Al organismo que realiza las obras o a la empresa adjudicataria.",
+   "A los conductores que circulan por el tramo en obras."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Las obras las señaliza quien las hace: el organismo que las ejecuta o la empresa adjudicataria.",
+  "truco": "El que monta el pastel pone las velas: quien hace la obra, la señaliza.",
+  "trampa": "La DGT parece la respuesta comodín para todo lo que suene a señales. Aquí la responsabilidad es de quien ejecuta la obra.",
+  "explicacion_larga": "La conservación de la vía y de su señalización ordinaria corresponde al titular de la vía (Estado, comunidad autónoma, diputación o ayuntamiento, según de quién sea la carretera). Pero cuando hay obras, la responsabilidad de señalizarlas recae en el organismo que las realiza o en la empresa adjudicataria, que además necesita autorización previa del titular para colocar o retirar esa señalización. Ojo al reparto de papeles que le encanta al examen: titular = mantiene la vía y su señalización permanente; ejecutor de la obra = señaliza la obra.",
+  "tags": [
+   "via",
+   "obras",
+   "titular-via"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-053",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Un pastor quiere llevar su rebaño por el arcén de una autovía para acortar camino. ¿Puede hacerlo?",
+  "imagen": null,
+  "opciones": [
+   "No: los animales tienen prohibido circular por autopistas y autovías.",
+   "Sí, siempre que el rebaño no invada la calzada.",
+   "Sí, pero solo de día y con buena visibilidad."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "El ganado solo puede transitar por ciertas vías (cañadas y vías donde esté permitido, custodiado) y NUNCA por autopistas ni autovías.",
+  "truco": "En las vías rápidas no entra nada que vaya a paso de oveja: ni pies, ni pedales, ni pezuñas.",
+  "trampa": "El arcén parece terreno neutral, pero en autovía la prohibición para los animales es total, pisen o no la calzada.",
+  "tags": [
+   "animales",
+   "autovia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-054",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Está permitido dejar animales sueltos, sin custodia, en una vía o en sus inmediaciones si pueden invadirla?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si son animales mansos y de pequeño tamaño.",
+   "Sí, siempre que sea de día y haya buena visibilidad.",
+   "No: los animales deben ir custodiados y su dueño responde si invaden la vía."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Prohibido dejar animales sin custodia si pueden invadir la vía: el ganado circula siempre conducido por una persona.",
+  "truco": "Animal en la vía = siempre con niñera. Suelto y sin vigilancia, sanción para el dueño.",
+  "trampa": "Lo de 'manso y pequeño' te ablanda. A la norma le da igual el carácter del bicho: sin custodia, prohibido.",
+  "tags": [
+   "animales",
+   "via"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-055",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Por definición, un vehículo de movilidad personal (VMP) es un vehículo de una o más ruedas y una única plaza, propulsado exclusivamente por motor eléctrico, con una velocidad máxima por diseño…",
+  "imagen": null,
+  "opciones": [
+   "de entre 10 y 45 km/h.",
+   "de entre 6 y 25 km/h.",
+   "de hasta 50 km/h en vías urbanas."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El VMP se mueve, por diseño, entre 6 y 25 km/h. Por debajo es un juguete; por encima, ya no es un VMP.",
+  "truco": "VMP: de 6 a 25. Si tu patinete corre más de 25 de fábrica, legalmente es otra cosa (y necesita otros papeles).",
+  "trampa": "El 45 es la frontera del ciclomotor y el 50 su cilindrada: cifras verdaderas de otra categoría para liarte.",
+  "tags": [
+   "vmp",
+   "definiciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-056",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "¿Puedes llevar a un amigo de paquete en tu patinete eléctrico (VMP)?",
+  "imagen": null,
+  "opciones": [
+   "No: el VMP es un vehículo de una única plaza.",
+   "Sí, si el patinete tiene potencia suficiente.",
+   "Sí, siempre que el pasajero sea mayor de edad."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "El VMP tiene una sola plaza: la tuya. Llevar pasajero está prohibido y es sancionable.",
+  "truco": "Patinete = entrada individual: solo baila uno.",
+  "trampa": "La potencia no da plazas: aunque el motor tire de dos, la norma solo sienta a uno.",
+  "tags": [
+   "vmp"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-057",
+  "mundo": 1,
+  "tema": "Conceptos y definiciones",
+  "pregunta": "Conduces un patinete eléctrico (VMP) después de unas cervezas y te da el alto un control. ¿Pueden sancionarte por alcoholemia?",
+  "imagen": null,
+  "opciones": [
+   "No, las tasas de alcohol solo se aplican a los vehículos de motor.",
+   "No, como mucho pueden inmovilizar el patinete.",
+   "Sí: quien conduce un VMP es conductor a todos los efectos y le aplican las tasas de alcohol."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Sobre un VMP eres conductor: te aplican las tasas de alcohol y drogas, con su multa correspondiente.",
+  "truco": "Si conduces algo con motor por la vía —aunque sea un patinete—, el etilómetro también va contigo.",
+  "trampa": "Que el VMP no sea 'vehículo de motor' no te libra: la obligación de someterse a las pruebas alcanza a TODOS los conductores.",
+  "tags": [
+   "vmp",
+   "alcohol"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-058",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "Para entrar en tu garaje debes cruzar la acera por un vado. Justo en ese momento pasa un peatón. ¿Quién tiene preferencia?",
+  "imagen": null,
+  "opciones": [
+   "Tú, porque el vado autoriza el paso de vehículos.",
+   "El peatón: al cruzar una acera o zona peatonal, la prioridad es suya.",
+   "El primero que llegue al vado."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El vado te permite cruzar la acera, pero no te da prioridad: los peatones que circulan por ella pasan primero.",
+  "truco": "El vado es un permiso de paso, no un pase VIP: en la acera, el peatón siempre es el dueño de la casa.",
+  "trampa": "Pagar el vado hace creer a mucha gente que la acera es suya. El vado echa a los coches aparcados, no a los peatones.",
+  "tags": [
+   "vado",
+   "peaton",
+   "prioridad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-059",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "¿Qué es una zona peatonal?",
+  "imagen": null,
+  "opciones": [
+   "La parte de la vía, elevada o delimitada de otra forma, reservada a la circulación de peatones.",
+   "Cualquier tramo urbano con la velocidad limitada a 30 km/h.",
+   "La franja lateral de la calzada reservada a los vehículos lentos."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Zona peatonal: espacio de la vía reservado a los peatones, ya sea elevado (como la acera) o delimitado de otra forma.",
+  "truco": "Zona peatonal = territorio peatón. Si entras rodando, entras de prestado y con permiso.",
+  "trampa": "La zona 30 limita la velocidad pero sigue siendo de los coches; la peatonal es del peatón. El nivel de protección cambia.",
+  "tags": [
+   "via",
+   "zona-peatonal",
+   "peaton"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M01-060",
+  "mundo": 1,
+  "tema": "Las vías",
+  "pregunta": "El andén y el paseo son…",
+  "imagen": null,
+  "opciones": [
+   "partes de la calzada destinadas a los vehículos de dos ruedas.",
+   "zonas reservadas al estacionamiento de vehículos.",
+   "zonas peatonales, igual que la acera."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La definición de zona peatonal incluye expresamente la acera, el andén y el paseo.",
+  "truco": "Acera, Andén y Paseo: el trío 'A-A-P' del peatón. Los tres son suelo peatonal.",
+  "trampa": "'Andén' te suena a estación y 'paseo' a parque, y por eso dudas. En la normativa, ambos son zona peatonal.",
+  "tags": [
+   "via",
+   "zona-peatonal"
+  ],
+  "senalId": null
+ }
+]

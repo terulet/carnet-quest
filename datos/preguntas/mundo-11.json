@@ -1,0 +1,856 @@
+[
+  {
+    "id": "M11-001", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "Conduces tu coche y ya no eres conductor novel. Como norma general, ¿qué tasa de alcohol en aire espirado no puedes superar?",
+    "imagen": null,
+    "opciones": [
+      "0,15 miligramos por litro.",
+      "0,25 miligramos por litro.",
+      "0,50 miligramos por litro."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "La tasa general vigente es 0,25 mg/l en aire espirado, que equivale a 0,5 g/l en sangre.",
+    "truco": "General: 0,25 en aire, 0,5 en sangre. En sangre siempre el doble que en aire.",
+    "trampa": "El 0,15 es la tasa de noveles y profesionales, y el 0,50 es la cifra en SANGRE (g/l), no en aire. Bailarte la unidad es la trampa favorita del examen.",
+    "tags": ["alcohol", "tasas"], "senalId": null
+  },
+  {
+    "id": "M11-002", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "La tasa máxima de alcohol en SANGRE para un conductor general es de…",
+    "imagen": null,
+    "opciones": [
+      "0,25 gramos por litro.",
+      "0,30 gramos por litro.",
+      "0,50 gramos por litro."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "En sangre, la tasa general es 0,5 g/l; en aire espirado, 0,25 mg/l.",
+    "truco": "Sangre = el doble que aire. Si la pregunta dice sangre, dobla el número que te sabes del etilómetro.",
+    "trampa": "El 0,25 es la cifra de AIRE espirado. Y el 0,30 es la de sangre de noveles y profesionales, no la tuya.",
+    "tags": ["alcohol", "tasas"], "senalId": null
+  },
+  {
+    "id": "M11-003", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "Te sacaste tu primer permiso hace 8 meses. ¿Qué tasa máxima de alcohol en aire espirado te aplica?",
+    "imagen": null,
+    "opciones": [
+      "0,15 mg/l, por ser conductor novel.",
+      "0,25 mg/l, como a todo el mundo.",
+      "0,10 mg/l, tras la última reforma."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Durante los 2 años siguientes a tu primer permiso eres novel: máximo 0,15 mg/l en aire y 0,3 g/l en sangre.",
+    "truco": "Novel o profesional → la mitad de todo: 0,15 en aire y 0,3 en sangre.",
+    "trampa": "El 0,10 te suena de la rebaja al 0,2 g/l que se debatió en 2026, pero el Congreso la rechazó: para noveles sigue vigente el 0,15 en aire.",
+    "tags": ["alcohol", "tasas", "novel"], "senalId": null
+  },
+  {
+    "id": "M11-004", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "¿Durante cuánto tiempo se te aplica la tasa de alcohol reducida por ser conductor novel?",
+    "imagen": null,
+    "opciones": [
+      "Durante el primer año tras obtener el permiso.",
+      "Durante los 2 años siguientes a obtener tu primer permiso o licencia.",
+      "Hasta que cumplas 21 años."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Eres conductor novel durante los 2 años siguientes a la obtención de tu primer permiso o licencia de conducción.",
+    "truco": "Novel = 2 años de rodaje, como la garantía corta de un coche de segunda mano.",
+    "trampa": "El año único suena razonable porque muchas cosas caducan al año, pero la condición de novel dura 2. La edad no pinta nada aquí.",
+    "tags": ["alcohol", "tasas", "novel"], "senalId": null
+  },
+  {
+    "id": "M11-005", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "Conduces un autobús urbano en tu jornada laboral. ¿Cuál es tu tasa máxima de alcohol en sangre?",
+    "imagen": null,
+    "opciones": [
+      "0,5 g/l, la general.",
+      "0,3 g/l, por ser conductor profesional.",
+      "1,2 g/l si conduces con normalidad."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Los conductores profesionales (más de 9 plazas, servicio público, escolar, mercancías pesadas o peligrosas, urgencias…) tienen tasa reducida: 0,3 g/l en sangre y 0,15 mg/l en aire.",
+    "truco": "Cuanta más responsabilidad llevas detrás, menos alcohol delante: profesional = la mitad de todo.",
+    "trampa": "La general del 0,5 no te vale al volante de un autobús: ahí eres profesional a efectos de tasa. Y el 1,2 no es ninguna tasa permitida: es el umbral del delito.",
+    "tags": ["alcohol", "tasas", "profesionales"], "senalId": null
+  },
+  {
+    "id": "M11-006", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "¿A cuál de estos conductores se le aplica la tasa de alcohol reducida de los profesionales?",
+    "imagen": null,
+    "opciones": [
+      "Al comercial que va a una reunión con el turismo de la empresa.",
+      "A cualquiera que esté trabajando, sea cual sea el vehículo que conduzca.",
+      "Al conductor de un transporte escolar."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "La tasa reducida va por el TIPO de servicio o vehículo: mercancías de más de 3.500 kg, más de 9 plazas, servicio público, transporte escolar y de menores, mercancías peligrosas, urgencias y transportes especiales.",
+    "truco": "No es trabajar conduciendo: es conducir algo gordo o con gente a tu cargo.",
+    "trampa": "El comercial trabaja y conduce, pero un turismo normal no está en la lista: le aplica la tasa general, salvo que además sea novel.",
+    "tags": ["alcohol", "tasas", "profesionales"], "senalId": null
+  },
+  {
+    "id": "M11-007", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "Con 16 años conduces tu ciclomotor. ¿Qué tasa de alcohol puedes dar como máximo en un control?",
+    "imagen": null,
+    "opciones": [
+      "0,15 mg/l en aire, como los noveles.",
+      "0,25 mg/l en aire si llevas más de un año de licencia.",
+      "Cero: los conductores menores de edad tienen tasa 0,0."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Los conductores menores de edad no pueden circular con una tasa de alcohol superior a 0,0, ni en sangre ni en aire espirado.",
+    "truco": "Menor de edad al manillar = cero patatero. Ni una gota.",
+    "trampa": "Lo del 0,15 de novel pica porque el menor también es novel, pero la ley le pone un listón más duro todavía: tasa cero.",
+    "explicacion_larga": "La normativa de tráfico vigente prohíbe a los conductores menores de edad (por ejemplo, de ciclomotor con permiso AM desde los 15 años, o de moto ligera con permiso A1 a partir de los 16) circular con cualquier tasa de alcohol: su máximo es 0,0 g/l en sangre y 0,0 mg/l en aire espirado, ni una gota. El objetivo es cortar de raíz la combinación de alcohol, adolescencia y vehículo, que dispara el riesgo. Para el resto de conductores siguen vigentes las tasas de 0,25/0,5 (general) y 0,15/0,3 (noveles y profesionales).",
+    "tags": ["alcohol", "tasas", "menores"], "senalId": null
+  },
+  {
+    "id": "M11-008", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "Soplas 0,20 mg/l, por debajo del 0,25 permitido, pero conduces haciendo eses y arrastras las palabras. ¿Puedes tener problemas serios?",
+    "imagen": null,
+    "opciones": [
+      "No: si no superas la tasa, no hay infracción ni delito posible.",
+      "Sí: conducir bajo la influencia del alcohol puede ser delito aunque no superes la tasa máxima.",
+      "Como mucho, una multa leve por conducción distraída."
+    ],
+    "correcta": 1, "dificultad": 5,
+    "explicacion_corta": "El delito de conducir bajo la influencia del alcohol no depende solo de la cifra: si el alcohol afecta de forma evidente a tu conducción, puede haber delito incluso por debajo de la tasa administrativa.",
+    "truco": "La tasa la mide el aparato; las eses las mira el juez. Influencia demostrada = delito, marque lo que marque el etilómetro.",
+    "trampa": "El clásico de bar: estoy por debajo del límite, no me pueden hacer nada. El límite administrativo y el delito de influencia son cosas distintas, y la segunda no entiende de décimas.",
+    "explicacion_larga": "El artículo 379.2 del Código Penal castiga dos conductas distintas. La primera: conducir bajo la influencia del alcohol o de drogas, y ahí lo decisivo es que se demuestre que la sustancia afectaba a tu conducción (eses, síntomas, cómo hablas, testigos…), sin que la cifra sea determinante. La segunda: superar 0,60 mg/l en aire (1,2 g/l en sangre), que es delito automático sin necesidad de probar nada más. Por debajo de la tasa administrativa normalmente no hay ni multa, pero si tu conducción evidencia que el alcohol te afecta, puedes acabar igualmente ante el juez.",
+    "tags": ["alcohol", "delito", "tasas"], "senalId": null
+  },
+  {
+    "id": "M11-009", "mundo": 11, "tema": "Tasas de alcohol",
+    "pregunta": "¿A partir de qué tasa en aire espirado conducir es SIEMPRE delito, aunque no muestres ningún síntoma?",
+    "imagen": null,
+    "opciones": [
+      "Al superar 0,60 mg/l.",
+      "Al superar 0,25 mg/l.",
+      "Al superar 1,2 mg/l."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Superar 0,60 mg/l en aire (equivalente a 1,2 g/l en sangre) es delito automático, sin necesidad de demostrar que el alcohol influía en tu conducción.",
+    "truco": "0,60 en aire = 1,2 en sangre = juzgado directo. A partir de ahí no hay yo controlo que valga.",
+    "trampa": "El 1,2 existe, pero en SANGRE (g/l): te lo cuelan cambiado de unidad. Y el 0,25 es la tasa administrativa general, no la penal.",
+    "explicacion_larga": "El artículo 379.2 del Código Penal fija un umbral objetivo: quien conduzca con una tasa superior a 0,60 mg/l de alcohol en aire espirado (o 1,2 g/l en sangre) comete delito contra la seguridad vial en todo caso, aunque conduzca aparentemente perfecto. Entre la tasa administrativa (0,25 mg/l para el conductor general) y ese 0,60 estás en terreno de infracción muy grave, con multa y puntos. Y recuerda el otro camino al delito: incluso por debajo de 0,25 puede haberlo si se demuestra que conduces bajo la influencia del alcohol.",
+    "tags": ["alcohol", "delito", "tasas"], "senalId": null
+  },
+  {
+    "id": "M11-010", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "¿Cómo afecta el alcohol a tu tiempo de reacción?",
+    "imagen": null,
+    "opciones": [
+      "Lo alarga: tardas más en responder ante un imprevisto.",
+      "No lo modifica si estás acostumbrado a beber.",
+      "Lo acorta, porque al principio te activa."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "El alcohol deprime el sistema nervioso y alarga el tiempo de reacción, incluso con tasas bajas.",
+    "truco": "Alcohol = lag: el peligro aparece y tu cerebro responde con retardo, como un videojuego con mala conexión.",
+    "trampa": "Lo de estar acostumbrado no salva los reflejos: el hígado tolera, el cerebro no.",
+    "tags": ["alcohol", "efectos", "tiempo-reaccion"], "senalId": null
+  },
+  {
+    "id": "M11-011", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "Después de unas copas, tu campo visual…",
+    "imagen": null,
+    "opciones": [
+      "se reduce, produciendo el llamado efecto túnel.",
+      "se amplía porque las pupilas se dilatan y captan más luz.",
+      "no cambia; como mucho se ve un poco borroso."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El alcohol estrecha el campo visual (visión en túnel): ves peor lo que pasa a los lados, justo por donde aparecen peatones y cruces.",
+    "truco": "Beber es ponerse anteojeras de caballo: solo ves el centro y la vida pasa por los lados.",
+    "trampa": "Lo de las pupilas dilatadas suena muy científico, pero el resultado real es menos visión periférica, no más.",
+    "tags": ["alcohol", "efectos", "campo-visual"], "senalId": null
+  },
+  {
+    "id": "M11-012", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "Uno de los efectos más traicioneros del alcohol al volante es que…",
+    "imagen": null,
+    "opciones": [
+      "te vuelve más prudente al saber que has bebido.",
+      "provoca euforia y falsa seguridad: te crees mejor conductor justo cuando eres peor.",
+      "solo afecta a quien no bebe casi nunca."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El alcohol genera euforia y falsa sensación de seguridad: infravaloras el riesgo y sobrevaloras tu capacidad.",
+    "truco": "El alcohol es ese colega que te dice tú puedes justo antes del desastre.",
+    "trampa": "La primera opción describe lo que DEBERÍA pasar; el alcohol consigue exactamente lo contrario: desinhibe y quita el miedo.",
+    "tags": ["alcohol", "efectos", "falsa-seguridad"], "senalId": null
+  },
+  {
+    "id": "M11-013", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "El alcohol es una sustancia…",
+    "imagen": null,
+    "opciones": [
+      "estimulante: por eso al principio te anima.",
+      "depresora del sistema nervioso, aunque al principio parezca activarte.",
+      "alucinógena en dosis bajas."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El alcohol es un depresor del sistema nervioso central; la animación inicial es desinhibición, no estimulación.",
+    "truco": "El subidón es el freno de mano de tu cerebro soltándose; después todo va más lento.",
+    "trampa": "La euforia de las primeras copas hace creer que estimula. En realidad está apagando tus frenos mentales y tus reflejos a la vez.",
+    "tags": ["alcohol", "efectos"], "senalId": null
+  },
+  {
+    "id": "M11-014", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "En cuanto al sueño, el alcohol…",
+    "imagen": null,
+    "opciones": [
+      "favorece la somnolencia y potencia el cansancio que ya llevas encima.",
+      "quita el sueño porque es excitante.",
+      "no influye si habitualmente duermes bien."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "El alcohol produce somnolencia y multiplica los efectos de la fatiga y del sueño acumulado.",
+    "truco": "Copa + cansancio = anestesia doble: el microsueño llega antes.",
+    "trampa": "Como de fiesta aguantas despierto, parece que espabila; al volante hace justo lo contrario: te apaga.",
+    "tags": ["alcohol", "efectos", "somnolencia"], "senalId": null
+  },
+  {
+    "id": "M11-015", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "¿Cómo afecta el alcohol a la forma de percibir velocidades y distancias?",
+    "imagen": null,
+    "opciones": [
+      "No las altera; el alcohol solo afecta a los reflejos y a la vista.",
+      "Hace que todo parezca ir más rápido y por eso frenas antes de tiempo.",
+      "Las distorsiona: calculas mal las distancias y la velocidad de los demás."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Con alcohol se calcula peor la velocidad propia y ajena y la distancia a los obstáculos: cada adelantamiento se convierte en una apuesta.",
+    "truco": "Beber convierte tu cuentakilómetros mental en una tómbola.",
+    "trampa": "La opción del frenas antes te vende un falso efecto protector: el alcohol nunca juega a tu favor, ni por error.",
+    "tags": ["alcohol", "efectos", "percepcion"], "senalId": null
+  },
+  {
+    "id": "M11-016", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "De noche te deslumbra un coche de frente. Si has bebido, ¿cómo es la recuperación de tu vista?",
+    "imagen": null,
+    "opciones": [
+      "Igual que sobrio: el deslumbramiento no tiene nada que ver con el alcohol.",
+      "Más rápida, porque la pupila reacciona con más agilidad.",
+      "Más lenta: tardas más en volver a ver bien tras el deslumbramiento."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El alcohol alarga el tiempo de recuperación tras un deslumbramiento: más segundos conduciendo a ciegas.",
+    "truco": "Alcohol de noche = flash de discoteca en la retina: la ceguera te dura más metros.",
+    "trampa": "Parece un detalle menor, pero a 90 km/h cada segundo sin ver son 25 metros. El examen adora este matiz nocturno.",
+    "tags": ["alcohol", "efectos", "deslumbramiento"], "senalId": null
+  },
+  {
+    "id": "M11-017", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "¿Existe alguna cantidad de alcohol totalmente segura para conducir?",
+    "imagen": null,
+    "opciones": [
+      "Sí: por debajo de la tasa legal no hay ningún efecto sobre la conducción.",
+      "No: incluso por debajo del límite legal ya se deterioran capacidades.",
+      "Sí: una sola cerveza no afecta a nadie con experiencia."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "No hay tasa segura: el deterioro empieza con las primeras dosis, aunque estés por debajo del límite legal. Lo más seguro es tasa 0.",
+    "truco": "El límite legal es una frontera jurídica, no mágica: tu cerebro no sabe leer el BOE.",
+    "trampa": "Confundir legal con inocuo es la trampa: por debajo de la tasa no te multan, pero ya conduces peor que a cero.",
+    "tags": ["alcohol", "efectos", "tasas"], "senalId": null
+  },
+  {
+    "id": "M11-018", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "Tras beber, los movimientos que exigen precisión (embragar, girar el volante lo justo, aparcar)…",
+    "imagen": null,
+    "opciones": [
+      "se vuelven más torpes por la pérdida de coordinación.",
+      "salen mejor porque vas más relajado y sin tensión.",
+      "solo se alteran con tasas superiores a la penal."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "El alcohol deteriora la coordinación motora: los gestos finos del volante y los pedales pierden precisión.",
+    "truco": "Si no puedes andar recto por la acera, tampoco vas a llevar el coche recto por el carril.",
+    "trampa": "Relajado se conduce mejor es el eslogan del bar; la relajación etílica es descoordinación disfrazada, y empieza mucho antes del umbral penal.",
+    "tags": ["alcohol", "efectos", "coordinacion"], "senalId": null
+  },
+  {
+    "id": "M11-019", "mundo": 11, "tema": "Efectos del alcohol",
+    "pregunta": "El alcohol alarga tu tiempo de reacción. ¿Qué consecuencia directa tiene eso en una frenada de emergencia?",
+    "imagen": null,
+    "opciones": [
+      "Ninguna, si los frenos y los neumáticos están en buen estado.",
+      "Se reduce la distancia de frenado del vehículo.",
+      "Recorres más metros antes de pisar el freno: la distancia de detención aumenta."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "A más tiempo de reacción, más metros recorridos en blanco antes de frenar: la distancia total de detención crece aunque el coche frene igual de bien.",
+    "truco": "El coche frena igual; el que tarda eres tú. Los metros de más los pone tu cerebro, no tus frenos.",
+    "trampa": "Lo de los frenos en buen estado despista: la mecánica no compensa los metros que recorres mientras tu cerebro carga la orden de frenar.",
+    "explicacion_larga": "La distancia de detención es la suma de la distancia de reacción (los metros que recorres desde que ves el peligro hasta que pisas el freno) y la distancia de frenado (los que necesita el coche una vez frenando). El alcohol no toca los frenos, pero alarga el tiempo de reacción, que en condiciones normales ronda el segundo: a 100 km/h son unos 28 metros por segundo. Si el alcohol te añade medio segundo, has regalado 14 metros extra, que pueden ser exactamente los que ocupaba el peatón. Por eso beber aumenta la distancia de detención aunque el vehículo esté impecable.",
+    "tags": ["alcohol", "efectos", "distancia-detencion"], "senalId": null
+  },
+  {
+    "id": "M11-020", "mundo": 11, "tema": "Alcoholemia: factores y mitos",
+    "pregunta": "Bebes exactamente lo mismo que tu colega, pero tú en ayunas y él después de comer. ¿Quién alcanza una alcoholemia mayor?",
+    "imagen": null,
+    "opciones": [
+      "Tú: con el estómago vacío el alcohol pasa antes y más alto a la sangre.",
+      "Él: la comida ayuda al alcohol a absorberse mejor.",
+      "Los dos igual: misma bebida, misma tasa."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "En ayunas el alcohol se absorbe más deprisa y la curva de alcoholemia sube más alta; comer ralentiza la absorción, aunque no la evita.",
+    "truco": "Estómago vacío = tobogán directo a la sangre. Con comida hay atasco en la entrada.",
+    "trampa": "Misma bebida, misma tasa parece pura matemática, pero la alcoholemia depende de cómo absorbes, no solo de cuánto bebes.",
+    "tags": ["alcohol", "alcoholemia", "factores"], "senalId": null
+  },
+  {
+    "id": "M11-021", "mundo": 11, "tema": "Alcoholemia: factores y mitos",
+    "pregunta": "Un hombre de 90 kg y una mujer de 55 kg beben la misma cantidad de alcohol. En general, ¿quién dará una tasa más alta?",
+    "imagen": null,
+    "opciones": [
+      "El hombre, por tener más masa muscular que metabolizar.",
+      "Los dos la misma: han bebido exactamente lo mismo.",
+      "La mujer: a igual consumo, menos peso y el sexo femenino suponen mayor alcoholemia."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "A igual cantidad, la alcoholemia sube más en personas de menos peso y, en general, en las mujeres, por diferencias de agua corporal y metabolismo.",
+    "truco": "Mismo cubata, distinto cuerpo: cuanto más pequeño el depósito, más concentrado va el combustible.",
+    "trampa": "Han bebido lo mismo iguala el consumo, no la tasa: la alcoholemia es una concentración y depende del cuerpo donde cae.",
+    "tags": ["alcohol", "alcoholemia", "factores"], "senalId": null
+  },
+  {
+    "id": "M11-022", "mundo": 11, "tema": "Alcoholemia: factores y mitos",
+    "pregunta": "Para bajar la alcoholemia antes de conducir, ¿qué funciona de verdad?",
+    "imagen": null,
+    "opciones": [
+      "Un café bien cargado y una ducha fría.",
+      "Mascar chicle y beber mucha agua.",
+      "Nada de eso: solo el paso del tiempo la reduce."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Café, duchas, chicles o agua no reducen la alcoholemia: solo el tiempo, mientras el hígado elimina el alcohol.",
+    "truco": "Contra el alcohol no hay remedios de bar: hay reloj. El hígado no acepta sobornos.",
+    "trampa": "El café te despeja la cara, no la sangre: te sientes más despierto con la misma tasa, que todavía es más peligroso.",
+    "tags": ["alcohol", "alcoholemia", "mitos"], "senalId": null
+  },
+  {
+    "id": "M11-023", "mundo": 11, "tema": "Alcoholemia: factores y mitos",
+    "pregunta": "¿Quién elimina el alcohol del organismo y a qué ritmo?",
+    "imagen": null,
+    "opciones": [
+      "El hígado, lentamente y a un ritmo que no puedes acelerar.",
+      "Los pulmones al respirar: por eso ventilarse ayuda a eliminarlo.",
+      "El sudor: haciendo deporte lo quemas enseguida."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El alcohol lo metaboliza el hígado poco a poco; ni el deporte, ni sudar, ni respirar fuerte aceleran el proceso de forma apreciable.",
+    "truco": "El hígado trabaja a su bola, como la Administración: no hay ventanilla exprés.",
+    "trampa": "Una parte mínima sale por el aliento (por eso funciona el etilómetro), pero eso no significa que respirar fuerte te vacíe de alcohol.",
+    "tags": ["alcohol", "alcoholemia", "mitos"], "senalId": null
+  },
+  {
+    "id": "M11-024", "mundo": 11, "tema": "Alcoholemia: factores y mitos",
+    "pregunta": "Llevas todo el día sin apenas dormir y te tomas un par de cervezas. ¿Qué pasa con los efectos del alcohol?",
+    "imagen": null,
+    "opciones": [
+      "Se anulan: el cansancio quema el alcohol.",
+      "Se intensifican: fatiga y alcohol se potencian mutuamente.",
+      "Son los mismos que descansado; la tasa no cambia."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El cansancio y la falta de sueño intensifican los efectos del alcohol sobre la conducción, aunque la tasa sea la misma.",
+    "truco": "Sueño + alcohol no suman: multiplican. Es el combo favorito del microsueño.",
+    "trampa": "La tercera opción juega con una verdad a medias: la TASA puede ser parecida, pero los EFECTOS sobre ti son mucho peores.",
+    "tags": ["alcohol", "alcoholemia", "fatiga"], "senalId": null
+  },
+  {
+    "id": "M11-025", "mundo": 11, "tema": "Alcoholemia: factores y mitos",
+    "pregunta": "¿Cómo afecta a la absorción del alcohol mezclarlo con bebidas gaseosas (refrescos con gas, cava…)?",
+    "imagen": null,
+    "opciones": [
+      "La acelera: el gas facilita que el alcohol pase antes a la sangre.",
+      "La frena: el gas diluye el alcohol y suaviza la curva.",
+      "No influye en absoluto en la absorción."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Las bebidas carbonatadas aceleran la absorción del alcohol: la alcoholemia sube antes.",
+    "truco": "Las burbujas son el turbo del cubata.",
+    "trampa": "Lo de diluir suena a química casera: mezclar con gas no rebaja el alcohol, lo pone en circulación antes.",
+    "tags": ["alcohol", "alcoholemia", "factores"], "senalId": null
+  },
+  {
+    "id": "M11-026", "mundo": 11, "tema": "Alcoholemia: factores y mitos",
+    "pregunta": "Justo antes de un control, te enjuagas con colutorio mentolado y mascas dos chicles. ¿Qué pasa con la prueba?",
+    "imagen": null,
+    "opciones": [
+      "Puede salir negativa: el mentol disimula el alcohol.",
+      "Dará lo que tenga que dar: el etilómetro mide el alcohol que llega del pulmón, no el aliento superficial.",
+      "Queda anulada por manipulación de la muestra."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Chicles y colutorios no engañan al etilómetro: el alcohol medido procede del aire profundo de los pulmones, reflejo del que llevas en sangre.",
+    "truco": "El etilómetro no te huele el aliento: te lee la sangre por fax pulmonar.",
+    "trampa": "Ojo, algunos colutorios llevan alcohol y hasta pueden inflar la primera lectura; para eso existe la segunda medición pasados 10 minutos.",
+    "tags": ["alcohol", "mitos", "pruebas"], "senalId": null
+  },
+  {
+    "id": "M11-027", "mundo": 11, "tema": "Curva de alcoholemia",
+    "pregunta": "Después de beber, ¿cuándo alcanza el alcohol su concentración máxima en sangre?",
+    "imagen": null,
+    "opciones": [
+      "Inmediatamente, con el último trago.",
+      "Entre los 30 y los 90 minutos siguientes, aproximadamente.",
+      "Unas 4 horas después de la última copa."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El pico de la curva de alcoholemia llega, en general, entre los 30 y los 90 minutos tras la ingesta: antes en ayunas, más tarde si has comido.",
+    "truco": "La última copa sigue subiendo cuando ya has pagado la cuenta: pico entre media hora y hora y media.",
+    "trampa": "El inmediatamente pica porque el efecto se nota pronto; pero el máximo en SANGRE tarda bastante más en llegar.",
+    "tags": ["alcohol", "curva-alcoholemia"], "senalId": null
+  },
+  {
+    "id": "M11-028", "mundo": 11, "tema": "Curva de alcoholemia",
+    "pregunta": "Terminas la última copa y sales pitando al coche, antes de que el alcohol suba. ¿Tiene sentido la estrategia?",
+    "imagen": null,
+    "opciones": [
+      "Sí: conduciendo llegas a casa antes de que haga efecto.",
+      "Sí, siempre que el trayecto dure menos de 10 minutos.",
+      "No: tras dejar de beber, tu alcoholemia sigue subiendo durante un buen rato."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Al dejar de beber la alcoholemia no baja al momento: sigue subiendo hasta alcanzar su máximo entre los 30 y 90 minutos.",
+    "truco": "El alcohol va con retardo, como una mala noticia: cuando arrancas, todavía está subiendo.",
+    "trampa": "La lógica de salgo ya y me adelanto al efecto es justo al revés: harás el trayecto en plena fase de subida, cada minuto un poco peor.",
+    "explicacion_larga": "La curva de alcoholemia tiene dos fases: absorción y eliminación. Mientras el aparato digestivo sigue pasando alcohol a la sangre, la tasa sube aunque ya no bebas, y ese ascenso dura de media entre 30 y 90 minutos desde la ingesta (más rápido en ayunas, más lento con comida). Después empieza una bajada lenta que depende exclusivamente del hígado. Conclusión práctica: salir corriendo tras la última copa significa conducir justo en la peor fase, la de subida. Si has bebido, la única estrategia que funciona es no conducir.",
+    "tags": ["alcohol", "curva-alcoholemia"], "senalId": null
+  },
+  {
+    "id": "M11-029", "mundo": 11, "tema": "Curva de alcoholemia",
+    "pregunta": "Anoche cerraste el bar y hoy a las 8:00 vas a trabajar en coche. ¿Puedes dar positivo?",
+    "imagen": null,
+    "opciones": [
+      "Sí: si bebiste mucho y dormiste poco, por la mañana puede quedar alcohol de sobra en sangre.",
+      "No: el sueño elimina todo el alcohol del cuerpo.",
+      "Solo si desayunas alcohol."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "La eliminación es lenta: tras una noche de mucho alcohol puedes seguir superando la tasa a la mañana siguiente, resaca incluida.",
+    "truco": "El alcohol no ficha a medianoche: los positivos de las 8 de la mañana existen y se multan igual.",
+    "trampa": "Dormir ayuda a TU cansancio, no a tu tasa: el hígado va a su ritmo, estés despierto o roncando.",
+    "tags": ["alcohol", "curva-alcoholemia", "mitos"], "senalId": null
+  },
+  {
+    "id": "M11-030", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "Un agente te pide someterte a las pruebas de alcoholemia. ¿Quién está obligado a realizarlas?",
+    "imagen": null,
+    "opciones": [
+      "Solo quien muestre síntomas de haber bebido.",
+      "Todos los conductores, aunque no hayan hecho nada raro.",
+      "Solo los conductores profesionales y los noveles."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Todos los conductores están obligados a someterse a las pruebas cuando se lo requiera un agente, también en controles preventivos.",
+    "truco": "Si mueves un vehículo, soplas: no hace falta motivo, basta el control.",
+    "trampa": "Lo de los síntomas confunde: son UNA de las razones para pedir la prueba, pero en un control preventivo te la piden sin síntoma alguno.",
+    "tags": ["alcohol", "pruebas"], "senalId": null
+  },
+  {
+    "id": "M11-031", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "Un peatón se ve implicado en un accidente de tráfico. ¿Puede estar obligado a las pruebas de alcohol?",
+    "imagen": null,
+    "opciones": [
+      "No: las pruebas son exclusivamente para conductores.",
+      "Solo si estaba cruzando en rojo en ese momento.",
+      "Sí: los usuarios de la vía implicados en un accidente también están obligados."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "No solo los conductores: cualquier usuario de la vía implicado en un accidente, peatones incluidos, está obligado a someterse a las pruebas.",
+    "truco": "En un accidente soplan todos los implicados, lleven volante, manillar o zapatillas.",
+    "trampa": "Solo conductores es lo intuitivo, pero la ley amplía la obligación a los implicados en accidentes para poder aclarar responsabilidades.",
+    "tags": ["alcohol", "pruebas", "peatones"], "senalId": null
+  },
+  {
+    "id": "M11-032", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "Vas en bici y te paran en un control de alcoholemia. ¿Estás obligado a soplar?",
+    "imagen": null,
+    "opciones": [
+      "Sí: el ciclista es conductor y la prueba le obliga igual.",
+      "No: la bici no es un vehículo de motor.",
+      "Solo si la bici lleva motor eléctrico de ayuda al pedaleo."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El ciclista es conductor de un vehículo y está obligado a las pruebas; si supera la tasa, también puede ser multado.",
+    "truco": "Pedalear no te libra del soplido: la bici también se conduce.",
+    "trampa": "Que no sea de motor despista: la obligación es de CONDUCTORES de vehículos, y una bicicleta lo es.",
+    "tags": ["alcohol", "pruebas", "ciclistas"], "senalId": null
+  },
+  {
+    "id": "M11-033", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "La prueba de alcoholemia con etilómetro consiste, si la primera medición sale positiva, en…",
+    "imagen": null,
+    "opciones": [
+      "una única espiración bien fuerte y ya está.",
+      "dos mediciones de aire espirado, con una separación mínima de 10 minutos entre ambas.",
+      "tres soplidos seguidos de los que se hace la media."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Tras un primer resultado positivo se realiza una segunda medición de aire espirado, con un intervalo mínimo de 10 minutos, para contrastarlo.",
+    "truco": "Positivo no es positivo hasta el segundo asalto: dos soplidos separados 10 minutos.",
+    "trampa": "El soplido único parece suficiente, pero la segunda medición protege contra errores del aparato y contra el alcohol residual de boca.",
+    "tags": ["alcohol", "pruebas", "etilometro"], "senalId": null
+  },
+  {
+    "id": "M11-034", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "No te fías del resultado del etilómetro y quieres rebatirlo. ¿Qué derecho tienes?",
+    "imagen": null,
+    "opciones": [
+      "Ninguno: lo que diga el aparato es definitivo.",
+      "Repetir el soplido tantas veces como quieras hasta que salga bien.",
+      "Solicitar una prueba de contraste, por ejemplo un análisis de sangre."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Tras el positivo puedes solicitar una prueba de contraste, normalmente un análisis de sangre, para verificar el resultado.",
+    "truco": "¿Dudas del cacharro? La sangre es la revisión en vídeo de la alcoholemia.",
+    "trampa": "No consiste en repetir soplidos hasta el infinito: el contraste es otra prueba distinta (análisis clínico), no darle más oportunidades al mismo aparato.",
+    "tags": ["alcohol", "pruebas", "contraste"], "senalId": null
+  },
+  {
+    "id": "M11-035", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "¿Con qué prueba se detecta inicialmente la presencia de drogas en un conductor?",
+    "imagen": null,
+    "opciones": [
+      "Con una prueba de saliva.",
+      "Soplando en el mismo etilómetro del alcohol.",
+      "Con un análisis de orina en plena vía."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "La detección de drogas se hace con una prueba salival; una segunda muestra de saliva se envía al laboratorio para confirmar el resultado.",
+    "truco": "Alcohol se sopla, droga se escupe: aire para el etilómetro, saliva para las drogas.",
+    "trampa": "El etilómetro solo entiende de alcohol: para las drogas hace falta el test salival.",
+    "tags": ["drogas", "pruebas", "saliva"], "senalId": null
+  },
+  {
+    "id": "M11-036", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "Te niegas en redondo a soplar en un control. ¿Cuál es la consecuencia?",
+    "imagen": null,
+    "opciones": [
+      "Una multa administrativa de 1.000 euros y nada más.",
+      "Solo la pérdida de unos cuantos puntos.",
+      "Cometes un delito castigado con prisión de 6 meses a 1 año y privación del derecho a conducir de 1 a 4 años."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Negarse a las pruebas es un delito del Código Penal: prisión de 6 meses a 1 año y privación del permiso de 1 a 4 años.",
+    "truco": "Negarte a soplar es peor negocio que dar positivo: pasas de multa a juzgado.",
+    "trampa": "La multa de 1.000 euros existe, pero para otras cosas (doblar la tasa, drogas); la negativa se castiga por vía penal, que es palabra mayor.",
+    "explicacion_larga": "El artículo 383 del Código Penal castiga al conductor que se niega a someterse a las pruebas legalmente establecidas de alcohol o drogas: prisión de 6 meses a 1 año y privación del derecho a conducir de 1 a 4 años. La lógica es sencilla: si negarse saliera más barato que dar positivo, todo el mundo con copas encima se negaría. Por eso la negativa se equipara a los casos graves. Además, negarse no te ahorra nada: los agentes pueden inmovilizar el vehículo e instruir diligencias igualmente.",
+    "tags": ["alcohol", "pruebas", "delito", "negativa"], "senalId": null
+  },
+  {
+    "id": "M11-037", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "Yo no he bebido nada, así que paso de soplar. ¿Te libra eso del delito de negativa?",
+    "imagen": null,
+    "opciones": [
+      "Sí: sin alcohol en sangre no hay delito posible.",
+      "No: la negativa es delito en sí misma, hayas bebido o no.",
+      "Solo es delito si después se demuestra que ibas bebido."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "El delito de negarse a las pruebas es independiente de que hayas bebido: se castiga la desobediencia, no la tasa.",
+    "truco": "Si estás a cero, soplar es gratis; negarte, carísimo. La negativa es un delito que te fabricas tú solo.",
+    "trampa": "Parece absurdo condenar a un sobrio, pero lo que se protege es la eficacia de los controles: por eso la negativa se castiga aunque fueras a dar 0,0.",
+    "explicacion_larga": "El delito del artículo 383 del Código Penal se consuma con la propia negativa a realizar las pruebas requeridas por el agente, con total independencia del resultado que habrían dado. Da igual que no hubieras probado ni una gota: negarte ya es delito, con prisión de 6 meses a 1 año y privación del permiso de 1 a 4 años. Si de verdad no has bebido, lo inteligente es soplar: el 0,0 te deja seguir tu camino en dos minutos. La negativa, en cambio, convierte una molestia de minutos en un problema judicial de años.",
+    "tags": ["pruebas", "delito", "negativa"], "senalId": null
+  },
+  {
+    "id": "M11-038", "mundo": 11, "tema": "Pruebas de detección",
+    "pregunta": "¿En cuáles de estas situaciones pueden exigirte la prueba de alcoholemia?",
+    "imagen": null,
+    "opciones": [
+      "Únicamente después de un accidente.",
+      "En controles preventivos y siempre que haya accidente, infracción o síntomas de consumo.",
+      "Solo cuando lo ordene previamente un juez."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los agentes pueden requerir la prueba en controles preventivos y siempre que haya accidente, infracción o síntomas de haber consumido.",
+    "truco": "Cuatro puertas al soplido: control, choque, infracción o carita sospechosa.",
+    "trampa": "Lo del juez suena muy garantista, pero no hace falta orden judicial: la ley habilita directamente a los agentes.",
+    "tags": ["alcohol", "pruebas"], "senalId": null
+  },
+  {
+    "id": "M11-039", "mundo": 11, "tema": "Drogas",
+    "pregunta": "Para sancionarte por drogas al volante, ¿hace falta que afecten a tu forma de conducir?",
+    "imagen": null,
+    "opciones": [
+      "Sí: sin influencia demostrada no puede haber sanción.",
+      "No: la mera presencia de drogas en el organismo ya es infracción muy grave.",
+      "Solo si superas la tasa legal establecida para cada droga."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "A diferencia del alcohol, con las drogas no hay tasas: la simple presencia en el organismo ya es infracción muy grave.",
+    "truco": "Con drogas no existe el poquito legal: positivo = sanción, punto.",
+    "trampa": "Buscar una tasa de THC es el error: las tasas existen para el alcohol; para las drogas basta la presencia.",
+    "tags": ["drogas", "sanciones"], "senalId": null
+  },
+  {
+    "id": "M11-040", "mundo": 11, "tema": "Drogas",
+    "pregunta": "Presencia de drogas frente a conducir bajo su influencia: ¿cuál es la diferencia?",
+    "imagen": null,
+    "opciones": [
+      "La presencia es infracción administrativa muy grave; conducir bajo su influencia es delito.",
+      "Son exactamente lo mismo con dos nombres distintos.",
+      "La presencia es delito y la influencia se queda en multa."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Dar positivo (presencia) se sanciona por vía administrativa; si además las drogas influyen en tu conducción, entras en el terreno del delito.",
+    "truco": "Escalera de castigo: presencia → multa gorda; influencia → juzgado.",
+    "trampa": "La tercera opción invierte los términos a ver si contestas de oídas. La vía penal exige influencia; la administrativa se conforma con la presencia.",
+    "explicacion_larga": "El sistema tiene dos pisos. Piso administrativo: la Ley de Tráfico prohíbe conducir con presencia de drogas en el organismo; detectarla en el test salival supone infracción muy grave con 1.000 euros de multa y 6 puntos, sin necesidad de probar que conducías mal. Piso penal: el artículo 379.2 del Código Penal castiga conducir BAJO LA INFLUENCIA de drogas tóxicas o estupefacientes, y ahí sí hay que acreditar que la sustancia afectaba a tu conducción (síntomas, maniobras erráticas…). Las penas: prisión de 3 a 6 meses, o multa, o trabajos en beneficio de la comunidad, más la privación del permiso de 1 a 4 años.",
+    "tags": ["drogas", "delito", "sanciones"], "senalId": null
+  },
+  {
+    "id": "M11-041", "mundo": 11, "tema": "Drogas",
+    "pregunta": "Das positivo en el test salival de drogas. ¿Qué sanción administrativa te corresponde?",
+    "imagen": null,
+    "opciones": [
+      "500 euros y 4 puntos.",
+      "200 euros y sin pérdida de puntos.",
+      "1.000 euros y 6 puntos."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "La presencia de drogas conduciendo se multa con 1.000 euros y la pérdida de 6 puntos.",
+    "truco": "Drogas = tarifa plana del susto: 1.000 euros y 6 puntos, sin descuentos por era solo un porro.",
+    "trampa": "El 500/4 es el tramo bajo del alcohol; con drogas no hay tramos: siempre te llevas el paquete completo.",
+    "tags": ["drogas", "sanciones", "puntos"], "senalId": null
+  },
+  {
+    "id": "M11-042", "mundo": 11, "tema": "Drogas",
+    "pregunta": "Sigues un tratamiento médico que da positivo en el test de drogas (por ejemplo, opioides recetados). ¿Te sancionan por la presencia?",
+    "imagen": null,
+    "opciones": [
+      "Sí, en todo caso: positivo es positivo.",
+      "No, si es un medicamento con prescripción facultativa y estás en condiciones de conducir.",
+      "Solo te libras si llevas la receta física encima."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "La ley exceptúa las sustancias tomadas bajo prescripción médica con finalidad terapéutica, siempre que estés en condiciones de conducir.",
+    "truco": "La receta te salva de la multa por presencia, pero no te da superpoderes: si el fármaco te deja grogui, ni con diez recetas.",
+    "trampa": "Ojo al matiz final: la excepción exige estar en condiciones de conducir. Medicado pero incapaz = problema igual, con receta o sin ella.",
+    "explicacion_larga": "La Ley de Tráfico prohíbe conducir con drogas en el organismo, pero excluye expresamente las sustancias que se utilicen bajo prescripción facultativa y con una finalidad terapéutica, siempre que se esté en condiciones de utilizar el vehículo. Traducción: un tratamiento médico legítimo no convierte tu conducción en infracción por el mero positivo. Ahora bien, la excepción tiene doble candado: debe existir prescripción real y debes conservar la aptitud para conducir. Si el medicamento te produce somnolencia o merma tus capacidades y conduces igualmente, puedes ser sancionado e incluso cometer delito si conduces bajo su influencia.",
+    "tags": ["drogas", "farmacos", "sanciones"], "senalId": null
+  },
+  {
+    "id": "M11-043", "mundo": 11, "tema": "Drogas",
+    "pregunta": "Las drogas estimulantes (cocaína, anfetaminas), ¿mejoran algo la conducción al activarte?",
+    "imagen": null,
+    "opciones": [
+      "No: provocan exceso de confianza, agresividad e impulsividad al volante.",
+      "Sí: mejoran la atención en los viajes largos.",
+      "Solo resultan peligrosas si se mezclan con alcohol."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Los estimulantes generan falsa sensación de control, agresividad y conductas impulsivas; y al desaparecer su efecto llega un bajón de fatiga brutal.",
+    "truco": "El estimulante no te hace mejor conductor: te hace un conductor peor convencido de ser el mejor.",
+    "trampa": "Activarte suena útil contra el sueño, pero esa activación química se paga con riesgo, agresividad y un rebote de cansancio de campeonato.",
+    "tags": ["drogas", "efectos", "estimulantes"], "senalId": null
+  },
+  {
+    "id": "M11-044", "mundo": 11, "tema": "Drogas",
+    "pregunta": "Dicen que el cannabis relaja y que por eso se conduce más tranquilo. ¿Qué hay de cierto?",
+    "imagen": null,
+    "opciones": [
+      "Mucho: relajado se reacciona mejor ante los imprevistos.",
+      "Es cierto, pero solo en trayectos cortos y conocidos.",
+      "Nada: altera la percepción y la atención, alarga la reacción y produce somnolencia."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "El cannabis distorsiona la percepción del tiempo y de las distancias, reduce la atención, da somnolencia y alarga el tiempo de reacción.",
+    "truco": "Esa tranquilidad es tu cerebro en modo avión: sin cobertura justo cuando algo se cruza.",
+    "trampa": "La palabra relaja vende seguridad; al volante esa relajación es lentitud mental, y además la mera presencia de THC ya es sancionable.",
+    "tags": ["drogas", "efectos", "cannabis"], "senalId": null
+  },
+  {
+    "id": "M11-045", "mundo": 11, "tema": "Fármacos",
+    "pregunta": "Muchos medicamentos (tranquilizantes, antihistamínicos, ciertos analgésicos) pueden provocar en el conductor…",
+    "imagen": null,
+    "opciones": [
+      "somnolencia y reacciones más lentas.",
+      "reflejos más finos de lo normal.",
+      "una mejor visión nocturna."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "Numerosos fármacos producen somnolencia, disminución de reflejos y menor capacidad de atención: afectan de lleno a la conducción.",
+    "truco": "Si el prospecto dice puede producir somnolencia, tradúcelo: puede producir accidente.",
+    "trampa": "No hace falta que sea un psicofármaco serio: un simple antigripal o la pastilla de la alergia pueden dejarte medio dormido.",
+    "tags": ["farmacos", "somnolencia"], "senalId": null
+  },
+  {
+    "id": "M11-046", "mundo": 11, "tema": "Fármacos",
+    "pregunta": "¿Qué símbolo avisa en el envase de un medicamento de que puede afectar a la conducción?",
+    "imagen": null,
+    "opciones": [
+      "Una calavera negra sobre fondo naranja.",
+      "Un pictograma con un triángulo rojo y un coche, con la advertencia de consultar el prospecto.",
+      "Una franja azul en el precinto de la caja."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los medicamentos que pueden afectar a la conducción llevan en la caja un pictograma (triángulo rojo con un coche) que remite al prospecto.",
+    "truco": "Coche dentro de triángulo rojo = este medicamento y tu carnet tienen que hablar. Lee el prospecto.",
+    "trampa": "La calavera es cosa de venenos y productos químicos; el aviso de conducción es el triángulo con el coche.",
+    "tags": ["farmacos", "pictograma", "prospecto"], "senalId": null
+  },
+  {
+    "id": "M11-047", "mundo": 11, "tema": "Fármacos",
+    "pregunta": "Te recetan un medicamento nuevo y conduces a diario. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Nada especial: si te lo ha dado el médico, es seguro conducir.",
+      "Tomar la mitad de la dosis los días que tengas que conducir.",
+      "Leer el prospecto y consultar al médico o farmacéutico cómo afecta a la conducción."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Antes de conducir con una medicación nueva: prospecto leído y consulta al médico o farmacéutico sobre sus efectos al volante.",
+    "truco": "El prospecto es el manual del conductor del medicamento: léelo antes de arrancar.",
+    "trampa": "Que sea recetado no significa que sea compatible con conducir; y tunear la dosis por tu cuenta es todavía peor idea.",
+    "tags": ["farmacos", "prospecto"], "senalId": null
+  },
+  {
+    "id": "M11-048", "mundo": 11, "tema": "Fármacos",
+    "pregunta": "¿Qué ocurre si mezclas un medicamento sedante (por ejemplo, un ansiolítico) con alcohol antes de conducir?",
+    "imagen": null,
+    "opciones": [
+      "Los efectos se potencian mutuamente: el resultado es peor que la suma de ambos.",
+      "El alcohol neutraliza el efecto del medicamento.",
+      "Nada especial, si las dosis de cada uno son pequeñas."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Alcohol y fármacos con efecto sedante se potencian entre sí: más somnolencia, peor coordinación y reacciones aún más lentas.",
+    "truco": "Pastilla + copa no es 1+1: es un cóctel con los efectos al cuadrado.",
+    "trampa": "Lo de poca cantidad de cada tranquiliza, pero la interacción no respeta esa aritmética: dosis pequeñas combinadas pueden sedarte de sobra.",
+    "tags": ["farmacos", "alcohol", "interacciones"], "senalId": null
+  },
+  {
+    "id": "M11-049", "mundo": 11, "tema": "Fármacos",
+    "pregunta": "Tu medicación habitual te da algo de sueño y necesitas conducir a diario. ¿Qué es lo correcto?",
+    "imagen": null,
+    "opciones": [
+      "Dejar el tratamiento los días que conduzcas.",
+      "Compensar la somnolencia con cafés dobles.",
+      "Consultar al médico: quizá pueda ajustar la pauta o cambiar a un fármaco que afecte menos."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Nunca abandones un tratamiento por tu cuenta para poder conducir: el médico puede ajustar dosis, horarios o cambiar el fármaco.",
+    "truco": "Ni pastillero ni valiente: el que recoloca el tratamiento es el médico, no el conductor.",
+    "trampa": "Dejar la medicación parece lo prudente para conducir, pero descompensar tu enfermedad puede ser tan peligroso al volante como la somnolencia.",
+    "tags": ["farmacos", "somnolencia"], "senalId": null
+  },
+  {
+    "id": "M11-050", "mundo": 11, "tema": "Fármacos",
+    "pregunta": "Los medicamentos que se venden sin receta (antigripales, antihistamínicos de mostrador)…",
+    "imagen": null,
+    "opciones": [
+      "también pueden afectar a la conducción, aunque no necesiten receta.",
+      "son siempre seguros para conducir; por eso no exigen receta.",
+      "solo afectan si se toman durante más de tres días seguidos."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "No necesitar receta no significa ser inofensivo al volante: muchos antigripales y antialérgicos producen somnolencia.",
+    "truco": "Sin receta habla del mostrador de la farmacia, no de tu carnet: el sueño que dan es igual de real.",
+    "trampa": "Asociar sin receta con sin peligro es la trampa: la receta mide el control sanitario, no el efecto sobre la conducción.",
+    "tags": ["farmacos", "somnolencia"], "senalId": null
+  },
+  {
+    "id": "M11-051", "mundo": 11, "tema": "Sanciones y delitos",
+    "pregunta": "Conductor general que sopla 0,35 mg/l: no llega al doble de su tasa y no es reincidente. ¿Qué multa económica le corresponde?",
+    "imagen": null,
+    "opciones": [
+      "200 euros.",
+      "500 euros.",
+      "1.000 euros."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Superar la tasa de alcohol es infracción muy grave: 500 euros de multa (1.000 si doblas la tasa o eres reincidente).",
+    "truco": "El alcohol nunca baja de 500. Y si te pasas de listo (doble tasa o repetir), sube a 1.000.",
+    "trampa": "Los 200 euros son la multa grave estándar de otras infracciones; el alcohol juega en la liga de las muy graves.",
+    "tags": ["alcohol", "sanciones", "multas"], "senalId": null
+  },
+  {
+    "id": "M11-052", "mundo": 11, "tema": "Sanciones y delitos",
+    "pregunta": "¿En qué casos la multa por alcohol sube de 500 a 1.000 euros?",
+    "imagen": null,
+    "opciones": [
+      "En ninguno: la multa por alcohol es siempre de 500 euros.",
+      "Solo si además cometes otra infracción al mismo tiempo.",
+      "Si superas el doble de tu tasa o si eres reincidente del año anterior."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "La multa pasa de 500 a 1.000 euros cuando la tasa supera el doble de la permitida o cuando hay reincidencia en el año anterior.",
+    "truco": "1.000 euros por partida doble: o doblas la tasa o repites numerito en 12 meses.",
+    "trampa": "El siempre 500 se queda corto: la ley reserva el tarifazo para los excesos gordos y los reincidentes. Con drogas, además, son 1.000 de salida.",
+    "explicacion_larga": "La Ley de Tráfico fija la multa por superar la tasa de alcohol en 500 euros, pero la eleva a 1.000 en dos supuestos: cuando el conductor supera el doble de la tasa que le corresponde (por ejemplo, un conductor general por encima de 0,50 mg/l en aire) o cuando es reincidente, es decir, ya fue sancionado en firme por lo mismo durante el año anterior. A eso se suma la pérdida de 4 o 6 puntos según el exceso. Y si el positivo alcanza cotas penales (más de 0,60 mg/l en aire), la multa administrativa se queda pequeña: el asunto pasa al juzgado.",
+    "tags": ["alcohol", "sanciones", "multas"], "senalId": null
+  },
+  {
+    "id": "M11-053", "mundo": 11, "tema": "Sanciones y delitos",
+    "pregunta": "Conductor general que da 0,40 mg/l en aire espirado. ¿Cuántos puntos pierde?",
+    "imagen": null,
+    "opciones": [
+      "4 puntos.",
+      "6 puntos.",
+      "2 puntos."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Para el conductor general, entre 0,25 y 0,50 mg/l se pierden 4 puntos; por encima de 0,50, son 6.",
+    "truco": "Pasarte poco = 4 puntos; pasarte el doble = 6. La regla del 4-o-6 según lo gorda que haya sido la fiesta.",
+    "trampa": "El 6 tienta porque el alcohol suena a castigo máximo, pero fíjate en la cifra: 0,40 aún no supera el 0,50 que activa los 6 puntos.",
+    "explicacion_larga": "El permiso por puntos gradúa el castigo del alcohol en dos tramos. Conductor general: entre 0,25 y 0,50 mg/l en aire, 4 puntos; por encima de 0,50 mg/l, 6 puntos. Conductores noveles y profesionales: entre 0,15 y 0,30 mg/l, 4 puntos; por encima de 0,30, 6 puntos. Con las drogas no hay tramos: la presencia en el organismo supone siempre 6 puntos, además de los 1.000 euros de multa. Todo esto convive con la sanción económica y, en los casos más graves, con la vía penal.",
+    "tags": ["alcohol", "puntos", "sanciones"], "senalId": null
+  },
+  {
+    "id": "M11-054", "mundo": 11, "tema": "Sanciones y delitos",
+    "pregunta": "Das positivo confirmado en el control. ¿Qué pasa con tu coche en ese momento?",
+    "imagen": null,
+    "opciones": [
+      "Puedes seguir conduciendo hasta casa si está cerca.",
+      "Queda inmovilizado, salvo que un acompañante habilitado y en condiciones pueda hacerse cargo de él.",
+      "Se lo lleva la grúa al depósito en todo caso, sin alternativa posible."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Tras un positivo no puedes seguir conduciendo: el vehículo se inmoviliza, salvo que otro conductor habilitado (y sin haber bebido) se haga cargo.",
+    "truco": "El positivo te quita las llaves: o conduce un copiloto limpio o el coche se queda clavado donde está.",
+    "trampa": "El hasta casa que está cerca es la negociación clásica de madrugada: no existe. Y la grúa no es automática: primero se ofrece la opción del conductor alternativo.",
+    "explicacion_larga": "La Ley de Tráfico permite a los agentes inmovilizar el vehículo cuando el conductor da positivo en alcohol o drogas, porque dejarle continuar sería mantener el peligro en la vía. La inmovilización se evita si hay un acompañante con permiso válido y en condiciones de conducir que se haga responsable del vehículo. Si no lo hay, el coche queda inmovilizado y puede acabar en el depósito, con los gastos a cargo del conductor. Detalle que cae en examen: la inmovilización es una medida cautelar, no una sanción; la multa y los puntos van aparte.",
+    "tags": ["alcohol", "inmovilizacion", "sanciones"], "senalId": null
+  },
+  {
+    "id": "M11-055", "mundo": 11, "tema": "Sanciones y delitos",
+    "pregunta": "Te condenan por conducir con 0,70 mg/l en aire, delito contra la seguridad vial. ¿Qué penas son posibles?",
+    "imagen": null,
+    "opciones": [
+      "Solo una multa administrativa de 1.000 euros y 6 puntos.",
+      "Retirada del carnet durante un mes y un cursillo de sensibilización.",
+      "Prisión de 3 a 6 meses, o multa, o trabajos comunitarios; y siempre privación del derecho a conducir de 1 a 4 años."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "El delito de alcoholemia se castiga con prisión de 3 a 6 meses, o multa de 6 a 12 meses, o trabajos en beneficio de la comunidad, y en todo caso privación del derecho a conducir de más de 1 año y hasta 4.",
+    "truco": "En el delito eliges menú (prisión, multa o trabajos), pero el postre es fijo: de 1 a 4 años sin conducir.",
+    "trampa": "Con 0,70 ya no estás en el mundo de las multas de tráfico: superaste el 0,60 penal, y ahí los puntos son lo de menos.",
+    "explicacion_larga": "Superar 0,60 mg/l en aire espirado (1,2 g/l en sangre) convierte la conducción en delito del artículo 379.2 del Código Penal, sin necesidad de probar influencia. Las penas son alternativas en su primera parte: prisión de 3 a 6 meses, o multa de 6 a 12 meses, o trabajos en beneficio de la comunidad de 31 a 90 días. Lo que no es alternativo es la privación del derecho a conducir vehículos a motor y ciclomotores, por tiempo superior a 1 año y hasta 4. Además, la condena penal desplaza a la multa administrativa: no se sanciona dos veces el mismo hecho, pero la vía penal es mucho más dura.",
+    "tags": ["alcohol", "delito", "sanciones"], "senalId": null
+  },
+  {
+    "id": "M11-056", "mundo": 11, "tema": "Sanciones y delitos",
+    "pregunta": "Un juez te impone 3 años de privación del derecho a conducir. ¿Recuperas tu permiso al cumplirlos?",
+    "imagen": null,
+    "opciones": [
+      "No automáticamente: al superar los 2 años de privación, el permiso pierde su vigencia y hay que obtenerlo de nuevo.",
+      "Sí: cumplido el plazo, te devuelven el carnet tal cual estaba.",
+      "Sí, pero pagando una tasa de reactivación en Tráfico."
+    ],
+    "correcta": 0, "dificultad": 5,
+    "explicacion_corta": "Si la privación penal supera los 2 años, el permiso pierde su vigencia: hay que obtenerlo otra vez, con los cursos y pruebas que correspondan.",
+    "truco": "Más de 2 años de castigo = carnet a la basura: no te lo devuelven, te lo vuelves a ganar.",
+    "trampa": "Lo intuitivo es cumplo condena y me lo devuelven, pero pasados 2 años la ley exige demostrar de nuevo la aptitud pasando otra vez por el proceso.",
+    "explicacion_larga": "El Código Penal establece que, cuando la privación del derecho a conducir impuesta en sentencia supera los 2 años, comporta la pérdida de vigencia del permiso o licencia. No es una simple suspensión: el título desaparece y, cumplida la condena, hay que obtener de nuevo el permiso, lo que incluye superar los cursos y pruebas que fija la normativa para estos casos. Es la versión penal de lo que ocurre en vía administrativa al quedarte sin puntos: el sistema entiende que debes demostrar otra vez que mereces conducir.",
+    "tags": ["delito", "permiso", "sanciones"], "senalId": null
+  }
+]

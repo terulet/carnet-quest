@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Carnet Quest — Sácate el teórico jugando</title>
+  <meta name="description" content="El juego con el que España se saca el carnet. 15 mundos, +850 preguntas y un predictor que no miente. Prueba gratis los 3 primeros mundos.">
+  <meta name="theme-color" content="#0B0D12">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta property="og:title" content="Carnet Quest — Sácate el teórico jugando">
+  <meta property="og:description" content="El GTA del carnet de conducir. Misiones cortas, bosses y un predictor honesto que te dice cuándo estás listo para aprobar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="icons/icon-512.png">
+  <link rel="stylesheet" href="css/tokens.css">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      background:
+        radial-gradient(120% 40% at 50% -5%, rgba(255,45,120,.16), transparent 55%),
+        radial-gradient(90% 30% at 50% 105%, rgba(0,229,255,.10), transparent 55%),
+        var(--asfalto-900);
+      color:var(--linea-blanca);font-family:var(--font-ui);line-height:1.5;
+      -webkit-font-smoothing:antialiased;overflow-x:hidden;
+    }
+    h1,h2,h3{font-family:var(--font-display);font-weight:400;text-transform:uppercase;letter-spacing:.02em;line-height:1}
+    .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+    a{color:inherit}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      min-height:60px;padding:16px 34px;border-radius:16px;
+      font-family:var(--font-display);font-size:1.25rem;letter-spacing:.05em;text-transform:uppercase;
+      text-decoration:none;transition:transform .1s ease,filter .2s;cursor:pointer;border:0;
+    }
+    .btn:active{transform:scale(.97)}
+    .btn--primary{background:linear-gradient(160deg,var(--neon-magenta),#C4114F);color:#fff;box-shadow:var(--glow-magenta)}
+    .btn--cian{background:linear-gradient(160deg,var(--neon-cian),#0093B8);color:var(--asfalto-950);box-shadow:var(--glow-cian)}
+    .btn--ghost{background:var(--asfalto-700);border:1px solid var(--asfalto-500);color:var(--linea-blanca)}
+
+    /* HERO */
+    header.hero{padding:calc(var(--safe-top) + 48px) 0 40px;text-align:center;position:relative}
+    .kicker{color:var(--neon-cian);font-weight:800;letter-spacing:.28em;font-size:.8rem;text-transform:uppercase;margin-bottom:16px}
+    .hero h1{font-size:clamp(2.6rem,11vw,5.2rem);text-shadow:var(--glow-magenta)}
+    .hero .via{display:inline-block;color:var(--neon-cian);border:2px solid var(--neon-cian);border-radius:8px;padding:2px 10px;font-size:.7rem;font-weight:800;letter-spacing:.2em;margin-bottom:20px;box-shadow:var(--glow-cian)}
+    .hero p.sub{color:var(--linea-gris);font-size:1.2rem;max-width:560px;margin:18px auto 6px}
+    .hero .frase{font-style:italic;color:var(--amarillo-obras);font-weight:700;margin-bottom:28px}
+    .hero .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .hero .nota{color:var(--linea-tenue);font-size:.82rem;margin-top:16px}
+
+    /* DEMO phone */
+    .demo{padding:24px 0 56px;display:flex;flex-direction:column;align-items:center;gap:22px}
+    .phone{
+      width:390px;max-width:92vw;aspect-ratio:390/760;position:relative;
+      border:12px solid #05070b;border-radius:44px;overflow:hidden;
+      box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 0 2px var(--asfalto-600),var(--glow-cian);
+      background:var(--asfalto-900);
+    }
+    .phone iframe{width:100%;height:100%;border:0;display:block}
+    .phone .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:22px;background:#05070b;border-radius:0 0 16px 16px;z-index:2}
+    .demo .pie{color:var(--linea-tenue);font-size:.85rem;text-align:center}
+
+    /* secciones */
+    section{padding:56px 0}
+    .titulo-sec{text-align:center;margin-bottom:36px}
+    .titulo-sec h2{font-size:clamp(1.8rem,6vw,2.6rem)}
+    .titulo-sec p{color:var(--linea-gris);margin-top:10px;max-width:560px;margin-left:auto;margin-right:auto}
+
+    .pilares{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+    .pilar{background:var(--asfalto-700);border:1px solid var(--asfalto-500);border-radius:20px;padding:26px}
+    .pilar .ico{font-size:2.2rem;margin-bottom:12px}
+    .pilar h3{font-size:1.2rem;margin-bottom:8px}
+    .pilar p{color:var(--linea-gris);font-size:.95rem}
+
+    .mundos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+    .mundo-chip{background:var(--asfalto-700);border-left:5px solid var(--c,var(--neon-cian));border-radius:12px;padding:14px 16px;font-size:.9rem}
+    .mundo-chip .n{font-family:var(--font-display);color:var(--linea-tenue);font-size:.8rem}
+    .mundo-chip .nom{font-weight:800}
+
+    /* precio */
+    .precio-wrap{background:linear-gradient(150deg,#1a0f16,var(--asfalto-800));border:3px solid var(--amarillo-obras);border-radius:26px;padding:40px 28px;text-align:center;box-shadow:var(--glow-amarillo)}
+    .precio-wrap h2{font-size:clamp(2rem,7vw,3rem);background:linear-gradient(120deg,var(--amarillo-obras),var(--neon-magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .precio-wrap .euros{font-family:var(--font-display);font-size:2.4rem;color:var(--amarillo-obras);margin:6px 0}
+    .precio-wrap .pago{color:var(--linea-gris);margin-bottom:24px}
+    .benes{list-style:none;text-align:left;max-width:460px;margin:0 auto 28px;display:grid;gap:12px}
+    .benes li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem}
+    .benes li::before{content:'✓';color:var(--senal-verde-vivo);font-weight:900;font-size:1.1rem}
+    .garantia{border:2px dashed var(--senal-verde-vivo);border-radius:16px;padding:18px;margin:24px auto 0;max-width:520px;color:var(--linea-blanca);font-size:.95rem}
+    .garantia b{color:var(--senal-verde-vivo)}
+    .honesto{color:var(--linea-tenue);font-size:.85rem;margin-top:20px}
+
+    .gratis-note{text-align:center;color:var(--linea-gris);margin-top:24px;font-size:.95rem}
+
+    footer{border-top:1px solid var(--asfalto-600);padding:34px 0 calc(40px + var(--safe-bottom));text-align:center;color:var(--linea-tenue);font-size:.82rem}
+    footer .disc{max-width:560px;margin:0 auto 14px}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="kicker">Permiso B · DGT España</div>
+      <div class="via">N-CQ</div>
+      <h1>Carnet Quest</h1>
+      <p class="sub">El juego con el que te sacas el teórico. Misiones de 5 minutos, no temarios infinitos.</p>
+      <p class="frase">“Me saqué el teórico jugando.”</p>
+      <div class="cta">
+        <a class="btn btn--primary" href="index.html">▶ Jugar gratis</a>
+        <a class="btn btn--ghost" href="#pase">Ver el Pase Carnet</a>
+      </div>
+      <p class="nota">Gratis: mundos 1–3 completos + un simulacro al día. Sin registro. Se instala como app.</p>
+    </div>
+  </header>
+
+  <div class="demo wrap">
+    <div class="phone">
+      <div class="notch"></div>
+      <iframe src="index.html" title="Demo jugable de Carnet Quest" loading="lazy"></iframe>
+    </div>
+    <p class="pie">↑ Esto es el juego de verdad, corriendo aquí mismo. Toca y juega.</p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="titulo-sec">
+        <h2>Por qué funciona</h2>
+        <p>Está diseñado para que el efecto secundario de jugar sea aprobar a la primera.</p>
+      </div>
+      <div class="pilares">
+        <div class="pilar"><div class="ico">🎮</div><h3>Juegas, no estudias</h3><p>Test antes que teoría. Cada pregunta es una jugada con XP, combos y estrellas. El mapa avanza contigo.</p></div>
+        <div class="pilar"><div class="ico">🪤</div><h3>Fallar es el mejor momento</h3><p>Cada fallo te enseña la trampa con la que te la cuelan y el truco para no volver a caer. El fallo es premium, no castigo.</p></div>
+        <div class="pilar"><div class="ico">🔧</div><h3>Taller de errores</h3><p>Cada pregunta que fallas es un coche averiado en tu garaje. Repárala acertándola dos días distintos y no se te olvida jamás.</p></div>
+        <div class="pilar"><div class="ico">📊</div><h3>Predictor honesto</h3><p>Te dice tu probabilidad real de aprobar con tu precisión, tu cobertura del temario y tus simulacros. No infla. No miente.</p></div>
+        <div class="pilar"><div class="ico">📖</div><h3>Álbum de señales</h3><p>112 señales para coleccionar como un Pokédex. El tema más denso del examen convertido en coleccionismo puro.</p></div>
+        <div class="pilar"><div class="ico">🏢</div><h3>Modo examen real</h3><p>DGT Tower: 30 preguntas, 30 minutos, 3 fallos como máximo. Sin música, sin ayudas. Como el día D.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="titulo-sec">
+        <h2>15 mundos + la Torre</h2>
+        <p>Todo el temario del permiso B, convertido en una ruta nocturna que desbloqueas venciendo bosses.</p>
+      </div>
+      <div class="mundos">
+        <div class="mundo-chip" style="--c:#00E5FF"><span class="n">Mundo 1</span><br><span class="nom">Villa Asfalto</span></div>
+        <div class="mundo-chip" style="--c:#FFC800"><span class="n">Mundo 2</span><br><span class="nom">Señalópolis Norte</span></div>
+        <div class="mundo-chip" style="--c:#E2001A"><span class="n">Mundo 3</span><br><span class="nom">Señalópolis Centro</span></div>
+        <div class="mundo-chip" style="--c:#0055B8"><span class="n">Mundo 4</span><br><span class="nom">Señalópolis Sur</span></div>
+        <div class="mundo-chip" style="--c:#FF2D78"><span class="n">Mundo 5</span><br><span class="nom">Autopista Límite</span></div>
+        <div class="mundo-chip" style="--c:#FFC800"><span class="n">Mundo 6</span><br><span class="nom">Cruce Salvaje</span></div>
+        <div class="mundo-chip" style="--c:#F4F6FB"><span class="n">Mundo 7</span><br><span class="nom">La Doble Continua</span></div>
+        <div class="mundo-chip" style="--c:#00E5FF"><span class="n">Mundo 8</span><br><span class="nom">Rotonda Infernal</span></div>
+        <div class="mundo-chip" style="--c:#0055B8"><span class="n">Mundo 9</span><br><span class="nom">Parking Wars</span></div>
+        <div class="mundo-chip" style="--c:#FF2D78"><span class="n">Mundo 10</span><br><span class="nom">Ciudad Nocturna</span></div>
+        <div class="mundo-chip" style="--c:#FFC800"><span class="n">Mundo 11</span><br><span class="nom">El Último Bar</span></div>
+        <div class="mundo-chip" style="--c:#007A3D"><span class="n">Mundo 12</span><br><span class="nom">Zona Zombie</span></div>
+        <div class="mundo-chip" style="--c:#00E5FF"><span class="n">Mundo 13</span><br><span class="nom">El Taller</span></div>
+        <div class="mundo-chip" style="--c:#E2001A"><span class="n">Mundo 14</span><br><span class="nom">Código PAS</span></div>
+        <div class="mundo-chip" style="--c:#007A3D"><span class="n">Mundo 15</span><br><span class="nom">Eco Ruta & Papeleo</span></div>
+        <div class="mundo-chip" style="--c:#FF2D78"><span class="n">Endgame</span><br><span class="nom">🏢 DGT Tower</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pase">
+    <div class="wrap">
+      <div class="precio-wrap">
+        <h2>Pase Carnet</h2>
+        <div class="euros">49,99 €</div>
+        <div class="pago">Pago único. Para siempre. Sin suscripción.</div>
+        <ul class="benes">
+          <li>Los 15 mundos completos, hasta el último boss</li>
+          <li>DGT Tower ilimitada: todos los simulacros que necesites</li>
+          <li>Taller avanzado: carteles SE BUSCA y boss semanal de tus fallos</li>
+          <li>Predictor de Aprobado y estadísticas completas</li>
+          <li>Álbum de las 112 señales</li>
+          <li>Cosméticos exclusivos para tu coche</li>
+        </ul>
+        <a class="btn btn--primary" href="index.html">Desbloquear todo</a>
+        <div class="garantia"><b>Garantía honesta:</b> si llegas a Predictor ≥ 90 % con 5 simulacros APTO seguidos y suspendes el teórico real, te devolvemos el dinero.</div>
+        <p class="honesto">Lo gratis nunca se degrada. Sin anuncios, sin culpa, sin urgencias falsas.</p>
+      </div>
+      <p class="gratis-note">¿Aún no te decides? <a href="index.html" style="color:var(--neon-cian);font-weight:800">Empieza gratis por Villa Asfalto</a> y decide cuando lleves un 22 % del temario dominado.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p class="disc">Carnet Quest es un preparador independiente del examen teórico del permiso B. No somos la DGT ni tenemos relación con ella. El contenido sigue la normativa española vigente; ante cualquier duda, consulta la fuente oficial.</p>
+      <p>© Carnet Quest · Hecho en España 🏁</p>
+    </div>
+  </footer>
+</body>
+</html>

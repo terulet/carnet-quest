@@ -1,0 +1,885 @@
+[
+  {
+    "id": "M06-001", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Llegas a una intersección sin señalizar. Como norma general, ¿a quién debes ceder el paso?",
+    "imagen": null,
+    "opciones": [
+      "A los vehículos que se aproximen por tu derecha.",
+      "A los vehículos que se aproximen por tu izquierda.",
+      "Al vehículo que llegue a mayor velocidad."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "Si nadie ha puesto señales, rige la norma general: preferencia para el que viene por la derecha.",
+    "truco": "Sin señales, la derecha manda.",
+    "trampa": "La izquierda tienta porque es de donde 'te viene encima' el tráfico en tu carril, pero la norma mira a tu derecha.",
+    "tags": ["norma-derecha", "interseccion-sin-senalizar"], "senalId": null
+  },
+  {
+    "id": "M06-002", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un cruce sin señalizar coincides con un turismo que se aproxima por tu izquierda. ¿Quién pasa primero?",
+    "imagen": null,
+    "opciones": [
+      "Él, porque ha llegado un instante antes que tú.",
+      "Tú: para el otro conductor, tu vehículo se aproxima por su derecha.",
+      "El primero que consiga entrar en el cruce."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "La regla funciona en espejo: si él está a tu izquierda, tú estás a su derecha, así que la preferencia es tuya.",
+    "truco": "Ponte en su asiento: si tú eres 'su derecha', el que manda eres tú.",
+    "trampa": "El orden de llegada no decide nada en un cruce sin señalizar; eso solo cuenta en tramos estrechos.",
+    "tags": ["norma-derecha", "interseccion-sin-senalizar"], "senalId": null
+  },
+  {
+    "id": "M06-003", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "La preferencia del que se aproxima por la derecha se aplica…",
+    "imagen": null,
+    "opciones": [
+      "siempre, incluso cuando hay semáforos.",
+      "en las glorietas y en el resto de intersecciones.",
+      "solo cuando la prioridad no está señalizada."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Es una norma 'de reserva': entra en juego únicamente cuando no hay señal, semáforo ni agente que ordene la prioridad.",
+    "truco": "La derecha es el plan B: solo manda cuando nadie más manda.",
+    "trampa": "En glorietas NO rige la derecha: allí manda el que ya circula por dentro del anillo.",
+    "tags": ["norma-derecha", "prelacion-senales"], "senalId": null
+  },
+  {
+    "id": "M06-004", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un cruce sin señalizar, un tranvía se aproxima por tu izquierda. ¿Quién tiene preferencia?",
+    "imagen": null,
+    "opciones": [
+      "Tú, porque te aproximas por su derecha.",
+      "El tranvía: los vehículos que circulan por raíles tienen preferencia de paso.",
+      "El que entre primero en la intersección."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Salvo que la señalización diga otra cosa, los vehículos por raíles tienen preferencia, vengan por donde vengan.",
+    "truco": "El tranvía ni esquiva ni frena bien: los raíles mandan por encima de la derecha.",
+    "trampa": "Te la cuelan con la norma de la derecha, pero el tranvía es una de sus excepciones clásicas.",
+    "tags": ["tranvia", "norma-derecha", "excepciones"], "senalId": null
+  },
+  {
+    "id": "M06-005", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Circulas por un camino sin pavimentar y llegas a un cruce sin señales con una carretera asfaltada. ¿Quién cede el paso?",
+    "imagen": null,
+    "opciones": [
+      "Tú: los que circulan por vía pavimentada tienen preferencia sobre los que vienen de una sin pavimentar.",
+      "El de la carretera, si tú te aproximas por su derecha.",
+      "El vehículo de mayor masa."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El asfalto gana a la tierra: la vía pavimentada tiene preferencia sobre la que no lo está.",
+    "truco": "Asfalto manda sobre tierra, vengas por donde vengas.",
+    "trampa": "La norma de la derecha no se aplica aquí: el tipo de firme es otra de sus excepciones.",
+    "tags": ["via-pavimentada", "excepciones"], "senalId": null
+  },
+  {
+    "id": "M06-006", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Sales de un camino de tierra para entrar en una carretera asfaltada y no hay ninguna señal. ¿Cómo actúas?",
+    "imagen": null,
+    "opciones": [
+      "Entro primero si me aproximo por la derecha del otro conductor.",
+      "Entro con normalidad: sin señales rige la preferencia de la derecha.",
+      "Cedo el paso a todos los que circulan por la vía pavimentada."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Vengas del camino que vengas, quien circula por la vía pavimentada pasa antes.",
+    "truco": "Del barro al asfalto se entra pidiendo permiso.",
+    "trampa": "La opción de la derecha suena a norma general, pero el firme sin pavimentar te quita esa carta.",
+    "tags": ["via-pavimentada", "excepciones"], "senalId": null
+  },
+  {
+    "id": "M06-007", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En una glorieta, ¿quién tiene prioridad de paso?",
+    "imagen": null,
+    "opciones": [
+      "El que va a entrar, si se aproxima por la derecha.",
+      "El que ya circula por el interior del anillo.",
+      "El que vaya a tomar la primera salida."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "En las glorietas la preferencia es de quien ya está dentro circulando por la vía circular.",
+    "truco": "En la rotonda, el de dentro es el rey: tú esperas en la puerta.",
+    "trampa": "La 'derecha' del que entra no vale nada aquí: la glorieta es la excepción más famosa de la norma general.",
+    "tags": ["glorieta", "excepciones"], "senalId": null
+  },
+  {
+    "id": "M06-008", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Llegas a una glorieta en la que no hay señal de ceda el paso ni marcas viales en la entrada. ¿Quién tiene preferencia?",
+    "imagen": null,
+    "opciones": [
+      "Los que ya circulan por el interior del anillo, aunque no haya señal alguna.",
+      "Tú, porque para los de dentro te aproximas por su derecha.",
+      "Los que circulen por el carril exterior del anillo."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "La prioridad del que circula dentro del anillo la fija la propia norma, exista o no señal en la entrada.",
+    "truco": "La rotonda lleva el ceda 'de serie': no necesita señal para que el de dentro mande.",
+    "trampa": "Mucha gente cree que sin señal 'vuelve' la norma de la derecha; en glorietas no vuelve nunca.",
+    "tags": ["glorieta", "interseccion-sin-senalizar"], "senalId": null
+  },
+  {
+    "id": "M06-009", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Vas a entrar en una glorieta y por el anillo se aproxima un coche por tu izquierda. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Entro: viene por mi izquierda y la derecha manda.",
+      "Entro acelerando para no cortarle la trayectoria.",
+      "Le cedo el paso: dentro del anillo la preferencia es suya."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "El que circula por el anillo pasa primero; tú entras cuando haya hueco seguro.",
+    "truco": "Antes de entrar en la rotonda, mira a tu izquierda: de ahí viene el que manda.",
+    "trampa": "Aplicar la norma de la derecha en una glorieta es el fallo estrella: aquí no funciona.",
+    "tags": ["glorieta"], "senalId": null
+  },
+  {
+    "id": "M06-010", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Sales de tu garaje para incorporarte a la calle. ¿Quién tiene prioridad?",
+    "imagen": null,
+    "opciones": [
+      "Tú, en cuanto asomas el morro del coche.",
+      "Los vehículos y peatones que ya circulan por la vía.",
+      "Tú, siempre que señalices la maniobra con antelación."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Quien se incorpora a la circulación debe ceder el paso a los que ya circulan por la vía.",
+    "truco": "El que llega nuevo a la fiesta no elige la música: el que se incorpora, cede.",
+    "trampa": "Señalizar es obligatorio, pero el intermitente no compra prioridad: solo avisa.",
+    "tags": ["incorporacion"], "senalId": null
+  },
+  {
+    "id": "M06-011", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "¿Para qué sirve el carril de aceleración de una autovía?",
+    "imagen": null,
+    "opciones": [
+      "Para ganar la velocidad adecuada e incorporarte sin obligar a frenar bruscamente a quienes ya circulan.",
+      "Para adquirir prioridad sobre los vehículos del carril derecho.",
+      "Para adelantar a los vehículos lentos antes de entrar."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El carril de aceleración te da metros para igualar velocidades, pero la prioridad sigue siendo de los que ya circulan por la autovía.",
+    "truco": "Es una rampa de lanzamiento, no una alfombra roja: coges velocidad, no preferencia.",
+    "trampa": "Suena lógico que 'al final del carril te tienen que dejar entrar', pero la obligación de ceder es tuya.",
+    "tags": ["incorporacion", "carril-aceleracion"], "senalId": null
+  },
+  {
+    "id": "M06-012", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Te incorporas a la vía desde una zona de estacionamiento y no hay un hueco claro. ¿Hasta dónde llega tu obligación de ceder el paso?",
+    "imagen": null,
+    "opciones": [
+      "Basta con señalizar y entrar poco a poco: los demás deben abrirme hueco.",
+      "Solo debo ceder a los vehículos, no a los peatones.",
+      "Debo ceder incluso deteniéndome si es preciso, tanto a vehículos como a peatones."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "La cesión en la incorporación es total: si hace falta pararse y esperar, te paras y esperas, y alcanza también a los peatones.",
+    "truco": "Ceder de verdad incluye el freno: si no hay hueco, el hueco no se fabrica empujando.",
+    "trampa": "El 'entrar poco a poco' es invadir la trayectoria ajena con buenas palabras: sigue siendo no ceder.",
+    "tags": ["incorporacion", "peatones"], "senalId": null
+  },
+  {
+    "id": "M06-013", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Llegas a un puente estrecho señalizado con la señal R-5, prioridad al sentido contrario. ¿Qué te obliga a hacer?",
+    "imagen": null,
+    "opciones": [
+      "A pasar el primero por el tramo, con precaución.",
+      "A no entrar en el tramo si obligas a detenerse a quien viene de frente.",
+      "A detenerte siempre, venga o no venga alguien en sentido contrario."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "La R-5 te prohíbe entrar en el estrechamiento mientras no puedas cruzarlo sin forzar a detenerse a los que vienen de frente.",
+    "truco": "Redonda con rojo = tú frenas el carro: la prioridad es del de enfrente.",
+    "trampa": "No exige detenerse siempre como un STOP: si el tramo está libre, pasas sin parar.",
+    "tags": ["tramo-estrecho", "senales-prioridad"], "senalId": "R-5"
+  },
+  {
+    "id": "M06-014", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un estrechamiento ves la señal R-6, prioridad respecto al sentido contrario. Significa que…",
+    "imagen": null,
+    "opciones": [
+      "tienes prioridad de paso sobre los vehículos que se aproximan de frente en ese tramo.",
+      "debes ceder el paso al sentido contrario.",
+      "el tramo está cerrado para el sentido contrario."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "La R-6 te indica que en ese tramo estrecho pasas tú primero; quien viene de frente tiene su R-5 y debe esperar.",
+    "truco": "Cuadrada y azul = te ceden el paso; pasa tú.",
+    "trampa": "El sentido contrario no está prohibido: también pueden circular, pero esperando su turno.",
+    "tags": ["tramo-estrecho", "senales-prioridad"], "senalId": "R-6"
+  },
+  {
+    "id": "M06-015", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Para no confundir las señales de prioridad de un tramo estrecho, ¿qué te dice de un vistazo quién pasa primero?",
+    "imagen": null,
+    "opciones": [
+      "La longitud de las flechas: la más larga tiene preferencia.",
+      "La posición de la señal: a la derecha del tramo manda, a la izquierda cede.",
+      "La forma y el color: la redonda con borde rojo te hace ceder y la cuadrada azul te da la prioridad."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "La R-5 es redonda con borde rojo (prohibición: cedes tú) y la R-6 es cuadrada azul (indicación: pasas tú).",
+    "truco": "Triángulo avisa, círculo manda, cuadrado informa: si el círculo rojo te manda, te manda esperar.",
+    "trampa": "Fijarse en las flechas sin mirar la forma de la señal es la receta perfecta para liarse.",
+    "tags": ["tramo-estrecho", "senales-prioridad"], "senalId": null
+  },
+  {
+    "id": "M06-016", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un tramo estrecho sin señalizar no cabéis tu coche y el que viene de frente. ¿Quién tiene preferencia?",
+    "imagen": null,
+    "opciones": [
+      "El vehículo más ancho.",
+      "El que haya entrado primero en el tramo.",
+      "El que circule en sentido descendente."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Sin señales, pasa primero quien entró antes en el estrechamiento; en caso de duda, el que tenga mayores dificultades de maniobra.",
+    "truco": "En el pasillo estrecho vale la ley del cine: el que entró primero conserva el sitio.",
+    "trampa": "El sentido descendente pinta algo solo en tramos de gran pendiente, y ahí quien manda es justo el que sube.",
+    "tags": ["tramo-estrecho", "interseccion-sin-senalizar"], "senalId": null
+  },
+  {
+    "id": "M06-017", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un tramo estrecho de gran pendiente, ¿quién tiene la preferencia como norma general?",
+    "imagen": null,
+    "opciones": [
+      "El vehículo que sube.",
+      "El vehículo que baja, porque le cuesta más detenerse.",
+      "El vehículo que circule con más carga."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "En tramos estrechos de gran pendiente pasa primero el que circula en sentido ascendente.",
+    "truco": "El que sube manda: arrancar cuesta arriba con el coche parado es un castigo.",
+    "trampa": "Parece lógico dejar pasar al que baja 'porque frena peor', pero la norma protege al que sube.",
+    "tags": ["pendiente", "tramo-estrecho"], "senalId": null
+  },
+  {
+    "id": "M06-018", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un tramo estrecho de gran pendiente, el que sube tiene preferencia salvo que…",
+    "imagen": null,
+    "opciones": [
+      "el que baja sea un vehículo pesado.",
+      "el que baja circule por vía pavimentada.",
+      "el que sube pueda llegar antes a un apartadero."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Si el que sube tiene un apartadero más a mano, se aparta él aunque en teoría tuviera la preferencia.",
+    "truco": "La montaña es práctica: manda el que sube, salvo que tenga un hueco a un paso.",
+    "trampa": "El tipo de vehículo o de firme no cambia esta regla; lo único que la altera es el apartadero.",
+    "explicacion_larga": "La regla de la gran pendiente busca evitar la maniobra más difícil: arrancar cuesta arriba desde parado. Por eso, en un tramo estrecho, el que asciende pasa primero. Pero la norma tiene los pies en el suelo: si el que sube tiene un apartadero (un ensanche donde apartarse) al que puede llegar antes, es él quien debe usarlo y facilitar el cruce, porque en ese caso apartarse le cuesta menos que al otro retroceder por la pendiente. En el examen, la coletilla del apartadero es exactamente lo que separa la respuesta buena de las tentadoras.",
+    "tags": ["pendiente", "tramo-estrecho"], "senalId": null
+  },
+  {
+    "id": "M06-019", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un tramo estrecho de gran pendiente, uno de los dos vehículos tiene que dar marcha atrás para permitir el cruce. Como regla general, ¿quién retrocede?",
+    "imagen": null,
+    "opciones": [
+      "El que sube, porque controla mejor la maniobra.",
+      "El que baja.",
+      "El que esté más cerca del centro del tramo."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Como el que sube tiene la preferencia, la marcha atrás le toca al que desciende.",
+    "truco": "Quien baja, recula: la gravedad le echa una mano para volver atrás.",
+    "trampa": "Te tientan con la habilidad del que sube, pero la norma es la otra cara de su preferencia: retrocede el que baja.",
+    "tags": ["pendiente", "tramo-estrecho"], "senalId": null
+  },
+  {
+    "id": "M06-020", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Un peatón está cruzando por un paso para peatones debidamente señalizado. ¿Quién tiene prioridad?",
+    "imagen": null,
+    "opciones": [
+      "El peatón.",
+      "El vehículo, si el peatón acaba de bajar de la acera.",
+      "El que hubiera llegado antes al paso."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "En un paso señalizado la prioridad es del peatón, y debes poder detenerte si está cruzando o a punto de hacerlo.",
+    "truco": "Cebra pintada, peatón intocable.",
+    "trampa": "Da igual quién 'llegó antes': el paso señalizado es territorio del peatón.",
+    "tags": ["peatones", "paso-peatones"], "senalId": null
+  },
+  {
+    "id": "M06-021", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Giras para entrar en otra vía y hay peatones cruzándola, aunque no existe paso para peatones. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Paso: sin paso señalizado, la prioridad es del vehículo.",
+      "Aviso con el claxon y paso despacio entre ellos.",
+      "Les cedo el paso: al girar a otra vía, los peatones que la cruzan tienen prioridad aunque no haya paso."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Cuando giras para entrar en otra vía, los peatones que ya la están cruzando tienen prioridad, haya o no paso pintado.",
+    "truco": "Al girar, el peatón manda aunque no haya cebra: tú estás invadiendo su calle nueva.",
+    "trampa": "El 'sin paso no hay prioridad' funciona en recta, pero el giro a otra vía es la excepción que el examen adora.",
+    "tags": ["peatones", "giro"], "senalId": null
+  },
+  {
+    "id": "M06-022", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Para entrar en una finca vas a cruzar el arcén, por el que caminan unos peatones que no disponen de zona peatonal. ¿Quién pasa primero?",
+    "imagen": null,
+    "opciones": [
+      "Tú, porque el arcén no es una zona reservada a peatones.",
+      "Los peatones que circulan por el arcén.",
+      "El primero que llegue al punto de cruce."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Al cruzar un arcén por el que circulan peatones sin zona peatonal, debes cederles el paso.",
+    "truco": "Si el arcén es su única acera, trátalo como una acera.",
+    "trampa": "Es cierto que el arcén no es zona peatonal, pero justo por eso la norma protege al peatón que no tiene otro sitio.",
+    "tags": ["peatones", "arcen"], "senalId": null
+  },
+  {
+    "id": "M06-023", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Para entrar en tu garaje tienes que cruzar la acera por el vado. ¿Quién tiene prioridad?",
+    "imagen": null,
+    "opciones": [
+      "Los peatones que circulan por la acera.",
+      "Tu vehículo, porque el vado está autorizado.",
+      "El primero que ocupe el vado."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "La acera y las zonas peatonales son de los peatones: al cruzarlas con el vehículo, cedes tú siempre.",
+    "truco": "En la acera juegas de visitante: el local siempre saca primero.",
+    "trampa": "El vado te permite cruzar la acera, pero no te da preferencia sobre quien camina por ella.",
+    "tags": ["peatones", "zona-peatonal"], "senalId": null
+  },
+  {
+    "id": "M06-024", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Una fila escolar está cruzando la calzada por un punto sin paso de peatones. ¿Debes cederles el paso?",
+    "imagen": null,
+    "opciones": [
+      "Solo si cruzan por un paso señalizado.",
+      "Sí: las filas escolares, las tropas en formación y las comitivas organizadas tienen prioridad.",
+      "Solo si los acompaña un agente que corte el tráfico."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los grupos organizados (filas escolares, tropas, comitivas) tienen prioridad de paso y no se cortan por la mitad.",
+    "truco": "Grupo en fila, tú a la cola: escolares, tropa y procesión pasan enteros.",
+    "trampa": "No necesitan cebra ni agente: la prioridad la llevan puesta por ser grupo organizado.",
+    "tags": ["peatones", "fila-escolar"], "senalId": null
+  },
+  {
+    "id": "M06-025", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Un peatón cruza la calzada por donde no debe, lejos del paso señalizado. ¿Tiene prioridad?",
+    "imagen": null,
+    "opciones": [
+      "Sí: el peatón tiene siempre prioridad en cualquier circunstancia.",
+      "No, así que puedes mantener tu marcha sin variar nada.",
+      "No tiene prioridad, pero debes hacer lo posible por no atropellarlo, frenando si es preciso."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Cruzar mal le quita la prioridad, no la protección: tu deber de evitar el atropello se mantiene intacto.",
+    "truco": "Prioridad y vida son cosas distintas: la primera se pierde, la segunda se protege siempre.",
+    "trampa": "El mito de que 'el peatón siempre tiene prioridad' es falso; el otro extremo (seguir como si nada) también.",
+    "tags": ["peatones"], "senalId": null
+  },
+  {
+    "id": "M06-026", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Tu semáforo se pone verde, pero varios peatones que apuraron siguen cruzando el paso. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Espero a que terminen de cruzar antes de reanudar la marcha.",
+      "Avanzo despacio sorteándolos: la prioridad ya es mía.",
+      "Uso el claxon: el verde me da preferencia inmediata."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "El verde te autoriza a pasar solo si no entorpeces a quien ya estaba cruzando: los peatones que iniciaron el paso lo terminan con prioridad.",
+    "truco": "El verde abre la puerta, pero no vacía el pasillo: quien ya cruzaba, acaba.",
+    "trampa": "El semáforo cambia de color al instante; la prioridad, no: se transfiere cuando el paso queda libre.",
+    "explicacion_larga": "Los semáforos ordenan turnos, pero no borran a las personas que ya están dentro del cruce. Si un peatón inició el cruce correctamente con su semáforo y el tuyo se pone verde a mitad de su travesía, conserva la prioridad hasta alcanzar la otra acera. Tu luz verde significa 'puedes pasar si el paso está libre y no entorpeces', nunca 'embiste lo que encuentres'. Sortear peatones en movimiento o presionarlos con el claxon es, además de sancionable, la clase de detalle que en el examen práctico te cuesta el apto directo.",
+    "tags": ["peatones", "semaforo", "paso-peatones"], "senalId": null
+  },
+  {
+    "id": "M06-027", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Un ciclista circula por un carril bici que cruza tu trayectoria. ¿Quién tiene prioridad?",
+    "imagen": null,
+    "opciones": [
+      "Tú, porque circulas por la calzada principal.",
+      "El ciclista: en carril bici, paso para ciclistas o arcén debidamente señalizado, la prioridad es suya.",
+      "El que llegue antes al punto de cruce."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Cuando el ciclista circula por su infraestructura señalizada (carril bici, paso para ciclistas, arcén señalizado), la prioridad es suya.",
+    "truco": "Si la bici va por su carril pintado, ese trozo de vía es su casa.",
+    "trampa": "El tamaño de tu vía no da prioridad: la señalización del carril bici sí.",
+    "tags": ["ciclistas", "carril-bici"], "senalId": null
+  },
+  {
+    "id": "M06-028", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Vas a girar a la derecha para entrar en otra vía y un ciclista circula recto, muy próximo a ti. ¿Quién pasa primero?",
+    "imagen": null,
+    "opciones": [
+      "Tú, porque ya has señalizado el giro con antelación.",
+      "Tú, porque el giro es una maniobra que los demás deben respetar.",
+      "El ciclista: al girar para entrar en otra vía debes ceder el paso a los ciclistas que estén cerca."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Antes de girar a otra vía debes ceder el paso a los ciclistas próximos: cortarle la trayectoria a una bici es de las maniobras más peligrosas que existen.",
+    "truco": "Giro con bici cerca: primero la bici, luego tu volante.",
+    "trampa": "El intermitente avisa de tu intención, pero no obliga al ciclista a frenar por ti.",
+    "tags": ["ciclistas", "giro"], "senalId": null
+  },
+  {
+    "id": "M06-029", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Un grupo de ciclistas cruza una intersección y el primero ya ha entrado en ella. Tú llegas con preferencia en teoría. ¿Qué ocurre?",
+    "imagen": null,
+    "opciones": [
+      "Debes ceder el paso a todo el grupo: si el primero ya inició el cruce, el pelotón se considera una unidad.",
+      "Solo debes dejar pasar al primero; el resto tiene que detenerse.",
+      "El grupo debe partirse en dos para dejarte pasar cuanto antes."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Cuando el primer ciclista de un grupo ya ha iniciado el cruce o entrado en una glorieta, el resto puede seguirle y tú les cedes el paso a todos.",
+    "truco": "El pelotón es un tren de bicis: si la locomotora ya cruzó, pasan todos los vagones.",
+    "trampa": "Partir el grupo parece 'justo', pero es justo lo que la norma prohíbe: un pelotón cortado es un accidente esperando sitio.",
+    "explicacion_larga": "Los ciclistas que circulan en grupo se tratan como una sola unidad móvil a efectos de prioridad: en cuanto el primero ha entrado en la intersección o en la glorieta, los demás quedan amparados por esa entrada y conservan la prioridad aunque tu señal o tu posición te la dieran a ti. La razón es pura física: un grupo frenando en cadena dentro de un cruce multiplica el riesgo de caídas y alcances. Así que si ves entrar al primero, levanta el pie y deja pasar al pelotón completo; recuperarás tu prioridad cuando pase el último.",
+    "tags": ["ciclistas", "grupo"], "senalId": null
+  },
+  {
+    "id": "M06-030", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Fuera de los casos especiales (carril bici, giros con ciclistas cerca, grupo que ya entró…), en un cruce entre tu turismo y una bicicleta rige…",
+    "imagen": null,
+    "opciones": [
+      "la preferencia automática del más vulnerable.",
+      "la norma común: señales y, en su defecto, la preferencia del que viene por la derecha.",
+      "la preferencia del vehículo de motor."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "La bici es un vehículo: fuera de sus supuestos especiales de prioridad, juega con las mismas reglas que tú.",
+    "truco": "La bici tiene comodines concretos; sin comodín, baraja normal para todos.",
+    "trampa": "Ni la vulnerabilidad da siempre prioridad ni el motor la quita: te tientan con los dos extremos.",
+    "tags": ["ciclistas", "norma-derecha"], "senalId": null
+  },
+  {
+    "id": "M06-031", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "¿Cuáles de estos son vehículos prioritarios?",
+    "imagen": null,
+    "opciones": [
+      "Los taxis y autobuses urbanos en servicio.",
+      "Los vehículos de autoescuela durante los exámenes prácticos.",
+      "Los de policía, extinción de incendios, protección civil y salvamento, y asistencia sanitaria en servicio urgente."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Prioritarios son policía, bomberos, protección civil y salvamento, y ambulancias, cuando van en servicio urgente.",
+    "truco": "Prioritario = el que viene a salvarte: poli, bombero, protección civil y ambulancia.",
+    "trampa": "El taxi y el bus tienen carriles reservados en algunas ciudades, pero eso no los convierte en prioritarios.",
+    "tags": ["vehiculos-prioritarios"], "senalId": null
+  },
+  {
+    "id": "M06-032", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Una ambulancia circula en servicio urgente. ¿Qué señales debe utilizar para hacer valer su prioridad?",
+    "imagen": null,
+    "opciones": [
+      "La sirena siempre; el dispositivo luminoso es opcional de día.",
+      "La señal luminosa; puede prescindir de la acústica cuando su omisión no suponga peligro para ningún usuario.",
+      "Le bastan las luces de emergencia intermitentes (warning)."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "La luz prioritaria es irrenunciable; la sirena puede omitirse solo si callarla no crea peligro, por ejemplo con la vía despejada.",
+    "truco": "La luz es el DNI del prioritario; la sirena es el megáfono, y el megáfono se apaga si no hace falta gritar.",
+    "trampa": "Te la cuelan invirtiendo los papeles: lo prescindible es el sonido, nunca la luz.",
+    "explicacion_larga": "Para gozar de prioridad, el vehículo en servicio urgente debe advertir su presencia. La regla es: señal luminosa especial siempre encendida, y señal acústica (sirena) además, salvo que su omisión no entrañe peligro alguno para los demás usuarios, algo típico de madrugada o con la vía despejada. Por eso puedes cruzarte con una ambulancia con luces pero sin sonido que sigue siendo prioritaria. En cambio, unas simples luces de emergencia no convierten a nadie en prioritario: son señalización de peligro, no de prioridad.",
+    "tags": ["vehiculos-prioritarios", "senales-acusticas"], "senalId": null
+  },
+  {
+    "id": "M06-033", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Un coche de policía circula sin las luces prioritarias ni la sirena conectadas. ¿Goza de prioridad de paso especial?",
+    "imagen": null,
+    "opciones": [
+      "No: sin las señales de emergencia en marcha debe cumplir las normas como cualquier otro vehículo.",
+      "Sí, por tratarse de un vehículo policial.",
+      "Sí, pero únicamente dentro de poblado."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "La prioridad no va con el uniforme sino con el servicio urgente anunciado: sin luces ni sirena, el patrulla es un coche más.",
+    "truco": "Sin luces ni sirena, el prioritario está fuera de servicio: normas normales.",
+    "trampa": "Pica pensar que 'la policía siempre manda': sus órdenes sí, pero su coche sin señales no tiene privilegios.",
+    "tags": ["vehiculos-prioritarios"], "senalId": null
+  },
+  {
+    "id": "M06-034", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Oyes la sirena de un vehículo de emergencias, pero todavía no lo ves. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Freno en seco allí donde esté para dejar la vía libre.",
+      "Sigo exactamente igual: sin verlo no tengo ninguna obligación.",
+      "Localizo de dónde viene y me preparo para facilitarle el paso sin maniobras bruscas."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "La sirena te obliga a estar listo: ubica el vehículo, anticipa por dónde aparecerá y facilita el paso sin movimientos que sorprendan a nadie.",
+    "truco": "Sirena que suena, cabeza que gira: primero localizar, luego apartar.",
+    "trampa": "El frenazo instintivo parece colaborar, pero puede provocar un alcance y bloquear justo el hueco que necesitaba la ambulancia.",
+    "tags": ["vehiculos-prioritarios"], "senalId": null
+  },
+  {
+    "id": "M06-035", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Un vehículo prioritario con luces y sirena se aproxima por detrás. ¿Cómo debes facilitarle el paso?",
+    "imagen": null,
+    "opciones": [
+      "Acelerando para mantenerte por delante sin estorbar.",
+      "Apartándote, normalmente hacia la derecha, o deteniéndote si es preciso.",
+      "Manteniendo carril y velocidad exactos para resultar predecible."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los demás conductores deben facilitar el paso al prioritario, apartándose normalmente a la derecha o deteniéndose si hace falta.",
+    "truco": "Emergencia detrás: pegarse a la derecha y, si toca, parar.",
+    "trampa": "Acelerar 'para no molestar' es lo que hace media España, y solo alarga la persecución.",
+    "tags": ["vehiculos-prioritarios", "facilitar-paso"], "senalId": null
+  },
+  {
+    "id": "M06-036", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "¿Puede un vehículo prioritario en servicio urgente rebasar un semáforo en rojo?",
+    "imagen": null,
+    "opciones": [
+      "Sí, pero solo tras cerciorarse de que no crea un peligro para ningún usuario.",
+      "No: los semáforos obligan también a los vehículos prioritarios.",
+      "Sí, sin ninguna condición: para eso lleva la sirena."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "En servicio urgente puede saltarse normas como el semáforo, pero la exención tiene un peaje: comprobar antes que no pone a nadie en peligro.",
+    "truco": "El prioritario tiene barra libre condicionada: primero mirar, luego pasar.",
+    "trampa": "El 'sin ninguna condición' pica fuerte: hasta la ambulancia más urgente debe asegurarse antes de cruzar.",
+    "tags": ["vehiculos-prioritarios", "semaforo"], "senalId": null
+  },
+  {
+    "id": "M06-037", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Llevas a un herido grave al hospital en tu turismo, que no es un vehículo prioritario. ¿Cómo adviertes a los demás de tu situación de emergencia?",
+    "imagen": null,
+    "opciones": [
+      "Con ráfagas de luces largas y cambios de carril constantes.",
+      "Circulando por el arcén a toda velocidad.",
+      "Con la bocina de forma intermitente y la luz de emergencia conectada."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Un vehículo no prioritario en servicio de urgencia advierte su presencia con la bocina intermitente y la luz de emergencia, y los demás deben facilitarle el paso.",
+    "truco": "Emergencia de a pie: warning encendido y bocina a toques, como un SOS.",
+    "trampa": "Ni ráfagas agresivas ni arcén: eso no es señalizar una emergencia, es crear otra.",
+    "explicacion_larga": "La normativa prevé que un conductor corriente pueda verse en una urgencia real, como trasladar a un herido grave. En ese caso advierte su situación usando la bocina de manera intermitente y conectando la luz de emergencia, y el resto de conductores debe facilitarle el paso. Ahora bien, esto no lo transforma en un vehículo prioritario con luces azules: la urgencia deberá poder justificarse y la seguridad del resto sigue siendo intocable. Señalizar bien la emergencia protege a todos; improvisar maniobras temerarias solo añade víctimas al viaje.",
+    "tags": ["emergencia", "vehiculos-prioritarios"], "senalId": null
+  },
+  {
+    "id": "M06-038", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Un vehículo de conservación de carreteras trabaja con su luz amarilla giratoria encendida. ¿Tiene prioridad de paso?",
+    "imagen": null,
+    "opciones": [
+      "Sí, la misma que una ambulancia en servicio urgente.",
+      "No: puede incumplir ciertas normas donde trabaja, pero no goza de prioridad de paso.",
+      "Sí, pero únicamente fuera de poblado."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Los vehículos en servicios especiales (obras, limpieza, conservación) pueden saltarse ciertas normas solo en el lugar y momento de su trabajo, pero la luz amarilla no da prioridad.",
+    "truco": "Amarillo avisa, azul manda: el rotativo amarillo pide precaución, no te aparta.",
+    "trampa": "Ver un rotativo encendido dispara el reflejo de 'cederle todo', pero solo el prioritario de verdad tiene ese derecho.",
+    "tags": ["servicios-especiales"], "senalId": null
+  },
+  {
+    "id": "M06-039", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "La señal de ceda el paso te obliga a…",
+    "imagen": null,
+    "opciones": [
+      "ceder el paso en la próxima intersección, deteniéndote solo si es necesario.",
+      "detenerte siempre ante la próxima intersección.",
+      "reducir la velocidad exactamente a 20 km/h."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "El ceda te obliga a dejar pasar a los de la vía preferente; solo te detienes si hace falta para cumplirlo.",
+    "truco": "Ceda = frena el ego, no siempre el coche.",
+    "trampa": "La detención obligatoria en todo caso es del STOP; con el ceda, si no viene nadie, sigues.",
+    "tags": ["ceda-el-paso", "senales-prioridad"], "senalId": "R-1"
+  },
+  {
+    "id": "M06-040", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Llegas a un STOP y no se aproxima nadie por ninguna dirección. ¿Debes detenerte igualmente?",
+    "imagen": null,
+    "opciones": [
+      "No: sin tráfico a la vista, el STOP funciona como un ceda.",
+      "Sí: el STOP obliga a detenerse siempre, venga o no venga alguien.",
+      "Solo de noche o con mala visibilidad."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "El STOP exige detención completa en todos los casos; después, cedes el paso si procede.",
+    "truco": "STOP significa parar en seco: rueda quieta aunque el cruce parezca un desierto.",
+    "trampa": "El 'no viene nadie' es la excusa que más multas y más exámenes ha suspendido: la detención no es negociable.",
+    "tags": ["stop", "senales-prioridad"], "senalId": "R-2"
+  },
+  {
+    "id": "M06-041", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Ante un STOP con línea de detención pintada en la calzada, ¿dónde debes detenerte?",
+    "imagen": null,
+    "opciones": [
+      "Donde mejor veas el cruce, aunque sea más allá de la línea.",
+      "Justo a la altura del poste de la señal.",
+      "Ante la línea de detención."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Habiendo línea de detención, la parada obligatoria del STOP se hace ante esa línea.",
+    "truco": "La línea es la meta: el morro del coche no la pisa.",
+    "trampa": "Buscar visibilidad directamente saltándote la línea invade el cruce; primero la línea, luego ya veremos.",
+    "tags": ["stop", "linea-detencion"], "senalId": "R-2"
+  },
+  {
+    "id": "M06-042", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Te detienes en el STOP ante la línea, pero desde ahí no ves el tráfico que cruza. ¿Cómo actúas?",
+    "imagen": null,
+    "opciones": [
+      "Tras detenerte en la línea, avanzas despacio y vuelves a detenerte donde tengas visibilidad antes de entrar en la vía.",
+      "Ignoras la línea y haces una única detención directamente donde haya visibilidad.",
+      "Permaneces en la línea y cruzas cuando dejes de oír motores."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Son dos gestos: detención obligatoria en la línea y, si no hay visibilidad, un segundo avance lento con nueva detención donde ya veas.",
+    "truco": "STOP sin vistas = parada doble: una para la señal, otra para tus ojos.",
+    "trampa": "La 'única parada donde se vea' suena eficiente, pero se salta la detención reglamentaria ante la línea.",
+    "explicacion_larga": "La línea de detención marca dónde exige pararse la señal, pero está pintada pensando en no invadir el cruce, no en regalarte la mejor vista. Cuando desde la línea no puedes ver el tráfico (por coches aparcados, setos o edificios), el procedimiento correcto es: detención completa ante la línea, avance lento y progresivo asomando el vehículo, y nueva detención en el punto donde ya tengas visibilidad suficiente para decidir. Hacer una sola parada más adelante incumple la señal; quedarte en la línea 'escuchando' es jugártela con los vehículos silenciosos, que cada vez son más.",
+    "tags": ["stop", "linea-detencion", "visibilidad"], "senalId": "R-2"
+  },
+  {
+    "id": "M06-043", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Circulas hacia una intersección con señal de ceda el paso y no se aproxima ningún vehículo por la vía preferente. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Te detienes un instante de todas formas.",
+      "Continúas sin detenerte, con la velocidad moderada que te permita ceder si aparece alguien.",
+      "Tocas el claxon antes de cruzar para anunciarte."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El ceda no exige detención cuando no hay a quién ceder: basta pasar a velocidad que permita detenerte si surge alguien.",
+    "truco": "Ceda con vía libre: pie suave y adelante, sin teatro.",
+    "trampa": "Detenerse 'por si acaso' sin necesidad puede provocar el alcance del que va detrás: el exceso de celo también resta.",
+    "tags": ["ceda-el-paso"], "senalId": "R-1"
+  },
+  {
+    "id": "M06-044", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Circulas por una vía señalizada con R-3, calzada con prioridad. ¿Qué implica?",
+    "imagen": null,
+    "opciones": [
+      "Que en los cruces debes ceder el paso a quien venga por tu derecha.",
+      "Que tienes prioridad únicamente frente a los vehículos pesados.",
+      "Que tu calzada tiene prioridad en las próximas intersecciones, hasta que una señal de fin de prioridad lo anule."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "La R-3 te da la preferencia en los cruces siguientes; deja de valer cuando aparece la R-4 de fin de prioridad.",
+    "truco": "Rombo amarillo, camino de rey: mandas en los cruces hasta que te lo tachen (R-4).",
+    "trampa": "Con R-3 la norma de la derecha queda suspendida en tu contra: son los otros los que te ceden.",
+    "tags": ["senales-prioridad", "calzada-con-prioridad"], "senalId": "R-3"
+  },
+  {
+    "id": "M06-045", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "El semáforo está en verde, pero un agente de circulación te ordena detenerte. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Obedeces al agente: sus órdenes prevalecen sobre cualquier otra señal.",
+      "Continúas: el semáforo en verde es una instalación oficial y te autoriza.",
+      "Pasas muy despacio para cumplir a medias con ambos."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Las señales y órdenes de los agentes están en lo más alto de la jerarquía: mandan sobre semáforos, señales y marcas.",
+    "truco": "Donde hay agente, no manda ni el semáforo: el silbato gana a la bombilla.",
+    "trampa": "El verde te tienta con su 'oficialidad', pero el agente está precisamente para modificar lo establecido.",
+    "tags": ["agente", "prelacion-senales"], "senalId": null
+  },
+  {
+    "id": "M06-046", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En una intersección coinciden una señal de STOP y un semáforo que está en verde para ti. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Te detienes en el STOP y después pasas.",
+      "Pasas sin detenerte: el semáforo en funcionamiento prevalece sobre la señal vertical.",
+      "Te detienes y además cedes el paso, por prudencia."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Los semáforos prevalecen sobre las señales verticales de prioridad: con verde, el STOP queda en pausa.",
+    "truco": "Semáforo despierto, STOP dormido; semáforo apagado, STOP mandando.",
+    "trampa": "Detenerse con verde 'por si acaso' parece prudente, pero desconcierta al de atrás y puede provocar un alcance.",
+    "explicacion_larga": "Cuando en un mismo punto conviven varios tipos de señalización, rige la jerarquía: el semáforo en funcionamiento está por encima de las señales verticales de prioridad. Por eso, con el semáforo en verde pasas sin detenerte aunque haya un STOP en el mismo poste. Ese STOP no está de adorno: es la señal de reserva que toma el mando cuando el semáforo se apaga o queda en ámbar intermitente, típicamente de madrugada. La pareja semáforo + STOP es de las preguntas más falladas del examen porque el instinto dice 'para', y la jerarquía dice 'circula'.",
+    "tags": ["prelacion-senales", "semaforo", "stop"], "senalId": null
+  },
+  {
+    "id": "M06-047", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "El semáforo de un cruce está en ámbar intermitente y bajo él hay una señal de ceda el paso. ¿Qué rige tu comportamiento?",
+    "imagen": null,
+    "opciones": [
+      "El ámbar intermitente, que me da preferencia si paso con precaución.",
+      "Ninguna de las dos: el cruce queda libre.",
+      "La señal de ceda el paso: con el semáforo en ámbar intermitente o apagado, mandan las señales verticales."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El ámbar intermitente no ordena la prioridad, solo pide precaución: la prioridad la fija entonces la señal vertical que haya, en este caso el ceda.",
+    "truco": "Ámbar parpadeando = semáforo de vacaciones: mira qué señal quedó de guardia.",
+    "trampa": "El ámbar intermitente permite pasar pero no da preferencia: esa palabra es donde te la cuelan.",
+    "tags": ["semaforo", "ceda-el-paso", "prelacion-senales"], "senalId": null
+  },
+  {
+    "id": "M06-048", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "¿Cuál es el orden de prioridad entre los distintos tipos de señalización cuando se contradicen?",
+    "imagen": null,
+    "opciones": [
+      "Agentes; señalización circunstancial y de balizamiento; semáforos; señales verticales; marcas viales.",
+      "Semáforos; agentes; señales verticales; señalización circunstancial; marcas viales.",
+      "Agentes; semáforos; señales verticales; señalización circunstancial; marcas viales."
+    ],
+    "correcta": 0, "dificultad": 5,
+    "explicacion_corta": "El orden es: agentes, señalización circunstancial y balizamiento, semáforos, señales verticales y, por último, marcas viales.",
+    "truco": "Piensa en quién llegó último a la vía con información fresca: el agente, luego las obras (circunstancial), luego el semáforo, la señal de chapa y la pintura.",
+    "trampa": "Casi todo el mundo coloca el semáforo por encima de la señalización de obras; es al revés, y ahí caen a miles.",
+    "explicacion_larga": "La jerarquía resuelve los empates: primero las señales y órdenes de los agentes; después la señalización circunstancial que modifica el régimen normal de la vía y la de balizamiento (paneles y elementos de obras); luego los semáforos; a continuación las señales verticales; y al final las marcas viales. La lógica es de frescura de la información: el agente responde a lo que pasa ahora mismo, las obras a lo que pasa esta semana, y la pintura del suelo lleva ahí años. Si un panel de obras te desvía en contra de lo que dice el semáforo, obedeces al panel. Grábate la escalera completa: es pregunta fija de examen.",
+    "tags": ["prelacion-senales", "agente"], "senalId": null
+  },
+  {
+    "id": "M06-049", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Llegas a un paso a nivel con las barreras bajadas o en movimiento. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Cruzas rápido si el tren todavía no se ve.",
+      "Te detienes y no cruzas hasta que estén completamente levantadas y la señal lo permita.",
+      "Rodeas la semibarrera en zigzag si el paso parece libre."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Barrera bajada o moviéndose significa detención obligatoria: solo se cruza con las barreras totalmente levantadas.",
+    "truco": "Barrera que baja, coche que se planta: contra un tren no hay segunda oportunidad.",
+    "trampa": "El 'no se ve el tren' es una trampa mortal: a la velocidad de un tren, verlo y tenerlo encima es casi lo mismo.",
+    "tags": ["paso-a-nivel"], "senalId": null
+  },
+  {
+    "id": "M06-050", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "En un paso a nivel sin barreras ni semáforo, ¿quién tiene siempre la preferencia de paso?",
+    "imagen": null,
+    "opciones": [
+      "Los vehículos ferroviarios.",
+      "El vehículo que llegue primero al cruce.",
+      "El que se aproxime por la derecha."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "El tren tiene preferencia absoluta en los pasos a nivel: tú te aseguras de que no se acerca ninguno antes de cruzar sin demora.",
+    "truco": "El tren no cede jamás: kilómetro de frenada no negocia con nadie.",
+    "trampa": "Aplicar la 'derecha' o el orden de llegada a un tren es no haber entendido quién puede frenar y quién no.",
+    "tags": ["paso-a-nivel", "excepciones"], "senalId": null
+  },
+  {
+    "id": "M06-051", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Tu coche se cala y queda inmovilizado dentro de un paso a nivel. ¿Qué haces en primer lugar?",
+    "imagen": null,
+    "opciones": [
+      "Llamas a tu taller y esperas dentro del coche con las luces de emergencia.",
+      "Insistes en arrancar el tiempo que haga falta sin salir del vehículo.",
+      "Desalojas a los ocupantes y tratas de sacar el vehículo; si no puedes, avisas a los demás usuarios y a los maquinistas con toda la antelación posible."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Primero las personas fuera, después intentar despejar el paso y, si no se puede, advertir a los demás y a los maquinistas cuanto antes.",
+    "truco": "En un paso a nivel el orden es sagrado: personas, coche, aviso. Nunca al revés.",
+    "trampa": "Quedarse dentro 'intentando arrancar' es la reacción natural y la más peligrosa: el tren no va a esquivarte.",
+    "explicacion_larga": "Un vehículo detenido sobre las vías es una emergencia con cuenta atrás. La norma marca el protocolo: desalojar inmediatamente a los ocupantes del vehículo y de la zona de peligro; intentar mover el vehículo fuera del paso (empujándolo o con la marcha atrás si arranca); y si no es posible dejarlo expedito, advertir del peligro a los demás usuarios y a los conductores de los trenes con toda la antelación posible, alejándose de la vía para hacer las señales. El coche se reemplaza; las personas que se quedaron dentro esperando la grúa, no.",
+    "tags": ["paso-a-nivel", "emergencia"], "senalId": null
+  },
+  {
+    "id": "M06-052", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Te aproximas a un puente móvil cuya señal luminosa roja está encendida. ¿Puedes cruzar?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si el tablero del puente aún no ha empezado a moverse.",
+      "No: debes detenerte y esperar a que la señal permita el paso.",
+      "Sí, con precaución, si no se aproxima ninguna embarcación."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los puentes móviles siguen la misma lógica que los pasos a nivel: luz roja, detención obligatoria hasta que se autorice el paso.",
+    "truco": "Puente móvil en rojo = paso a nivel con agua debajo: parado y punto.",
+    "trampa": "Que el tablero 'aún no se mueva' no significa nada: la roja se enciende precisamente antes del movimiento.",
+    "tags": ["puente-movil", "paso-a-nivel"], "senalId": null
+  },
+  {
+    "id": "M06-053", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Tu semáforo está en verde, pero al otro lado del cruce hay retención y te quedarías parado en medio, bloqueando el paso transversal. ¿Entras en la intersección?",
+    "imagen": null,
+    "opciones": [
+      "Sí: el verde te da prioridad y los demás deben esperar.",
+      "Sí, pero conectando las luces de emergencia mientras estés atravesado.",
+      "No: aunque tengas prioridad, no debes entrar si previsiblemente quedarás detenido obstruyendo la circulación transversal."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Prohibido entrar en una intersección si vas a quedar atrapado dentro bloqueándola, aunque tu semáforo esté en verde.",
+    "truco": "El verde te deja entrar solo si también puedes salir: no aparques en medio del cruce.",
+    "trampa": "El verde da derecho a pasar, no a quedarse: los warning no convierten un bloqueo en algo legal.",
+    "tags": ["bloqueo-interseccion", "semaforo"], "senalId": null
+  },
+  {
+    "id": "M06-054", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "La prohibición de entrar en una intersección si vas a quedar bloqueándola, ¿se aplica también a los pasos para peatones?",
+    "imagen": null,
+    "opciones": [
+      "Sí: tampoco debes quedar detenido sobre un paso para peatones obstruyéndolo.",
+      "No: solo rige en intersecciones reguladas por semáforos.",
+      "Solo en los pasos a nivel, por el peligro que supone el tren."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "La regla de no quedar atravesado protege igualmente los pasos para peatones y los pasos a nivel: si no vas a poder rebasarlos por completo, no entres en ellos.",
+    "truco": "Cruce, cebra o vía del tren: si no cabes al otro lado, ni lo pises.",
+    "trampa": "Limitar la regla a los cruces con semáforo es el recorte mental que el examen espera de ti.",
+    "explicacion_larga": "La norma es general: aun gozando de prioridad, ningún conductor debe penetrar en una intersección, en un paso para peatones o en un paso a nivel si la situación de la circulación hace previsible que quede detenido impidiendo u obstruyendo la circulación transversal o el paso de peatones. Un coche parado sobre la cebra obliga a los peatones (incluidos carritos y sillas de ruedas) a salir a la calzada entre el tráfico; parado sobre las vías, el desenlace puede ser mucho peor. Antes de entrar en cualquiera de los tres, la pregunta es siempre la misma: ¿tengo hueco garantizado a la salida?",
+    "tags": ["bloqueo-interseccion", "paso-peatones", "paso-a-nivel"], "senalId": null
+  },
+  {
+    "id": "M06-055", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Te aproximas a una intersección en la que tienes prioridad de paso. ¿Te libra eso de tomar precauciones?",
+    "imagen": null,
+    "opciones": [
+      "Sí: la prioridad es absoluta y los demás deben arreglárselas.",
+      "No: debes aproximarte a una velocidad moderada que te permita detenerte si es necesario.",
+      "Solo debes extremar el cuidado si hay una señal de peligro."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Tener prioridad no te exime de llegar al cruce a velocidad moderada y en condiciones de detenerte: la preferencia no es un escudo.",
+    "truco": "La prioridad se disfruta con el pie cerca del freno: en el cementerio hay gente que tenía razón.",
+    "trampa": "El 'yo tenía preferencia' no repara un accidente que pudiste evitar moderando al llegar al cruce.",
+    "tags": ["interseccion", "velocidad-moderada"], "senalId": null
+  },
+  {
+    "id": "M06-056", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Llegas a un cruce en el que NO tienes prioridad. ¿Cómo debes mostrar a los demás que vas a ceder el paso?",
+    "imagen": null,
+    "opciones": [
+      "Con una ráfaga de luces al conductor preferente.",
+      "Sacando el brazo por la ventanilla en horizontal.",
+      "Con tu forma de circular: reduciendo la velocidad con suficiente antelación."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Quien no tiene prioridad debe evidenciarlo con su conducción, sobre todo reduciendo la velocidad con antelación suficiente para que el otro no dude.",
+    "truco": "Ceder se demuestra frenando pronto, no con lucecitas: tu velocidad es tu idioma.",
+    "trampa": "Las ráfagas son ambiguas (¿pasas tú o paso yo?) y han provocado más de un golpe: la norma pide hechos, no destellos.",
+    "explicacion_larga": "En un cruce, el conductor obligado a ceder debe mostrarlo con suficiente antelación por su forma de circular, especialmente reduciendo la velocidad de manera perceptible. La razón es que la prioridad funciona por confianza: el que tiene preferencia solo puede ejercerla con seguridad si ve claramente que tú vas a respetarla. Llegar lanzado y frenar en el último metro, aunque técnicamente cedas, obliga al otro a dudar y frenar también, y esa duda es el germen de los accidentes en intersecciones. Frena pronto, frena visible, y el cruce se ordena solo.",
+    "tags": ["interseccion", "ceder-el-paso"], "senalId": null
+  },
+  {
+    "id": "M06-057", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Cruce sin señalizar: por tu derecha se aproxima un turismo y por tu izquierda un tranvía. ¿En qué orden pasa cada uno?",
+    "imagen": null,
+    "opciones": [
+      "Primero el tranvía, después el turismo y por último tú.",
+      "Primero el turismo por venir por la derecha, luego tú y último el tranvía.",
+      "Primero tú, para despejar el cruce cuanto antes."
+    ],
+    "correcta": 0, "dificultad": 5,
+    "explicacion_corta": "El tranvía pasa primero (los raíles mandan sobre todos); entre los demás rige la derecha: el turismo antes que tú.",
+    "truco": "Ordena en dos pasos: primero saca de la baraja al de los raíles, y con los que quedan aplica la derecha.",
+    "trampa": "Aplicar la norma de la derecha también al tranvía es el fallo típico: el tranvía juega en otra liga.",
+    "explicacion_larga": "Los conflictos múltiples se resuelven por capas. Capa uno: los vehículos que circulan por raíles tienen preferencia de paso sobre los demás conductores, se aproximen por donde se aproximen, salvo señalización expresa en contra; así que el tranvía cruza primero. Capa dos: eliminado el tranvía, entre los vehículos ordinarios rige la norma general de la derecha, de modo que el turismo que se aproxima por tu derecha pasa antes que tú. Tú cierras el desfile. Este método de 'primero las excepciones, luego la norma general' resuelve casi cualquier pregunta de orden de paso del examen.",
+    "tags": ["tranvia", "norma-derecha", "interseccion-sin-senalizar"], "senalId": null
+  },
+  {
+    "id": "M06-058", "mundo": 6, "tema": "Prioridad de paso",
+    "pregunta": "Vas a entrar en una glorieta con ceda el paso. El anillo está libre, pero una ambulancia en servicio urgente, con luces y sirena, se aproxima a la glorieta por otra entrada. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Entras: el ceda solo te obliga frente a los que ya circulan por el anillo.",
+      "No entras todavía y le facilitas el paso: el vehículo prioritario en servicio urgente pasa antes.",
+      "Entras acelerando para cruzar la glorieta antes de que llegue."
+    ],
+    "correcta": 1, "dificultad": 5,
+    "explicacion_corta": "La prioridad del vehículo en servicio urgente se superpone a las reglas de la glorieta: aunque el anillo esté libre, tu obligación es facilitarle el paso.",
+    "truco": "Con luces azules a la vista, las demás normas de prioridad pasan a segundo plano: primero la emergencia, luego tu turno.",
+    "trampa": "Leer el ceda al pie de la letra ('solo cedo a los de dentro') te hace técnicamente listo y prácticamente peligroso: al prioritario se le facilita el paso siempre.",
+    "explicacion_larga": "Las señales ordenan el tráfico normal, pero los vehículos prioritarios en servicio urgente juegan por encima de ese orden: el resto de conductores está obligado a facilitarles el paso, apartándose o absteniéndose de maniobras que los entorpezcan. Entrar en la glorieta justo cuando la ambulancia llega, aunque tu ceda no te lo prohíba literalmente, es entorpecer a quien va a salvar una vida y puede además dejarte atrapado en su trayectoria dentro del anillo. La lectura correcta: espera un par de segundos, deja que la emergencia cruce y después circula con normalidad.",
+    "tags": ["vehiculos-prioritarios", "glorieta", "facilitar-paso"], "senalId": null
+  }
+]

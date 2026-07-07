@@ -1,0 +1,856 @@
+[
+  {
+    "id": "M14-001", "mundo": 14, "tema": "Conducta PAS",
+    "pregunta": "Ante un accidente de tráfico, la conducta correcta se resume en las siglas PAS, que significan…",
+    "imagen": null,
+    "opciones": [
+      "Parar, Ayudar, Salir.",
+      "Proteger, Avisar, Socorrer.",
+      "Prevenir, Auxiliar, Señalizar."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "PAS: Proteger el lugar, Avisar a emergencias (112) y Socorrer a las víctimas, en ese orden.",
+    "truco": "PAS, como 'paso a paso': Proteger, Avisar, Socorrer. Tres verbos y un orden.",
+    "trampa": "Las otras siglas suenan sensatas, pero PAS es la fórmula oficial: si cambias un verbo, cambias la conducta entera.",
+    "tags": ["pas", "accidentes"], "senalId": null
+  },
+  {
+    "id": "M14-002", "mundo": 14, "tema": "Conducta PAS",
+    "pregunta": "¿En qué orden se aplica la conducta PAS?",
+    "imagen": null,
+    "opciones": [
+      "Primero proteger, después avisar y por último socorrer, siempre.",
+      "El que pida la situación: si hay heridos graves, primero socorrer.",
+      "Primero avisar, para que la ayuda venga de camino mientras actúas."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El orden es fijo: Proteger, Avisar, Socorrer. Sin un escenario seguro no hay auxilio que valga.",
+    "truco": "El orden de la palabra es el orden de los hechos: P-A-S.",
+    "trampa": "'Depende de la situación' suena maduro y flexible. Aquí no: socorrer en un lugar sin proteger fabrica más víctimas.",
+    "tags": ["pas"], "senalId": null
+  },
+  {
+    "id": "M14-003", "mundo": 14, "tema": "Conducta PAS",
+    "pregunta": "Llegas el primero a un accidente y hay una persona tendida junto a su coche. ¿Qué es lo PRIMERO que debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Correr a atenderla: cada segundo cuenta.",
+      "Llamar al 112 desde tu coche sin llegar a detenerte.",
+      "Detenerte en un lugar seguro y proteger la zona antes de nada."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Antes de tocar a nadie, asegura el escenario: detente en lugar seguro y señaliza. Es la P de PAS.",
+    "truco": "Primero el escenario, luego el herido: un rescatador atropellado son dos víctimas.",
+    "trampa": "El instinto grita 'corre a ayudar'. El examen premia la cabeza fría: sin proteger, el siguiente herido eres tú.",
+    "tags": ["pas", "proteger"], "senalId": null
+  },
+  {
+    "id": "M14-004", "mundo": 14, "tema": "Conducta PAS",
+    "pregunta": "¿Por qué la conducta PAS exige proteger ANTES de avisar y socorrer?",
+    "imagen": null,
+    "opciones": [
+      "Para evitar nuevos accidentes y no convertirte tú también en víctima.",
+      "Porque la ley obliga a señalizar antes de tocar el teléfono.",
+      "Porque los servicios de emergencia no acuden si la zona no está señalizada."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Proteger evita el 'segundo accidente': otro vehículo que se empotra contra la escena o contra ti.",
+    "truco": "Herido más rescatador atropellado = doble trabajo para el 112. Protege primero.",
+    "trampa": "La opción de 'la ley obliga a señalizar antes' mezcla obligaciones reales en un orden inventado: el motivo es la seguridad, no un trámite.",
+    "explicacion_larga": "El mayor peligro tras un accidente es que se produzca otro sobre la misma escena: vehículos que llegan y no ven el obstáculo, ocupantes deambulando por la calzada, curiosos frenando en seco. Por eso la P va primero: detenerte en un lugar seguro, encender las luces de emergencia, ponerte el chaleco y activar la baliza V-16. Un auxiliador atropellado no solo no ayuda: duplica el problema y retrasa la atención a los primeros heridos.",
+    "tags": ["pas", "proteger"], "senalId": null
+  },
+  {
+    "id": "M14-005", "mundo": 14, "tema": "Conducta PAS",
+    "pregunta": "Dentro de la fase de PROTEGER, ¿cuál es tu primera acción al llegar al lugar del accidente?",
+    "imagen": null,
+    "opciones": [
+      "Encender las luces de carretera para iluminar bien la escena.",
+      "Detener tu vehículo en un lugar seguro, sin crear un nuevo peligro.",
+      "Sacar la baliza V-16 por la ventanilla mientras sigues circulando."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Lo primero es detenerte bien: en lugar seguro, fuera de la calzada si es posible, sin estorbar ni crear otro riesgo.",
+    "truco": "Tu coche mal parado es un obstáculo más. Aparca como si fueras a quedarte un buen rato.",
+    "trampa": "La V-16 en marcha te tienta por moderna, pero se coloca con el vehículo ya inmovilizado, no circulando.",
+    "tags": ["proteger"], "senalId": null
+  },
+  {
+    "id": "M14-006", "mundo": 14, "tema": "Proteger",
+    "pregunta": "Vas a auxiliar en un accidente. ¿Dónde detienes tu vehículo?",
+    "imagen": null,
+    "opciones": [
+      "En un lugar seguro fuera de la calzada, aunque quede algo más lejos.",
+      "Pegado a los vehículos accidentados, para tener el botiquín a mano.",
+      "En el mismo carril, unos metros antes, para que te vean los demás."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Mejor un poco más lejos y seguro que encima del accidente: tu coche no debe convertirse en un segundo obstáculo.",
+    "truco": "Regla de oro: que tu coche no le dé trabajo extra a la grúa.",
+    "trampa": "'Pegado al accidente' parece práctico por el botiquín, pero multiplica el riesgo de un nuevo choque sobre la escena.",
+    "tags": ["proteger"], "senalId": null
+  },
+  {
+    "id": "M14-007", "mundo": 14, "tema": "Proteger",
+    "pregunta": "Al detenerte para auxiliar, ¿qué alumbrado conectas de inmediato?",
+    "imagen": null,
+    "opciones": [
+      "La luz de largo alcance.",
+      "Solo la luz de posición.",
+      "Las luces de emergencia."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Las luces de emergencia (los cuatro intermitentes) avisan al resto de que ahí pasa algo raro.",
+    "truco": "El botón del triángulo rojo del salpicadero: para esto existe.",
+    "trampa": "La luz de posición solo dice 'estoy aquí', no 'hay peligro'. Y el largo alcance deslumbra justo a quien se acerca.",
+    "tags": ["proteger", "alumbrado"], "senalId": null
+  },
+  {
+    "id": "M14-008", "mundo": 14, "tema": "Proteger",
+    "pregunta": "En una vía interurbana, ¿cuándo debes ponerte el chaleco reflectante?",
+    "imagen": null,
+    "opciones": [
+      "Una vez fuera, de pie en el arcén, donde hay más espacio.",
+      "Antes de bajar del vehículo.",
+      "Solo si es de noche o hay poca visibilidad."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El chaleco se pone DENTRO del coche, antes de pisar la vía: debes ser visible desde el primer segundo.",
+    "truco": "Chaleco puesto antes de que tu zapato toque el asfalto.",
+    "trampa": "'Solo de noche' pica mucho: de día también te juegas la vida caminando junto a la calzada.",
+    "tags": ["proteger", "chaleco"], "senalId": null
+  },
+  {
+    "id": "M14-009", "mundo": 14, "tema": "Proteger",
+    "pregunta": "Desde el 1 de enero de 2026, ¿con qué dispositivo debes señalizar en España tu vehículo inmovilizado en la vía por accidente o avería?",
+    "imagen": null,
+    "opciones": [
+      "Con la baliza V-16 conectada.",
+      "Con dos triángulos de preseñalización de peligro.",
+      "Con una linterna de luz amarilla intermitente cualquiera."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Desde el 1 de enero de 2026, la baliza V-16 conectada es el dispositivo obligatorio en España y sustituye a los triángulos.",
+    "truco": "2026: los triángulos se jubilan y la V-16 ficha de titular.",
+    "trampa": "Los triángulos fueron la respuesta correcta durante décadas. Ya no: para vehículos españoles están fuera de juego.",
+    "tags": ["v-16", "proteger"], "senalId": null
+  },
+  {
+    "id": "M14-010", "mundo": 14, "tema": "Proteger",
+    "pregunta": "¿Dónde se coloca la baliza V-16 para señalizar el vehículo inmovilizado?",
+    "imagen": null,
+    "opciones": [
+      "En el suelo, unos 50 metros por detrás del vehículo.",
+      "En el salpicadero, visible a través del parabrisas.",
+      "En el punto más alto posible del vehículo, normalmente el techo."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "La V-16 va en lo más alto del vehículo (el techo), para que su luz se vea en 360 grados.",
+    "truco": "V-16 = mini faro: cuanto más alta, más lejos se ve. Al techo y sin pisar la calzada.",
+    "trampa": "Los 50 metros por detrás son el fantasma de los triángulos. Con la V-16 ya no caminas por la vía: ese era justo el peligro que elimina.",
+    "tags": ["v-16", "proteger"], "senalId": null
+  },
+  {
+    "id": "M14-011", "mundo": 14, "tema": "Proteger",
+    "pregunta": "Tu coche, matriculado en España, se avería en una autovía española en 2026. ¿Puedes señalizarlo únicamente con los triángulos de toda la vida?",
+    "imagen": null,
+    "opciones": [
+      "Sí: siguen siendo válidos si los colocas a la distancia reglamentaria.",
+      "No: desde el 1 de enero de 2026 el dispositivo válido es la baliza V-16 conectada.",
+      "Sí, pero solo de día y con buena visibilidad."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Para vehículos matriculados en España, los triángulos dejaron de ser válidos el 1 de enero de 2026: toca baliza V-16 conectada.",
+    "truco": "Triángulos en coche español en 2026 = billete de peseta: bonito recuerdo, pero ya no se acepta.",
+    "trampa": "'Si los colocas a la distancia reglamentaria' suena a respuesta de manual antiguo. Precisamente: ES de manual antiguo.",
+    "explicacion_larga": "El motivo del cambio es dramático: para colocar los triángulos había que caminar decenas de metros por el arcén o la calzada, y cada año morían personas atropelladas haciéndolo. La baliza V-16 conectada se activa y se coloca en el techo en segundos, casi sin exponerse, emite luz visible en 360 grados y además comunica automáticamente la posición del vehículo a la plataforma DGT 3.0 para alertar a otros conductores. Por eso desde el 1 de enero de 2026 es el medio de preseñalización válido para los vehículos matriculados en España.",
+    "tags": ["v-16", "triangulos"], "senalId": null
+  },
+  {
+    "id": "M14-012", "mundo": 14, "tema": "Proteger",
+    "pregunta": "¿Por qué se exige que la baliza V-16 sea 'conectada'?",
+    "imagen": null,
+    "opciones": [
+      "Porque al activarla envía automáticamente la ubicación del vehículo a la plataforma DGT 3.0.",
+      "Porque se recarga conectándola al mechero del coche.",
+      "Porque necesita vincularse por Bluetooth con tu teléfono móvil para funcionar."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Al activarla, la V-16 conectada comunica sola su posición a DGT 3.0, que avisa del peligro a los conductores de la zona.",
+    "truco": "V-16 conectada: la baliza que 'llama' a la DGT por ti.",
+    "trampa": "Nada de móviles ni apps: la baliza lleva dentro su propia conectividad y no hay que emparejarla con nada.",
+    "tags": ["v-16"], "senalId": null
+  },
+  {
+    "id": "M14-013", "mundo": 14, "tema": "Proteger",
+    "pregunta": "En 2026, un turismo matriculado en Francia se avería circulando por España. ¿Puede señalizarse con triángulos de preseñalización?",
+    "imagen": null,
+    "opciones": [
+      "No: en España la V-16 es obligatoria para todos los vehículos que circulen, sin excepción.",
+      "Solo si además lleva una V-16 activada en el techo.",
+      "Sí: en circulación internacional se admite que los vehículos extranjeros usen los triángulos."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "La obligación de la V-16 afecta a los vehículos matriculados en España; a los extranjeros en circulación internacional se les admiten los triángulos.",
+    "truco": "La matrícula manda: coche español, V-16; visitante extranjero, se le aceptan los triángulos.",
+    "trampa": "El 'sin excepción' es la trampa clásica de los absolutos: la normativa internacional protege al vehículo visitante y a su equipamiento.",
+    "explicacion_larga": "España no puede exigir a un vehículo matriculado en otro país un dispositivo que la normativa de ese país no contempla, así que en circulación internacional se sigue admitiendo el triángulo como medio de preseñalización para los vehículos extranjeros. La DGT publicó una Instrucción específica para aclarar estos supuestos transfronterizos. Ojo al matiz inverso: esa cortesía no funciona para ti dentro de España, donde tu coche con matrícula española debe llevar y usar la baliza V-16 conectada.",
+    "tags": ["v-16", "triangulos", "circulacion-internacional"], "senalId": null
+  },
+  {
+    "id": "M14-014", "mundo": 14, "tema": "Proteger",
+    "pregunta": "Sales de viaje a Portugal con tu coche matriculado en España. ¿Te basta la baliza V-16 para señalizar una avería allí?",
+    "imagen": null,
+    "opciones": [
+      "Sí: es válida en toda la Unión Europea desde 2026.",
+      "No conviene fiarte solo de ella: fuera de España debes cumplir lo que exija cada país, que por lo general sigue pidiendo triángulos.",
+      "Sí, siempre que esté conectada a DGT 3.0."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "La V-16 nace de la normativa española y su conectividad va ligada a DGT 3.0; fuera de España cumples las reglas del país por el que circules, que por lo general siguen pidiendo triángulos. Lleva unos por si acaso. [VERIFICAR DGT 2026]",
+    "truco": "La V-16 no tiene pasaporte claro: en cuanto cruzas la frontera, guarda unos triángulos en la maleta.",
+    "trampa": "'Válida en toda la UE desde 2026' es lo que a todos nos gustaría, pero esa homologación europea automática no existe.",
+    "explicacion_larga": "La obligación de la baliza V-16 conectada nace de la normativa española y su conectividad funciona con la plataforma DGT 3.0, así que su reconocimiento fuera de España no está garantizado. Si viajas al extranjero con tu coche español, infórmate de qué exige cada país para señalizar un vehículo inmovilizado: la mayoría siguen pidiendo triángulos de preseñalización, y algunos, chaleco para cada ocupante. Llevar la V-16 además nunca estorba, pero allí puede no sustituir al equipamiento obligatorio local.",
+    "tags": ["v-16", "circulacion-internacional"], "senalId": null
+  },
+  {
+    "id": "M14-015", "mundo": 14, "tema": "Proteger",
+    "pregunta": "Tras un accidente, ¿por qué conviene cortar el contacto de los vehículos implicados?",
+    "imagen": null,
+    "opciones": [
+      "Para reducir el riesgo de incendio.",
+      "Para ahorrar combustible mientras esperas a la asistencia.",
+      "Porque lo exige el seguro antes de tramitar el parte."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Con combustible derramado y piezas calientes, un motor en marcha es una cerilla esperando: contacto fuera.",
+    "truco": "Llave girada, chispa evitada.",
+    "trampa": "El seguro no pinta nada aquí: cortar el contacto es pura prevención de incendios, no papeleo.",
+    "tags": ["proteger"], "senalId": null
+  },
+  {
+    "id": "M14-016", "mundo": 14, "tema": "Proteger",
+    "pregunta": "¿Se puede fumar mientras auxilias en el lugar de un accidente?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si te alejas al menos 5 metros de los vehículos.",
+      "No: puede haber combustible derramado y provocarse un incendio.",
+      "Solo si ningún herido tiene problemas respiratorios."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Ni se te ocurra: el combustible derramado puede inflamarse. Nada de fumar en la escena de un accidente.",
+    "truco": "Gasolina + cigarro = segundo accidente.",
+    "trampa": "Los '5 metros' se inventan una distancia de seguridad que no existe: los vapores del combustible viajan.",
+    "tags": ["proteger"], "senalId": null
+  },
+  {
+    "id": "M14-017", "mundo": 14, "tema": "Proteger",
+    "pregunta": "Tu coche queda averiado en una autovía. ¿Dónde deben esperar los ocupantes?",
+    "imagen": null,
+    "opciones": [
+      "Dentro del vehículo, con los cinturones puestos y las puertas cerradas.",
+      "De pie en el arcén, junto al maletero, para ser vistos.",
+      "Fuera de la calzada y del arcén, detrás de la barrera de seguridad si existe."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Todos fuera de la vía: lo más lejos posible de la calzada y, si hay barrera de seguridad, detrás de ella.",
+    "truco": "El guardarraíl es tu trinchera: escena peligrosa, todos detrás.",
+    "trampa": "Esperar dentro del coche parece cómodo y seguro, pero un alcance a 120 km/h lo convierte en una trampa mortal.",
+    "tags": ["proteger", "averia"], "senalId": null
+  },
+  {
+    "id": "M14-018", "mundo": 14, "tema": "Avisar",
+    "pregunta": "¿A qué número llamas para avisar de un accidente de tráfico con heridos?",
+    "imagen": null,
+    "opciones": [
+      "Al 112.",
+      "Al 092.",
+      "Al 016."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "El 112 es el número único de emergencias: desde él se coordinan sanitarios, bomberos y policía.",
+    "truco": "1-1-2: un número para toda emergencia y válido en toda Europa.",
+    "trampa": "El 092 (policía local) existe, pero el 112 activa todos los recursos a la vez. El 016 es el teléfono contra la violencia machista.",
+    "tags": ["avisar", "112"], "senalId": null
+  },
+  {
+    "id": "M14-019", "mundo": 14, "tema": "Avisar",
+    "pregunta": "Al llamar al 112 por un accidente, ¿qué información es esencial?",
+    "imagen": null,
+    "opciones": [
+      "Tu número de póliza y la matrícula de todos los vehículos.",
+      "El lugar exacto del accidente y el número y estado aparente de los heridos.",
+      "La marca, el modelo y el color de los vehículos implicados."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Lo vital: dónde exactamente (vía, punto kilométrico, sentido) y cuántos heridos hay y cómo parecen estar.",
+    "truco": "Al 112 le importan dos cosas: DÓNDE y QUIÉNES. Lo demás es decorado.",
+    "trampa": "Matrículas y pólizas son papeleo de aseguradora, no información de rescate.",
+    "tags": ["avisar", "112"], "senalId": null
+  },
+  {
+    "id": "M14-020", "mundo": 14, "tema": "Avisar",
+    "pregunta": "Ya has dado toda la información al operador del 112. ¿Cuándo cuelgas?",
+    "imagen": null,
+    "opciones": [
+      "En cuanto termines de hablar, para dejar la línea libre.",
+      "A los dos minutos, que es el protocolo estándar.",
+      "Cuando el propio operador te indique que puedes colgar."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "No cuelgues nunca el primero: el operador puede necesitar más datos o darte instrucciones para atender a los heridos.",
+    "truco": "En el 112 cuelgan ellos, no tú.",
+    "trampa": "'Dejar la línea libre' parece de buen ciudadano, pero cortas justo el canal por el que pueden guiarte.",
+    "tags": ["avisar", "112"], "senalId": null
+  },
+  {
+    "id": "M14-021", "mundo": 14, "tema": "Avisar",
+    "pregunta": "Estás en una zona donde tu compañía de móvil no tiene cobertura. ¿Puedes llamar al 112?",
+    "imagen": null,
+    "opciones": [
+      "Sí: la llamada al 112 es gratuita y sale por cualquier red disponible, aunque no sea la de tu operador.",
+      "No: sin cobertura de tu operador no hay llamada posible.",
+      "Solo si tienes activada la itinerancia de datos."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "El 112 es gratuito y se cursa por cualquier operador con señal en la zona, tenga o no acuerdo con el tuyo.",
+    "truco": "Para el 112, todas las antenas son tuyas.",
+    "trampa": "La itinerancia es cosa de datos y llamadas normales: la llamada de emergencia tiene barra libre de red.",
+    "tags": ["avisar", "112"], "senalId": null
+  },
+  {
+    "id": "M14-022", "mundo": 14, "tema": "Avisar",
+    "pregunta": "Para que las ayudas lleguen antes, ¿es buena idea exagerar al 112 la gravedad o el número de heridos?",
+    "imagen": null,
+    "opciones": [
+      "Sí: más vale que sobren medios a que falten.",
+      "No: la información debe ser precisa para que se dimensionen bien los recursos.",
+      "Solo en vías interurbanas alejadas de un hospital."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Exagerar moviliza ambulancias y equipos que pueden hacer falta en otra emergencia real. Cuenta lo que ves, tal cual.",
+    "truco": "El 112 no es una subasta: no infles la puja.",
+    "trampa": "'Más vale que sobre' suena generoso, pero esos medios de sobra se los estás quitando a otro accidente.",
+    "tags": ["avisar", "112"], "senalId": null
+  },
+  {
+    "id": "M14-023", "mundo": 14, "tema": "Avisar",
+    "pregunta": "Además del lugar y de los heridos, ¿qué otro dato conviene comunicar al 112?",
+    "imagen": null,
+    "opciones": [
+      "El nombre de tu autoescuela y tu número de permiso.",
+      "Los años de antigüedad de los vehículos implicados.",
+      "Los peligros añadidos: combustible derramado, fuego, personas atrapadas…"
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Los riesgos extra (fuego, atrapados, mercancías peligrosas) cambian qué recursos se envían: bomberos, equipos de rescate…",
+    "truco": "Cuenta al 112 lo que le cambiaría el plan: fuego, atrapados, peligro.",
+    "trampa": "La edad de los vehículos es ruido; que haya alguien atrapado decide si vienen los bomberos con material de excarcelación.",
+    "tags": ["avisar", "112"], "senalId": null
+  },
+  {
+    "id": "M14-024", "mundo": 14, "tema": "Conducta PAS",
+    "pregunta": "¿Por qué en la conducta PAS se avisa al 112 ANTES de ponerse a socorrer?",
+    "imagen": null,
+    "opciones": [
+      "Porque así la ayuda profesional ya está de camino mientras tú atiendes a las víctimas.",
+      "Porque socorrer sin autorización del 112 está prohibido.",
+      "Porque el operador debe confirmar que el seguro cubre la asistencia."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Cada minuto cuenta: primero activas la cadena de socorro y, mientras llega, aplicas tú los primeros auxilios.",
+    "truco": "Primero enciendes la mecha de la ayuda profesional; luego haces tú lo que puedas.",
+    "trampa": "No necesitas 'permiso' del 112 para socorrer: el orden busca ganar tiempo, no burocracia.",
+    "tags": ["avisar", "pas"], "senalId": null
+  },
+  {
+    "id": "M14-025", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Al socorrer a una víctima, ¿qué evalúas en primer lugar?",
+    "imagen": null,
+    "opciones": [
+      "Si tiene fracturas en brazos o piernas.",
+      "Si está consciente y si respira.",
+      "Si recuerda su nombre y qué ha pasado."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Lo primero es lo vital: consciencia (¿responde?) y respiración (¿respira con normalidad?).",
+    "truco": "Dos preguntas de oro: ¿me oye? ¿respira? Todo lo demás puede esperar.",
+    "trampa": "Las fracturas impresionan mucho, pero no matan en minutos; la falta de respiración, sí.",
+    "tags": ["socorrer", "primeros-auxilios"], "senalId": null
+  },
+  {
+    "id": "M14-026", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Como norma general, ¿debes mover a los heridos de un accidente?",
+    "imagen": null,
+    "opciones": [
+      "Sí, para colocarlos más cómodos cuanto antes.",
+      "Sí, siempre que estén conscientes y te lo pidan.",
+      "No, salvo que exista un peligro inminente, como un incendio."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "A los heridos no se les mueve: podrías agravar lesiones de columna. Solo si corren un peligro inminente.",
+    "truco": "Herido en el suelo = estatua. Solo se mueve si el sitio arde.",
+    "trampa": "Que el herido te lo pida no lo hace seguro: la adrenalina disimula las lesiones de columna.",
+    "tags": ["socorrer", "no-mover"], "senalId": null
+  },
+  {
+    "id": "M14-027", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "¿En cuál de estas situaciones SÍ está justificado mover a un herido?",
+    "imagen": null,
+    "opciones": [
+      "El vehículo en el que se encuentra empieza a arder.",
+      "Tiene frío y te pide que lo lleves a tu coche.",
+      "Sus quejidos están poniendo nerviosos a los demás."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Solo el peligro inminente (fuego, riesgo de atropello) justifica moverlo: entonces salvar la vida gana a la posible lesión.",
+    "truco": "Se mueve al herido cuando quedarse quieto mata más que moverse.",
+    "trampa": "El frío se soluciona tapándolo donde está, no trasladándolo.",
+    "tags": ["socorrer", "no-mover"], "senalId": null
+  },
+  {
+    "id": "M14-028", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Un motorista queda tendido tras una caída. ¿Le quitas el casco para que respire mejor?",
+    "imagen": null,
+    "opciones": [
+      "Sí, con cuidado y aflojando antes la correa.",
+      "No: como norma general, el casco no se toca.",
+      "Sí, pero solo si está consciente."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "El casco se queda puesto: al retirarlo puedes agravar una lesión cervical. Solo existe una excepción muy concreta.",
+    "truco": "El casco puesto no mata; quitarlo mal, sí.",
+    "trampa": "'Con cuidado' no basta: la maniobra mal hecha puede dañar la médula. La norma es no tocarlo.",
+    "tags": ["socorrer", "casco", "motorista"], "senalId": null
+  },
+  {
+    "id": "M14-029", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "¿En qué único supuesto se retira el casco a un motorista accidentado?",
+    "imagen": null,
+    "opciones": [
+      "Cuando lo pida él mismo porque le agobia.",
+      "Cuando haya que ponerlo a la sombra en verano.",
+      "Cuando esté en parada respiratoria y sea imprescindible para reanimarlo, retirándolo entre dos personas que sepan hacerlo."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "Solo si no respira y hay que reanimarlo: entonces se retira entre dos personas y con técnica, una de ellas fijando el cuello.",
+    "truco": "Casco fuera solo si no respira, y siempre a cuatro manos.",
+    "trampa": "'Si lo pide él' pica: un herido agobiado puede estar entrando en shock, y complacerle puede costarle la médula.",
+    "explicacion_larga": "La retirada del casco es una maniobra de último recurso: se hace únicamente cuando el motorista está en parada respiratoria y no queda otra para abrir la vía aérea y reanimarlo. Debe hacerse entre dos personas que conozcan la técnica: una estabiliza el cuello manteniendo la cabeza alineada con el tronco, y la otra libera la correa y desliza el casco sin tirones. Si respira, aunque esté inconsciente, el casco no se toca: se levanta la visera, se vigila la respiración y se espera a los sanitarios.",
+    "tags": ["socorrer", "casco", "rcp"], "senalId": null
+  },
+  {
+    "id": "M14-030", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Una víctima está inconsciente pero respira con normalidad. ¿Cómo la colocas mientras llega la ayuda?",
+    "imagen": null,
+    "opciones": [
+      "En posición lateral de seguridad, vigilando que siga respirando.",
+      "Boca arriba, con la cabeza apoyada en una prenda doblada.",
+      "Sentada, con la espalda apoyada en la rueda de un coche."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Inconsciente que respira: posición lateral de seguridad, sin dejar de vigilar su respiración.",
+    "truco": "Inconsciente que respira, de lado: como en la siesta.",
+    "trampa": "Boca arriba parece la postura 'de reposo', pero la lengua o un vómito pueden taparle la vía aérea.",
+    "tags": ["socorrer", "pls"], "senalId": null
+  },
+  {
+    "id": "M14-031", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "¿Cuál es el objetivo de la posición lateral de seguridad?",
+    "imagen": null,
+    "opciones": [
+      "Facilitar la circulación de la sangre hacia el cerebro.",
+      "Mantener libre la vía aérea y evitar que la víctima se ahogue con vómitos o con su propia lengua.",
+      "Inmovilizar la columna vertebral hasta que llegue la ambulancia."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "De lado, la lengua no cae hacia atrás y los vómitos salen fuera en vez de ir al pulmón: la vía aérea queda libre.",
+    "truco": "De lado, lo que sobra sale; boca arriba, lo que sobra ahoga.",
+    "trampa": "La PLS no inmoviliza la columna: de hecho, si sospechas lesión medular y la víctima respira bien, mejor no moverla.",
+    "explicacion_larga": "Cuando alguien pierde la consciencia pierde también los reflejos que protegen su vía aérea: la base de la lengua cae hacia atrás y puede obstruir la garganta, y si vomita, el contenido puede pasar a los pulmones (broncoaspiración), algo potencialmente mortal. La posición lateral de seguridad resuelve ambos problemas por pura gravedad: la lengua no obstruye y los fluidos drenan hacia fuera. Se usa con víctimas inconscientes que respiran con normalidad, reevaluando la respiración con frecuencia hasta que lleguen los sanitarios.",
+    "tags": ["socorrer", "pls"], "senalId": null
+  },
+  {
+    "id": "M14-032", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Un herido consciente te pide agua. ¿Se la das?",
+    "imagen": null,
+    "opciones": [
+      "No: a los heridos de un accidente no se les da de beber ni de comer.",
+      "Sí, a pequeños sorbos para que no se atragante.",
+      "Solo si hace calor y está sudando."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "Ni agua ni comida: puede tener lesiones internas o necesitar cirugía urgente, y haber bebido lo complica todo.",
+    "truco": "Herido a dieta: ni agua, ni comida y, por supuesto, nada de alcohol.",
+    "trampa": "Los 'pequeños sorbos' suenan inofensivos, pero si pierde la consciencia o hay que operarlo, esa agua es un problema serio.",
+    "tags": ["socorrer", "primeros-auxilios"], "senalId": null
+  },
+  {
+    "id": "M14-033", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Alguien propone dar un traguito de coñac a un herido 'para reanimarlo'. ¿Qué hay de cierto?",
+    "imagen": null,
+    "opciones": [
+      "El alcohol ayuda si el herido está consciente y tirita de frío.",
+      "Un sorbo pequeño no hace daño y calma los nervios.",
+      "Nada: el alcohol es un depresor y a un herido nunca se le da de beber."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Mito de bar: el alcohol deprime el sistema nervioso y, además, a un herido no se le da de beber nada.",
+    "truco": "El coñac 'reanimador' solo reanima leyendas urbanas.",
+    "trampa": "La sensación de calor del alcohol es un timo fisiológico: dilata los vasos y el cuerpo pierde calor aún más rápido.",
+    "tags": ["socorrer", "primeros-auxilios"], "senalId": null
+  },
+  {
+    "id": "M14-034", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Mientras llega la ambulancia, ¿qué haces con un herido que permanece tendido en el suelo?",
+    "imagen": null,
+    "opciones": [
+      "Abanicarlo para que le llegue aire fresco.",
+      "Taparlo con una manta o con ropa para mantener su temperatura corporal.",
+      "Incorporarlo un poco cada pocos minutos para que no se entumezca."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "Tapar al herido evita que pierda calor: la hipotermia agrava el estado de shock.",
+    "truco": "Herido tapado, shock a raya.",
+    "trampa": "Incorporarlo 'para que no se entumezca' es mover al herido: justo lo que no hay que hacer.",
+    "tags": ["socorrer", "primeros-auxilios"], "senalId": null
+  },
+  {
+    "id": "M14-035", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "Una víctima no responde a ningún estímulo y no respira. Ya has avisado al 112. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Iniciar de inmediato la reanimación cardiopulmonar (RCP).",
+      "Colocarla en posición lateral de seguridad y esperar a la ambulancia.",
+      "Darle palmadas en la cara y friccionarle el pecho para reanimarla."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Inconsciente y sin respiración es una parada: hay que empezar la RCP ya, sin esperar a la ambulancia.",
+    "truco": "No responde + no respira = manos al pecho. La PLS es solo para quien SÍ respira.",
+    "trampa": "La PLS pica porque también es para inconscientes, pero solo para los que respiran. En una parada, la PLS es perder minutos de vida.",
+    "explicacion_larga": "Cuando el corazón se detiene, cada minuto sin RCP reduce mucho las posibilidades de supervivencia. Por eso, tras comprobar que la víctima no responde y no respira con normalidad y avisar al 112, hay que empezar las compresiones inmediatamente y no parar hasta que llegue ayuda profesional, la víctima reaccione o estés agotado. Si hay más gente, pide que busquen un desfibrilador (DEA) mientras tú comprimes: los primeros minutos son tuyos, no de la ambulancia.",
+    "tags": ["primeros-auxilios", "rcp"], "senalId": null
+  },
+  {
+    "id": "M14-036", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "¿Dónde se aplican las compresiones de la RCP?",
+    "imagen": null,
+    "opciones": [
+      "Sobre el lado izquierdo del pecho, encima del corazón.",
+      "En la boca del estómago.",
+      "En el centro del pecho."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Las compresiones van en el centro del pecho, sobre el esternón, con los brazos rectos.",
+    "truco": "Al centro y con ritmo: el corazón se comprime contra el esternón, no 'en el lado del corazón'.",
+    "trampa": "'A la izquierda, encima del corazón' es la lógica de las películas; la técnica dice centro del esternón.",
+    "tags": ["primeros-auxilios", "rcp"], "senalId": null
+  },
+  {
+    "id": "M14-037", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "¿A qué ritmo se dan las compresiones torácicas en la RCP de un adulto?",
+    "imagen": null,
+    "opciones": [
+      "Entre 60 y 80 por minuto.",
+      "Entre 100 y 120 por minuto.",
+      "Cuantas más, mejor: por encima de 140 por minuto."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "El ritmo eficaz es de 100 a 120 compresiones por minuto, dejando que el pecho se recupere entre una y otra.",
+    "truco": "El ritmo de 'Stayin' Alive': quien tararea esa canción mientras comprime, comprime bien.",
+    "trampa": "'Cuantas más, mejor' falla: por encima de 120 el pecho no se recupera entre compresiones y el bombeo pierde eficacia.",
+    "tags": ["primeros-auxilios", "rcp"], "senalId": null
+  },
+  {
+    "id": "M14-038", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "En la RCP básica de un adulto, ¿cómo se combinan compresiones y ventilaciones?",
+    "imagen": null,
+    "opciones": [
+      "30 compresiones y 2 insuflaciones, en ciclos.",
+      "15 compresiones y 5 insuflaciones, en ciclos.",
+      "5 compresiones y 1 insuflación, sin descanso."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "El ciclo estándar en el adulto es de 30 compresiones seguidas de 2 insuflaciones, y vuelta a empezar.",
+    "truco": "30:2, resultado de escándalo: goleada de compresiones, dos tantos de aire.",
+    "trampa": "Los números alternativos suenan igual de 'médicos'. Grábate el 30:2 y no habrá quien te lo cambie.",
+    "explicacion_larga": "La pauta 30:2 busca el equilibrio entre mantener el riego sanguíneo (compresiones casi continuas) y oxigenar la sangre (dos insuflaciones breves). Las compresiones se dan en el centro del pecho, hundiéndolo unos 5-6 centímetros en el adulto, a un ritmo de 100-120 por minuto, y se interrumpen lo mínimo imprescindible. Si no sabes o no puedes hacer el boca a boca, haz solo compresiones de forma continua: una RCP solo con las manos es muchísimo mejor que no hacer nada.",
+    "tags": ["primeros-auxilios", "rcp"], "senalId": null
+  },
+  {
+    "id": "M14-039", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "Un herido sangra abundantemente por una pierna. ¿Cómo intentas detener la hemorragia?",
+    "imagen": null,
+    "opciones": [
+      "Presionando directamente sobre la herida con un paño lo más limpio posible.",
+      "Haciéndole un torniquete con el cinturón por encima de la herida.",
+      "Lavando la herida con agua y dejándola al aire para que coagule."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Lo primero y casi siempre suficiente: presión directa, firme y mantenida sobre la herida con un paño limpio.",
+    "truco": "Sangra, aprieta. Así de simple y así de eficaz.",
+    "trampa": "El torniquete de película es la trampa: es el último recurso, no el primero.",
+    "tags": ["primeros-auxilios", "hemorragias"], "senalId": null
+  },
+  {
+    "id": "M14-040", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "¿Cuándo está justificado aplicar un torniquete?",
+    "imagen": null,
+    "opciones": [
+      "Siempre que la herida esté en un brazo o en una pierna.",
+      "Cuando el herido esté mareado por la pérdida de sangre.",
+      "Solo en casos de extrema necesidad, cuando la presión directa no logra frenar una hemorragia que amenaza la vida."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "El torniquete es el último cartucho: solo si la hemorragia es masiva y la presión directa fracasa, como en una amputación.",
+    "truco": "Torniquete = botón rojo: solo cuando todo lo demás ha fallado.",
+    "trampa": "'Está en un brazo o una pierna' describe dónde se puede poner, no cuándo se debe: mal usado deja sin riego el miembro entero.",
+    "explicacion_larga": "El torniquete corta el flujo de sangre de todo el miembro, no solo de la herida, y mantenerlo mucho tiempo puede condenar ese brazo o esa pierna. Por eso se reserva para hemorragias masivas que no ceden con presión directa mantenida, como las amputaciones traumáticas. Si no queda más remedio que ponerlo, colócalo por encima de la herida, aprieta hasta que cese el sangrado y apunta la hora exacta de colocación para comunicársela a los sanitarios: ese dato condiciona sus decisiones.",
+    "tags": ["primeros-auxilios", "hemorragias"], "senalId": null
+  },
+  {
+    "id": "M14-041", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "Estás comprimiendo una herida y el paño se empapa de sangre. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Retirarlo y sustituirlo por uno limpio y seco.",
+      "No retirarlo: colocar otro paño encima y seguir presionando.",
+      "Aflojar la presión un momento para ver cómo evoluciona la herida."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "El paño empapado no se levanta: arrastrarías el coágulo que se está formando. Se añade otro encima y se sigue apretando.",
+    "truco": "Los paños no se cambian: se apilan.",
+    "trampa": "Cambiarlo por uno limpio parece más higiénico, pero al despegarlo arrancas el tapón natural que estaba cerrando la herida.",
+    "explicacion_larga": "Bajo el paño, el organismo está fabricando un coágulo que es el verdadero tapón de la hemorragia. Si retiras la tela empapada, el coágulo se va pegado a ella y la herida vuelve a sangrar desde cero. La técnica correcta es apilar: paño nuevo sobre el empapado y presión firme y continua hasta que lleguen los sanitarios, elevando el miembro si no sospechas que haya fractura.",
+    "tags": ["primeros-auxilios", "hemorragias"], "senalId": null
+  },
+  {
+    "id": "M14-042", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "La víctima tiene un objeto clavado en el abdomen. ¿Qué haces con él?",
+    "imagen": null,
+    "opciones": [
+      "No extraerlo: sujetarlo e inmovilizarlo para que no se mueva.",
+      "Extraerlo con un tirón rápido y firme, y taponar después.",
+      "Extraerlo poco a poco mientras otra persona comprime alrededor."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Un objeto clavado nunca se saca: puede estar taponando los vasos que ha roto. Se inmoviliza y se espera a los sanitarios.",
+    "truco": "Lo clavado, clavado se queda: el objeto ahora forma parte del tapón.",
+    "trampa": "Sacarlo 'rápido y taponar después' es de cine de acción: al extraerlo abres la compuerta de la hemorragia interna.",
+    "explicacion_larga": "Un objeto clavado hace de tapón de los propios vasos que ha seccionado: mientras está dentro, comprime y limita el sangrado. Extraerlo en plena cuneta puede desencadenar una hemorragia interna imposible de controlar fuera de un quirófano. Lo correcto es no tocarlo, inmovilizarlo con apósitos o ropa alrededor para que no se mueva durante la espera y el traslado, y dejar la extracción en manos de los cirujanos.",
+    "tags": ["primeros-auxilios", "hemorragias"], "senalId": null
+  },
+  {
+    "id": "M14-043", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "¿Cuál es el primer auxilio correcto ante una quemadura?",
+    "imagen": null,
+    "opciones": [
+      "Aplicar una pomada antiséptica cuanto antes.",
+      "Poner hielo directamente para bajar la temperatura.",
+      "Enfriarla con agua durante varios minutos."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Agua para enfriar la zona durante varios minutos: frena el daño del calor. Ni pomadas ni hielo.",
+    "truco": "Quemadura: agua sí, potingues no.",
+    "trampa": "El hielo parece 'agua mejorada', pero quema por frío un tejido que ya está dañado.",
+    "tags": ["primeros-auxilios", "quemaduras"], "senalId": null
+  },
+  {
+    "id": "M14-044", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "En una quemadura con ampollas, ¿qué debes EVITAR?",
+    "imagen": null,
+    "opciones": [
+      "Cubrirla con un paño limpio y húmedo después de enfriarla.",
+      "Reventar las ampollas y aplicar pomadas o remedios caseros.",
+      "Retirar anillos o pulseras de la zona antes de que se hinche."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Las ampollas no se tocan: son un apósito natural estéril. Y nada de pomadas, pasta de dientes ni inventos caseros.",
+    "truco": "La ampolla es la tirita que fabrica tu piel: no se la revientes.",
+    "trampa": "Reventarlas 'para que curen antes' abre la puerta a la infección; las otras dos opciones son justo lo correcto.",
+    "tags": ["primeros-auxilios", "quemaduras"], "senalId": null
+  },
+  {
+    "id": "M14-045", "mundo": 14, "tema": "Primeros auxilios",
+    "pregunta": "La ropa ha quedado pegada a la piel quemada de la víctima. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "No arrancarla: enfriar con agua por encima y dejar que la retiren los sanitarios.",
+      "Despegarla con mucho cuidado, empezando por los bordes.",
+      "Arrancarla de un tirón rápido, como una tirita."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "La ropa pegada a una quemadura no se arranca: se llevaría la piel con ella. Se enfría con agua por encima.",
+    "truco": "Tela pegada a la quemadura = segunda piel: no se toca.",
+    "trampa": "'Con cuidado y por los bordes' suena delicado, pero el tejido y la piel quemada forman ya una sola pieza.",
+    "explicacion_larga": "Con el calor, las fibras de la ropa se funden literalmente con la piel dañada: tirar de ellas, rápido o despacio, arranca también el tejido quemado, agranda la herida y multiplica el dolor y el riesgo de infección. Lo correcto es enfriar con agua por encima de la ropa adherida, retirar solo la ropa suelta que no esté pegada, cubrir con un paño limpio y húmedo y dejar la retirada del resto al personal sanitario, que lo hará con material y técnica adecuados.",
+    "tags": ["primeros-auxilios", "quemaduras"], "senalId": null
+  },
+  {
+    "id": "M14-046", "mundo": 14, "tema": "Obligación de auxilio",
+    "pregunta": "No detenerse a auxiliar, ni pedir auxilio, ante un accidente con víctimas desamparadas puede suponer…",
+    "imagen": null,
+    "opciones": [
+      "una sanción administrativa leve, similar a la de un estacionamiento indebido.",
+      "la retirada de dos puntos del permiso, como máximo.",
+      "un delito de omisión del deber de socorro, castigado en el Código Penal."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Pasar de largo con víctimas desamparadas es delito de omisión del deber de socorro: se responde ante un juez, no con una multa de tráfico.",
+    "truco": "Pasar de largo no es una multa: es un juzgado.",
+    "trampa": "Los puntos y las multas son sanciones administrativas; aquí hablamos de palabras mayores, del Código Penal.",
+    "tags": ["omision-socorro", "obligacion-auxilio"], "senalId": null
+  },
+  {
+    "id": "M14-047", "mundo": 14, "tema": "Obligación de auxilio",
+    "pregunta": "¿Quién está obligado a auxiliar o a pedir auxilio ante un accidente de tráfico?",
+    "imagen": null,
+    "opciones": [
+      "Cualquier usuario de la vía que lo presencie, esté o no implicado.",
+      "Solo los conductores implicados en el accidente.",
+      "Solo los profesionales sanitarios y las autoridades."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "La obligación alcanza a implicados y a testigos: si lo presencias y la ayuda no está asegurada, te toca actuar.",
+    "truco": "En la carretera no hay espectadores: si lo ves y no hay ayuda, eres parte.",
+    "trampa": "'Solo los implicados' parece de sentido común, pero la ley obliga también a quien pasa por allí.",
+    "tags": ["obligacion-auxilio"], "senalId": null
+  },
+  {
+    "id": "M14-048", "mundo": 14, "tema": "Obligación de auxilio",
+    "pregunta": "Llegas a un accidente donde ya están actuando una ambulancia y la Guardia Civil. ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Detenerte igualmente y ofrecerte por si hacen falta manos.",
+      "Continuar la marcha sin detenerte ni entorpecer la circulación.",
+      "Reducir mucho la velocidad y observar por si detectas algo que se les escape."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Con el auxilio ya asegurado, lo mejor que puedes aportar es no estorbar: sigue tu camino con precaución.",
+    "truco": "Si ya están los profesionales, tu mejor ayuda es tu ausencia.",
+    "trampa": "Detenerse 'por si acaso' y el mirón que frena para cotillear provocan retenciones y nuevos alcances.",
+    "tags": ["obligacion-auxilio", "mirones"], "senalId": null
+  },
+  {
+    "id": "M14-049", "mundo": 14, "tema": "Obligación de auxilio",
+    "pregunta": "Presencias un accidente, pero acercarte supondría un riesgo serio para tu integridad. ¿Qué te exige la ley?",
+    "imagen": null,
+    "opciones": [
+      "Nada: el riesgo propio te exime de cualquier obligación.",
+      "Intentar el rescate de todos modos: la ley no admite excusas.",
+      "Aunque no puedas socorrer directamente, sigues obligado a pedir auxilio avisando al 112."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "El riesgo propio te libra de exponerte, pero no de la parte que siempre puedes hacer: avisar y pedir ayuda.",
+    "truco": "Cuando no puedas poner las manos, pon la llamada.",
+    "trampa": "'Te exime de cualquier obligación' estira demasiado la excepción: llamar al 112 nunca es peligroso y sigue siendo exigible.",
+    "explicacion_larga": "El deber de socorro tiene una válvula de seguridad razonable: nadie está obligado a jugarse la vida en un rescate. Pero esa excepción cubre solo el socorro directo con riesgo propio o de terceros, no el conjunto de la obligación: quien no puede socorrer debe, como mínimo, demandar auxilio con urgencia llamando al 112 o alertando a otros. Omitir también eso puede constituir delito de omisión del deber de socorro en su modalidad de no demandar ayuda ajena.",
+    "tags": ["obligacion-auxilio", "omision-socorro"], "senalId": null
+  },
+  {
+    "id": "M14-050", "mundo": 14, "tema": "Gestión del accidente",
+    "pregunta": "Un accidente sin heridos deja dos coches que aún pueden moverse estorbando en la calzada. ¿Qué procede?",
+    "imagen": null,
+    "opciones": [
+      "No tocar nada hasta que llegue la policía y levante atestado.",
+      "Apartar los vehículos cuanto antes a un lugar donde no estorben.",
+      "Dejarlos donde están y aclarar primero de quién es la culpa."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Sin heridos, la prioridad es restablecer la circulación: unas fotos rápidas si quieres, y los coches fuera de la calzada.",
+    "truco": "¿Solo chapa? Chapa fuera: aparta y luego rellena el parte.",
+    "trampa": "'No tocar nada hasta la policía' es la norma de los accidentes CON heridos; sin heridos, dejar los coches en medio crea un peligro nuevo.",
+    "tags": ["accidente-sin-heridos"], "senalId": null
+  },
+  {
+    "id": "M14-051", "mundo": 14, "tema": "Gestión del accidente",
+    "pregunta": "Tras un accidente leve sin heridos, ¿para qué sirve la declaración amistosa de accidente (parte amistoso)?",
+    "imagen": null,
+    "opciones": [
+      "Para recoger, firmado por ambos conductores, cómo ocurrió el accidente y agilizar el trámite con los seguros.",
+      "Para sustituir al atestado policial ante el juez.",
+      "Para repartir automáticamente la culpa al 50 % entre los dos conductores."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El parte amistoso recoge datos, croquis y la versión de ambos, con las dos firmas, y acelera la gestión con las aseguradoras.",
+    "truco": "Parte amistoso: la 'foto' del accidente firmada por los dos antes de que la memoria la retoque.",
+    "trampa": "Firmarlo no reparte culpas al 50 % ni sustituye nada judicial: solo fija los hechos para los seguros.",
+    "tags": ["parte-amistoso", "accidente-sin-heridos"], "senalId": null
+  },
+  {
+    "id": "M14-052", "mundo": 14, "tema": "Gestión del accidente",
+    "pregunta": "En un accidente CON heridos, ¿cuándo se pueden mover los vehículos implicados?",
+    "imagen": null,
+    "opciones": [
+      "En cuanto los heridos hayan sido evacuados en ambulancia.",
+      "Inmediatamente, para restablecer la circulación cuanto antes.",
+      "Como norma general, cuando lo indique la autoridad o sus agentes."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Con heridos, la posición de los vehículos es una prueba: no se mueven hasta que la autoridad lo indique.",
+    "truco": "Con heridos, la escena se congela: manda el agente, no las prisas.",
+    "trampa": "'Restablecer la circulación cuanto antes' es la regla de los accidentes SIN heridos; te cuelan una norma en el supuesto contrario.",
+    "tags": ["accidente-con-heridos"], "senalId": null
+  },
+  {
+    "id": "M14-053", "mundo": 14, "tema": "Gestión del accidente",
+    "pregunta": "Accidente con un herido grave. Tu coche, implicado, arranca y está estorbando parte de un carril. ¿Lo apartas?",
+    "imagen": null,
+    "opciones": [
+      "Como norma general no: sin indicación de la autoridad, la escena no se altera; protege y señaliza el peligro.",
+      "Sí, siempre: un vehículo que estorba debe retirarse en cualquier accidente.",
+      "Sí, porque al estar tú ileso el accidente cuenta como 'sin heridos' para tu vehículo."
+    ],
+    "correcta": 0, "dificultad": 5,
+    "explicacion_corta": "Habiendo heridos, la regla cambia: los vehículos no se mueven salvo indicación de la autoridad; el peligro se gestiona protegiendo y señalizando.",
+    "truco": "¿Herido a la vista? Freno de mano a la escena entera.",
+    "trampa": "'Un vehículo que estorba se retira' es verdad solo sin heridos; con heridos, la posición de los coches es una prueba del atestado.",
+    "explicacion_larga": "Cuando hay heridos, la posición final de los vehículos, las marcas de frenada y los restos son pruebas esenciales para que el atestado reconstruya lo ocurrido, algo que puede decidir responsabilidades penales e indemnizaciones. Por eso, como norma general, no se mueve nada hasta que lo indique la autoridad o sus agentes. El riesgo que genera el vehículo parado se combate con la conducta PAS: luces de emergencia, baliza V-16 en el techo y ocupantes protegidos fuera de la calzada. Solo un peligro grave e inminente justificaría alterar la escena antes de esa indicación.",
+    "tags": ["accidente-con-heridos", "pas"], "senalId": null
+  },
+  {
+    "id": "M14-054", "mundo": 14, "tema": "Obligación de auxilio",
+    "pregunta": "Circulas por una autovía y ves un accidente ya atendido al otro lado de la mediana. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Parar en el arcén y cruzar la mediana para ofrecer ayuda.",
+      "Reducir al mínimo la velocidad para ver bien lo ocurrido.",
+      "Seguir circulando con normalidad y atención, sin frenar para mirar."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "El 'efecto mirón' causa retenciones y alcances incluso en el sentido contrario: si la ayuda está asegurada, sigue tu marcha.",
+    "truco": "La curiosidad no salva vidas y provoca alcances: ojos al frente.",
+    "trampa": "Frenar 'solo para ver' parece inofensivo, pero es la causa de muchos accidentes en espejo junto a otro accidente.",
+    "tags": ["mirones", "obligacion-auxilio"], "senalId": null
+  },
+  {
+    "id": "M14-055", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Una víctima ha quedado atrapada entre los hierros, consciente y sin ningún peligro inminente alrededor. ¿Qué haces?",
+    "imagen": null,
+    "opciones": [
+      "Intentar liberarla entre varias personas, tirando con cuidado.",
+      "No intentar sacarla: avisar, acompañarla, tranquilizarla y esperar a los equipos de rescate.",
+      "Desmontar las piezas del vehículo que la aprisionan con las herramientas de a bordo."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Sin peligro inminente, a una persona atrapada no se la saca: la liberación es trabajo de los bomberos con material de excarcelación.",
+    "truco": "Atrapado sin fuego a la vista: tu trabajo es la compañía, no la palanca.",
+    "trampa": "'Entre varios y con cuidado' suena sensato, pero sin técnica puedes agravar lesiones de columna o de aplastamiento.",
+    "tags": ["socorrer", "atrapados"], "senalId": null
+  },
+  {
+    "id": "M14-056", "mundo": 14, "tema": "Socorrer",
+    "pregunta": "Un herido consciente está muy nervioso mientras esperáis a la ambulancia. ¿Cuál es la actitud correcta?",
+    "imagen": null,
+    "opciones": [
+      "Hablarle con calma, tranquilizarlo y no dejarlo solo en ningún momento.",
+      "Dejarlo solo y en silencio para que se relaje.",
+      "Darle algo de comer para que se distraiga y recupere fuerzas."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El apoyo psicológico también es socorrer: háblale, tranquilízalo y quédate a su lado hasta que llegue la ayuda.",
+    "truco": "Tu voz también es un primer auxilio.",
+    "trampa": "Lo de comer 'para recuperar fuerzas' choca con la regla de oro: a un herido, ni comida ni bebida.",
+    "tags": ["socorrer", "primeros-auxilios"], "senalId": null
+  }
+]

@@ -1,0 +1,1290 @@
+[
+ {
+  "id": "M12-001",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Llevas un buen rato conduciendo y notas parpadeo frecuente y picor de ojos. ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Que el aire acondicionado está demasiado fuerte.",
+   "Son señales de alarma de fatiga: toca parar y descansar cuanto antes.",
+   "Nada importante mientras mantengas las manos en el volante."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "El parpadeo constante, el picor y la pesadez de ojos son avisos claros de que la fatiga está llamando a la puerta.",
+  "truco": "Si los ojos te piden guerra, el cuerpo te pide área de servicio.",
+  "trampa": "Echarle la culpa al aire acondicionado es la excusa clásica para no parar. El cuerpo no miente.",
+  "tags": [
+   "fatiga",
+   "senales-alarma"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-002",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Te sorprendes haciendo pequeñas correcciones de volante constantemente para no salirte del carril. Eso indica…",
+  "imagen": null,
+  "opciones": [
+   "que la fatiga está deteriorando tu conducción y debes descansar.",
+   "que el vehículo tiene la dirección mal alineada, sin más.",
+   "que conduces con más precisión de lo normal."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Las microcorrecciones continuas de trayectoria son un síntoma típico de fatiga: el control fino del volante es lo primero que se pierde.",
+  "truco": "Volante que baila, conductor que se apaga.",
+  "trampa": "Culpar a la mecánica te permite seguir conduciendo. Si el zigzagueo aparece tras horas al volante, el problema eres tú, no la dirección.",
+  "tags": [
+   "fatiga",
+   "senales-alarma"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-003",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "¿Qué es un microsueño?",
+  "imagen": null,
+  "opciones": [
+   "Una cabezada voluntaria de menos de diez minutos en un área de descanso.",
+   "Un estado de relajación que mejora los reflejos si dura poco.",
+   "Un episodio de sueño de pocos segundos que puede aparecer sin que te des cuenta."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "El microsueño es un sueño brevísimo e involuntario: durante unos segundos conduces con el cerebro desconectado.",
+  "truco": "Micro de tamaño, gigante de peligro: en un microsueño nadie conduce tu coche.",
+  "trampa": "La palabra 'sueño' te lleva a pensar en algo voluntario, como una siesta corta. Lo peligroso del microsueño es justo que NO lo decides tú.",
+  "tags": [
+   "fatiga",
+   "microsueno"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-004",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Circulas a 120 km/h y sufres un microsueño de unos 4 segundos. ¿Qué distancia recorres, aproximadamente, sin control del vehículo?",
+  "imagen": null,
+  "opciones": [
+   "Unos 40 metros.",
+   "Más de 130 metros.",
+   "Menos de 20 metros, porque el coche tiende a seguir recto."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "A 120 km/h recorres unos 33 metros cada segundo: en 4 segundos superas los 130 metros completamente a ciegas.",
+  "truco": "A 120 vuelas a 33 metros por segundo: cuatro segundos frito y ya te has comido más de un campo de fútbol a ciegas.",
+  "trampa": "El 'coche sigue recto' es un consuelo falso: en 130 metros hay tiempo de sobra para una curva, un obstáculo o el coche de delante frenando.",
+  "explicacion_larga": "Para convertir km/h en metros por segundo, divide entre 3,6: 120 km/h son unos 33,3 m/s. Un microsueño de 4 segundos supone recorrer más de 130 metros sin que nadie gobierne el vehículo, más que la longitud de un campo de fútbol. Y ojo: durante un microsueño no solo no ves, tampoco corriges la trayectoria ni frenas. Por eso los microsueños están detrás de muchas salidas de vía en autopista, especialmente de madrugada. La única prevención real es llegar descansado y parar ante las primeras señales de sueño.",
+  "tags": [
+   "fatiga",
+   "microsueno",
+   "velocidad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-005",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "De repente te das cuenta de que no recuerdas nada de los últimos kilómetros recorridos. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Seguir conduciendo: es señal de que dominas la ruta.",
+   "Acelerar para llegar antes al destino y poder descansar.",
+   "Parar en cuanto puedas: es un síntoma claro de fatiga y falta de atención."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Conducir 'en piloto automático' sin recordar el trayecto indica que tu atención está bajo mínimos. Toca parar y descansar.",
+  "truco": "Si no recuerdas el camino, tu cerebro ya está en la cama.",
+  "trampa": "El 'dominas la ruta' halaga, pero no recordar kilómetros no es maestría: es hipovigilancia, la antesala del microsueño.",
+  "tags": [
+   "fatiga",
+   "senales-alarma",
+   "atencion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-006",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "En un viaje largo, como norma general, ¿cada cuánto conviene parar a descansar?",
+  "imagen": null,
+  "opciones": [
+   "Cada 2 horas de conducción o cada 200 kilómetros, aproximadamente.",
+   "Cada 5 horas, coincidiendo con las comidas.",
+   "Solo cuando aparezcan los primeros bostezos."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "La recomendación general es descansar cada 2 horas o cada 200 km, aunque no notes cansancio.",
+  "truco": "Regla del doble 2: 2 horas o 200 kilómetros, lo que llegue antes.",
+  "trampa": "Esperar a los bostezos es llegar tarde: la fatiga hay que prevenirla antes de que dé la cara.",
+  "tags": [
+   "fatiga",
+   "prevencion",
+   "viaje-largo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-007",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Notas sueño conduciendo y decides abrir la ventanilla y subir el volumen de la música. ¿Es una solución eficaz?",
+  "imagen": null,
+  "opciones": [
+   "Sí, el aire frío elimina el sueño durante varias horas.",
+   "No: el alivio es momentáneo y el sueño vuelve enseguida. Lo único eficaz es parar y descansar.",
+   "Sí, siempre que la música sea movida y el aire dé directo a la cara."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Ventanilla y música solo espabilan unos minutos y dan una falsa sensación de control. El sueño no se negocia: se duerme.",
+  "truco": "Contra el sueño no hay DJ que valga: ventanilla y música son parches, la cama es la cura.",
+  "trampa": "Como al abrir la ventanilla te espabilas un momento, parece que funciona. Ese subidón dura minutos y te anima a seguir cuando ya no deberías.",
+  "tags": [
+   "fatiga",
+   "prevencion",
+   "falsos-remedios"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-008",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "¿Tomarse un café o una bebida energética permite seguir conduciendo con sueño de forma segura?",
+  "imagen": null,
+  "opciones": [
+   "Sí, la cafeína anula el sueño mientras dure el viaje.",
+   "Sí, si se combina con chicles y conversación.",
+   "No: su efecto es limitado y temporal, y crea una falsa sensación de seguridad."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "La cafeína tarda en hacer efecto, dura poco y no elimina la deuda de sueño. Puede ayudar junto a una parada con siesta corta, pero no sustituye al descanso.",
+  "truco": "El café es un préstamo con intereses: te presta energía un rato y luego el sueño vuelve a cobrar.",
+  "trampa": "Todos hemos usado el café para aguantar despiertos en el sofá. Al volante el precio de que falle no es quedarse dormido viendo una peli: es un accidente.",
+  "tags": [
+   "fatiga",
+   "prevencion",
+   "falsos-remedios"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-009",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Mañana sales de viaje largo por carretera. ¿Cuál es la mejor forma de prevenir la fatiga?",
+  "imagen": null,
+  "opciones": [
+   "Dormir lo suficiente la noche anterior y planificar paradas de descanso.",
+   "Salir de madrugada sin dormir para evitar el tráfico.",
+   "Llevar bebidas energéticas para ir tomándolas por el camino."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La fatiga se previene antes de arrancar: dormir bien la noche previa y planificar el viaje con paradas es lo único que funciona de verdad.",
+  "truco": "El viaje empieza en la cama: se conduce como se ha dormido.",
+  "trampa": "Salir sin dormir 'para evitar el tráfico' es un clásico de las operaciones salida… y de las estadísticas de accidentes de madrugada.",
+  "tags": [
+   "fatiga",
+   "prevencion",
+   "viaje-largo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-010",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Vas a conducir después de comer. ¿Qué es más recomendable?",
+  "imagen": null,
+  "opciones": [
+   "Una comida abundante, para aguantar sin parar hasta el destino.",
+   "Una comida ligera, porque las comidas copiosas producen somnolencia.",
+   "Saltarse la comida: con el estómago vacío se conduce más despierto."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Las comidas copiosas provocan somnolencia durante la digestión. Tampoco conviene conducir en ayunas: lo suyo es comer ligero.",
+  "truco": "Plato hasta arriba, párpados hasta abajo.",
+  "trampa": "El extremo contrario también pica: en ayunas bajan la glucosa y la concentración. Ni atracón ni estómago vacío, término medio.",
+  "tags": [
+   "fatiga",
+   "prevencion",
+   "alimentacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-011",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Conducir habiendo dormido muy pocas horas produce en el organismo efectos comparables a…",
+  "imagen": null,
+  "opciones": [
+   "los de conducir con calor excesivo.",
+   "ninguno relevante, si el trayecto es corto.",
+   "los de haber consumido alcohol: más tiempo de reacción, menos atención y peores decisiones."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "La privación de sueño deteriora las capacidades de forma similar al alcohol: reflejos lentos, atención pobre y exceso de confianza.",
+  "truco": "Trasnochado al volante = borracho sin haber bebido. El etilómetro no lo detecta, el quitamiedos sí.",
+  "trampa": "El 'trayecto corto' relaja porque parece controlable, pero un microsueño de 3 segundos cabe en cualquier trayecto, también en el del trabajo a casa.",
+  "explicacion_larga": "Los estudios sobre fatiga muestran que llevar muchas horas sin dormir deteriora la conducción de forma equiparable a circular con tasas de alcohol sancionables: aumenta el tiempo de reacción, se estrecha la atención, empeora la coordinación y, lo más traicionero, se pierde la capacidad de autoevaluarse, igual que le pasa a quien ha bebido. La diferencia es que ningún control de carretera mide el sueño. Por eso la responsabilidad es tuya: si no has dormido lo suficiente, no conduzcas, y en viajes largos respeta los descansos aunque te encuentres bien.",
+  "tags": [
+   "fatiga",
+   "sueno",
+   "alcohol"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-012",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "¿En qué momentos del día hay más riesgo de sufrir sueño al volante?",
+  "imagen": null,
+  "opciones": [
+   "A media mañana y al anochecer.",
+   "De madrugada y en las primeras horas de la tarde.",
+   "El riesgo es el mismo a cualquier hora si has dormido bien."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El reloj biológico impone dos valles de alerta: la madrugada y las primeras horas de la tarde, sobre todo tras la comida.",
+  "truco": "Las dos siestas del cuerpo: la de las tantas de la noche y la de después de comer. A esas horas, doble alerta.",
+  "trampa": "El 'si has dormido bien' tienta porque suena lógico, pero el bajón circadiano de madrugada y de sobremesa aparece incluso con las pilas cargadas.",
+  "tags": [
+   "fatiga",
+   "horas-riesgo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-013",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Son las tres y media de la tarde y acabas de comer. Frente a un viaje por autopista, esa franja horaria…",
+  "imagen": null,
+  "opciones": [
+   "aumenta el riesgo de somnolencia, por la digestión y el bajón natural de alerta.",
+   "es la más segura del día, porque hay mucha luz.",
+   "solo es peligrosa si has comido picante."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Las primeras horas de la tarde combinan digestión y descenso natural de la alerta: es una de las franjas con más accidentes por sueño.",
+  "truco": "La hora de la siesta también existe dentro del coche, y tu cerebro se la quiere echar igual.",
+  "trampa": "La luz del día engaña: asociamos el sueño a la noche, pero el bajón de sobremesa tumba a conductores a plena luz.",
+  "tags": [
+   "fatiga",
+   "horas-riesgo",
+   "alimentacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-014",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Conducir mucho rato por una autopista con poco tráfico y paisaje repetitivo…",
+  "imagen": null,
+  "opciones": [
+   "descansa la mente y reduce la fatiga.",
+   "exige menos atención, así que puedes relajarte por completo.",
+   "favorece la monotonía, que adormece la atención y facilita la aparición de la fatiga."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La monotonía es el somnífero de la autopista: sin estímulos, el nivel de vigilancia cae sin que te des cuenta.",
+  "truco": "Carretera aburrida, atención dormida.",
+  "trampa": "Como la autopista es la vía más segura, parece que puedes desconectar. Justo esa falta de estímulos es la que fabrica microsueños.",
+  "tags": [
+   "fatiga",
+   "monotonia",
+   "autopista"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-015",
+  "mundo": 12,
+  "tema": "Sueño y fatiga",
+  "pregunta": "Para combatir la monotonía en un viaje largo por autopista, ¿qué es lo correcto?",
+  "imagen": null,
+  "opciones": [
+   "Hacer paradas frecuentes y evitar fijar la vista en un punto, moviendo la mirada.",
+   "Aumentar la velocidad para terminar el viaje cuanto antes.",
+   "Fijar la vista en la línea del carril para no despistarse."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Contra la monotonía: paradas frecuentes, mirada activa que explora la vía y los espejos, y buena ventilación. Nunca correr más.",
+  "truco": "Ojos de radar, no de zombi: la mirada quieta se duerme, la que patrulla se mantiene despierta.",
+  "trampa": "Acelerar 'para acabar antes' parece matemática pura, pero cansado y a más velocidad multiplicas el riesgo justo cuando menos reflejos tienes.",
+  "tags": [
+   "fatiga",
+   "monotonia",
+   "prevencion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-016",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "¿Está permitido conducir sujetando el teléfono móvil con la mano, aunque solo sea para mirar un mapa?",
+  "imagen": null,
+  "opciones": [
+   "Sí, si es menos de un minuto y no se escribe.",
+   "No: está prohibido y supone multa de 200 euros y la pérdida de 6 puntos.",
+   "Sí, siempre que se circule por debajo de 30 km/h."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Conducir sujetando el móvil con la mano está prohibido: son 200 euros y 6 puntos, sin excepciones de tiempo ni de velocidad.",
+  "truco": "Móvil en mano, 6 puntos volando: medio carnet en una miradita.",
+  "trampa": "El 'solo un momento' es la trampa mortal: la norma no distingue entre un segundo y diez minutos. Sujetarlo ya es infracción.",
+  "tags": [
+   "distracciones",
+   "movil",
+   "puntos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-017",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "¿Puedes hablar por teléfono mientras conduces?",
+  "imagen": null,
+  "opciones": [
+   "No, está prohibido en cualquier caso.",
+   "Sí, sujetando el teléfono con el hombro para llevar las manos libres.",
+   "Sí, con un sistema de manos libres que no requiera usar cascos ni auriculares."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "El manos libres está permitido siempre que no necesite cascos ni auriculares: el sonido debe salir por los altavoces del vehículo o del dispositivo.",
+  "truco": "Manos libres sí, orejas libres también: nada enchufado a las orejas.",
+  "trampa": "El truco del hombro cuela como 'manos libres casero', pero sigues sujetando el teléfono con el cuerpo: prohibido igual.",
+  "tags": [
+   "distracciones",
+   "movil",
+   "manos-libres"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-018",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Conducir con auriculares puestos escuchando música…",
+  "imagen": null,
+  "opciones": [
+   "está prohibido: no se puede conducir usando cascos o auriculares conectados a aparatos de sonido.",
+   "está permitido si solo llevas uno puesto.",
+   "está permitido en ciudad, donde la velocidad es baja."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Los cascos y auriculares están prohibidos al volante: te aíslan de sirenas, cláxones y del propio ruido del coche. La sanción es de 200 euros y 3 puntos.",
+  "truco": "Al volante, las orejas son un espejo más: taparlas es conducir a ciegas por el oído.",
+  "trampa": "Lo de 'solo uno' parece un término medio razonable, pero la norma prohíbe conducir usando auriculares, sea uno o sean dos.",
+  "tags": [
+   "distracciones",
+   "auriculares",
+   "puntos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-019",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Estás conduciendo y recibes un mensaje urgente en el móvil. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Leerlo rápido levantando el móvil a la altura del parabrisas para no apartar la vista.",
+   "Detenerte en un lugar seguro y permitido, y atenderlo con el vehículo parado.",
+   "Contestar con una sola mano y frases cortas."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Ningún mensaje se atiende conduciendo: se para en un lugar seguro y permitido, y ahí se contesta con calma.",
+  "truco": "Ningún wasap merece un tanatorio: primero parar, luego contestar.",
+  "trampa": "Lo del móvil 'a la altura del parabrisas' suena a truco de conductor listo, pero sigues sujetándolo con la mano y con la cabeza fuera de la carretera: infracción y distracción de libro.",
+  "tags": [
+   "distracciones",
+   "movil"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-020",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Hablar por el manos libres, sin tocar el teléfono, ¿elimina el riesgo de distracción?",
+  "imagen": null,
+  "opciones": [
+   "Sí, porque las dos manos siguen en el volante.",
+   "Sí, siempre que la conversación sea tranquila.",
+   "No: evita la sanción, pero la conversación sigue distrayendo tu atención de la conducción."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "El manos libres es legal, pero la distracción cognitiva de la conversación permanece: la cabeza se va a la llamada aunque las manos sigan en el volante.",
+  "truco": "El manos libres te libra de la multa, no del despiste: la conversación conduce tu cabeza a otro sitio.",
+  "trampa": "Legal y seguro no son sinónimos. Como está permitido, la gente asume que es inocuo, y eso es justo lo que el examen quiere pillarte.",
+  "explicacion_larga": "Las distracciones no son solo manuales (soltar el volante) o visuales (apartar la vista): también son cognitivas. Una conversación telefónica, aunque sea por manos libres, consume recursos de atención: procesas lo que te dicen, piensas la respuesta, te implicas emocionalmente… y mientras tanto tu cerebro deja de anticipar lo que pasa en la vía. Por eso el manos libres está permitido pero no es inofensivo: conviene limitar las llamadas a lo imprescindible, mantenerlas breves y aplazar cualquier conversación tensa o complicada para cuando estés parado.",
+  "tags": [
+   "distracciones",
+   "movil",
+   "manos-libres",
+   "atencion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-021",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Estás detenido en un semáforo en rojo. ¿Puedes aprovechar para mirar el móvil sujetándolo con la mano?",
+  "imagen": null,
+  "opciones": [
+   "No: sigues conduciendo aunque estés momentáneamente detenido, y la prohibición se mantiene.",
+   "Sí, porque el vehículo está completamente parado.",
+   "Sí, si el semáforo tarda más de 30 segundos en cambiar."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Una detención por el tráfico (semáforo, atasco) forma parte de la conducción: usar el móvil en mano ahí sigue estando prohibido y sancionado.",
+  "truco": "Semáforo en rojo no es parking: mientras estés en el carril, sigues siendo conductor.",
+  "trampa": "El 'coche parado' es el señuelo perfecto: parado por el tráfico no es lo mismo que estacionado. Solo puedes usarlo con el vehículo correctamente estacionado fuera de la circulación.",
+  "explicacion_larga": "La normativa entiende que conducir incluye las detenciones momentáneas impuestas por la circulación: semáforos, atascos, ceda el paso… En todas esas situaciones sigues al mando del vehículo y debes mantener la atención, porque en cualquier momento tienes que reanudar la marcha. Además, el conductor que arranca tarde mirando el móvil provoca frenazos y pitadas detrás. Para usar el teléfono legalmente tienes que estar estacionado en un lugar permitido, fuera de los carriles de circulación. El semáforo en rojo no cumple ninguna de las dos condiciones.",
+  "tags": [
+   "distracciones",
+   "movil",
+   "semaforo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-022",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "¿Cuándo debes programar el navegador GPS?",
+  "imagen": null,
+  "opciones": [
+   "Durante la marcha, pero solo en tramos rectos.",
+   "Antes de iniciar la marcha o con el vehículo detenido en un lugar seguro.",
+   "En cualquier momento, porque el navegador no es un teléfono."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El destino se programa antes de arrancar o parado en sitio seguro. Manipular el navegador en marcha es una distracción sancionable.",
+  "truco": "Primero la ruta, luego la marcha: el GPS se toca con el freno de mano puesto.",
+  "trampa": "Como el navegador 'es para conducir', parece parte legítima de la conducción. Da igual: manipularlo en marcha te roba ojos y manos como cualquier pantalla.",
+  "tags": [
+   "distracciones",
+   "navegador"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-023",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Siguiendo las indicaciones del navegador durante la marcha, lo correcto es…",
+  "imagen": null,
+  "opciones": [
+   "mirar la pantalla con frecuencia para no perderte ninguna salida.",
+   "reprogramarlo sobre la marcha si te has equivocado de ruta.",
+   "guiarte principalmente por sus indicaciones de voz, con miradas muy breves y solo cuando la vía lo permita."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "El navegador se escucha más que se mira: indicaciones de voz y, como mucho, vistazos brevísimos cuando la situación del tráfico lo permita.",
+  "truco": "El GPS habla para que tú no mires: oreja sí, ojos en la carretera.",
+  "trampa": "El miedo a perder la salida te empuja a clavar la vista en la pantalla. Perder una salida cuesta 5 minutos; perder de vista la carretera puede costar mucho más.",
+  "tags": [
+   "distracciones",
+   "navegador",
+   "atencion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-024",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Fumar mientras se conduce…",
+  "imagen": null,
+  "opciones": [
+   "está expresamente prohibido y conlleva retirada de puntos.",
+   "no está prohibido con carácter general, pero es una fuente importante de distracción.",
+   "solo está permitido en vías interurbanas."
+  ],
+  "correcta": 1,
+  "dificultad": 5,
+  "explicacion_corta": "Fumar al volante no está prohibido con carácter general, pero encender el cigarrillo, sujetarlo o que caiga la brasa son distracciones de manual.",
+  "truco": "Fumar no quita puntos, pero encender el pitillo te quita ojos, mano y atención justo a la vez.",
+  "trampa": "Suena tan peligroso que parece que debe estar prohibido, y ahí pica la gente. Lo sancionable no es fumar, sino la distracción que provoque o arrojar la colilla.",
+  "explicacion_larga": "Es una de las preguntas trampa clásicas: fumar conduciendo no está prohibido de forma expresa con carácter general. Ahora bien, el gesto de buscar el paquete, encender el mechero y manejar el cigarrillo aparta una mano del volante y la vista de la vía durante varios segundos, y una brasa que cae en el asiento puede provocar una reacción brusca. Además, si por fumar no mantienes el control del vehículo, sí puedes ser sancionado por conducción negligente. Y arrojar la colilla por la ventanilla es otra historia: eso sí es infracción, y de las caras.",
+  "tags": [
+   "distracciones",
+   "fumar"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-025",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Arrojar la colilla del cigarrillo por la ventanilla mientras conduces…",
+  "imagen": null,
+  "opciones": [
+   "está prohibido: puede provocar incendios y supone la pérdida de 6 puntos.",
+   "está permitido si la colilla está apagada.",
+   "solo está sancionado en época de riesgo de incendios forestales."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Arrojar a la vía objetos que puedan producir incendios o accidentes, como una colilla, conlleva multa y la retirada de 6 puntos, todo el año.",
+  "truco": "Colilla por la ventana, 6 puntos por el desagüe: lo mismo que el móvil en mano.",
+  "trampa": "Lo de 'apagada' o 'fuera de temporada de incendios' suena a matiz razonable, pero la norma no abre esa puerta: tirar la colilla está prohibido siempre.",
+  "explicacion_larga": "La ley castiga arrojar a la vía o en sus inmediaciones objetos que puedan producir incendios o accidentes, y la colilla es el ejemplo de libro: una brasa diminuta ha originado incendios forestales devastadores. Desde la reforma de la Ley de Tráfico de 2022, esta conducta conlleva la pérdida de 6 puntos, la misma que conducir con el móvil en la mano. No hay excepciones por temporada ni porque 'parezca apagada': el cenicero del coche existe para esto.",
+  "tags": [
+   "distracciones",
+   "fumar",
+   "puntos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-026",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Vas con el tiempo justo y decides comerte un bocadillo mientras conduces. Esa conducta…",
+  "imagen": null,
+  "opciones": [
+   "es correcta si sujetas el volante con una mano.",
+   "solo es peligrosa en ciudad, por los semáforos.",
+   "es una distracción que reduce tu control del vehículo y puede ser sancionada."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Comer al volante ocupa una mano y parte de tu atención. Si compromete el control del vehículo, es sancionable como conducción negligente.",
+  "truco": "El bocadillo no tiene multa propia, pero el despiste que provoca sí puede tenerla. Se come en el área de servicio, no en el carril.",
+  "trampa": "Como no hay una prohibición con nombre y apellidos, parece que vale. La obligación de fondo es mantener siempre el control y la libertad de movimientos, y con un bocadillo en la mano no la cumples.",
+  "tags": [
+   "distracciones",
+   "comer"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-027",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Durante un viaje surge una discusión acalorada con tu acompañante. ¿Qué es lo más adecuado?",
+  "imagen": null,
+  "opciones": [
+   "Aplazar la conversación o detenerte en un lugar seguro hasta calmar los ánimos.",
+   "Continuar la discusión, porque hablar mantiene despierto al conductor.",
+   "Subir la música para zanjar la discusión."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Una discusión intensa es una distracción emocional potente: se aplaza o se para el coche. Discutir y conducir son incompatibles.",
+  "truco": "Las broncas, con el freno de mano puesto. La carretera no es sitio para ganar discusiones.",
+  "trampa": "El 'hablar mantiene despierto' es verdad con charla tranquila, pero una discusión no espabila: secuestra la atención y dispara las reacciones bruscas.",
+  "tags": [
+   "distracciones",
+   "discusiones",
+   "emociones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-028",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "Un niño pequeño viaja suelto en los asientos traseros, moviéndose por el habitáculo. Esa situación…",
+  "imagen": null,
+  "opciones": [
+   "es aceptable en trayectos urbanos cortos.",
+   "es peligrosa y está prohibida: debe viajar en su sistema de retención infantil, y además suelto es una gran fuente de distracción.",
+   "solo es un problema si el niño se pone de pie."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Los niños deben viajar siempre en su sistema de retención homologado. Un niño suelto multiplica el riesgo en caso de frenazo y distrae constantemente al conductor.",
+  "truco": "Niño bien anclado, conductor concentrado. La sillita protege al niño y también tu atención.",
+  "trampa": "El 'trayecto corto' es la excusa que más muertes infantiles ha causado: la mayoría de los accidentes ocurren cerca de casa, precisamente donde bajamos la guardia.",
+  "tags": [
+   "distracciones",
+   "ninos",
+   "sri"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-029",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "¿Cómo debe viajar tu perro en el coche?",
+  "imagen": null,
+  "opciones": [
+   "Suelto en los asientos traseros, para que vaya cómodo.",
+   "En el regazo del acompañante, que lo sujeta.",
+   "Sujeto o separado del habitáculo con un sistema adecuado: transportín, arnés o rejilla divisoria."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Los animales deben viajar retenidos o separados para que no interfieran en la conducción: un perro suelto distrae y se convierte en un proyectil en caso de frenazo.",
+  "truco": "Mascota suelta, multa y susto a la vuelta: transportín, arnés o rejilla, elige uno.",
+  "trampa": "El regazo del copiloto parece 'sujeción', pero en un frenazo nadie retiene a un perro con las manos, y mientras tanto interfiere en tu libertad de movimientos: sancionable.",
+  "tags": [
+   "distracciones",
+   "mascotas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-030",
+  "mundo": 12,
+  "tema": "Distracciones",
+  "pregunta": "En relación con los accidentes de tráfico mortales, las distracciones son…",
+  "imagen": null,
+  "opciones": [
+   "uno de los principales factores concurrentes, presentes en una gran parte de ellos.",
+   "un factor menor comparado con las averías mecánicas.",
+   "relevantes solo en los accidentes urbanos."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Las distracciones figuran año tras año entre los primeros factores concurrentes en los accidentes mortales, por delante de las averías.",
+  "truco": "El enemigo número uno no ruge como un motor roto: susurra como una notificación.",
+  "trampa": "La avería mecánica da miedo porque es espectacular, pero es rarísima como causa. Lo que mata a diario es mucho más aburrido: dejar de mirar la carretera.",
+  "explicacion_larga": "Los informes de siniestralidad de la DGT sitúan las distracciones entre los primeros factores concurrentes de los accidentes con víctimas, tanto en ciudad como en carretera, disputándose el primer puesto con la velocidad y el alcohol. Y a diferencia de una avería, la distracción es cien por cien evitable: móvil guardado o en modo conducción, GPS programado antes de salir, y la atención puesta en lo único que no admite pausa, que es la vía. Un vehículo moderno rara vez falla; el factor humano, constantemente.",
+  "tags": [
+   "distracciones",
+   "siniestralidad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-031",
+  "mundo": 12,
+  "tema": "Atención y tiempo de reacción",
+  "pregunta": "En condiciones normales, el tiempo de reacción de un conductor es de…",
+  "imagen": null,
+  "opciones": [
+   "unos 5 segundos.",
+   "aproximadamente 1 segundo.",
+   "menos de una décima de segundo."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Entre que percibes el peligro y pisas el freno pasa alrededor de 1 segundo, en el mejor de los casos.",
+  "truco": "Un segundo: lo que tardas en decir 'mil ciento uno'. Ese es tu tiempo de reacción estando fino.",
+  "trampa": "La décima de segundo halaga al ego de piloto, pero percibir, decidir y mover el pie lleva su tiempo: en torno al segundo, y eso estando descansado y atento.",
+  "tags": [
+   "tiempo-reaccion",
+   "atencion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-032",
+  "mundo": 12,
+  "tema": "Atención y tiempo de reacción",
+  "pregunta": "¿Qué factores alargan el tiempo de reacción del conductor?",
+  "imagen": null,
+  "opciones": [
+   "Únicamente el alcohol y las drogas.",
+   "Ninguno: el tiempo de reacción es fijo en cada persona.",
+   "El alcohol, la fatiga, las distracciones y también la edad, entre otros."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "El tiempo de reacción no es fijo: alcohol, drogas, fatiga, sueño, distracciones, ciertas enfermedades y la edad lo alargan.",
+  "truco": "Todo lo que atonta, alarga: si le pasa a tu cabeza, le pasa a tu pie derecho.",
+  "trampa": "El 'únicamente el alcohol' pica porque es el factor más famoso, pero un conductor agotado o mirando el móvil reacciona igual de tarde que uno que ha bebido.",
+  "tags": [
+   "tiempo-reaccion",
+   "fatiga",
+   "alcohol"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-033",
+  "mundo": 12,
+  "tema": "Atención y tiempo de reacción",
+  "pregunta": "Circulas a 120 km/h y surge un obstáculo. Con un tiempo de reacción de 1 segundo, ¿qué distancia recorres antes de empezar a frenar?",
+  "imagen": null,
+  "opciones": [
+   "Unos 33 metros.",
+   "Unos 12 metros.",
+   "Unos 60 metros."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "A 120 km/h recorres unos 33 metros por segundo. Ese es el camino que 'regalas' antes de que el freno empiece siquiera a actuar.",
+  "truco": "Divide la velocidad entre 3,6 y tienes los metros por segundo: 120 entre 3,6, unos 33 metros.",
+  "trampa": "Los 12 metros tientan porque la gente confunde km/h con m/s. La distancia de reacción se suma SIEMPRE a la de frenado: primero regalas metros, luego frenas.",
+  "tags": [
+   "tiempo-reaccion",
+   "velocidad",
+   "distancia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-034",
+  "mundo": 12,
+  "tema": "Atención y tiempo de reacción",
+  "pregunta": "Durante el tiempo de reacción, el vehículo…",
+  "imagen": null,
+  "opciones": [
+   "empieza a frenar suavemente por sí solo.",
+   "sigue avanzando a la misma velocidad, sin frenar.",
+   "reduce la velocidad por la inercia del motor."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Mientras percibes y decides, el pie aún no ha pisado el freno: el coche sigue a la misma velocidad como si nada.",
+  "truco": "En el tiempo de reacción, el que reacciona eres tú; el coche todavía no se ha enterado.",
+  "trampa": "El 'freno motor' suena técnico y por eso engancha, pero hasta que no actúas sobre los mandos, el vehículo ni frena ni se inmuta.",
+  "tags": [
+   "tiempo-reaccion",
+   "distancia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-035",
+  "mundo": 12,
+  "tema": "Atención y tiempo de reacción",
+  "pregunta": "Apartas la vista de la carretera 3 segundos para mirar una notificación circulando a 100 km/h. ¿Qué distancia recorres sin ver la vía?",
+  "imagen": null,
+  "opciones": [
+   "Unos 30 metros.",
+   "Unos 55 metros.",
+   "Más de 80 metros."
+  ],
+  "correcta": 2,
+  "dificultad": 5,
+  "explicacion_corta": "A 100 km/h recorres unos 28 metros por segundo: en 3 segundos superas los 80 metros conduciendo completamente a ciegas.",
+  "truco": "A 100 por hora, cada segundo de pantallita son casi 30 metros de venda en los ojos.",
+  "trampa": "Los 30 metros pican en quien calcula 'un segundo, unos 30 metros'… pero eran TRES segundos. Lee el enunciado dos veces: el examen vive de estas.",
+  "explicacion_larga": "El cálculo es directo: 100 km/h divididos entre 3,6 dan 27,8 metros por segundo. Tres segundos mirando el móvil son unos 83 metros recorridos sin visión de la vía, casi la longitud de un campo de fútbol. En ese espacio caben un peatón cruzando, una frenada del vehículo precedente o el inicio de una curva. Y ojo al efecto acumulado: al volver la vista a la carretera todavía necesitas un tiempo extra para reencuadrar la escena y reaccionar. Por eso los mensajes se contestan parado, nunca 'en un momentito'.",
+  "tags": [
+   "distracciones",
+   "movil",
+   "velocidad",
+   "distancia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-036",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "A medida que aumenta la velocidad, el campo visual del conductor…",
+  "imagen": null,
+  "opciones": [
+   "se estrecha, produciéndose el llamado efecto túnel.",
+   "se amplía, porque el cerebro se activa más.",
+   "no varía: depende solo de la agudeza visual de cada uno."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Cuanto más rápido circulas, más se estrecha el campo visual: es el efecto túnel, que te deja ciego a lo que pasa en los laterales.",
+  "truco": "Más gas, menos ángulo: la velocidad te mete en un túnel aunque la carretera sea recta.",
+  "trampa": "Lo de que el cerebro 'se activa más' con la velocidad suena creíble, pero esa activación se concentra al frente: los lados desaparecen del radar.",
+  "tags": [
+   "vision",
+   "efecto-tunel",
+   "velocidad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-037",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "Por el efecto túnel, un conductor que circula a velocidad muy elevada…",
+  "imagen": null,
+  "opciones": [
+   "ve mejor los objetos lejanos y peor los cercanos.",
+   "apenas percibe lo que ocurre en los laterales de la vía, como peatones o vehículos que se incorporan.",
+   "pierde la visión del color, pero no el ángulo de visión."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Con el campo visual estrechado, los peligros laterales (un peatón, un coche incorporándose) llegan sin avisar. Reducir la velocidad reabre el ángulo de visión.",
+  "truco": "A toda pastilla ves la meta, pero no al que sale del cruce. Levantar el pie es abrir el gran angular.",
+  "trampa": "La opción de ver 'mejor lo lejano' parece la descripción de un túnel, y por eso engaña: no ves mejor nada, simplemente dejas de ver los lados.",
+  "explicacion_larga": "Detenido, tu campo visual abarca unos 180 grados; a velocidades de autopista queda reducido a un cono estrecho, en torno a los 30 grados a unos 130 km/h. Todo lo que ocurre fuera de ese cono (un peatón en el arcén, un vehículo esperando para incorporarse, un ciclista) simplemente no existe para ti hasta que está encima. Es un mecanismo fisiológico: a más velocidad, el cerebro concentra los recursos visuales en el punto de fuga. La única forma de recuperar campo visual es reducir la velocidad, especialmente donde puede aparecer peligro lateral: travesías, intersecciones e incorporaciones.",
+  "tags": [
+   "vision",
+   "efecto-tunel",
+   "velocidad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-038",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "Durante la conducción nocturna, tu capacidad visual…",
+  "imagen": null,
+  "opciones": [
+   "es la misma que de día si las luces del vehículo funcionan bien.",
+   "mejora, porque hay menos estímulos que procesar.",
+   "disminuye notablemente: debes adecuar la velocidad a la zona que iluminan tus luces."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "De noche se reducen la agudeza visual, la percepción de distancias y el campo visual. La regla es poder detenerte dentro de la zona que iluminan tus luces.",
+  "truco": "De noche solo existe lo que pintan tus faros: no corras más de lo que alumbras.",
+  "trampa": "El 'menos estímulos' suena a ventaja zen, pero de noche el ojo humano rinde peor en todo: contraste, distancia y color. Los faros ayudan, no hacen milagros.",
+  "tags": [
+   "vision",
+   "conduccion-nocturna"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-039",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "De noche, un vehículo que viene de frente te deslumbra con sus luces. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Reducir la velocidad, incluso deteniéndote si es preciso, sin cerrar los ojos y desviando la mirada hacia tu derecha.",
+   "Cerrar los ojos un instante hasta que pase el vehículo.",
+   "Devolverle las largas para avisarle de que deslumbra."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Ante un deslumbramiento: bajar la velocidad (parar si hace falta), no cerrar los ojos y guiarte por la referencia del borde derecho de la vía.",
+  "truco": "Deslumbrado: pie fuera del gas y ojos a la derecha, buscando la línea del arcén como pasamanos.",
+  "trampa": "Devolver las largas es la venganza clásica: consigues dos conductores cegados en trayectoria de colisión en vez de uno.",
+  "tags": [
+   "vision",
+   "deslumbramiento",
+   "conduccion-nocturna"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-040",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "Tras sufrir un deslumbramiento, la recuperación de la visión…",
+  "imagen": null,
+  "opciones": [
+   "es inmediata en conductores con buena vista.",
+   "no es inmediata: puede tardar varios segundos, durante los cuales sigues avanzando con visión deficiente.",
+   "solo tarda si el deslumbramiento fue con luces largas."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "El ojo tarda segundos en readaptarse tras un deslumbramiento, y con la edad ese tiempo aumenta. Mientras tanto conduces medio a ciegas: reduce la velocidad.",
+  "truco": "El deslumbrón deja resaca: la luz se va, la ceguera se queda unos segundos de propina.",
+  "trampa": "La 'buena vista' no acorta la readaptación: es un proceso químico de la retina, no una cuestión de dioptrías. Le pasa hasta al que ve perfecto.",
+  "explicacion_larga": "Cuando una luz intensa incide en el ojo adaptado a la oscuridad, los fotorreceptores de la retina se saturan y necesitan regenerar sus pigmentos para volver a funcionar. Esa readaptación puede llevar varios segundos, más cuanta más edad tiene el conductor. A velocidad de carretera, cada segundo de visión deficiente son decenas de metros recorridos. Por eso, además de reducir la velocidad al ser deslumbrado, conviene prevenir: parabrisas limpio por dentro y por fuera (la suciedad multiplica el efecto), espejo interior en posición antideslumbrante y no mirar directamente a los faros que se aproximan.",
+  "tags": [
+   "vision",
+   "deslumbramiento",
+   "conduccion-nocturna"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-041",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "Tu permiso de conducción indica que necesitas gafas o lentes de contacto. ¿Cuándo debes llevarlas puestas?",
+  "imagen": null,
+  "opciones": [
+   "Solo de noche y en días de lluvia.",
+   "Solo en viajes largos por carretera.",
+   "Siempre que conduzcas: es una condición obligatoria de tu permiso."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Si el permiso está condicionado al uso de gafas o lentillas, conducir sin ellas está prohibido en cualquier trayecto y a cualquier hora.",
+  "truco": "Las gafas del permiso van con el carnet, como el cinturón: sin ellas, ni arrancar.",
+  "trampa": "Lo del 'solo de noche' pica porque de día parece que ves de sobra, pero la restricción del permiso no distingue horarios: es siempre.",
+  "tags": [
+   "vision",
+   "gafas",
+   "permiso"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-042",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "Conducir sin las gafas o lentillas que exige tu permiso de conducción es…",
+  "imagen": null,
+  "opciones": [
+   "una infracción grave sancionable con multa.",
+   "una simple recomendación sin sanción asociada.",
+   "una infracción solo si se produce un accidente."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Incumplir las condiciones restrictivas del permiso, como el uso de gafas, es una infracción grave sancionable con multa de 200 euros.",
+  "truco": "El permiso con letra pequeña no es opcional: saltarte la condición de las gafas te cuesta una multa de las gordas.",
+  "trampa": "El 'solo si hay accidente' confunde infracción con consecuencia: la multa te cae en un control rutinario, sin necesidad de chocar con nada.",
+  "tags": [
+   "vision",
+   "gafas",
+   "sanciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-043",
+  "mundo": 12,
+  "tema": "La visión",
+  "pregunta": "Como conductor del permiso B que necesita gafas para conducir, llevar un segundo par de repuesto en el vehículo es…",
+  "imagen": null,
+  "opciones": [
+   "obligatorio: te pueden sancionar si no lo llevas.",
+   "muy recomendable, aunque no es obligatorio.",
+   "innecesario si usas lentes de contacto."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Para los conductores no profesionales, llevar gafas de repuesto es una recomendación de seguridad, no una obligación sancionable.",
+  "truco": "Repuesto de gafas como rueda de repuesto mental: no es obligatorio, pero el día que se te rompan las buenas darás gracias.",
+  "trampa": "Durante años fue obligatorio llevar repuesto y mucha gente lo sigue creyendo: hoy la obligación es conducir CON corrección visual, el repuesto es solo consejo.",
+  "explicacion_larga": "La antigua obligación de llevar un segundo par de gafas desapareció de la normativa hace años, pero sobrevive en la memoria colectiva y por eso es terreno fértil para preguntas trampa. Lo que sigue siendo obligatorio e innegociable es conducir con la corrección visual que indica tu permiso. El repuesto es una recomendación de puro sentido común: si se te rompen o pierdes las gafas a mitad de viaje, sin repuesto no puedes continuar conduciendo legalmente. Para usuarios de lentillas, llevar unas gafas de apoyo también resuelve irritaciones o pérdidas inesperadas.",
+  "tags": [
+   "vision",
+   "gafas",
+   "permiso"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-044",
+  "mundo": 12,
+  "tema": "Enfermedades y medicamentos",
+  "pregunta": "Tienes gripe con fiebre y malestar general. ¿Es recomendable conducir?",
+  "imagen": null,
+  "opciones": [
+   "Sí, la gripe no afecta a la conducción.",
+   "Sí, siempre que el trayecto sea inferior a media hora.",
+   "No: la fiebre y el malestar reducen la atención y aumentan el tiempo de reacción."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Con gripe y fiebre, la concentración cae y los reflejos se ralentizan. Si estás para la cama, no estás para el volante.",
+  "truco": "Si no irías a un examen con esa fiebre, tampoco vayas al examen diario de la carretera.",
+  "trampa": "El trayecto corto vuelve a hacer de las suyas: los efectos de la fiebre van contigo, no con los kilómetros del viaje.",
+  "tags": [
+   "enfermedades",
+   "gripe",
+   "fiebre"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-045",
+  "mundo": 12,
+  "tema": "Enfermedades y medicamentos",
+  "pregunta": "Un medicamento lleva en el envase un pictograma de advertencia con un coche. ¿Qué significa?",
+  "imagen": null,
+  "opciones": [
+   "Que puede afectar a la capacidad de conducir: lee el prospecto y consulta al médico o farmacéutico.",
+   "Que está especialmente indicado para los mareos de los viajes.",
+   "Que solo pueden tomarlo los conductores profesionales."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Ese pictograma avisa de que el fármaco puede reducir tu capacidad para conducir. Antes de ponerte al volante, prospecto y consulta profesional.",
+  "truco": "Cochecito en la caja, ojo con la caja: ese medicamento y el volante necesitan presentación oficial del médico.",
+  "trampa": "El dibujo del coche despista a más de uno hacia lo de los mareos del viaje: es justo lo contrario, una señal de advertencia para conductores.",
+  "tags": [
+   "medicamentos",
+   "pictograma"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-046",
+  "mundo": 12,
+  "tema": "Enfermedades y medicamentos",
+  "pregunta": "Estás resfriado y tomas un antigripal que produce somnolencia. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Conducir con la ventanilla abierta para contrarrestar el sopor.",
+   "Evitar conducir: la enfermedad y el medicamento suman sus efectos sobre tu capacidad.",
+   "Conducir solo por ciudad, donde la velocidad es menor."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Enfermedad más fármaco sedante es una combinación que multiplica el riesgo: somnolencia, reflejos lentos y atención baja. Mejor no conducir.",
+  "truco": "Gripe con antigripal es un dos contra uno: la enfermedad te atonta y la pastilla remata. No juegues ese partido al volante.",
+  "trampa": "La ventanilla abierta vuelve a aparecer como remedio mágico: contra la somnolencia química no hay corriente de aire que valga.",
+  "tags": [
+   "medicamentos",
+   "gripe",
+   "somnolencia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-047",
+  "mundo": 12,
+  "tema": "Enfermedades y medicamentos",
+  "pregunta": "Un simple resfriado, sin tomar ninguna medicación, ¿puede afectar a la conducción?",
+  "imagen": null,
+  "opciones": [
+   "No, solo afectan las enfermedades graves.",
+   "Solo si produce fiebre superior a 39 grados.",
+   "Sí: el malestar, la congestión y los estornudos reducen la atención y la capacidad de reacción."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Hasta un resfriado común baja tu rendimiento al volante, y cada estornudo supone casi un segundo con los ojos cerrados.",
+  "truco": "Un estornudo a 120 son 30 metros a ojos cerrados: el resfriado también conduce, y conduce mal.",
+  "trampa": "Como el resfriado es 'poca cosa' y no has tomado nada, parece que no cuenta. El examen busca justo esa lógica: los estados leves también restan capacidades.",
+  "explicacion_larga": "No hace falta una enfermedad grave para que la conducción se resienta. Un resfriado común produce malestar, dolor de cabeza, congestión que altera el descanso nocturno y estornudos en cadena; durante cada estornudo los ojos se cierran involuntariamente cerca de un segundo, que a velocidad de carretera son decenas de metros a ciegas. Además, el cuerpo enfermo dedica recursos a defenderse y los roba de la atención. La recomendación es sencilla: con síntomas importantes, aplaza el viaje; si conduces, hazlo descansado, en trayectos cortos y extremando la distancia de seguridad.",
+  "tags": [
+   "enfermedades",
+   "resfriado",
+   "atencion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-048",
+  "mundo": 12,
+  "tema": "Edad y capacidades",
+  "pregunta": "Con el paso de los años, en la mayoría de los conductores…",
+  "imagen": null,
+  "opciones": [
+   "aumenta el tiempo de reacción y empeora la visión nocturna, aunque la experiencia compensa en parte estas pérdidas.",
+   "mejoran todos los reflejos gracias a la práctica acumulada.",
+   "solo se deteriora el oído; la vista y los reflejos se mantienen."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La edad alarga el tiempo de reacción y reduce la visión nocturna y la resistencia al deslumbramiento. La experiencia ayuda a anticipar, pero no devuelve reflejos.",
+  "truco": "El veterano gana en radar mental y pierde en reflejos: por eso el conductor mayor prudente compensa conduciendo con más margen.",
+  "trampa": "La 'práctica que mejora los reflejos' halaga a los veteranos, pero la experiencia mejora la anticipación, no la velocidad de respuesta del cuerpo.",
+  "tags": [
+   "edad",
+   "tiempo-reaccion",
+   "vision"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-049",
+  "mundo": 12,
+  "tema": "Edad y capacidades",
+  "pregunta": "Los conductores jóvenes y noveles presentan una siniestralidad especialmente alta. ¿Cuál es la causa principal?",
+  "imagen": null,
+  "opciones": [
+   "Sus reflejos, que aún no están del todo desarrollados.",
+   "La combinación de inexperiencia y exceso de confianza: tienden a sobrevalorar sus capacidades.",
+   "La menor calidad de los vehículos que suelen conducir."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El joven tiene los mejores reflejos de su vida, pero le falta experiencia para anticipar y le sobra confianza: ese cóctel dispara el riesgo.",
+  "truco": "Reflejos de gato, radar de novato: al principio, prudencia doble para compensar lo que la experiencia todavía no da.",
+  "trampa": "Culpar a los reflejos es al revés de la realidad: fisiológicamente el joven reacciona rapidísimo. Lo que falla es la percepción del riesgo, no el cuerpo.",
+  "tags": [
+   "edad",
+   "noveles",
+   "riesgo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-050",
+  "mundo": 12,
+  "tema": "Edad y capacidades",
+  "pregunta": "A partir de los 65 años, el permiso de conducción de la clase B se renueva, como norma general, cada…",
+  "imagen": null,
+  "opciones": [
+   "10 años, igual que antes de esa edad.",
+   "2 años, con informe médico obligatorio.",
+   "5 años, en lugar de los 10 habituales."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "El permiso B tiene una vigencia general de 10 años, que pasa a ser de 5 años a partir de los 65, para revisar con más frecuencia las aptitudes.",
+  "truco": "A los 65 el permiso B baja a la mitad de vida: de 10 años a 5, revisión al doble de ritmo.",
+  "trampa": "Los 2 años suenan a rigor médico y por eso cuelan, pero el plazo general tras los 65 es de 5 años, salvo que el reconocimiento médico imponga uno menor.",
+  "tags": [
+   "edad",
+   "permiso",
+   "renovacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-051",
+  "mundo": 12,
+  "tema": "Estado emocional",
+  "pregunta": "Acabas de tener una discusión muy fuerte y estás furioso. ¿Es buen momento para coger el coche?",
+  "imagen": null,
+  "opciones": [
+   "Sí, conducir despeja la mente.",
+   "No: conviene calmarse antes, porque la ira altera la atención y favorece las reacciones bruscas.",
+   "Sí, siempre que pongas música relajante."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Conducir enfadado multiplica los errores: la ira acapara tu atención y te empuja a decisiones agresivas. Primero calmarse, después conducir.",
+  "truco": "El coche no es un saco de boxeo: si hierves, espera a estar a fuego lento antes de arrancar.",
+  "trampa": "Lo de 'conducir despeja' es una creencia popular peligrosa: al volante no descargas la ira, la conviertes en velocidad y frenazos.",
+  "tags": [
+   "emociones",
+   "ira"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-052",
+  "mundo": 12,
+  "tema": "Estado emocional",
+  "pregunta": "Otro conductor te hace una maniobra brusca y encima te increpa. ¿Cuál es la reacción correcta?",
+  "imagen": null,
+  "opciones": [
+   "Mantener la calma, no responder a la provocación y facilitar que se aleje.",
+   "Devolverle el gesto para que aprenda.",
+   "Seguirle de cerca para apuntar su matrícula y encararte en el próximo semáforo."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Ante un conductor agresivo, lo seguro es no entrar al trapo: calma, distancia y dejar que se vaya. Una provocación solo escala si la sigues.",
+  "truco": "Con un agresivo al volante gana el que no juega: tú a lo tuyo, que se lleve su bronca a otra parte.",
+  "trampa": "Lo de apuntar la matrícula parece cívico, pero perseguir y encararse te convierte en el segundo conductor agresivo del incidente.",
+  "tags": [
+   "emociones",
+   "agresividad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-053",
+  "mundo": 12,
+  "tema": "Estado emocional",
+  "pregunta": "El estrés y las prisas al volante suelen provocar…",
+  "imagen": null,
+  "opciones": [
+   "una conducción más concentrada, porque activan al conductor.",
+   "los mismos efectos que la conducción tranquila, si hay experiencia.",
+   "conducción agresiva, más errores y peor valoración de los riesgos."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Con prisa se asumen riesgos absurdos: adelantamientos justos, semáforos apurados, distancias mínimas. El estrés estrecha la atención y multiplica los errores.",
+  "truco": "Sal 10 minutos antes y ahórrate jugarte la vida por llegar 2 minutos después: la prisa es el peor copiloto.",
+  "trampa": "El estrés 'activa', sí, pero como un exceso de revoluciones: mucho acelerón y poco control. Activación no es concentración.",
+  "tags": [
+   "emociones",
+   "estres",
+   "prisas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-054",
+  "mundo": 12,
+  "tema": "Estado emocional",
+  "pregunta": "¿Cómo se manifiesta habitualmente la agresividad en la conducción?",
+  "imagen": null,
+  "opciones": [
+   "Con una conducción más lenta y vacilante.",
+   "Con exceso de velocidad, distancias de seguridad reducidas y maniobras bruscas o intimidatorias.",
+   "Solo con el uso insistente del claxon."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El conductor agresivo corre más, se pega al de delante, cambia de carril a lo bruto y usa luces y claxon para intimidar: un paquete completo de riesgo.",
+  "truco": "Agresivo al volante = velocidad, pegado al de delante y volantazos. Si te describe, frena el ego antes que el coche.",
+  "trampa": "Reducirlo al claxon es quedarse en el ruido: el peligro real de la agresividad son los metros de distancia que desaparecen y las maniobras que no avisan.",
+  "tags": [
+   "emociones",
+   "agresividad",
+   "riesgo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-055",
+  "mundo": 12,
+  "tema": "Estado emocional",
+  "pregunta": "¿Los estados emocionales muy intensos, incluida la alegría desbordante, pueden afectar a la conducción?",
+  "imagen": null,
+  "opciones": [
+   "Sí: cualquier emoción intensa, positiva o negativa, distrae y altera la percepción del riesgo.",
+   "No: solo las emociones negativas como la ira o la tristeza son peligrosas.",
+   "Solo afectan a los conductores noveles."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "La euforia también pasa factura: exceso de confianza, más velocidad y menos percepción del peligro. Toda emoción intensa resta atención a la vía.",
+  "truco": "La euforia conduce tan mal como el cabreo: las buenas noticias también se celebran con el coche aparcado.",
+  "trampa": "Asociamos peligro solo a lo negativo, y ahí está el cebo: el eufórico se cree invencible, que es exactamente el estado mental más caro en carretera.",
+  "explicacion_larga": "La conducción segura exige un estado de activación medio: ni el embotamiento de la tristeza o la fatiga, ni la sobreexcitación de la ira o la euforia. Una alegría desbordante (un ascenso, un premio, una victoria de tu equipo) genera exceso de confianza, sensación de invulnerabilidad y ganas de celebrarlo pisando más de la cuenta; la tristeza y la preocupación, por su parte, provocan ensimismamiento y reacciones lentas. En ambos extremos, la atención abandona la carretera. Si la emoción del momento es muy fuerte, en cualquier dirección, lo profesional es esperar a que baje la marea antes de conducir.",
+  "tags": [
+   "emociones",
+   "euforia",
+   "riesgo"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M12-056",
+  "mundo": 12,
+  "tema": "Atención y tiempo de reacción",
+  "pregunta": "Como norma general, ¿cuál de estas situaciones NO alarga el tiempo de reacción del conductor?",
+  "imagen": null,
+  "opciones": [
+   "Mantener una conversación por el sistema de manos libres.",
+   "Conducir con unas décimas de fiebre por un resfriado.",
+   "Circular descansado, atento y sin distracciones."
+  ],
+  "correcta": 2,
+  "dificultad": 5,
+  "explicacion_corta": "Descansado y atento es el único estado de la lista que mantiene tu tiempo de reacción en torno al segundo. Manos libres y fiebre, aunque parezcan inofensivos, lo alargan.",
+  "truco": "Pregunta con NO: dale la vuelta y busca al 'bueno' de la lista. Aquí el único que suma es el conductor fresco y centrado.",
+  "trampa": "El manos libres pica el doble: es legal, y el cerebro traduce legal por inofensivo. La conversación distrae y alarga la reacción aunque no toques el teléfono.",
+  "explicacion_larga": "Las preguntas en negativo son una trampa de formato: la mayoría de la gente lee en diagonal, no ve el NO y marca la primera opción que suena peligrosa. Aquí, además, las dos opciones incorrectas son estados aparentemente menores: el manos libres es legal pero genera distracción cognitiva demostrada, y una febrícula de resfriado reduce la atención y ralentiza la respuesta. Solo el conductor descansado, atento y libre de distracciones mantiene su tiempo de reacción en el entorno del segundo. En el examen, cuando veas NO o EXCEPTO en mayúsculas mentales, relee cada opción preguntándote: ¿esto empeora o no empeora?",
+  "tags": [
+   "tiempo-reaccion",
+   "atencion",
+   "pregunta-trampa"
+  ],
+  "senalId": null
+ }
+]

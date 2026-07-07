@@ -1,0 +1,1256 @@
+[
+ {
+  "id": "M15-001",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Para gastar menos combustible, ¿cómo conviene circular?",
+  "imagen": null,
+  "opciones": [
+   "En marchas cortas y con el motor alto de vueltas, para tener siempre potencia disponible.",
+   "En marchas largas y con el motor a bajas revoluciones.",
+   "Cambiando de marcha constantemente para repartir el esfuerzo del motor."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "Las marchas largas a bajas revoluciones son la base de la conducción eficiente: mismo avance, menos combustible.",
+  "truco": "Marcha larga y motor tranquilo: cuanto menos 'grite' el motor, menos paga tu bolsillo.",
+  "trampa": "Lo de 'tener potencia disponible' suena a conducción segura, pero ir alto de vueltas solo dispara el consumo.",
+  "tags": [
+   "conduccion-eficiente",
+   "marchas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-002",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "En conducción eficiente, ¿en torno a qué régimen conviene cambiar a una marcha superior?",
+  "imagen": null,
+  "opciones": [
+   "En gasolina entre 2.000 y 2.500 rpm; en diésel entre 1.500 y 2.000 rpm, aproximadamente.",
+   "Siempre por encima de 3.500 rpm, para que el motor no se cale.",
+   "El régimen da igual: lo único que importa es la velocidad a la que circulas."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Se recomienda cambiar pronto de marcha: en gasolina hacia las 2.000–2.500 rpm y en diésel hacia las 1.500–2.000 rpm.",
+  "truco": "El diésel madruga (cambia hacia 1.500–2.000) y el gasolina se estira un pelín más (2.000–2.500).",
+  "trampa": "A 3.500 rpm no estás ni cerca de calar el motor: solo estás quemando combustible de más.",
+  "tags": [
+   "conduccion-eficiente",
+   "marchas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-003",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Vas por ciudad y ves un semáforo en rojo a lo lejos. ¿Qué hace un conductor eficiente?",
+  "imagen": null,
+  "opciones": [
+   "Mantener la velocidad y frenar con decisión al llegar al semáforo.",
+   "Acelerar un poco por si el semáforo cambia antes de llegar.",
+   "Levantar el pie con antelación y dejar rodar el vehículo con la marcha engranada."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Anticiparse es la clave: si levantas el pie pronto y llegas rodando, quizá ni tengas que detenerte del todo.",
+  "truco": "Mira lejos y frena poco: el mejor freno es el que no llegas a pisar.",
+  "trampa": "Frenar 'con decisión' al final parece aprovechar la velocidad, pero en cada frenazo tiras a la basura la energía que ya habías pagado al acelerar.",
+  "tags": [
+   "conduccion-eficiente",
+   "anticipacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-004",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "¿Qué estilo de conducción consume menos combustible?",
+  "imagen": null,
+  "opciones": [
+   "Mantener una velocidad lo más uniforme posible, evitando acelerones y frenazos.",
+   "Alternar acelerones y frenazos para aprovechar mejor la inercia del vehículo.",
+   "Circular siempre muy por debajo de lo que permite la vía, aunque entorpezca al resto."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "La velocidad uniforme es la que menos gasta. Los acelerones y frenazos disparan el consumo y el desgaste.",
+  "truco": "Conduce como si llevaras un vaso de agua lleno en el salpicadero: suave y constante.",
+  "trampa": "El acelerón-frenazo no 'aprovecha' la inercia: la desperdicia. E ir demasiado lento entorpeciendo tampoco es la solución.",
+  "tags": [
+   "conduccion-eficiente",
+   "velocidad-uniforme"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-005",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Al arrancar el motor de un turismo moderno, lo correcto es hacerlo…",
+  "imagen": null,
+  "opciones": [
+   "pisando el acelerador a fondo, para que el motor coja temperatura antes.",
+   "sin pisar el acelerador.",
+   "dando varios acelerones cortos si el motor está frío."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El motor se arranca sin tocar el acelerador y se inicia la marcha poco después, sin acelerones en frío.",
+  "truco": "Llave (o botón) sí, pie no: el motor moderno arranca solo, no hay que 'ayudarle'.",
+  "trampa": "Los acelerones en frío son costumbre de coches de hace 40 años: hoy solo gastan combustible y castigan el motor.",
+  "tags": [
+   "conduccion-eficiente",
+   "arranque"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-006",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Te toca esperar detenido más de un minuto, por ejemplo ante un paso a nivel. ¿Qué es lo más eficiente?",
+  "imagen": null,
+  "opciones": [
+   "Dejar el motor al ralentí, porque parado apenas consume.",
+   "Dar algún acelerón en punto muerto de vez en cuando para que no se enfríe.",
+   "Apagar el motor."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "En detenciones prolongadas (a partir de un minuto, aproximadamente) compensa parar el motor: al ralentí sigues consumiendo sin moverte.",
+  "truco": "Más de un minuto parado = motor apagado. El ralentí es dinero quemado a cambio de nada.",
+  "trampa": "'Parado apenas consume' te suena razonable, pero consumir algo durante minutos, cada día, acaba siendo mucho.",
+  "tags": [
+   "conduccion-eficiente",
+   "ralenti"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-007",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Bajas una pendiente larga sin pisar el acelerador y con una marcha engranada. ¿Cuánto consume el motor?",
+  "imagen": null,
+  "opciones": [
+   "Prácticamente nada: la inyección de combustible se corta.",
+   "Lo mismo que al ralentí, porque el motor sigue girando.",
+   "Más que en llano, porque el motor está reteniendo el vehículo."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "Con marcha engranada y pie levantado, los motores actuales cortan la inyección: consumo casi nulo y además conservas el freno motor.",
+  "truco": "Marcha puesta y pie levantado = grifo cerrado. En punto muerto, el ralentí sigue goteando.",
+  "trampa": "Muchos creen que en punto muerto se ahorra más. Falso: al ralentí sigues inyectando combustible y encima pierdes el freno motor.",
+  "tags": [
+   "conduccion-eficiente",
+   "freno-motor"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-008",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Llevar los neumáticos con menos presión de la indicada por el fabricante…",
+  "imagen": null,
+  "opciones": [
+   "reduce el consumo, porque el neumático se adapta mejor al asfalto.",
+   "aumenta el consumo y, además, el riesgo de reventón.",
+   "no influye en el consumo; solo acelera el desgaste del dibujo."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Un neumático bajo de presión ofrece más resistencia a la rodadura: más consumo, más desgaste y más riesgo de reventón.",
+  "truco": "Rueda floja, cartera floja: menos aire = más rozamiento = más gasto en cada kilómetro.",
+  "trampa": "Lo de que 'se adapta mejor al asfalto' suena a más agarre, pero lo que ganas de verdad es rozamiento, calor y peligro.",
+  "tags": [
+   "conduccion-eficiente",
+   "neumaticos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-009",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "En verano circulas por autopista a velocidad elevada y tienes calor. Para consumir menos, ¿qué compensa más?",
+  "imagen": null,
+  "opciones": [
+   "Abrir las ventanillas y apagar el aire acondicionado.",
+   "Da exactamente igual una cosa que otra: el consumo no cambia.",
+   "Cerrar las ventanillas y usar el aire acondicionado."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "A velocidades altas, las ventanillas abiertas empeoran tanto la aerodinámica que sale más a cuenta el aire acondicionado. En ciudad, a baja velocidad, es al revés.",
+  "truco": "En autopista, ventanilla arriba y aire dentro; en ciudad, ventanilla abajo y aire apagado.",
+  "trampa": "El aire acondicionado gasta, sí, pero a velocidad alta una ventanilla abierta frena el coche como un paracaídas: acaba saliendo peor.",
+  "tags": [
+   "conduccion-eficiente",
+   "aire-acondicionado"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-010",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Llevas el maletero cargado de trastos que no necesitas. ¿Afecta eso al consumo?",
+  "imagen": null,
+  "opciones": [
+   "Sí: a más peso transportado, más consumo.",
+   "No, siempre que los objetos vayan bien colocados y sujetos.",
+   "Solo si el peso extra supera los 200 kilos."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "Todo peso extra obliga al motor a trabajar más. Vaciar el maletero de cosas inútiles es ahorro gratis.",
+  "truco": "Tu coche no es un trastero con ruedas: cada kilo de más se paga en la gasolinera.",
+  "trampa": "Que la carga vaya 'bien colocada' es cuestión de seguridad, no de consumo: el peso pasa factura igual.",
+  "tags": [
+   "conduccion-eficiente",
+   "peso"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-011",
+  "mundo": 15,
+  "tema": "Conducción eficiente",
+  "pregunta": "Llevas la baca montada en el techo, pero vacía. ¿Consume más el vehículo?",
+  "imagen": null,
+  "opciones": [
+   "No: si va vacía no añade peso apreciable, así que no afecta.",
+   "Sí, porque empeora la aerodinámica del vehículo.",
+   "Solo aumenta el consumo cuando llueve o hay viento de cara."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La baca aumenta la resistencia al aire aunque vaya vacía, y eso se traduce en más consumo. Si no la usas, desmóntala.",
+  "truco": "La baca no cobra por peso, cobra por 'viento': aunque vaya vacía, frena el aire y chupa combustible.",
+  "trampa": "Te fijan la atención en el peso, pero el enemigo aquí es la aerodinámica: la baca rompe el 'perfil' del coche.",
+  "tags": [
+   "conduccion-eficiente",
+   "baca"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-012",
+  "mundo": 15,
+  "tema": "Medio ambiente y ZBE",
+  "pregunta": "¿Qué distintivos ambientales otorga la DGT a los vehículos?",
+  "imagen": null,
+  "opciones": [
+   "Verde, ámbar y rojo, como los colores de un semáforo.",
+   "A, B, C y D, según los años del vehículo.",
+   "0 emisiones, ECO, C y B."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Existen cuatro etiquetas ambientales: 0 emisiones, ECO, C y B. Los vehículos más contaminantes no tienen derecho a ninguna.",
+  "truco": "De más limpio a más sucio: 0, ECO, C, B… y por debajo, los que van 'sin pegatina'.",
+  "trampa": "La clasificación no va por antigüedad a secas, sino por tecnología y norma de emisiones del vehículo.",
+  "tags": [
+   "medio-ambiente",
+   "etiquetas-dgt"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-013",
+  "mundo": 15,
+  "tema": "Medio ambiente y ZBE",
+  "pregunta": "¿Qué vehículos llevan la etiqueta 0 emisiones (azul) de la DGT?",
+  "imagen": null,
+  "opciones": [
+   "Los menos contaminantes: eléctricos puros y algunos híbridos enchufables con gran autonomía eléctrica.",
+   "Todos los diésel modernos que hayan pasado la ITV.",
+   "Cualquier vehículo con menos de cuatro años de antigüedad, sea del tipo que sea."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La etiqueta 0 (azul) es la de los vehículos más limpios: eléctricos puros y ciertos híbridos enchufables de gran autonomía eléctrica. [VERIFICAR DGT 2026]",
+  "truco": "Cero humo, etiqueta 0: si enchufas el coche a la pared, apuntas a la pegatina azul.",
+  "trampa": "Un diésel moderno con ITV al día puede ser legal, pero de '0 emisiones' no tiene nada.",
+  "tags": [
+   "medio-ambiente",
+   "etiquetas-dgt"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-014",
+  "mundo": 15,
+  "tema": "Medio ambiente y ZBE",
+  "pregunta": "Un turismo antiguo no tiene derecho a ningún distintivo ambiental de la DGT. Eso significa que…",
+  "imagen": null,
+  "opciones": [
+   "puede solicitar la etiqueta B pagando la tasa correspondiente en Tráfico.",
+   "está entre los más contaminantes y sufrirá las mayores restricciones en las zonas de bajas emisiones.",
+   "tiene prohibido circular por cualquier vía pública de España."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Sin etiqueta = grupo más contaminante. Son los primeros vehículos en quedarse fuera de las zonas de bajas emisiones.",
+  "truco": "Sin pegatina, sin fiesta: las ZBE cierran la puerta primero a los que no tienen distintivo.",
+  "trampa": "Lo de 'prohibido circular por cualquier vía' se pasa de frenada: las restricciones son en las ZBE, no en toda España.",
+  "tags": [
+   "medio-ambiente",
+   "etiquetas-dgt",
+   "zbe"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-015",
+  "mundo": 15,
+  "tema": "Medio ambiente y ZBE",
+  "pregunta": "¿Qué es una Zona de Bajas Emisiones (ZBE)?",
+  "imagen": null,
+  "opciones": [
+   "Un área, normalmente urbana, donde se restringe el acceso de los vehículos más contaminantes según su distintivo ambiental.",
+   "Una zona donde está prohibido usar el claxon salvo emergencia.",
+   "Un tramo de vía por el que solo pueden circular vehículos eléctricos, sin excepción alguna."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "En una ZBE el acceso y la circulación se limitan según el distintivo ambiental del vehículo, para mejorar la calidad del aire.",
+  "truco": "ZBE = 'aquí se entra por pegatina': tu etiqueta ambiental es la llave.",
+  "trampa": "No es 'solo eléctricos': cada municipio regula qué etiquetas entran, y suele haber excepciones (residentes, emergencias…).",
+  "tags": [
+   "medio-ambiente",
+   "zbe"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-016",
+  "mundo": 15,
+  "tema": "Medio ambiente y ZBE",
+  "pregunta": "Como norma general, ¿qué municipios españoles están obligados a establecer una Zona de Bajas Emisiones?",
+  "imagen": null,
+  "opciones": [
+   "Únicamente las capitales de provincia.",
+   "Todos los municipios, sin importar su población.",
+   "Los de más de 50.000 habitantes."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "La ley de cambio climático obliga a los municipios de más de 50.000 habitantes a contar con una ZBE.",
+  "truco": "50.000 vecinos = ZBE obligatoria. Ciudad 'de las grandes', aire vigilado.",
+  "trampa": "Te tienta lo de 'capitales de provincia', pero el criterio legal es la población, no el título de la ciudad.",
+  "explicacion_larga": "La Ley 7/2021, de cambio climático y transición energética, obliga a los municipios de más de 50.000 habitantes (y a los territorios insulares) a establecer Zonas de Bajas Emisiones. También alcanza a municipios de más de 20.000 habitantes cuando superan los valores límite de calidad del aire. Cada ayuntamiento decide el perímetro y qué etiquetas ambientales pueden entrar, por eso las reglas cambian de una ciudad a otra: antes de entrar en una ciudad grande con un coche sin etiqueta o con etiqueta B, consulta su ordenanza.",
+  "tags": [
+   "medio-ambiente",
+   "zbe"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-017",
+  "mundo": 15,
+  "tema": "Medio ambiente y ZBE",
+  "pregunta": "Cambias el aceite del motor en casa. ¿Qué debes hacer con el aceite usado?",
+  "imagen": null,
+  "opciones": [
+   "Verterlo por el desagüe: para eso están las depuradoras.",
+   "Llevarlo a un punto limpio o entregarlo a un gestor autorizado.",
+   "Guardarlo en el garaje y mezclarlo con el aceite nuevo en el próximo cambio."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "El aceite usado es un residuo muy contaminante: solo puede acabar en un punto limpio, un taller o un gestor autorizado.",
+  "truco": "Lo que sale del coche no va ni al suelo ni al desagüe: va al punto limpio. Siempre.",
+  "trampa": "La depuradora no hace magia: una pequeña cantidad de aceite contamina muchísima agua.",
+  "tags": [
+   "medio-ambiente",
+   "residuos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-018",
+  "mundo": 15,
+  "tema": "Medio ambiente y ZBE",
+  "pregunta": "La batería vieja de tu vehículo…",
+  "imagen": null,
+  "opciones": [
+   "es un residuo muy contaminante: debe entregarse en un punto limpio, en un taller o a un gestor autorizado.",
+   "puede tirarse al contenedor de resto si está completamente descargada.",
+   "no contamina una vez agotada, porque ya no tiene electricidad."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Las baterías contienen plomo y ácidos muy contaminantes: siempre a punto limpio, taller o gestor autorizado.",
+  "truco": "Batería, neumáticos y aceite: el trío 'VIP' que nunca pisa el contenedor de casa.",
+  "trampa": "'Descargada' no significa 'inofensiva': el problema son el plomo y el ácido, no la electricidad que le quede.",
+  "tags": [
+   "medio-ambiente",
+   "residuos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-019",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "La carga de un vehículo debe ir dispuesta de forma que…",
+  "imagen": null,
+  "opciones": [
+   "pueda arrastrar por el suelo, siempre que no moleste a otros usuarios.",
+   "sobresalga todo lo posible, para hacer un solo viaje en lugar de dos.",
+   "no pueda arrastrar, caer a la vía ni comprometer la estabilidad del vehículo."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "La carga no puede arrastrar, caerse total o parcialmente ni desplazarse de manera que comprometa la estabilidad del vehículo.",
+  "truco": "La carga viaja como un buen copiloto: quieta, sujeta y sin sacar los pies del coche.",
+  "trampa": "'Siempre que no moleste' es el anzuelo: arrastrar carga está prohibido, moleste o no.",
+  "tags": [
+   "carga",
+   "estabilidad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-020",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "¿Puede la carga tapar parcialmente las luces o la placa de matrícula del vehículo?",
+  "imagen": null,
+  "opciones": [
+   "Sí, siempre que circules de día y con buena visibilidad.",
+   "No: la carga no debe ocultar los dispositivos de alumbrado y señalización ni las placas.",
+   "Solo puede tapar la placa delantera, nunca la trasera."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "La carga nunca puede ocultar luces, catadióptricos, placas de matrícula ni señales del vehículo.",
+  "truco": "Si la carga 'apaga' una luz o 'borra' la matrícula, esa carga va mal puesta. Sin excepciones.",
+  "trampa": "Lo de 'de día no hace falta' pica mucho: las placas y los catadióptricos deben verse siempre, con sol o sin él.",
+  "tags": [
+   "carga",
+   "alumbrado"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-021",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "En un camión destinado al transporte de mercancías, de más de 5 metros de longitud, una carga indivisible (una viga, por ejemplo) puede sobresalir, como máximo…",
+  "imagen": null,
+  "opciones": [
+   "2 metros por delante y 3 metros por detrás.",
+   "3 metros por delante y 2 metros por detrás.",
+   "nada: las cargas indivisibles exigen siempre transporte especial."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "En vehículos de mercancías de más de 5 metros, la carga indivisible puede sobresalir hasta 2 metros por delante y 3 por detrás.",
+  "truco": "Ordenado como al leer: primero el 2 (delante), luego el 3 (detrás). Delante 2, detrás 3.",
+  "trampa": "La trampa clásica es invertir las cifras. Por detrás se permite más (3 m) porque es donde va la señalización V-20.",
+  "explicacion_larga": "El artículo 15 del Reglamento General de Circulación permite que, en los vehículos destinados exclusivamente al transporte de mercancías, las cargas indivisibles (vigas, postes, tubos…) sobresalgan dentro de unos límites: si el vehículo mide más de 5 metros, hasta 2 metros por la parte delantera y hasta 3 metros por la trasera; si mide 5 metros o menos, hasta un tercio de su longitud por cada extremo. Ojo: en los turismos rige otra regla distinta (10 % de la longitud por detrás, 15 % si la carga es indivisible). Todo saliente posterior debe señalizarse con el panel V-20 y la carga debe ir perfectamente sujeta para que no oscile ni caiga.",
+  "tags": [
+   "carga",
+   "salientes"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-022",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "En un turismo de 4,5 metros de longitud, ¿cuánto puede sobresalir por detrás una carga indivisible (una escalera, por ejemplo)?",
+  "imagen": null,
+  "opciones": [
+   "Hasta 3 metros, igual que en los camiones de más de 5 metros.",
+   "Hasta un tercio de su longitud: en este caso, 1,5 metros.",
+   "Hasta el 15 % de su longitud: en este caso, unos 67 centímetros."
+  ],
+  "correcta": 2,
+  "dificultad": 5,
+  "explicacion_corta": "En los turismos la carga puede sobresalir por detrás hasta el 10 % de la longitud del vehículo y, si es indivisible, hasta el 15 %: 4,5 m × 0,15 ≈ 0,67 m.",
+  "truco": "Turismo = regla del 10-15: un 10 % si la carga se puede partir, un 15 % si es de una sola pieza.",
+  "trampa": "El 'tercio de la longitud' es la regla de los vehículos de MERCANCÍAS de 5 metros o menos. En un turismo mandan los porcentajes: 10 % o 15 %.",
+  "explicacion_larga": "El artículo 15 del Reglamento General de Circulación distingue dos regímenes. En los vehículos destinados exclusivamente al transporte de mercancías, las cargas indivisibles pueden sobresalir 2 metros por delante y 3 por detrás (si el vehículo supera los 5 metros) o un tercio de la longitud por cada extremo (si mide 5 metros o menos). En los turismos, en cambio, la carga solo puede sobresalir por la parte posterior hasta el 10 % de la longitud del vehículo, o el 15 % si es indivisible: en uno de 4,5 metros, unos 45 y 67 centímetros respectivamente. Y todo saliente posterior se señaliza siempre con el panel V-20.",
+  "tags": [
+   "carga",
+   "salientes"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-023",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "Llevas una carga que sobresale por detrás del vehículo. ¿Cómo debes señalizar el saliente?",
+  "imagen": null,
+  "opciones": [
+   "Atando al extremo un trapo rojo o de cualquier color llamativo.",
+   "No es necesario señalizarlo si se circula de día.",
+   "Con el panel V-20, de franjas diagonales rojas y blancas, colocado en el extremo posterior de la carga."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Los salientes posteriores de carga se señalizan con el panel V-20 (franjas diagonales rojas y blancas) en el extremo de la carga.",
+  "truco": "Carga que asoma, V-20 que avisa: rayas rojas y blancas en la punta.",
+  "trampa": "El trapo rojo es de película antigua: lo reglamentario es el panel V-20, de día y de noche.",
+  "tags": [
+   "carga",
+   "v-20"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-024",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "Si la carga sobresale por detrás ocupando toda la anchura del vehículo, ¿cómo se señaliza?",
+  "imagen": null,
+  "opciones": [
+   "Con un único panel V-20 colocado en el centro de la carga.",
+   "Con dos paneles V-20, uno en cada extremo, formando geometría de 'V' invertida.",
+   "Basta con circular con las luces de emergencia encendidas durante todo el trayecto."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Cuando el saliente ocupa toda la anchura, se colocan dos paneles V-20 transversalmente, uno en cada extremo, en forma de 'V' invertida.",
+  "truco": "Saliente a todo lo ancho = doble aviso: dos V-20 haciendo el 'tejadillo' (V invertida).",
+  "trampa": "Un solo panel en el centro parece suficiente, pero la norma exige marcar los DOS extremos cuando el saliente va a todo lo ancho.",
+  "explicacion_larga": "El panel V-20 (50 × 50 cm, franjas diagonales rojas y blancas retrorreflectantes) se coloca en el extremo posterior de la carga, perpendicular al eje del vehículo. Cuando la carga sobresale longitudinalmente por toda la anchura de la parte posterior, un solo panel no delimita bien el peligro: deben colocarse dos paneles transversalmente, uno en cada extremo de la carga, formando una geometría de 'V' invertida. Así, quien circula detrás percibe el ancho real del saliente.",
+  "tags": [
+   "carga",
+   "v-20",
+   "salientes"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-025",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "Se te cae parte de la carga en plena calzada. ¿Qué debes hacer?",
+  "imagen": null,
+  "opciones": [
+   "Continuar la marcha: retirar objetos de la calzada corresponde al servicio de conservación de la vía.",
+   "Detenerte en el propio carril y recogerla inmediatamente, pase lo que pase.",
+   "Retirarla lo antes posible si puedes hacerlo con seguridad; si no, señalizar el obstáculo y avisar a los agentes."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Quien crea un obstáculo en la vía debe hacerlo desaparecer lo antes posible y, mientras tanto, tomar medidas para que los demás lo adviertan.",
+  "truco": "Tu carga, tu marrón: retírala si es seguro; si no, avisa y señaliza. Lo que no vale es seguir como si nada.",
+  "trampa": "Recogerla 'pase lo que pase' puede provocar algo peor que el propio obstáculo: primero tu seguridad, luego la carga.",
+  "tags": [
+   "carga",
+   "obstaculos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-026",
+  "mundo": 15,
+  "tema": "Transporte de carga",
+  "pregunta": "¿Cómo se transporta correctamente la carga en el maletero y en el habitáculo de un turismo?",
+  "imagen": null,
+  "opciones": [
+   "Repartida y bien sujeta, con lo más pesado abajo, y sin objetos sueltos dentro del habitáculo.",
+   "Con lo más pesado arriba del todo, para poder descargarlo primero al llegar.",
+   "Suelta, para que pueda acompañar los movimientos del coche en las curvas."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "La carga va repartida, sujeta y con lo pesado abajo. Los objetos sueltos en el habitáculo salen disparados en una frenada.",
+  "truco": "Lo gordo, abajo y al centro; lo suelto, ni en la bandeja: en un frenazo, un móvil se convierte en una piedra.",
+  "trampa": "Que la carga 'acompañe los movimientos' suena flexible y natural… y es justo lo que desestabiliza el coche.",
+  "tags": [
+   "carga",
+   "distribucion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-027",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "¿Cuántas personas pueden viajar como máximo en un turismo?",
+  "imagen": null,
+  "opciones": [
+   "Tantas como plazas autorizadas figuren en su documentación, contando la del conductor.",
+   "Todas las que quepan, siempre que lleven el cinturón abrochado.",
+   "Una más de las plazas autorizadas, si el trayecto es corto y urbano."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "El límite son las plazas autorizadas que constan en la documentación del vehículo, incluida la del conductor.",
+  "truco": "Las plazas las dicta el papel (la ficha técnica), no el tamaño de los asientos.",
+  "trampa": "Ojo: los niños también cuentan como ocupantes, por pequeños que sean. No hay 'medio pasajero'.",
+  "tags": [
+   "pasajeros",
+   "plazas"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-028",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "Como norma general, ¿hasta qué estatura deben usar los niños un sistema de retención infantil adaptado a su talla y peso?",
+  "imagen": null,
+  "opciones": [
+   "Hasta cumplir los 12 años, midan lo que midan.",
+   "Hasta los 135 centímetros de estatura.",
+   "Hasta los 150 centímetros de estatura."
+  ],
+  "correcta": 1,
+  "dificultad": 1,
+  "explicacion_corta": "El sistema de retención infantil es obligatorio para quienes midan 135 cm o menos, sea cual sea su edad.",
+  "truco": "1-3-5: hasta el metro treinta y cinco, sillita siempre.",
+  "trampa": "La ley habla de ESTATURA, no de edad: hay niños de 10 años que ya superan los 135 cm y de 12 que no llegan.",
+  "tags": [
+   "ninos",
+   "sri"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-029",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "Como norma general, ¿dónde deben viajar los menores de 135 cm o menos con su sistema de retención?",
+  "imagen": null,
+  "opciones": [
+   "En el asiento delantero, para que el conductor pueda vigilarlos mejor.",
+   "En la plaza que decidan sus padres, delante o detrás indistintamente.",
+   "En los asientos traseros del vehículo."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La regla general es: niños de 135 cm o menos, con su sistema de retención y en los asientos traseros.",
+  "truco": "Peques atrás por norma; delante solo cuando la ley abre la puerta (y son pocas puertas).",
+  "trampa": "Lo de 'vigilarlos mejor' apela al instinto de los padres, pero la plaza más segura y la que exige la norma es detrás.",
+  "tags": [
+   "ninos",
+   "sri"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-030",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "¿Cuándo puede un menor de 135 cm o menos viajar en el asiento delantero con su sistema de retención?",
+  "imagen": null,
+  "opciones": [
+   "Cuando el vehículo no tenga asientos traseros, estén ya ocupados por otros menores o no se puedan instalar allí todos los sistemas de retención.",
+   "Cuando el trayecto sea inferior a 10 kilómetros por vías urbanas.",
+   "En ningún caso: delante solo pueden viajar mayores de edad."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Delante solo en tres supuestos: sin asientos traseros, traseros ocupados por otros menores en sus sillitas, o imposibilidad de instalar allí todos los sistemas.",
+  "truco": "Delante solo si atrás 'no hay sitio legal': no existen asientos, los ocupan otros peques o no cabe la sillita.",
+  "trampa": "El 'en ningún caso' pica a los que se saben la norma general pero no las tres excepciones.",
+  "explicacion_larga": "La norma general obliga a que los menores con estatura igual o inferior a 135 cm viajen detrás con su sistema de retención. Excepcionalmente pueden ocupar el asiento delantero, siempre con su sistema de retención adecuado, cuando: 1) el vehículo no tiene asientos traseros; 2) todos los asientos traseros están ya ocupados por otros menores de igual o inferior estatura con sus sistemas; o 3) no es posible instalar en los asientos traseros todos los sistemas de retención necesarios. Y un detalle vital: si el niño va delante a contramarcha, el airbag frontal del pasajero debe estar desactivado.",
+  "tags": [
+   "ninos",
+   "sri",
+   "excepciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-031",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "Un niño de 10 años que ya mide 1,40 metros…",
+  "imagen": null,
+  "opciones": [
+   "debe seguir usando un sistema de retención infantil hasta cumplir los 12 años.",
+   "puede usar el cinturón de seguridad del vehículo, como un adulto.",
+   "puede viajar sin cinturón en trayectos urbanos, porque ya no le aplica la norma infantil."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "Superados los 135 cm, puede usar el cinturón del vehículo. La DGT recomienda, no obstante, mantener el alzador hasta los 150 cm.",
+  "truco": "Pasado el metro treinta y cinco, el cinturón 'de mayores' ya es legal; el alzador hasta 150 cm es el extra recomendado.",
+  "trampa": "El listón legal es la estatura (135 cm), no la edad: con 1,40 m la sillita ya no es obligatoria aunque tenga 10 años.",
+  "tags": [
+   "ninos",
+   "sri",
+   "cinturon"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-032",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "Como norma general, ¿a partir de qué edad puede viajar un menor como pasajero de una motocicleta?",
+  "imagen": null,
+  "opciones": [
+   "A partir de los 14 años.",
+   "A partir de los 12 años.",
+   "A partir de los 16 años."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "La regla general es que los pasajeros de motocicleta o ciclomotor deben ser mayores de 12 años.",
+  "truco": "Moto de 'paquete': regla del 12. Antes de esa edad, solo la excepción familiar de los 7 años.",
+  "trampa": "El 14 y el 16 suenan a otras edades del mundo moto (AM, A1)… pero para ir de pasajero la cifra es 12.",
+  "tags": [
+   "ninos",
+   "motocicleta",
+   "pasajeros"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-033",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "¿Puede un niño de 9 años viajar como pasajero en una motocicleta?",
+  "imagen": null,
+  "opciones": [
+   "No: hasta los 12 años está prohibido en todos los casos.",
+   "Sí, con cualquier conductor, siempre que el trayecto sea urbano.",
+   "Sí, excepcionalmente, si conduce su padre, madre, tutor o una persona mayor de edad autorizada por ellos."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Los mayores de 7 años pueden ir de pasajeros, de forma excepcional, si conduce el padre, la madre, el tutor o un adulto autorizado por ellos.",
+  "truco": "Regla 12… con 'cláusula familiar' desde los 7: papá, mamá, tutor o adulto con su permiso.",
+  "trampa": "El 'prohibido en todos los casos' pesca a quien se sabe la norma general de los 12 pero no la excepción de los 7 años.",
+  "explicacion_larga": "La norma general fija en más de 12 años la edad mínima para viajar de pasajero en motocicleta o ciclomotor. Pero existe una excepción: los mayores de 7 años pueden hacerlo cuando el conductor es su padre, madre, tutor o una persona mayor de edad autorizada por ellos. En todo caso el menor debe llevar casco homologado de su talla, ir a horcajadas con los pies apoyados en los reposapiés laterales, y la moto debe estar homologada para dos plazas. Por debajo de los 7 años, prohibido con cualquier conductor.",
+  "tags": [
+   "ninos",
+   "motocicleta",
+   "excepciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-034",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "Cuando un menor viaja legalmente como pasajero de una moto, debe ir…",
+  "imagen": null,
+  "opciones": [
+   "a horcajadas, con los pies apoyados en los reposapiés laterales y con casco de su talla.",
+   "sentado de lado, bien agarrado a la cintura del conductor.",
+   "delante del conductor, entre sus brazos, para que lo lleve controlado."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "El pasajero (menor o no) va detrás del conductor, a horcajadas, con los pies en los reposapiés y casco homologado de su talla.",
+  "truco": "De paquete se va como a caballo: una pierna a cada lado, pies en los estribos y casco a medida.",
+  "trampa": "Llevar al niño 'delante y controlado' parece protector, pero es ilegal y peligrosísimo: el pasajero siempre va detrás.",
+  "tags": [
+   "ninos",
+   "motocicleta",
+   "casco"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-035",
+  "mundo": 15,
+  "tema": "Pasajeros y niños",
+  "pregunta": "¿Cómo debe llevarse el casco al circular en motocicleta?",
+  "imagen": null,
+  "opciones": [
+   "Homologado y correctamente abrochado, tanto el conductor como el pasajero.",
+   "Basta con llevarlo puesto sobre la cabeza, aunque vaya sin abrochar.",
+   "Es obligatorio solo para el conductor; el pasajero decide si lo usa."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "El casco debe ser homologado e ir correctamente abrochado, y es obligatorio para conductor y pasajero.",
+  "truco": "Casco sin abrochar = casco de atrezo: en el primer golpe sale volando.",
+  "trampa": "El matiz está en 'abrochado': llevarlo suelto equivale, legal y físicamente, a no llevarlo.",
+  "tags": [
+   "casco",
+   "motocicleta",
+   "pasajeros"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-036",
+  "mundo": 15,
+  "tema": "Animales a bordo",
+  "pregunta": "Viajas con tu perro en el coche. ¿Cómo debe ir?",
+  "imagen": null,
+  "opciones": [
+   "Suelto en los asientos traseros, que para eso son suyos.",
+   "En brazos del copiloto, bien agarrado durante todo el trayecto.",
+   "Sujeto o separado del habitáculo (arnés con anclaje, transportín o rejilla), sin interferir en la conducción."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "Los animales deben viajar sujetos o separados de los ocupantes, de forma que no interfieran en la conducción.",
+  "truco": "Perro suelto = proyectil peludo en cada frenazo. Arnés, transportín o rejilla: elige uno.",
+  "trampa": "'En brazos del copiloto' parece cariñoso, pero en un golpe a 50 km/h nadie puede sujetar a un perro.",
+  "tags": [
+   "animales",
+   "seguridad"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-037",
+  "mundo": 15,
+  "tema": "Animales a bordo",
+  "pregunta": "Según la normativa, el conductor debe cuidar que los animales que transporta…",
+  "imagen": null,
+  "opciones": [
+   "vayan colocados de forma que no interfieran con él ni comprometan su libertad de movimientos, su campo de visión o su atención.",
+   "viajen siempre en el asiento delantero, donde puede verlos.",
+   "lleven abrochado un cinturón de seguridad convencional de tres puntos."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "La obligación legal es que los animales (y objetos) transportados no interfieran: el conductor debe conservar libertad de movimientos, visión y atención.",
+  "truco": "La regla de oro a bordo: nada ni nadie puede 'tocarle' al conductor las manos, los ojos o la cabeza.",
+  "trampa": "El cinturón de personas no vale para un perro: lo suyo es arnés homologado con anclaje, transportín o rejilla separadora.",
+  "tags": [
+   "animales",
+   "distracciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-038",
+  "mundo": 15,
+  "tema": "Documentación",
+  "pregunta": "¿Qué documentación debes llevar (en formato físico o digital) cuando conduces tu turismo por España?",
+  "imagen": null,
+  "opciones": [
+   "Solo el DNI: el resto ya consta en los ordenadores de la DGT.",
+   "El permiso de conducción, el permiso de circulación y la tarjeta de ITV del vehículo.",
+   "Únicamente el recibo del seguro y el justificante del impuesto de circulación."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "Al conducir debes llevar tu permiso de conducción y la documentación del vehículo: permiso de circulación y tarjeta de ITV.",
+  "truco": "El trío del papeleo: tu carné, el 'DNI del coche' (permiso de circulación) y su 'historial médico' (tarjeta ITV).",
+  "trampa": "'Ya consta en los ordenadores' no te exime de llevarla: la obligación de llevar la documentación (física o en miDGT) sigue vigente.",
+  "tags": [
+   "documentacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-039",
+  "mundo": 15,
+  "tema": "Documentación",
+  "pregunta": "El seguro de responsabilidad civil obligatorio del vehículo…",
+  "imagen": null,
+  "opciones": [
+   "hay que contratarlo obligatoriamente, pero no es exigible llevar el justificante: los agentes lo comprueban telemáticamente.",
+   "es voluntario para los turismos de más de 25 años considerados históricos.",
+   "obliga a llevar el recibo pegado en el parabrisas, junto a la pegatina de la ITV."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Tener seguro es obligatorio siempre; llevar encima el justificante, no: los agentes lo verifican en el fichero informático de vehículos asegurados.",
+  "truco": "El seguro se TIENE, no se enseña: la Guardia Civil lo mira en la 'nube' (el fichero FIVA), no en tu guantera.",
+  "trampa": "El recibo en el parabrisas era costumbre antigua: hoy no es exigible llevar justificante, pero circular sin seguro sigue estando prohibidísimo.",
+  "explicacion_larga": "Todo vehículo a motor debe tener contratado el seguro de responsabilidad civil obligatorio para circular. Lo que cambió hace años es la forma de acreditarlo: ya no es exigible llevar físicamente el justificante ni exhibir ningún adhesivo, porque los agentes consultan en tiempo real el Fichero Informativo de Vehículos Asegurados (FIVA). Que no te lo pidan no significa que sea opcional: circular sin seguro conlleva una sanción económica importante y la inmovilización o el depósito del vehículo.",
+  "tags": [
+   "documentacion",
+   "seguro"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-040",
+  "mundo": 15,
+  "tema": "Documentación",
+  "pregunta": "Un agente te pide el permiso de conducción y se lo muestras desde la app oficial miDGT. En España, esto…",
+  "imagen": null,
+  "opciones": [
+   "tiene la misma validez legal que mostrar el documento físico.",
+   "no sirve: la app es meramente informativa y el agente puede denunciarte.",
+   "solo sirve si además llevas una fotocopia compulsada del permiso."
+  ],
+  "correcta": 0,
+  "dificultad": 3,
+  "explicacion_corta": "En territorio español, la documentación mostrada desde la app oficial miDGT tiene plena validez legal, igual que la física.",
+  "truco": "miDGT = tu carné en el móvil, con todas las de la ley… mientras no cruces la frontera.",
+  "trampa": "Lo de 'meramente informativa' era verdad de otras apps y otros tiempos: miDGT es oficial y los agentes pueden verificarla al momento.",
+  "tags": [
+   "documentacion",
+   "midgt"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-041",
+  "mundo": 15,
+  "tema": "Documentación",
+  "pregunta": "Vas a hacer un viaje en coche por Francia. ¿Te vale la documentación digital de la app miDGT?",
+  "imagen": null,
+  "opciones": [
+   "Sí, es válida en toda la Unión Europea.",
+   "No: fuera de España debes llevar los documentos en soporte físico.",
+   "Sí, siempre que el teléfono tenga cobertura de datos en el extranjero."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "La validez de miDGT se limita al territorio español: para conducir por el extranjero necesitas la documentación física.",
+  "truco": "miDGT es como algunas tarjetas regalo: solo funciona 'en tienda' (España). Para salir fuera, papeles de verdad a la guantera.",
+  "trampa": "Que España esté en la UE te empuja al 'vale en toda Europa'… pero cada país reconoce sus propios formatos: fuera, documento físico.",
+  "explicacion_larga": "La app miDGT otorga a tu permiso de conducción y a la documentación del vehículo la misma validez que los documentos físicos, pero únicamente dentro de España, porque es la normativa española la que le da ese valor. En el extranjero, las autoridades locales no están obligadas a aceptar una app española, así que debes llevar el permiso de conducción físico y la documentación del vehículo en papel. Consejo de viejo profesor: aunque circules por España, llevar los físicos de respaldo nunca sobra (batería agotada, móvil roto…).",
+  "tags": [
+   "documentacion",
+   "midgt",
+   "extranjero"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-042",
+  "mundo": 15,
+  "tema": "Documentación",
+  "pregunta": "¿Qué documento recoge las características técnicas del vehículo y acredita que ha superado las inspecciones técnicas?",
+  "imagen": null,
+  "opciones": [
+   "El permiso de circulación.",
+   "El recibo del impuesto municipal de circulación.",
+   "La tarjeta de ITV (ficha técnica)."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "La tarjeta de ITV o ficha técnica recoge las características del vehículo y las anotaciones de las inspecciones superadas.",
+  "truco": "Permiso de circulación = 'DNI' del coche; tarjeta ITV = su 'cartilla médica' con todas las revisiones apuntadas.",
+  "trampa": "El permiso de circulación identifica al vehículo y a su titular, pero las inspecciones técnicas se anotan en la tarjeta de ITV.",
+  "tags": [
+   "documentacion",
+   "itv"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-043",
+  "mundo": 15,
+  "tema": "Documentación",
+  "pregunta": "Tienes el permiso de conducción en vigor, pero te lo has dejado en casa y no llevas la app miDGT. Si te paran…",
+  "imagen": null,
+  "opciones": [
+   "no pasa nada si le facilitas al agente tu número de DNI.",
+   "pueden sancionarte por no llevar la documentación, aunque tu permiso sea perfectamente válido.",
+   "cometes un delito contra la seguridad vial castigado con penas de prisión."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "No llevar encima la documentación obligatoria es una infracción sancionable, aunque el permiso exista y esté en vigor.",
+  "truco": "Una cosa es TENER carné y otra LLEVARLO: olvidarlo en casa cuesta una multa (leve), no el carné.",
+  "trampa": "No confundas: conducir sin haber obtenido NUNCA el permiso puede ser delito; llevarlo olvidado en casa es solo una sanción leve.",
+  "tags": [
+   "documentacion",
+   "sanciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-044",
+  "mundo": 15,
+  "tema": "Documentación",
+  "pregunta": "Circular con un vehículo que carece del seguro obligatorio…",
+  "imagen": null,
+  "opciones": [
+   "está permitido durante los primeros 30 días tras la compra del vehículo.",
+   "solo tiene consecuencias si te ves implicado en un accidente.",
+   "está prohibido: conlleva una sanción económica y la inmovilización o depósito del vehículo."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Sin seguro obligatorio no se puede circular: hay multa y el vehículo puede ser inmovilizado o depositado.",
+  "truco": "Sin seguro, el coche no sale del garaje: ni un metro, ni 'solo hasta la gasolinera'.",
+  "trampa": "'Solo si hay accidente' es la mentira que más caro sale: la multa llega aunque no roces a nadie, y el coche se queda inmovilizado.",
+  "tags": [
+   "documentacion",
+   "seguro",
+   "sanciones"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-045",
+  "mundo": 15,
+  "tema": "Permiso por puntos",
+  "pregunta": "Como norma general, ¿cuál es el saldo inicial de puntos de un conductor?",
+  "imagen": null,
+  "opciones": [
+   "10 puntos.",
+   "15 puntos.",
+   "12 puntos."
+  ],
+  "correcta": 2,
+  "dificultad": 1,
+  "explicacion_corta": "El saldo inicial general es de 12 puntos (8 para conductores noveles).",
+  "truco": "Naces conduciendo con 12; el 15 hay que ganárselo portándose bien durante años.",
+  "trampa": "El 15 existe, pero es el saldo MÁXIMO al que puedes llegar por buen comportamiento, no el inicial.",
+  "tags": [
+   "puntos"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-046",
+  "mundo": 15,
+  "tema": "Permiso por puntos",
+  "pregunta": "Un conductor novel que acaba de obtener su primer permiso empieza con un saldo de…",
+  "imagen": null,
+  "opciones": [
+   "8 puntos.",
+   "12 puntos, como cualquier otro conductor.",
+   "6 puntos hasta que apruebe un curso de perfeccionamiento."
+  ],
+  "correcta": 0,
+  "dificultad": 2,
+  "explicacion_corta": "Los conductores noveles parten con 8 puntos, no con 12.",
+  "truco": "Novel = 8: empiezas con 'sueldo de becario' y asciendes a los 12 con dos años sin líos.",
+  "trampa": "El '12 como cualquier otro' pica a quien no sabe que a los nuevos se les da un margen menor los primeros años.",
+  "tags": [
+   "puntos",
+   "novel"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-047",
+  "mundo": 15,
+  "tema": "Permiso por puntos",
+  "pregunta": "¿Cuándo pasa un conductor novel de 8 a 12 puntos?",
+  "imagen": null,
+  "opciones": [
+   "Automáticamente a los 3 años de carné, aunque haya sido sancionado.",
+   "A los 2 años, si no ha cometido infracciones que resten puntos.",
+   "Cuando renueva el permiso por primera vez, a los 10 años."
+  ],
+  "correcta": 1,
+  "dificultad": 3,
+  "explicacion_corta": "El novel alcanza los 12 puntos tras 2 años sin sanciones firmes que detraigan puntos.",
+  "truco": "Dos años 'limpio' y subes de nivel: de los 8 del novato a los 12 del veterano.",
+  "trampa": "No es automático por antigüedad: si en esos 2 años te quitan puntos, el ascenso a 12 se te escapa.",
+  "tags": [
+   "puntos",
+   "novel"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-048",
+  "mundo": 15,
+  "tema": "Permiso por puntos",
+  "pregunta": "¿Cómo puede un conductor llegar al saldo máximo de 15 puntos?",
+  "imagen": null,
+  "opciones": [
+   "Superando un curso intensivo de conducción segura de fin de semana.",
+   "Abonando una tasa especial en la Jefatura Provincial de Tráfico.",
+   "Sin cometer infracciones que resten puntos: +2 puntos a los 3 años (hasta 14) y +1 más tras otros 3 años (hasta 15)."
+  ],
+  "correcta": 2,
+  "dificultad": 4,
+  "explicacion_corta": "Los puntos extra son un premio a la constancia: 12 + 2 (tres años limpios) + 1 (otros tres) = 15 como máximo.",
+  "truco": "La escalera del buen conductor: 12 → 14 → 15. Cada peldaño cuesta 3 años sin una sola resta.",
+  "trampa": "Los puntos de bonificación no se compran ni se sacan en un cursillo: solo los da el tiempo sin sanciones.",
+  "explicacion_larga": "El saldo del permiso por puntos premia al que conduce bien de forma sostenida. Partiendo de los 12 puntos generales, si pasas 3 años sin cometer infracciones que detraigan puntos recibes 2 puntos de bonificación (llegas a 14) y, si encadenas otros 3 años limpios, recibes 1 punto más hasta el máximo legal de 15. Ningún curso ni tasa permite superar ese techo: los cursos sirven para RECUPERAR puntos perdidos, nunca para acumular por encima de tu saldo.",
+  "tags": [
+   "puntos",
+   "bonificacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-049",
+  "mundo": 15,
+  "tema": "Permiso por puntos",
+  "pregunta": "Has perdido varios puntos, pero no todos. Con un curso de sensibilización y reeducación vial puedes recuperar…",
+  "imagen": null,
+  "opciones": [
+   "hasta 4 puntos y, como norma general, solo puedes hacer un curso de este tipo cada 2 años.",
+   "hasta 6 puntos, tantas veces al año como necesites.",
+   "todos los puntos perdidos, sin límite alguno."
+  ],
+  "correcta": 0,
+  "dificultad": 5,
+  "explicacion_corta": "Desde noviembre de 2024, el curso de recuperación parcial permite recuperar como máximo 4 puntos (antes eran 6) y solo puede hacerse, en general, una vez cada 2 años.",
+  "truco": "Curso parcial = parche de 4 puntos como mucho, y no puedes 'parchear' más que una vez cada 2 años.",
+  "trampa": "Los 6 puntos existieron hasta 2024: si estudiaste con material antiguo, ahí es donde te cazan. Hoy son 4.",
+  "explicacion_larga": "Desde noviembre de 2024, con la nueva orden ministerial que regula estos cursos, la recuperación parcial de puntos permite obtener un máximo de 4 puntos (antes eran 6) mediante un curso de al menos 10 horas, sin superar nunca tu saldo inicial. Como norma general solo puede hacerse un curso cada 2 años; los conductores profesionales pueden hacerlo cada año. Además, se prevén cursos de conducción segura y eficiente que bonifican hasta 2 puntos. Si la duda te asalta en el examen, quédate con la cifra actual: 4.",
+  "tags": [
+   "puntos",
+   "cursos",
+   "recuperacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-050",
+  "mundo": 15,
+  "tema": "Permiso por puntos",
+  "pregunta": "Si pierdes parte de tus puntos (no todos), ¿cómo recuperas el saldo inicial de 12 sin hacer ningún curso?",
+  "imagen": null,
+  "opciones": [
+   "Es imposible: los puntos perdidos solo vuelven con cursos.",
+   "Pagando las multas dentro del periodo voluntario con descuento.",
+   "Dejando pasar 2 años sin ser sancionado en firme con infracciones que resten puntos."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Tras 2 años sin sanciones firmes que detraigan puntos, recuperas automáticamente el saldo inicial de 12.",
+  "truco": "El tiempo cura los puntos: 2 años sin pecar y el marcador vuelve solo a 12.",
+  "trampa": "Pagar la multa con descuento reduce la factura, pero no te devuelve ni un punto: eso solo lo hacen el tiempo o los cursos.",
+  "tags": [
+   "puntos",
+   "recuperacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-051",
+  "mundo": 15,
+  "tema": "Permiso por puntos",
+  "pregunta": "Te quedas con 0 puntos y pierdes la vigencia del permiso. Para volver a conducir debes…",
+  "imagen": null,
+  "opciones": [
+   "esperar 5 años y solicitar un permiso completamente nuevo, con prácticas incluidas.",
+   "superar, tras el plazo legal (6 meses como norma general), un curso de sensibilización y reeducación vial y una prueba teórica en la DGT.",
+   "abonar únicamente una tasa de rehabilitación en cualquier Jefatura de Tráfico."
+  ],
+  "correcta": 1,
+  "dificultad": 4,
+  "explicacion_corta": "Perdida la vigencia por puntos: esperar 6 meses (3 si eres profesional), hacer el curso de reeducación y aprobar una prueba teórica en la DGT.",
+  "truco": "El 'castigo' del cero tiene tres patas: paciencia (6 meses), pupitre (curso) y examen (teórico otra vez).",
+  "trampa": "Ni son 5 años ni basta con pagar: hay que volver a demostrar conocimientos, y arrancas de nuevo con solo 8 puntos, como un novel.",
+  "explicacion_larga": "Quien agota su saldo de puntos pierde la vigencia del permiso y no puede conducir. Para recuperarlo debe esperar 6 meses como norma general (3 meses para conductores profesionales), realizar completo el curso de sensibilización y reeducación vial de recuperación del permiso y superar después una prueba de control de conocimientos en la Jefatura de Tráfico. El permiso recuperado nace con un saldo de 8 puntos, igual que el de un conductor novel, y habrá que ganarse otra vez los 12 con dos años de buen comportamiento.",
+  "tags": [
+   "puntos",
+   "perdida-vigencia",
+   "recuperacion"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-052",
+  "mundo": 15,
+  "tema": "El permiso B y su vigencia",
+  "pregunta": "El permiso de conducción de la clase B autoriza a conducir automóviles de hasta…",
+  "imagen": null,
+  "opciones": [
+   "3.500 kg de MMA y 9 plazas, incluida la del conductor.",
+   "5.000 kg de MMA y 12 plazas, incluida la del conductor.",
+   "2.500 kg de MMA y 5 plazas como máximo."
+  ],
+  "correcta": 0,
+  "dificultad": 1,
+  "explicacion_corta": "El B cubre automóviles de MMA no superior a 3.500 kg y con un máximo de 9 plazas, contando la del conductor.",
+  "truco": "B de Básico: 3.500 kilos y 9 plazas, contándote a ti al volante.",
+  "trampa": "El detalle que se escapa: en esas 9 plazas el conductor CUENTA. Con 10 asientos ya hablamos del permiso D1.",
+  "tags": [
+   "permiso-b"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-053",
+  "mundo": 15,
+  "tema": "El permiso B y su vigencia",
+  "pregunta": "Con el permiso B, ¿qué remolque puedes llevar enganchado siempre, sea cual sea la masa del conjunto y sin autorizaciones adicionales?",
+  "imagen": null,
+  "opciones": [
+   "Ninguno: cualquier remolque exige un permiso o autorización específica.",
+   "Cualquier remolque, sin límite de masa, si el coche puede arrastrarlo.",
+   "Un remolque ligero, de hasta 750 kg de MMA."
+  ],
+  "correcta": 2,
+  "dificultad": 2,
+  "explicacion_corta": "Con el B siempre puedes enganchar un remolque ligero (hasta 750 kg de MMA). Uno más pesado también cabe sin trámites si el conjunto no supera los 3.500 kg; por encima, B96 o B+E.",
+  "truco": "Con el B, remolque 'de andar por casa': hasta 750 kilos, siempre. Para conjuntos pesados entran en juego el B96 o el B+E.",
+  "trampa": "'Si el coche puede arrastrarlo' apela a la lógica mecánica, pero el límite lo pone tu permiso, no la potencia del coche.",
+  "tags": [
+   "permiso-b",
+   "remolque"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-054",
+  "mundo": 15,
+  "tema": "El permiso B y su vigencia",
+  "pregunta": "Con más de 3 años de antigüedad del permiso B puedes conducir…",
+  "imagen": null,
+  "opciones": [
+   "motocicletas de hasta 125 cm³ (las que autoriza el permiso A1), pero únicamente dentro de España.",
+   "cualquier motocicleta, también fuera de España.",
+   "solo ciclomotores de hasta 50 cm³, como cualquier titular del B."
+  ],
+  "correcta": 0,
+  "dificultad": 4,
+  "explicacion_corta": "Con 3 años de B puedes llevar en territorio español las motos del A1 (hasta 125 cm³ y potencia limitada). [VERIFICAR DGT 2026]",
+  "truco": "La regla del B motero: 3 años de carné, 125 'de cilindrada' y frontera española como límite.",
+  "trampa": "El matiz que suspende: esa equivalencia NO convierte tu B en un A1 de verdad; al cruzar la frontera con la moto, se esfuma.",
+  "explicacion_larga": "Los titulares del permiso B con más de 3 años de antigüedad pueden conducir en España las motocicletas que autoriza el permiso A1: hasta 125 cm³, potencia máxima de 11 kW y relación potencia/peso de hasta 0,1 kW/kg. Es una habilitación nacional: no figura como permiso A1 en tu carné, así que fuera de España no tiene validez. Ojo: la DGT tiene anunciada una reforma que exigirá un curso de formación a los nuevos conductores B que quieran dar el salto a la 125 (sin efecto retroactivo para quienes ya la conducen); mientras no se publique en el BOE, basta con los 3 años de antigüedad.",
+  "tags": [
+   "permiso-b",
+   "motocicleta"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-055",
+  "mundo": 15,
+  "tema": "El permiso B y su vigencia",
+  "pregunta": "Como norma general, ¿cuál es el periodo de vigencia del permiso B para un conductor menor de 65 años?",
+  "imagen": null,
+  "opciones": [
+   "5 años.",
+   "10 años.",
+   "Es indefinido: una vez obtenido, no caduca nunca."
+  ],
+  "correcta": 1,
+  "dificultad": 2,
+  "explicacion_corta": "El permiso B se renueva cada 10 años hasta que el titular cumple 65 años.",
+  "truco": "Década a década hasta los 65; a partir de ahí, lustro a lustro.",
+  "trampa": "El carné no es como saberse un idioma: caduca, y conducir con él vencido es sancionable aunque conduzcas de maravilla.",
+  "tags": [
+   "permiso-b",
+   "vigencia"
+  ],
+  "senalId": null
+ },
+ {
+  "id": "M15-056",
+  "mundo": 15,
+  "tema": "El permiso B y su vigencia",
+  "pregunta": "A partir de los 65 años de edad, el permiso B se renueva…",
+  "imagen": null,
+  "opciones": [
+   "cada 10 años, igual que antes de esa edad.",
+   "no se renueva: a esa edad se retira automáticamente.",
+   "cada 5 años."
+  ],
+  "correcta": 2,
+  "dificultad": 3,
+  "explicacion_corta": "Desde los 65 años, la vigencia del permiso B pasa a ser de 5 años, con su reconocimiento de aptitudes en cada renovación.",
+  "truco": "A los 65 el carné 'va al médico' más a menudo: revisión cada 5 años en vez de cada 10.",
+  "trampa": "Nadie te retira el carné por edad: lo que cambia es la frecuencia de renovación y el chequeo psicofísico, no tu derecho a conducir.",
+  "tags": [
+   "permiso-b",
+   "vigencia",
+   "renovacion"
+  ],
+  "senalId": null
+ }
+]

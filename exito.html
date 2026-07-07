@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>¡Pase Carnet activado! — Carnet Quest</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/tokens.css">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:radial-gradient(120% 50% at 50% 0%,rgba(0,196,100,.16),transparent 60%),var(--asfalto-900);
+      color:var(--linea-blanca);font-family:var(--font-ui);min-height:100dvh;
+      display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;
+    }
+    .card{max-width:460px;width:100%;background:var(--asfalto-700);border:3px solid var(--senal-verde-vivo);
+      border-radius:24px;padding:36px 26px;box-shadow:var(--glow-verde)}
+    h1{font-family:var(--font-display);font-size:2rem;color:var(--senal-verde-vivo);text-shadow:var(--glow-verde);text-transform:uppercase;margin:14px 0 6px}
+    p{color:var(--linea-gris);margin-bottom:18px}
+    .paso{background:var(--asfalto-800);border:1px solid var(--asfalto-500);border-radius:14px;padding:16px;margin-bottom:12px;text-align:left;display:flex;gap:12px;align-items:flex-start}
+    .paso .num{font-family:var(--font-display);color:var(--neon-cian);font-size:1.3rem;min-width:24px}
+    .paso .txt{font-size:.92rem}
+    .codigo-box{background:var(--asfalto-950);border:2px dashed var(--amarillo-obras);border-radius:12px;padding:14px;font-family:var(--font-display);font-size:1.4rem;letter-spacing:.1em;color:var(--amarillo-obras);margin:8px 0 18px;word-break:break-all}
+    .btn{display:block;width:100%;min-height:60px;border-radius:16px;font-family:var(--font-display);font-size:1.2rem;text-transform:uppercase;letter-spacing:.05em;
+      background:linear-gradient(160deg,var(--neon-cian),#0093B8);color:var(--asfalto-950);text-decoration:none;display:flex;align-items:center;justify-content:center;box-shadow:var(--glow-cian);margin-top:8px}
+    .nota{color:var(--linea-tenue);font-size:.8rem;margin-top:18px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div style="font-size:3.4rem">🏁</div>
+    <h1>Pase Carnet activado</h1>
+    <p>Gracias por confiar. La N-CQ entera es tuya. Así lo desbloqueas en el juego:</p>
+
+    <div class="paso"><span class="num">1</span><span class="txt">Copia tu código de desbloqueo (te lo hemos enviado también por email):</span></div>
+    <div class="codigo-box" id="codigo">CQ-XXXXX-XXXXX</div>
+
+    <div class="paso"><span class="num">2</span><span class="txt">Abre Carnet Quest, entra en el paywall (cualquier mundo de pago o el botón «Ya tengo un código») y pégalo.</span></div>
+    <div class="paso"><span class="num">3</span><span class="txt">¡Listo! Los 15 mundos, la DGT Tower ilimitada y el Álbum completo se abren al instante.</span></div>
+
+    <a class="btn" href="index.html">Abrir Carnet Quest</a>
+    <p class="nota">¿No te llega el código o algún problema? Escríbenos y lo resolvemos. Recuerda: si llegas a Predictor ≥ 90 % con 5 simulacros APTO y suspendes, te devolvemos el dinero.</p>
+  </div>
+
+  <script>
+    // Si Stripe redirige con ?code=CQ-... (configurable en el Payment Link) lo mostramos.
+    // Si no, dejamos el placeholder y el email del comprador con el código sigue siendo la vía.
+    const p = new URLSearchParams(location.search);
+    const code = p.get('code');
+    if (code && /^CQ-[A-Z0-9]{5}-[A-Z0-9]{5}$/i.test(code)) {
+      document.getElementById('codigo').textContent = code.toUpperCase();
+    }
+  </script>
+</body>
+</html>

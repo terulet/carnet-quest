@@ -1,0 +1,856 @@
+[
+  {
+    "id": "M09-001", "mundo": 9, "tema": "Definiciones: parada, estacionamiento y detención",
+    "pregunta": "¿Qué se entiende por parada?",
+    "imagen": null,
+    "opciones": [
+      "Cualquier inmovilización voluntaria del vehículo de menos de 5 minutos.",
+      "Toda inmovilización de menos de 2 minutos, aunque el conductor se aleje del vehículo.",
+      "La inmovilización del vehículo que no excede de 2 minutos, sin que el conductor lo abandone."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Parada: inmovilización que no pasa de 2 minutos y con el conductor sin abandonar el vehículo. Fallan las dos condiciones o una: ya no es parada.",
+    "truco": "Parada = 2 minutos y tú al volante. Más tiempo o tú fuera del coche = estacionamiento.",
+    "trampa": "Te cambian el límite (5 por 2) o te quitan la condición del conductor. Hacen falta LAS DOS cosas: tiempo y presencia.",
+    "tags": ["parada", "definiciones"], "senalId": null
+  },
+  {
+    "id": "M09-002", "mundo": 9, "tema": "Definiciones: parada, estacionamiento y detención",
+    "pregunta": "Llevas 4 minutos inmovilizado junto a la acera, dentro del coche, esperando a un amigo. ¿Qué estás haciendo?",
+    "imagen": null,
+    "opciones": [
+      "Un estacionamiento, porque superas los 2 minutos.",
+      "Una parada, porque sigues dentro del vehículo.",
+      "Una detención, porque el motivo es una espera."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Al pasar de 2 minutos deja de ser parada aunque no te hayas movido del asiento: es un estacionamiento.",
+    "truco": "El cronómetro manda: al pasar de 2 minutos, tu 'parada' asciende a estacionamiento.",
+    "trampa": "Estar dentro del coche te hace creer que sigue siendo parada. La presencia del conductor no compensa el exceso de tiempo.",
+    "tags": ["estacionamiento", "definiciones"], "senalId": null
+  },
+  {
+    "id": "M09-003", "mundo": 9, "tema": "Definiciones: parada, estacionamiento y detención",
+    "pregunta": "Bajas del coche 'un minuto' a por el pan y lo dejas solo junto a la acera. ¿Parada o estacionamiento?",
+    "imagen": null,
+    "opciones": [
+      "Parada, porque no llegas a los 2 minutos.",
+      "Estacionamiento: al abandonar el vehículo deja de ser una parada, dure lo que dure.",
+      "Parada, siempre que dejes las luces de emergencia encendidas."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "La parada exige que el conductor no abandone el vehículo. Si te bajas y te vas, es estacionamiento aunque sea medio minuto.",
+    "truco": "Si el coche se queda solo, es estacionamiento: la parada exige conductor a bordo, no buenas intenciones.",
+    "trampa": "El 'menos de 2 minutos' te hipnotiza. El tiempo es solo la mitad de la definición: la otra mitad eres tú dentro del coche.",
+    "tags": ["parada", "definiciones", "trampa-clasica"], "senalId": null
+  },
+  {
+    "id": "M09-004", "mundo": 9, "tema": "Definiciones: parada, estacionamiento y detención",
+    "pregunta": "Estás inmovilizado en plena calzada por un atasco monumental. ¿Eso es una parada?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si dura menos de 2 minutos.",
+      "Es un estacionamiento forzoso.",
+      "No: es una detención, una inmovilización impuesta por las necesidades de la circulación."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Parada y estacionamiento son inmovilizaciones VOLUNTARIAS. La que te impone el tráfico o una emergencia es una detención.",
+    "truco": "¿Lo eliges tú? Parada o estacionamiento. ¿Te lo impone el tráfico? Detención.",
+    "trampa": "El 'menos de 2 minutos' te empuja a marcar parada. Pero en el atasco no decides tú, y sin voluntariedad no hay parada posible.",
+    "explicacion_larga": "El examen juega con tres palabras que parecen lo mismo: detención, parada y estacionamiento. La detención es una inmovilización que NO eliges: te la imponen las necesidades de la circulación (atasco, semáforo, agente) o una emergencia. La parada es voluntaria, no excede de 2 minutos y el conductor no abandona el vehículo. El estacionamiento es cualquier otra inmovilización voluntaria. En el atasco no hay decisión tuya, así que ni es parada ni estacionamiento: es detención.",
+    "tags": ["detencion", "definiciones"], "senalId": null
+  },
+  {
+    "id": "M09-005", "mundo": 9, "tema": "Definiciones: parada, estacionamiento y detención",
+    "pregunta": "El estacionamiento es…",
+    "imagen": null,
+    "opciones": [
+      "toda inmovilización voluntaria del vehículo que no sea una parada ni una detención.",
+      "cualquier inmovilización de más de 5 minutos.",
+      "la inmovilización realizada únicamente en zonas señalizadas para estacionar."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "Estacionamiento: inmovilización voluntaria que no encaja en parada (2 minutos, conductor dentro) ni en detención (impuesta).",
+    "truco": "Estacionamiento = el cajón de sastre: toda inmovilización voluntaria que no llegue a ser parada.",
+    "trampa": "Puedes estacionar fuera de zonas señalizadas (donde esté permitido). La señal no forma parte de la definición.",
+    "tags": ["estacionamiento", "definiciones"], "senalId": null
+  },
+  {
+    "id": "M09-006", "mundo": 9, "tema": "Definiciones: parada, estacionamiento y detención",
+    "pregunta": "Un taxista deja a un cliente: un minuto inmovilizado junto al bordillo, sin moverse del asiento. Eso es…",
+    "imagen": null,
+    "opciones": [
+      "una detención, porque lo exige el servicio.",
+      "una parada.",
+      "un estacionamiento, porque se apea un pasajero."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Menos de 2 minutos y el conductor a bordo: parada de manual. Que suba o baje gente no cambia nada.",
+    "truco": "Taxi que suelta cliente sin soltar el volante y en menos de 2 minutos: parada de libro.",
+    "trampa": "Que 'baje un pasajero' suena a estacionamiento. Quien no puede abandonar el vehículo es el CONDUCTOR; los pasajeros bajan libremente.",
+    "tags": ["parada", "definiciones"], "senalId": null
+  },
+  {
+    "id": "M09-007", "mundo": 9, "tema": "Colocación del vehículo",
+    "pregunta": "En una vía urbana de doble sentido de circulación, ¿dónde debes parar o estacionar?",
+    "imagen": null,
+    "opciones": [
+      "Junto al borde derecho de la calzada.",
+      "Junto a cualquiera de los dos bordes, si no molestas.",
+      "Junto al borde izquierdo, para vigilar mejor el tráfico que viene."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "En vías urbanas de doble sentido, la parada y el estacionamiento se efectúan junto al borde derecho de la calzada.",
+    "truco": "Doble sentido = derecha siempre. En España aparcamos como circulamos: por la derecha.",
+    "trampa": "El 'cualquiera de los dos bordes' solo vale en calles de sentido ÚNICO. Con doble sentido, aparcar a la izquierda es cruzarte con el tráfico de frente.",
+    "tags": ["colocacion", "via-urbana"], "senalId": null
+  },
+  {
+    "id": "M09-008", "mundo": 9, "tema": "Colocación del vehículo",
+    "pregunta": "En una vía interurbana, ¿dónde debes parar o estacionar tu turismo?",
+    "imagen": null,
+    "opciones": [
+      "En el carril derecho, pegado a la marca del borde.",
+      "En cualquier zona llana de la calzada con buena visibilidad.",
+      "Fuera de la calzada, en el arcén derecho."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "En vías interurbanas el vehículo se sitúa fuera de la calzada, en el arcén derecho.",
+    "truco": "En carretera, el coche parado no pisa calzada: fuera de ella, al arcén derecho.",
+    "trampa": "El 'carril derecho' suena parecido a 'lado derecho', pero el carril es calzada: un coche inmovilizado allí es un obstáculo a 90 km/h.",
+    "tags": ["colocacion", "via-interurbana", "arcen"], "senalId": null
+  },
+  {
+    "id": "M09-009", "mundo": 9, "tema": "Colocación del vehículo",
+    "pregunta": "En una vía urbana de un solo sentido de circulación, ¿puedes estacionar junto al borde izquierdo?",
+    "imagen": null,
+    "opciones": [
+      "No: siempre y únicamente junto al borde derecho.",
+      "Sí: en sentido único también se permite junto al borde izquierdo.",
+      "Solo los vehículos de reparto y los taxis."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "En vías de sentido único puedes situarte también junto al borde izquierdo, además del derecho.",
+    "truco": "Sentido único = los dos bordes valen: nadie viene de frente por el lado izquierdo.",
+    "trampa": "Vienes de memorizar 'siempre a la derecha' y te la cuelan: esa regla es para las vías de DOBLE sentido.",
+    "tags": ["colocacion", "sentido-unico"], "senalId": null
+  },
+  {
+    "id": "M09-010", "mundo": 9, "tema": "Colocación del vehículo",
+    "pregunta": "Como norma general, ¿cómo se coloca el vehículo al estacionar junto al borde de la calzada?",
+    "imagen": null,
+    "opciones": [
+      "Paralelo al borde, salvo que la señalización permita otra disposición (batería o semibatería).",
+      "Siempre en batería, para aprovechar mejor el espacio.",
+      "Como prefieras, mientras el vehículo quepa entero."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "La regla general es en línea (paralelo al borde); en batería o semibatería solo cuando la señalización o las marcas lo dispongan.",
+    "truco": "Por defecto, en línea. La batería solo cuando lo pinten o lo señalicen.",
+    "trampa": "La batería 'aprovecha más el espacio' y por eso tienta, pero sin señalización que la permita, lo correcto es el paralelo al borde.",
+    "tags": ["colocacion", "estacionamiento"], "senalId": null
+  },
+  {
+    "id": "M09-011", "mundo": 9, "tema": "Colocación del vehículo",
+    "pregunta": "Al parar o estacionar, además de no crear peligro ni obstaculizar, debes situar el vehículo…",
+    "imagen": null,
+    "opciones": [
+      "dejando al menos un metro libre por delante y por detrás.",
+      "lo más cerca posible de la esquina, para no ocupar plazas centrales.",
+      "de forma que permita la mejor utilización posible del espacio que quede disponible."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "La norma pide colocarse de modo que se permita la mejor utilización del espacio restante disponible.",
+    "truco": "Aparca pensando en el siguiente: deja el hueco restante lo más aprovechable posible.",
+    "trampa": "El 'metro libre por delante y por detrás' suena a norma oficial, pero es una cifra inventada: el reglamento habla de aprovechar el espacio, sin metros.",
+    "tags": ["colocacion", "estacionamiento"], "senalId": null
+  },
+  {
+    "id": "M09-012", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "¿Está permitido parar sobre un paso para peatones aunque sea solo un momento?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si en ese momento no cruza nadie.",
+      "No: en los pasos para peatones está prohibida hasta la parada.",
+      "Sí, con las luces de emergencia encendidas."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "En los pasos para peatones están prohibidos tanto la parada como el estacionamiento.",
+    "truco": "Paso de peatones = suelo sagrado: ni 2 minutos ni 2 segundos.",
+    "trampa": "'No cruza nadie' te da falsa licencia. La prohibición protege el paso en todo momento, no solo cuando hay peatones a la vista.",
+    "tags": ["prohibicion-parada", "paso-peatones"], "senalId": null
+  },
+  {
+    "id": "M09-013", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "En una curva de visibilidad reducida y en sus proximidades…",
+    "imagen": null,
+    "opciones": [
+      "están prohibidos tanto la parada como el estacionamiento.",
+      "se permite la parada, pero no el estacionamiento.",
+      "se permite estacionar si dejas encendidas las luces de posición."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Curvas y cambios de rasante de visibilidad reducida, y sus proximidades: prohibido parar y prohibido estacionar.",
+    "truco": "Donde no te ven llegar (curva, rasante), ni pares: sin visibilidad no hay parada que valga.",
+    "trampa": "El clásico 'la parada sí, el estacionamiento no' aquí es falso: la prohibición en curvas sin visibilidad afecta a las dos cosas.",
+    "tags": ["prohibicion-parada", "curva", "visibilidad"], "senalId": null
+  },
+  {
+    "id": "M09-014", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "¿Puedes parar dentro de un túnel o de un paso inferior?",
+    "imagen": null,
+    "opciones": [
+      "Sí, arrimándote mucho al borde derecho.",
+      "Solo de día y si el túnel está bien iluminado.",
+      "No: en túneles y pasos inferiores la parada está prohibida."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "En túneles y pasos inferiores están prohibidos la parada y el estacionamiento.",
+    "truco": "Túnel y paso inferior = tubo sin escapatoria: ahí dentro ni se para.",
+    "trampa": "El 'arrimándote al borde' parece prudente, pero en un túnel no hay margen ni visibilidad: la prohibición es total.",
+    "tags": ["prohibicion-parada", "tunel"], "senalId": null
+  },
+  {
+    "id": "M09-015", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "Parar el coche sobre un paso a nivel…",
+    "imagen": null,
+    "opciones": [
+      "está permitido si las barreras están levantadas.",
+      "está prohibido en todo caso.",
+      "está permitido si es por menos de 2 minutos."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "En los pasos a nivel está prohibido parar y estacionar, sin excepciones de tiempo ni de barreras.",
+    "truco": "¿Pararías sobre una vía de tren? Pues eso: paso a nivel, zona cero.",
+    "trampa": "Las barreras levantadas dan sensación de seguridad, pero pueden bajar en cualquier momento y el tren no frena por ti.",
+    "tags": ["prohibicion-parada", "paso-a-nivel"], "senalId": null
+  },
+  {
+    "id": "M09-016", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "¿Cuándo está prohibido parar en una intersección o en sus proximidades?",
+    "imagen": null,
+    "opciones": [
+      "Cuando se dificulte el giro a otros vehículos y, en vías interurbanas, también cuando se genere peligro por falta de visibilidad.",
+      "Únicamente cuando exista una señal expresa que lo prohíba.",
+      "Solo de noche o con niebla."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "En intersecciones y sus proximidades: prohibido si dificultas el giro; en interurbanas, además, si generas peligro por falta de visibilidad.",
+    "truco": "Cruce: en ciudad molesta quien tapa el giro; en carretera es peligroso quien no se ve.",
+    "trampa": "El 'solo con señal expresa' tienta porque parece garantista, pero esta prohibición funciona sin señal: basta con que estorbes el giro o quites visibilidad.",
+    "explicacion_larga": "La prohibición de parar en intersecciones no es absoluta: el reglamento la condiciona. Está prohibido parar y estacionar en las intersecciones y sus proximidades cuando se dificulte el giro a otros vehículos; y en vías interurbanas, además, cuando se genere peligro por falta de visibilidad. Traducción práctica: en ciudad el problema típico es estorbar la maniobra de giro de los demás; en carretera, que quien llega no pueda verte a tiempo. No hace falta señal alguna para que rija.",
+    "tags": ["prohibicion-parada", "interseccion"], "senalId": null
+  },
+  {
+    "id": "M09-017", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "¿Puedes parar 'solo un segundo' en un carril bus para dejar a un pasajero?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si no viene ningún autobús.",
+      "No: en los carriles reservados al transporte público está prohibida incluso la parada.",
+      "Sí, fuera de las horas punta."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Los carriles reservados a determinados usuarios (bus, taxi, bici) están vetados para la parada y el estacionamiento del resto.",
+    "truco": "Carril con nombre propio (BUS, bici, taxi) es carril con dueño: tú ni entras ni paras.",
+    "trampa": "'No viene ningún autobús' es la excusa de siempre: la reserva del carril rige aunque esté vacío en ese instante.",
+    "tags": ["prohibicion-parada", "carril-bus"], "senalId": null
+  },
+  {
+    "id": "M09-018", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "En un carril bici o sobre un paso para ciclistas…",
+    "imagen": null,
+    "opciones": [
+      "puedes parar si solo lo ocupas a medias.",
+      "puedes estacionar los días festivos.",
+      "no puedes ni parar: son zonas reservadas a otros usuarios."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Carriles bici y pasos para ciclistas: prohibidos la parada y el estacionamiento para los demás vehículos.",
+    "truco": "Lo reservado a las bicis es de las bicis: en carril bici y paso ciclista, prohibido hasta parar.",
+    "trampa": "'Ocuparlo a medias' sigue siendo invadirlo: obligas al ciclista a salirse a la calzada, que es justo lo que la norma quiere evitar.",
+    "tags": ["prohibicion-parada", "carril-bici"], "senalId": null
+  },
+  {
+    "id": "M09-019", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "Zona señalizada como parada de autobús urbano. Tu turismo…",
+    "imagen": null,
+    "opciones": [
+      "no puede ni parar ni estacionar en ella.",
+      "puede parar menos de 2 minutos si el autobús no está.",
+      "puede estacionar de noche, cuando ya no hay servicio."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Las zonas de parada y estacionamiento de uso exclusivo del transporte público urbano están prohibidas para los demás vehículos, también para parar.",
+    "truco": "La parada del bus es SU aparcamiento, no el tuyo: uso exclusivo del transporte público.",
+    "trampa": "El 'si el autobús no está' pica mucho: la exclusividad de la zona no depende de que el bus esté o deje de estar.",
+    "tags": ["prohibicion-parada", "transporte-publico"], "senalId": null
+  },
+  {
+    "id": "M09-020", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "En una autopista, parar o estacionar…",
+    "imagen": null,
+    "opciones": [
+      "se permite en el arcén, que para eso está.",
+      "solo se permite en las zonas habilitadas para ello, como las áreas de servicio o de descanso.",
+      "se permite a cualquier vehículo si no se superan los 2 minutos."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "En autopistas y autovías la parada y el estacionamiento están prohibidos salvo en las zonas habilitadas.",
+    "truco": "En autopista solo se para donde hay P: áreas de servicio y descanso. El arcén es para emergencias, no para paradas.",
+    "trampa": "El arcén engaña: ocuparlo por avería o emergencia es una DETENCIÓN forzosa, no una parada voluntaria. Parar allí porque te apetece está prohibido.",
+    "explicacion_larga": "En autopistas y autovías la parada y el estacionamiento están prohibidos salvo en las zonas habilitadas (áreas de servicio, áreas de descanso). El arcén no es un aparcamiento: solo se ocupa por emergencia (avería, indisposición), y esa inmovilización es legalmente una detención, no una parada. Si te ocurre, enciende las luces de emergencia, coloca la baliza V-16 conectada (obligatoria desde el 1 de enero de 2026) y ponte a salvo detrás de la barrera, lejos de la calzada.",
+    "tags": ["prohibicion-parada", "autopista", "arcen"], "senalId": null
+  },
+  {
+    "id": "M09-021", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "Respecto a los raíles del tranvía, ¿dónde está prohibido parar?",
+    "imagen": null,
+    "opciones": [
+      "Solo justo encima de los raíles.",
+      "A menos de 25 metros de los raíles, en todo caso.",
+      "Sobre los raíles y también tan cerca de ellos que pueda entorpecerse la circulación del tranvía."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Prohibido parar sobre los raíles o tan cerca que puedas entorpecer al tranvía: él no puede esquivarte.",
+    "truco": "Raíl de tranvía = carril de tren urbano: ni encima ni tan cerca que lo frenes.",
+    "trampa": "El 'solo encima' se queda corto y los '25 metros' son una cifra inventada: el criterio legal es no entorpecer, sin metros fijos.",
+    "tags": ["prohibicion-parada", "tranvia"], "senalId": null
+  },
+  {
+    "id": "M09-022", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "¿Puedes parar o estacionar justo delante de una señal de tráfico?",
+    "imagen": null,
+    "opciones": [
+      "No, si con ello impides que la vean los usuarios a los que afecta.",
+      "Sí: las señales están en alto y siempre se ven.",
+      "Sí, salvo que la señal sea un STOP."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Está prohibido parar o estacionar donde se impida la visibilidad de la señalización a quienes les afecte.",
+    "truco": "Si tu coche hace de cortina de una señal, sobra: la señal tiene que verse desde lejos.",
+    "trampa": "Lo de 'están en alto' cuela hasta que aparcas una furgoneta: la prohibición existe precisamente porque los vehículos tapan señales.",
+    "tags": ["prohibicion-parada", "visibilidad", "senalizacion"], "senalId": null
+  },
+  {
+    "id": "M09-023", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "Cambio de rasante sin visibilidad. Paras 'un minutito' con las luces de emergencia puestas. ¿Es legal?",
+    "imagen": null,
+    "opciones": [
+      "Sí: menos de 2 minutos con las luces de emergencia es una parada válida.",
+      "No: las luces de emergencia no convierten en legal una parada prohibida.",
+      "Sí, siempre que dejes el motor en marcha para salir rápido."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "En los cambios de rasante de visibilidad reducida la parada está prohibida, con o sin luces de emergencia.",
+    "truco": "Los warnings avisan, no absuelven: una parada prohibida sigue prohibida con luces y todo.",
+    "trampa": "La combinación '2 minutos + warnings' parece un salvoconducto. Las luces de emergencia señalizan un peligro, no crean un permiso.",
+    "explicacion_larga": "Las luces de emergencia sirven para AVISAR de una situación de riesgo, no para fabricar permisos. Un cambio de rasante sin visibilidad es de los lugares más peligrosos para inmovilizar un vehículo: quien llega por detrás no te ve hasta que te tiene encima, y a velocidad de carretera no hay margen de reacción. Por eso allí están prohibidos tanto la parada como el estacionamiento, dure lo que dure la inmovilización y lleves las luces que lleves.",
+    "tags": ["prohibicion-parada", "cambio-rasante", "trampa-clasica"], "senalId": null
+  },
+  {
+    "id": "M09-024", "mundo": 9, "tema": "Prohibiciones de parada",
+    "pregunta": "En los lugares donde está prohibida la parada…",
+    "imagen": null,
+    "opciones": [
+      "puede estar permitido el estacionamiento si hay espacio suficiente.",
+      "solo está prohibido estacionar durante el día.",
+      "también está prohibido, siempre, el estacionamiento."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Donde no se puede parar, tampoco se puede estacionar: la prohibición de parada incluye siempre la de estacionamiento.",
+    "truco": "La prohibición de parada arrastra la de estacionamiento: si no puedes ni detenerte 2 minutos, menos vas a quedarte a vivir.",
+    "trampa": "La lógica inversa sí tiene excepciones (hay sitios donde se puede parar pero no estacionar), y el examen cuenta con que las confundas.",
+    "tags": ["prohibicion-parada", "prohibicion-estacionamiento"], "senalId": null
+  },
+  {
+    "id": "M09-025", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "Estacionar en doble fila con las luces de emergencia puestas…",
+    "imagen": null,
+    "opciones": [
+      "está prohibido: las luces de emergencia no reservan sitio.",
+      "está permitido hasta 5 minutos.",
+      "está permitido para recoger a alguien."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "El estacionamiento en doble fila está prohibido siempre, lleves las luces que lleves.",
+    "truco": "Los warnings no reservan plaza: doble fila con intermitentes sigue siendo doble fila.",
+    "trampa": "La costumbre de tu barrio no es reglamento: ni los 5 minutos ni el 'es solo para recoger' aparecen en ninguna norma.",
+    "tags": ["prohibicion-estacionamiento", "doble-fila"], "senalId": null
+  },
+  {
+    "id": "M09-026", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "Delante de un vado correctamente señalizado…",
+    "imagen": null,
+    "opciones": [
+      "están prohibidos tanto la parada como el estacionamiento.",
+      "está prohibido estacionar; la parada (2 minutos con el conductor dentro) no está prohibida con carácter general.",
+      "puedes estacionar si el vado es el de tu propio garaje."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "Lo que la norma prohíbe expresamente delante de un vado es el estacionamiento; una parada de verdad, con el conductor listo para apartarse, no lo está con carácter general.",
+    "truco": "Vado: aparcar NO (bloqueas sin remedio); parar, en general sí, porque puedes quitarte al momento.",
+    "trampa": "Marcar 'prohibido todo' parece lo seguro, pero el vado está en la lista de prohibiciones de ESTACIONAMIENTO, no en la de parada. El matiz vale una pregunta de examen.",
+    "explicacion_larga": "El vado garantiza la entrada y salida de vehículos de un inmueble. Lo que el reglamento prohíbe expresamente delante de un vado señalizado es el ESTACIONAMIENTO: un coche sin conductor bloquea el acceso y nadie puede moverlo. Una parada auténtica (menos de 2 minutos, conductor al volante, capaz de apartarse al instante) no figura en esa prohibición con carácter general. Eso sí: si en la práctica obstaculizas la salida de alguien, apártate de inmediato; obstaculizar sigue estando prohibido.",
+    "tags": ["prohibicion-estacionamiento", "vado"], "senalId": null
+  },
+  {
+    "id": "M09-027", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "Plaza reservada para personas con movilidad reducida y tú sin tarjeta que te autorice. ¿Puedes estacionar 'solo 5 minutos'?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si dejas los warnings y estás a la vista.",
+      "Sí, fuera del horario comercial.",
+      "No: está prohibido estacionar y además pueden llevarse tu coche con la grúa."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Las plazas reservadas a personas con movilidad reducida están prohibidas para quien no tenga el distintivo, y son supuesto de retirada por grúa.",
+    "truco": "Plaza PMR sin tarjeta: ni 5 minutos ni 5 segundos. Multa y grúa.",
+    "trampa": "El 'solo 5 minutos' es la trampa moral de siempre: para quien necesita esa plaza, tus 5 minutos son quedarse sin poder bajar del coche.",
+    "tags": ["prohibicion-estacionamiento", "pmr"], "senalId": null
+  },
+  {
+    "id": "M09-028", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "Zona señalizada para carga y descarga, dentro de su horario. Tu turismo…",
+    "imagen": null,
+    "opciones": [
+      "no puede estacionar en ella mientras rige la reserva.",
+      "puede estacionar hasta 30 minutos.",
+      "puede parar y estacionar libremente: esas reservas solo afectan a los camiones grandes."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "En las zonas señalizadas para carga y descarga está prohibido estacionar durante el horario de la reserva.",
+    "truco": "Carga y descarga en su horario = plaza con contrato: si no repartes, no aparcas.",
+    "trampa": "Los '30 minutos' suenan a tolerancia oficial, pero son inventados: la reserva rige completa durante su horario.",
+    "tags": ["prohibicion-estacionamiento", "carga-descarga"], "senalId": null
+  },
+  {
+    "id": "M09-029", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "Delante de la salida de emergencia de una discoteca, durante las horas de actividad del local…",
+    "imagen": null,
+    "opciones": [
+      "puedes estacionar si no hay señal expresa que lo prohíba.",
+      "está prohibido estacionar.",
+      "puedes estacionar pagando la zona regulada."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Está prohibido estacionar delante de las salidas de emergencia de locales de pública concurrencia durante sus horas de actividad.",
+    "truco": "Salida de emergencia = puerta de la vida: con el local en marcha, ahí no se aparca.",
+    "trampa": "El 'si no hay señal' te confía: esta prohibición funciona por la propia naturaleza del lugar, no necesita una señal delante.",
+    "tags": ["prohibicion-estacionamiento", "salida-emergencia"], "senalId": null
+  },
+  {
+    "id": "M09-030", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "¿Se puede estacionar el coche sobre la acera 'dejando hueco' para los peatones?",
+    "imagen": null,
+    "opciones": [
+      "Sí, si queda al menos un metro y medio libre.",
+      "Sí, pero solo subiendo dos ruedas.",
+      "No: aceras, paseos y zonas de paso de peatones están prohibidos para estacionar."
+    ],
+    "correcta": 2, "dificultad": 1,
+    "explicacion_corta": "Prohibido estacionar sobre aceras, paseos y demás zonas destinadas al paso de peatones, ocupes lo que ocupes.",
+    "truco": "La acera es el 'carril' del peatón: aparcar encima es invadir su calzada.",
+    "trampa": "Las 'dos ruedas' o el 'hueco de metro y medio' son costumbres de barrio, no excepciones legales: la prohibición no admite mitades.",
+    "tags": ["prohibicion-estacionamiento", "acera", "peatones"], "senalId": null
+  },
+  {
+    "id": "M09-031", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "Estacionas cerrando la salida a un coche correctamente aparcado en línea. ¿Consecuencia?",
+    "imagen": null,
+    "opciones": [
+      "Es un estacionamiento prohibido que obstaculiza gravemente: multa y posible retirada de tu coche con la grúa.",
+      "Es legal si dejas una nota con tu teléfono en el parabrisas.",
+      "Es legal si vuelves antes de 30 minutos."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Impedir la incorporación a la circulación de otro vehículo debidamente parado o estacionado es un estacionamiento prohibido y supuesto de grúa.",
+    "truco": "Si tu coche convierte el de otro en prisionero, la grúa libera al rehén llevándose el tuyo.",
+    "trampa": "La nota con el teléfono es folclore urbano: ningún reglamento la menciona y no impide ni la denuncia ni la grúa.",
+    "explicacion_larga": "Impedir la incorporación a la circulación de otro vehículo debidamente parado o estacionado se considera expresamente una parada o estacionamiento que obstaculiza gravemente la circulación. Las consecuencias son denuncia y posible retirada del vehículo por la grúa, con su traslado al depósito y los gastos a tu cargo. La nota en el parabrisas con el teléfono no aparece en ninguna norma: como mucho, acelera el enfado del bloqueado.",
+    "tags": ["prohibicion-estacionamiento", "obstaculizacion", "grua"], "senalId": null
+  },
+  {
+    "id": "M09-032", "mundo": 9, "tema": "Prohibiciones de estacionamiento",
+    "pregunta": "La parada en doble fila…",
+    "imagen": null,
+    "opciones": [
+      "está prohibida en todo caso, igual que el estacionamiento.",
+      "solo puede admitirse si no obstaculiza la circulación y sigue siendo una parada real: menos de 2 minutos y con el conductor dentro.",
+      "está permitida siempre que no supere los 10 minutos."
+    ],
+    "correcta": 1, "dificultad": 5,
+    "explicacion_corta": "Lo que está prohibido en todo caso es ESTACIONAR en doble fila; la parada solo se admite si no obstaculiza la circulación.",
+    "truco": "En doble fila: ESTACIONAR jamás; PARAR solo si no estorbas, contigo dentro y con el reloj corriendo.",
+    "trampa": "Después de machacarte con que la doble fila es pecado, marcar 'prohibida en todo caso' sale solo. El reglamento solo prohíbe expresamente el estacionamiento; la parada depende de que no obstaculices.",
+    "explicacion_larga": "Ojo al matiz que separa esta pregunta de un suspenso: el reglamento prohíbe expresamente ESTACIONAR en doble fila, siempre y sin excepciones. La PARADA en doble fila no figura en esa lista, así que solo puede admitirse cuando no obstaculice la circulación y siga siendo una parada de verdad: menos de 2 minutos y con el conductor al volante, listo para apartarse. En la práctica, en una calle con un solo carril por sentido casi cualquier doble fila obstaculiza, de modo que casi siempre estará mal hecha.",
+    "tags": ["doble-fila", "parada", "matiz-legal"], "senalId": null
+  },
+  {
+    "id": "M09-033", "mundo": 9, "tema": "Estacionamiento en pendiente",
+    "pregunta": "Estacionas en una calle con una pendiente considerable. Además de accionar el freno de estacionamiento, debes…",
+    "imagen": null,
+    "opciones": [
+      "dejar el coche en punto muerto para no forzar la caja de cambios.",
+      "dejar encendidas las luces de posición.",
+      "dejar una marcha metida o, en su caso, el vehículo bien calzado."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "En pendiente, el freno de estacionamiento no basta: además, una marcha metida o el vehículo calzado.",
+    "truco": "Pendiente = plan B por triplicado: freno de mano + marcha (o calzos) + ruedas orientadas.",
+    "trampa": "El punto muerto 'para cuidar la caja' es justo lo contrario de lo que pide la norma: sin marcha, si el freno cede, el coche se va solo.",
+    "tags": ["pendiente", "estacionamiento"], "senalId": null
+  },
+  {
+    "id": "M09-034", "mundo": 9, "tema": "Estacionamiento en pendiente",
+    "pregunta": "¿Qué marcha dejas metida al estacionar en pendiente?",
+    "imagen": null,
+    "opciones": [
+      "Primera velocidad en subida y marcha atrás en bajada.",
+      "Marcha atrás en subida y primera en bajada.",
+      "La más larga (quinta o sexta), que retiene más."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "En pendiente ascendente se deja la primera; en descendente, la marcha atrás.",
+    "truco": "Deja puesta la marcha con la que seguirías el viaje: subiendo, primera; bajando, marcha atrás.",
+    "trampa": "Invertirlas es el fallo típico de examen. Y la marcha larga retiene MENOS que la corta: cuanto más corta la marcha, más sujeta el motor.",
+    "tags": ["pendiente", "marchas"], "senalId": null
+  },
+  {
+    "id": "M09-035", "mundo": 9, "tema": "Estacionamiento en pendiente",
+    "pregunta": "Estacionas cuesta arriba junto a un bordillo. ¿Hacia dónde orientas las ruedas directrices?",
+    "imagen": null,
+    "opciones": [
+      "Hacia el bordillo, pegándolas a él.",
+      "Hacia el centro de la calzada, de modo que la rueda quede apoyada contra el bordillo si el coche rueda hacia atrás.",
+      "Completamente rectas, para no forzar la dirección."
+    ],
+    "correcta": 1, "dificultad": 4,
+    "explicacion_corta": "En pendiente ascendente con bordillo, las ruedas se inclinan hacia el centro de la calzada para que apoyen contra el bordillo.",
+    "truco": "SUBIENDO, ruedas al CENTRO; BAJANDO, al BORDILLO. En ambos casos el bordillo hace de tope.",
+    "trampa": "'Hacia el bordillo' parece lo natural en cualquier cuesta, pero en subida es al revés: giradas al bordillo, el coche escaparía rodando hacia la calzada.",
+    "explicacion_larga": "En cuesta arriba con bordillo se giran las ruedas directrices hacia el CENTRO de la calzada: si el freno falla y el coche rueda hacia atrás, la parte trasera de la rueda delantera tropieza con el bordillo y el vehículo queda retenido. Si las giraras hacia el bordillo, el coche saldría rodando hacia la calzada sin nada que lo frene. Completa el pack de pendiente: freno de estacionamiento accionado y primera velocidad metida.",
+    "tags": ["pendiente", "ruedas", "bordillo"], "senalId": null
+  },
+  {
+    "id": "M09-036", "mundo": 9, "tema": "Estacionamiento en pendiente",
+    "pregunta": "Estacionas en pendiente en una vía sin bordillo, con arcén. ¿Hacia dónde giras las ruedas?",
+    "imagen": null,
+    "opciones": [
+      "Hacia el centro de la calzada, en todos los casos.",
+      "Da igual: sin bordillo, la orientación de las ruedas no cumple ninguna función.",
+      "Hacia el borde exterior o el arcén, para que si el coche se mueve salga fuera de la calzada y no invada el tráfico."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Sin bordillo, las ruedas se orientan hacia fuera de la calzada (borde o arcén): si el coche escapa, que no invada la vía.",
+    "truco": "Sin bordillo, apunta a la cuneta: si el coche se escapa, que se vaya al arcén, no al tráfico.",
+    "trampa": "El 'da igual' tienta porque no hay tope donde apoyar, pero la orientación sigue decidiendo hacia dónde escaparía el coche: mejor fuera que dentro de la calzada.",
+    "explicacion_larga": "Sin bordillo no hay tope donde apoyar la rueda, así que el objetivo cambia: si el coche llegara a moverse, debe salir de la calzada, no invadirla. Por eso las ruedas se orientan hacia el borde exterior o el arcén, tanto en subida como en bajada. A eso se suman el freno de estacionamiento, la marcha correspondiente (primera subiendo, atrás bajando) y, si la pendiente lo pide, calzos diseñados para esa función.",
+    "tags": ["pendiente", "ruedas", "arcen"], "senalId": null
+  },
+  {
+    "id": "M09-037", "mundo": 9, "tema": "Estacionamiento en pendiente",
+    "pregunta": "Para calzar el vehículo estacionado en una pendiente puedes usar…",
+    "imagen": null,
+    "opciones": [
+      "calzos diseñados para esa función, retirándolos de la vía cuando reanudes la marcha.",
+      "un par de piedras grandes del arcén, que para eso están.",
+      "cualquier objeto contundente, dejándolo allí para el siguiente conductor."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Solo valen calzos destinados expresamente a esa función (no piedras ni objetos improvisados), y al marcharte debes retirarlos de la vía.",
+    "truco": "Calzo de verdad, no pedrusco: y al irte, el calzo se va contigo, no se queda en la vía.",
+    "trampa": "La piedra del arcén es el clásico apaño, pero la norma prohíbe usar elementos no destinados a calzar, y dejarlos en la vía crea un obstáculo para los demás.",
+    "tags": ["pendiente", "calzos"], "senalId": null
+  },
+  {
+    "id": "M09-038", "mundo": 9, "tema": "Estacionamiento en pendiente",
+    "pregunta": "En una pendiente sensible, ¿es suficiente con dejar accionado el freno de estacionamiento?",
+    "imagen": null,
+    "opciones": [
+      "Sí, para eso está diseñado.",
+      "No: además hay que dejar una marcha metida o el vehículo calzado, con las ruedas bien orientadas.",
+      "Sí, siempre que la pendiente no supere el 15 por ciento."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "En pendiente sensible el freno de estacionamiento va acompañado: marcha metida o calzos, y ruedas orientadas.",
+    "truco": "En cuesta, el freno de mano no juega solo: marcha metida o calzos, y ruedas giradas.",
+    "trampa": "El '15 por ciento' es una cifra decorativa: no hay porcentaje que exima; si la pendiente es sensible, hay que asegurar el coche por partida doble.",
+    "tags": ["pendiente", "freno-estacionamiento"], "senalId": null
+  },
+  {
+    "id": "M09-039", "mundo": 9, "tema": "Estacionamiento regulado (zona azul)",
+    "pregunta": "Estacionas en zona azul (estacionamiento regulado con limitación horaria). ¿Qué debes hacer?",
+    "imagen": null,
+    "opciones": [
+      "Obtener el tique o distintivo, colocarlo visible en el vehículo y no rebasar el tiempo máximo autorizado.",
+      "Nada especial: la zona azul es una simple recomendación para favorecer la rotación.",
+      "Dejar las luces de emergencia encendidas mientras vas a pagar."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "En zona regulada: distintivo o tique visible y respeto del tiempo máximo que fija la ordenanza.",
+    "truco": "Zona azul = alquiler por horas: tique visible y reloj en marcha.",
+    "trampa": "Lo de 'simple recomendación' pica porque el suelo azul parece decorativo: es una regulación en toda regla, con denuncia y hasta grúa si te pasas de la raya.",
+    "tags": ["zona-azul", "estacionamiento-regulado"], "senalId": null
+  },
+  {
+    "id": "M09-040", "mundo": 9, "tema": "Estacionamiento regulado (zona azul)",
+    "pregunta": "En una zona de estacionamiento con limitación horaria, ¿cuándo pueden retirarte el coche con la grúa?",
+    "imagen": null,
+    "opciones": [
+      "Nunca: en zona regulada solo caben sanciones económicas.",
+      "En cuanto el tique caduque, aunque sea por un minuto.",
+      "Si estacionas sin colocar el distintivo que lo autoriza o rebasas el triple del tiempo abonado."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "La retirada procede sin distintivo visible o cuando se rebasa el triple del tiempo abonado.",
+    "truco": "Zona azul: pasarte un poco = multa; pasarte el TRIPLE (o ir sin tique) = grúa.",
+    "trampa": "El 'en cuanto caduque' parece lógico pero es desproporcionado: unos minutos de exceso dan para denuncia, no para grúa. El listón legal está en el triple.",
+    "explicacion_larga": "La ley concreta cuándo procede la grúa en el estacionamiento regulado con limitación horaria: cuando el vehículo permanece estacionado sin colocar el distintivo o tique que lo autoriza, o cuando se rebasa el TRIPLE del tiempo abonado conforme a la ordenanza municipal. Pasarte unos minutos del tique te cuesta una denuncia (en muchos municipios anulable pagando un exceso), pero no manda tu coche al depósito. Ir sin tique o triplicar el tiempo, sí.",
+    "tags": ["zona-azul", "grua"], "senalId": null
+  },
+  {
+    "id": "M09-041", "mundo": 9, "tema": "Estacionamiento regulado (zona azul)",
+    "pregunta": "¿Qué indica la señal R-309, un cuadrado azul con la palabra 'zona' y unas condiciones escritas?",
+    "imagen": null,
+    "opciones": [
+      "Zona reservada exclusivamente a los residentes del barrio.",
+      "Zona de estacionamiento limitado: puedes estacionar, pero en las condiciones y el tiempo que indica la señal.",
+      "Zona donde están prohibidos la parada y el estacionamiento."
+    ],
+    "correcta": 1, "dificultad": 1,
+    "explicacion_corta": "La R-309 delimita una zona de estacionamiento limitado: aparcar sí, pero con las condiciones (tiempo, tique, disco) que indique la señal.",
+    "truco": "R-309 'zona' = aparcar sí, pero con letra pequeña: tiempo limitado y tique o disco a la vista.",
+    "trampa": "No prohíbe estacionar, lo CONDICIONA: confundirla con una prohibición total es el fallo fácil.",
+    "tags": ["zona-azul", "senales"], "senalId": "R-309"
+  },
+  {
+    "id": "M09-042", "mundo": 9, "tema": "Retirada del vehículo por grúa",
+    "pregunta": "Como norma general, ¿cuándo puede la autoridad retirar tu vehículo con la grúa y llevarlo al depósito?",
+    "imagen": null,
+    "opciones": [
+      "Cuando constituya peligro, cause graves perturbaciones a la circulación o al funcionamiento de un servicio público, o deteriore el patrimonio público.",
+      "Solo cuando lleve más de 24 horas estacionado en el mismo lugar.",
+      "Solo si el propietario lo autoriza expresamente."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "El supuesto general de retirada: peligro, perturbación grave de la circulación o de un servicio público, o deterioro del patrimonio público.",
+    "truco": "La grúa viene cuando estorbas de verdad: peligro, atasco grave o servicio público fastidiado.",
+    "trampa": "Las '24 horas' te suenan del presumible abandono, pero ese es otro supuesto distinto y con plazos mucho más largos: no lo mezcles con el general.",
+    "tags": ["grua", "retirada-vehiculo"], "senalId": null
+  },
+  {
+    "id": "M09-043", "mundo": 9, "tema": "Retirada del vehículo por grúa",
+    "pregunta": "Un coche estacionado en una plaza para personas con movilidad reducida sin el distintivo que lo autoriza. ¿Puede actuar la grúa?",
+    "imagen": null,
+    "opciones": [
+      "No: basta con la denuncia del agente.",
+      "Solo si además molesta a otro vehículo.",
+      "Sí: es uno de los supuestos legales de retirada del vehículo."
+    ],
+    "correcta": 2, "dificultad": 2,
+    "explicacion_corta": "Estacionar en plaza PMR sin distintivo es supuesto expreso de retirada del vehículo por la grúa.",
+    "truco": "Quitarle la plaza a quien la necesita sale caro: PMR sin tarjeta = supuesto directo de grúa.",
+    "trampa": "El 'basta con la multa' suaviza demasiado: la ley recoge este caso, con nombre y apellidos, entre los que permiten llevarse el coche.",
+    "tags": ["grua", "pmr"], "senalId": null
+  },
+  {
+    "id": "M09-044", "mundo": 9, "tema": "Retirada del vehículo por grúa",
+    "pregunta": "Dejas el coche estacionado en un carril bus. Además de la sanción…",
+    "imagen": null,
+    "opciones": [
+      "no puede pasarte nada más si vuelves pronto.",
+      "pueden retirarlo con la grúa: está en un carril reservado a determinados usuarios.",
+      "solo pueden inmovilizarlo con un cepo, nunca llevárselo."
+    ],
+    "correcta": 1, "dificultad": 3,
+    "explicacion_corta": "Estacionar en carriles reservados (bus, taxi, bici) es supuesto de retirada del vehículo por grúa.",
+    "truco": "Carril reservado = zona de grúa asegurada: al bus le sobra un coche plantado en su carril.",
+    "trampa": "El cepo existe, pero para otros supuestos: en carril reservado la ley permite directamente la retirada, porque el estorbo hay que quitarlo ya.",
+    "tags": ["grua", "carril-bus"], "senalId": null
+  },
+  {
+    "id": "M09-045", "mundo": 9, "tema": "Retirada del vehículo por grúa",
+    "pregunta": "Estacionas tapando un vado correctamente señalizado. ¿Puede llevárselo la grúa?",
+    "imagen": null,
+    "opciones": [
+      "Sí: obstaculizas la salida o el acceso de vehículos a un inmueble.",
+      "No: los vados son un asunto privado entre vecinos.",
+      "Solo si el titular del vado paga el servicio de grúa por adelantado."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "Bloquear un vado obstaculiza el acceso o la salida de un inmueble: procede la retirada por grúa, con los gastos a cargo del infractor.",
+    "truco": "Tapar un vado es secuestrar un garaje: la grúa acude al rescate.",
+    "trampa": "El vado no es un 'apaño privado': es una autorización oficial, y quien bloquea paga la grúa, no el titular del vado.",
+    "tags": ["grua", "vado"], "senalId": null
+  },
+  {
+    "id": "M09-046", "mundo": 9, "tema": "Retirada del vehículo por grúa",
+    "pregunta": "¿En cuál de estos casos NO procede la retirada del vehículo por la grúa?",
+    "imagen": null,
+    "opciones": [
+      "Estacionado en doble fila entorpeciendo la circulación.",
+      "Estacionado en una parada de transporte público.",
+      "Estacionado correctamente en zona azul, con el tique en vigor."
+    ],
+    "correcta": 2, "dificultad": 4,
+    "explicacion_corta": "Un vehículo correctamente estacionado y con su tique en vigor no encaja en ningún supuesto de retirada.",
+    "truco": "Con tique en vigor y bien aparcado, la grúa no tiene nada que rascar: sin supuesto legal no hay retirada.",
+    "trampa": "El enunciado en negativo ('NO procede') hace que marques en automático cualquier infracción llamativa: lee dos veces qué te preguntan.",
+    "explicacion_larga": "La grúa actúa en supuestos tasados por la ley: peligro o perturbación grave de la circulación o de un servicio público, deterioro del patrimonio público, plaza PMR sin distintivo, carriles o zonas reservadas (carril bus, parada de transporte público), obstaculización de vados, zona regulada sin tique o rebasando el triple del tiempo abonado, accidente que impida continuar la marcha o presumible abandono. Un coche correctamente estacionado en zona azul con su tique en vigor no encaja en ninguno de ellos.",
+    "tags": ["grua", "supuestos-retirada"], "senalId": null
+  },
+  {
+    "id": "M09-047", "mundo": 9, "tema": "Señales y marcas de parada y estacionamiento",
+    "pregunta": "Señal redonda de fondo azul, borde rojo y un aspa roja (R-307). ¿Qué prohíbe?",
+    "imagen": null,
+    "opciones": [
+      "La parada y el estacionamiento.",
+      "Solamente el estacionamiento.",
+      "El paso de cualquier vehículo."
+    ],
+    "correcta": 0, "dificultad": 1,
+    "explicacion_corta": "La R-307 (aspa) prohíbe la parada y el estacionamiento en el lado de la vía donde está colocada.",
+    "truco": "Aspa = X = tacha TODO: ni parar ni aparcar. Una sola barra = solo tacha el aparcar.",
+    "trampa": "Confundirla con la de una sola barra (R-308) es el error estrella: el aspa son DOS barras y prohíbe las DOS cosas.",
+    "tags": ["senales", "prohibicion-parada"], "senalId": "R-307"
+  },
+  {
+    "id": "M09-048", "mundo": 9, "tema": "Señales y marcas de parada y estacionamiento",
+    "pregunta": "Ves la señal R-308 (fondo azul, borde rojo y UNA barra diagonal). ¿Puedes hacer una parada para dejar a un pasajero?",
+    "imagen": null,
+    "opciones": [
+      "No: prohíbe la parada y el estacionamiento.",
+      "Sí: la R-308 prohíbe estacionar, pero no la parada.",
+      "Solo pueden parar los taxis y los autobuses."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "La R-308 prohíbe únicamente el estacionamiento: una parada de menos de 2 minutos con el conductor dentro sigue permitida.",
+    "truco": "R-308, una barra: quedarte no, pausa sí. La parada de 2 minutos sigue viva.",
+    "trampa": "Ver borde rojo y barra hace saltar el 'prohibido todo'. Cuenta las barras: una barra deja vivir a la parada, el aspa lo mata todo.",
+    "tags": ["senales", "prohibicion-estacionamiento"], "senalId": "R-308"
+  },
+  {
+    "id": "M09-049", "mundo": 9, "tema": "Señales y marcas de parada y estacionamiento",
+    "pregunta": "Una señal R-308 sin panel complementario, ¿hasta dónde extiende su prohibición de estacionar?",
+    "imagen": null,
+    "opciones": [
+      "Hasta 50 metros después de la señal, en ambos lados de la vía.",
+      "Solo en el punto exacto donde está colocada la señal.",
+      "En el lado de la vía donde está situada, desde la señal hasta la intersección más próxima."
+    ],
+    "correcta": 2, "dificultad": 5,
+    "explicacion_corta": "Sin panel que diga otra cosa, la prohibición rige en el lado de la vía donde está la señal y desde ella hasta la próxima intersección.",
+    "truco": "Las señales de estacionamiento mandan 'de cruce a cruce' y solo en su acera.",
+    "trampa": "Los '50 metros' y el 'ambos lados' suenan a regla técnica seria, pero el límite real no se mide en metros: lo pone la siguiente intersección, y solo en el lado de la señal.",
+    "explicacion_larga": "Regla general de las señales de prohibición de parada y estacionamiento (R-307 y R-308): rigen en el LADO de la vía en que están colocadas y desde el lugar de la señal hasta la intersección más próxima, salvo que un panel complementario indique otra cosa (por ejemplo, la longitud de la prohibición o su comienzo y fin). Ni afectan al lado contrario de la calle ni caducan a los 50 metros: su frontera natural es el cruce siguiente.",
+    "tags": ["senales", "ambito-senal"], "senalId": "R-308"
+  },
+  {
+    "id": "M09-050", "mundo": 9, "tema": "Señales y marcas de parada y estacionamiento",
+    "pregunta": "Una línea CONTINUA de color amarillo pintada junto al borde de la calzada o en el bordillo significa…",
+    "imagen": null,
+    "opciones": [
+      "que la parada y el estacionamiento están prohibidos en toda su longitud, en ese lado de la vía.",
+      "que el estacionamiento está permitido previo pago.",
+      "que solo pueden estacionar los residentes autorizados."
+    ],
+    "correcta": 0, "dificultad": 2,
+    "explicacion_corta": "Línea amarilla continua en el borde o bordillo: prohibición de parada y estacionamiento en toda la longitud de la marca y en ese lado.",
+    "truco": "Amarillo continuo en el bordillo = candado total: ni parada ni estacionamiento en toda la línea.",
+    "trampa": "El pago y los residentes van con la zona azul o verde (regulada), no con la línea amarilla: el amarillo prohíbe, no cobra.",
+    "tags": ["marcas-amarillas", "prohibicion-parada"], "senalId": null
+  },
+  {
+    "id": "M09-051", "mundo": 9, "tema": "Señales y marcas de parada y estacionamiento",
+    "pregunta": "¿Y una línea amarilla DISCONTINUA junto al borde de la calzada?",
+    "imagen": null,
+    "opciones": [
+      "Prohíbe la parada y el estacionamiento por igual, como si fuera continua.",
+      "Prohíbe el estacionamiento (o lo restringe en ciertos horarios), pero la parada sí se permite.",
+      "Delimita la zona azul de pago."
+    ],
+    "correcta": 1, "dificultad": 5,
+    "explicacion_corta": "La discontinua amarilla prohíbe estacionar (o lo somete a restricción temporal según las señales); la parada breve, con el conductor listo para apartarse, sí está permitida.",
+    "truco": "Continua = ni parar ni aparcar; discontinua = aparcar no, parar sí.",
+    "trampa": "Igualarla a la continua es el fallo natural: la discontinua es más blanda y deja hacer la parada. Lo discontinuo siempre relaja la norma respecto a lo continuo, también en amarillo.",
+    "explicacion_larga": "Las marcas amarillas gradúan la prohibición. La línea CONTINUA junto al borde o en el bordillo prohíbe la parada Y el estacionamiento en toda su longitud y en ese lado de la vía. La DISCONTINUA es más permisiva: prohíbe el ESTACIONAMIENTO (o lo restringe a ciertos horarios o usuarios, según concrete la señalización vertical que la acompaña), pero deja hacer la parada breve mientras el conductor siga a bordo y no obstaculice. Regla de bolsillo: continua, ni parar ni aparcar; discontinua, aparcar no, parar sí.",
+    "tags": ["marcas-amarillas", "estacionamiento"], "senalId": null
+  },
+  {
+    "id": "M09-052", "mundo": 9, "tema": "Señales y marcas de parada y estacionamiento",
+    "pregunta": "Marca amarilla en zigzag pintada en la calzada, junto al borde…",
+    "imagen": null,
+    "opciones": [
+      "prohíbe circular por encima de ella.",
+      "señala un paso de peatones en diagonal.",
+      "prohíbe estacionar: esa zona está reservada para algún uso especial, como una parada de bus o de taxis."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "El zigzag amarillo indica prohibición de estacionar: la zona está reservada a un uso especial (bus, taxi, hotel, etc.).",
+    "truco": "Zigzag amarillo = suelo reservado: ahí para otro (bus, taxi), tú no aparcas.",
+    "trampa": "El dibujo raro invita a pensar en 'no pisar': circular por encima puedes; lo que no puedes es dejar el coche plantado en ella.",
+    "tags": ["marcas-amarillas", "zigzag"], "senalId": null
+  },
+  {
+    "id": "M09-053", "mundo": 9, "tema": "Señales y marcas de parada y estacionamiento",
+    "pregunta": "Cuadrícula de líneas amarillas pintada en una intersección. Con el semáforo en verde, ¿entras si al otro lado hay retención?",
+    "imagen": null,
+    "opciones": [
+      "No: está prohibido entrar en la cuadrícula si es previsible que quedes detenido dentro, bloqueando el cruce.",
+      "Sí: el semáforo en verde manda sobre cualquier marca vial.",
+      "Sí, siempre que avises con las luces de emergencia."
+    ],
+    "correcta": 0, "dificultad": 3,
+    "explicacion_corta": "La cuadrícula amarilla prohíbe penetrar en la intersección si la circulación te obligaría a quedarte detenido dentro, aunque tu semáforo esté en verde.",
+    "truco": "La cuadrícula amarilla es una caja que no se pisa si no puedes salir de ella: verde no significa 'entra a bloquear'.",
+    "trampa": "El 'verde manda' funciona casi siempre, y por eso pica: aquí el verde te permite pasar, pero solo si vas a poder SALIR del cruce.",
+    "tags": ["marcas-amarillas", "interseccion", "bloqueo"], "senalId": null
+  },
+  {
+    "id": "M09-054", "mundo": 9, "tema": "Abandono del vehículo y apertura de puertas",
+    "pregunta": "Antes de abrir la puerta para bajarte del coche…",
+    "imagen": null,
+    "opciones": [
+      "basta con abrirla despacio.",
+      "debes cerciorarte de que no supone peligro ni entorpece a nadie (ojo a ciclistas y motos) y, a poder ser, apearte por el lado de la acera.",
+      "debes encender siempre las luces de emergencia."
+    ],
+    "correcta": 1, "dificultad": 2,
+    "explicacion_corta": "Prohibido abrir la puerta o apearse sin comprobar antes que no creas peligro ni entorpeces; mejor bajar por el lado más próximo al borde.",
+    "truco": "Gesto holandés: abre con la mano contraria a la puerta; el cuerpo gira y los ojos barren el carril solos.",
+    "trampa": "Abrir 'despacio' no salva a un ciclista que llega a 25 km/h por tu ángulo muerto: la clave es mirar antes, no la velocidad de la puerta.",
+    "tags": ["puertas", "ciclistas", "seguridad"], "senalId": null
+  },
+  {
+    "id": "M09-055", "mundo": 9, "tema": "Abandono del vehículo y apertura de puertas",
+    "pregunta": "Vas a dejar el coche estacionado y alejarte de él. ¿Qué precauciones debes tomar?",
+    "imagen": null,
+    "opciones": [
+      "Solo echar el freno de mano.",
+      "Dejar el motor al ralentí si vas a volver en menos de 5 minutos.",
+      "Parar el motor, accionar el freno de estacionamiento y evitar que el vehículo pueda moverse o que otra persona lo use, sin dejar la llave puesta."
+    ],
+    "correcta": 2, "dificultad": 3,
+    "explicacion_corta": "Al abandonar el vehículo: motor parado, freno de estacionamiento accionado y precauciones para que no se mueva ni lo use un tercero.",
+    "truco": "Ritual de salida: motor parado, freno de mano, llave fuera. Un coche solo no se toca ni se mueve.",
+    "trampa": "El 'ralentí 5 minutos' es la trampa del recadero: dejar el motor en marcha con el coche solo es una invitación al robo y una infracción.",
+    "tags": ["abandono-vehiculo", "precauciones"], "senalId": null
+  },
+  {
+    "id": "M09-056", "mundo": 9, "tema": "Abandono del vehículo y apertura de puertas",
+    "pregunta": "¿En qué momento pueden abrirse las puertas del vehículo?",
+    "imagen": null,
+    "opciones": [
+      "Solo cuando esté completamente inmovilizado y sin que suponga peligro ni entorpecimiento para otros usuarios.",
+      "Cuando circule a menos de 10 km/h, si es para ventilar el habitáculo.",
+      "En cualquier momento, siempre que sea por el lado de la acera."
+    ],
+    "correcta": 0, "dificultad": 4,
+    "explicacion_corta": "Está prohibido abrir las puertas antes de la completa inmovilización del vehículo, y abrirlas o apearse sin comprobar que no hay peligro.",
+    "truco": "Puerta = solo con el coche parado DEL TODO y tras mirar: la puerta es tu último intermitente.",
+    "trampa": "El 'lado de la acera' es una buena práctica para APEARSE, pero no autoriza a abrir en marcha: primero inmovilización completa, siempre.",
+    "explicacion_larga": "Dos condiciones y ninguna excepción: las puertas no pueden abrirse antes de la COMPLETA inmovilización del vehículo, y no deben abrirse ni hay que apearse sin haberse cerciorado de que ello no implica peligro ni entorpecimiento para otros usuarios, en especial ciclistas y motoristas que aparecen por el ángulo muerto. Y al bajar, hazlo por el lado más próximo al borde de la vía: el de la acera. Ni ventilar el coche ni ir despacio justifican una puerta abierta en marcha.",
+    "tags": ["puertas", "seguridad"], "senalId": null
+  }
+]
