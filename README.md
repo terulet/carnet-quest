@@ -14,7 +14,14 @@ python3 -m http.server 8000
 # abre http://localhost:8000
 ```
 
-O publícalo en **GitHub Pages** (Settings → Pages → Deploy from branch → root). El juego está en la raíz del repo y usa rutas relativas, así que funciona tal cual.
+### Publicar en GitHub Pages
+
+El juego está en la raíz del repo y usa rutas relativas, así que se publica tal cual. Dos formas:
+
+- **La más simple (1 clic):** Settings → Pages → *Deploy from a branch* → Branch: `main` → `/ (root)` → Save.
+- **Automatizada (CI/CD):** Settings → Pages → Source: *GitHub Actions*. El workflow `.github/workflows/pages.yml` ya incluido despliega en cada push a `main`.
+
+Con cualquiera de las dos queda en `https://terulet.github.io/carnet-quest/`. Para un dominio propio, añade un archivo `CNAME` con el dominio y apúntalo en tu DNS.
 
 ## Qué incluye
 
