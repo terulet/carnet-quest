@@ -78,7 +78,36 @@ export async function iniciarUI(ctx) {
     const b = e.target.closest('[data-ir]');
     if (b) { sonido.tap(); haptic.ligero(); navegar(b.dataset.ir); }
   });
+  // Enlace de desbloqueo: ?codigo=CQ-XXXXX-XXXXX (o ?pase= / ?unlock=) activa el Pase al
+  // instante, para dejar que alguien pruebe el juego gratis con todo desbloqueado.
+  const desbloqueo = aplicarUnlockPorURL();
   navegar(getEstado().onboarded ? 'mapa' : 'onboarding');
+  if (desbloqueo === 'ok') {
+    if (getEstado().onboarded) { confeti(40); sello(t(S, 'paywall.canjearOk'), 'rango', t(S, 'paywall.desbloqueoLink')); }
+    else toast(t(S, 'paywall.desbloqueoLink'));
+  } else if (desbloqueo === 'bad') {
+    toast(t(S, 'paywall.canjearError'));
+  }
+}
+
+// Lee un código de la URL y activa el Pase si es válido. Limpia la URL siempre.
+function aplicarUnlockPorURL() {
+  let codigo = null;
+  try {
+    const p = new URLSearchParams(location.search);
+    codigo = p.get('codigo') || p.get('pase') || p.get('unlock');
+  } catch { return null; }
+  if (!codigo) return null;
+  try { history.replaceState(null, '', location.pathname + location.hash); } catch {}
+  const s = getEstado();
+  if (s.compras.pase) return null;
+  if (validarCodigo(codigo)) {
+    s.compras.pase = true;
+    s.compras.codigo = codigo.trim().toUpperCase();
+    guardar();
+    return 'ok';
+  }
+  return 'bad';
 }
 
 const CON_NAV = new Set(['mapa', 'mundo', 'torre', 'taller', 'album', 'perfil']);

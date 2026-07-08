@@ -1,6 +1,6 @@
 /* CARNET QUEST — Service Worker offline-first.
    Estrategia: precache del shell + cache-first con actualización en segundo plano. */
-const VERSION = 'cq-v8';
+const VERSION = 'cq-v9';
 const PRECACHE = [
   './',
   'index.html',
