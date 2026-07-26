@@ -916,3 +916,47 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 /* el mapa de progreso avisa de que viene un cruce: anticipación (§10) */
 .dash--cruce { background: var(--neon-magenta); opacity: .45; box-shadow: var(--glow-magenta); }
 .dash--cruce.dash--actual { opacity: 1; }
+
+/* ============ DOBLE O NADA — la escalera del bote ============ */
+
+.bote-chip {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--amarillo-obras);
+  text-shadow: var(--glow-amarillo);
+  font-variant-numeric: tabular-nums;
+  transition: transform var(--dur-corta) var(--ease-pop);
+}
+.bote-chip.sube { transform: scale(1.28); }
+
+.bote-panel {
+  width: 100%;
+  text-align: center;
+  padding: var(--sp-4) var(--sp-3);
+  margin-bottom: var(--sp-3);
+  border-radius: var(--radio-m);
+  border: 2px solid rgba(255, 200, 0, .4);
+  background: rgba(255, 200, 0, .08);
+}
+.bote-panel__valor {
+  font-family: var(--font-display);
+  font-size: var(--fs-hero);
+  line-height: 1;
+  color: var(--amarillo-obras);
+  text-shadow: var(--glow-amarillo);
+  font-variant-numeric: tabular-nums;
+}
+.bote-panel__sub {
+  margin-top: var(--sp-2);
+  font-size: var(--fs-small);
+  color: var(--linea-gris);
+}
+.bote-panel--roto {
+  border-color: rgba(226, 0, 26, .45);
+  background: rgba(226, 0, 26, .08);
+}
+.bote-panel--roto .bote-panel__valor {
+  font-size: var(--fs-h1);
+  color: var(--senal-rojo-vivo);
+  text-shadow: var(--glow-rojo);
+}

@@ -27,10 +27,14 @@ Con cualquiera de las dos queda en `https://terulet.github.io/carnet-quest/`. Pa
 
 - **856 preguntas originales** estilo DGT, repartidas en **15 mundos**, cada una con explicación del *porqué*, una **mnemotecnia** ("truco") y la **trampa** del examen que se revela al fallar.
 - **Verificación normativa adversarial**: los 15 bancos auditados contra el RGCir/BOE (vigente jul-2026: tasas de alcohol, V-16, RD 465/2025 de señales, ITV, puntos…).
-- **«¿Quién pasa primero?»** — mini-juego de cruces jugables: un cruce dibujado a vista de pájaro
-  con sus señales, semáforos, tranvías y peatones; tocas los vehículos en su orden de paso y **los
-  ves cruzar**. 16 puzzles con verificación normativa adversarial (los 16 órdenes correctos y de
-  solución única). Se juegan en tanda propia y también incrustados a mitad de misión.
+- **«¿Quién pasa primero?»** — mini-juego de cruces jugables: un cruce o una glorieta dibujados a
+  vista de pájaro con sus señales, semáforos, tranvías, peatones y pelotones de ciclistas; tocas
+  los vehículos en su orden de paso y **los ves cruzar**. Si fallas, ves la solución en
+  movimiento. **20 puzzles** (4 de ellos glorietas) con verificación normativa adversarial
+  independiente. Se juegan en tanda propia y también incrustados a mitad de misión.
+- **«Doble o nada»** — la escalera del bote: cada acierto lo engorda (10 → 800 XP) y en cada
+  escalón eliges seguir o plantarte. Un fallo se lo lleva entero y te enseña la trampa. Solo
+  arriesgas el bote que estás construyendo: nunca puedes acabar con menos XP de la que tenías.
 - **Mapa-carretera nocturno** (la N-CQ) con tu coche avanzando y desbloqueo por bosses.
 - **Motor pedagógico invisible**: repetición espaciada Leitner (5 cajas), mezcla 70/30 de repaso camuflado y **Taller de Errores** (cada fallo es un coche averiado que reparas acertándolo dos días distintos).
 - **DGT Tower**: modo examen real (30 preguntas · 30 min · máx 3 fallos), UI sobria, corrección completa.
@@ -50,7 +54,7 @@ manifest.webmanifest  PWA
 sw.js                 Service Worker (offline-first)
 css/                  tokens.css (identidad "Señal Neón") + app.css
 js/                   motor: state, data, srs, mission, predictor, audio, juice, signs, cruce, sharecard, screens, main
-datos/                mundos.json, senales(.expanded).json, cruces.json, strings.es.json, preguntas/mundo-01..15.json
+datos/                mundos.json, senales(.expanded).json, cruces.json (los 20 puzzles), strings.es.json, preguntas/mundo-01..15.json
 fonts/                Anton + Overpass (self-hosted)
 icons/                iconos PWA (generados por código)
 tools/                lint del banco, generador de iconos, generador de códigos, guías (CONTENIDO, VENTA)

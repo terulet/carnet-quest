@@ -25,8 +25,9 @@ orden de paso y **los ves cruzar**. Es la respuesta al "no solo pregunta tras pr
   prioridad), semáforos con estados, pasos de peatones, raíles de tranvía, firme sin
   pavimentar, agente con brazo que autoriza, pelotón de ciclistas y vehículo prioritario con
   luces. Animación por bézier cuadrática con rumbo tangente, solo `transform` (60 fps).
-- `datos/cruces.json` — **16 puzzles** con explicación, truco, trampa y (dificultad ≥4)
-  explicación larga.
+- `datos/cruces.json` — **20 puzzles** con explicación, truco, trampa y (dificultad ≥4)
+  explicación larga. Incluye **4 glorietas** (C-017…C-020) con anillo, isleta, dientes de ceda
+  el paso pintados y vehículos que ya circulan dentro (`dentro: <grados>`).
 - Se juegan **como una pregunta más**: mismo id, mismo Leitner, mismo Taller de Errores (un
   cruce fallado es un coche averiado que se repara volviendo a resolverlo) y mismo combo/XP.
   **Nunca** entran en la DGT Tower ni en la contrarreloj (allí manda el formato real).
@@ -52,11 +53,57 @@ secundarias concordantes pero sin lectura del consolidado: letras exactas del ar
 (pavimentada = a, raíles = b), numeración del amarillo intermitente tras el RD 465/2025, y
 literalidad del art. 133. Las **reglas** están confirmadas; lo dudoso es la cita.
 
-### Pendiente para v1.1 de cruces
-Glorieta (art. 57.c, requiere geometría de anillo), incorporación desde vía de servicio o
-propiedad colindante (art. 72), acceso a autopista/autovía (art. 57.d) y peatón sin semáforo.
+### Verificación normativa adversarial de las 4 glorietas ✅
+Segundo revisor independiente, esta vez derivando la geometría del anillo a mano contra el
+renderizador. Hallazgo clave del modelo: con la circulación antihoraria, **un vehículo del
+anillo se encuentra siempre antes la SALIDA de un ramal que su ENTRADA**, así que quien sale
+por el ramal X nunca pisa el punto por el que se entra a X.
 
-## Fase actual: F0–F9 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
+- **GRAVE, corregido — C-018 tenía dos soluciones defendibles.** B salía por el este y por
+  tanto no llegaba a cruzar nunca la entrada de C: nada obligaba a C a esperar, y `["C","B","A"]`
+  era tan defendible como `["B","A","C"]`. Peor aún, el juego pinta la trayectoria completa de
+  cada vehículo, así que el jugador *veía* que B no molestaba a C: el que razonaba bien fallaba.
+  Arreglado sacando a B por el norte, con lo que cruza las dos entradas y el orden queda forzado.
+- C-019: el truco decía "dentro mandas; al salir, no", falso por exceso — al salir sigues siendo
+  preferente frente a los coches de las entradas; quien te gana es el peatón. Reescrito.
+- C-018: la explicación larga decía que dentro no te detienes nunca, contradiciendo a C-019 en
+  el mismo mundo. Corregido, y subido a dificultad 4 (el esquema §8.3 exige larga desde 4).
+- C-017: aclarado que la preferencia del anillo **no la da el ceda el paso**, la da la norma.
+- C-020: añadida la cita del art. 64 y el matiz de que su valor real es que también son
+  preferentes los del grupo que aún NO han entrado.
+- Dibujo: el pelotón se trazaba en línea recta sobre el anillo y el tercer ciclista acababa
+  fuera de la calzada anular. Ahora la fila sigue la curva.
+
+**Acción pendiente para octubre:** el RD 518/2026 rediseña los arts. 64 y 65, que son
+justamente los de C-019 y C-020. Verificado que ambos sobreviven (el art. 64 conserva el
+literal "o haya entrado en una glorieta" y el 65 amplía la protección al peatón), pero hay
+que releer la letra exacta a partir del 1-oct-2026. `[VERIFICAR DGT 2026-10]`
+
+### Glorietas ✅ (C-017…C-020)
+El motor traza dos geometrías con la misma tubería: cruce/T por bézier entre carriles y
+glorieta por recta de entrada → arco por el anillo → recta de salida. Todo acaba en una
+polilínea, así que dibujo, flecha de intención y animación comparten geometría exacta.
+La maniobra se enuncia como en la calle ("toma la segunda salida").
+
+### Pendiente para v1.2 de cruces
+Incorporación desde vía de servicio o propiedad colindante (art. 72), acceso a
+autopista/autovía (art. 57.d), peatón sin semáforo y glorieta de dos carriles.
+
+## F10 · DOBLE O NADA — el motor del "una más" (2026-07-26)
+
+Escalera de bote: cada acierto engorda el bote (10 → 25 → 45 → 75 → 120 → 180 → 260 → 380
+→ 550 → 800 XP) y después de cada uno eliges **SEGUIR** o **PLANTARTE**. Un fallo se lleva el
+bote entero, enseña la trampa y manda la pregunta al Taller.
+
+- **Sin dark patterns por diseño**: solo se arriesga el bote que estás construyendo. Es
+  imposible acabar con menos XP de la que tenías al empezar, y no se apuesta nada que el
+  jugador ya poseyera. No intervienen Chapas ni dinero real (§6, §12).
+- Dificultad creciente por escalón (1→5) y dos cruces de "¿Quién pasa primero?" intercalados
+  en los escalones 5 y 9: el bote también se juega con las manos.
+- Los dos botones tienen el mismo peso visual: seguir no se presenta como la opción "buena".
+- Récord de mejor bote cobrado en el mapa.
+
+## Fase actual: F0–F10 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
 
 **EL JUEGO ESTÁ COMPLETO, JUGABLE, VERIFICADO Y CON LANDING DE VENTA.** Los 15 mundos
 tienen banco, los **15 bancos han pasado verificación normativa adversarial** con búsqueda web,
@@ -162,6 +209,7 @@ en material DGT no confirmables en fuente primaria (el proxy bloquea boe.es/dgt.
 | F6 Retención | ✅ | |
 | F7 Contenido masivo | ✅ | 856 preguntas, 15/15 mundos, 15/15 verificados |
 | F8 Venta | ✅* | paywall + Pase + landing + éxito + guía; *solo falta el Payment Link de Stripe del dueño |
-| F9 Cruces jugables | ✅ | "¿Quién pasa primero?": 16 puzzles verificados, motor SVG + animación |
+| F9 Cruces jugables | ✅ | "¿Quién pasa primero?": 20 puzzles (4 glorietas), motor SVG + animación |
+| F10 Doble o nada | ✅ | Escalera de bote sin dark patterns: solo arriesgas lo que construyes |
 
 > Nota: el remoto solo acepta push de la rama designada `claude/carnet-quest-game-vsag41`.

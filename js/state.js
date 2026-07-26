@@ -36,6 +36,7 @@ function estadoInicial() {
     diarias: { fecha: null, lista: [] },
     contrarreloj: { semana: null, record: 0 },
     cruces: { record: 0 },   // "¿Quién pasa primero?": mejor tanda
+    bote: { record: 0 },     // "Doble o nada": mejor bote cobrado
     compras: { pase: false, codigo: null },
     ajustes: { sonido: true, haptics: true },
   };

@@ -44,8 +44,22 @@
     "seguir": "Seguir jugando"
   },
   "feedback": {
-    "aciertos": ["LIMPIO.", "Ni un radar te pilla.", "Eso es conducir con cabeza.", "Fino.", "Ese cruce ya es tuyo.", "Aprobado andante.", "Sin despeinarte."],
-    "fallos": ["PILLADO.", "Te la han colado.", "El examen hace exactamente esto.", "Tranqui, aquí es gratis fallar.", "Esta te la guardas."]
+    "aciertos": [
+      "LIMPIO.",
+      "Ni un radar te pilla.",
+      "Eso es conducir con cabeza.",
+      "Fino.",
+      "Ese cruce ya es tuyo.",
+      "Aprobado andante.",
+      "Sin despeinarte."
+    ],
+    "fallos": [
+      "PILLADO.",
+      "Te la han colado.",
+      "El examen hace exactamente esto.",
+      "Tranqui, aquí es gratis fallar.",
+      "Esta te la guardas."
+    ]
   },
   "resultado": {
     "misionSuperada": "MISIÓN SUPERADA",
@@ -168,7 +182,8 @@
     "pleno": "CRUCE DOMINADO",
     "otraTanda": "OTRA TANDA",
     "record": "Récord",
-    "sinPuzzles": "Aún no hay cruces desbloqueados. Avanza por el mapa."
+    "sinPuzzles": "Aún no hay cruces desbloqueados. Avanza por el mapa.",
+    "bloqueado": "+{n} con el Pase"
   },
   "contrarreloj": {
     "titulo": "Contrarreloj semanal",
@@ -191,6 +206,7 @@
       "Los 15 mundos completos, hasta el último boss",
       "DGT Tower ilimitada: todos los simulacros que necesites",
       "Taller avanzado: carteles SE BUSCA y boss semanal de tus fallos",
+      "Los 20 cruces de «¿Quién pasa primero?», glorietas incluidas",
       "Predictor de Aprobado y estadísticas completas",
       "Álbum de Señales completo",
       "Cosméticos exclusivos para tu coche"
@@ -212,5 +228,24 @@
     "regla2": "Fallar mola: cada fallo te enseña la trampa del examen.",
     "regla3": "El Predictor te dice, sin mentir, cuándo estás para aprobar.",
     "empezar": "ARRANCAR"
+  },
+  "bote": {
+    "titulo": "Doble o nada",
+    "sub": "Cada acierto engorda el bote. Un fallo y a casa.",
+    "aviso": "Nunca pierdes lo que ya tenías: solo arriesgas el bote que estás construyendo.",
+    "empezar": "AL BOTE",
+    "enElBote": "en el bote",
+    "escalon": "escalón {n} de {total}",
+    "seguir": "SEGUIR · vas a por {n} XP",
+    "plantarse": "PLANTARTE con {n} XP",
+    "perdido": "BOTE PERDIDO",
+    "perdidoSub": "Se han quedado {n} XP en la mesa. La pregunta ya está en tu Taller.",
+    "plantado": "TE HAS PLANTADO",
+    "pleno": "BOTE COMPLETO",
+    "cobrado": "Te llevas {n} XP",
+    "record": "Mejor bote",
+    "verResultado": "VER EL DAÑO",
+    "otra": "OTRA RONDA",
+    "sinBanco": "Necesitas jugar alguna misión antes de subirte al bote."
   }
 }

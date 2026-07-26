@@ -293,7 +293,16 @@ RENDERS.mapa = (sc) => {
       <button class="card-juego" id="cruce-card">
         <span class="card-juego__ico">🚦</span>
         <span class="card-juego__txt"><b>${t(S, 'cruce.titulo')}</b><br>
-          <span class="texto-suave">${t(S, 'cruce.sub')}${s.cruces?.record ? ` · ${t(S, 'cruce.record')}: ${s.cruces.record}` : ''}</span></span>
+          <span class="texto-suave">${t(S, 'cruce.sub')}${(() => {
+            const faltan = CRUCES.length - crucesJugables().length;
+            return faltan > 0 ? ` · ${t(S, 'cruce.bloqueado', { n: faltan })}` : '';
+          })()}${s.cruces?.record ? ` · ${t(S, 'cruce.record')}: ${s.cruces.record}` : ''}</span></span>
+        <span class="card-juego__go">GO</span>
+      </button>
+      <button class="card-juego" id="bote-card">
+        <span class="card-juego__ico">🏆</span>
+        <span class="card-juego__txt"><b>${t(S, 'bote.titulo')}</b><br>
+          <span class="texto-suave">${t(S, 'bote.sub')}${s.bote?.record ? ` · ${t(S, 'bote.record')}: ${s.bote.record} XP` : ''}</span></span>
         <span class="card-juego__go">GO</span>
       </button>
       <button class="card-juego" id="crono-card">
@@ -316,6 +325,7 @@ RENDERS.mapa = (sc) => {
   });
   $('[data-torre]', sc).addEventListener('click', () => { sonido.tap(); navegar('torre'); });
   $('#cruce-card', sc).onclick = () => empezarCruces();
+  $('#bote-card', sc).onclick = () => empezarBote();
   $('#crono-card', sc).onclick = () => empezarContrarreloj();
   // el viaje empieza abajo: Villa Asfalto queda a la vista al entrar
   requestAnimationFrame(() => { sc.scrollTop = Math.max(0, $('.mapa-wrap', sc).offsetHeight - sc.clientHeight + 40); });
@@ -404,6 +414,7 @@ RENDERS.mision = (sc, { cfg }) => {
     ...cfg,
     idx: 0, aciertos: 0, fallos: 0, combo: 0, maxCombo: 0, xp: 0,
     resultados: [], t0: Date.now(), timerId: null,
+    bote: 0, boteAntes: 0, escalon: 0, cobrado: 0, plantado: false,
     limiteFallos: cfg.limiteFallos ?? Infinity,
     duracion: cfg.modo === 'examen' ? 30 * 60 : cfg.modo === 'crono' ? 90 : null,
   };
@@ -441,7 +452,7 @@ function barraTop() {
   const esExamen = sesion.modo === 'examen';
   const dashes = n <= 15
     ? `<div class="dashes">${sesion.preguntas.map((_, i) =>
-        `<span class="dash ${sesion.preguntas[i].tipo === 'cruce' ? 'dash--cruce' : ''} ${i < sesion.idx ? (sesion.resultados[i]?.ok ? 'dash--ok' : 'dash--ko') : i === sesion.idx ? 'dash--actual' : ''}"></span>`).join('')}</div>`
+        `<span class="dash ${(sesion.modo !== 'cruce' && sesion.preguntas[i].tipo === 'cruce') ? 'dash--cruce' : ''} ${i < sesion.idx ? (sesion.resultados[i]?.ok ? 'dash--ok' : 'dash--ko') : i === sesion.idx ? 'dash--actual' : ''}"></span>`).join('')}</div>`
     : `<div class="dashes" style="visibility:hidden"></div>`;
   const derecha = esExamen
     ? `<span class="texto-suave" style="font-variant-numeric:tabular-nums">${sesion.idx + 1}/${n}</span><span class="timer-chip">${fmtTiempo(sesion.duracion)}</span>`
@@ -449,6 +460,8 @@ function barraTop() {
       ? `<span class="fallos-vidas">${'❤️'.repeat(Math.max(0, sesion.limiteFallos + 1 - sesion.fallos))}${'🖤'.repeat(Math.min(sesion.fallos, sesion.limiteFallos + 1))}</span><span class="timer-chip">0:00</span>`
       : sesion.modo === 'crono'
         ? `<span class="timer-chip">${fmtTiempo(90)}</span>`
+      : sesion.modo === 'bote'
+        ? `<span class="bote-chip" id="bote-chip">🏆 ${sesion.bote}</span>`
         : `<span class="combo-chip" id="combo">${sesion.combo >= 2 ? '🔥' + sesion.combo : ''}</span>`;
   return `<div class="mision-top">
       <button class="btn-salir" id="salir">✕</button>
@@ -552,7 +565,8 @@ function contabilizar(sc, q, ok, ev = {}) {
     const xp = RANGO_XP_ACIERTO * mult;
     sesion.xp += xp;
     if (!esCrono) {
-      xpFlotante(ev.clientX || window.innerWidth / 2, ev.clientY || 300, xp);
+      // en el bote la XP suelta no cuenta: lo que manda es el panel del bote
+      if (sesion.modo !== 'bote') xpFlotante(ev.clientX || window.innerWidth / 2, ev.clientY || 300, xp);
       if (sesion.combo === 5 || sesion.combo === 10) {
         sonido.comboSube(mult);
         toast(`${t(S, 'mision.enRacha')} ×${mult} XP`);
@@ -580,6 +594,7 @@ function contabilizar(sc, q, ok, ev = {}) {
 function mostrarFeedback(sc, q, ok) {
   const fb = $('#feedback', sc);
   if (!fb) return;
+  if (sesion.modo === 'bote') return feedbackBote(sc, q, ok, fb);
   const titulo = ok ? azar(S.feedback.aciertos) : azar(S.feedback.fallos);
   fb.innerHTML = `
     <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${titulo}</div>
@@ -595,6 +610,114 @@ function mostrarFeedback(sc, q, ok) {
   if (sesion.modo === 'boss' && sesion.fallos > sesion.limiteFallos) {
     setTimeout(() => terminarSesion(), 900);
   }
+}
+
+/* ============ DOBLE O NADA — la escalera del bote ============ */
+
+// Escalera de XP por escalón. Solo se arriesga el bote que estás construyendo:
+// nunca puedes acabar con menos XP de la que tenías al empezar (§12, cero dark patterns).
+const ESCALERA = [10, 25, 45, 75, 120, 180, 260, 380, 550, 800];
+
+function feedbackBote(sc, q, ok, fb) {
+  const chip = $('#bote-chip', sc);
+  if (ok) {
+    sesion.escalon = Math.min(ESCALERA.length, sesion.escalon + 1);
+    sesion.bote = ESCALERA[sesion.escalon - 1];
+    if (chip) {
+      chip.textContent = `🏆 ${sesion.bote}`;
+      chip.classList.add('sube');
+      setTimeout(() => chip.classList.remove('sube'), 250);
+    }
+  } else {
+    sesion.bote = 0;
+  }
+  const ultimo = sesion.escalon >= ESCALERA.length;
+  const siguiente = ultimo ? null : ESCALERA[sesion.escalon];
+  const titulo = ok ? azar(S.feedback.aciertos) : azar(S.feedback.fallos);
+
+  fb.innerHTML = `
+    <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${titulo}</div>
+    <div class="bote-panel ${ok ? '' : 'bote-panel--roto'}">
+      <div class="bote-panel__valor">${ok ? sesion.bote : t(S, 'bote.perdido')}</div>
+      <div class="bote-panel__sub">${ok
+        ? `XP ${t(S, 'bote.enElBote')} · ${t(S, 'bote.escalon', { n: sesion.escalon, total: ESCALERA.length })}`
+        : t(S, 'bote.perdidoSub', { n: sesion.boteAntes })}</div>
+    </div>
+    ${!ok && q.trampa ? `<div class="feedback__caja feedback__caja--trampa"><b>${t(S, 'mision.trampa')}</b>${esc(q.trampa)}</div>` : ''}
+    ${q.truco ? `<div class="feedback__caja feedback__caja--truco"><b>${t(S, 'mision.truco')}</b>${esc(q.truco)}</div>` : ''}
+    ${!ok ? `<div class="feedback__caja feedback__caja--info"><b>${t(S, 'mision.porQue')}</b>${esc(q.explicacion_corta)}${q.explicacion_larga ? `<br><br>${esc(q.explicacion_larga)}` : ''}</div>` : ''}
+    ${ok && !ultimo ? `<button class="btn btn--cian" id="seguir">${t(S, 'bote.seguir', { n: siguiente })}</button>` : ''}
+    ${ok ? `<button class="btn btn--verde" id="plantarse">${ultimo ? t(S, 'bote.cobrado', { n: sesion.bote }) : t(S, 'bote.plantarse', { n: sesion.bote })}</button>` : ''}
+    ${!ok ? `<button class="btn btn--ghost" id="cerrar-bote">${t(S, 'bote.verResultado')} →</button>` : ''}`;
+
+  $('#seguir', fb)?.addEventListener('click', () => { sonido.tap(); haptic.medio(); avanzar(sc); });
+  $('#plantarse', fb)?.addEventListener('click', () => {
+    sonido.cofre(); haptic.celebracion();
+    sesion.cobrado = sesion.bote;
+    sesion.plantado = true;
+    terminarSesion();
+  });
+  $('#cerrar-bote', fb)?.addEventListener('click', () => { sonido.tap(); terminarSesion(); });
+  if (!ok) fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  sesion.boteAntes = sesion.bote;
+}
+
+async function empezarBote() {
+  sonido.tap(); haptic.medio();
+  const accesibles = mundosAccesibles();
+  const banco = await getBancoCompleto(accesibles);
+  if (banco.length < ESCALERA.length) { toast(t(S, 'bote.sinBanco')); return; }
+  const cruces = crucesDe(accesibles);
+  // dificultad creciente: el bote sube y la pregunta aprieta
+  const porDif = (d) => banco.filter((q) => (q.dificultad || 3) === d);
+  const usados = new Set();
+  const tirar = (lista) => {
+    const libres = lista.filter((q) => !usados.has(q.id));
+    const pool = libres.length ? libres : lista;
+    const q = pool[Math.floor(Math.random() * pool.length)];
+    if (q) usados.add(q.id);
+    return q;
+  };
+  const preguntas = [];
+  for (let i = 0; i < ESCALERA.length; i++) {
+    const dif = Math.min(5, 1 + Math.floor(i / 2));
+    // un cruce a mitad y otro al final: el bote también se juega con las manos
+    if ((i === 4 || i === 8) && cruces.length) {
+      const c = tirar(cruces);
+      if (c) { preguntas.push(c); continue; }
+    }
+    preguntas.push(tirar(porDif(dif).length ? porDif(dif) : banco));
+  }
+  navegar('mision', { cfg: { modo: 'bote', preguntas: preguntas.filter(Boolean), titulo: t(S, 'bote.titulo') } });
+}
+
+async function resultadoBote(sc, d) {
+  const cobrado = d.cobrado || 0;
+  const pleno = d.plantado && d.escalon >= ESCALERA.length;
+  const racha = tocarRacha();
+  const { subida } = darXP(cobrado, DOC.rangos);
+  const s = getEstado();
+  if (cobrado > (s.bote?.record || 0)) s.bote = { record: cobrado };
+  guardar();
+  if (pleno) { sonido.fanfarria(); confeti(36); await sello(t(S, 'bote.pleno'), 'ok', `${cobrado} XP`); }
+  else if (cobrado) { sonido.estrella(1); }
+  else sonido.derrota();
+
+  sc.innerHTML = `<div class="resultado">
+    <h1 class="${cobrado ? 'ok' : 'ko'}">${pleno ? t(S, 'bote.pleno') : cobrado ? t(S, 'bote.plantado') : t(S, 'bote.perdido')}</h1>
+    <div style="font-size:3rem">${cobrado ? '🏆' : '💥'}</div>
+    <div class="marcador">${t(S, 'bote.escalon', { n: d.escalon, total: ESCALERA.length })}</div>
+    <div class="xp-total">+<span id="xp-roll">0</span> XP</div>
+    <div class="texto-suave" style="max-width:300px">${t(S, 'bote.record')}: ${s.bote.record} XP</div>
+    <div class="acciones">
+      <button class="btn btn--primary" id="otra">${t(S, 'bote.otra')}</button>
+      <button class="btn btn--ghost" id="mapa-btn">${t(S, 'resultado.alMapa')}</button>
+    </div>
+  </div>`;
+  rodarContador($('#xp-roll', sc), 0, cobrado, 800);
+  $('#otra', sc).onclick = () => empezarBote();
+  $('#mapa-btn', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+  celebraciones(subida, racha);
 }
 
 /* ============ ¿QUIÉN PASA PRIMERO? — puzzle de prioridad jugable ============ */
@@ -623,7 +746,7 @@ function pintarCruce(sc, q) {
           <button class="cruce-fila" data-k="${v.k}" style="--c:${v.color || '#8FA0BE'}">
             <span class="cruce-fila__k">${v.k}</span>
             <span class="cruce-fila__txt"><b>${esc(ETIQUETA_TIPO[v.tipo] || 'Vehículo')}${v.tu ? ' · TÚ' : ''}</b><br>
-              <span class="texto-suave">${esc(desdeTexto(v))} y ${esc(maniobra(v))}</span></span>
+              <span class="texto-suave">${esc(desdeTexto(v, q))} y ${esc(maniobra(v, q))}</span></span>
             <span class="cruce-fila__n"></span>
           </button>`).join('')}
       </div>
@@ -718,14 +841,14 @@ function conCruces(lista, cruces, misionIdx) {
   return salida;
 }
 
-/** Mundos cuyos cruces puede jugar: el mini-juego no espera a la progresión,
- *  solo respeta el Pase (así engancha desde el minuto uno). */
-const mundosDeCruces = () => DOC.mundos.filter((m) => !mundoDePago(m.n)).map((m) => m.n);
+/** Cruces jugables en el modo dedicado: no esperan a la progresión de mundos,
+ *  solo respetan el Pase. Los marcados `gratis` son la muestra del modo. */
+const crucesJugables = () => CRUCES.filter((c) => c.gratis || !mundoDePago(c.mundo));
 
 /** Modo dedicado: una tanda de puzzles de prioridad, sin preguntas de texto. */
 async function empezarCruces() {
   sonido.tap(); haptic.medio();
-  const lista = crucesDe(mundosDeCruces());
+  const lista = crucesJugables();
   if (lista.length < 3) { toast(t(S, 'cruce.sinPuzzles')); return; }
   const s = getEstado();
   const orden = lista.slice().sort((a, b) => {
@@ -786,6 +909,7 @@ RENDERS.resultado = async (sc, { datos }) => {
   if (datos.modo === 'taller') return resultadoTaller(sc, datos);
   if (datos.modo === 'crono') return resultadoCrono(sc, datos);
   if (datos.modo === 'cruce') return resultadoCruces(sc, datos);
+  if (datos.modo === 'bote') return resultadoBote(sc, datos);
 };
 
 async function resultadoCruces(sc, d) {

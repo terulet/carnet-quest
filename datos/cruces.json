@@ -1,6 +1,7 @@
 [
   {
     "id": "C-001",
+    "gratis": true,
     "tipo": "cruce",
     "mundo": 6,
     "tema": "Prioridad de paso",
@@ -331,5 +332,88 @@
     "truco": "Del barro al asfalto, siempre cedes.",
     "trampa": "B viene por tu izquierda y das por hecho que mandas tú. El firme del camino del que sales te quita la prioridad.",
     "tags": ["prioridad", "excepciones", "vias"]
+  },
+  {
+    "id": "C-017",
+    "gratis": true,
+    "tipo": "cruce",
+    "via": "glorieta",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "titulo": "Dentro manda quien ya gira",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "dentro": 112, "hacia": "E", "tipo": "turismo", "color": "#FF2D78", "nota": "Ya está circulando por la glorieta" }
+    ],
+    "orden": ["B", "A"],
+    "dificultad": 2,
+    "explicacion_corta": "En una glorieta la preferencia es de quien ya circula por ella (art. 57 RGCir). B viene por tu izquierda, pero está dentro: pasa él y tú esperas en la entrada.",
+    "truco": "En la glorieta manda el que ya gira. La derecha se queda en la puerta.",
+    "trampa": "Buscas al de tu derecha por costumbre y no miras a tu izquierda, que es justo por donde llegan los que ya están dentro. Y ojo: aunque la entrada no tuviera ceda el paso, la preferencia seguiría siendo suya. No se la da la señal, se la da la norma.",
+    "tags": ["glorieta", "prioridad", "excepciones"]
+  },
+  {
+    "id": "C-018",
+    "tipo": "cruce",
+    "via": "glorieta",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "titulo": "Una vez dentro, mandas tú",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "W", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "dentro": 112, "hacia": "N", "tipo": "turismo", "color": "#FF2D78", "nota": "Ya está circulando por la glorieta" },
+      { "k": "C", "desde": "E", "hacia": "N", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["B", "A", "C"],
+    "dificultad": 4,
+    "explicacion_corta": "B ya está dentro y pasa primero. Tú entras después y, al dar la vuelta hacia la tercera salida, pasas por delante de C, que todavía está esperando para entrar.",
+    "explicacion_larga": "La glorieta tiene dos momentos y conviene no mezclarlos. Mientras estás fuera eres el que cede: el ceda el paso de la entrada te obliga con todo el que ya circula por el anillo, venga por donde venga. En cuanto entras cambias de bando: ahora eres tú quien tiene la preferencia sobre los que esperan en cualquiera de las entradas. Por eso tu tercera salida, que parece la maniobra más larga y complicada, se hace con prioridad todo el rato salvo en dos momentos: el instante de entrar y el paso de peatones de tu salida. El error clásico es frenar dentro del anillo por cortesía: quien está dentro no debe detenerse, porque detrás hay más gente girando.",
+    "truco": "Fuera cedes, dentro mandas. La frontera es la línea de ceda el paso.",
+    "trampa": "Como C ya está parado en su entrada, parece que «lleva más rato esperando». El orden de llegada no cuenta: cuenta quién está dentro.",
+    "tags": ["glorieta", "prioridad", "salidas"]
+  },
+  {
+    "id": "C-019",
+    "tipo": "cruce",
+    "via": "glorieta",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "titulo": "La salida tiene su paso de peatones",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "A", "dentro": 200, "hacia": "S", "tipo": "turismo", "color": "#00E5FF", "tu": true, "nota": "Estás dentro y vas a salir por el sur" },
+      { "k": "P", "cruza": "S", "hacia": "E", "tipo": "peaton", "color": "#00C464" }
+    ],
+    "orden": ["P", "A"],
+    "dificultad": 2,
+    "explicacion_corta": "Dentro de la glorieta mandas tú, y lo sigues haciendo frente a los coches que esperan en las entradas. Lo que te gana al salir es el peatón: cruza por un paso señalizado y además estás girando para entrar en otra vía (art. 65 RGCir, los dos supuestos a la vez).",
+    "truco": "Dentro mandas — hasta el paso de peatones de tu salida. Ahí manda él.",
+    "trampa": "Llevas toda la glorieta con prioridad y sales con la misma inercia. El atropello típico de glorieta está justo en el paso de la salida.",
+    "tags": ["glorieta", "peatones", "salidas"]
+  },
+  {
+    "id": "C-020",
+    "tipo": "cruce",
+    "via": "glorieta",
+    "mundo": 8,
+    "tema": "Glorietas",
+    "titulo": "El pelotón ya ha entrado",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "G", "dentro": 195, "hacia": "E", "tipo": "bici", "color": "#00C464", "grupo": 3, "nota": "Grupo de ciclistas: el primero ya ha entrado en la glorieta" },
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true }
+    ],
+    "orden": ["G", "A"],
+    "dificultad": 3,
+    "explicacion_corta": "Cuando el primer ciclista de un grupo ya ha entrado en la glorieta, tienen preferencia todos los demás del grupo (art. 64 RGCir). Esperas a que pase el pelotón entero antes de entrar.",
+    "truco": "Si el primero del pelotón ya ha entrado en la glorieta, pasan todos: no te metas en medio.",
+    "trampa": "Ves un hueco entre ciclistas y lo aprovechas. A los que ya están dentro les cederías igual por la regla de la glorieta; lo que añade la norma del grupo es que también son preferentes los que todavía no han entrado. El pelotón se respeta entero.",
+    "tags": ["glorieta", "ciclistas", "prioridad"]
   }
 ]
