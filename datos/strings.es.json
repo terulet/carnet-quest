@@ -247,5 +247,36 @@
     "verResultado": "VER EL DAÑO",
     "otra": "OTRA RONDA",
     "sinBanco": "Necesitas jugar alguna misión antes de subirte al bote."
+  },
+  "rush": {
+    "titulo": "Señal Rush",
+    "sub": "60 segundos clasificando señales. Puro reflejo.",
+    "empezar": "SEMÁFORO EN VERDE",
+    "aviso": "Clasifica cada señal por su familia. Fallar te cuesta {n} segundos.",
+    "familias": {
+      "peligro": "Peligro",
+      "prioridad": "Prioridad",
+      "prohibicion": "Prohibición",
+      "obligacion": "Obligación",
+      "fin": "Fin de prohibición",
+      "indicacion": "Indicación"
+    },
+    "pistas": {
+      "peligro": "Triángulo blanco con borde rojo",
+      "prioridad": "Ceda, STOP y el rombo",
+      "prohibicion": "Círculo con borde rojo",
+      "obligacion": "Círculo azul relleno",
+      "fin": "Gris con barra negra",
+      "indicacion": "Cuadrado azul"
+    },
+    "aciertos": "señales",
+    "combo": "combo",
+    "record": "Tu récord",
+    "nuevoRecord": "NUEVO RÉCORD",
+    "seAcabo": "SE ACABÓ EL TIEMPO",
+    "otra": "OTRA VEZ",
+    "compartir": "Compartir tarjeta",
+    "compartirTexto": "He clasificado {n} señales de tráfico en 60 segundos en CARNET QUEST 🏁 A ver si me ganas.",
+    "truco": "Triángulo avisa, círculo manda, cuadrado informa."
   }
 }

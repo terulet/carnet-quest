@@ -32,6 +32,9 @@ Con cualquiera de las dos queda en `https://terulet.github.io/carnet-quest/`. Pa
   los vehículos en su orden de paso y **los ves cruzar**. Si fallas, ves la solución en
   movimiento. **20 puzzles** (4 de ellos glorietas) con verificación normativa adversarial
   independiente. Se juegan en tanda propia y también incrustados a mitad de misión.
+- **«Señal Rush»** — 60 segundos clasificando señales por familia contra el reloj. Las pistas de
+  forma se te caen solas al encadenar cinco aciertos y vuelven si fallas: andamiaje que se retira
+  cuando ya no hace falta.
 - **«Doble o nada»** — la escalera del bote: cada acierto lo engorda (10 → 800 XP) y en cada
   escalón eliges seguir o plantarte. Un fallo se lo lleva entero y te enseña la trampa. Solo
   arriesgas el bote que estás construyendo: nunca puedes acabar con menos XP de la que tenías.

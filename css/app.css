@@ -960,3 +960,113 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   color: var(--senal-rojo-vivo);
   text-shadow: var(--glow-rojo);
 }
+
+/* ============ SEÑAL RUSH — 60 s clasificando señales ============ */
+
+.rush {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-3);
+  padding-top: var(--sp-2);
+}
+
+.rush__barra {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--asfalto-600);
+  overflow: hidden;
+}
+.rush__barra i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-cian), var(--neon-magenta));
+  transform-origin: left center;
+  will-change: transform;
+}
+
+.rush__senal {
+  width: min(58vw, 210px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, .6));
+}
+.rush-svg { width: 100%; height: 100%; }
+.rush__senal--entra { animation: rush-entra 220ms var(--ease-pop); }
+@keyframes rush-entra {
+  from { transform: translateY(-16px) scale(.82); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+.rush__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-2);
+}
+.rush-btn {
+  --c: var(--linea-gris);
+  min-height: 62px;
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radio-s);
+  border: 2px solid var(--c);
+  background: var(--asfalto-700);
+  color: var(--linea-blanca);
+  font-family: var(--font-ui);
+  text-align: left;
+  line-height: 1.15;
+  transition: transform var(--dur-tap) var(--ease-out), background var(--dur-corta), border-color var(--dur-corta);
+}
+.rush-btn b { display: block; font-size: .95rem; color: var(--c); }
+.rush-btn span { font-size: var(--fs-tiny); color: var(--linea-gris); }
+.rush-btn:active { transform: scale(.96); }
+.rush-btn--peligro { --c: var(--senal-rojo-vivo); }
+.rush-btn--prioridad { --c: var(--amarillo-obras); }
+.rush-btn--prohibicion { --c: var(--senal-rojo); }
+.rush-btn--obligacion { --c: var(--senal-azul-vivo); }
+.rush-btn--fin { --c: var(--linea-tenue); }
+.rush-btn--indicacion { --c: var(--neon-cian); }
+.rush-btn--ok { background: rgba(0, 196, 100, .22); border-color: var(--senal-verde-vivo); }
+.rush-btn--ko { background: rgba(226, 0, 26, .22); border-color: var(--senal-rojo-vivo); }
+.rush-btn--senala { animation: rush-senala 300ms steps(1) 2; }
+@keyframes rush-senala {
+  0%, 49% { background: rgba(0, 196, 100, .3); }
+  50%, 100% { background: var(--asfalto-700); }
+}
+
+/* Las pistas de forma son ruedines: se caen al coger ritmo (combo ≥ 5) y
+   vuelven si rompes el combo. La caja no cambia de tamaño para que no salte. */
+.rush-btn span { transition: opacity var(--dur-media) var(--ease-out); }
+.rush--sin-pistas .rush-btn span { opacity: 0; }
+
+.rush__truco {
+  font-size: var(--fs-tiny);
+  color: var(--linea-tenue);
+  text-align: center;
+  margin: 0;
+}
+
+.rush-marcador {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--linea-blanca);
+  font-variant-numeric: tabular-nums;
+}
+.rush-marcador b { transition: transform var(--dur-corta) var(--ease-pop); display: inline-block; }
+.rush-marcador b.sube { transform: scale(1.35); color: var(--senal-verde-vivo); }
+.rush-combo { color: var(--amarillo-obras); font-size: .9rem; }
+
+.rush-final {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 22vw, 7rem);
+  line-height: 1;
+  color: var(--neon-magenta);
+  text-shadow: var(--glow-magenta);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rush__senal--entra, .rush-btn--senala { animation: none; }
+}

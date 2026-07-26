@@ -103,7 +103,23 @@ bote entero, enseña la trampa y manda la pregunta al Taller.
 - Los dos botones tienen el mismo peso visual: seguir no se presenta como la opción "buena".
 - Récord de mejor bote cobrado en el mapa.
 
-## Fase actual: F0–F10 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
+## F11 · SEÑAL RUSH — el Álbum se convierte en reflejos (2026-07-26)
+
+60 segundos clasificando señales por familia: peligro, prioridad, prohibición, obligación, fin
+de prohibición e indicación. Seis botones fijos en rejilla 2×3, en zona de pulgar, con el color
+de su familia. Convierte el tema más denso del examen en un juego de reacción.
+
+- **Andamiaje que se retira solo:** cada botón lleva su pista de forma ("triángulo blanco con
+  borde rojo"). Al encadenar 5 aciertos las pistas se desvanecen; si rompes el combo, vuelven.
+  La caja del botón no cambia de tamaño, así que el layout nunca salta.
+- Fallar **cuesta 3 segundos, no puntos**: mantiene el ritmo, castiga sin frustrar, y marca cuál
+  era la familia correcta antes de seguir.
+- Récord semanal + tarjeta compartible (motor viral del §7/§15).
+- **No toca el SRS ni el predictor a propósito**: clasificar por familia no es responder una
+  pregunta del banco, y contaminar el predictor con esto lo inflaría. Tampoco colecciona señales
+  del Álbum: eso se sigue ganando acertando preguntas de verdad (§8.5, honestidad del predictor).
+
+## Fase actual: F0–F11 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
 
 **EL JUEGO ESTÁ COMPLETO, JUGABLE, VERIFICADO Y CON LANDING DE VENTA.** Los 15 mundos
 tienen banco, los **15 bancos han pasado verificación normativa adversarial** con búsqueda web,
@@ -211,5 +227,6 @@ en material DGT no confirmables en fuente primaria (el proxy bloquea boe.es/dgt.
 | F8 Venta | ✅* | paywall + Pase + landing + éxito + guía; *solo falta el Payment Link de Stripe del dueño |
 | F9 Cruces jugables | ✅ | "¿Quién pasa primero?": 20 puzzles (4 glorietas), motor SVG + animación |
 | F10 Doble o nada | ✅ | Escalera de bote sin dark patterns: solo arriesgas lo que construyes |
+| F11 Señal Rush | ✅ | 60 s clasificando señales; las pistas se retiran con el combo |
 
 > Nota: el remoto solo acepta push de la rama designada `claude/carnet-quest-game-vsag41`.

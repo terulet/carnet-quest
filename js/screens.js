@@ -67,7 +67,7 @@ export async function iniciarUI(ctx) {
   hudEl = $('#hud');
   navEl = $('#nav');
   const cont = $('#screens');
-  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall']) {
+  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall', 'rush']) {
     const sc = el(`<section class="screen" data-screen="${id}"></section>`);
     cont.appendChild(sc);
     pantallas[id] = sc;
@@ -305,6 +305,12 @@ RENDERS.mapa = (sc) => {
           <span class="texto-suave">${t(S, 'bote.sub')}${s.bote?.record ? ` · ${t(S, 'bote.record')}: ${s.bote.record} XP` : ''}</span></span>
         <span class="card-juego__go">GO</span>
       </button>
+      <button class="card-juego" id="rush-card">
+        <span class="card-juego__ico">⚡</span>
+        <span class="card-juego__txt"><b>${t(S, 'rush.titulo')}</b><br>
+          <span class="texto-suave">${t(S, 'rush.sub')}${s.rush?.semana === semanaISO() && s.rush.record ? ` · ${t(S, 'rush.record')}: ${s.rush.record}` : ''}</span></span>
+        <span class="card-juego__go">GO</span>
+      </button>
       <button class="card-juego" id="crono-card">
         <span class="card-juego__ico">⏱️</span>
         <span class="card-juego__txt"><b>${t(S, 'contrarreloj.titulo')}</b><br>
@@ -326,6 +332,7 @@ RENDERS.mapa = (sc) => {
   $('[data-torre]', sc).addEventListener('click', () => { sonido.tap(); navegar('torre'); });
   $('#cruce-card', sc).onclick = () => empezarCruces();
   $('#bote-card', sc).onclick = () => empezarBote();
+  $('#rush-card', sc).onclick = () => { sonido.tap(); haptic.medio(); navegar('rush'); };
   $('#crono-card', sc).onclick = () => empezarContrarreloj();
   // el viaje empieza abajo: Villa Asfalto queda a la vista al entrar
   requestAnimationFrame(() => { sc.scrollTop = Math.max(0, $('.mapa-wrap', sc).offsetHeight - sc.clientHeight + 40); });
@@ -611,6 +618,166 @@ function mostrarFeedback(sc, q, ok) {
     setTimeout(() => terminarSesion(), 900);
   }
 }
+
+/* ============ SEÑAL RUSH — 60 s clasificando señales ============ */
+
+const RUSH_FAMILIAS = ['peligro', 'prioridad', 'prohibicion', 'obligacion', 'fin', 'indicacion'];
+const RUSH_SEG = 60;
+const RUSH_PENALIZA = 3;   // segundos que cuesta cada fallo
+
+RENDERS.rush = (sc) => {
+  const s = getEstado();
+  const semana = semanaISO();
+  const record = s.rush.semana === semana ? s.rush.record : 0;
+  const baraja = SEN.senales
+    .filter((x) => RUSH_FAMILIAS.includes(x.categoria))
+    .sort(() => Math.random() - 0.5);
+
+  const rush = {
+    i: 0, aciertos: 0, combo: 0, maxCombo: 0,
+    fin: Date.now() + RUSH_SEG * 1000,
+    bloqueado: false, timer: null, baraja,
+  };
+
+  sc.innerHTML = `
+    <div class="mision-top">
+      <button class="btn-salir" id="salir">✕</button>
+      <span class="rush-marcador"><b id="rush-n">0</b> <span id="rush-combo" class="rush-combo"></span></span>
+      <span class="timer-chip" id="rush-timer">${fmtTiempo(RUSH_SEG)}</span>
+    </div>
+    <div class="rush" id="rush-wrap">
+      <div class="rush__barra"><i id="rush-barra"></i></div>
+      <div class="rush__senal" id="rush-senal"></div>
+      <div class="rush__grid" id="rush-grid">
+        ${RUSH_FAMILIAS.map((f) => `
+          <button class="rush-btn rush-btn--${f}" data-f="${f}">
+            <b>${t(S, 'rush.familias.' + f)}</b>
+            <span>${t(S, 'rush.pistas.' + f)}</span>
+          </button>`).join('')}
+      </div>
+      <p class="rush__truco">${t(S, 'rush.truco')}</p>
+    </div>`;
+
+  const $senal = $('#rush-senal', sc);
+  const $n = $('#rush-n', sc);
+  const $combo = $('#rush-combo', sc);
+  const $timer = $('#rush-timer', sc);
+  const $barra = $('#rush-barra', sc);
+  const $wrap = $('#rush-wrap', sc);
+
+  const pintar = () => {
+    const señal = rush.baraja[rush.i % rush.baraja.length];
+    rush.actual = señal;
+    $senal.innerHTML = svgSenal(señal, 'senal-svg rush-svg');
+    $senal.classList.remove('rush__senal--entra');
+    void $senal.offsetWidth;   // reinicia la animación de entrada
+    $senal.classList.add('rush__senal--entra');
+  };
+
+  const tick = () => {
+    const resta = Math.max(0, Math.ceil((rush.fin - Date.now()) / 1000));
+    $timer.textContent = fmtTiempo(resta);
+    $timer.classList.toggle('timer-chip--rojo', resta <= 10);
+    $barra.style.transform = `scaleX(${Math.max(0, (rush.fin - Date.now()) / (RUSH_SEG * 1000))})`;
+    if (resta <= 5 && resta > 0) sonido.tictac();
+    if (rush.fin - Date.now() <= 0) terminar();
+  };
+
+  const responder = (fam, btn) => {
+    if (rush.bloqueado || !rush.actual) return;
+    const ok = fam === rush.actual.categoria;
+    if (ok) {
+      rush.aciertos++;
+      rush.combo++;
+      rush.maxCombo = Math.max(rush.maxCombo, rush.combo);
+      sonido.acierto(); haptic.ligero();
+      $n.textContent = String(rush.aciertos);
+      $n.classList.add('sube');
+      setTimeout(() => $n.classList.remove('sube'), 200);
+      $combo.textContent = rush.combo >= 3 ? `🔥${rush.combo}` : '';
+      $wrap.classList.toggle('rush--sin-pistas', rush.combo >= 5);
+      if (rush.combo === 5 || rush.combo === 10 || rush.combo === 20) sonido.comboSube(rush.combo / 5 + 1);
+      btn.classList.add('rush-btn--ok');
+      setTimeout(() => btn.classList.remove('rush-btn--ok'), 180);
+      rush.i++;
+      pintar();
+    } else {
+      // fallar cuesta tiempo, no puntos: mantiene el ritmo y enseña el acierto
+      rush.combo = 0;
+      $combo.textContent = '';
+      $wrap.classList.remove('rush--sin-pistas');
+      rush.fin -= RUSH_PENALIZA * 1000;
+      sonido.fallo(); haptic.ko();
+      sacudir($senal);
+      btn.classList.add('rush-btn--ko');
+      const correcto = sc.querySelector(`.rush-btn[data-f="${rush.actual.categoria}"]`);
+      correcto?.classList.add('rush-btn--senala');
+      rush.bloqueado = true;
+      setTimeout(() => {
+        btn.classList.remove('rush-btn--ko');
+        correcto?.classList.remove('rush-btn--senala');
+        rush.bloqueado = false;
+        if (rush.timer) { rush.i++; pintar(); }
+      }, 620);
+    }
+    tick();
+  };
+
+  async function terminar() {
+    clearInterval(rush.timer);
+    rush.timer = null;
+    sonido.derrota();
+    const nuevo = rush.aciertos > record;
+    const est = getEstado();
+    if (est.rush.semana !== semana || rush.aciertos > est.rush.record) {
+      est.rush = { semana, record: Math.max(rush.aciertos, est.rush.semana === semana ? est.rush.record : 0) };
+    }
+    const racha = tocarRacha();
+    const { subida } = darXP(rush.aciertos * 4, DOC.rangos);
+    guardar();
+    if (nuevo) { confeti(30); await sello(t(S, 'rush.nuevoRecord'), 'rango', `${rush.aciertos} ${t(S, 'rush.aciertos')}`); }
+
+    sc.innerHTML = `<div class="resultado">
+      <h1 class="${nuevo ? 'ok' : ''}">${nuevo ? t(S, 'rush.nuevoRecord') : t(S, 'rush.seAcabo')}</h1>
+      <div class="rush-final">${rush.aciertos}</div>
+      <div class="marcador">${t(S, 'rush.aciertos')} · ${t(S, 'rush.combo')} ×${rush.maxCombo}</div>
+      <div class="xp-total">+<span id="xp-roll">0</span> XP</div>
+      <div class="texto-suave">${t(S, 'rush.record')}: ${getEstado().rush.record}</div>
+      <div class="acciones">
+        <button class="btn btn--verde" id="compartir">${t(S, 'rush.compartir')} 📤</button>
+        <button class="btn btn--primary" id="otra">${t(S, 'rush.otra')}</button>
+        <button class="btn btn--ghost" id="mapa-btn">${t(S, 'resultado.alMapa')}</button>
+      </div>
+    </div>`;
+    rodarContador($('#xp-roll', sc), 0, rush.aciertos * 4, 700);
+    $('#otra', sc).onclick = () => { sonido.tap(); navegar('rush'); };
+    $('#mapa-btn', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+    $('#compartir', sc).onclick = async (e) => {
+      const btn = e.currentTarget; btn.disabled = true;
+      try {
+        const blob = await generarTarjeta({
+          tipo: 'rush', valor: String(rush.aciertos), titulo: t(S, 'rush.titulo'),
+          sub: `${t(S, 'rush.aciertos')} en 60 segundos`, reto: '¿Me lo superas?',
+        });
+        await compartirTarjeta(blob, t(S, 'rush.compartirTexto', { n: rush.aciertos }));
+      } catch { toast('No se ha podido generar la tarjeta'); }
+      btn.disabled = false;
+    };
+    celebraciones(subida, racha);
+  }
+
+  $('#salir', sc).onclick = () => {
+    clearInterval(rush.timer); rush.timer = null;
+    sonido.tap(); navegar('mapa', {}, true);
+  };
+  $('#rush-grid', sc).addEventListener('click', (e) => {
+    const b = e.target.closest('.rush-btn');
+    if (b) responder(b.dataset.f, b);
+  });
+  pintar();
+  tick();
+  rush.timer = setInterval(tick, 250);
+};
 
 /* ============ DOBLE O NADA — la escalera del bote ============ */
 

@@ -81,7 +81,7 @@ function textoNeon(ctx, txt, x, y, font, color, glow = 30, align = 'center') {
 }
 
 /**
- * Dibuja la tarjeta. tipo: 'crono' | 'apto' | 'racha'.
+ * Dibuja la tarjeta. tipo: 'crono' | 'apto' | 'racha' | 'rush'.
  * datos: { valor, titulo, sub, reto } — reto es la frase de pique.
  * Devuelve un Blob PNG.
  */
@@ -101,7 +101,7 @@ export async function generarTarjeta({ tipo = 'crono', valor, titulo, sub, reto 
   textoNeon(ctx, 'N-CQ', W / 2, 185, "800 30px Overpass, sans-serif", COL.cian, 18);
 
   // panel central con el resultado
-  const acento = tipo === 'apto' ? COL.verde : tipo === 'racha' ? COL.amarillo : COL.cian;
+  const acento = tipo === 'apto' ? COL.verde : tipo === 'racha' ? COL.amarillo : tipo === 'rush' ? COL.magenta : COL.cian;
   ctx.save();
   ctx.shadowColor = acento; ctx.shadowBlur = 40;
   ctx.strokeStyle = acento; ctx.lineWidth = 8;
