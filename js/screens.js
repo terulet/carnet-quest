@@ -334,8 +334,14 @@ RENDERS.mapa = (sc) => {
   $('#bote-card', sc).onclick = () => empezarBote();
   $('#rush-card', sc).onclick = () => { sonido.tap(); haptic.medio(); navegar('rush'); };
   $('#crono-card', sc).onclick = () => empezarContrarreloj();
-  // el viaje empieza abajo: Villa Asfalto queda a la vista al entrar
-  requestAnimationFrame(() => { sc.scrollTop = Math.max(0, $('.mapa-wrap', sc).offsetHeight - sc.clientHeight + 40); });
+  // El viaje empieza abajo: el primer mundo queda a la vista al entrar, despejado
+  // del nav. Hay que contar el offsetTop del mapa (el título va antes) o el nombre
+  // del mundo acaba pisado por la barra inferior.
+  requestAnimationFrame(() => {
+    const wrap = $('.mapa-wrap', sc);
+    const nav = (navEl?.offsetHeight || 76) + 24;
+    sc.scrollTop = Math.max(0, wrap.offsetTop + wrap.offsetHeight - sc.clientHeight + nav);
+  });
 };
 
 /* ================= MUNDO ================= */

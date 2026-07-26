@@ -65,6 +65,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   display: none;
 }
 .screen.activa { display: block; }
+/* barra de scroll discreta: en escritorio, la del sistema aparecía como una
+   línea blanca suelta sobre el asfalto */
+.screen { scrollbar-width: thin; scrollbar-color: var(--asfalto-500) transparent; }
+.screen::-webkit-scrollbar { width: 6px; }
+.screen::-webkit-scrollbar-track { background: transparent; }
+.screen::-webkit-scrollbar-thumb { background: var(--asfalto-500); border-radius: 3px; }
 .screen--sin-nav { padding-bottom: var(--sp-8); }
 .screen.entra { animation: screen-in var(--dur-media) var(--ease-out) both; }
 @keyframes screen-in {
@@ -1069,4 +1075,19 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 
 @media (prefers-reduced-motion: reduce) {
   .rush__senal--entra, .rush-btn--senala { animation: none; }
+}
+
+/* ============ pantallas anchas: la app es un móvil, que se note a propósito ============ */
+@media (min-width: 620px) {
+  body {
+    background:
+      radial-gradient(90% 55% at 50% 0%, rgba(255, 45, 120, .05), transparent 70%),
+      radial-gradient(70% 45% at 50% 100%, rgba(0, 229, 255, .04), transparent 70%),
+      var(--asfalto-950);
+  }
+  #app {
+    border-left: 1px solid var(--asfalto-600);
+    border-right: 1px solid var(--asfalto-600);
+    box-shadow: 0 0 90px rgba(0, 0, 0, .75);
+  }
 }
