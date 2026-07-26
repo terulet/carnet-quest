@@ -35,6 +35,10 @@
   --neon-magenta: #FF2D78;  /* acento GTA */
   --neon-cian: #00E5FF;     /* acento GTA */
 
+  /* acento activo: lo repinta el tema elegido en el Garaje (solo decorativo;
+     el rojo/verde/azul de señal NUNCA cambian, son semánticos) */
+  --acento: #00E5FF;
+
   /* glows */
   --glow-cian: 0 0 12px rgba(0, 229, 255, .45), 0 0 32px rgba(0, 229, 255, .18);
   --glow-magenta: 0 0 12px rgba(255, 45, 120, .5), 0 0 32px rgba(255, 45, 120, .2);

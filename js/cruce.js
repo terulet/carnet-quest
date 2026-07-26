@@ -143,6 +143,17 @@ const CUERPOS = {
   prioritario: { w: 28, h: 52 },
 };
 
+/** Vehículo suelto en su propio SVG, mirando al norte. Lo usa el Garaje. */
+export function svgVehiculo(v, alto = 64) {
+  const m = CUERPOS[v.tipo] || CUERPOS.turismo;
+  const w = m.w + 12, h = m.h + 12;
+  return `<svg viewBox="${-w / 2} ${-h / 2} ${w} ${h}" height="${alto}" xmlns="http://www.w3.org/2000/svg"
+               role="img" aria-label="${v.nombre || v.tipo}">${cuerpoSVG(v)}</svg>`;
+}
+
+/** El cuerpo suelto, sin envoltorio: para incrustarlo en otro SVG (mapa). */
+export const cuerpoVehiculo = (v) => cuerpoSVG(v);
+
 function cuerpoSVG(v, anillo = 0) {
   // grupo (pelotón de ciclistas): varios cuerpos en fila detrás del primero.
   // Dentro de una glorieta la fila sigue la curva del anillo (con la isleta a la

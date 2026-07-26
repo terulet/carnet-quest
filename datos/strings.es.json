@@ -209,7 +209,7 @@
       "Los 20 cruces de «¿Quién pasa primero?», glorietas incluidas",
       "Predictor de Aprobado y estadísticas completas",
       "Álbum de Señales completo",
-      "Cosméticos exclusivos para tu coche"
+      "Coches, temas y celebraciones exclusivos en el Garaje"
     ],
     "honesto": "Sin suscripción. Sin anuncios. Lo gratis no caduca ni se recorta.",
     "comprar": "DESBLOQUEAR TODO",
@@ -278,5 +278,20 @@
     "compartir": "Compartir tarjeta",
     "compartirTexto": "He clasificado {n} señales de tráfico en 60 segundos en CARNET QUEST 🏁 A ver si me ganas.",
     "truco": "Triángulo avisa, círculo manda, cuadrado informa."
+  },
+  "garaje": {
+    "titulo": "Garaje",
+    "sub": "Aquí es donde acaban tus Chapas. Solo pintura: nada de esto te hace acertar más.",
+    "coches": "Tu coche",
+    "temas": "Tema de la app",
+    "celebraciones": "Celebración",
+    "equipado": "PUESTO",
+    "equipar": "PONER",
+    "comprar": "{n} 🔩",
+    "sinChapas": "Te faltan {n} Chapas. Se ganan con las misiones diarias y los cofres.",
+    "soloPase": "Con el Pase Carnet",
+    "comprado": "{nombre}, a tu garaje",
+    "abrir": "Abrir el Garaje",
+    "chapas": "Chapas"
   }
 }

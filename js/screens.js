@@ -4,8 +4,8 @@ import {
   getEstado, guardar, HOY, semanaISO, mundoEstado, estrellasDeMundo,
   registrarRespuesta, tocarRacha, exportarJSON, importarJSON, borrarTodo,
 } from './state.js';
-import { getSenales, getBanco, getBancoCompleto, getCruces, t } from './data.js';
-import { svgCruce, animarPaso, reponer, maniobra, desdeTexto, ETIQUETA_TIPO } from './cruce.js';
+import { getSenales, getBanco, getBancoCompleto, getCruces, getGaraje, t } from './data.js';
+import { svgCruce, animarPaso, reponer, maniobra, desdeTexto, ETIQUETA_TIPO, svgVehiculo, cuerpoVehiculo } from './cruce.js';
 import { procesarRespuesta, cochesDelTaller } from './srs.js';
 import {
   componerMision, componerBoss, componerExamen, componerTaller,
@@ -14,7 +14,7 @@ import {
 } from './mission.js';
 import { calcularPredictor } from './predictor.js';
 import { sonido, haptic, setModoExamen } from './audio.js';
-import { sello, confeti, xpFlotante, rodarContador, toast, sacudir, glowCombo } from './juice.js';
+import { sello, confeti, setConfeti, xpFlotante, rodarContador, toast, sacudir, glowCombo } from './juice.js';
 import { svgSenal } from './signs.js';
 import { generarTarjeta, compartirTarjeta } from './sharecard.js';
 
@@ -36,6 +36,7 @@ let sesion = null; // sesión de juego activa
 let paywallMostradoTrasBoss3 = false;
 let conBanco = new Set(); // mundos con banco de preguntas disponible
 let CRUCES = [];          // puzzles "¿Quién pasa primero?" (cacheados al arrancar)
+let GARAJE = null;        // catálogo de cosmética
 
 const $ = (sel, el = document) => el.querySelector(sel);
 const el = (html) => {
@@ -49,7 +50,7 @@ const azar = (arr) => arr[Math.floor(Math.random() * arr.length)];
 /* ================= arranque ================= */
 
 export async function iniciarUI(ctx) {
-  S = ctx.strings; DOC = ctx.mundos; SEN = await getSenales(); CRUCES = await getCruces();
+  S = ctx.strings; DOC = ctx.mundos; SEN = await getSenales(); CRUCES = await getCruces(); GARAJE = await getGaraje();
   await Promise.all(DOC.mundos.map(async (m) => {
     const b = await getBanco(m.n);
     if (b.length >= 10) conBanco.add(m.n);
@@ -60,14 +61,14 @@ export async function iniciarUI(ctx) {
       <span class="hud__chip hud__chip--racha" id="hud-racha">🔥 0</span>
       <span class="hud__chip hud__chip--xp" id="hud-xp">⚡ 0</span>
       <span class="hud__spacer"></span>
-      <span class="hud__chip hud__chip--chapas" id="hud-chapas">🔩 0</span>
+      <button class="hud__chip hud__chip--chapas" id="hud-chapas" title="Garaje">🔩 0</button>
     </header>
     <main class="screens" id="screens"></main>
     <nav class="nav oculto" id="nav"></nav>`;
   hudEl = $('#hud');
   navEl = $('#nav');
   const cont = $('#screens');
-  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall', 'rush']) {
+  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall', 'rush', 'garaje']) {
     const sc = el(`<section class="screen" data-screen="${id}"></section>`);
     cont.appendChild(sc);
     pantallas[id] = sc;
@@ -76,12 +77,14 @@ export async function iniciarUI(ctx) {
     const icos = { mapa: '🗺️', taller: '🔧', torre: '🏢', album: '📖', perfil: '🏎️' };
     return `<button class="nav__btn" data-ir="${id}"><span class="ico">${icos[id]}</span>${t(S, 'nav.' + (id === 'perfil' ? 'perfil' : id))}</button>`;
   }).join('');
+  $('#hud-chapas').addEventListener('click', () => { sonido.tap(); haptic.ligero(); navegar('garaje'); });
   navEl.addEventListener('click', (e) => {
     const b = e.target.closest('[data-ir]');
     if (b) { sonido.tap(); haptic.ligero(); navegar(b.dataset.ir); }
   });
   // Enlace de desbloqueo: ?codigo=CQ-XXXXX-XXXXX (o ?pase= / ?unlock=) activa el Pase al
   // instante, para dejar que alguien pruebe el juego gratis con todo desbloqueado.
+  aplicarCosmetica();
   const desbloqueo = aplicarUnlockPorURL();
   navegar(getEstado().onboarded ? 'mapa' : 'onboarding');
   if (desbloqueo === 'ok') {
@@ -276,7 +279,9 @@ RENDERS.mapa = (sc) => {
           <text class="nodo__icono" x="${x}" y="${y + 9}" text-anchor="middle" font-size="26">${obras ? '🚧' : !desb ? '🔒' : pago ? '🔒' : m.icono}</text>
           <text class="nodo__nombre" x="${x}" y="${y + 52}" text-anchor="middle">${esc(m.nombre)}</text>
           ${desb && !pago ? `<text class="nodo__stars" x="${x}" y="${y + 68}" text-anchor="middle">★ ${est}/18</text>` : ''}
-          ${m.n === actualN && desb && !pago ? `<text class="coche-avatar" x="${x - 52}" y="${y + 10}" font-size="28">🚗</text>` : ''}
+          ${m.n === actualN && desb && !pago
+            ? `<g class="coche-avatar" transform="translate(${x - 50} ${y}) scale(.62)">${cuerpoVehiculo(cocheActual())}</g>`
+            : ''}
         </g>`;
       }).join('')}
     </svg>
@@ -624,6 +629,100 @@ function mostrarFeedback(sc, q, ok) {
     setTimeout(() => terminarSesion(), 900);
   }
 }
+
+/* ============ GARAJE — el sumidero de las Chapas ============ */
+
+const cocheActual = () => GARAJE.coches.find((c) => c.id === getEstado().garaje.coche) || GARAJE.coches[0];
+
+/** Aplica lo equipado: color de acento, confeti y (por rebote) el coche del mapa. */
+function aplicarCosmetica() {
+  const g = getEstado().garaje;
+  const tema = GARAJE.temas.find((x) => x.id === g.tema) || GARAJE.temas[0];
+  document.documentElement.style.setProperty('--acento', tema.acento);
+  const cel = GARAJE.celebraciones.find((x) => x.id === g.celebracion);
+  if (cel) setConfeti(cel.glifos);
+}
+
+const seccionesGaraje = () => ([
+  { clave: 'coches', campo: 'coche', titulo: t(S, 'garaje.coches'), lista: GARAJE.coches },
+  { clave: 'temas', campo: 'tema', titulo: t(S, 'garaje.temas'), lista: GARAJE.temas },
+  { clave: 'celebraciones', campo: 'celebracion', titulo: t(S, 'garaje.celebraciones'), lista: GARAJE.celebraciones },
+]);
+
+function vistaPrevia(seccion, item) {
+  if (seccion === 'coches') return `<div class="garaje-prev">${svgVehiculo(item, 58)}</div>`;
+  if (seccion === 'temas') {
+    return `<div class="garaje-prev"><span class="garaje-swatch" style="background:${item.acento};box-shadow:0 0 16px ${item.acento}"></span></div>`;
+  }
+  return `<div class="garaje-prev garaje-prev--glifos">${item.glifos.slice(0, 4).map((g) => `<span>${g}</span>`).join('')}</div>`;
+}
+
+RENDERS.garaje = (sc) => {
+  const s = getEstado();
+  sc.innerHTML = `
+    <div class="mision-top"><button class="btn-salir" id="volver">←</button>
+      <span class="garaje-chapas">🔩 <b id="garaje-chapas">${s.chapas}</b></span></div>
+    <div class="taller-head">
+      <h1>🔧 ${t(S, 'garaje.titulo')}</h1>
+      <p class="sub">${t(S, 'garaje.sub')}</p>
+    </div>
+    ${seccionesGaraje().map(({ clave, campo, titulo, lista }) => `
+      <h2 class="garaje-h2">${titulo}</h2>
+      <div class="garaje-grid">
+        ${lista.map((item) => {
+          const tengo = s.garaje.comprados.includes(item.id);
+          const puesto = s.garaje[campo] === item.id;
+          const bloqueadoPase = item.pase && !s.compras.pase;
+          return `<div class="garaje-card ${puesto ? 'garaje-card--puesta' : ''} ${bloqueadoPase && !tengo ? 'garaje-card--pase' : ''}">
+            ${vistaPrevia(clave, item)}
+            <b class="garaje-card__nombre">${esc(item.nombre)}</b>
+            <span class="garaje-card__desc">${esc(item.desc)}</span>
+            ${puesto
+              ? `<span class="garaje-card__estado">${t(S, 'garaje.equipado')}</span>`
+              : tengo
+                ? `<button class="btn btn--cian garaje-card__btn" data-poner="${campo}:${item.id}">${t(S, 'garaje.equipar')}</button>`
+                : bloqueadoPase
+                  ? `<span class="garaje-card__pase">🔒 ${t(S, 'garaje.soloPase')}</span>`
+                  : `<button class="btn ${s.chapas >= item.precio ? 'btn--verde' : 'btn--ghost'} garaje-card__btn"
+                       data-comprar="${campo}:${item.id}:${item.precio}">${t(S, 'garaje.comprar', { n: item.precio })}</button>`}
+          </div>`;
+        }).join('')}
+      </div>`).join('')}`;
+
+  $('#volver', sc).onclick = () => { sonido.tap(); navegar('perfil', {}, true); };
+
+  sc.querySelectorAll('[data-poner]').forEach((b) => b.addEventListener('click', () => {
+    const [campo, id] = b.dataset.poner.split(':');
+    getEstado().garaje[campo] = id;
+    guardar();
+    sonido.acierto(); haptic.ok();
+    aplicarCosmetica();
+    navegar('garaje');
+  }));
+
+  sc.querySelectorAll('[data-comprar]').forEach((b) => b.addEventListener('click', () => {
+    const [campo, id, precioTxt] = b.dataset.comprar.split(':');
+    const precio = Number(precioTxt);
+    const est = getEstado();
+    if (est.chapas < precio) {
+      sonido.fallo(); haptic.ko();
+      toast(t(S, 'garaje.sinChapas', { n: precio - est.chapas }));
+      return;
+    }
+    const seccion = seccionesGaraje().find((x) => x.campo === campo);
+    const item = seccion.lista.find((x) => x.id === id);
+    est.chapas -= precio;
+    est.garaje.comprados.push(id);
+    est.garaje[campo] = id;
+    guardar();
+    sonido.cofre(); haptic.celebracion();
+    aplicarCosmetica();
+    confeti(18);
+    toast(t(S, 'garaje.comprado', { nombre: item.nombre }));
+    actualizarHUD();
+    navegar('garaje');
+  }));
+};
 
 /* ============ SEÑAL RUSH — 60 s clasificando señales ============ */
 
@@ -1492,6 +1591,12 @@ RENDERS.perfil = async (sc) => {
       <div class="stat-celda"><div class="num">${s.respuestas.length}</div><div class="lbl">${t(S, 'perfil.respondidas')}</div></div>
       <div class="stat-celda"><div class="num">🔥 ${s.racha.dias} · 🛡️ ${s.racha.protectores}</div><div class="lbl">${t(S, 'perfil.racha')} / ${t(S, 'perfil.protectores')}</div></div>
     </div>
+    <button class="card-juego" id="ir-garaje">
+      <span class="card-juego__ico">🔧</span>
+      <span class="card-juego__txt"><b>${t(S, 'garaje.titulo')}</b><br>
+        <span class="texto-suave">${t(S, 'garaje.chapas')}: ${s.chapas} 🔩</span></span>
+      <span class="card-juego__go">GO</span>
+    </button>
     <h2 class="texto-suave" style="margin-bottom:8px">${t(S, 'perfil.ajustes')}</h2>
     <div class="ajustes">
       <button class="ajuste-row" id="tg-sonido">${t(S, 'perfil.sonido')} <span class="toggle ${s.ajustes.sonido ? 'on' : ''}"></span></button>
@@ -1502,6 +1607,7 @@ RENDERS.perfil = async (sc) => {
       <button class="ajuste-row" id="borrar" style="color:var(--senal-rojo-vivo)">${t(S, 'perfil.borrar')} <span>🗑️</span></button>
     </div>
     <p class="legal">${t(S, 'perfil.avisoLegal')}</p>`;
+  $('#ir-garaje', sc).onclick = () => { sonido.tap(); haptic.ligero(); navegar('garaje'); };
   $('#tg-sonido', sc).onclick = () => { s.ajustes.sonido = !s.ajustes.sonido; guardar(); sonido.tap(); RENDERS.perfil(sc); };
   $('#tg-haptics', sc).onclick = () => { s.ajustes.haptics = !s.ajustes.haptics; guardar(); haptic.medio(); RENDERS.perfil(sc); };
   $('#exportar', sc).onclick = () => {

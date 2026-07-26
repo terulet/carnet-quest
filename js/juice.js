@@ -20,9 +20,15 @@ export function sello(texto, tipo = 'ok', sub = '') {
 }
 
 /** Confeti de mini-señales (§10: mundo completado / subida de rango). */
+// La celebración elegida en el Garaje decide qué cae. Por defecto, señales.
+let GLIFOS_CONFETI = ['⛔', '⚠️', '🔵', '🔺', '🅿️', '🏁', '⭐', '🔧'];
+export function setConfeti(glifos) {
+  if (Array.isArray(glifos) && glifos.length) GLIFOS_CONFETI = glifos;
+}
+
 export function confeti(n = 26) {
   if (reduceMotion()) return;
-  const glifos = ['⛔', '⚠️', '🔵', '🔺', '🅿️', '🏁', '⭐', '🔧'];
+  const glifos = GLIFOS_CONFETI;
   for (let i = 0; i < n; i++) {
     const p = document.createElement('span');
     p.className = 'confeti-p';

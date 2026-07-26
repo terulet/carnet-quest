@@ -45,6 +45,9 @@ Con cualquiera de las dos queda en `https://terulet.github.io/carnet-quest/`. Pa
 - **Retención**: racha con protectores, misiones diarias, contrarreloj semanal y **Álbum de 112 señales** (renderizadas por SVG).
 - **Juice**: sonido 100 % procedural (WebAudio, 0 KB de assets), haptics, sellos estampados, confeti, combos.
 - **Tarjeta compartible** en imagen para el "me saqué el teórico jugando" (marketing viral).
+- **Garaje**: las Chapas que ganas jugando compran cosmética real — 8 coches (el que llevas puesto
+  es el que avanza por la N-CQ), 4 temas que repintan el acento de la app y 3 celebraciones de
+  confeti. Solo pintura: nada de esto ayuda a acertar.
 - **Monetización**: modelo Pase Carnet 49,99 € — paywall tras el boss del Mundo 3 + canje de código local. Conectar Stripe: ver `tools/VENTA.md`.
 
 ## Estructura
@@ -57,7 +60,7 @@ manifest.webmanifest  PWA
 sw.js                 Service Worker (offline-first)
 css/                  tokens.css (identidad "Señal Neón") + app.css
 js/                   motor: state, data, srs, mission, predictor, audio, juice, signs, cruce, sharecard, screens, main
-datos/                mundos.json, senales(.expanded).json, cruces.json (los 20 puzzles), strings.es.json, preguntas/mundo-01..15.json
+datos/                mundos.json, senales(.expanded).json, cruces.json (los 20 puzzles), garaje.json, strings.es.json, preguntas/mundo-01..15.json
 fonts/                Anton + Overpass (self-hosted)
 icons/                iconos PWA (generados por código)
 tools/                lint del banco, generador de iconos, generador de códigos, guías (CONTENIDO, VENTA)

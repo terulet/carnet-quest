@@ -1,0 +1,23 @@
+{
+  "coches": [
+    { "id": "escuela", "nombre": "El de la autoescuela", "desc": "Con la L puesta y sin una sola multa.", "tipo": "turismo", "color": "#E2001A", "precio": 0 },
+    { "id": "cian", "nombre": "Neón Cian", "desc": "El color de la N-CQ a las tres de la mañana.", "tipo": "turismo", "color": "#00E5FF", "precio": 60 },
+    { "id": "magenta", "nombre": "Rosa Asfalto", "desc": "Se ve desde el otro lado de la rotonda.", "tipo": "turismo", "color": "#FF2D78", "precio": 60 },
+    { "id": "furgo", "nombre": "La Furgo", "desc": "Noventa por carretera y ni uno más.", "tipo": "furgoneta", "color": "#FFC800", "precio": 120 },
+    { "id": "moto", "nombre": "La Moto", "desc": "Para cuando el atasco sea cosa de los demás.", "tipo": "moto", "color": "#00C464", "precio": 150 },
+    { "id": "bus", "nombre": "El Urbano", "desc": "En poblado, le facilitas la incorporación. Ahora eres tú.", "tipo": "bus", "color": "#2E86FF", "precio": 220 },
+    { "id": "patrulla", "nombre": "La Patrulla", "desc": "Sin luces no tienes prioridad. Con luces, aparta.", "tipo": "prioritario", "color": "#F4F6FB", "urgencia": true, "precio": 260, "pase": true },
+    { "id": "tranvia", "nombre": "El Tranvía", "desc": "Sobre raíles mandas tú. Siempre.", "tipo": "tranvia", "color": "#9AA3B8", "precio": 320, "pase": true }
+  ],
+  "temas": [
+    { "id": "cian", "nombre": "Señal Neón", "desc": "El de casa.", "acento": "#00E5FF", "precio": 0 },
+    { "id": "magenta", "nombre": "Medianoche", "desc": "Magenta de cartel de GTA.", "acento": "#FF2D78", "precio": 90 },
+    { "id": "obras", "nombre": "Zona de Obras", "desc": "Amarillo de valla y de chapa.", "acento": "#FFC800", "precio": 90 },
+    { "id": "autovia", "nombre": "Autovía", "desc": "Verde de panel de kilómetro.", "acento": "#00C464", "precio": 140, "pase": true }
+  ],
+  "celebraciones": [
+    { "id": "senales", "nombre": "Lluvia de señales", "desc": "El clásico.", "glifos": ["⛔", "⚠️", "🔵", "🔺", "🅿️", "🏁", "⭐", "🔧"], "precio": 0 },
+    { "id": "chapas", "nombre": "Lluvia de chapas", "desc": "Que caiga la moneda.", "glifos": ["🔩", "⚙️", "🛠️", "🔧"], "precio": 110 },
+    { "id": "quemarrueda", "nombre": "Rueda quemada", "desc": "Salida de semáforo con humo.", "glifos": ["🔥", "💨", "🏁", "🛞"], "precio": 170, "pase": true }
+  ]
+}

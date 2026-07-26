@@ -119,7 +119,30 @@ de su familia. Convierte el tema más denso del examen en un juego de reacción.
   pregunta del banco, y contaminar el predictor con esto lo inflaría. Tampoco colecciona señales
   del Álbum: eso se sigue ganando acertando preguntas de verdad (§8.5, honestidad del predictor).
 
-## Fase actual: F0–F11 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
+## F12 · EL GARAJE — las Chapas dejan de ser una moneda muerta (2026-07-26)
+
+**Agujero encontrado en auditoría:** las Chapas se ganaban por cinco vías (diarias, cofres,
+SE BUSCA, categorías del Álbum, combos) y **no se gastaban en absolutamente nada**. El HUD las
+mostraba, el jugador las acumulaba y no servían para nada. Peor: el paywall de 49,99 € vendía
+literalmente "Cosméticos exclusivos para tu coche" y **no existía ni un cosmético en el juego**.
+Eso era vender algo que no se entrega.
+
+Cerrado construyendo el Garaje, no recortando la promesa.
+
+- `datos/garaje.json` — 15 artículos en tres familias: **8 coches** (turismo, furgoneta, moto,
+  autobús, patrulla, tranvía…), **4 temas** de acento y **3 celebraciones** de confeti.
+- Todo es **solo pintura y se dice en la propia pantalla**: "nada de esto te hace acertar más".
+  Ni las Chapas ni el dinero real compran progreso ni respuestas (§6).
+- Lo comprado **se aplica de verdad**: el coche que avanza por la N-CQ es el que llevas puesto
+  (SVG del motor de cruces, no un emoji), el tema repinta el acento de toda la app vía
+  `--acento`, y la celebración cambia lo que cae en el confeti.
+- Los rojos, verdes y azules de señal **nunca** cambian con el tema: son semánticos.
+- 4 artículos marcados `pase` son los "exclusivos" que promete el paywall: se compran con
+  Chapas igual, pero requieren el Pase. Ahora esa línea del paywall es verdad.
+- Entradas: el chip de Chapas del HUD (tocable) y una tarjeta en el Perfil.
+- Precios 60–320 🔩 contra ~100 🔩/día jugando: algo nuevo cada uno a tres días.
+
+## Fase actual: F0–F12 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
 
 **EL JUEGO ESTÁ COMPLETO, JUGABLE, VERIFICADO Y CON LANDING DE VENTA.** Los 15 mundos
 tienen banco, los **15 bancos han pasado verificación normativa adversarial** con búsqueda web,
@@ -228,5 +251,6 @@ en material DGT no confirmables en fuente primaria (el proxy bloquea boe.es/dgt.
 | F9 Cruces jugables | ✅ | "¿Quién pasa primero?": 20 puzzles (4 glorietas), motor SVG + animación |
 | F10 Doble o nada | ✅ | Escalera de bote sin dark patterns: solo arriesgas lo que construyes |
 | F11 Señal Rush | ✅ | 60 s clasificando señales; las pistas se retiran con el combo |
+| F12 Garaje | ✅ | Sumidero real para las Chapas; el paywall ya no promete lo que no hay |
 
 > Nota: el remoto solo acepta push de la rama designada `claude/carnet-quest-game-vsag41`.

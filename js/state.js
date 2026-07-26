@@ -38,6 +38,8 @@ function estadoInicial() {
     cruces: { record: 0 },   // "¿Quién pasa primero?": mejor tanda
     bote: { record: 0 },     // "Doble o nada": mejor bote cobrado
     rush: { semana: null, record: 0 }, // "Señal Rush": récord semanal
+    // Garaje: SOLO cosmética. Ni las Chapas ni el dinero real compran progreso (§6)
+    garaje: { coche: 'escuela', tema: 'cian', celebracion: 'senales', comprados: ['escuela', 'cian', 'senales'] },
     compras: { pase: false, codigo: null },
     ajustes: { sonido: true, haptics: true },
   };

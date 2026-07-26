@@ -101,7 +101,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   transition: color var(--dur-corta), transform var(--dur-tap);
 }
 .nav__btn .ico { font-size: 1.35rem; line-height: 1; filter: grayscale(1) opacity(.6); }
-.nav__btn.activa { color: var(--neon-cian); text-shadow: var(--glow-cian); }
+.nav__btn.activa { color: var(--acento); text-shadow: 0 0 12px color-mix(in srgb, var(--acento) 45%, transparent); }
 .nav__btn.activa .ico { filter: none; }
 .nav__btn:active { transform: scale(.94); }
 .nav__btn .badge {
@@ -130,9 +130,11 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   box-shadow: var(--glow-magenta), var(--sombra-card);
 }
 .btn--cian {
-  background: linear-gradient(160deg, var(--neon-cian), #0093B8);
+  /* el botón de acción sigue al tema del Garaje; el texto va oscuro sobre color
+     saturado, así que el contraste aguanta en los cuatro temas */
+  background: linear-gradient(160deg, var(--acento), color-mix(in srgb, var(--acento) 55%, #002233));
   color: var(--asfalto-950);
-  box-shadow: var(--glow-cian), var(--sombra-card);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--acento) 45%, transparent), var(--sombra-card);
 }
 .btn--verde {
   background: linear-gradient(160deg, var(--senal-verde-vivo), var(--senal-verde));
@@ -185,7 +187,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   margin: var(--sp-2) 0 var(--sp-2);
 }
 .mapa-titulo h1 { font-size: 1.35rem; color: var(--linea-blanca); }
-.mapa-titulo .via { color: var(--neon-cian); font-size: var(--fs-tiny); font-weight: 800; letter-spacing: .2em; }
+.mapa-titulo .via { color: var(--acento); font-size: var(--fs-tiny); font-weight: 800; letter-spacing: .2em; }
 .mapa-wrap { position: relative; margin: 0 calc(-1 * var(--sp-4)); }
 .mapa-svg { width: 100%; height: auto; display: block; }
 
@@ -194,7 +196,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   fill: var(--asfalto-700); stroke: var(--asfalto-500); stroke-width: 3;
   transition: filter var(--dur-corta);
 }
-.nodo--activo .nodo__circulo { stroke: var(--neon-cian); filter: drop-shadow(0 0 8px rgba(0,229,255,.6)); }
+.nodo--activo .nodo__circulo { stroke: var(--acento); filter: drop-shadow(0 0 8px color-mix(in srgb, var(--acento) 60%, transparent)); }
 .nodo--completo .nodo__circulo { stroke: var(--senal-verde-vivo); }
 .nodo--bloqueado { opacity: .45; }
 .nodo--pase .nodo__circulo { stroke: var(--amarillo-obras); stroke-dasharray: 6 5; }
@@ -775,14 +777,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   min-height: var(--tap-min);
   transition: transform var(--dur-tap) var(--ease-out), border-color var(--dur-corta);
 }
-.card-juego:active { transform: scale(.98); border-color: var(--neon-cian); }
+.card-juego:active { transform: scale(.98); border-color: var(--acento); }
 .card-juego__ico { font-size: 1.8rem; }
 .card-juego__txt { flex: 1; }
 .card-juego__go {
   font-family: var(--font-display);
-  color: var(--neon-cian);
+  color: var(--acento);
   letter-spacing: .04em;
-  text-shadow: var(--glow-cian);
+  text-shadow: 0 0 12px color-mix(in srgb, var(--acento) 45%, transparent);
 }
 
 .cruce { display: flex; flex-direction: column; align-items: center; gap: var(--sp-3); }
@@ -1091,3 +1093,55 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
     box-shadow: 0 0 90px rgba(0, 0, 0, .75);
   }
 }
+
+/* ============ GARAJE — cosmética comprada con Chapas ============ */
+
+.garaje-chapas {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--amarillo-obras);
+  font-variant-numeric: tabular-nums;
+}
+.garaje-h2 {
+  font-size: var(--fs-small);
+  color: var(--linea-gris);
+  letter-spacing: .1em;
+  margin: var(--sp-5) 0 var(--sp-3);
+}
+.garaje-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+}
+.garaje-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-3);
+  border-radius: var(--radio-m);
+  border: 2px solid var(--asfalto-600);
+  background: var(--asfalto-700);
+  text-align: center;
+}
+.garaje-card--puesta { border-color: var(--acento); box-shadow: 0 0 0 1px var(--acento) inset; }
+.garaje-card--pase { opacity: .62; }
+.garaje-prev {
+  height: 66px;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, .55));
+}
+.garaje-prev--glifos { display: flex; gap: 4px; font-size: 1.3rem; }
+.garaje-swatch { width: 40px; height: 40px; border-radius: 50%; display: block; }
+.garaje-card__nombre { font-size: var(--fs-small); line-height: 1.2; }
+.garaje-card__desc { font-size: var(--fs-tiny); color: var(--linea-gris); line-height: 1.25; flex: 1; }
+.garaje-card__btn { width: 100%; padding: 10px; font-size: var(--fs-small); min-height: var(--tap-min); }
+.garaje-card__estado {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  color: var(--acento);
+  letter-spacing: .08em;
+}
+.garaje-card__pase { font-size: var(--fs-tiny); color: var(--amarillo-obras); }

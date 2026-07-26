@@ -15,6 +15,7 @@ async function json(ruta) {
 
 export const getStrings = () => json('datos/strings.es.json');
 export const getMundos = () => json('datos/mundos.json');
+export const getGaraje = () => json('datos/garaje.json');
 
 let senalesDoc = null;
 export async function getSenales() {
