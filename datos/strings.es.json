@@ -157,6 +157,19 @@
       "30": "Un mes. Esto ya no es suerte, es oficio."
     }
   },
+  "cruce": {
+    "titulo": "¿Quién pasa primero?",
+    "sub": "Cruces de verdad. Tócalos en su orden y míralos pasar.",
+    "instruccion": "Tócalos en su orden de paso",
+    "deshacer": "Deshacer",
+    "correcto": "ORDEN CORRECTO",
+    "incorrecto": "NO. El orden era {orden}",
+    "resueltos": "cruces resueltos",
+    "pleno": "CRUCE DOMINADO",
+    "otraTanda": "OTRA TANDA",
+    "record": "Récord",
+    "sinPuzzles": "Aún no hay cruces desbloqueados. Avanza por el mapa."
+  },
   "contrarreloj": {
     "titulo": "Contrarreloj semanal",
     "sub": "90 segundos. Todas las que puedas. Contra tu récord.",

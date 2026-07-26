@@ -749,3 +749,170 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
     transition-duration: .01ms !important;
   }
 }
+
+/* ============ ¿QUIÉN PASA PRIMERO? — puzzles de prioridad (§7) ============ */
+
+.card-juego {
+  width: 100%;
+  display: flex;
+  gap: var(--sp-3);
+  align-items: center;
+  text-align: left;
+  background: var(--asfalto-700);
+  border: 2px solid var(--asfalto-500);
+  border-radius: var(--radio-m);
+  padding: var(--sp-3) var(--sp-4);
+  margin-bottom: var(--sp-3);
+  color: var(--linea-blanca);
+  font-family: var(--font-ui);
+  font-size: var(--fs-small);
+  min-height: var(--tap-min);
+  transition: transform var(--dur-tap) var(--ease-out), border-color var(--dur-corta);
+}
+.card-juego:active { transform: scale(.98); border-color: var(--neon-cian); }
+.card-juego__ico { font-size: 1.8rem; }
+.card-juego__txt { flex: 1; }
+.card-juego__go {
+  font-family: var(--font-display);
+  color: var(--neon-cian);
+  letter-spacing: .04em;
+  text-shadow: var(--glow-cian);
+}
+
+.cruce { display: flex; flex-direction: column; align-items: center; gap: var(--sp-3); }
+.cruce__cab { text-align: center; }
+.cruce__kicker {
+  font-family: var(--font-display);
+  font-size: var(--fs-tiny);
+  letter-spacing: .18em;
+  color: var(--neon-magenta);
+  text-shadow: var(--glow-magenta);
+}
+.cruce__titulo {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  letter-spacing: .02em;
+  margin-top: 2px;
+}
+
+.cruce-escena {
+  width: min(100%, 360px);
+  aspect-ratio: 1;
+  border-radius: var(--radio-m);
+  border: var(--borde-senal) solid var(--asfalto-500);
+  overflow: hidden;
+  background: var(--asfalto-950);
+  box-shadow: var(--sombra-card);
+}
+.cruce-svg { width: 100%; height: 100%; display: block; }
+
+.cq-veh { cursor: pointer; transition: opacity var(--dur-corta) linear; }
+.cq-veh__hit { pointer-events: all; }
+.cq-veh--tu .cq-veh__aro { opacity: .5 !important; animation: cq-pulso 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.cq-veh--elegido .cq-veh__chapa { fill: currentColor; }
+.cq-veh--elegido .cq-veh__letra { fill: #06080C; font-weight: 400; }
+.cq-veh--elegido .cq-veh__aro { opacity: .9 !important; }
+.cq-veh--elegido .cq-veh__letra { font-size: 17px; }
+@keyframes cq-pulso { 0%, 100% { transform: scale(1); opacity: .5; } 50% { transform: scale(1.28); opacity: .14; } }
+.cq-sirena { animation: cq-sirena 620ms steps(1) infinite; }
+@keyframes cq-sirena { 0%, 49% { fill: #2E86FF; } 50%, 100% { fill: #E2001A; } }
+.cq-sema--parpadea { animation: cq-parpadeo 1s steps(1) infinite; }
+@keyframes cq-parpadeo { 0%, 49% { opacity: 1; } 50%, 100% { opacity: .55; } }
+.cq-agente__flecha { animation: cq-parpadeo 1.4s steps(1) infinite; }
+
+.cruce__avisos {
+  display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center;
+}
+.cruce__avisos span {
+  background: rgba(255, 200, 0, .12);
+  border: 1px solid rgba(255, 200, 0, .38);
+  color: var(--amarillo-obras);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: var(--fs-tiny);
+}
+
+.cruce__orden { display: flex; align-items: center; gap: var(--sp-2); }
+.cruce-slot {
+  --c: var(--asfalto-500);
+  width: 46px; height: 46px;
+  display: grid; place-items: center;
+  border: 2px dashed var(--asfalto-500);
+  border-radius: var(--radio-s);
+  color: var(--linea-tenue);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  transition: transform var(--dur-corta) var(--ease-pop), border-color var(--dur-corta);
+}
+.cruce-slot i { font-style: normal; font-size: .8rem; }
+.cruce-slot--lleno {
+  border-style: solid;
+  border-color: var(--c);
+  color: var(--c);
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+  transform: scale(1.06);
+}
+.cruce-slot__sep { color: var(--linea-tenue); font-size: .8rem; }
+.cruce__orden--solucion .cruce-slot { box-shadow: 0 0 0 2px rgba(0, 196, 100, .35); }
+
+.cruce__ayuda {
+  font-size: var(--fs-small);
+  color: var(--linea-gris);
+  text-align: center;
+  margin: 0;
+}
+.cruce__ayuda--ok, .cruce__ayuda--ko {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  letter-spacing: .04em;
+}
+.cruce__ayuda--ok { color: var(--senal-verde-vivo); text-shadow: var(--glow-verde); }
+.cruce__ayuda--ko { color: var(--senal-rojo-vivo); text-shadow: var(--glow-rojo); }
+
+.cruce__lista { width: 100%; display: flex; flex-direction: column; gap: var(--sp-2); }
+.cruce-fila {
+  --c: var(--linea-gris);
+  display: flex; align-items: center; gap: var(--sp-3);
+  width: 100%;
+  min-height: var(--tap-min);
+  padding: var(--sp-2) var(--sp-3);
+  text-align: left;
+  background: var(--asfalto-700);
+  border: 2px solid var(--asfalto-600);
+  border-left: 5px solid var(--c);
+  border-radius: var(--radio-s);
+  color: var(--linea-blanca);
+  font-family: var(--font-ui);
+  font-size: var(--fs-small);
+  transition: transform var(--dur-tap) var(--ease-out), border-color var(--dur-corta), opacity var(--dur-corta);
+}
+.cruce-fila:active { transform: scale(.98); }
+.cruce-fila:disabled { opacity: .8; }
+.cruce-fila--elegida { border-color: var(--c); background: color-mix(in srgb, var(--c) 10%, var(--asfalto-700)); }
+.cruce-fila__k {
+  width: 30px; height: 30px; flex: 0 0 30px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--c);
+  color: var(--c);
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+.cruce-fila__txt { flex: 1; line-height: 1.28; }
+.cruce-fila__n {
+  font-family: var(--font-display);
+  color: var(--c);
+  font-size: 1.05rem;
+  min-width: 26px;
+  text-align: right;
+}
+.cruce__deshacer { width: auto; padding: var(--sp-2) var(--sp-5); font-size: var(--fs-small); }
+.cruce-escena.q-card--shake { animation: shake 300ms ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cq-veh--tu .cq-veh__aro, .cq-sirena, .cq-sema--parpadea, .cq-agente__flecha { animation: none; }
+}
+
+/* el mapa de progreso avisa de que viene un cruce: anticipación (§10) */
+.dash--cruce { background: var(--neon-magenta); opacity: .45; box-shadow: var(--glow-magenta); }
+.dash--cruce.dash--actual { opacity: 1; }

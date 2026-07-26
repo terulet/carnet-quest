@@ -4,7 +4,8 @@ import {
   getEstado, guardar, HOY, semanaISO, mundoEstado, estrellasDeMundo,
   registrarRespuesta, tocarRacha, exportarJSON, importarJSON, borrarTodo,
 } from './state.js';
-import { getSenales, getBanco, getBancoCompleto, t } from './data.js';
+import { getSenales, getBanco, getBancoCompleto, getCruces, t } from './data.js';
+import { svgCruce, animarPaso, reponer, maniobra, desdeTexto, ETIQUETA_TIPO } from './cruce.js';
 import { procesarRespuesta, cochesDelTaller } from './srs.js';
 import {
   componerMision, componerBoss, componerExamen, componerTaller,
@@ -34,6 +35,7 @@ let actual = null;
 let sesion = null; // sesión de juego activa
 let paywallMostradoTrasBoss3 = false;
 let conBanco = new Set(); // mundos con banco de preguntas disponible
+let CRUCES = [];          // puzzles "¿Quién pasa primero?" (cacheados al arrancar)
 
 const $ = (sel, el = document) => el.querySelector(sel);
 const el = (html) => {
@@ -47,7 +49,7 @@ const azar = (arr) => arr[Math.floor(Math.random() * arr.length)];
 /* ================= arranque ================= */
 
 export async function iniciarUI(ctx) {
-  S = ctx.strings; DOC = ctx.mundos; SEN = await getSenales();
+  S = ctx.strings; DOC = ctx.mundos; SEN = await getSenales(); CRUCES = await getCruces();
   await Promise.all(DOC.mundos.map(async (m) => {
     const b = await getBanco(m.n);
     if (b.length >= 10) conBanco.add(m.n);
@@ -155,6 +157,7 @@ function mundoDesbloqueado(n) {
   return true; // es el primer mundo jugable
 }
 const mundoDePago = (n) => !mundoDef(n).gratis && !getEstado().compras.pase;
+const crucesDe = (mundos) => CRUCES.filter((c) => mundos.includes(c.mundo));
 
 function mundosAccesibles() {
   return DOC.mundos.filter((m) => mundoDesbloqueado(m.n) && !mundoDePago(m.n)).map((m) => m.n);
@@ -287,11 +290,17 @@ RENDERS.mapa = (sc) => {
           <span class="diaria__premio">+${dd.premio} 🔩</span>
         </div>`).join('')}
       <div class="sep"></div>
-      <button class="card-senal" id="crono-card" style="width:100%;text-align:left;display:flex;gap:12px;align-items:center">
-        <span style="font-size:1.8rem">⏱️</span>
-        <span style="flex:1"><b>${t(S, 'contrarreloj.titulo')}</b><br>
+      <button class="card-juego" id="cruce-card">
+        <span class="card-juego__ico">🚦</span>
+        <span class="card-juego__txt"><b>${t(S, 'cruce.titulo')}</b><br>
+          <span class="texto-suave">${t(S, 'cruce.sub')}${s.cruces?.record ? ` · ${t(S, 'cruce.record')}: ${s.cruces.record}` : ''}</span></span>
+        <span class="card-juego__go">GO</span>
+      </button>
+      <button class="card-juego" id="crono-card">
+        <span class="card-juego__ico">⏱️</span>
+        <span class="card-juego__txt"><b>${t(S, 'contrarreloj.titulo')}</b><br>
           <span class="texto-suave">${t(S, 'contrarreloj.record')}: ${s.contrarreloj.semana === semanaISO() ? s.contrarreloj.record : 0}</span></span>
-        <span style="font-family:var(--font-display);color:var(--neon-cian)">GO</span>
+        <span class="card-juego__go">GO</span>
       </button>
     </div>`;
 
@@ -306,6 +315,7 @@ RENDERS.mapa = (sc) => {
     });
   });
   $('[data-torre]', sc).addEventListener('click', () => { sonido.tap(); navegar('torre'); });
+  $('#cruce-card', sc).onclick = () => empezarCruces();
   $('#crono-card', sc).onclick = () => empezarContrarreloj();
   // el viaje empieza abajo: Villa Asfalto queda a la vista al entrar
   requestAnimationFrame(() => { sc.scrollTop = Math.max(0, $('.mapa-wrap', sc).offsetHeight - sc.clientHeight + 40); });
@@ -352,10 +362,14 @@ RENDERS.mundo = async (sc, { n }) => {
     b.addEventListener('click', async () => {
       sonido.tap(); haptic.ligero();
       const i = Number(b.dataset.mision);
-      const bancoTotal = await getBancoCompleto(mundosAccesibles());
-      const preguntas = componerMision(banco, bancoTotal, i);
+      const accesibles = mundosAccesibles();
+      const bancoQ = await getBancoCompleto(accesibles);
+      const cruces = crucesDe(accesibles);
+      // el repaso camuflado también puede caer en forma de cruce ya fallado (§8.1)
+      const preguntas = componerMision(banco, bancoQ.concat(cruces), i);
       if (!preguntas.length) return;
-      navegar('mision', { cfg: { modo: 'mision', mundoN: n, misionIdx: i, preguntas, titulo: m.misiones[i] } });
+      const conJuego = conCruces(preguntas, cruces.filter((c) => c.mundo === n), i);
+      navegar('mision', { cfg: { modo: 'mision', mundoN: n, misionIdx: i, preguntas: conJuego, titulo: m.misiones[i] } });
     });
   });
   const bossBtn = $('#boss', sc);
@@ -421,14 +435,13 @@ function tickTimer(sc) {
 
 const fmtTiempo = (seg) => `${Math.floor(seg / 60)}:${String(seg % 60).padStart(2, '0')}`;
 
-function pintarPregunta(sc) {
-  const q = sesion.preguntas[sesion.idx];
+/** Barra superior común a preguntas y cruces: salir + progreso + combo/timer/vidas. */
+function barraTop() {
   const n = sesion.preguntas.length;
-  const senal = q.senalId ? SEN.senales.find((x) => x.id === q.senalId) : null;
   const esExamen = sesion.modo === 'examen';
   const dashes = n <= 15
     ? `<div class="dashes">${sesion.preguntas.map((_, i) =>
-        `<span class="dash ${i < sesion.idx ? (sesion.resultados[i]?.ok ? 'dash--ok' : 'dash--ko') : i === sesion.idx ? 'dash--actual' : ''}"></span>`).join('')}</div>`
+        `<span class="dash ${sesion.preguntas[i].tipo === 'cruce' ? 'dash--cruce' : ''} ${i < sesion.idx ? (sesion.resultados[i]?.ok ? 'dash--ok' : 'dash--ko') : i === sesion.idx ? 'dash--actual' : ''}"></span>`).join('')}</div>`
     : `<div class="dashes" style="visibility:hidden"></div>`;
   const derecha = esExamen
     ? `<span class="texto-suave" style="font-variant-numeric:tabular-nums">${sesion.idx + 1}/${n}</span><span class="timer-chip">${fmtTiempo(sesion.duracion)}</span>`
@@ -437,12 +450,20 @@ function pintarPregunta(sc) {
       : sesion.modo === 'crono'
         ? `<span class="timer-chip">${fmtTiempo(90)}</span>`
         : `<span class="combo-chip" id="combo">${sesion.combo >= 2 ? '🔥' + sesion.combo : ''}</span>`;
-  sc.innerHTML = `
-    <div class="mision-top">
+  return `<div class="mision-top">
       <button class="btn-salir" id="salir">✕</button>
       ${dashes}
       ${derecha}
-    </div>
+    </div>`;
+}
+
+function pintarPregunta(sc) {
+  const q = sesion.preguntas[sesion.idx];
+  if (q.tipo === 'cruce') return pintarCruce(sc, q);
+  const senal = q.senalId ? SEN.senales.find((x) => x.id === q.senalId) : null;
+  const esExamen = sesion.modo === 'examen';
+  sc.innerHTML = `
+    ${barraTop()}
     <div class="q-card" id="qcard">
       <div class="q-card__tema">${esc(q.tema)}${esExamen ? '' : ` · P${sesion.idx + 1}`}</div>
       <div class="q-card__texto">${esc(q.pregunta)}</div>
@@ -484,13 +505,7 @@ function responder(sc, q, i, ev) {
   if (!sesion) return;
   const ok = i === q.correcta;
   const esExamen = sesion.modo === 'examen';
-  const esCrono = sesion.modo === 'crono';
   sesion.resultados.push({ q, elegida: i, ok });
-  if (ok) sesion.aciertos++; else sesion.fallos++;
-
-  registrarRespuesta(q.id, ok);
-  procesarRespuestaConEventos(q, ok);
-  progresarDiaria('aciertos', ok ? 1 : 0);
 
   // bloquear opciones y marcar
   sc.querySelectorAll('.q-opcion').forEach((b) => {
@@ -501,11 +516,27 @@ function responder(sc, q, i, ev) {
     else if (!esExamen) b.classList.add('q-opcion--apagada');
   });
 
+  contabilizar(sc, q, ok, ev);
+  if (esExamen) { setTimeout(() => avanzar(sc), 220); return; }
+  if (sesion.modo === 'crono') { setTimeout(() => avanzar(sc), ok ? 350 : 650); return; }
+  mostrarFeedback(sc, q, ok);
+}
+
+/** Puntuación común a preguntas y cruces: SRS, combo, XP, sonido, HUD. */
+function contabilizar(sc, q, ok, ev = {}) {
+  const esExamen = sesion.modo === 'examen';
+  const esCrono = sesion.modo === 'crono';
+  if (ok) sesion.aciertos++; else sesion.fallos++;
+
+  registrarRespuesta(q.id, ok);
+  procesarRespuestaConEventos(q, ok);
+  progresarDiaria('aciertos', ok ? 1 : 0);
+
   // marcar dash
   const dash = sc.querySelectorAll('.dash')[sesion.idx];
   if (dash) { dash.classList.remove('dash--actual'); dash.classList.add(ok ? 'dash--ok' : 'dash--ko'); }
 
-  if (esExamen) { setTimeout(() => avanzar(sc), 220); return; }
+  if (esExamen) return;
 
   if (ok) {
     sonido.acierto(); haptic.ok();
@@ -536,17 +567,19 @@ function responder(sc, q, i, ev) {
     }
   } else {
     sonido.fallo(); haptic.ko();
-    sacudir($('#qcard', sc));
+    const diana = $('#qcard', sc) || $('.cruce-escena', sc);
+    if (diana) sacudir(diana);
     if (sesion.combo >= 5) sonido.comboRoto();
     sesion.combo = 0;
     glowCombo(false);
   }
   actualizarHUD();
+}
 
-  if (esCrono) { setTimeout(() => avanzar(sc), ok ? 350 : 650); return; }
-
-  // feedback jugoso (§8.3): la trampa SOLO al fallar
+/** Feedback jugoso (§8.3): la trampa SOLO al fallar. */
+function mostrarFeedback(sc, q, ok) {
   const fb = $('#feedback', sc);
+  if (!fb) return;
   const titulo = ok ? azar(S.feedback.aciertos) : azar(S.feedback.fallos);
   fb.innerHTML = `
     <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${titulo}</div>
@@ -562,6 +595,145 @@ function responder(sc, q, i, ev) {
   if (sesion.modo === 'boss' && sesion.fallos > sesion.limiteFallos) {
     setTimeout(() => terminarSesion(), 900);
   }
+}
+
+/* ============ ¿QUIÉN PASA PRIMERO? — puzzle de prioridad jugable ============ */
+
+function pintarCruce(sc, q) {
+  const veh = q.vehiculos;
+  const avisos = [];
+  if (q.agente?.texto) avisos.push(`👮 ${q.agente.texto}`);
+  for (const v of veh) if (v.nota) avisos.push(`${v.k} · ${v.nota}`);
+
+  sc.innerHTML = `
+    ${barraTop()}
+    <div class="cruce">
+      <div class="cruce__cab">
+        <span class="cruce__kicker">¿QUIÉN PASA PRIMERO?</span>
+        <h2 class="cruce__titulo">${esc(q.titulo || q.tema)}</h2>
+      </div>
+      <div class="cruce-escena" id="escena">${svgCruce(q)}</div>
+      ${avisos.length ? `<div class="cruce__avisos">${avisos.map((a) => `<span>${esc(a)}</span>`).join('')}</div>` : ''}
+      <div class="cruce__orden" id="slots">
+        ${veh.map((_, i) => `<span class="cruce-slot" data-i="${i}"><i>${i + 1}º</i></span>`).join('<span class="cruce-slot__sep">→</span>')}
+      </div>
+      <p class="cruce__ayuda" id="ayuda">${t(S, 'cruce.instruccion')}</p>
+      <div class="cruce__lista" id="lista">
+        ${veh.map((v) => `
+          <button class="cruce-fila" data-k="${v.k}" style="--c:${v.color || '#8FA0BE'}">
+            <span class="cruce-fila__k">${v.k}</span>
+            <span class="cruce-fila__txt"><b>${esc(ETIQUETA_TIPO[v.tipo] || 'Vehículo')}${v.tu ? ' · TÚ' : ''}</b><br>
+              <span class="texto-suave">${esc(desdeTexto(v))} y ${esc(maniobra(v))}</span></span>
+            <span class="cruce-fila__n"></span>
+          </button>`).join('')}
+      </div>
+      <button class="btn btn--ghost cruce__deshacer oculto" id="deshacer">↩ ${t(S, 'cruce.deshacer')}</button>
+    </div>
+    <div class="feedback" id="feedback"></div>`;
+
+  const svg = $('#escena svg', sc);
+  const seleccion = [];
+  let bloqueado = false;
+
+  const pintar = () => {
+    sc.querySelectorAll('.cruce-slot').forEach((s, i) => {
+      const k = seleccion[i];
+      const v = k ? veh.find((x) => x.k === k) : null;
+      s.classList.toggle('cruce-slot--lleno', !!k);
+      s.innerHTML = k ? `<b>${k}</b>` : `<i>${i + 1}º</i>`;
+      if (v) s.style.setProperty('--c', v.color || '#8FA0BE');
+    });
+    for (const v of veh) {
+      const pos = seleccion.indexOf(v.k);
+      const fila = sc.querySelector(`.cruce-fila[data-k="${v.k}"]`);
+      fila.classList.toggle('cruce-fila--elegida', pos >= 0);
+      fila.querySelector('.cruce-fila__n').textContent = pos >= 0 ? `${pos + 1}º` : '';
+      const g = svg.querySelector(`.cq-veh[data-k="${v.k}"]`);
+      g.style.color = v.color || '#8FA0BE';
+      g.classList.toggle('cq-veh--elegido', pos >= 0);
+      g.querySelector('.cq-veh__letra').textContent = pos >= 0 ? String(pos + 1) : v.k;
+    }
+    $('#deshacer', sc).classList.toggle('oculto', seleccion.length === 0 || bloqueado);
+  };
+
+  const elegir = (k) => {
+    if (bloqueado || !k || seleccion.includes(k)) return;
+    seleccion.push(k);
+    sonido.tap(); haptic.ligero();
+    pintar();
+    if (seleccion.length === veh.length) { bloqueado = true; setTimeout(resolver, 420); }
+  };
+
+  async function resolver() {
+    if (!sesion) return;
+    const ok = seleccion.join('|') === q.orden.join('|');
+    sesion.resultados.push({ q, elegida: seleccion.join('-'), ok });
+    const caja = $('#escena', sc).getBoundingClientRect();
+    contabilizar(sc, q, ok, { clientX: caja.left + caja.width / 2, clientY: caja.top + 70 });
+
+    const ayuda = $('#ayuda', sc);
+    ayuda.className = `cruce__ayuda cruce__ayuda--${ok ? 'ok' : 'ko'}`;
+    ayuda.textContent = ok
+      ? t(S, 'cruce.correcto')
+      : t(S, 'cruce.incorrecto', { orden: q.orden.join(' → ') });
+    if (!ok) {
+      seleccion.length = 0;
+      seleccion.push(...q.orden);
+      $('#slots', sc).classList.add('cruce__orden--solucion');
+      pintar();
+    }
+    $('#deshacer', sc).classList.add('oculto');
+    sc.querySelectorAll('.cruce-fila').forEach((f) => { f.disabled = true; });
+
+    await animarPaso(svg, q, q.orden, { alPasar: () => sonido.tap() });
+    if (!sesion) return;
+    if (sesion.modo === 'examen' || sesion.modo === 'crono') { avanzar(sc); return; }
+    mostrarFeedback(sc, q, ok);
+    $('#feedback', sc).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  sc.querySelectorAll('.cruce-fila').forEach((f) => f.addEventListener('click', () => elegir(f.dataset.k)));
+  svg.querySelectorAll('.cq-veh').forEach((g) => g.addEventListener('click', () => elegir(g.dataset.k)));
+  $('#deshacer', sc).onclick = () => {
+    if (bloqueado || !seleccion.length) return;
+    seleccion.pop(); sonido.tap(); haptic.ligero(); pintar();
+  };
+  $('#salir', sc).onclick = () => confirmarSalida();
+  pintar();
+  sc.scrollTop = 0;
+}
+
+/** Inserta un puzzle de cruce en mitad de la misión: rompe el "pregunta tras pregunta". */
+function conCruces(lista, cruces, misionIdx) {
+  const ya = new Set(lista.map((x) => x.id));
+  const libres = cruces.filter((c) => !ya.has(c.id));
+  if (!libres.length) return lista;
+  const salida = lista.slice();
+  const pos = Math.min(salida.length, 3 + (misionIdx % 3));
+  salida.splice(pos, 0, libres[misionIdx % libres.length]);
+  if (libres.length >= 4 && lista.length >= 8) {
+    const segundo = libres[(misionIdx + 2) % libres.length];
+    if (segundo.id !== salida[pos].id) salida.splice(Math.min(salida.length, pos + 5), 0, segundo);
+  }
+  return salida;
+}
+
+/** Mundos cuyos cruces puede jugar: el mini-juego no espera a la progresión,
+ *  solo respeta el Pase (así engancha desde el minuto uno). */
+const mundosDeCruces = () => DOC.mundos.filter((m) => !mundoDePago(m.n)).map((m) => m.n);
+
+/** Modo dedicado: una tanda de puzzles de prioridad, sin preguntas de texto. */
+async function empezarCruces() {
+  sonido.tap(); haptic.medio();
+  const lista = crucesDe(mundosDeCruces());
+  if (lista.length < 3) { toast(t(S, 'cruce.sinPuzzles')); return; }
+  const s = getEstado();
+  const orden = lista.slice().sort((a, b) => {
+    const va = s.vistas[a.id] || 0, vb = s.vistas[b.id] || 0;
+    return va - vb || a.dificultad - b.dificultad;
+  });
+  const tanda = orden.slice(0, Math.min(6, orden.length)).sort((a, b) => a.dificultad - b.dificultad);
+  navegar('mision', { cfg: { modo: 'cruce', preguntas: tanda, titulo: t(S, 'cruce.titulo') } });
 }
 
 function procesarRespuestaConEventos(q, ok) {
@@ -613,7 +785,34 @@ RENDERS.resultado = async (sc, { datos }) => {
   if (datos.modo === 'examen') return resultadoExamen(sc, datos);
   if (datos.modo === 'taller') return resultadoTaller(sc, datos);
   if (datos.modo === 'crono') return resultadoCrono(sc, datos);
+  if (datos.modo === 'cruce') return resultadoCruces(sc, datos);
 };
+
+async function resultadoCruces(sc, d) {
+  const total = d.preguntas.length;
+  const pleno = d.aciertos === total;
+  const racha = tocarRacha();
+  const bonus = pleno ? 60 : d.aciertos * 5;
+  const { subida } = darXP(d.xp + bonus, DOC.rangos);
+  const s = getEstado();
+  if (d.aciertos > (s.cruces?.record || 0)) s.cruces = { record: d.aciertos };
+  guardar();
+  if (pleno) { sonido.fanfarria(); confeti(30); await sello(t(S, 'cruce.pleno'), 'ok', '🚦'); }
+  sc.innerHTML = `<div class="resultado">
+    <h1 class="${pleno ? 'ok' : ''}">${t(S, 'cruce.titulo')}</h1>
+    <div style="font-size:3rem">🚦</div>
+    <div class="marcador">${d.aciertos}/${total} ${t(S, 'cruce.resueltos')}</div>
+    <div class="xp-total">+<span id="xp-roll">0</span> XP</div>
+    <div class="acciones">
+      <button class="btn btn--primary" id="otra">${t(S, 'cruce.otraTanda')}</button>
+      <button class="btn btn--ghost" id="mapa-btn">${t(S, 'resultado.alMapa')}</button>
+    </div>
+  </div>`;
+  rodarContador($('#xp-roll', sc), 0, d.xp + bonus, 800);
+  $('#otra', sc).onclick = () => empezarCruces();
+  $('#mapa-btn', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+  celebraciones(subida, racha);
+}
 
 async function resultadoMision(sc, d) {
   const stars = estrellasPorAciertos(d.aciertos, d.preguntas.length);
@@ -881,8 +1080,11 @@ RENDERS.torre = async (sc) => {
 
 RENDERS.taller = async (sc) => {
   const s = getEstado();
-  const bancoTotal = await getBancoCompleto(mundosAccesibles());
-  const coches = cochesDelTaller(bancoTotal);
+  const accesibles = mundosAccesibles();
+  const bancoQ = await getBancoCompleto(accesibles);
+      const cruces = crucesDe(accesibles);
+  // un cruce fallado también es un coche averiado: se repara volviendo a resolverlo
+  const coches = cochesDelTaller(bancoQ.concat(cruces));
   const buscados = coches.filter((c) => c.fallos >= 3).slice(0, 3);
   const pase = s.compras.pase;
   sc.innerHTML = `
@@ -892,13 +1094,13 @@ RENDERS.taller = async (sc) => {
       ${pase && buscados.length ? buscados.map((c) => `
         <div class="sebusca">
           <h3>${t(S, 'taller.seBusca')}</h3>
-          <div class="pregunta-txt">“${esc(c.q.pregunta)}”</div>
+          <div class="pregunta-txt">“${esc(c.q.titulo || c.q.pregunta)}”</div>
           <div class="recompensa">${t(S, 'taller.recompensa', { n: 40 })} · ${t(S, 'taller.fallada', { n: c.fallos })}</div>
         </div>`).join('') : ''}
       ${coches.slice(0, 12).map((c) => `
         <div class="coche-averiado">
-          <span class="icono">🚗💥</span>
-          <span class="texto">${esc(c.q.pregunta)}</span>
+          <span class="icono">${c.q.tipo === 'cruce' ? '🚦💥' : '🚗💥'}</span>
+          <span class="texto">${esc(c.q.titulo || c.q.pregunta)}</span>
           <span class="estado">${c.reparaciones >= 2 ? `<span class="ok">${t(S, 'taller.reparado')}</span>` : t(S, 'taller.reparar', { n: c.reparaciones })}</span>
         </div>`).join('')}
       <button class="btn btn--cian" id="reparar-btn">${t(S, 'taller.sesionReparacion')} 🔧</button>

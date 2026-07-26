@@ -1,0 +1,335 @@
+[
+  {
+    "id": "C-001",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "Sin una señal a la vista",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "E", "hacia": "W", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "W", "hacia": "E", "tipo": "furgoneta", "color": "#FFC800" }
+    ],
+    "orden": ["B", "A", "C"],
+    "dificultad": 2,
+    "explicacion_corta": "No hay señales ni semáforos: manda la norma general de la derecha. Tú (A) tienes a B por tu derecha, así que le cedes. C te tiene a ti por su derecha, así que te cede a ti.",
+    "truco": "Sin señales, la derecha manda.",
+    "trampa": "Ir recto no da prioridad. Da igual que no gires: si tienes a alguien por tu derecha, cedes.",
+    "tags": ["prioridad", "norma-general"]
+  },
+  {
+    "id": "C-002",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "El STOP no distingue lados",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "senales": { "S": "stop", "N": "stop" },
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "W", "hacia": "E", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "E", "hacia": "S", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["B", "C", "A"],
+    "dificultad": 3,
+    "explicacion_corta": "Tú llevas STOP: cedes el paso a los dos vehículos de la vía preferente, vengan por donde vengan. Entre ellos, C gira a la izquierda y tiene que ceder a B, que viene de frente.",
+    "truco": "STOP: te detienes y cedes a los dos sentidos, no solo al de tu derecha.",
+    "trampa": "Mucha gente cede solo al que viene por su derecha y se cuela delante del que viene por la izquierda. Con un STOP, ceder es a todos.",
+    "tags": ["prioridad", "stop", "giro-izquierda"]
+  },
+  {
+    "id": "C-003",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "Girar a la derecha no te libra",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "senales": { "W": "ceda", "E": "ceda" },
+    "vehiculos": [
+      { "k": "A", "desde": "W", "hacia": "S", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "N", "hacia": "S", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "S", "hacia": "W", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["B", "C", "A"],
+    "dificultad": 3,
+    "explicacion_corta": "Con «ceda el paso» cedes a todo el que circula por la vía preferente, aunque solo vayas a girar a la derecha: te metes en su calzada. Entre los preferentes, C gira a la izquierda y cede a B, que viene de frente.",
+    "truco": "Ceda el paso no es «mira y tira»: es cede a todos, gires o no.",
+    "trampa": "Girar a la derecha parece inofensivo porque no cruzas el otro carril. Pero te incorporas a su vía, y el ceda te obliga igual.",
+    "tags": ["prioridad", "ceda-el-paso", "giro-derecha"]
+  },
+  {
+    "id": "C-004",
+    "tipo": "cruce",
+    "mundo": 2,
+    "tema": "Semáforos",
+    "titulo": "Verde no es barra libre",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "semaforos": { "N": "verde", "S": "verde", "E": "rojo", "W": "rojo" },
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "N", "hacia": "E", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "E", "hacia": "W", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["A", "B", "C"],
+    "dificultad": 3,
+    "explicacion_corta": "Vosotros dos tenéis verde, C tiene rojo y espera. Entre A y B, B gira a la izquierda y debe ceder el paso a los que vienen de frente: tú.",
+    "truco": "El verde te deja pasar, no te da prioridad: girando a la izquierda siguen pasando antes los de frente.",
+    "trampa": "El semáforo en verde no anula la regla del giro a la izquierda. El verde autoriza a entrar en el cruce, no a comerte al que viene de cara.",
+    "tags": ["semaforo", "giro-izquierda"]
+  },
+  {
+    "id": "C-005",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "Sobre raíles mandan ellos",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "T", "desde": "W", "hacia": "E", "tipo": "tranvia", "color": "#9AA3B8", "eje": true },
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "N", "hacia": "E", "tipo": "turismo", "color": "#FF2D78" }
+    ],
+    "orden": ["T", "A", "B"],
+    "dificultad": 3,
+    "explicacion_corta": "Los vehículos que circulan sobre raíles son una de las excepciones a la norma general de la derecha (art. 57 RGCir): el tranvía pasa antes que nadie. Después tú, porque B gira a la izquierda y cede a los que vienen de frente.",
+    "truco": "Sobre raíles mandan ellos: el tranvía pasa primero aunque venga por tu izquierda.",
+    "trampa": "Aplicas «la derecha manda», ves que el tranvía viene por tu izquierda y te metes. Un tranvía no puede esquivarte ni frenar como tú.",
+    "tags": ["prioridad", "tranvia", "excepciones"]
+  },
+  {
+    "id": "C-006",
+    "tipo": "cruce",
+    "mundo": 2,
+    "tema": "Semáforos",
+    "titulo": "Luces y sirena",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "semaforos": { "N": "verde", "S": "verde", "E": "rojo", "W": "rojo" },
+    "vehiculos": [
+      { "k": "U", "desde": "E", "hacia": "W", "tipo": "prioritario", "color": "#F4F6FB", "urgencia": true },
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "N", "hacia": "E", "tipo": "turismo", "color": "#FF2D78" }
+    ],
+    "orden": ["U", "A", "B"],
+    "dificultad": 2,
+    "explicacion_corta": "La ambulancia circula en servicio de urgencia avisando con luces y sirena: pasa primero aunque su semáforo esté en rojo y el tuyo en verde. Luego tú, y por último B, que gira a la izquierda.",
+    "truco": "Luces + sirena = paso franco. Le cedes aunque tú tengas el verde.",
+    "trampa": "Tu semáforo está en verde, sí. La urgencia sigue siendo suya, y facilitarle el paso es una obligación, no un detalle. Y ojo al revés: puede llevar solo la luz azul sin sirena cuando el ruido no sea necesario, y sigue teniendo prioridad.",
+    "tags": ["semaforo", "vehiculo-prioritario", "urgencia"]
+  },
+  {
+    "id": "C-007",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "El peatón que no ves al girar",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "semaforos": { "N": "verde", "S": "verde" },
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "E", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "P", "cruza": "E", "hacia": "S", "tipo": "peaton", "color": "#00C464" }
+    ],
+    "orden": ["P", "A"],
+    "dificultad": 2,
+    "explicacion_corta": "Cuando giras para entrar en otra vía, el peatón que la está cruzando pasa antes que tú (art. 65 RGCir), haya paso señalizado o no. Y el mismo verde que te deja girar es el que le deja cruzar a él.",
+    "truco": "Giras, cedes: el que cruza la calle en la que entras pasa antes que tú.",
+    "trampa": "El mismo verde que te deja girar pone en verde al peatón que cruza esa calle. Es el atropello más típico del giro en ciudad.",
+    "tags": ["peatones", "giro-derecha", "semaforo"]
+  },
+  {
+    "id": "C-008",
+    "tipo": "cruce",
+    "mundo": 8,
+    "tema": "Cambio de sentido",
+    "titulo": "Cambio de sentido, el último de la fila",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "S", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "N", "hacia": "S", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "E", "hacia": "W", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["B", "C", "A"],
+    "dificultad": 3,
+    "explicacion_corta": "Antes de cambiar de sentido tienes que cerciorarte de que no pones en peligro ni obstaculizas a nadie (art. 78 RGCir): en la práctica, pasas el último. Entre B y C manda la norma general: C tiene a B por su derecha, así que le cede.",
+    "truco": "Cambio de sentido: cedes a todos, vengan de donde vengan.",
+    "trampa": "El cambio de sentido no tiene «prioridad por la derecha» que valga: el que se mete en la trayectoria de los demás eres tú.",
+    "tags": ["cambio-de-sentido", "prioridad"]
+  },
+  {
+    "id": "C-009",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "En una T no existe la vía principal",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["W", "E", "S"],
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "E", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "E", "hacia": "W", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "W", "hacia": "E", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["B", "A", "C"],
+    "dificultad": 4,
+    "explicacion_corta": "Una T sin señalizar es un cruce como cualquier otro: manda la derecha (art. 57 RGCir). Tú tienes a B por tu derecha y le cedes; C te tiene a ti por su derecha y te cede, aunque vaya por la vía que no termina.",
+    "explicacion_larga": "En España la preferencia en una intersección la fija la señalización; solo cuando no hay ninguna entra la norma general de la derecha. El Reglamento no reconoce en ningún sitio la idea de «vía principal» por su forma: que una calle continúe recta y la otra muera en ella no otorga preferencia. Si el ayuntamiento quiere dar prioridad a la vía continua tiene que ponerlo con un ceda el paso o un STOP en el pie de la T. Sin esa señal, cada conductor mira a su derecha y punto: por eso tú cedes a B (que llega por tu derecha) y C te cede a ti (porque tú llegas por la suya).",
+    "truco": "Sin señales, una T es un cruce más: no hay «vía principal» que valga.",
+    "trampa": "Das por hecho que quien circula por la vía continua tiene preferencia sobre el que sale del pie de la T. Eso solo pasa si hay una señal que lo diga.",
+    "tags": ["prioridad", "interseccion-en-t", "norma-general"]
+  },
+  {
+    "id": "C-010",
+    "tipo": "cruce",
+    "mundo": 2,
+    "tema": "Agentes de circulación",
+    "titulo": "El agente manda sobre el semáforo",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "semaforos": { "N": "rojo", "S": "rojo", "E": "verde", "W": "verde" },
+    "agente": { "autoriza": "S", "texto": "El agente regula el cruce: detiene la vía este-oeste y te hace señal de avanzar a ti" },
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "E", "hacia": "W", "tipo": "turismo", "color": "#FF2D78" }
+    ],
+    "orden": ["A", "B"],
+    "dificultad": 3,
+    "explicacion_corta": "Las señales de los agentes prevalecen sobre cualquier otra. Si el agente te ordena avanzar, avanzas aunque tu semáforo esté en rojo; y B se detiene aunque el suyo esté en verde.",
+    "truco": "El orden de mando: agente > señalización circunstancial y balizamiento (obras) > semáforo > señal vertical > marca vial.",
+    "trampa": "El rojo te frena el instinto y te quedas parado. Desobedecer al agente por hacer caso al semáforo también es una infracción.",
+    "tags": ["agentes", "semaforo", "orden-de-prioridad"]
+  },
+  {
+    "id": "C-011",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "El grupo de ciclistas es indivisible",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "G", "desde": "W", "hacia": "E", "tipo": "bici", "color": "#00C464", "grupo": 3, "d": 34, "nota": "Grupo de ciclistas: el primero ya ha entrado en el cruce" },
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "N", "hacia": "E", "tipo": "turismo", "color": "#FF2D78" }
+    ],
+    "orden": ["G", "A", "B"],
+    "dificultad": 4,
+    "explicacion_corta": "Cuando el primer ciclista de un grupo ya ha iniciado el cruce, tienen preferencia todos los demás del grupo. Después pasas tú, porque B gira a la izquierda y cede a los que vienen de frente.",
+    "explicacion_larga": "El art. 64 RGCir da preferencia a los ciclistas en tres supuestos: cuando circulan por un carril bici o arcén debidamente señalizado, cuando el vehículo va a girar para entrar en otra vía y hay ciclistas cerca, y cuando circulan en grupo y el primero ya ha iniciado el cruce o ha entrado en la glorieta. Este último convierte al pelotón en una unidad móvil: partirlo por la mitad es tan peligroso como cortar en dos un vehículo largo, y por eso la norma obliga a esperar a que pase entero.",
+    "truco": "Si el primero del grupo ya ha entrado, pasan todos: el pelotón cuenta como un solo vehículo.",
+    "trampa": "Vienen por tu izquierda y los cuentas de uno en uno buscando el hueco. Meterse en medio de un grupo que ya ha entrado en el cruce es exactamente lo que prohíbe la norma.",
+    "tags": ["prioridad", "ciclistas", "excepciones"]
+  },
+  {
+    "id": "C-012",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "Dos STOP no se anulan",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "senales": { "S": "stop", "N": "stop" },
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "N", "hacia": "E", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "W", "hacia": "E", "tipo": "camion", "color": "#FFC800" }
+    ],
+    "orden": ["C", "A", "B"],
+    "dificultad": 4,
+    "explicacion_corta": "Los dos STOP están en la misma calzada: tú y B cedéis a C, que circula por la preferente. Entre vosotros dos siguen valiendo las reglas de siempre, y B gira a la izquierda ante ti, que vienes de frente.",
+    "explicacion_larga": "Un STOP te obliga a dos cosas: detenerte por completo en la línea y ceder el paso a la vía preferente. Lo que NO hace es regular tu relación con el otro vehículo que también viene de una vía con STOP: entre vosotros dos seguís siendo dos conductores en una intersección y se aplican las reglas normales, es decir, la norma general de la derecha y la obligación de ceder si giras a la izquierda ante quien viene de frente. Llegar antes a la línea no otorga ninguna preferencia: el orden de llegada no aparece en el Reglamento.",
+    "truco": "Dos STOP enfrentados no se cancelan: primero cedéis los dos a la preferente, y luego resolvéis entre vosotros como en cualquier cruce.",
+    "trampa": "Piensas que si los dos tenéis STOP, el asunto se decide por quién llegó antes. Se decide por las mismas normas de siempre.",
+    "tags": ["prioridad", "stop", "giro-izquierda"]
+  },
+  {
+    "id": "C-013",
+    "tipo": "cruce",
+    "mundo": 2,
+    "tema": "Semáforos",
+    "titulo": "Amarillo intermitente",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "semaforos": { "N": "ambar-intermitente", "S": "ambar-intermitente", "E": "ambar-intermitente", "W": "ambar-intermitente" },
+    "senales": { "W": "ceda", "E": "ceda" },
+    "vehiculos": [
+      { "k": "A", "desde": "W", "hacia": "E", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "N", "hacia": "E", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["B", "C", "A"],
+    "dificultad": 3,
+    "explicacion_corta": "El amarillo (ámbar) intermitente no regula la prioridad: solo obliga a extremar la precaución. Manda entonces la señalización, y tú llevas «ceda el paso». Entre B y C, C gira a la izquierda y cede a B, que viene de frente.",
+    "truco": "Amarillo intermitente = el semáforo se rinde: manda la señal vertical y, si no la hay, la derecha.",
+    "trampa": "Interpretas el amarillo intermitente como «puedo pasar». Solo dice «pasa con precaución si te toca a ti».",
+    "tags": ["semaforo", "ambar-intermitente", "ceda-el-paso"]
+  },
+  {
+    "id": "C-014",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "Prioritario, pero sin urgencia",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "vehiculos": [
+      { "k": "U", "desde": "W", "hacia": "N", "tipo": "prioritario", "color": "#F4F6FB", "urgencia": false, "nota": "Patrulla sin luces ni sirena: no está en servicio urgente" },
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "E", "hacia": "W", "tipo": "turismo", "color": "#FF2D78" }
+    ],
+    "orden": ["B", "A", "U"],
+    "dificultad": 4,
+    "explicacion_corta": "Sin luces ni señal acústica, el vehículo prioritario circula como uno más y no tiene ninguna preferencia. Manda la norma general: tú cedes a B, que llega por tu derecha; y U, que además gira a la izquierda, cede a B (viene de frente) y a ti (llegas por su derecha).",
+    "explicacion_larga": "Un vehículo prioritario solo tiene preferencia cuando circula en servicio urgente Y lo está advirtiendo con sus señales. Si va de patrulla rutinaria, sin luces, es un turismo más y se somete a todas las reglas: aquí, además, gira a la izquierda, así que acaba siendo el último de los tres. El error contrario también entra en el examen: cuando sí va de urgencia puede llevar solo la señal luminosa —sin sirena— si el ruido no es necesario, y en ese caso la prioridad es suya igualmente.",
+    "truco": "Sin luces ni sirena, un prioritario es un vehículo normal.",
+    "trampa": "Ves el coche patrulla y te apartas por reflejo. Solo tiene prioridad cuando circula en servicio urgente y lo avisa con sus señales; ojo, con la luz azul le basta si la sirena no hace falta.",
+    "tags": ["prioridad", "vehiculo-prioritario", "norma-general"]
+  },
+  {
+    "id": "C-015",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Señales de prioridad",
+    "titulo": "El rombo amarillo",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "senales": { "S": "prioridad", "N": "prioridad", "E": "ceda", "W": "ceda" },
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true },
+      { "k": "B", "desde": "E", "hacia": "W", "tipo": "turismo", "color": "#FF2D78" },
+      { "k": "C", "desde": "N", "hacia": "E", "tipo": "turismo", "color": "#FFC800" }
+    ],
+    "orden": ["A", "C", "B"],
+    "dificultad": 3,
+    "explicacion_corta": "El rombo amarillo indica que circulas por una calzada con prioridad: B lleva «ceda el paso» y os cede a los dos. Entre tú y C, C gira a la izquierda y cede a los que vienen de frente.",
+    "truco": "Rombo amarillo = aquí mandas tú. Con la barra negra encima, se acabó el mando.",
+    "trampa": "El rombo te da prioridad frente a la vía que se cruza, pero no te libra de ceder a los peatones ni de las reglas del giro a la izquierda.",
+    "tags": ["senales", "prioridad", "R-3"]
+  },
+  {
+    "id": "C-016",
+    "tipo": "cruce",
+    "mundo": 6,
+    "tema": "Prioridad de paso",
+    "titulo": "Del barro al asfalto",
+    "pregunta": "¿En qué orden pasan?",
+    "brazos": ["N", "S", "E", "W"],
+    "suelo": { "S": "tierra" },
+    "vehiculos": [
+      { "k": "A", "desde": "S", "hacia": "N", "tipo": "turismo", "color": "#00E5FF", "tu": true, "nota": "Sales de un camino sin pavimentar" },
+      { "k": "B", "desde": "W", "hacia": "E", "tipo": "turismo", "color": "#FF2D78" }
+    ],
+    "orden": ["B", "A"],
+    "dificultad": 3,
+    "explicacion_corta": "Sales de una vía sin pavimentar a una pavimentada: cedes el paso, aunque B venga por tu izquierda. Es una de las excepciones a la norma general de la derecha recogidas en el art. 57 RGCir, y solo opera cuando no hay señal que regule la preferencia.",
+    "truco": "Del barro al asfalto, siempre cedes.",
+    "trampa": "B viene por tu izquierda y das por hecho que mandas tú. El firme del camino del que sales te quita la prioridad.",
+    "tags": ["prioridad", "excepciones", "vias"]
+  }
+]

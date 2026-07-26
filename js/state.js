@@ -35,6 +35,7 @@ function estadoInicial() {
     simulacroHoy: null,  // fecha del último simulacro gratis
     diarias: { fecha: null, lista: [] },
     contrarreloj: { semana: null, record: 0 },
+    cruces: { record: 0 },   // "¿Quién pasa primero?": mejor tanda
     compras: { pase: false, codigo: null },
     ajustes: { sonido: true, haptics: true },
   };

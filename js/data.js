@@ -41,12 +41,28 @@ export async function getBancoCompleto(mundosDisponibles) {
   return listas.flat();
 }
 
+// Puzzles de prioridad "¿Quién pasa primero?" — se juegan como una pregunta más
+// (mismo id, mismo SRS, mismo Taller), pero NUNCA entran en examen ni contrarreloj.
+let crucesDoc = null;
+export async function getCruces() {
+  if (!crucesDoc) {
+    try { crucesDoc = await json('datos/cruces.json'); }
+    catch { crucesDoc = []; }
+  }
+  return crucesDoc;
+}
+
+export async function crucesDeMundos(mundos) {
+  const lista = await getCruces();
+  return lista.filter((c) => mundos.includes(c.mundo));
+}
+
 export function preguntaPorId(id) {
   for (const banco of bancos.values()) {
     const q = banco.find((p) => p.id === id);
     if (q) return q;
   }
-  return null;
+  return (crucesDoc || []).find((c) => c.id === id) || null;
 }
 
 // t(strings, 'a.b.c', {n: 3}) — acceso con puntos + interpolación {var}

@@ -1,8 +1,62 @@
 # 📋 ESTADO — CARNET QUEST
 
-> Última actualización: 2026-07-06 · Sesión 3
+> Última actualización: 2026-07-26 · Sesión 4
 
-## Fase actual: F0–F8 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
+## 🚨 AVISO NORMATIVO PRIORITARIO — RD 518/2026
+
+**Real Decreto 518/2026, de 24 de junio** (BOE núm. 155, 26-06-2026): la mayor reforma del
+RGCir en 20 años, "en materia de protección a usuarios vulnerables de la vía". **Publicado
+pero AÚN NO VIGENTE: entra en vigor el 1-oct-2026.** Rediseña los arts. 64 y 65 y añade un
+Título VI de circulación urbana.
+
+- Impacto en los cruces: **ninguno**. El art. 64 conserva íntegras sus letras a/b/c (incluida
+  la del grupo de ciclistas que usa C-011) y el art. 65 se refuerza en la misma dirección que
+  C-007. Ningún orden de paso cambia el 1-oct-2026.
+- **Acción pendiente del dueño (decisión de producto):** revisar el banco de 856 preguntas
+  contra el RD 518/2026 antes del 1-oct-2026 y averiguar desde qué fecha examina la DGT con
+  el texto nuevo. `[VERIFICAR DGT 2026]`
+
+## F9 · ¿QUIÉN PASA PRIMERO? — el juego deja de ser un test (2026-07-26)
+
+Mini-juego de cruces jugables: un cruce dibujado a vista de pájaro, tocas los vehículos en su
+orden de paso y **los ves cruzar**. Es la respuesta al "no solo pregunta tras pregunta".
+
+- `js/cruce.js` — motor SVG procedural: calzadas y carriles, señales (STOP / ceda / rombo de
+  prioridad), semáforos con estados, pasos de peatones, raíles de tranvía, firme sin
+  pavimentar, agente con brazo que autoriza, pelotón de ciclistas y vehículo prioritario con
+  luces. Animación por bézier cuadrática con rumbo tangente, solo `transform` (60 fps).
+- `datos/cruces.json` — **16 puzzles** con explicación, truco, trampa y (dificultad ≥4)
+  explicación larga.
+- Se juegan **como una pregunta más**: mismo id, mismo Leitner, mismo Taller de Errores (un
+  cruce fallado es un coche averiado que se repara volviendo a resolverlo) y mismo combo/XP.
+  **Nunca** entran en la DGT Tower ni en la contrarreloj (allí manda el formato real).
+- Dos vías de entrada: **tanda dedicada** desde el mapa (6 puzzles) y **cruces incrustados**
+  a mitad de misión, anunciados en la barra de progreso en magenta para crear anticipación.
+- Se abre desde el minuto uno: solo respeta el Pase, no la progresión de mundos.
+
+### Verificación normativa adversarial de los 16 cruces ✅
+Un revisor independiente recalculó las 40 maniobras y todas las relaciones de prioridad par a
+par, con contraste web de la normativa. Resultado: **los 16 órdenes son correctos y de solución
+única** (sin empates a tres ni ciclos). Se aplicaron 12 correcciones de texto/datos:
+jerarquía completa de señalización en C-010 (faltaba el balizamiento circunstancial), C-007
+reanclado en el art. 65 (citaba un semáforo peatonal inexistente en los datos), C-005 (los
+raíles no son "la primera" excepción del art. 57), matiz del art. 68 en C-006/C-014 (con solo
+luz azul el prioritario conserva la prioridad), C-008 anclado en el art. 78, señalización
+coherente en los cuatro brazos (C-002/003/013/015), terminología oficial "amarillo
+intermitente", C-015 movido al mundo 6, y explicación larga en los cuatro puzzles de
+dificultad 4. **C-014 se rediseñó** porque clonaba la geometría de C-001.
+
+### Marcas `[VERIFICAR DGT 2026]` nuevas (numeración de artículos, no las reglas)
+El proxy bloquea boe.es/dgt.es y WebFetch devuelve 403, así que estas van con dos fuentes
+secundarias concordantes pero sin lectura del consolidado: letras exactas del art. 57
+(pavimentada = a, raíles = b), numeración del amarillo intermitente tras el RD 465/2025, y
+literalidad del art. 133. Las **reglas** están confirmadas; lo dudoso es la cita.
+
+### Pendiente para v1.1 de cruces
+Glorieta (art. 57.c, requiere geometría de anillo), incorporación desde vía de servicio o
+propiedad colindante (art. 72), acceso a autopista/autovía (art. 57.d) y peatón sin semáforo.
+
+## Fase actual: F0–F9 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
 
 **EL JUEGO ESTÁ COMPLETO, JUGABLE, VERIFICADO Y CON LANDING DE VENTA.** Los 15 mundos
 tienen banco, los **15 bancos han pasado verificación normativa adversarial** con búsqueda web,
@@ -108,5 +162,6 @@ en material DGT no confirmables en fuente primaria (el proxy bloquea boe.es/dgt.
 | F6 Retención | ✅ | |
 | F7 Contenido masivo | ✅ | 856 preguntas, 15/15 mundos, 15/15 verificados |
 | F8 Venta | ✅* | paywall + Pase + landing + éxito + guía; *solo falta el Payment Link de Stripe del dueño |
+| F9 Cruces jugables | ✅ | "¿Quién pasa primero?": 16 puzzles verificados, motor SVG + animación |
 
 > Nota: el remoto solo acepta push de la rama designada `claude/carnet-quest-game-vsag41`.
