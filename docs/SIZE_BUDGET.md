@@ -39,7 +39,8 @@ npm run check                      # lint del banco + unitarias + peso
 ```
 
 (o `node tools/size-check.mjs` directamente: el proyecto no tiene build step y
-`package.json` existe solo para estos comandos.)
+`package.json` existe solo para estos comandos. Todos son `node`, así que
+funcionan igual en Windows, macOS y Linux.)
 
 El script sigue los imports estáticos de verdad (recorre el árbol desde
 `js/main.js` con una expresión regular que **ignora los `import()` dinámicos**),

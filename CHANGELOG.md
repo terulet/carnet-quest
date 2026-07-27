@@ -64,8 +64,12 @@ Documentación completa en [`docs/RETENTION_V1.md`](docs/RETENTION_V1.md).
   manifiesto de Regla contra Trampa, para que el juego esté completo sin red.
 - `tools/test-retencion.mjs` — 35 pruebas unitarias en Node puro.
 - `tools/qa/` — 10 scripts de integración con navegador y un runner (`npm run qa`).
-- `package.json` con `size:check`, `test`, `qa` y `check`. La aplicación **no**
-  depende de nada de eso en tiempo de ejecución: sigue siendo JS puro sin build.
+- `package.json` con `serve`, `size:check`, `test`, `qa` y `check`. La aplicación
+  **no** depende de nada de eso en tiempo de ejecución: sigue siendo JS puro sin
+  build.
+- `tools/serve.mjs` — servidor estático de desarrollo en Node, sin dependencias.
+  El script `serve` llamaba a `python3 -m http.server`, que en Windows no existe:
+  ninguno de los comandos del proyecto arrancaba allí. Ahora todos son `node`.
 - `tools/size-check.mjs` — presupuesto de arranque con criterio de medida
   documentado ([`docs/SIZE_BUDGET.md`](docs/SIZE_BUDGET.md)). Actual: **109,6 KB
   gzip** sobre un tope de 300.

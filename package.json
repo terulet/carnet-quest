@@ -5,7 +5,7 @@
   "description": "El juego con el que España se saca el carnet de conducir. PWA estática, sin build step: package.json existe solo para los comandos de control de calidad.",
   "type": "module",
   "scripts": {
-    "serve": "python3 -m http.server 8765",
+    "serve": "node tools/serve.mjs",
     "size:check": "node tools/size-check.mjs",
     "size:json": "node tools/size-check.mjs --json",
     "test": "node --test tools/test-retencion.mjs",

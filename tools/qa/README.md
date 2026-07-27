@@ -7,7 +7,7 @@ Las unitarias, que no necesitan navegador, están en `tools/test-retencion.mjs`.
 
 ```bash
 # 1. servir el proyecto (desde la raíz de carnet-quest)
-npm run serve            # = python3 -m http.server 8765
+npm run serve            # = node tools/serve.mjs — funciona igual en Windows
 
 # 2. toda la suite, en serie, con resumen
 npm run qa               # = node tools/qa/todas.mjs
@@ -28,6 +28,11 @@ Variables de entorno:
 | `SHOTS` | dónde dejar las capturas | `/tmp/cq-shots` |
 | `PW_CHROMIUM` | ruta al binario de Chromium | `/opt/pw-browsers/chromium` |
 | `NODE_PATH` | dónde buscar Playwright si no está en el proyecto | — |
+| `PORT` | puerto del servidor de desarrollo | `8765` |
+
+En **Windows** funciona igual: todo son comandos `node`, sin Python ni utilidades
+de shell POSIX. Para la suite de integración hace falta instalar Playwright una
+vez (`npm install` y después `npx playwright install chromium`).
 
 `_navegador.mjs` resuelve Playwright aunque esté instalado fuera del proyecto
 (los `import` de ES modules no miran `NODE_PATH`) y cae al Chromium que traiga
