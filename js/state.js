@@ -3,7 +3,7 @@
 const DB_NOMBRE = 'carnet-quest';
 const DB_VERSION = 1;
 const STORE = 'jugador';
-const SCHEMA_VERSION = 1;
+const SCHEMA_VERSION = 2;
 
 export const HOY = () => new Date().toISOString().slice(0, 10);
 
@@ -40,14 +40,51 @@ function estadoInicial() {
     rush: { semana: null, record: 0 }, // "Señal Rush": récord semanal
     // Garaje: SOLO cosmética. Ni las Chapas ni el dinero real compran progreso (§6)
     garaje: { coche: 'escuela', tema: 'cian', celebracion: 'senales', comprados: ['escuela', 'cian', 'senales'] },
+
+    /* ---- Retención V1 (esquema 2) ---- */
+    // Descubrimiento progresivo: los modos se encienden por hitos, no de golpe
+    desbloqueos: { cruces: true, rush: false, bote: false, torre: false, crono: false },
+    // Tu Próxima Parada: como mucho UNA pendiente, nunca caduca, nunca penaliza
+    proxima: null,
+    // Preferencias locales de recordatorio (solo se usan si el jugador lo pide)
+    prefs: { horaRecordatorio: '19:30' },
+    // Contratos de ruta: contador informativo, sin economía nueva
+    contratos: { completados: 0, fallados: 0 },
+    // Modo de prueba: caja negra LOCAL, apagada por defecto, sin red jamás
+    pruebas: { activo: false },
     compras: { pase: false, codigo: null },
     ajustes: { sonido: true, haptics: true },
   };
 }
 
-// Migraciones futuras: cada función lleva el estado de la versión N a la N+1.
+// Cada función lleva el estado de la versión N a la N+1. Nunca destructivas.
 const MIGRACIONES = {
-  // 1: (s) => { ...; s.schemaVersion = 2; return s; }
+  // 1 → 2 · Retención V1. Deduce los desbloqueos del progreso ya existente,
+  // SIEMPRE a favor del jugador: si hay cualquier rastro de haber usado un modo,
+  // se queda abierto. Nadie pierde acceso a algo que ya estaba usando.
+  1: (s) => {
+    const album = s.album || {};
+    const coleccionadas = Object.values(album).filter((n) => (n || 0) >= 2).length;
+    const bossHecho = Object.values(s.mundos || {}).some((m) => m && m.bossSuperado);
+    const simulacros = (s.simulacros || []).length > 0;
+    s.desbloqueos = {
+      cruces: true,
+      rush: coleccionadas >= 12 || (s.rush?.record || 0) > 0,
+      bote: bossHecho || (s.bote?.record || 0) > 0,
+      torre: bossHecho || simulacros || (s.contrarreloj?.record || 0) > 0,
+      crono: simulacros || (s.contrarreloj?.record || 0) > 0,
+    };
+    // un veterano con progreso real no debe encontrarse el juego recortado
+    if ((s.xp || 0) >= 400) {
+      s.desbloqueos = { cruces: true, rush: true, bote: true, torre: true, crono: true };
+    }
+    s.proxima = s.proxima ?? null;
+    s.prefs = s.prefs || { horaRecordatorio: '19:30' };
+    s.contratos = s.contratos || { completados: 0, fallados: 0 };
+    s.pruebas = s.pruebas || { activo: false };
+    s.schemaVersion = 2;
+    return s;
+  },
 };
 
 function migrar(s) {
@@ -58,8 +95,29 @@ function migrar(s) {
     s = fn(s);
     v = s.schemaVersion;
   }
-  // garantiza campos nuevos aunque no haya migración formal
-  return Object.assign(estadoInicial(), s);
+  // Garantiza campos nuevos aunque no haya migración formal. Object.assign es
+  // superficial, así que los objetos anidados nuevos se completan a mano: un
+  // estado antiguo o dañado nunca debe dejar la app en pantalla blanca.
+  const base = estadoInicial();
+  // ¡copia! Object.assign(base, s) mutaría `base` y entonces los valores de
+  // repuesto de abajo ya vendrían dañados: un `racha: null` acababa en `{}`.
+  const fusion = Object.assign({}, base, s);
+  for (const clave of ['desbloqueos', 'prefs', 'contratos', 'pruebas', 'garaje', 'racha', 'ajustes', 'compras']) {
+    const guardado = s[clave];
+    // solo se fusiona lo que de verdad es un objeto: un string o un null se
+    // descartan enteros (Object.assign con un string reparte sus letras)
+    const valido = guardado && typeof guardado === 'object' && !Array.isArray(guardado) ? guardado : {};
+    fusion[clave] = Object.assign({}, base[clave], valido);
+  }
+  for (const clave of ['mundos', 'srs', 'taller', 'album', 'vistas', 'diarias']) {
+    if (!fusion[clave] || typeof fusion[clave] !== 'object') fusion[clave] = base[clave];
+  }
+  for (const clave of ['respuestas', 'simulacros', 'albumCategorias']) {
+    if (!Array.isArray(fusion[clave])) fusion[clave] = base[clave];
+  }
+  if (!Array.isArray(fusion.garaje.comprados)) fusion.garaje.comprados = base.garaje.comprados;
+  if (fusion.proxima && typeof fusion.proxima !== 'object') fusion.proxima = null;
+  return fusion;
 }
 
 let db = null;

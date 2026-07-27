@@ -17,6 +17,15 @@ import { sonido, haptic, setModoExamen } from './audio.js';
 import { sello, confeti, setConfeti, xpFlotante, rodarContador, toast, sacudir, glowCombo } from './juice.js';
 import { svgSenal } from './signs.js';
 import { generarTarjeta, compartirTarjeta } from './sharecard.js';
+import { FLAGS } from './retencion/flags.js';
+import * as EV from './retencion/eventos.js';
+import { revisarDesbloqueos, estaDesbloqueado, progresoDe } from './retencion/desbloqueos.js';
+import {
+  prepararProxima, guardarProxima, proximaPendiente, proximaLista,
+  marcarCompletada, recordarHoraCalendario, materializar,
+} from './retencion/proxima.js';
+import { adnDe, huecosDe } from './retencion/mundos-adn.js';
+import { ofrecerContrato, resolverContrato, PREMIO_CHAPAS } from './retencion/contratos.js';
 
 // URL de pago (Stripe Payment Link). ⚠️ Sustituir por el link real antes de vender (ver tools/VENTA.md).
 const STRIPE_URL = 'https://buy.stripe.com/REEMPLAZAR_LINK_REAL';
@@ -37,6 +46,17 @@ let paywallMostradoTrasBoss3 = false;
 let conBanco = new Set(); // mundos con banco de preguntas disponible
 let CRUCES = [];          // puzzles "¿Quién pasa primero?" (cacheados al arrancar)
 let GARAJE = null;        // catálogo de cosmética
+
+const VERSION_APP = 'cq-v17';
+
+/** Lee el deep link del hash: '#/next-run' o '#/reto?...'. */
+function leerHash() {
+  const h = location.hash || '';
+  if (h.startsWith('#/next-run')) return 'next-run';
+  if (h.startsWith('#/reto')) return 'reto';
+  return null;
+}
+const limpiarHash = () => { try { history.replaceState(null, '', location.pathname + location.search); } catch {} };
 
 const $ = (sel, el = document) => el.querySelector(sel);
 const el = (html) => {
@@ -68,7 +88,7 @@ export async function iniciarUI(ctx) {
   hudEl = $('#hud');
   navEl = $('#nav');
   const cont = $('#screens');
-  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall', 'rush', 'garaje']) {
+  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall', 'rush', 'garaje', 'reto']) {
     const sc = el(`<section class="screen" data-screen="${id}"></section>`);
     cont.appendChild(sc);
     pantallas[id] = sc;
@@ -85,9 +105,31 @@ export async function iniciarUI(ctx) {
   // Enlace de desbloqueo: ?codigo=CQ-XXXXX-XXXXX (o ?pase= / ?unlock=) activa el Pase al
   // instante, para dejar que alguien pruebe el juego gratis con todo desbloqueado.
   aplicarCosmetica();
+  EV.setAppVersion(VERSION_APP);
+  EV.nuevaSesion();
+  EV.registrar('app_open', { route: 'arranque' });
+  revisarDesbloqueos();
   const desbloqueo = aplicarUnlockPorURL();
-  if (getEstado().onboarded) navegar('mapa');
-  else arrancarTutorial();
+  // Deep links por hash: funcionan en hosting estático, sin rutas de servidor
+  const ruta = leerHash();
+  if (!getEstado().onboarded && !ruta) {
+    arrancarTutorial();
+  } else if (ruta === 'next-run') {
+    abrirProximaParada();
+  } else if (ruta === 'reto') {
+    abrirRetoDesdeHash();
+  } else {
+    navegar('mapa');
+  }
+  // el jugador puede pegar un enlace con la app ya abierta
+  addEventListener('hashchange', () => {
+    const r = leerHash();
+    if (r === 'next-run') abrirProximaParada();
+    else if (r === 'reto') abrirRetoDesdeHash();
+  });
+  addEventListener('visibilitychange', () => {
+    EV.registrar(document.hidden ? 'app_background' : 'app_foreground', { route: actual });
+  });
   if (desbloqueo === 'ok') {
     if (getEstado().onboarded) { confeti(40); sello(t(S, 'paywall.canjearOk'), 'rango', t(S, 'paywall.desbloqueoLink')); }
     else toast(t(S, 'paywall.desbloqueoLink'));
@@ -310,33 +352,9 @@ RENDERS.mapa = (sc) => {
           <span class="diaria__premio">+${dd.premio} 🔩</span>
         </div>`).join('')}
       <div class="sep"></div>
-      <button class="card-juego" id="cruce-card">
-        <span class="card-juego__ico">🚦</span>
-        <span class="card-juego__txt"><b>${t(S, 'cruce.titulo')}</b><br>
-          <span class="texto-suave">${t(S, 'cruce.sub')}${(() => {
-            const faltan = CRUCES.length - crucesJugables().length;
-            return faltan > 0 ? ` · ${t(S, 'cruce.bloqueado', { n: faltan })}` : '';
-          })()}${s.cruces?.record ? ` · ${t(S, 'cruce.record')}: ${s.cruces.record}` : ''}</span></span>
-        <span class="card-juego__go">GO</span>
-      </button>
-      <button class="card-juego" id="bote-card">
-        <span class="card-juego__ico">🏆</span>
-        <span class="card-juego__txt"><b>${t(S, 'bote.titulo')}</b><br>
-          <span class="texto-suave">${t(S, 'bote.sub')}${s.bote?.record ? ` · ${t(S, 'bote.record')}: ${s.bote.record} XP` : ''}</span></span>
-        <span class="card-juego__go">GO</span>
-      </button>
-      <button class="card-juego" id="rush-card">
-        <span class="card-juego__ico">⚡</span>
-        <span class="card-juego__txt"><b>${t(S, 'rush.titulo')}</b><br>
-          <span class="texto-suave">${t(S, 'rush.sub')}${s.rush?.semana === semanaISO() && s.rush.record ? ` · ${t(S, 'rush.record')}: ${s.rush.record}` : ''}</span></span>
-        <span class="card-juego__go">GO</span>
-      </button>
-      <button class="card-juego" id="crono-card">
-        <span class="card-juego__ico">⏱️</span>
-        <span class="card-juego__txt"><b>${t(S, 'contrarreloj.titulo')}</b><br>
-          <span class="texto-suave">${t(S, 'contrarreloj.record')}: ${s.contrarreloj.semana === semanaISO() ? s.contrarreloj.record : 0}</span></span>
-        <span class="card-juego__go">GO</span>
-      </button>
+      ${tarjetaProxima()}
+      ${tarjetasDeModo(s)}
+      ${tarjetaReto()}
     </div>`;
 
   sc.querySelectorAll('.nodo[data-mundo]').forEach((g) => {
@@ -349,11 +367,31 @@ RENDERS.mapa = (sc) => {
       navegar('mundo', { n });
     });
   });
-  $('[data-torre]', sc).addEventListener('click', () => { sonido.tap(); navegar('torre'); });
-  $('#cruce-card', sc).onclick = () => empezarCruces();
-  $('#bote-card', sc).onclick = () => empezarBote();
-  $('#rush-card', sc).onclick = () => { sonido.tap(); haptic.medio(); navegar('rush'); };
-  $('#crono-card', sc).onclick = () => empezarContrarreloj();
+  $('[data-torre]', sc).addEventListener('click', () => {
+    sonido.tap();
+    if (!estaDesbloqueado('torre')) { toast(textoCondicion('torre')); return; }
+    EV.registrar('mode_open', { modeId: 'torre', route: 'mapa' });
+    navegar('torre');
+  });
+  const ACCIONES = {
+    cruces: () => empezarCruces(),
+    rush: () => { sonido.tap(); haptic.medio(); navegar('rush'); },
+    bote: () => empezarBote(),
+    crono: () => empezarContrarreloj(),
+  };
+  sc.querySelectorAll('[data-modo]').forEach((b) => b.addEventListener('click', () => {
+    const id = b.dataset.modo;
+    if (!estaDesbloqueado(id)) {
+      // la condición se dice tal cual: ni "próximamente" ni cuentas atrás
+      sonido.tap(); haptic.ligero();
+      toast(textoCondicion(id));
+      return;
+    }
+    EV.registrar('mode_open', { modeId: id, route: 'mapa' });
+    ACCIONES[id]?.();
+  }));
+  $('#proxima-card', sc)?.addEventListener('click', () => abrirProximaParada());
+  $('#reto-card', sc)?.addEventListener('click', () => { sonido.tap(); haptic.ligero(); crearReto(); });
   // El viaje empieza abajo: el primer mundo queda a la vista al entrar, despejado
   // del nav. Hay que contar el offsetTop del mapa (el título va antes) o el nombre
   // del mundo acaba pisado por la barra inferior.
@@ -381,6 +419,7 @@ RENDERS.mundo = async (sc, { n }) => {
       <div class="lema">“${esc(m.lema)}”</div>
       <div class="progreso-mundo">★ ${total}/18 · ${esc(m.temario)}</div>
     </div>
+    ${franjaADN(n)}
     ${banco.length === 0 ? `<p class="centrado texto-suave">Este mundo está en obras 🚧 (banco de preguntas en camino)</p>` : `
     <h2 class="texto-suave" style="margin-bottom:12px">${t(S, 'mundo.elegirMision')}</h2>
     ${m.misiones.map((nombre, i) => {
@@ -409,10 +448,11 @@ RENDERS.mundo = async (sc, { n }) => {
       const bancoQ = await getBancoCompleto(accesibles);
       const cruces = crucesDe(accesibles);
       // el repaso camuflado también puede caer en forma de cruce ya fallado (§8.1)
-      const preguntas = componerMision(banco, bancoQ.concat(cruces), i);
+      let preguntas = componerMision(banco, bancoQ.concat(cruces), i);
       if (!preguntas.length) return;
-      const conJuego = conCruces(preguntas, cruces.filter((c) => c.mundo === n), i);
-      navegar('mision', { cfg: { modo: 'mision', mundoN: n, misionIdx: i, preguntas: conJuego, titulo: m.misiones[i] } });
+      if (adnDe(n).mods.reglaTrampa) await prepararReglaTrampa();
+      preguntas = aplicarADN(preguntas, n, i, cruces, banco);
+      lanzarMision({ modo: 'mision', mundoN: n, misionIdx: i, preguntas, titulo: m.misiones[i] });
     });
   });
   const bossBtn = $('#boss', sc);
@@ -446,10 +486,12 @@ RENDERS.mision = (sc, { cfg }) => {
   sesion = {
     ...cfg,
     idx: 0, aciertos: 0, fallos: 0, combo: 0, maxCombo: 0, xp: 0,
+    reparadas: 0, fallosSenal: 0,
     resultados: [], t0: Date.now(), timerId: null,
     bote: 0, boteAntes: 0, escalon: 0, cobrado: 0, plantado: false,
     limiteFallos: cfg.limiteFallos ?? Infinity,
     duracion: cfg.modo === 'examen' ? 30 * 60 : cfg.modo === 'crono' ? 90 : null,
+    nFrio: cfg.nFrio || 0,
   };
   sc.classList.toggle('modo-examen', cfg.modo === 'examen');
   pintarPregunta(sc);
@@ -509,13 +551,30 @@ function barraTop() {
     </div>`;
 }
 
+/** En la Próxima Parada, un rótulo marca dónde acaba el arranque en frío. */
+function rotuloFase() {
+  if (sesion.modo !== 'proxima') return '';
+  const enFrio = sesion.idx < sesion.nFrio;
+  const primero = sesion.idx === 0 || sesion.idx === sesion.nFrio;
+  if (!primero) return '';
+  return `<div class="fase-rotulo">
+    <b>${enFrio ? t(S, 'proxima.frioTitulo') : t(S, 'proxima.rutaTitulo')}</b>
+    ${enFrio ? `<span>${t(S, 'proxima.frioSub')}</span>` : ''}
+  </div>`;
+}
+
 function pintarPregunta(sc) {
   const q = sesion.preguntas[sesion.idx];
   if (q.tipo === 'cruce') return pintarCruce(sc, q);
+  if (q._reglaTrampa && FLAGS.ruleTrap && sesion.modo !== 'examen' && sesion.modo !== 'boss') {
+    const tar = tarjetaReglaTrampa(q.id);
+    if (tar) return pintarReglaTrampa(sc, q, tar);
+  }
   const senal = q.senalId ? SEN.senales.find((x) => x.id === q.senalId) : null;
   const esExamen = sesion.modo === 'examen';
   sc.innerHTML = `
     ${barraTop()}
+    ${rotuloFase()}
     <div class="q-card" id="qcard">
       <div class="q-card__tema">${esc(q.tema)}${esExamen ? '' : ` · P${sesion.idx + 1}`}</div>
       <div class="q-card__texto">${esc(q.pregunta)}</div>
@@ -562,21 +621,168 @@ function responder(sc, q, i, ev) {
   if (!sesion) return;
   const ok = i === q.correcta;
   const esExamen = sesion.modo === 'examen';
+
+  // Chequeo de confianza: se pregunta ANTES de revelar nada. Después de ver el
+  // resultado la respuesta ya no vale: todo el mundo "lo sabía".
+  if (q._confianza && !esExamen && sesion.modo !== 'crono') {
+    sc.querySelectorAll('.q-opcion').forEach((b) => {
+      b.disabled = true;
+      if (Number(b.dataset.i) !== i) b.classList.add('q-opcion--apagada');
+    });
+    pedirConfianza(sc, (seguro) => revelar(sc, q, i, ev, ok, seguro));
+    return;
+  }
+  revelar(sc, q, i, ev, ok, null);
+}
+
+/** Revela el resultado y puntúa. `seguro` es null si no se preguntó. */
+function revelar(sc, q, i, ev, ok, seguro) {
+  if (!sesion) return;
+  const esExamen = sesion.modo === 'examen';
   sesion.resultados.push({ q, elegida: i, ok });
 
   // bloquear opciones y marcar
   sc.querySelectorAll('.q-opcion').forEach((b) => {
     const bi = Number(b.dataset.i);
     b.disabled = true;
+    b.classList.remove('q-opcion--apagada');
     if (bi === q.correcta && !esExamen) b.classList.add('q-opcion--ok');
     else if (bi === i && !ok && !esExamen) b.classList.add('q-opcion--ko');
     else if (!esExamen) b.classList.add('q-opcion--apagada');
   });
 
   contabilizar(sc, q, ok, ev);
+  if (seguro !== null) {
+    EV.registrar('confidence_answered', {
+      questionId: q.id, correct: ok, questionFormat: 'confianza',
+      metadata: { seguro },
+    });
+  }
   if (esExamen) { setTimeout(() => avanzar(sc), 220); return; }
   if (sesion.modo === 'crono') { setTimeout(() => avanzar(sc), ok ? 350 : 650); return; }
-  mostrarFeedback(sc, q, ok);
+  mostrarFeedback(sc, q, ok, seguro);
+}
+
+/** "¿Vas seguro?" — dos botones, mismo peso visual. Ninguno penaliza. */
+function pedirConfianza(sc, cb) {
+  const fb = $('#feedback', sc);
+  if (!fb) return cb(null);
+  EV.registrar('confidence_prompted', { questionId: sesion.preguntas[sesion.idx]?.id });
+  fb.innerHTML = `<div class="confianza">
+    <b class="confianza__pregunta">${t(S, 'confianza.pregunta')}</b>
+    <div class="confianza__botones">
+      <button class="btn btn--ghost" id="conf-si">${t(S, 'confianza.seguro')}</button>
+      <button class="btn btn--ghost" id="conf-no">${t(S, 'confianza.dudo')}</button>
+    </div>
+  </div>`;
+  fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  const elegir = (v) => { sonido.tap(); haptic.ligero(); fb.innerHTML = ''; cb(v); };
+  $('#conf-si', fb).onclick = () => elegir(true);
+  $('#conf-no', fb).onclick = () => elegir(false);
+}
+
+/* ============ REGLA CONTRA TRAMPA ============ */
+
+let RT = null;   // manifiesto cargado en diferido; null = aún no se ha pedido
+
+/** Carga diferida: solo si algún mundo la pide de verdad. */
+async function prepararReglaTrampa() {
+  if (RT !== null || !FLAGS.ruleTrap) return;
+  try {
+    RT = await import('./retencion/reglatrampa.js');
+    await RT.cargarReglaTrampa();
+  } catch { RT = { estaDisponible: () => false, tarjetaDe: () => null }; }
+}
+
+const tarjetaReglaTrampa = (id) => (RT && RT.estaDisponible() ? RT.tarjetaDe(id) : null);
+
+/**
+ * Dos tarjetas: una regla y una trampa. El PRIMER intento es el que cuenta
+ * (§8.5). La pregunta de cuatro opciones que viene después es corrección
+ * guiada: no vuelve a puntuar ni borra el fallo.
+ */
+function pintarReglaTrampa(sc, q, tar) {
+  const izq = tar.reglaIzquierda ? tar.ruleText : tar.trapText;
+  const der = tar.reglaIzquierda ? tar.trapText : tar.ruleText;
+  EV.registrar('ruletrap_shown', { questionId: q.id, questionFormat: 'regla-trampa' });
+  sc.innerHTML = `
+    ${barraTop()}
+    ${rotuloFase()}
+    <div class="q-card q-card--rt" id="qcard">
+      <div class="q-card__tema">${esc(q.tema)}</div>
+      <div class="q-card__texto rt-contexto">${esc(tar.contexto)}</div>
+    </div>
+    <div class="rt-titulo">${t(S, 'reglaTrampa.titulo')}</div>
+    <div class="rt-cartas" id="rt-cartas">
+      <button class="rt-carta" data-lado="izq"><span class="rt-carta__marca">1</span><span>${esc(izq)}</span></button>
+      <button class="rt-carta" data-lado="der"><span class="rt-carta__marca">2</span><span>${esc(der)}</span></button>
+    </div>
+    <div class="feedback" id="feedback"></div>`;
+  $('#salir', sc).onclick = () => confirmarSalida();
+  sc.querySelectorAll('.rt-carta').forEach((b) => b.addEventListener('click', (ev) => {
+    const esRegla = (b.dataset.lado === 'izq') === !!tar.reglaIzquierda;
+    resolverReglaTrampa(sc, q, tar, b, esRegla, ev);
+  }));
+  sc.scrollTop = 0;
+}
+
+function resolverReglaTrampa(sc, q, tar, boton, ok, ev) {
+  sesion.resultados.push({ q, elegida: ok ? q.correcta : -1, ok });
+  sc.querySelectorAll('.rt-carta').forEach((b) => {
+    b.disabled = true;
+    const esRegla = (b.dataset.lado === 'izq') === !!tar.reglaIzquierda;
+    b.classList.add(esRegla ? 'rt-carta--regla' : 'rt-carta--trampa');
+  });
+  boton.classList.add('rt-carta--elegida');
+  contabilizar(sc, q, ok, ev);
+  EV.registrar('ruletrap_first_attempt', { questionId: q.id, correct: ok, questionFormat: 'regla-trampa' });
+  const fb = $('#feedback', sc);
+  fb.innerHTML = `
+    <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${ok ? t(S, 'reglaTrampa.correcto') : t(S, 'reglaTrampa.fallo')}</div>
+    ${q.truco ? `<div class="feedback__caja feedback__caja--truco"><b>${t(S, 'mision.truco')}</b>${esc(q.truco)}</div>` : ''}
+    <button class="btn ${ok ? 'btn--verde' : 'btn--cian'}" id="rt-seguir">${t(S, 'mision.siguiente')} →</button>`;
+  fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  $('#rt-seguir', fb).onclick = () => { sonido.tap(); correccionGuiada(sc, q); };
+}
+
+/** Corrección guiada: la pregunta entera. NO puntúa, NO borra el fallo. */
+function correccionGuiada(sc, q) {
+  EV.registrar('ruletrap_correction_shown', { questionId: q.id });
+  sc.innerHTML = `
+    ${barraTop()}
+    <div class="q-card q-card--correccion" id="qcard">
+      <div class="q-card__tema">${t(S, 'reglaTrampa.correccion')}</div>
+      <div class="q-card__texto">${esc(q.pregunta)}</div>
+    </div>
+    <div id="opciones">
+      ${q.opciones.map((op, i) => `
+        <button class="q-opcion" data-i="${i}">
+          <span class="q-opcion__letra">${'ABCD'[i]}</span>
+          <span>${esc(op)}</span>
+        </button>`).join('')}
+    </div>
+    <div class="feedback" id="feedback"></div>`;
+  $('#salir', sc).onclick = () => confirmarSalida();
+  sc.querySelectorAll('.q-opcion').forEach((b) => b.addEventListener('click', () => {
+    const i = Number(b.dataset.i);
+    const ok = i === q.correcta;
+    sc.querySelectorAll('.q-opcion').forEach((x) => {
+      const xi = Number(x.dataset.i);
+      x.disabled = true;
+      if (xi === q.correcta) x.classList.add('q-opcion--ok');
+      else if (xi === i) x.classList.add('q-opcion--ko');
+      else x.classList.add('q-opcion--apagada');
+    });
+    sonido.tap();
+    const fb = $('#feedback', sc);
+    fb.innerHTML = `
+      <div class="feedback__caja feedback__caja--info"><b>${t(S, 'mision.porQue')}</b>${esc(q.explicacion_corta)}</div>
+      ${!ok && q.trampa ? `<div class="feedback__caja feedback__caja--trampa"><b>${t(S, 'mision.trampa')}</b>${esc(q.trampa)}</div>` : ''}
+      <button class="btn btn--cian" id="siguiente">${t(S, 'mision.siguiente')} →</button>`;
+    fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    $('#siguiente', fb).onclick = () => { sonido.tap(); avanzar(sc); };
+  }));
+  sc.scrollTop = 0;
 }
 
 /** Puntuación común a preguntas y cruces: SRS, combo, XP, sonido, HUD. */
@@ -584,10 +790,14 @@ function contabilizar(sc, q, ok, ev = {}) {
   const esExamen = sesion.modo === 'examen';
   const esCrono = sesion.modo === 'crono';
   if (ok) sesion.aciertos++; else sesion.fallos++;
+  if (!ok && q.senalId) sesion.fallosSenal++;
 
-  registrarRespuesta(q.id, ok);
-  procesarRespuestaConEventos(q, ok);
-  progresarDiaria('aciertos', ok ? 1 : 0);
+  // Un reto no toca el progreso ni el Predictor: es un pique, no una medición.
+  if (sesion.modo !== 'reto') {
+    registrarRespuesta(q.id, ok);
+    procesarRespuestaConEventos(q, ok);
+    progresarDiaria('aciertos', ok ? 1 : 0);
+  }
 
   // marcar dash
   const dash = sc.querySelectorAll('.dash')[sesion.idx];
@@ -635,7 +845,7 @@ function contabilizar(sc, q, ok, ev = {}) {
 }
 
 /** Feedback jugoso (§8.3): la trampa SOLO al fallar. */
-function mostrarFeedback(sc, q, ok) {
+function mostrarFeedback(sc, q, ok, seguro = null) {
   const fb = $('#feedback', sc);
   if (!fb) return;
   if (sesion.modo === 'bote') return feedbackBote(sc, q, ok, fb);
@@ -653,20 +863,469 @@ function mostrarFeedback(sc, q, ok) {
     return;
   }
   const titulo = ok ? azar(S.feedback.aciertos) : azar(S.feedback.fallos);
+  // el chequeo de confianza solo habla cuando dice algo útil: dudabas y acertaste,
+  // o ibas seguro y caíste. Ni felicita de más ni riñe.
+  const nota = seguro === false && ok ? t(S, 'confianza.loSabias')
+    : seguro === true && !ok ? t(S, 'confianza.ojo') : '';
   fb.innerHTML = `
     <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${titulo}</div>
+    ${nota ? `<div class="confianza-nota">${nota}</div>` : ''}
     ${!ok && q.trampa ? `<div class="feedback__caja feedback__caja--trampa"><b>${t(S, 'mision.trampa')}</b>${esc(q.trampa)}</div>` : ''}
     ${q.truco ? `<div class="feedback__caja feedback__caja--truco"><b>${t(S, 'mision.truco')}</b>${esc(q.truco)}</div>` : ''}
     ${!ok ? `<div class="feedback__caja feedback__caja--info"><b>${t(S, 'mision.porQue')}</b>${esc(q.explicacion_corta)}${q.explicacion_larga ? `<br><br>${esc(q.explicacion_larga)}` : ''}</div>` : ''}
     <button class="btn ${ok ? 'btn--verde' : 'btn--cian'}" id="siguiente">${t(S, 'mision.siguiente')} →</button>`;
   $('#siguiente', fb).onclick = () => { sonido.tap(); avanzar(sc); };
-  if (ok && !q.truco) setTimeout(() => { if (sesion && $('#siguiente', sc)) avanzar(sc); }, 1100);
+  if (ok && !q.truco && !nota) setTimeout(() => { if (sesion && $('#siguiente', sc)) avanzar(sc); }, 1100);
   if (!ok) fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
   // boss: derrota inmediata al pasarse de fallos
   if (sesion.modo === 'boss' && sesion.fallos > sesion.limiteFallos) {
     setTimeout(() => terminarSesion(), 900);
   }
+}
+
+/* ================= RETOS POR ENLACE ================= */
+
+let RETOMOD = null;   // módulo diferido: no entra en el arranque
+
+async function modReto() {
+  if (!RETOMOD) RETOMOD = await import('./retencion/reto.js');
+  return RETOMOD;
+}
+
+/** Tarjeta del mapa. Los retos son contenido gratis: no se bloquean nunca. */
+function tarjetaReto() {
+  if (!FLAGS.linkChallenges) return '';
+  return `<button class="card-juego" id="reto-card">
+    <span class="card-juego__ico">🤝</span>
+    <span class="card-juego__txt"><b>${t(S, 'reto.nuevo')}</b><br>
+      <span class="texto-suave">${esc(t(S, 'reto.sub'))}</span></span>
+    <span class="card-juego__go">GO</span>
+  </button>`;
+}
+
+/** Contenido del reto: solo mundos gratuitos, para que lo pueda abrir cualquiera. */
+const mundosGratis = () => DOC.mundos.filter((m) => m.gratis).map((m) => m.n);
+const crucesGratis = () => CRUCES.filter((c) => c.gratis || mundosGratis().includes(c.mundo));
+
+/** Crea un reto nuevo con semilla al azar y lo abre en modo "yo primero". */
+async function crearReto() {
+  const R = await modReto();
+  const modo = 'mix5';
+  const semilla = R.nuevaSemilla();
+  EV.registrar('challenge_created', { modeId: modo, metadata: { semilla } });
+  navegar('reto', { modo, semilla, propio: true });
+}
+
+/** Abre el reto que venía en el enlace. Un enlace roto no rompe la app. */
+async function abrirRetoDesdeHash() {
+  const R = await modReto();
+  const leido = R.leerHashReto();
+  limpiarHash();
+  if (!leido || leido.error) {
+    navegar('mapa');
+    toast(t(S, 'reto.invalido'), 3600);
+    EV.registrar('challenge_link_invalid', { metadata: { causa: leido?.error || 'nada' } });
+    return;
+  }
+  EV.registrar('challenge_opened', { modeId: leido.modo, metadata: { semilla: leido.semilla } });
+  navegar('reto', { modo: leido.modo, semilla: leido.semilla });
+}
+
+RENDERS.reto = async (sc, { modo, semilla, propio } = {}) => {
+  const R = await modReto();
+  sc.innerHTML = `<div class="resultado"><p class="texto-suave">…</p></div>`;
+  const banco = await getBancoCompleto(mundosGratis());
+  const lista = R.componerReto(modo, semilla, banco, crucesGratis());
+  if (!lista || !lista.length) { navegar('mapa'); toast(t(S, 'reto.invalido'), 3600); return; }
+  const enlace = R.urlReto(modo, semilla);
+  sc.innerHTML = `<div class="mision-top"><button class="btn-salir" id="volver">←</button></div>
+  <div class="resultado reto-intro">
+    <h1>🤝 ${t(S, 'reto.titulo')}</h1>
+    <div class="marcador">${R.MODOS[modo]?.etiqueta || ''}</div>
+    <p class="texto-suave" style="max-width:320px">${t(S, 'reto.sub')}</p>
+    <div class="acciones">
+      <button class="btn btn--primary" id="reto-go">${t(S, 'reto.empezar')}</button>
+      ${propio ? `<button class="btn btn--ghost" id="reto-share">${t(S, 'reto.compartir')}</button>` : ''}
+      <button class="btn btn--ghost" id="reto-mapa">${t(S, 'resultado.alMapa')}</button>
+    </div>
+    <p class="texto-suave reto-aviso">${t(S, 'reto.aviso')}</p>
+  </div>`;
+  $('#volver', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+  $('#reto-mapa', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+  $('#reto-share', sc)?.addEventListener('click', () => compartirEnlaceReto(enlace, t(S, 'reto.texto')));
+  $('#reto-go', sc).onclick = () => {
+    sonido.tap(); haptic.medio();
+    EV.registrar('challenge_started', { modeId: modo, metadata: { semilla } });
+    navegar('mision', { cfg: { modo: 'reto', retoModo: modo, semilla, preguntas: lista, titulo: t(S, 'reto.titulo') } });
+  };
+};
+
+/** Web Share si existe; si no, portapapeles. Nunca deja al jugador sin salida. */
+async function compartirEnlaceReto(enlace, texto) {
+  sonido.tap();
+  const carga = `${texto}\n${enlace}`;
+  if (navigator.share) {
+    try { await navigator.share({ text: carga }); EV.registrar('challenge_shared', { metadata: { via: 'share' } }); return; }
+    catch { /* cancelado: se cae al portapapeles */ }
+  }
+  try { await navigator.clipboard.writeText(carga); toast(t(S, 'reto.copiado'), 3200); EV.registrar('challenge_shared', { metadata: { via: 'clipboard' } }); }
+  catch { toast(enlace, 6000); }
+}
+
+/** Resultado del reto. No toca progreso, ni racha, ni Predictor: solo el pique. */
+async function resultadoReto(sc, d) {
+  const total = d.preguntas.length;
+  const pleno = d.aciertos === total;
+  const R = await modReto();
+  const enlace = R.urlReto(d.retoModo, d.semilla);
+  EV.registrar('challenge_finished', { modeId: d.retoModo, metadata: { aciertos: d.aciertos, total } });
+  if (pleno) { sonido.fanfarria(); confeti(26); }
+  sc.innerHTML = `<div class="resultado">
+    <h1 class="${pleno ? 'ok' : ''}">🤝 ${t(S, 'reto.titulo')}</h1>
+    <div class="marcador">${t(S, 'reto.resultado', { n: d.aciertos, total })}</div>
+    <div class="acciones">
+      <button class="btn btn--primary" id="r-share">${t(S, 'reto.revancha')}</button>
+      <button class="btn btn--ghost" id="r-nuevo">${t(S, 'reto.nuevo')}</button>
+      <button class="btn btn--ghost" id="r-mapa">${t(S, 'resultado.alMapa')}</button>
+    </div>
+    <p class="texto-suave reto-aviso">${t(S, 'reto.aviso')}</p>
+  </div>`;
+  $('#r-share', sc).onclick = () => compartirEnlaceReto(enlace, t(S, 'reto.textoResultado', { n: d.aciertos, total }));
+  $('#r-nuevo', sc).onclick = () => { sonido.tap(); crearReto(); };
+  $('#r-mapa', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+}
+
+/* ============ ADN DE LOS MUNDOS ============ */
+
+/** Aviso de ruta: qué tiene de distinto este mundo. Se anuncia, no se esconde. */
+function franjaADN(mundoN) {
+  if (!FLAGS.worldModifiers) return '';
+  const { mods, lema } = adnDe(mundoN);
+  const claves = Object.keys(mods).filter((k) => mods[k] > 0);
+  if (!claves.length || !lema) return '';
+  const chips = claves.map((k) => `<span class="adn-chip">${t(S, `adn.mods.${k}`)}</span>`).join('');
+  return `<div class="adn-franja">
+    <div class="adn-lema">${esc(lema)}</div>
+    <div class="adn-chips">${chips}</div>
+  </div>`;
+}
+
+/**
+ * Aplica los modificadores declarados para el mundo. Nunca rompe la misión:
+ * si falta contenido compatible, el hueco se queda como pregunta normal.
+ * Jamás mete duplicados.
+ */
+function aplicarADN(lista, mundoN, misionIdx, cruces, banco) {
+  if (!FLAGS.worldModifiers) return conCruces(lista, cruces.filter((c) => c.mundo === mundoN), misionIdx);
+  const { mods } = adnDe(mundoN);
+  const s = getEstado();
+  let out = lista.slice();
+  const ids = new Set(out.map((q) => q.id));
+
+  // Taller: reserva huecos para averías pendientes de este mundo
+  const nTaller = mods.taller || 0;
+  if (nTaller) {
+    const averias = banco.filter((q) => s.taller[q.id] && !ids.has(q.id)).slice(0, nTaller);
+    for (const av of averias) {
+      // sustituye la pregunta menos urgente (la más vista) para no alargar la misión
+      const iSust = out.map((q, i) => ({ i, v: s.vistas[q.id] || 0 }))
+        .sort((a, b) => b.v - a.v)[0]?.i;
+      if (iSust == null) break;
+      ids.delete(out[iSust].id);
+      out[iSust] = av;
+      ids.add(av.id);
+    }
+  }
+
+  // Señales: sube el peso de preguntas con señal, sin convertirlo en Señal Rush
+  if (mods.senales) {
+    const conSenal = banco.filter((q) => q.senalId && !ids.has(q.id));
+    const cuantas = Math.min(2, conSenal.length);
+    for (let k = 0; k < cuantas; k++) {
+      const iSust = out.findIndex((q) => !q.senalId && q.tipo !== 'cruce');
+      if (iSust < 0) break;
+      ids.delete(out[iSust].id);
+      out[iSust] = conSenal[k];
+      ids.add(conSenal[k].id);
+    }
+  }
+
+  // Cruces: los del propio mundo, con el mismo mezclador de siempre
+  const nCruces = mods.cruces || 0;
+  if (nCruces) out = conCruces(out, cruces.filter((c) => c.mundo === mundoN), misionIdx);
+
+  // Regla contra Trampa: se marcan huecos; el motor decide en caliente si hay
+  // tarjeta segura para esa pregunta, y si no, se juega como pregunta normal
+  const nRT = mods.reglaTrampa || 0;
+  if (nRT && FLAGS.ruleTrap) {
+    // Solo valen preguntas con tarjeta curada. Nunca la primera ni la segunda:
+    // la misión arranca en formato normal y el cambio de ritmo llega después.
+    const conTarjeta = out
+      .map((q, i) => ({ q, i }))
+      .filter((x) => x.i >= 2 && x.q.tipo !== 'cruce' && !x.q._confianza && tarjetaReglaTrampa(x.q.id));
+    const elegidas = conTarjeta.filter((_, k) => k % 2 === 0).slice(0, nRT);
+    for (const c of elegidas) { out[c.i] = { ...c.q, _reglaTrampa: true }; }
+
+    // Si el sorteo no ha traído ninguna con tarjeta, se cambia la pregunta más
+    // vista por una que sí la tenga: el mundo prometió este formato en su franja.
+    let faltan = nRT - elegidas.length;
+    if (faltan > 0) {
+      const repuesto = banco.filter((q) => !ids.has(q.id) && tarjetaReglaTrampa(q.id));
+      for (const q of repuesto) {
+        if (faltan <= 0) break;
+        const iSust = out.map((x, i) => ({ i, v: s.vistas[x.id] || 0 }))
+          .filter((x) => x.i >= 2 && out[x.i].tipo !== 'cruce' && !out[x.i]._reglaTrampa && !out[x.i]._confianza)
+          .sort((a, b) => b.v - a.v)[0]?.i;
+        if (iSust == null) break;
+        ids.delete(out[iSust].id);
+        out[iSust] = { ...q, _reglaTrampa: true };
+        ids.add(q.id);
+        faltan--;
+      }
+    }
+  }
+
+  // Confianza: marca preguntas donde se preguntará "¿seguro?" antes de revelar
+  const nConf = mods.confianza || 0;
+  if (nConf) {
+    const idxs = out.map((q, i) => i).filter((i) => out[i].tipo !== 'cruce' && !out[i]._reglaTrampa);
+    for (let k = 0; k < Math.min(nConf, idxs.length); k++) {
+      const i = idxs[Math.floor((k + 1) * idxs.length / (nConf + 1))];
+      if (i != null && out[i]) out[i] = { ...out[i], _confianza: true };
+    }
+  }
+  return out;
+}
+
+/** Lanza la misión: ofrece contrato antes si el mundo lo declara. */
+function lanzarMision(cfg) {
+  const { mods } = adnDe(cfg.mundoN);
+  if (!FLAGS.routeContracts || !mods.contrato) { navegar('mision', { cfg }); return; }
+  const contrato = ofrecerContrato(cfg.preguntas, getEstado().contratos?.ultimo);
+  if (!contrato) { navegar('mision', { cfg }); return; }
+  mostrarContrato(cfg, contrato);
+}
+
+/** Ruta normal o contrato. La normal es la opción por defecto y se ve igual de válida. */
+function mostrarContrato(cfg, contrato) {
+  EV.registrar('contract_offered', { worldId: cfg.mundoN, metadata: { id: contrato.id } });
+  const ov = el(`<div class="modal-overlay"><div class="modal">
+    <div class="contrato-kicker">${t(S, 'contrato.titulo')}</div>
+    <p class="contrato-texto">${esc(contrato.texto)}</p>
+    <p class="contrato-premio">${t(S, 'contrato.premio', { n: PREMIO_CHAPAS })}</p>
+    <p class="texto-suave contrato-nota">${t(S, 'contrato.sinPerder')}</p>
+    <button class="btn btn--cian" id="c-si">${t(S, 'contrato.aceptar')}</button>
+    <button class="btn btn--ghost" id="c-no">${t(S, 'contrato.normal')}</button>
+  </div></div>`);
+  document.body.appendChild(ov);
+  const ir = (con) => {
+    ov.remove();
+    if (con) {
+      const s = getEstado();
+      s.contratos.ultimo = contrato.id;
+      guardar();
+      EV.registrar('contract_accepted', { worldId: cfg.mundoN, metadata: { id: contrato.id } });
+    }
+    navegar('mision', { cfg: { ...cfg, contrato: con ? contrato : null } });
+  };
+  $('#c-si', ov).onclick = () => { sonido.tap(); haptic.medio(); ir(true); };
+  $('#c-no', ov).onclick = () => { sonido.tap(); ir(false); };
+}
+
+/** Resultado de la Próxima Parada. Sin estrellas ni cofres: es una ruta corta. */
+async function resultadoProxima(sc, d) {
+  marcarCompletada();
+  EV.registrar('cold_start_completed', { metadata: { aciertos: d.aciertos, total: d.preguntas.length } });
+  const racha = tocarRacha();
+  const { subida } = darXP(d.xp + 25, DOC.rangos);
+  const pleno = d.fallos === 0;
+  if (pleno) { sonido.fanfarria(); confeti(28); }
+  await sello(t(S, 'proxima.hecha'), pleno ? 'ok' : 'rango', `${d.aciertos}/${d.preguntas.length}`);
+  sc.innerHTML = `<div class="resultado">
+    <h1 class="${pleno ? 'ok' : ''}">${t(S, 'proxima.hecha')}</h1>
+    <div style="font-size:3rem">📍</div>
+    <div class="marcador">${d.aciertos}/${d.preguntas.length} ${t(S, 'resultado.aciertos')}</div>
+    <div class="xp-total">+<span id="xp-roll">0</span> XP</div>
+    <p class="texto-suave" style="max-width:320px">${t(S, 'proxima.hechaSub')}</p>
+    <div class="acciones">
+      <button class="btn btn--primary" id="mapa-btn">${t(S, 'resultado.alMapa')}</button>
+    </div>
+  </div>`;
+  rodarContador($('#xp-roll', sc), 0, d.xp + 25, 700);
+  $('#mapa-btn', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+  celebraciones(subida, racha);
+}
+
+/* ============ RETENCIÓN — tarjetas del mapa y Próxima Parada ============ */
+
+/** Texto literal de la condición que falta. Nunca "próximamente". */
+function textoCondicion(id) {
+  const base = t(S, 'desbloqueo.condicion.' + id);
+  const p = progresoDe(id);
+  return p ? `${base} (${t(S, 'desbloqueo.progreso', p)})` : base;
+}
+
+const MODOS_MAPA = [
+  { id: 'cruces', ico: '🚦', titulo: 'cruce.titulo', sub: 'cruce.sub' },
+  { id: 'rush', ico: '⚡', titulo: 'rush.titulo', sub: 'rush.sub' },
+  { id: 'bote', ico: '🏆', titulo: 'bote.titulo', sub: 'bote.sub' },
+  { id: 'crono', ico: '⏱️', titulo: 'contrarreloj.titulo', sub: 'contrarreloj.sub' },
+];
+
+/** Récord/estado propio de cada modo, para la línea secundaria. */
+function colaDeModo(id, s) {
+  if (id === 'cruces') {
+    const faltan = CRUCES.length - crucesJugables().length;
+    return faltan > 0 ? ` · ${t(S, 'cruce.bloqueado', { n: faltan })}` : '';
+  }
+  if (id === 'rush') return s.rush?.semana === semanaISO() && s.rush.record ? ` · ${t(S, 'rush.record')}: ${s.rush.record}` : '';
+  if (id === 'bote') return s.bote?.record ? ` · ${t(S, 'bote.record')}: ${s.bote.record} XP` : '';
+  if (id === 'crono') return ` · ${t(S, 'contrarreloj.record')}: ${s.contrarreloj.semana === semanaISO() ? s.contrarreloj.record : 0}`;
+  return '';
+}
+
+function tarjetasDeModo(s) {
+  return MODOS_MAPA.map(({ id, ico, titulo, sub }) => {
+    const abierto = !FLAGS.progressiveUnlocks || estaDesbloqueado(id);
+    return `<button class="card-juego ${abierto ? '' : 'card-juego--cerrada'}" data-modo="${id}">
+      <span class="card-juego__ico">${abierto ? ico : '🔒'}</span>
+      <span class="card-juego__txt"><b>${t(S, titulo)}</b><br>
+        <span class="texto-suave">${abierto ? esc(t(S, sub)) + colaDeModo(id, s) : esc(textoCondicion(id))}</span></span>
+      <span class="card-juego__go">${abierto ? 'GO' : ''}</span>
+    </button>`;
+  }).join('');
+}
+
+/** La parada preparada, arriba del todo: es lo primero que debe ver al volver. */
+function tarjetaProxima() {
+  if (!FLAGS.nextRun) return '';
+  const np = proximaPendiente();
+  if (!np) return '';
+  const lista = proximaLista(np);
+  const nFrio = (np.coldCheckQuestionIds || []).length;
+  const nRuta = (np.routeQuestionIds || []).length;
+  const cruce = np.puzzleId ? t(S, 'proxima.conCruce') : '';
+  return `<button class="card-juego card-juego--proxima ${lista ? 'card-juego--lista' : ''}" id="proxima-card">
+    <span class="card-juego__ico">${lista ? '📍' : '🌙'}</span>
+    <span class="card-juego__txt"><b>${lista ? t(S, 'proxima.listaTitulo') : t(S, 'proxima.preparadaTitulo')}</b><br>
+      <span class="texto-suave">${lista
+        ? t(S, 'proxima.listaSub', { frio: nFrio, ruta: nRuta, cruce })
+        : t(S, 'proxima.preparadaSub')}</span></span>
+    <span class="card-juego__go">${lista ? 'GO' : '·'}</span>
+  </button>`;
+}
+
+/** Celebra los modos recién abiertos, sin secuestrar al jugador. */
+async function celebrarDesbloqueos(nuevos) {
+  for (const id of nuevos) {
+    EV.registrar('mode_unlocked', { modeId: id });
+    sonido.fanfarria(); haptic.celebracion();
+    await sello(t(S, 'desbloqueo.nuevo'), 'rango', t(S, MODOS_MAPA.find((m) => m.id === id)?.titulo || 'rush.titulo'));
+  }
+}
+
+/* ---- Tu Próxima Parada: preparar, abrir, jugar ---- */
+
+/** Tras una sesión con sustancia, deja lista la siguiente. */
+async function generarProximaParada(origenId) {
+  if (!FLAGS.nextRun) return null;
+  const accesibles = mundosAccesibles();
+  const banco = await getBancoCompleto(accesibles);
+  // los cruces de la parada siguen el criterio del modo dedicado (respetan el
+  // Pase, no la progresión), para que casi siempre haya uno y no caiga al fallback
+  const np = prepararProxima(banco, crucesJugables(), origenId);
+  if (np) {
+    guardarProxima(np);
+    EV.registrar('next_session_created', { metadata: { frio: np.coldCheckQuestionIds.length, ruta: np.routeQuestionIds.length } });
+    return np;
+  }
+  // ya había una esperando: se enseña esa, no se le pisa la que tenía apuntada
+  return proximaPendiente();
+}
+
+async function abrirProximaParada() {
+  limpiarHash();
+  const np = proximaPendiente();
+  if (!np) { navegar('mapa'); toast(t(S, 'proxima.noHay')); return; }
+  const accesibles = mundosAccesibles();
+  const banco = await getBancoCompleto(accesibles);
+  const { lista, nFrio } = materializar(np, banco, crucesJugables());
+  if (!lista.length) { navegar('mapa'); toast(t(S, 'proxima.yaHecha')); return; }
+  EV.registrar('cold_start_started', { metadata: { n: lista.length } });
+  navegar('mision', {
+    cfg: { modo: 'proxima', preguntas: lista, nFrio, titulo: t(S, 'proxima.titulo') },
+  });
+}
+
+/** Tarjeta de fin de sesión: qué te espera y cuándo. Guardar es opcional. */
+function pintarTarjetaProxima(sc, np) {
+  if (!np) return;
+  const zona = $('#zona-proxima', sc);
+  if (!zona) return;
+  const nFrio = np.coldCheckQuestionIds.length;
+  const nRuta = np.routeQuestionIds.length;
+  const min = Math.max(4, Math.round(np.estimatedSeconds / 60));
+  zona.innerHTML = `
+    <div class="proxima-card">
+      <div class="proxima-card__kicker">${t(S, 'proxima.titulo')}</div>
+      <div class="proxima-card__min">${t(S, 'proxima.min', { n: min })}</div>
+      <div class="proxima-card__desglose">${t(S, 'proxima.composicion', {
+        frio: nFrio, ruta: nRuta, cruce: np.puzzleId ? t(S, 'proxima.conCruce') : '',
+      })}</div>
+      <div class="proxima-card__acciones">
+        <button class="btn btn--cian" id="np-guardar">${t(S, 'proxima.guardar')}</button>
+        <button class="btn btn--ghost" id="np-seguir">${t(S, 'proxima.seguir')}</button>
+      </div>
+    </div>`;
+  // "Seguir jugando" NO destruye la parada: sigue guardada para cuando vuelva
+  $('#np-seguir', zona).onclick = () => { sonido.tap(); zona.innerHTML = ''; };
+  $('#np-guardar', zona).onclick = () => {
+    sonido.acierto(); haptic.ok();
+    EV.registrar('next_session_saved');
+    ofrecerCalendario(zona, np);
+  };
+}
+
+/** Paso opcional: hora + .ics. Sin recordatorio es una salida de primera clase. */
+function ofrecerCalendario(zona, np) {
+  const hora = getEstado().prefs?.horaRecordatorio || '19:30';
+  zona.innerHTML = `
+    <div class="proxima-card">
+      <div class="proxima-card__kicker">${t(S, 'proxima.guardada')}</div>
+      <label class="proxima-card__hora">${t(S, 'proxima.hora')}
+        <input type="time" id="np-hora" value="${hora}" step="300">
+      </label>
+      <div class="proxima-card__acciones">
+        <button class="btn btn--cian" id="np-ics">${t(S, 'proxima.calendario')}</button>
+        <button class="btn btn--ghost" id="np-nada">${t(S, 'proxima.sinRecordatorio')}</button>
+      </div>
+    </div>`;
+  $('#np-nada', zona).onclick = () => { sonido.tap(); zona.innerHTML = ''; };
+  $('#np-ics', zona).onclick = async (e) => {
+    const btn = e.currentTarget;
+    btn.disabled = true;
+    const elegida = $('#np-hora', zona).value || hora;
+    recordarHoraCalendario(elegida);
+    try {
+      // módulo diferido: el exportador no viaja en el arranque
+      const { generarICS, entregarICS } = await import('./retencion/ics.js');
+      const texto = generarICS({
+        fecha: np.readyLocalDate,
+        hora: elegida,
+        url: `${location.origin}${location.pathname}#/next-run`,
+        minutos: 15,
+        uid: `${np.id}@carnet-quest`,
+      });
+      const via = await entregarICS(texto);
+      // se dice lo que ha pasado de verdad: compartido ≠ descargado
+      toast(via === 'compartido' ? t(S, 'proxima.icsHecho') : t(S, 'proxima.icsDescargado'), 3600);
+      zona.innerHTML = '';
+    } catch (err) {
+      if (err?.name !== 'AbortError') toast(t(S, 'proxima.icsDescargado'));
+      btn.disabled = false;
+    }
+  };
 }
 
 /* ============ GARAJE — el sumidero de las Chapas ============ */
@@ -1041,6 +1700,7 @@ function pintarCruce(sc, q) {
 
   sc.innerHTML = `
     ${barraTop()}
+    ${rotuloFase()}
     <div class="cruce">
       <div class="cruce__cab">
         <span class="cruce__kicker">¿QUIÉN PASA PRIMERO?</span>
@@ -1174,6 +1834,7 @@ function procesarRespuestaConEventos(q, ok) {
   const ev = procesarRespuesta(q, ok);
   if (sesion?.modo === 'examen') return; // en examen, ni una pista (§8.4)
   if (ev.reparado) {
+    if (sesion) sesion.reparadas++;
     progresarDiaria('reparar');
     const extra = ev.recompensaSeBusca || 0;
     if (extra) { darChapas(extra); toast(`🔧 ${t(S, 'taller.reparado')} · +${extra} 🔩 (SE BUSCA)`); }
@@ -1221,6 +1882,8 @@ RENDERS.resultado = async (sc, { datos }) => {
   if (datos.modo === 'crono') return resultadoCrono(sc, datos);
   if (datos.modo === 'cruce') return resultadoCruces(sc, datos);
   if (datos.modo === 'bote') return resultadoBote(sc, datos);
+  if (datos.modo === 'proxima') return resultadoProxima(sc, datos);
+  if (datos.modo === 'reto') return resultadoReto(sc, datos);
 };
 
 async function resultadoCruces(sc, d) {
@@ -1259,6 +1922,18 @@ async function resultadoMision(sc, d) {
   const superada = stars >= 1;
   const nearMiss = d.aciertos === 9;
 
+  // Contrato: solo puede sumar. Fallarlo no toca estrellas, XP, racha ni Predictor.
+  const cto = resolverContrato(d.contrato, {
+    fallos: d.fallos, maxCombo: d.maxCombo,
+    reparadas: d.reparadas || 0, fallosSenal: d.fallosSenal || 0,
+  }, d._contratoResuelto === true);
+  d._contratoResuelto = true;
+  if (cto.hubo) {
+    EV.registrar(cto.logrado ? 'contract_completed' : 'contract_failed', {
+      worldId: d.mundoN, metadata: { id: d.contrato.id },
+    });
+  }
+
   if (superada) await sello(t(S, 'resultado.misionSuperada'), 'ok', '★'.repeat(stars));
   pintar();
 
@@ -1268,8 +1943,12 @@ async function resultadoMision(sc, d) {
       <div class="stars-big" id="stars"></div>
       <div class="marcador">${d.aciertos}/${d.preguntas.length} ${t(S, 'resultado.aciertos')} · ${esc(d.titulo || '')}</div>
       ${nearMiss ? `<div class="near-miss">${t(S, 'resultado.nearMiss', { n: 1, estrellas: '★★★' })}</div>` : ''}
+      ${cto.hubo ? `<div class="contrato-cierre ${cto.logrado ? 'contrato-cierre--ok' : ''}">
+        ${cto.logrado ? `${t(S, 'contrato.logrado')} · +${PREMIO_CHAPAS} 🔩` : t(S, 'contrato.fallado')}
+      </div>` : ''}
       <div class="xp-total">+<span id="xp-roll">0</span> XP</div>
       <div id="zona-cofre">${superada ? `<div class="cofre" id="cofre">🎁</div><div class="cofre-hint">${t(S, 'resultado.cofre')}</div>` : ''}</div>
+      <div id="zona-proxima"></div>
       <div class="acciones">
         ${stars < 3 ? `<button class="btn btn--revancha" id="revancha">${t(S, 'resultado.revancha')}</button>` : ''}
         <button class="btn ${stars === 3 ? 'btn--primary' : 'btn--ghost'}" id="otra">${t(S, 'resultado.otraMision')}</button>
@@ -1301,10 +1980,13 @@ async function resultadoMision(sc, d) {
     $('#otra', sc).onclick = () => { sonido.tap(); navegar('mundo', { n: d.mundoN }, true); };
     $('#mapa-btn', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
     celebraciones(subida, racha);
+    // sesión con sustancia terminada → deja lista la próxima parada
+    generarProximaParada(EV.sesionActual()).then((np) => pintarTarjetaProxima(sc, np));
   }
 }
 
 async function celebraciones(subida, racha) {
+  const nuevos = FLAGS.progressiveUnlocks ? revisarDesbloqueos() : [];
   if (subida) {
     confeti();
     sonido.fanfarria();
@@ -1313,6 +1995,7 @@ async function celebraciones(subida, racha) {
   if (racha?.evento === 'protegida') toast(t(S, 'racha.protegida'));
   const fr = S.racha.frases[String(getEstado().racha.dias)];
   if (racha?.evento === 'sube' && fr) toast(`🔥 ${fr}`, 3200);
+  if (nuevos.length) await celebrarDesbloqueos(nuevos);
   actualizarHUD();
 }
 
@@ -1645,6 +2328,7 @@ RENDERS.perfil = async (sc) => {
       <input type="file" id="importar-file" accept=".json,application/json" class="oculto">
       <button class="ajuste-row" id="borrar" style="color:var(--senal-rojo-vivo)">${t(S, 'perfil.borrar')} <span>🗑️</span></button>
     </div>
+    ${bloquePruebas(s)}
     <p class="legal">${t(S, 'perfil.avisoLegal')}</p>`;
   $('#ir-garaje', sc).onclick = () => { sonido.tap(); haptic.ligero(); navegar('garaje'); };
   $('#tg-sonido', sc).onclick = () => { s.ajustes.sonido = !s.ajustes.sonido; guardar(); sonido.tap(); RENDERS.perfil(sc); };
@@ -1673,7 +2357,50 @@ RENDERS.perfil = async (sc) => {
     $('#b-no', ov).onclick = () => ov.remove();
     $('#b-si', ov).onclick = async () => { await borrarTodo(); ov.remove(); navegar('onboarding'); };
   };
+  engancharPruebas(sc);
 };
+
+/* ---- Modo de prueba: caja negra local, apagada por defecto ---- */
+
+function bloquePruebas(s) {
+  if (!FLAGS.localTestModeUI) return '';
+  const on = s.pruebas?.activo === true;
+  return `<h2 class="texto-suave" style="margin:20px 0 8px">${t(S, 'pruebas.titulo')}</h2>
+    <div class="ajustes">
+      <button class="ajuste-row" id="tg-pruebas">${t(S, 'pruebas.titulo')} <span class="toggle ${on ? 'on' : ''}"></span></button>
+      ${on ? `<button class="ajuste-row" id="pruebas-exportar">${t(S, 'pruebas.exportar')} <span>📤</span></button>
+      <button class="ajuste-row" id="pruebas-borrar">${t(S, 'pruebas.borrar')} <span>🗑️</span></button>` : ''}
+    </div>
+    <p class="legal">${t(S, 'pruebas.explica')}${on ? ` · ${t(S, 'pruebas.eventos', { n: EV.contarEventos() })}` : ''}</p>`;
+}
+
+function engancharPruebas(sc) {
+  const tg = $('#tg-pruebas', sc);
+  if (!tg) return;
+  tg.onclick = () => {
+    sonido.tap();
+    EV.activar(getEstado().pruebas?.activo !== true);
+    RENDERS.perfil(sc);
+  };
+  $('#pruebas-exportar', sc)?.addEventListener('click', () => {
+    const blob = new Blob([EV.exportar()], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `carnet-quest-prueba-${HOY()}.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+    toast(t(S, 'pruebas.exportado'));
+  });
+  $('#pruebas-borrar', sc)?.addEventListener('click', () => {
+    const ov = el(`<div class="modal-overlay"><div class="modal"><h2>🗑️</h2>
+      <p>${t(S, 'pruebas.borrarConfirma')}</p>
+      <button class="btn btn--ghost" id="p-si">${t(S, 'pruebas.borrar')}</button>
+      <button class="btn btn--cian" id="p-no">${t(S, 'mision.seguir')}</button></div></div>`);
+    document.body.appendChild(ov);
+    $('#p-no', ov).onclick = () => ov.remove();
+    $('#p-si', ov).onclick = () => { EV.borrarEventos(); ov.remove(); toast(t(S, 'pruebas.borrado')); RENDERS.perfil(sc); };
+  });
+}
 
 /* ================= PAYWALL ================= */
 

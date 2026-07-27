@@ -297,5 +297,97 @@
     "comprado": "{nombre}, a tu garaje",
     "abrir": "Abrir el Garaje",
     "chapas": "Chapas"
+  },
+  "proxima": {
+    "titulo": "TU PRÓXIMA PARADA",
+    "min": "{n} min",
+    "composicion": "{frio} recuerdos en frío · {ruta} preguntas{cruce}",
+    "conCruce": " · 1 cruce",
+    "guardar": "Guardar para mañana",
+    "seguir": "Seguir jugando",
+    "guardada": "Guardada. Estará esperándote.",
+    "calendario": "Añadir al calendario",
+    "sinRecordatorio": "Sin recordatorio",
+    "hora": "¿A qué hora te viene bien?",
+    "listaTitulo": "Tu próxima parada está lista",
+    "listaSub": "{frio} de ayer + {ruta} de ruta{cruce}",
+    "preparadaTitulo": "Preparada para mañana",
+    "preparadaSub": "Vuelve cuando quieras: no caduca ni te penaliza.",
+    "jugar": "EMPEZAR",
+    "frioTitulo": "ARRANQUE EN FRÍO",
+    "frioSub": "Tres cosas de ayer, sin pistas.",
+    "rutaTitulo": "LA RUTA",
+    "hecha": "PARADA COMPLETADA",
+    "hechaSub": "Al terminar tu próxima sesión te dejo otra preparada.",
+    "icsHecho": "Evento compartido con tu calendario.",
+    "icsDescargado": "Archivo de calendario descargado. Ábrelo para añadirlo.",
+    "noHay": "Ahora mismo no tienes ninguna parada preparada.",
+    "yaHecha": "Esa parada ya la hiciste. Aquí tienes el mapa."
+  },
+  "desbloqueo": {
+    "nuevo": "MODO DESBLOQUEADO",
+    "condicion": {
+      "rush": "Colecciona 12 señales para encender Señal Rush.",
+      "bote": "Supera tu primer boss para abrir Doble o nada.",
+      "torre": "Llega al Mundo 2 para abrir DGT Tower.",
+      "crono": "Completa tu primer simulacro para abrir Contrarreloj."
+    },
+    "progreso": "{hechas} de {total}"
+  },
+  "contrato": {
+    "titulo": "¿RUTA NORMAL O CONTRATO?",
+    "normal": "Ruta normal",
+    "aceptar": "Aceptar contrato",
+    "premio": "+{n} 🔩 si lo cumples",
+    "logrado": "CONTRATO CUMPLIDO",
+    "fallado": "Contrato no completado. La ruta sigue.",
+    "sinPerder": "No pierdes nada de lo que ya tenías."
+  },
+  "confianza": {
+    "pregunta": "¿Vas seguro?",
+    "seguro": "Seguro",
+    "dudo": "Dudo",
+    "loSabias": "Dudabas, pero lo sabías. Eso ya está más asentado de lo que crees.",
+    "ojo": "Ibas seguro. Justo por eso esta trampa funciona tan bien 👇"
+  },
+  "reglaTrampa": {
+    "titulo": "¿Cuál es la regla real?",
+    "correcto": "ESA ES LA REGLA",
+    "fallo": "Esa era la trampa",
+    "correccion": "Ahora la pregunta entera, para que no se te escape:"
+  },
+  "reto": {
+    "titulo": "Reto",
+    "sub": "Mismo recorrido, mismas preguntas.",
+    "empezar": "ACEPTAR EL RETO",
+    "resultado": "{n} de {total}",
+    "compartir": "Retar a alguien",
+    "revancha": "Responder con revancha",
+    "texto": "Te reto a una ruta corta de Carnet Quest. Mismo recorrido, mismas preguntas. ¿Me superas?",
+    "textoResultado": "He hecho {n}/{total} en este reto de Carnet Quest. Haz exactamente el mismo recorrido.",
+    "copiado": "Enlace copiado. Pégalo donde quieras.",
+    "invalido": "Ese enlace de reto no es válido o es de una versión más nueva.",
+    "nuevo": "Crear un reto",
+    "aviso": "Los retos no tocan tu progreso ni tu Predictor. Son solo por el pique."
+  },
+  "pruebas": {
+    "titulo": "Modo de prueba",
+    "explica": "Registra tiempos y eventos de uso únicamente en este dispositivo. No guarda nombres, mensajes ni textos de respuesta. Nada se envía automáticamente.",
+    "exportar": "Exportar prueba",
+    "borrar": "Borrar datos de prueba",
+    "borrarConfirma": "¿Borrar los datos de prueba guardados? Esto no toca tu progreso.",
+    "eventos": "{n} eventos guardados",
+    "exportado": "Prueba exportada.",
+    "borrado": "Datos de prueba borrados."
+  },
+  "adn": {
+    "mods": {
+      "confianza": "Te pregunta si vas seguro",
+      "taller": "Tus averías viajan contigo",
+      "reglaTrampa": "Regla contra Trampa",
+      "cruces": "Cruces jugables",
+      "senales": "Más señales",
+      "contrato": "Contratos de ruta"
+    }
   }
 }

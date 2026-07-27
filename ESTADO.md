@@ -1,6 +1,6 @@
 # 📋 ESTADO — CARNET QUEST
 
-> Última actualización: 2026-07-26 · Sesión 4
+> Última actualización: 2026-07-27 · Sesión 5
 
 ## 🚨 AVISO NORMATIVO PRIORITARIO — RD 518/2026
 
@@ -246,8 +246,50 @@ en material DGT no confirmables en fuente primaria (el proxy bloquea boe.es/dgt.
 - Canje de código: inválido no activa, válido sí (Pase para siempre) ✓
 - Tarjetas compartibles generadas y verificadas visualmente ✓
 
+## F14 · RETENCIÓN V1 (2026-07-27) — `cq-v17`
+
+Ocho funciones nuevas y un esquema de estado v2. Documentación completa en
+`docs/RETENTION_V1.md`; el resumen para el jugador está en `CHANGELOG.md`.
+
+- **Tu Próxima Parada** (`js/retencion/proxima.js`) — al terminar una sesión queda preparada
+  UNA sesión corta (3 en frío + 5 de ruta + 1 cruce). No caduca, no penaliza, no bloquea nada.
+- **Recordatorio por calendario** (`js/retencion/ics.js`, diferido) — `.ics` RFC 5545 con
+  `DTSTART` local y deep link `#/next-run`. Sin push fingido.
+- **Descubrimiento progresivo** (`js/retencion/desbloqueos.js`) — los cinco modos nacen
+  cerrados y se abren por hitos; la condición se dice tal cual y nunca se vuelven a cerrar.
+- **ADN de los mundos** (`js/retencion/mundos-adn.js`) — cada mundo declara sus modificadores
+  y los anuncia en su franja de entrada. Tope de dos modificadores exigentes por mundo.
+- **Contratos de ruta** (`js/retencion/contratos.js`) — 25 🔩 al cumplir; fallar no quita NADA.
+- **Chequeo de confianza** — "¿Vas seguro?" antes de revelar, con los dos botones al mismo
+  peso visual. No entra en el Predictor.
+- **Regla contra Trampa** (`js/retencion/reglatrampa.js` + `datos/reglatrampa.json`, diferido)
+  — 210 tarjetas derivadas del par (opción correcta, opción incorrecta) del banco YA
+  verificado: no se ha escrito ni una palabra de normativa nueva. El primer intento es el que
+  cuenta; la corrección guiada posterior no borra el fallo. Fuera de boss y examen.
+- **Retos por enlace** (`js/retencion/reto.js`, diferido) — `#/reto?v=1&mode=…&seed=…`, nada
+  más en el enlace. No dan XP ni tocan el Predictor.
+- **Modo de prueba** (`js/retencion/eventos.js`) — caja negra local, apagada por defecto, sin
+  una sola llamada de red. Formato en `docs/LOCAL_TEST_DATA_FORMAT.md`.
+
+### Tres fallos reales que destaparon las pruebas
+- `state.js`: `migrar()` mutaba la plantilla con `Object.assign(base, s)`; un `racha: null`
+  guardado acababa en `racha: {}` y la app se caía. Corregido y cubierto con prueba.
+- `proxima.js`: la invariante "una sola parada pendiente" no estaba en el código.
+- `aplicarADN()`: elegía el hueco de Regla contra Trampa por posición, así que casi nunca
+  había tarjeta curada para esa pregunta y el formato no aparecía.
+
+### Pruebas
+- `node --test tools/test-retencion.mjs` — **30/30** unitarias.
+- Integración con navegador — **38/38** comprobaciones (`qa-adn.mjs`) + `qa-proxima.mjs`.
+- Offline con Service Worker verificado: mapa, misión y enlace de reto sin red.
+- Regresión: arranque, cruces, glorietas, rush, bote, garaje, progresión, canje — sin errores.
+- `node tools/size-check.mjs` — **106,5 KB gzip** de carga inicial sobre un tope de 300.
+
 ## Limitaciones conocidas / decisiones
 
+- **WebKit no se ha podido ejecutar**: el contenedor solo trae Chromium y no hay red para
+  descargarlo. La compatibilidad con Safari está auditada por código, no probada. **Falta una
+  pasada en iPhone real antes de vender.** Suelo real de versión: Safari 16.2 (`color-mix()`).
 - Pago v1 client-side (código con checksum local, sal en `js/screens.js`): saltable por un
   usuario técnico. Migrar a backend de licencias en v2.
 - Señales del Álbum: render SVG procedural aproximado; ilustraciones fieles → v2.
@@ -273,5 +315,6 @@ en material DGT no confirmables en fuente primaria (el proxy bloquea boe.es/dgt.
 | F11 Señal Rush | ✅ | 60 s clasificando señales; las pistas se retiran con el combo |
 | F12 Garaje | ✅ | Sumidero real para las Chapas; el paywall ya no promete lo que no hay |
 | F13 Jugar primero | ✅ | El primer contacto es un cruce jugable; las reglas van después |
+| F14 Retención V1 | ✅ | Próxima Parada, desbloqueos, ADN de mundos, contratos, confianza, Regla contra Trampa, retos por enlace, modo de prueba |
 
 > Nota: el remoto solo acepta push de la rama designada `claude/carnet-quest-game-vsag41`.

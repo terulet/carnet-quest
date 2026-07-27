@@ -6,3 +6,6 @@ codigos*.csv
 # temporales
 .DS_Store
 node_modules/
+
+# artefactos intermedios de generación: no se publican
+datos/preguntas/gen/

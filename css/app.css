@@ -1163,3 +1163,204 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 }
 .onboard__veredicto.ok { color: var(--senal-verde-vivo); text-shadow: var(--glow-verde); }
 .onboard__veredicto.ko { color: var(--senal-rojo-vivo); text-shadow: var(--glow-rojo); }
+
+/* ============ RETENCIÓN V1 ============ */
+
+/* Modo aún no desbloqueado: apagado, con su condición literal. Nunca "próximamente". */
+.card-juego--cerrada { opacity: .55; border-style: dashed; }
+.card-juego--cerrada .card-juego__ico { filter: grayscale(1); }
+
+/* Tu Próxima Parada en el mapa */
+.card-juego--proxima { border-color: var(--asfalto-500); }
+.card-juego--lista {
+  border-color: var(--acento);
+  box-shadow: 0 0 0 1px var(--acento) inset, 0 0 22px color-mix(in srgb, var(--acento) 22%, transparent);
+}
+
+/* Tarjeta de fin de sesión */
+.proxima-card {
+  width: 100%;
+  max-width: 340px;
+  margin: var(--sp-4) auto 0;
+  padding: var(--sp-4);
+  border-radius: var(--radio-m);
+  border: 2px solid var(--asfalto-500);
+  background: var(--asfalto-700);
+  text-align: center;
+}
+.proxima-card__kicker {
+  font-family: var(--font-display);
+  font-size: var(--fs-tiny);
+  letter-spacing: .16em;
+  color: var(--acento);
+}
+.proxima-card__min {
+  font-family: var(--font-display);
+  font-size: var(--fs-h1);
+  line-height: 1.1;
+  margin: var(--sp-1) 0 var(--sp-2);
+}
+.proxima-card__desglose { font-size: var(--fs-small); color: var(--linea-gris); }
+.proxima-card__acciones { display: grid; gap: var(--sp-2); margin-top: var(--sp-3); }
+.proxima-card__acciones .btn { width: 100%; }
+.proxima-card__hora {
+  display: flex; align-items: center; justify-content: center; gap: var(--sp-3);
+  font-size: var(--fs-small); color: var(--linea-gris);
+  margin-top: var(--sp-3);
+}
+.proxima-card__hora input {
+  font: inherit;
+  color: var(--linea-blanca);
+  background: var(--asfalto-800);
+  border: 2px solid var(--asfalto-500);
+  border-radius: var(--radio-s);
+  padding: 8px 10px;
+  min-height: var(--tap-min);
+}
+
+/* Rótulo de fase dentro de la Próxima Parada */
+.fase-rotulo {
+  text-align: center;
+  margin-bottom: var(--sp-3);
+  animation: fase-in var(--dur-media) var(--ease-out) both;
+}
+.fase-rotulo b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: .16em;
+  color: var(--acento);
+}
+.fase-rotulo span { font-size: var(--fs-tiny); color: var(--linea-gris); }
+@keyframes fase-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .fase-rotulo { animation: none; } }
+
+/* ============ ADN DE LOS MUNDOS ============ */
+.adn-franja {
+  margin: calc(var(--sp-3) * -1) 0 var(--sp-4);
+  padding: var(--sp-3);
+  border-radius: var(--radio-m);
+  border: 1px dashed var(--asfalto-500);
+  background: color-mix(in srgb, var(--asfalto-700) 70%, transparent);
+}
+.adn-lema {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: .04em;
+  color: var(--linea-blanca);
+}
+.adn-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: var(--sp-2); }
+.adn-chip {
+  font-size: var(--fs-tiny);
+  color: var(--linea-gris);
+  border: 1px solid var(--asfalto-500);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+/* ============ CONTRATOS DE RUTA ============ */
+.contrato-kicker {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: .14em;
+  color: var(--amarillo-obras);
+  margin-bottom: var(--sp-2);
+}
+.contrato-texto { font-size: var(--fs-body); margin-bottom: var(--sp-2); }
+.contrato-premio {
+  font-family: var(--font-display);
+  color: var(--amarillo-obras);
+  margin-bottom: var(--sp-1);
+}
+.contrato-nota { font-size: var(--fs-tiny); margin-bottom: var(--sp-3); }
+.contrato-cierre {
+  margin: var(--sp-3) auto 0;
+  max-width: 320px;
+  padding: 10px 14px;
+  border-radius: var(--radio-s);
+  border: 1px solid var(--asfalto-500);
+  font-size: var(--fs-small);
+  color: var(--linea-gris);
+}
+.contrato-cierre--ok {
+  border-color: var(--amarillo-obras);
+  color: var(--amarillo-obras);
+  font-family: var(--font-display);
+  letter-spacing: .08em;
+}
+
+/* ============ CHEQUEO DE CONFIANZA ============ */
+.confianza { text-align: center; padding-top: var(--sp-2); }
+.confianza__pregunta {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  margin-bottom: var(--sp-3);
+}
+/* mismo peso visual: ninguna de las dos es "la buena" */
+.confianza__botones { display: flex; gap: var(--sp-2); }
+.confianza__botones .btn { flex: 1; margin: 0; }
+.confianza-nota {
+  margin-bottom: var(--sp-2);
+  padding: 10px 14px;
+  border-left: 3px solid var(--neon-cian);
+  background: color-mix(in srgb, var(--neon-cian) 8%, transparent);
+  font-size: var(--fs-small);
+  color: var(--linea-gris);
+  border-radius: 0 var(--radio-s) var(--radio-s) 0;
+}
+
+/* ============ REGLA CONTRA TRAMPA ============ */
+/* No es un test de cuatro opciones: son dos cartas enfrentadas y se nota. */
+.q-card--rt .rt-contexto { font-size: var(--fs-body); }
+.rt-titulo {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--neon-cian);
+  text-align: center;
+  margin: var(--sp-3) 0 var(--sp-2);
+}
+.rt-cartas { display: grid; gap: var(--sp-2); }
+@media (min-width: 420px) { .rt-cartas { grid-template-columns: 1fr 1fr; } }
+.rt-carta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-height: 96px;
+  padding: var(--sp-3) var(--sp-3) var(--sp-3) var(--sp-2);
+  text-align: left;
+  border-radius: var(--radio-m);
+  border: 2px solid var(--asfalto-500);
+  border-left-width: 6px;
+  border-left-color: var(--neon-cian);
+  background: var(--asfalto-700);
+  color: var(--linea-blanca);
+  font: inherit;
+  line-height: 1.35;
+  transition: transform var(--dur-corta) var(--ease-out), border-color var(--dur-corta);
+}
+.rt-carta:nth-of-type(2) { border-left-color: var(--neon-magenta); }
+.rt-carta__marca {
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-size: var(--fs-h1);
+  line-height: 1;
+  color: var(--asfalto-500);
+}
+.rt-carta:active:not(:disabled) { transform: scale(.97); }
+.rt-carta--regla { border-color: var(--senal-verde); border-left-color: var(--senal-verde); }
+.rt-carta--trampa { border-color: var(--senal-rojo); border-left-color: var(--senal-rojo); opacity: .55; }
+.rt-carta--elegida { box-shadow: 0 0 0 2px var(--linea-blanca) inset; opacity: 1; }
+.q-card--correccion .q-card__tema { color: var(--neon-cian); text-transform: none; letter-spacing: 0; }
+@media (prefers-reduced-motion: reduce) { .rt-carta { transition: none; } }
+
+/* ============ RETOS POR ENLACE ============ */
+.reto-intro { justify-content: flex-start; padding-top: var(--sp-8); }
+.reto-aviso {
+  max-width: 320px;
+  margin: var(--sp-4) auto 0;
+  font-size: var(--fs-tiny);
+}
