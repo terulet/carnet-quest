@@ -1145,3 +1145,21 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
   letter-spacing: .08em;
 }
 .garaje-card__pase { font-size: var(--fs-tiny); color: var(--amarillo-obras); }
+
+/* el tutorial de arranque: sin HUD, sin progreso, solo una salida discreta */
+.mision-top--tutorial { justify-content: flex-end; }
+.btn-saltar {
+  color: var(--linea-tenue);
+  font-size: var(--fs-small);
+  padding: var(--sp-2) var(--sp-3);
+  min-height: var(--tap-min);
+}
+.btn-saltar:active { color: var(--linea-gris); }
+.onboard__veredicto {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  line-height: 1.15;
+  margin-bottom: var(--sp-2);
+}
+.onboard__veredicto.ok { color: var(--senal-verde-vivo); text-shadow: var(--glow-verde); }
+.onboard__veredicto.ko { color: var(--senal-rojo-vivo); text-shadow: var(--glow-rojo); }

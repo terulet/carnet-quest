@@ -224,6 +224,10 @@
   "onboarding": {
     "titulo": "CARNET QUEST",
     "sub": "El juego con el que te sacas el teórico",
+    "saltar": "Saltar",
+    "trasAcierto": "LIMPIO. Y eso era una pregunta de examen.",
+    "trasFallo": "Te la han colado. Así, exactamente así, es como te la cuelan en el examen.",
+    "trasSub": "Aquí es donde vives los próximos días. Tres cosas y te dejo en paz:",
     "regla1": "Juegas misiones cortas. Nada de temarios infinitos.",
     "regla2": "Fallar mola: cada fallo te enseña la trampa del examen.",
     "regla3": "El Predictor te dice, sin mentir, cuándo estás para aprobar.",

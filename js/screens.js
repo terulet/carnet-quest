@@ -86,7 +86,8 @@ export async function iniciarUI(ctx) {
   // instante, para dejar que alguien pruebe el juego gratis con todo desbloqueado.
   aplicarCosmetica();
   const desbloqueo = aplicarUnlockPorURL();
-  navegar(getEstado().onboarded ? 'mapa' : 'onboarding');
+  if (getEstado().onboarded) navegar('mapa');
+  else arrancarTutorial();
   if (desbloqueo === 'ok') {
     if (getEstado().onboarded) { confeti(40); sello(t(S, 'paywall.canjearOk'), 'rango', t(S, 'paywall.desbloqueoLink')); }
     else toast(t(S, 'paywall.desbloqueoLink'));
@@ -126,7 +127,8 @@ export function navegar(id, params = {}, atras = false) {
   sc.classList.add('activa', atras ? 'entra-atras' : 'entra');
   sc.classList.toggle('screen--sin-nav', !CON_NAV.has(id));
   navEl.classList.toggle('oculto', !CON_NAV.has(id));
-  hudEl.classList.toggle('oculto', id === 'onboarding' || (id === 'mision' && params.cfg?.modo === 'examen'));
+  const modoLimpio = params.cfg?.modo === 'examen' || params.cfg?.modo === 'tutorial';
+  hudEl.classList.toggle('oculto', id === 'onboarding' || (id === 'mision' && modoLimpio));
   navEl.querySelectorAll('.nav__btn').forEach((b) => b.classList.toggle('activa', b.dataset.ir === id));
   RENDERS[id](sc, params);
   actualizarHUD();
@@ -168,10 +170,22 @@ function mundosAccesibles() {
 
 /* ================= ONBOARDING ================= */
 
-RENDERS.onboarding = (sc) => {
+/** Primer contacto: un cruce jugable antes de una sola línea de texto (§4.1).
+ *  Si por lo que sea no hay cruces cargados, cae al onboarding de siempre. */
+function arrancarTutorial() {
+  const tuto = CRUCES.find((c) => c.id === 'C-001') || CRUCES.find((c) => c.gratis);
+  if (!tuto) { navegar('onboarding'); return; }
+  navegar('mision', { cfg: { modo: 'tutorial', preguntas: [tuto], titulo: '' } });
+}
+
+RENDERS.onboarding = (sc, { ok } = {}) => {
+  const jugado = ok !== undefined;
   sc.innerHTML = `<div class="onboard">
     <h1>${t(S, 'onboarding.titulo')}</h1>
-    <p class="sub">${t(S, 'onboarding.sub')}</p>
+    ${jugado
+      ? `<p class="onboard__veredicto ${ok ? 'ok' : 'ko'}">${ok ? t(S, 'onboarding.trasAcierto') : t(S, 'onboarding.trasFallo')}</p>
+         <p class="sub">${t(S, 'onboarding.trasSub')}</p>`
+      : `<p class="sub">${t(S, 'onboarding.sub')}</p>`}
     <ul class="reglas">
       <li><span class="ico">🎮</span>${t(S, 'onboarding.regla1')}</li>
       <li><span class="ico">🪤</span>${t(S, 'onboarding.regla2')}</li>
@@ -185,6 +199,7 @@ RENDERS.onboarding = (sc) => {
     sonido.acierto(); haptic.ok();
     navegar('mapa');
   };
+  if (jugado) { sonido.sello(); haptic.celebracion(); }
 };
 
 /* ================= MAPA ================= */
@@ -481,6 +496,12 @@ function barraTop() {
       : sesion.modo === 'bote'
         ? `<span class="bote-chip" id="bote-chip">🏆 ${sesion.bote}</span>`
         : `<span class="combo-chip" id="combo">${sesion.combo >= 2 ? '🔥' + sesion.combo : ''}</span>`;
+  if (sesion.modo === 'tutorial') {
+    return `<div class="mision-top mision-top--tutorial">
+      <span class="dashes" style="visibility:hidden"></span>
+      <button class="btn-saltar" id="salir">${t(S, 'onboarding.saltar')}</button>
+    </div>`;
+  }
   return `<div class="mision-top">
       <button class="btn-salir" id="salir">✕</button>
       ${dashes}
@@ -514,6 +535,11 @@ function pintarPregunta(sc) {
 }
 
 function confirmarSalida() {
+  if (sesion?.modo === 'tutorial') {
+    sesion = null;
+    navegar('onboarding');
+    return;
+  }
   const ov = el(`<div class="modal-overlay"><div class="modal">
     <h2>🚪</h2><p>${t(S, 'mision.abandonar')}</p>
     <button class="btn btn--ghost" id="m-salir">${t(S, 'mision.salir')}</button>
@@ -613,6 +639,19 @@ function mostrarFeedback(sc, q, ok) {
   const fb = $('#feedback', sc);
   if (!fb) return;
   if (sesion.modo === 'bote') return feedbackBote(sc, q, ok, fb);
+  if (sesion.modo === 'tutorial') {
+    fb.innerHTML = `
+      ${q.truco ? `<div class="feedback__caja feedback__caja--truco"><b>${t(S, 'mision.truco')}</b>${esc(q.truco)}</div>` : ''}
+      ${!ok ? `<div class="feedback__caja feedback__caja--trampa"><b>${t(S, 'mision.trampa')}</b>${esc(q.trampa)}</div>` : ''}
+      <button class="btn btn--primary" id="tuto-seguir">${t(S, 'mision.siguiente')} →</button>`;
+    $('#tuto-seguir', fb).onclick = () => {
+      sonido.tap(); haptic.medio();
+      sesion = null;
+      navegar('onboarding', { ok });
+    };
+    fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    return;
+  }
   const titulo = ok ? azar(S.feedback.aciertos) : azar(S.feedback.fallos);
   fb.innerHTML = `
     <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${titulo}</div>

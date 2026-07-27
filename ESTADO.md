@@ -142,7 +142,27 @@ Cerrado construyendo el Garaje, no recortando la promesa.
 - Entradas: el chip de Chapas del HUD (tocable) y una tarjeta en el Perfil.
 - Precios 60–320 🔩 contra ~100 🔩/día jugando: algo nuevo cada uno a tres días.
 
-## Fase actual: F0–F12 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
+## F13 · JUGAR PRIMERO — el arranque deja de ser un muro de texto (2026-07-26)
+
+**Incumplíamos nuestro propio pilar §4.1** ("JUGAR PRIMERO. Nunca un muro de texto antes de una
+pregunta"): lo primero que veía alguien al abrir la app era un título, tres reglas explicadas y
+un botón. Veinte segundos leyendo justo en los veinte segundos en los que Marta decide si sigue.
+
+Ahora, al abrir por primera vez, **lo primero que hay en pantalla es un cruce jugable** (C-001,
+"Sin una señal a la vista"). Sin HUD, sin barra de navegación, sin explicaciones. Solo el cruce,
+las tres filas de vehículos y un "Saltar" discreto arriba para quien no quiera (cero dark
+patterns: nadie queda secuestrado).
+
+- Medido con Playwright: **primer elemento jugable en pantalla a los ~1,0 s** de abrir.
+- Las tres reglas se cuentan **después**, y el titular se adapta a lo que acaba de pasar:
+  - Acertó → "LIMPIO. Y eso era una pregunta de examen."
+  - Falló → "Te la han colado. Así, exactamente así, es como te la cuelan en el examen."
+  Y la regla 2 ("fallar mola: cada fallo te enseña la trampa") aterriza porque acaba de vivirlo.
+- El cruce del tutorial **cuenta de verdad**: entra en el Leitner y, si falla, en el Taller. No
+  es una demo de mentira.
+- Los 11 scripts de QA se actualizaron para atravesar el arranque nuevo.
+
+## Fase actual: F0–F13 hechas salvo el Payment Link de Stripe (lo aporta el dueño)
 
 **EL JUEGO ESTÁ COMPLETO, JUGABLE, VERIFICADO Y CON LANDING DE VENTA.** Los 15 mundos
 tienen banco, los **15 bancos han pasado verificación normativa adversarial** con búsqueda web,
@@ -252,5 +272,6 @@ en material DGT no confirmables en fuente primaria (el proxy bloquea boe.es/dgt.
 | F10 Doble o nada | ✅ | Escalera de bote sin dark patterns: solo arriesgas lo que construyes |
 | F11 Señal Rush | ✅ | 60 s clasificando señales; las pistas se retiran con el combo |
 | F12 Garaje | ✅ | Sumidero real para las Chapas; el paywall ya no promete lo que no hay |
+| F13 Jugar primero | ✅ | El primer contacto es un cruce jugable; las reglas van después |
 
 > Nota: el remoto solo acepta push de la rama designada `claude/carnet-quest-game-vsag41`.
