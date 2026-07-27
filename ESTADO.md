@@ -278,12 +278,32 @@ Ocho funciones nuevas y un esquema de estado v2. Documentación completa en
 - `aplicarADN()`: elegía el hueco de Regla contra Trampa por posición, así que casi nunca
   había tarjeta curada para esa pregunta y el formato no aparecía.
 
+### Segunda pasada (mismo día): lo que faltaba del encargo
+Al releer el encargo punto por punto contra el código aparecieron seis huecos reales,
+todos cerrados:
+- **Catálogo de eventos incompleto**: faltaban `session_end`, `mission_start`,
+  `mission_abandon`, `mission_complete`, `question_answer` (con `responseTimeMs`),
+  `mode_complete` y `next_session_saved`; y dos tenían nombre propio en vez del del
+  catálogo (`rule_trap_answered`, `challenge_completed`).
+- **Exportar prueba solo descargaba**: ahora Web Share → Blob → portapapeles, y el
+  aviso nombra el canal que ha funcionado de verdad.
+- **Los retos solo ofrecían un tipo**: ahora hay selector con los tres (`mix5`,
+  `signals`, `crossing`), y solo se enseñan los que de verdad producen contenido.
+- **La revancha reenviaba la misma semilla**: era mandar un reto ya visto entero.
+  Ahora genera un recorrido nuevo del mismo tipo.
+- **Regla contra Trampa podía repetir tarjeta seguida**: anillo de las últimas 12.
+- **Los diálogos no gestionaban el foco**: `role="dialog"`, `aria-modal`, ciclo de
+  Tab y Escape por la opción neutra (contrato → ruta normal, salir → seguir jugando,
+  borrar → no borrar).
+
 ### Pruebas
-- `node --test tools/test-retencion.mjs` — **30/30** unitarias.
-- Integración con navegador — **38/38** comprobaciones (`qa-adn.mjs`) + `qa-proxima.mjs`.
+- `npm test` — **35/35** unitarias.
+- `npm run qa` — **10/10** scripts de integración en verde (47 comprobaciones en
+  `qa-adn`, 35 en `qa-migracion`).
 - Offline con Service Worker verificado: mapa, misión y enlace de reto sin red.
-- Regresión: arranque, cruces, glorietas, rush, bote, garaje, progresión, canje — sin errores.
-- `node tools/size-check.mjs` — **106,5 KB gzip** de carga inicial sobre un tope de 300.
+- Escenarios §19 cubiertos, incluidos migrar progreso v1, segundo plano y vuelta,
+  estado dañado a propósito e importar un export anterior a esta versión.
+- `npm run size:check` — **109,6 KB gzip** de carga inicial sobre un tope de 300.
 
 ## Limitaciones conocidas / decisiones
 

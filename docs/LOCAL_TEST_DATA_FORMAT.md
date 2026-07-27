@@ -12,7 +12,9 @@ poder hacer sesiones de prueba con personas reales sin montar analítica remota.
 2. **Apagado por defecto.** `s.pruebas.activo` nace en `false`. Sin activarlo a
    mano en Perfil → Modo de prueba, `registrar()` sale en la primera línea.
 3. **Nada se envía nunca solo.** El único camino de salida es que la persona
-   pulse "Exportar prueba", que descarga un `.json` a su dispositivo.
+   pulse "Exportar prueba". Ese botón usa Web Share, la descarga por Blob o el
+   portapapeles — los tres son canales locales que abre el sistema operativo, no
+   peticiones que haga la app.
 4. **Vive aparte del progreso.** Clave `cq-pruebas` en `localStorage`, separada de
    `cq-estado`. Borrar los datos de prueba no toca la partida; exportar la
    partida no arrastra eventos.
@@ -44,7 +46,7 @@ nada: no se podría saber qué contenido cuesta.
 ```json
 {
   "eventId": "e-m8x2k1-3f7a9b2c",
-  "eventType": "ruletrap_first_attempt",
+  "eventType": "rule_trap_answered",
   "timestamp": "2026-07-27T18:42:11.204Z",
   "sessionId": "s-m8x2jz-1a2b3c4d",
   "appVersion": "cq-v17",
@@ -82,26 +84,48 @@ traer solo cuatro o cinco.
 
 ## Tipos de evento
 
+### Ciclo de vida de la app
+
 | `eventType` | Cuándo |
 |---|---|
 | `app_open` | arranque de la app |
 | `session_start` | al encender el Modo de prueba |
+| `session_end` | al cerrar (`pagehide`, que es el único fiable en Safari iOS) |
 | `app_background` / `app_foreground` | la app pasa a segundo plano y vuelve |
+
+### Juego
+
+| `eventType` | Cuándo |
+|---|---|
+| `mission_start` | arranca una sesión (`metadata.n`, `metadata.contrato`) |
+| `mission_abandon` | se confirma salir a medias (`metadata.en` / `metadata.de`) |
+| `mission_complete` | termina una misión normal |
+| `mode_complete` | termina cualquier otro modo (boss, torre, taller, rush, reto…) |
+| `question_answer` | cada respuesta, con `correct`, `questionFormat` y `responseTimeMs` |
 | `mode_open` | se abre un modo desde el mapa |
 | `mode_unlocked` | un modo se desbloquea por hito |
+
+### Retención
+
+| `eventType` | Cuándo |
+|---|---|
 | `next_session_created` | se prepara una Próxima Parada |
+| `next_session_saved` | el jugador la guarda para mañana |
 | `cold_start_started` / `cold_start_completed` | se juega y se termina una Próxima Parada |
-| `calendar_offered` / `calendar_delivered` | se ofrece y se entrega el `.ics` |
-| `confidence_prompted` / `confidence_answered` | chequeo de confianza |
+| `calendar_offered` / `calendar_delivered` | se ofrece y se entrega el `.ics` (`metadata.via`) |
+| `confidence_prompted` / `confidence_answered` | chequeo de confianza (`metadata.seguro`) |
 | `ruletrap_shown` | se pinta una tarjeta doble |
-| `ruletrap_first_attempt` | el intento que **sí** cuenta |
-| `ruletrap_correction_shown` | aparece la corrección guiada |
+| `rule_trap_answered` | **el intento que cuenta** (`metadata.evaluado: true`) |
+| `ruletrap_correction_shown` | aparece la corrección guiada, que no vuelve a puntuar |
 | `contract_offered` / `contract_accepted` | contrato de ruta |
 | `contract_completed` / `contract_failed` | resultado del contrato |
 | `challenge_created` / `challenge_opened` | reto creado o abierto por enlace |
-| `challenge_started` / `challenge_finished` | reto jugado |
+| `challenge_started` / `challenge_completed` | reto jugado |
 | `challenge_shared` | se comparte el enlace (`metadata.via`) |
 | `challenge_link_invalid` | enlace roto (`metadata.causa`) |
+
+Hay una prueba unitaria que compara esta lista con el código y falla si algún
+tipo del catálogo deja de estar cableado.
 
 ## Formato de exportación
 
@@ -132,7 +156,10 @@ aparte que pudiera guardar algo más.
 1. La persona (o quien conduce la prueba, delante de ella) enciende Perfil →
    Modo de prueba.
 2. Se juega con normalidad.
-3. Al terminar, "Exportar prueba" descarga el `.json`.
+3. Al terminar, "Exportar prueba" entrega el `.json` por el mejor canal que
+   admita el navegador, y **dice cuál ha sido**: compartido con Web Share,
+   descargado como archivo, o copiado al portapapeles si no hay ninguna de las
+   dos. Nunca dice "compartido" cuando solo se ha bajado un archivo.
 4. La persona decide si lo comparte. Si no quiere, "Borrar datos de prueba" lo
    elimina y su progreso sigue intacto.
 

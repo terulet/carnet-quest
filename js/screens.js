@@ -130,6 +130,8 @@ export async function iniciarUI(ctx) {
   addEventListener('visibilitychange', () => {
     EV.registrar(document.hidden ? 'app_background' : 'app_foreground', { route: actual });
   });
+  // `pagehide` es el único cierre que dispara de forma fiable en Safari iOS
+  addEventListener('pagehide', () => EV.registrar('session_end', { route: actual }));
   if (desbloqueo === 'ok') {
     if (getEstado().onboarded) { confeti(40); sello(t(S, 'paywall.canjearOk'), 'rango', t(S, 'paywall.desbloqueoLink')); }
     else toast(t(S, 'paywall.desbloqueoLink'));
@@ -463,7 +465,7 @@ RENDERS.mundo = async (sc, { n }) => {
 };
 
 function mostrarIntroBoss(m, banco) {
-  const ov = el(`<div class="modal-overlay"><div class="modal">
+  const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true">
     <div style="font-size:3rem">👹</div>
     <h2 style="color:var(--senal-rojo-vivo)">${esc(m.boss.nombre)}</h2>
     <p>${t(S, 'boss.aviso', { n: 15, fallos: 2 })}</p>
@@ -471,6 +473,7 @@ function mostrarIntroBoss(m, banco) {
     <button class="btn btn--ghost" id="boss-no">${t(S, 'boss.huir')}</button>
   </div></div>`);
   document.body.appendChild(ov);
+  atraparFoco(ov, () => ov.remove());
   $('#boss-no', ov).onclick = () => ov.remove();
   $('#boss-go', ov).onclick = () => {
     ov.remove();
@@ -494,6 +497,10 @@ RENDERS.mision = (sc, { cfg }) => {
     nFrio: cfg.nFrio || 0,
   };
   sc.classList.toggle('modo-examen', cfg.modo === 'examen');
+  EV.registrar('mission_start', {
+    route: 'mision', modeId: cfg.modo, worldId: cfg.mundoN, missionId: cfg.misionIdx,
+    metadata: { n: cfg.preguntas.length, contrato: cfg.contrato?.id },
+  });
   pintarPregunta(sc);
   if (sesion.duracion != null || cfg.modo === 'boss') {
     sesion.timerId = setInterval(() => tickTimer(sc), 1000);
@@ -565,6 +572,7 @@ function rotuloFase() {
 
 function pintarPregunta(sc) {
   const q = sesion.preguntas[sesion.idx];
+  sesion.tPregunta = Date.now();   // para medir el tiempo de respuesta real
   if (q.tipo === 'cruce') return pintarCruce(sc, q);
   if (q._reglaTrampa && FLAGS.ruleTrap && sesion.modo !== 'examen' && sesion.modo !== 'boss') {
     const tar = tarjetaReglaTrampa(q.id);
@@ -599,16 +607,22 @@ function confirmarSalida() {
     navegar('onboarding');
     return;
   }
-  const ov = el(`<div class="modal-overlay"><div class="modal">
+  const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true">
     <h2>🚪</h2><p>${t(S, 'mision.abandonar')}</p>
     <button class="btn btn--ghost" id="m-salir">${t(S, 'mision.salir')}</button>
     <button class="btn btn--cian" id="m-seguir">${t(S, 'mision.seguir')}</button>
   </div></div>`);
   document.body.appendChild(ov);
+  // Escape = seguir jugando: nunca abandona la misión por un golpe de teclado
+  atraparFoco(ov, () => ov.remove());
   $('#m-seguir', ov).onclick = () => ov.remove();
   $('#m-salir', ov).onclick = () => {
     ov.remove();
     setModoExamen(false);
+    EV.registrar('mission_abandon', {
+      route: 'mision', modeId: sesion.modo, worldId: sesion.mundoN, missionId: sesion.misionIdx,
+      metadata: { en: sesion.idx, de: sesion.preguntas.length },
+    });
     if (sesion?.timerId) clearInterval(sesion.timerId);
     const vuelta = sesion.modo === 'examen' ? 'torre' : sesion.modo === 'taller' ? 'taller' : sesion.mundoN ? 'mundo' : 'mapa';
     const params = vuelta === 'mundo' ? { n: sesion.mundoN } : {};
@@ -696,6 +710,15 @@ async function prepararReglaTrampa() {
 
 const tarjetaReglaTrampa = (id) => (RT && RT.estaDisponible() ? RT.tarjetaDe(id) : null);
 
+// Anillo de las últimas tarjetas usadas: §14 pide no repetir una inmediatamente.
+// Vive en memoria a propósito — al reabrir la app da igual haberla visto ayer.
+const RT_RECIENTES = [];
+const RT_MEMORIA = 12;
+function anotarReglaTrampa(id) {
+  RT_RECIENTES.push(id);
+  if (RT_RECIENTES.length > RT_MEMORIA) RT_RECIENTES.shift();
+}
+
 /**
  * Dos tarjetas: una regla y una trampa. El PRIMER intento es el que cuenta
  * (§8.5). La pregunta de cuatro opciones que viene después es corrección
@@ -735,7 +758,12 @@ function resolverReglaTrampa(sc, q, tar, boton, ok, ev) {
   });
   boton.classList.add('rt-carta--elegida');
   contabilizar(sc, q, ok, ev);
-  EV.registrar('ruletrap_first_attempt', { questionId: q.id, correct: ok, questionFormat: 'regla-trampa' });
+  // `rule_trap_answered` es el nombre del catálogo; el sufijo deja claro en los
+  // datos que este es el intento evaluado y no la corrección posterior
+  EV.registrar('rule_trap_answered', {
+    questionId: q.id, correct: ok, questionFormat: 'regla-trampa',
+    metadata: { intento: 'primero', evaluado: true },
+  });
   const fb = $('#feedback', sc);
   fb.innerHTML = `
     <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${ok ? t(S, 'reglaTrampa.correcto') : t(S, 'reglaTrampa.fallo')}</div>
@@ -791,6 +819,13 @@ function contabilizar(sc, q, ok, ev = {}) {
   const esCrono = sesion.modo === 'crono';
   if (ok) sesion.aciertos++; else sesion.fallos++;
   if (!ok && q.senalId) sesion.fallosSenal++;
+
+  EV.registrar('question_answer', {
+    route: 'mision', modeId: sesion.modo, worldId: sesion.mundoN, missionId: sesion.misionIdx,
+    questionId: q.id, correct: ok,
+    questionFormat: q.tipo === 'cruce' ? 'cruce' : q._reglaTrampa ? 'regla-trampa' : q._confianza ? 'confianza' : 'normal',
+    responseTimeMs: sesion.tPregunta ? Date.now() - sesion.tPregunta : undefined,
+  });
 
   // Un reto no toca el progreso ni el Predictor: es un pique, no una medición.
   if (sesion.modo !== 'reto') {
@@ -867,10 +902,13 @@ function mostrarFeedback(sc, q, ok, seguro = null) {
   // o ibas seguro y caíste. Ni felicita de más ni riñe.
   const nota = seguro === false && ok ? t(S, 'confianza.loSabias')
     : seguro === true && !ok ? t(S, 'confianza.ojo') : '';
+  // "ibas seguro y caíste" es el momento pedagógico más valioso de la app:
+  // ahí la trampa se marca y se lee antes que nada.
+  const trampaEstrella = seguro === true && !ok && !!q.trampa;
   fb.innerHTML = `
     <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${titulo}</div>
     ${nota ? `<div class="confianza-nota">${nota}</div>` : ''}
-    ${!ok && q.trampa ? `<div class="feedback__caja feedback__caja--trampa"><b>${t(S, 'mision.trampa')}</b>${esc(q.trampa)}</div>` : ''}
+    ${!ok && q.trampa ? `<div class="feedback__caja feedback__caja--trampa ${trampaEstrella ? 'feedback__caja--protagonista' : ''}"><b>${t(S, 'mision.trampa')}</b>${esc(q.trampa)}</div>` : ''}
     ${q.truco ? `<div class="feedback__caja feedback__caja--truco"><b>${t(S, 'mision.truco')}</b>${esc(q.truco)}</div>` : ''}
     ${!ok ? `<div class="feedback__caja feedback__caja--info"><b>${t(S, 'mision.porQue')}</b>${esc(q.explicacion_corta)}${q.explicacion_larga ? `<br><br>${esc(q.explicacion_larga)}` : ''}</div>` : ''}
     <button class="btn ${ok ? 'btn--verde' : 'btn--cian'}" id="siguiente">${t(S, 'mision.siguiente')} →</button>`;
@@ -882,6 +920,35 @@ function mostrarFeedback(sc, q, ok, seguro = null) {
   if (sesion.modo === 'boss' && sesion.fallos > sesion.limiteFallos) {
     setTimeout(() => terminarSesion(), 900);
   }
+}
+
+/**
+ * Accesibilidad de diálogos (§17): el foco entra, se queda dentro mientras el
+ * modal está abierto, y Escape siempre saca. Sin esto, con teclado o VoiceOver
+ * se puede tabular "por detrás" del modal y quedarse atrapado sin salida.
+ *
+ * @param {HTMLElement} ov  el .modal-overlay
+ * @param {Function} cerrar qué hacer al pulsar Escape (normalmente la opción neutra)
+ */
+function atraparFoco(ov, cerrar) {
+  const previo = document.activeElement;
+  const foco = () => [...ov.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')]
+    .filter((e) => !e.disabled && e.offsetParent !== null);
+  foco()[0]?.focus();
+  const alPulsar = (e) => {
+    if (e.key === 'Escape' && cerrar) { e.preventDefault(); cerrar(); return; }
+    if (e.key !== 'Tab') return;
+    const f = foco();
+    if (!f.length) return;
+    const primero = f[0], ultimo = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === primero) { e.preventDefault(); ultimo.focus(); }
+    else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primero.focus(); }
+  };
+  ov.addEventListener('keydown', alPulsar);
+  // al quitarse el modal se devuelve el foco a donde estaba
+  new MutationObserver((_, obs) => {
+    if (!ov.isConnected) { obs.disconnect(); previo?.focus?.(); }
+  }).observe(document.body, { childList: true });
 }
 
 /* ================= RETOS POR ENLACE ================= */
@@ -908,10 +975,33 @@ function tarjetaReto() {
 const mundosGratis = () => DOC.mundos.filter((m) => m.gratis).map((m) => m.n);
 const crucesGratis = () => CRUCES.filter((c) => c.gratis || mundosGratis().includes(c.mundo));
 
-/** Crea un reto nuevo con semilla al azar y lo abre en modo "yo primero". */
+/** Elegir el tipo de reto. Solo se ofrecen los que hoy tienen contenido gratis. */
 async function crearReto() {
   const R = await modReto();
-  const modo = 'mix5';
+  const banco = await getBancoCompleto(mundosGratis());
+  const cruces = crucesGratis();
+  // se comprueba de verdad: un modo sin contenido no se enseña, no se enseña roto
+  const posibles = Object.keys(R.MODOS).filter((m) => (R.componerReto(m, 1, banco, cruces) || []).length);
+  if (!posibles.length) { toast(t(S, 'reto.invalido'), 3600); return; }
+  if (posibles.length === 1) return lanzarRetoNuevo(posibles[0]);
+
+  const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true" aria-label="${esc(t(S, 'reto.elegir'))}">
+    <div class="contrato-kicker">${t(S, 'reto.elegir')}</div>
+    ${posibles.map((m, i) => `<button class="btn ${i === 0 ? 'btn--cian' : 'btn--ghost'}" data-modo-reto="${m}">${t(S, `reto.modo_${m}`)}</button>`).join('')}
+    <button class="btn btn--ghost" id="reto-cancelar">${t(S, 'mision.salir')}</button>
+  </div></div>`);
+  document.body.appendChild(ov);
+  atraparFoco(ov, () => ov.remove());
+  ov.querySelectorAll('[data-modo-reto]').forEach((b) => b.addEventListener('click', () => {
+    sonido.tap(); haptic.medio();
+    ov.remove();
+    lanzarRetoNuevo(b.dataset.modoReto);
+  }));
+  $('#reto-cancelar', ov).onclick = () => { sonido.tap(); ov.remove(); };
+}
+
+async function lanzarRetoNuevo(modo) {
+  const R = await modReto();
   const semilla = R.nuevaSemilla();
   EV.registrar('challenge_created', { modeId: modo, metadata: { semilla } });
   navegar('reto', { modo, semilla, propio: true });
@@ -978,20 +1068,25 @@ async function resultadoReto(sc, d) {
   const total = d.preguntas.length;
   const pleno = d.aciertos === total;
   const R = await modReto();
-  const enlace = R.urlReto(d.retoModo, d.semilla);
-  EV.registrar('challenge_finished', { modeId: d.retoModo, metadata: { aciertos: d.aciertos, total } });
+  EV.registrar('challenge_completed', { modeId: d.retoModo, metadata: { aciertos: d.aciertos, total } });
   if (pleno) { sonido.fanfarria(); confeti(26); }
   sc.innerHTML = `<div class="resultado">
     <h1 class="${pleno ? 'ok' : ''}">🤝 ${t(S, 'reto.titulo')}</h1>
     <div class="marcador">${t(S, 'reto.resultado', { n: d.aciertos, total })}</div>
     <div class="acciones">
-      <button class="btn btn--primary" id="r-share">${t(S, 'reto.revancha')}</button>
+      <button class="btn btn--primary" id="r-revancha">${t(S, 'reto.revancha')}</button>
       <button class="btn btn--ghost" id="r-nuevo">${t(S, 'reto.nuevo')}</button>
       <button class="btn btn--ghost" id="r-mapa">${t(S, 'resultado.alMapa')}</button>
     </div>
     <p class="texto-suave reto-aviso">${t(S, 'reto.aviso')}</p>
   </div>`;
-  $('#r-share', sc).onclick = () => compartirEnlaceReto(enlace, t(S, 'reto.textoResultado', { n: d.aciertos, total }));
+  // Revancha = recorrido NUEVO del mismo tipo. Reenviar la misma semilla sería
+  // mandarle a la otra persona un reto que ya has visto entero.
+  $('#r-revancha', sc).onclick = () => {
+    const semilla = R.nuevaSemilla();
+    EV.registrar('challenge_created', { modeId: d.retoModo, metadata: { semilla, revancha: true } });
+    compartirEnlaceReto(R.urlReto(d.retoModo, semilla), t(S, 'reto.textoResultado', { n: d.aciertos, total }));
+  };
   $('#r-nuevo', sc).onclick = () => { sonido.tap(); crearReto(); };
   $('#r-mapa', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
 }
@@ -1064,14 +1159,18 @@ function aplicarADN(lista, mundoN, misionIdx, cruces, banco) {
     const conTarjeta = out
       .map((q, i) => ({ q, i }))
       .filter((x) => x.i >= 2 && x.q.tipo !== 'cruce' && !x.q._confianza && tarjetaReglaTrampa(x.q.id));
-    const elegidas = conTarjeta.filter((_, k) => k % 2 === 0).slice(0, nRT);
-    for (const c of elegidas) { out[c.i] = { ...c.q, _reglaTrampa: true }; }
+    // las vistas hace poco van al final: solo se repiten si no queda otra
+    const frescas = conTarjeta.filter((x) => !RT_RECIENTES.includes(x.q.id));
+    const ordenadas = frescas.length >= nRT ? frescas : frescas.concat(conTarjeta.filter((x) => RT_RECIENTES.includes(x.q.id)));
+    const elegidas = ordenadas.filter((_, k) => k % 2 === 0).slice(0, nRT);
+    for (const c of elegidas) { out[c.i] = { ...c.q, _reglaTrampa: true }; anotarReglaTrampa(c.q.id); }
 
     // Si el sorteo no ha traído ninguna con tarjeta, se cambia la pregunta más
     // vista por una que sí la tenga: el mundo prometió este formato en su franja.
     let faltan = nRT - elegidas.length;
     if (faltan > 0) {
-      const repuesto = banco.filter((q) => !ids.has(q.id) && tarjetaReglaTrampa(q.id));
+      const repuesto = banco.filter((q) => !ids.has(q.id) && tarjetaReglaTrampa(q.id))
+        .sort((a, b) => RT_RECIENTES.includes(a.id) - RT_RECIENTES.includes(b.id));
       for (const q of repuesto) {
         if (faltan <= 0) break;
         const iSust = out.map((x, i) => ({ i, v: s.vistas[x.id] || 0 }))
@@ -1081,6 +1180,7 @@ function aplicarADN(lista, mundoN, misionIdx, cruces, banco) {
         ids.delete(out[iSust].id);
         out[iSust] = { ...q, _reglaTrampa: true };
         ids.add(q.id);
+        anotarReglaTrampa(q.id);
         faltan--;
       }
     }
@@ -1110,7 +1210,7 @@ function lanzarMision(cfg) {
 /** Ruta normal o contrato. La normal es la opción por defecto y se ve igual de válida. */
 function mostrarContrato(cfg, contrato) {
   EV.registrar('contract_offered', { worldId: cfg.mundoN, metadata: { id: contrato.id } });
-  const ov = el(`<div class="modal-overlay"><div class="modal">
+  const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true">
     <div class="contrato-kicker">${t(S, 'contrato.titulo')}</div>
     <p class="contrato-texto">${esc(contrato.texto)}</p>
     <p class="contrato-premio">${t(S, 'contrato.premio', { n: PREMIO_CHAPAS })}</p>
@@ -1131,6 +1231,8 @@ function mostrarContrato(cfg, contrato) {
   };
   $('#c-si', ov).onclick = () => { sonido.tap(); haptic.medio(); ir(true); };
   $('#c-no', ov).onclick = () => { sonido.tap(); ir(false); };
+  // Escape = ruta normal, que es la opción por defecto y no compromete a nada
+  atraparFoco(ov, () => ir(false));
 }
 
 /** Resultado de la Próxima Parada. Sin estrellas ni cofres: es una ruta corta. */
@@ -1301,6 +1403,7 @@ function ofrecerCalendario(zona, np) {
         <button class="btn btn--ghost" id="np-nada">${t(S, 'proxima.sinRecordatorio')}</button>
       </div>
     </div>`;
+  EV.registrar('calendar_offered', { metadata: { hora } });
   $('#np-nada', zona).onclick = () => { sonido.tap(); zona.innerHTML = ''; };
   $('#np-ics', zona).onclick = async (e) => {
     const btn = e.currentTarget;
@@ -1318,6 +1421,7 @@ function ofrecerCalendario(zona, np) {
         uid: `${np.id}@carnet-quest`,
       });
       const via = await entregarICS(texto);
+      EV.registrar('calendar_delivered', { metadata: { via, hora: elegida } });
       // se dice lo que ha pasado de verdad: compartido ≠ descargado
       toast(via === 'compartido' ? t(S, 'proxima.icsHecho') : t(S, 'proxima.icsDescargado'), 3600);
       zona.innerHTML = '';
@@ -1864,6 +1968,11 @@ function terminarSesion() {
   setModoExamen(false);
   const seg = Math.floor((Date.now() - sesion.t0) / 1000);
   const datos = { ...sesion, segundos: seg };
+  // "mission_complete" para la ruta principal; "mode_complete" para lo demás
+  EV.registrar(sesion.modo === 'mision' ? 'mission_complete' : 'mode_complete', {
+    route: 'mision', modeId: sesion.modo, worldId: sesion.mundoN, missionId: sesion.misionIdx,
+    metadata: { aciertos: sesion.aciertos, fallos: sesion.fallos, segundos: seg },
+  });
   sesion = null;
   navegar('resultado', { datos });
 }
@@ -2349,11 +2458,12 @@ RENDERS.perfil = async (sc) => {
     catch { toast(t(S, 'perfil.importarError')); }
   };
   $('#borrar', sc).onclick = () => {
-    const ov = el(`<div class="modal-overlay"><div class="modal"><h2>⚠️</h2>
+    const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true"><h2>⚠️</h2>
       <p>${t(S, 'perfil.borrarConfirma')}</p>
       <button class="btn btn--ghost" id="b-si">${t(S, 'perfil.borrar')}</button>
       <button class="btn btn--cian" id="b-no">${t(S, 'mision.seguir')}</button></div></div>`);
     document.body.appendChild(ov);
+    atraparFoco(ov, () => ov.remove());   // Escape = NO borrar
     $('#b-no', ov).onclick = () => ov.remove();
     $('#b-si', ov).onclick = async () => { await borrarTodo(); ov.remove(); navegar('onboarding'); };
   };
@@ -2382,21 +2492,25 @@ function engancharPruebas(sc) {
     EV.activar(getEstado().pruebas?.activo !== true);
     RENDERS.perfil(sc);
   };
-  $('#pruebas-exportar', sc)?.addEventListener('click', () => {
-    const blob = new Blob([EV.exportar()], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `carnet-quest-prueba-${HOY()}.json`;
-    a.click();
-    URL.revokeObjectURL(a.href);
-    toast(t(S, 'pruebas.exportado'));
+  $('#pruebas-exportar', sc)?.addEventListener('click', async (e) => {
+    const btn = e.currentTarget;
+    btn.disabled = true;
+    try {
+      const via = await EV.entregarExportacion(`carnet-quest-prueba-${HOY()}.json`);
+      // se nombra lo que ha pasado de verdad, no lo que nos gustaría
+      toast(t(S, `pruebas.exportado_${via}`), 3600);
+    } catch (err) {
+      if (err?.name !== 'AbortError') toast(t(S, 'pruebas.exportado_imposible'), 3600);
+    }
+    btn.disabled = false;
   });
   $('#pruebas-borrar', sc)?.addEventListener('click', () => {
-    const ov = el(`<div class="modal-overlay"><div class="modal"><h2>🗑️</h2>
+    const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true"><h2>🗑️</h2>
       <p>${t(S, 'pruebas.borrarConfirma')}</p>
       <button class="btn btn--ghost" id="p-si">${t(S, 'pruebas.borrar')}</button>
       <button class="btn btn--cian" id="p-no">${t(S, 'mision.seguir')}</button></div></div>`);
     document.body.appendChild(ov);
+    atraparFoco(ov, () => ov.remove());   // Escape = NO borrar
     $('#p-no', ov).onclick = () => ov.remove();
     $('#p-si', ov).onclick = () => { EV.borrarEventos(); ov.remove(); toast(t(S, 'pruebas.borrado')); RENDERS.perfil(sc); };
   });

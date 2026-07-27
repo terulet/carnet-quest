@@ -183,6 +183,18 @@ ok(vioContrato, 'El Mundo 5 llega a ofrecer contrato de ruta');
 await p.goto(B, { waitUntil: 'networkidle' }); await p.waitForTimeout(800);
 ok(await A().locator('#reto-card').count() === 1, 'El mapa ofrece crear un reto');
 await A().locator('#reto-card').click(); await p.waitForTimeout(1100);
+// el mapa abre un selector de tipo de reto: los tres modos deben estar
+const modos = await p.locator('[data-modo-reto]').evaluateAll(n => n.map(x => x.dataset.modoReto));
+ok(modos.length === 3, `El selector ofrece los tres tipos de reto (${modos.join(', ')})`);
+ok(modos.includes('signals') && modos.includes('crossing'), 'Incluye señales y cruce, no solo preguntas sueltas');
+await p.screenshot({ path: `${OUT}/adn-7a-tipos-reto.png`, fullPage: true });
+
+// accesibilidad: Escape saca del modal sin dejar el foco atrapado
+await p.keyboard.press('Escape'); await p.waitForTimeout(400);
+ok(await p.locator('.modal-overlay').count() === 0, 'Escape cierra el selector de reto');
+
+await A().locator('#reto-card').click(); await p.waitForTimeout(600);
+await p.locator('[data-modo-reto="mix5"]').click(); await p.waitForTimeout(1100);
 ok(await A().locator('#reto-go').count() === 1, 'La pantalla de reto se pinta');
 const enlace = await p.evaluate(async () => {
   const m = await import('/js/retencion/reto.js');
@@ -193,11 +205,24 @@ ok(!/nombre|name|xp|score|progres|user|id=/i.test(enlace), 'El enlace no lleva n
 const estAntes = await leerEstado();
 await A().locator('#reto-go').click(); await p.waitForTimeout(900);
 await jugarSesion();
-ok(await A().locator('#r-share').count() === 1, 'El resultado del reto ofrece revancha');
+ok(await A().locator('#r-revancha').count() === 1, 'El resultado del reto ofrece revancha');
 await p.screenshot({ path: `${OUT}/adn-7-reto.png`, fullPage: true });
 const estDespues = await leerEstado();
 ok(estDespues.respuestas.length === estAntes.respuestas.length, 'Un reto NO toca el historial que alimenta el Predictor');
 ok(estDespues.xp === estAntes.xp, 'Un reto NO da XP');
+
+// la revancha tiene que ser un recorrido NUEVO, no el mismo que acabas de ver
+await p.evaluate(() => navigator.clipboard.writeText('').catch(() => {}));
+await p.evaluate(() => { window.__compartido = null;
+  navigator.clipboard.writeText = async (txt) => { window.__compartido = txt; };
+  navigator.share = undefined;
+});
+await A().locator('#r-revancha').click(); await p.waitForTimeout(900);
+const compartido = await p.evaluate(() => window.__compartido || '');
+const semillaRevancha = (compartido.match(/seed=(\d+)/) || [])[1];
+ok(!!semillaRevancha, `La revancha genera y comparte un enlace (seed=${semillaRevancha})`);
+ok(semillaRevancha !== '424242', 'La revancha usa una semilla NUEVA, no reenvía el reto ya jugado');
+ok(/mode=mix5/.test(compartido), 'La revancha mantiene el mismo tipo de reto');
 
 // mismo enlace → mismo recorrido
 const recorrido = async (url) => {
@@ -242,7 +267,14 @@ ok(sucio.length === 0, 'Ni un evento guarda campos prohibidos');
 const largos = eventos.filter(e => e.metadata && Object.values(e.metadata).some(v => typeof v === 'string' && v.length > 40));
 ok(largos.length === 0, 'Ningún metadato guarda frases largas');
 ok(eventos.some(e => e.eventType === 'challenge_started'), 'La caja negra registró el reto');
-ok(eventos.some(e => e.eventType === 'ruletrap_first_attempt'), 'La caja negra registró el primer intento de Regla contra Trampa');
+ok(eventos.some(e => e.eventType === 'rule_trap_answered'), 'La caja negra registró el intento evaluado de Regla contra Trampa');
+// el catálogo mínimo del encargo tiene que estar cubierto de verdad
+const MINIMOS = ['app_open','mission_start','mission_complete','question_answer','mode_complete',
+  'next_session_created','contract_offered','challenge_completed','rule_trap_answered'];
+const faltan = MINIMOS.filter(t => !eventos.some(e => e.eventType === t));
+ok(faltan.length === 0, `Catálogo mínimo de eventos cubierto${faltan.length ? ' — faltan: ' + faltan.join(', ') : ''}`);
+const conTiempo = eventos.filter(e => e.eventType === 'question_answer' && Number.isFinite(e.responseTimeMs));
+ok(conTiempo.length > 0, `question_answer mide el tiempo de respuesta (${conTiempo.length} eventos)`);
 ok(eventos.some(e => e.eventType === 'contract_offered'), 'La caja negra registró la oferta de contrato');
 const xpAntes = (await leerEstado()).xp;
 await A().locator('#pruebas-borrar').click(); await p.waitForTimeout(500);

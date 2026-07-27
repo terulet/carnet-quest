@@ -1,0 +1,20 @@
+{
+  "name": "carnet-quest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "El juego con el que España se saca el carnet de conducir. PWA estática, sin build step: package.json existe solo para los comandos de control de calidad.",
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 8765",
+    "size:check": "node tools/size-check.mjs",
+    "size:json": "node tools/size-check.mjs --json",
+    "test": "node --test tools/test-retencion.mjs",
+    "lint:preguntas": "node tools/lint-preguntas.mjs",
+    "qa": "node tools/qa/todas.mjs",
+    "check": "npm run lint:preguntas && npm test && npm run size:check"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  },
+  "//": "La aplicación NO depende de nada de esto en tiempo de ejecución: es JavaScript puro servido tal cual. Playwright es solo para la suite de integración."
+}

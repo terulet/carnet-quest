@@ -236,6 +236,9 @@ vocabulario con la regla, que son las que más tientan). El manifiesto pesa
   la posición en vez de la norma. Reparto medido: ~50/50.
 - Si el manifiesto validado no llega a `RULETRAP_MINIMO` (60) tarjetas, el motor
   queda montado pero **invisible**. Nunca deja un botón muerto.
+- **No se repite una tarjeta seguida**: un anillo en memoria guarda las últimas
+  12 y las manda al final de la cola de selección. Solo se repite si no queda
+  ninguna sin usar.
 
 ---
 
@@ -255,6 +258,18 @@ https://…/#/reto?v=1&mode=mix5&seed=482731
 resultado, ni progreso, ni identificador de dispositivo. Hay una prueba que
 comprueba que los parámetros del enlace son exactamente `['mode','seed','v']`.
 
+**Tres tipos, los tres jugables con contenido gratuito** (176 preguntas, 59 de
+ellas con señal, y 6 cruces en los mundos 1–3):
+
+| Modo | Qué manda |
+|---|---|
+| `mix5` | 5 preguntas del banco libre |
+| `signals` | 6 preguntas de señales |
+| `crossing` | 1 cruce |
+
+El selector solo enseña los modos que de verdad producen contenido: se comprueba
+llamando a `componerReto()` antes de pintar el botón, no por una lista fija.
+
 - Determinismo con `mulberry32`, no `Math.random`: dos móviles con la misma
   semilla ven el mismo reto.
 - El pool se ordena canónicamente por `id` **antes** de barajar, para que el
@@ -269,6 +284,8 @@ comprueba que los parámetros del enlace son exactamente `['mode','seed','v']`.
   (`version` / `modo` / `semilla`), se vuelve al mapa y se explica.
 - Compartir usa Web Share si existe y cae al portapapeles si no. **No se accede a
   contactos, no se envía nada automáticamente y no hay recompensa por invitar.**
+- **La revancha genera una semilla NUEVA** del mismo tipo. Reenviar la misma
+  sería mandarle a la otra persona un recorrido que tú ya has visto entero.
 
 ---
 
@@ -282,6 +299,9 @@ Para poder hacer pruebas con personas reales sin montar analítica.
   falla si aparece `fetch(`, `XMLHttpRequest`, `sendBeacon`, `WebSocket` o
   `new Image`.
 - **Apagado por defecto.** Sin activarlo desde Perfil no se registra nada.
+- **Exportar dice la verdad**: Web Share si el navegador comparte archivos,
+  descarga por Blob si no, y portapapeles como último recurso. El aviso nombra
+  el canal que ha funcionado de verdad.
 - **Lista negra de campos** aplicada al guardar, no al leer: nombre, teléfono,
   correo, texto de preguntas, texto de respuestas, contactos, IP, user-agent,
   huella de dispositivo, identificadores de publicidad. El `questionId` sí se
@@ -342,8 +362,26 @@ Auditoría por código de las APIs que históricamente rompen en Safari:
 | `Array.prototype.at(-1)` | curva del mapa hacia la Torre | requiere Safari 15.4 |
 | `import()` dinámico | módulos diferidos | Safari 11+ |
 | Service Worker | offline | Safari 11.1+; en iOS solo en Safari y en la PWA instalada |
+| `pagehide` | cerrar sesión de prueba | el único cierre fiable en iOS; `beforeunload` no dispara |
 | Regex lookbehind | — | **no se usa** (es lo que más tarde llegó a Safari) |
 | `structuredClone`, `findLast`, `toSorted`, `<dialog>` | — | **no se usan** |
+
+## Accesibilidad (§17)
+
+Todos los diálogos (`.modal-overlay`) llevan `role="dialog"` y `aria-modal`, y
+pasan por `atraparFoco()`, que:
+
+- mueve el foco al primer control al abrirse,
+- cicla el `Tab` dentro del modal en los dos sentidos,
+- cierra con `Escape` **por la opción neutra** — Escape en el contrato es "ruta
+  normal", en el aviso de salir es "seguir jugando", y en los borrados es "no
+  borrar",
+- devuelve el foco a donde estaba al cerrarse.
+
+Las zonas táctiles nuevas cumplen el mínimo: los botones heredan `--tap-min`
+(48 px) y las tarjetas de Regla contra Trampa miden 96 px de alto. Nada depende
+de `hover`, y `prefers-reduced-motion` apaga las animaciones nuevas (`.rt-carta`,
+`.fase-rotulo`, `.feedback__caja--protagonista`).
 
 ## Ficheros
 

@@ -125,6 +125,50 @@ export function borrarEventos() {
   try { localStorage.removeItem(CLAVE); } catch {}
 }
 
+/**
+ * Entrega el JSON de pruebas por el mejor canal disponible.
+ *
+ * Tres niveles, y se devuelve el que REALMENTE ha funcionado para que la
+ * interfaz no diga "compartido" cuando solo se ha bajado un archivo:
+ *   1. Web Share con archivos (iOS/Android modernos)
+ *   2. descarga por Blob
+ *   3. copia al portapapeles, cuando ni siquiera se puede descargar
+ *
+ * Sigue sin haber una sola petición de red: `share` y `download` son locales.
+ *
+ * @returns {Promise<'compartido'|'descargado'|'copiado'|'imposible'>}
+ */
+export async function entregarExportacion(nombre = 'carnet-quest-prueba.json') {
+  const texto = exportar();
+  const blob = new Blob([texto], { type: 'application/json' });
+
+  if (typeof File === 'function' && navigator.canShare) {
+    const archivo = new File([blob], nombre, { type: 'application/json' });
+    if (navigator.canShare({ files: [archivo] })) {
+      try {
+        await navigator.share({ files: [archivo], title: 'Carnet Quest · datos de prueba' });
+        return 'compartido';
+      } catch (e) {
+        if (e?.name === 'AbortError') throw e;   // el jugador canceló: no es un fallo
+      }
+    }
+  }
+
+  try {
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = nombre;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    return 'descargado';
+  } catch { /* algún WebView sin descargas: queda el portapapeles */ }
+
+  try { await navigator.clipboard.writeText(texto); return 'copiado'; }
+  catch { return 'imposible'; }
+}
+
 /** JSON de exportación: sesiones derivadas de los propios eventos. */
 export function exportar() {
   const b = leer();

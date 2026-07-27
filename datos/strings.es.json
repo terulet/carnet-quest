@@ -368,7 +368,11 @@
     "copiado": "Enlace copiado. Pégalo donde quieras.",
     "invalido": "Ese enlace de reto no es válido o es de una versión más nueva.",
     "nuevo": "Crear un reto",
-    "aviso": "Los retos no tocan tu progreso ni tu Predictor. Son solo por el pique."
+    "aviso": "Los retos no tocan tu progreso ni tu Predictor. Son solo por el pique.",
+    "elegir": "¿Qué reto le mandas?",
+    "modo_mix5": "5 preguntas",
+    "modo_signals": "6 señales",
+    "modo_crossing": "1 cruce"
   },
   "pruebas": {
     "titulo": "Modo de prueba",
@@ -377,8 +381,11 @@
     "borrar": "Borrar datos de prueba",
     "borrarConfirma": "¿Borrar los datos de prueba guardados? Esto no toca tu progreso.",
     "eventos": "{n} eventos guardados",
-    "exportado": "Prueba exportada.",
-    "borrado": "Datos de prueba borrados."
+    "borrado": "Datos de prueba borrados.",
+    "exportado_compartido": "Prueba compartida.",
+    "exportado_descargado": "Archivo de prueba descargado.",
+    "exportado_copiado": "Este navegador no descarga archivos: la prueba está copiada en el portapapeles.",
+    "exportado_imposible": "Este navegador no ha dejado exportar. Prueba desde otro o desde la app instalada."
   },
   "adn": {
     "mods": {

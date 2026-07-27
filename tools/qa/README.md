@@ -7,14 +7,18 @@ Las unitarias, que no necesitan navegador, están en `tools/test-retencion.mjs`.
 
 ```bash
 # 1. servir el proyecto (desde la raíz de carnet-quest)
-python3 -m http.server 8765 &
+npm run serve            # = python3 -m http.server 8765
 
-# 2. lanzar una prueba
+# 2. toda la suite, en serie, con resumen
+npm run qa               # = node tools/qa/todas.mjs
+
+# o una sola
 node tools/qa/qa-adn.mjs
-
-# o todas
-for f in tools/qa/qa-*.mjs; do echo "== $f"; node "$f" || echo FALLO; done
 ```
+
+`todas.mjs` comprueba primero que el servidor responde: sin él, el fallo sería
+críptico. Va en serie a propósito — son navegadores reales compitiendo por CPU y
+en paralelo los tiempos de animación dejan de ser fiables.
 
 Variables de entorno:
 
@@ -40,7 +44,8 @@ Playwright si el del contenedor no existe.
 | `qa-bote.mjs` | Doble o nada: la escalera y perder el bote |
 | `qa-garaje.mjs` | Garaje: compra, repintado del acento y coche del mapa |
 | `qa-proxima.mjs` | Tu Próxima Parada: composición, calendario, viaje al día siguiente, deep link |
-| `qa-adn.mjs` | **39 comprobaciones**: ADN de mundos, confianza, Regla contra Trampa, contratos, retos por enlace, modo de prueba |
+| `qa-adn.mjs` | **47 comprobaciones**: ADN de mundos, confianza, Regla contra Trampa, contratos, los tres tipos de reto, revancha con semilla nueva, catálogo de eventos y modo de prueba |
+| `qa-migracion.mjs` | **35 comprobaciones**: progreso v1 antiguo, segundo plano y vuelta, estado dañado a propósito e importar un export anterior |
 | `qa-offline.mjs` | Service Worker, juego sin red y compatibilidad WebKit (si está instalado) |
 
 ## Dos trampas al escribir pruebas aquí

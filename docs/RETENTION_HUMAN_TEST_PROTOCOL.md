@@ -163,15 +163,20 @@ aceptarlo · el copy de fallo le suena a regañina.
 
 **Objetivo:** ¿es una cosa que compartiría de verdad?
 
-1. "Crea un reto para alguien."
+1. "Crea un reto para alguien." — saldrá un selector con tres tipos (5 preguntas,
+   6 señales, 1 cruce). **No le digas cuál elegir**: cuál escoge sin ayuda es un
+   dato en sí mismo.
 2. Que lo comparta consigo mismo (a sus notas, o al chat que quiera).
 3. Abrir el enlace en **otro** móvil o en una ventana privada, y jugarlo delante
    de ella.
+4. Al terminar, pulsar "Responder con revancha" y comprobar con ella que el
+   recorrido nuevo **no** es el que acaba de jugar.
 
 **Qué medir:**
 
 - ¿Se da cuenta de que el otro móvil recibe **exactamente** las mismas preguntas?
 - ¿A quién dice que se lo mandaría? Anotar la persona concreta, no "a un amigo".
+- ¿Qué tipo de reto eligió y por qué?
 
 **Preguntas:**
 
@@ -189,7 +194,9 @@ significar que no lo mandaría).
 
 ## Al terminar la sesión
 
-1. Perfil → Modo de prueba → **Exportar prueba**. Enseñarle el archivo abierto.
+1. Perfil → Modo de prueba → **Exportar prueba**. El aviso dirá si se ha
+   compartido, descargado o copiado — es lo que ha pasado de verdad. Enseñarle el
+   archivo abierto.
 2. "Esto es todo lo que se ha guardado. ¿Te parece bien que me lo quede?"
 3. Si dice que no: **Borrar datos de prueba** delante de ella.
 4. Pregunta final, siempre la misma: **"¿Se lo recomendarías a alguien que se

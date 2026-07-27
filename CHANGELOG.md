@@ -29,10 +29,13 @@ Documentación completa en [`docs/RETENTION_V1.md`](docs/RETENTION_V1.md).
   que cuenta; la pregunta de cuatro opciones posterior es corrección guiada y no
   borra el fallo. No se usa en boss ni en examen.
 - **Retos por enlace.** Dos personas, el mismo enlace, exactamente el mismo
-  recorrido. El enlace lleva versión, modo y semilla; nada más. Los retos no dan
-  XP ni tocan el Predictor.
+  recorrido, en tres formatos: 5 preguntas, 6 señales o 1 cruce. El enlace lleva
+  versión, modo y semilla; nada más. Los retos no dan XP ni tocan el Predictor, y
+  la revancha genera un recorrido nuevo en vez de reenviar el ya jugado.
 - **Modo de prueba** en Perfil. Caja negra local para sesiones con personas:
-  apagada por defecto, sin una sola llamada de red, con exportar y borrar.
+  apagada por defecto, sin una sola llamada de red, con exportar y borrar. La
+  exportación usa Web Share, descarga o portapapeles según lo que admita el
+  navegador, y dice cuál de los tres ha funcionado.
 
 ### Arreglado
 
@@ -46,7 +49,11 @@ Documentación completa en [`docs/RETENTION_V1.md`](docs/RETENTION_V1.md).
   `prepararProxima()` y `guardarProxima()`.
 - `aplicarADN()`: reservaba el hueco de Regla contra Trampa por posición y luego
   comprobaba si esa pregunta tenía tarjeta curada, así que el formato casi nunca
-  aparecía. Ahora elige entre las preguntas que sí la tienen.
+  aparecía. Ahora elige entre las preguntas que sí la tienen, y no repite una
+  tarjeta recién vista.
+- Los diálogos no gestionaban el foco: con teclado o VoiceOver se podía tabular
+  "por detrás" del modal y quedarse sin salida. Ahora todos atrapan el foco, se
+  cierran con Escape **por la opción neutra** y lo devuelven al salir.
 
 ### Interno
 
@@ -55,9 +62,12 @@ Documentación completa en [`docs/RETENTION_V1.md`](docs/RETENTION_V1.md).
   ([`docs/STORAGE_MIGRATIONS.md`](docs/STORAGE_MIGRATIONS.md)).
 - Service Worker `cq-v17`: precachea también los módulos diferidos y el
   manifiesto de Regla contra Trampa, para que el juego esté completo sin red.
-- `tools/test-retencion.mjs` — 30 pruebas unitarias en Node puro.
+- `tools/test-retencion.mjs` — 35 pruebas unitarias en Node puro.
+- `tools/qa/` — 10 scripts de integración con navegador y un runner (`npm run qa`).
+- `package.json` con `size:check`, `test`, `qa` y `check`. La aplicación **no**
+  depende de nada de eso en tiempo de ejecución: sigue siendo JS puro sin build.
 - `tools/size-check.mjs` — presupuesto de arranque con criterio de medida
-  documentado ([`docs/SIZE_BUDGET.md`](docs/SIZE_BUDGET.md)). Actual: **106,5 KB
+  documentado ([`docs/SIZE_BUDGET.md`](docs/SIZE_BUDGET.md)). Actual: **109,6 KB
   gzip** sobre un tope de 300.
 - `tools/curar-reglatrampa.mjs` — generador del manifiesto a partir del banco ya
   verificado, sin escribir texto normativo nuevo.

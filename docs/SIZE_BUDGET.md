@@ -33,9 +33,13 @@ un servidor real suele servir Brotli y quedarse por debajo.
 ## Cómo medirlo
 
 ```
-node tools/size-check.mjs          # informe legible, sale 1 si se pasa del tope
-node tools/size-check.mjs --json   # además, una línea JSON para CI
+npm run size:check                 # informe legible, sale 1 si se pasa del tope
+npm run size:json                  # además, una línea JSON para CI
+npm run check                      # lint del banco + unitarias + peso
 ```
+
+(o `node tools/size-check.mjs` directamente: el proyecto no tiene build step y
+`package.json` existe solo para estos comandos.)
 
 El script sigue los imports estáticos de verdad (recorre el árbol desde
 `js/main.js` con una expresión regular que **ignora los `import()` dinámicos**),
@@ -46,16 +50,16 @@ así que no hay que mantener una lista a mano que se desincronice.
 | | gzip | sin comprimir |
 |---|---|---|
 | Antes (`cq-v16`, commit `55d9d3a`) | 84,4 KB | 300,6 KB |
-| **Después (`cq-v17`)** | **106,5 KB** | 366,7 KB |
-| Coste de Retención V1 | **+22,1 KB** | +66,1 KB |
+| **Después (`cq-v17`)** | **109,6 KB** | 375,5 KB |
+| Coste de Retención V1 | **+25,2 KB** | +74,9 KB |
 | Tope | 300 KB | — |
-| Margen restante | **193,5 KB** | — |
+| Margen restante | **190,4 KB** | — |
 
-Los 22,1 KB se reparten así: unos 12 KB son código nuevo dentro de `screens.js`
+Los 25,2 KB se reparten así: unos 14 KB son código nuevo dentro de `screens.js`
 (pantallas de reto, tarjeta doble, chequeo de confianza, contratos, modo de
-prueba), 6,6 KB son los seis módulos de `js/retencion/` que sí entran en el
-arranque, y el resto son CSS y strings. Los tres módulos diferidos y el
-manifiesto de Regla contra Trampa **no** cuentan aquí.
+prueba, trampa de foco), 6,8 KB son los seis módulos de `js/retencion/` que sí
+entran en el arranque, y el resto son CSS y strings. Los tres módulos diferidos
+y el manifiesto de Regla contra Trampa **no** cuentan aquí.
 
 ## Detalle de la medida actual (`cq-v17`)
 
@@ -63,12 +67,12 @@ Lo que más pesa dentro del arranque:
 
 | gzip | sin comprimir | fichero |
 |---|---|---|
-| 31,0 KB | 111,5 KB | `js/screens.js` |
+| 33,0 KB | 117,7 KB | `js/screens.js` |
 | 13,9 KB | 52,6 KB | `datos/preguntas/mundo-01.json` |
-| 10,4 KB | 52,6 KB | `css/app.css` |
+| 10,6 KB | 53,3 KB | `css/app.css` |
 | 7,0 KB | 20,9 KB | `js/cruce.js` |
+| 5,8 KB | 15,2 KB | `datos/strings.es.json` |
 | 5,7 KB | 25,5 KB | `datos/cruces.json` |
-| 5,6 KB | 14,8 KB | `datos/strings.es.json` |
 | 3,6 KB | 9,2 KB | `js/state.js` |
 
 **Diferido: 249,2 KB gzip**, de los cuales 225,0 KB son los bancos de los mundos
@@ -105,7 +109,7 @@ segundo plano.
 
 Por orden de rentabilidad:
 
-1. **Partir `screens.js`.** Son 31 KB gzip, casi un tercio del arranque, y ya
+1. **Partir `screens.js`.** Son 33 KB gzip, casi un tercio del arranque, y ya
    lleva dentro pantallas que no hacen falta para jugar (Álbum, Garaje, Paywall,
    Torre). Sacarlas a módulos diferidos por ruta liberaría en torno a 10 KB.
 2. **Sacar `mundo-01.json` del arranque** y pedirlo al entrar en el mundo, como
@@ -113,5 +117,5 @@ Por orden de rentabilidad:
    misión — justo lo contrario de "jugar primero".
 3. **Diferir `datos/cruces.json`** salvo el puzzle del tutorial. 5,7 KB.
 
-No hacer ninguna de las tres mientras haya 193 KB de margen: complican el código
+No hacer ninguna de las tres mientras haya 190 KB de margen: complican el código
 a cambio de nada.

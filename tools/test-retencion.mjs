@@ -386,3 +386,55 @@ test('eventos: el módulo no contiene ni una llamada de red', () => {
     assert.ok(!src.includes(patron), `encontrado ${patron} en la caja negra`);
   }
 });
+
+/* ============ 10 · Cobertura de los tres tipos de reto ============ */
+
+test('retos: los tres modos producen contenido con el banco GRATUITO', async () => {
+  const { componerReto, MODOS } = await import('../js/retencion/reto.js');
+  const mundos = JSON.parse(readFileSync('datos/mundos.json', 'utf8')).mundos.filter((m) => m.gratis).map((m) => m.n);
+  const libre = mundos.flatMap((n) => bancoDe(n));
+  const crucesLibres = CRUCES.filter((c) => c.gratis || mundos.includes(c.mundo));
+  for (const modo of Object.keys(MODOS)) {
+    const l = componerReto(modo, 1234, libre, crucesLibres);
+    assert.ok(l && l.length > 0, `el modo "${modo}" no produce reto con contenido gratuito`);
+    assert.equal(new Set(l.map((q) => q.id)).size, l.length, `el modo "${modo}" repite contenido`);
+  }
+});
+
+test('retos: el modo "crossing" trae un cruce, no una pregunta', async () => {
+  const { componerReto } = await import('../js/retencion/reto.js');
+  const l = componerReto('crossing', 99, bancoDe(1), CRUCES);
+  assert.equal(l.length, 1);
+  assert.equal(l[0].tipo, 'cruce', `devolvió ${l[0].tipo}`);
+});
+
+test('retos: dos semillas seguidas casi nunca coinciden', async () => {
+  const { nuevaSemilla } = await import('../js/retencion/reto.js');
+  const vistas = new Set(Array.from({ length: 200 }, () => nuevaSemilla()));
+  assert.ok(vistas.size > 190, `${vistas.size}/200 semillas distintas: hay demasiadas colisiones`);
+});
+
+/* ============ 11 · Catálogo de eventos ============ */
+
+test('eventos: los tipos del catálogo mínimo están cableados en el código', () => {
+  const src = readFileSync('js/screens.js', 'utf8') + readFileSync('js/retencion/eventos.js', 'utf8');
+  const MINIMOS = [
+    'app_open', 'session_start', 'session_end', 'app_background', 'app_foreground',
+    'mission_start', 'mission_abandon', 'mission_complete', 'question_answer',
+    'mode_open', 'mode_complete', 'next_session_created', 'next_session_saved',
+    'cold_start_started', 'cold_start_completed', 'mode_unlocked',
+    'contract_offered', 'contract_accepted', 'contract_completed', 'contract_failed',
+    'challenge_opened', 'challenge_completed', 'challenge_shared', 'rule_trap_answered',
+  ];
+  const faltan = MINIMOS.filter((t) => !src.includes(`'${t}'`));
+  assert.deepEqual(faltan, [], `tipos de evento sin registrar: ${faltan.join(', ')}`);
+});
+
+test('eventos: la exportación sigue sin poder salir a la red', () => {
+  const src = readFileSync('js/retencion/eventos.js', 'utf8');
+  // `navigator.share` y la descarga por Blob son locales; lo que no puede haber
+  // es un canal de red, ni siquiera dentro del exportador nuevo
+  for (const patron of ['fetch(', 'XMLHttpRequest', 'sendBeacon', 'WebSocket', 'new Image', 'http://', 'https://']) {
+    assert.ok(!src.includes(patron), `encontrado ${patron} en la caja negra`);
+  }
+});
