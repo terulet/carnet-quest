@@ -41,13 +41,23 @@ El script sigue los imports estáticos de verdad (recorre el árbol desde
 `js/main.js` con una expresión regular que **ignora los `import()` dinámicos**),
 así que no hay que mantener una lista a mano que se desincronice.
 
-## Medida actual (Retención V1, `cq-v17`)
+## Antes y después de Retención V1
 
 | | gzip | sin comprimir |
 |---|---|---|
-| **Carga inicial** | **106,5 KB** | 366,7 KB |
+| Antes (`cq-v16`, commit `55d9d3a`) | 84,4 KB | 300,6 KB |
+| **Después (`cq-v17`)** | **106,5 KB** | 366,7 KB |
+| Coste de Retención V1 | **+22,1 KB** | +66,1 KB |
 | Tope | 300 KB | — |
-| Margen | **193,5 KB** | — |
+| Margen restante | **193,5 KB** | — |
+
+Los 22,1 KB se reparten así: unos 12 KB son código nuevo dentro de `screens.js`
+(pantallas de reto, tarjeta doble, chequeo de confianza, contratos, modo de
+prueba), 6,6 KB son los seis módulos de `js/retencion/` que sí entran en el
+arranque, y el resto son CSS y strings. Los tres módulos diferidos y el
+manifiesto de Regla contra Trampa **no** cuentan aquí.
+
+## Detalle de la medida actual (`cq-v17`)
 
 Lo que más pesa dentro del arranque:
 
