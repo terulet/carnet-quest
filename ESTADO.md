@@ -1,6 +1,6 @@
 # 📋 ESTADO — CARNET QUEST
 
-> Última actualización: 2026-07-27 · Sesión 5
+> Última actualización: 2026-07-28 · Sesión 5
 
 ## 🚨 AVISO NORMATIVO PRIORITARIO — RD 518/2026
 
@@ -305,6 +305,40 @@ todos cerrados:
   estado dañado a propósito e importar un export anterior a esta versión.
 - `npm run size:check` — **109,6 KB gzip** de carga inicial sobre un tope de 300.
 
+## F15 · PLAN DE EXAMEN (2026-07-28) — `cq-v18`
+
+`js/plan.js` · esquema v3. Detalle en `docs/PLAN_Y_TRAMPAS.md`.
+
+La fecha del examen convierte el juego en un plan con final. La cabecera del mapa
+pasa de "racha 4" a "Faltan 11 días · vas al 75 % · hoy toca 40 preguntas, 6 del
+Taller y 1 simulacro". Dos reglas duras, las dos con prueba:
+
+- **La fecha NO mueve el Predictor.** Verificado comparando el porcentaje con
+  fecha inminente, lejana y sin fecha: idénticos.
+- **Ir retrasado no castiga.** Si el ritmo no es realista se dice en voz alta y
+  se manda repasar lo visto. No bloquea nada, no resta nada.
+
+El plan se calcula sobre los **15 mundos**, no sobre los desbloqueados: el examen
+entra entero y contar solo el Mundo 1 sería mentir. Al pasar la fecha se pregunta
+qué tal fue —una vez— y anotarlo no puntúa.
+
+## F16 · FAMILIAS DE TRAMPA (2026-07-28)
+
+`js/trampas.js` (diferido) · `datos/trampas.json` · `tools/curar-trampas.mjs`.
+
+Los 856 campos `trampa` clasificados por MECANISMO en 12 familias: los absolutos,
+la excepción escondida, los números cruzados, poder no es deber, depende de la
+vía, depende del vehículo, prioridad al revés, parece de sentido común, se parecen
+demasiado, el orden importa, se cumple a medias, dos palabras parecidas.
+
+- **574 de 856 clasificadas (67 %).** Lo que no dispara una regla con evidencia
+  clara se queda SIN familia y no entra en el diagnóstico. La app dice la
+  cobertura real en pantalla.
+- **Tu talón de Aquiles** en Perfil, con mínimo de 8 fallos y umbral del 25 %:
+  si el reparto es plano, se dice que no hay patrón en vez de inventarse uno.
+- **Caza-trampas**: la respuesta correcta ya marcada y tú aciertas por dónde te
+  la colarían. NO toca Predictor, Leitner, Taller ni XP.
+
 ## Limitaciones conocidas / decisiones
 
 - **WebKit no se ha podido ejecutar**: el contenedor solo trae Chromium y no hay red para
@@ -336,5 +370,7 @@ todos cerrados:
 | F12 Garaje | ✅ | Sumidero real para las Chapas; el paywall ya no promete lo que no hay |
 | F13 Jugar primero | ✅ | El primer contacto es un cruce jugable; las reglas van después |
 | F14 Retención V1 | ✅ | Próxima Parada, desbloqueos, ADN de mundos, contratos, confianza, Regla contra Trampa, retos por enlace, modo de prueba |
+| F15 Plan de examen | ✅ | La fecha como eje: cuenta atrás, carga diaria, ritmo honesto, "¿qué tal fue?" |
+| F16 Familias de trampa | ✅ | Radiografía (talón de Aquiles) + Caza-trampas. 574/856 clasificadas |
 
 > Nota: el remoto solo acepta push de la rama designada `claude/carnet-quest-game-vsag41`.

@@ -38,6 +38,9 @@ const pasarArranque = async () => {
   const sk = p.locator('#salir.btn-saltar');
   if (await sk.count()) { await sk.click(); await p.waitForTimeout(400); }
   const go = p.locator('#ob-go'); if (await go.count()) { await go.click(); await p.waitForTimeout(800); }
+  // tras el onboarding se ofrece poner fecha de examen: la prueba la salta
+  const noFecha = p.locator('#ex-luego');
+  if (await noFecha.count()) { await noFecha.click(); await p.waitForTimeout(500); }
 };
 const irAlMapa = async () => {
   const btn = A().locator('#mapa-btn');

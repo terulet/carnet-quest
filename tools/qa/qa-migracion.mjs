@@ -4,7 +4,15 @@
 //
 // Todo en navegador real: las unitarias ya prueban `migrar()` en frío, pero lo
 // que importa aquí es que la app ARRANCA y se puede jugar con esos datos.
+import { readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { abrirChromium } from './_navegador.mjs';
+
+// El esquema esperado sale de state.js, no de un número escrito aquí: así la
+// prueba sigue valiendo cuando se añada la migración siguiente.
+const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const ESQUEMA = Number((readFileSync(join(RAIZ, 'js/state.js'), 'utf8').match(/SCHEMA_VERSION = (\d+)/) || [])[1]);
 const BASE = process.env.CQ_URL || 'http://localhost:8765/';
 const OUT = process.env.SHOTS || '/tmp/cq-shots';
 await (await import('node:fs/promises')).mkdir(OUT, { recursive: true });
@@ -39,6 +47,9 @@ const arrancar = async () => {
   const sk = p.locator('#salir.btn-saltar');
   if (await sk.count()) { await sk.click(); await p.waitForTimeout(400); }
   const go = p.locator('#ob-go'); if (await go.count()) { await go.click(); await p.waitForTimeout(700); }
+  // tras el onboarding se ofrece poner fecha de examen: la prueba la salta
+  const noFecha = p.locator('#ex-luego');
+  if (await noFecha.count()) { await noFecha.click(); await p.waitForTimeout(500); }
 };
 
 await arrancar();
@@ -67,7 +78,7 @@ await p.waitForTimeout(1000);
 
 let s = await leerEstado();
 ok(await A().locator('.mapa-svg').count() > 0, 'Con progreso v1, la app arranca en el mapa');
-ok(s.schemaVersion === 2, `El esquema migra a v2 (era sin versión) → ${s.schemaVersion}`);
+ok(s.schemaVersion === ESQUEMA, `El esquema migra a v${ESQUEMA} (era sin versión) → ${s.schemaVersion}`);
 ok(s.xp === 1240 && s.chapas === 310, 'Conserva XP y chapas');
 ok(s.compras.pase === true, 'Conserva el Pase comprado');
 ok(s.garaje.coche === 'furgo' && s.garaje.tema === 'ambar', 'Conserva la cosmética elegida');
@@ -80,8 +91,11 @@ ok(s.desbloqueos.bote === true, 'Un veterano con boss superado NO pierde Doble o
 ok(s.desbloqueos.rush === true, 'Con 14 señales coleccionadas NO pierde Señal Rush');
 ok(s.desbloqueos.torre === true, 'Con simulacro hecho NO pierde DGT Tower');
 ok(s.desbloqueos.crono === true, 'Con simulacro hecho NO pierde Contrarreloj');
-const cerradas = await A().locator('.card-juego--cerrada').count();
-ok(cerradas === 0, `Y en el mapa no hay ni un modo cerrado (${cerradas})`);
+// solo los modos gobernados por `desbloqueos` — Caza-trampas se abre por
+// fallos acumulados, y un veterano sin fallos registrados lo tiene cerrado con
+// toda la razón
+const cerradas = await A().locator('[data-modo].card-juego--cerrada').count();
+ok(cerradas === 0, `Y en el mapa no hay ni un modo de progresión cerrado (${cerradas})`);
 await p.screenshot({ path: `${OUT}/mig-1-veterano.png`, fullPage: true });
 
 /* ===== 12 · Segundo plano y vuelta ===== */
@@ -161,7 +175,7 @@ const importado = await p.evaluate(async () => {
   return { v: s.schemaVersion, xp: s.xp, chapas: s.chapas, caja: s.srs['M03-004']?.caja,
            desb: s.desbloqueos, proxima: s.proxima, pruebas: s.pruebas?.activo };
 });
-ok(importado.v === 2, `Importar un export antiguo lo migra a v2 (${importado.v})`);
+ok(importado.v === ESQUEMA, `Importar un export antiguo lo migra a v${ESQUEMA} (${importado.v})`);
 ok(importado.xp === 880 && importado.chapas === 120, 'Sin perder XP ni chapas');
 ok(importado.caja === 2, 'Sin perder el Leitner');
 ok(importado.desb && importado.desb.bote === true, 'Y le mantiene abierto lo que ya había usado (boss → Doble o nada)');

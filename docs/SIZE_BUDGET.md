@@ -46,15 +46,20 @@ El script sigue los imports estáticos de verdad (recorre el árbol desde
 `js/main.js` con una expresión regular que **ignora los `import()` dinámicos**),
 así que no hay que mantener una lista a mano que se desincronice.
 
-## Antes y después de Retención V1
+## Histórico
 
-| | gzip | sin comprimir |
-|---|---|---|
-| Antes (`cq-v16`, commit `55d9d3a`) | 84,4 KB | 300,6 KB |
-| **Después (`cq-v17`)** | **109,6 KB** | 375,5 KB |
-| Coste de Retención V1 | **+25,2 KB** | +74,9 KB |
-| Tope | 300 KB | — |
-| Margen restante | **190,4 KB** | — |
+| Versión | gzip | sin comprimir | qué añadió |
+|---|---|---|---|
+| `cq-v16` (`55d9d3a`) | 84,4 KB | 300,6 KB | antes de Retención V1 |
+| `cq-v17` | 109,6 KB | 375,5 KB | Retención V1 (+25,2 KB) |
+| **`cq-v18`** | **118,0 KB** | 404,3 KB | plan de examen y familias de trampa (+8,4 KB) |
+| Tope | 300 KB | — | |
+| Margen restante | **182,0 KB** | — | |
+
+De los +8,4 KB de `cq-v18`, unos 2 KB son `js/plan.js` —que sí entra en el
+arranque porque la banda del mapa lo necesita en la primera pantalla— y el resto
+es código de pantalla en `screens.js`, CSS y textos. `js/trampas.js` y
+`datos/trampas.json` son **diferidos** y no cuentan aquí.
 
 Los 25,2 KB se reparten así: unos 14 KB son código nuevo dentro de `screens.js`
 (pantallas de reto, tarjeta doble, chequeo de confianza, contratos, modo de

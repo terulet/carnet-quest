@@ -51,9 +51,11 @@ Playwright si el del contenedor no existe.
 | `qa-proxima.mjs` | Tu Próxima Parada: composición, calendario, viaje al día siguiente, deep link |
 | `qa-adn.mjs` | **47 comprobaciones**: ADN de mundos, confianza, Regla contra Trampa, contratos, los tres tipos de reto, revancha con semilla nueva, catálogo de eventos y modo de prueba |
 | `qa-migracion.mjs` | **35 comprobaciones**: progreso v1 antiguo, segundo plano y vuelta, estado dañado a propósito e importar un export anterior |
+| `qa-examen.mjs` | **24 comprobaciones**: la fecha del examen, la cuenta atrás, el ritmo imposible, "¿qué tal fue?" y que nada de eso mueve el Predictor |
+| `qa-trampas.mjs` | **21 comprobaciones**: radiografía, talón de Aquiles, reparto plano sin patrón inventado y que Caza-trampas no toca el progreso |
 | `qa-offline.mjs` | Service Worker, juego sin red y compatibilidad WebKit (si está instalado) |
 
-## Dos trampas al escribir pruebas aquí
+## Cuatro trampas al escribir pruebas aquí
 
 1. **Las pantallas viejas siguen en el DOM.** `navegar()` solo quita la clase
    `.activa`. Un `p.locator('.resultado')` sin acotar encuentra el resultado de
@@ -63,3 +65,8 @@ Playwright si el del contenedor no existe.
 2. **Los botones que se auto-ocultan.** `#siguiente` se queda en el DOM tras el
    auto-avance; usa `#siguiente:visible`. Y `#cofre` desaparece al abrirlo: si
    quieres saber si estaba, mira **antes** de pulsarlo.
+3. **Nada de versiones escritas a mano.** `qa-offline` lee la versión de `sw.js`
+   y `qa-migracion` lee `SCHEMA_VERSION` de `js/state.js`. Fijarlas en la prueba
+   la hace fallar en la siguiente release por el motivo equivocado.
+4. **El arranque pide fecha de examen.** Tras `#ob-go` sale el modal, y si no lo
+   cierras intercepta todos los clics siguientes: `#ex-luego` lo salta.

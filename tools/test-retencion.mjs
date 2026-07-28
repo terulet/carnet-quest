@@ -32,7 +32,7 @@ await cargarEstado();
 
 /* ============ 1 · Migración de esquema ============ */
 
-test('migración: un estado v1 se convierte en v2 sin perder nada', async () => {
+test('migración: un estado v1 se convierte al esquema actual sin perder nada', async () => {
   const { importarJSON, exportarJSON } = await import('../js/state.js');
   const v1 = {
     xp: 640, chapas: 30, srs: { 'M01-001': { caja: 3, vence: '2026-01-01' } },
@@ -45,15 +45,22 @@ test('migración: un estado v1 se convierte en v2 sin perder nada', async () => 
   };
   importarJSON(JSON.stringify(v1));
   const s = getEstado();
-  assert.equal(s.schemaVersion, 2, 'sube a la versión 2');
+  assert.equal(s.schemaVersion, 3, 'sube a la versión actual');
   assert.equal(s.xp, 640, 'conserva la XP');
   assert.equal(s.compras.pase, true, 'conserva el Pase');
   assert.equal(s.ajustes.sonido, false, 'conserva los ajustes');
   assert.deepEqual(s.srs['M01-001'], { caja: 3, vence: '2026-01-01' }, 'conserva el SRS');
-  assert.ok(s.desbloqueos && s.contratos && s.pruebas, 'crea las claves nuevas');
+  assert.ok(s.desbloqueos && s.contratos && s.pruebas && s.examen, 'crea las claves nuevas');
+  assert.equal(s.examen.fecha, null, 'no inventa una fecha de examen');
   assert.equal(s.pruebas.activo, false, 'el modo de prueba nace apagado');
   assert.equal(s.proxima, null, 'no inventa una parada');
   assert.ok(JSON.parse(exportarJSON()).estado.xp === 640, 'exporta lo migrado');
+});
+
+test('migración: la fecha de examen nace vacía y es opcional', () => {
+  const s = getEstado();
+  assert.equal(s.examen.fecha, null);
+  assert.equal(s.examen.resultado, null);
 });
 
 test('migración: con 400+ XP se abre todo, para no re-bloquear a quien ya jugaba', () => {
@@ -437,4 +444,245 @@ test('eventos: la exportación sigue sin poder salir a la red', () => {
   for (const patron of ['fetch(', 'XMLHttpRequest', 'sendBeacon', 'WebSocket', 'new Image', 'http://', 'https://']) {
     assert.ok(!src.includes(patron), `encontrado ${patron} en la caja negra`);
   }
+});
+
+/* ============ 12 · Plan de examen ============ */
+
+const estadoLimpio = async (extra = {}) => {
+  const { importarJSON } = await import('../js/state.js');
+  importarJSON(JSON.stringify({
+    xp: 0, chapas: 0, srs: {}, album: {}, mundos: {}, taller: {}, vistas: {},
+    respuestas: [], simulacros: [], ...extra,
+  }));
+  return getEstado();
+};
+
+const enDias = (n) => {
+  const d = new Date(`${HOY()}T00:00:00`);
+  d.setDate(d.getDate() + n);
+  return d.toISOString().slice(0, 10);
+};
+
+test('examen: fijar y quitar la fecha', async () => {
+  const { fijarExamen, quitarExamen, fechaExamen, diasHasta } = await import('../js/plan.js');
+  await estadoLimpio();
+  assert.equal(fechaExamen(), null, 'nace sin fecha');
+  assert.equal(fijarExamen(enDias(20)), true);
+  assert.equal(diasHasta(fechaExamen()), 20);
+  quitarExamen();
+  assert.equal(fechaExamen(), null, 'quitarla no deja rastro');
+});
+
+test('examen: rechaza fechas imposibles en vez de aceptar un plan absurdo', async () => {
+  const { fijarExamen } = await import('../js/plan.js');
+  await estadoLimpio();
+  assert.equal(fijarExamen(enDias(-1)), false, 'ayer no vale');
+  assert.equal(fijarExamen(enDias(400)), false, 'dentro de más de un año tampoco');
+  assert.equal(fijarExamen('no-es-una-fecha'), false);
+  assert.equal(fijarExamen(null), false);
+  assert.equal(fijarExamen(enDias(0)), true, 'hoy sí vale: hay quien se examina hoy');
+});
+
+test('examen: la fecha NO mueve el Predictor ni un punto', async () => {
+  const { fijarExamen, quitarExamen } = await import('../js/plan.js');
+  const { calcularPredictor } = await import('../js/predictor.js');
+  const s = await estadoLimpio();
+  // 60 respuestas reales para que el Predictor tenga datos
+  for (let i = 0; i < 60; i++) s.respuestas.push({ id: `M01-${i}`, ok: i % 3 !== 0, ts: i });
+  for (let i = 0; i < 60; i++) s.vistas[`M01-${i}`] = 1;
+  const antes = calcularPredictor(856);
+  fijarExamen(enDias(3));                     // fecha inminente
+  const conFecha = calcularPredictor(856);
+  quitarExamen();
+  const sinFecha = calcularPredictor(856);
+  assert.equal(conFecha.pct, antes.pct, 'poner fecha no cambia el Predictor');
+  assert.equal(sinFecha.pct, antes.pct, 'quitarla tampoco');
+  assert.equal(conFecha.precision, antes.precision);
+});
+
+test('examen: el plan reparte lo que queda entre los días que quedan', async () => {
+  const { fijarExamen, planDeHoy } = await import('../js/plan.js');
+  const s = await estadoLimpio();
+  for (let i = 0; i < 356; i++) s.vistas[`q${i}`] = 1;   // 500 sin ver de 856
+  fijarExamen(enDias(25));
+  const plan = planDeHoy(856, { listo: false }, 0);
+  assert.equal(plan.hayFecha, true);
+  assert.equal(plan.dias, 25);
+  assert.equal(plan.quedan, 500);
+  assert.equal(plan.nuevasPorDia, 20, '500 / 25 = 20 al día');
+  assert.equal(plan.ritmo, 'comodo');
+  assert.ok(plan.alcanzable);
+});
+
+test('examen: cuando el ritmo no es realista, lo dice en vez de fingir', async () => {
+  const { fijarExamen, planDeHoy } = await import('../js/plan.js');
+  await estadoLimpio();
+  fijarExamen(enDias(2));                       // 856 preguntas en 2 días
+  const plan = planDeHoy(856, { listo: false }, 0);
+  assert.equal(plan.ritmo, 'imposible');
+  assert.equal(plan.alcanzable, false, 'no promete que llegue');
+  assert.ok(plan.nuevasPorDia > 80, `${plan.nuevasPorDia} al día`);
+  // pero lo que PIDE hoy sigue siendo humano: no manda 428 preguntas
+  assert.ok(plan.nuevasHoy <= 80, `pide ${plan.nuevasHoy} hoy`);
+});
+
+test('examen: sin fecha el plan sigue existiendo, sin cuenta atrás', async () => {
+  const { quitarExamen, planDeHoy } = await import('../js/plan.js');
+  await estadoLimpio();
+  quitarExamen();
+  const plan = planDeHoy(856, { listo: false }, 10);
+  assert.equal(plan.hayFecha, false);
+  assert.equal(plan.dias, null);
+  assert.equal(plan.ritmo, 'libre');
+  assert.ok(plan.nuevasHoy > 0, 'sigue sugiriendo algo que hacer');
+  assert.ok(plan.alcanzable, 'sin fecha nada es "inalcanzable"');
+});
+
+test('examen: pasada la fecha se pregunta una vez, y anotar no puntúa', async () => {
+  const { fijarExamen, examenPendienteDeContar, anotarResultado } = await import('../js/plan.js');
+  const s = await estadoLimpio();
+  for (let i = 0; i < 60; i++) s.respuestas.push({ id: `M01-${i}`, ok: true, ts: i });
+  fijarExamen(enDias(1));
+  s.examen.fecha = enDias(-2);                  // viajamos: la fecha ya pasó
+  assert.equal(examenPendienteDeContar(), true);
+  const xpAntes = s.xp, respAntes = s.respuestas.length;
+  anotarResultado('apto');
+  assert.equal(examenPendienteDeContar(), false, 'no se vuelve a preguntar');
+  assert.equal(s.examen.resultado, 'apto');
+  assert.equal(s.xp, xpAntes, 'contar el resultado no da XP');
+  assert.equal(s.respuestas.length, respAntes, 'ni toca el historial del Predictor');
+});
+
+test('examen: aplazar limpia la fecha sin tocar nada más', async () => {
+  const { fijarExamen, anotarResultado, fechaExamen } = await import('../js/plan.js');
+  const s = await estadoLimpio({ xp: 300, chapas: 50 });
+  fijarExamen(enDias(5));
+  anotarResultado('aplazado');
+  assert.equal(fechaExamen(), null);
+  assert.equal(s.xp, 300);
+  assert.equal(s.chapas, 50);
+});
+
+test('examen: con el examen encima, el Taller pesa más', async () => {
+  const { fijarExamen, planDeHoy } = await import('../js/plan.js');
+  await estadoLimpio();
+  fijarExamen(enDias(30));
+  const lejos = planDeHoy(856, { listo: false }, 30);
+  fijarExamen(enDias(3));
+  const cerca = planDeHoy(856, { listo: false }, 30);
+  assert.ok(cerca.averiasHoy > lejos.averiasHoy,
+    `cerca ${cerca.averiasHoy} vs lejos ${lejos.averiasHoy}: a última hora manda repasar tus fallos`);
+});
+
+/* ============ 13 · Familias de trampa ============ */
+
+test('trampas: el manifiesto solo referencia preguntas que existen', () => {
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  const ids = new Set();
+  for (let n = 1; n <= 15; n++) for (const q of bancoDe(n)) ids.add(q.id);
+  for (const e of doc.entradas) {
+    assert.ok(ids.has(e.questionId), `${e.questionId} no existe en el banco`);
+    assert.ok(doc.familias[e.familia], `familia desconocida: ${e.familia}`);
+  }
+  assert.equal(new Set(doc.entradas.map((e) => e.questionId)).size, doc.entradas.length, 'sin duplicados');
+});
+
+test('trampas: cada pregunta tiene UNA familia, no varias', () => {
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  const vistos = new Map();
+  for (const e of doc.entradas) {
+    assert.ok(!vistos.has(e.questionId), `${e.questionId} clasificada dos veces`);
+    vistos.set(e.questionId, e.familia);
+  }
+});
+
+test('trampas: la cobertura declarada es la real', () => {
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  assert.equal(doc.clasificadas, doc.entradas.length, 'el número declarado cuadra con las entradas');
+  const pct = Math.round(100 * doc.clasificadas / doc.total);
+  console.log(`      cobertura: ${doc.clasificadas}/${doc.total} (${pct} %)`);
+  assert.ok(pct >= 60, `cobertura del ${pct} %: por debajo del 60 % el diagnóstico no es fiable`);
+});
+
+test('trampas: toda familia declarada tiene nombre y consejo utilizables', () => {
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  for (const [id, f] of Object.entries(doc.familias)) {
+    assert.ok(f.nombre && f.nombre.length > 3, `${id} sin nombre`);
+    assert.ok(f.corto && f.corto.length > 2, `${id} sin etiqueta corta`);
+    assert.ok(f.consejo && f.consejo.length > 40, `${id} sin consejo aprovechable`);
+  }
+});
+
+test('trampas: la radiografía no inventa un patrón donde no lo hay', async () => {
+  const T = await import('../js/trampas.js');
+  await T.cargarTrampas();
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  // un fallo por familia: reparto plano, no debe salir "talón de Aquiles"
+  const unaDeCada = [];
+  const yaVistas = new Set();
+  for (const e of doc.entradas) {
+    if (yaVistas.has(e.familia)) continue;
+    yaVistas.add(e.familia);
+    unaDeCada.push({ id: e.questionId, ok: false, ts: 1 });
+  }
+  const plano = T.radiografia(unaDeCada, {});
+  assert.equal(plano.listo, true, `con ${unaDeCada.length} fallos ya hay datos`);
+  assert.equal(plano.talon, null, 'reparto plano → sin talón de Aquiles inventado');
+});
+
+test('trampas: con un patrón real, lo señala', async () => {
+  const T = await import('../js/trampas.js');
+  await T.cargarTrampas();
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  const familia = doc.entradas[0].familia;
+  const mismas = doc.entradas.filter((e) => e.familia === familia).slice(0, 12);
+  const r = T.radiografia(mismas.map((e) => ({ id: e.questionId, ok: false, ts: 1 })), {});
+  assert.equal(r.listo, true);
+  assert.ok(r.talon, 'con 12 fallos de la misma familia sí hay talón');
+  assert.equal(r.talon.familia, familia);
+  assert.equal(r.talon.pct, 100);
+});
+
+test('trampas: con pocos fallos no dice nada, en vez de decir ruido', async () => {
+  const T = await import('../js/trampas.js');
+  await T.cargarTrampas();
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  const r = T.radiografia([{ id: doc.entradas[0].questionId, ok: false, ts: 1 }], {});
+  assert.equal(r.listo, false);
+  assert.equal(r.motivo, 'pocos-datos');
+});
+
+test('trampas: los aciertos no cuentan como fallos', async () => {
+  const T = await import('../js/trampas.js');
+  await T.cargarTrampas();
+  const doc = JSON.parse(readFileSync('datos/trampas.json', 'utf8'));
+  const todoBien = doc.entradas.slice(0, 40).map((e) => ({ id: e.questionId, ok: true, ts: 1 }));
+  const r = T.radiografia(todoBien, {});
+  assert.equal(r.listo, false, 'sin fallos no hay radiografía que hacer');
+});
+
+test('trampas: Caza-trampas ofrece la familia real más dos señuelos distintos', async () => {
+  const T = await import('../js/trampas.js');
+  await T.cargarTrampas();
+  for (const f of ['absoluto', 'cifra', 'orden']) {
+    for (let i = 0; i < 30; i++) {
+      const ops = T.opcionesDeFamilia(f);
+      assert.equal(ops.length, 3);
+      assert.equal(new Set(ops).size, 3, 'sin repetidos');
+      assert.ok(ops.includes(f), 'la familia real siempre está entre las opciones');
+    }
+  }
+});
+
+test('trampas: la baraja de Caza-trampas prioriza lo fallado y no repite', async () => {
+  const T = await import('../js/trampas.js');
+  await T.cargarTrampas();
+  const banco = bancoDe(1).concat(bancoDe(2), bancoDe(3));
+  const conFamilia = banco.filter((q) => T.familiaDe(q.id));
+  const fallado = conFamilia[0];
+  const baraja = T.barajaCazaTrampas(banco, [{ id: fallado.id, ok: false, ts: 1 }], {}, 8);
+  assert.ok(baraja.length > 0);
+  assert.equal(new Set(baraja.map((q) => q.id)).size, baraja.length, 'sin repetidos en la tanda');
+  for (const q of baraja) assert.ok(T.familiaDe(q.id), `${q.id} sin familia en la baraja`);
+  assert.ok(baraja.some((q) => q.id === fallado.id), 'lo fallado entra en la tanda');
 });

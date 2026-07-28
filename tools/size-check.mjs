@@ -58,6 +58,8 @@ const ARRANQUE_JSON = [
 ];
 
 const DIFERIDOS = [
+  'js/trampas.js',
+  'datos/trampas.json',
   'js/retencion/ics.js',
   'js/retencion/reto.js',
   'js/retencion/reglatrampa.js',

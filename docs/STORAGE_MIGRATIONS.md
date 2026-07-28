@@ -12,13 +12,13 @@ El progreso se escribe en los dos sitios (`guardar()`, con *debounce* de 60 ms).
 Si IndexedDB falla al abrir —Safari en navegación privada es el caso típico—,
 `cargarEstado()` cae a `localStorage` sin que el jugador note nada.
 
-## Versión actual: `schemaVersion: 2`
+## Versión actual: `schemaVersion: 3`
 
 La versión vive **dentro** del estado. Cada migración lleva de N a N+1 y **nunca
 es destructiva**.
 
 ```js
-const SCHEMA_VERSION = 2;
+const SCHEMA_VERSION = 3;
 function migrar(s) {
   let v = s.schemaVersion || 1;
   while (v < SCHEMA_VERSION) { s = MIGRACIONES[v](s); v = s.schemaVersion; }
@@ -48,6 +48,21 @@ encontrarse el juego recortado por una actualización.
 
 `proxima` arranca en `null` (no se inventa una parada), `pruebas.activo` en
 `false` (la caja negra nace apagada).
+
+## 2 → 3 · Plan de examen
+
+Añade una sola rama, `examen`, y nada más:
+
+```js
+examen: { fecha: null, fijadaEn: null, avisado: false, resultado: null }
+```
+
+Quien ya jugaba se queda **exactamente igual** hasta que decida poner fecha, que
+es opcional. No se deduce nada, no se activa nada, no se inventa una fecha.
+
+`examen` está en la lista de la red de seguridad, así que un `examen: null`
+guardado por lo que sea se repone entero en vez de dejar la app leyendo
+`examen.fecha` sobre un null.
 
 ## La red de seguridad
 
@@ -104,21 +119,25 @@ actualiza al importarlo.
 Los datos del Modo de prueba **no viajan** en este fichero. Hay una prueba que lo
 comprueba buscando `eventId` dentro del export de progreso.
 
-## Añadir una migración 2 → 3
+## Añadir la migración siguiente
 
-1. Sube `SCHEMA_VERSION` a `3`.
-2. Añade la entrada `2:` en `MIGRACIONES`, que **solo** añade o transforma, nunca
-   borra, y termina con `s.schemaVersion = 3`.
+1. Sube `SCHEMA_VERSION` en `js/state.js`.
+2. Añade la entrada `N:` en `MIGRACIONES`, que **solo** añade o transforma, nunca
+   borra, y termina con `s.schemaVersion = N + 1`.
 3. Añade las claves nuevas a `estadoInicial()`.
 4. Si la clave nueva es un objeto anidado, mételo en la lista de la red de
    seguridad de `migrar()`.
-5. Escribe una prueba en `tools/test-retencion.mjs` que parta de un estado v2
-   real y compruebe que no se pierde nada.
+5. Escribe una prueba en `tools/test-retencion.mjs` que parta de un estado real
+   de la versión anterior y compruebe que no se pierde nada.
 6. Sube `VERSION` en `sw.js` y `VERSION_APP` en `screens.js`.
+
+Las pruebas **no** llevan el número escrito a mano: `qa-migracion.mjs` lee
+`SCHEMA_VERSION` de `state.js` y `qa-offline.mjs` lee `VERSION` de `sw.js`. Así
+siguen valiendo sin tocarlas.
 
 ## Service Worker
 
-`sw.js` cachea con nombre versionado (`cq-v17`). Al activarse, borra todas las
+`sw.js` cachea con nombre versionado (`cq-v18`). Al activarse, borra todas las
 cachés con otro nombre. Estrategia *cache-first* con actualización en segundo
 plano. La caché es solo de red: **no guarda estado del jugador**, así que subir
 la versión del SW nunca hace perder progreso.

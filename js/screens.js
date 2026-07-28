@@ -26,6 +26,10 @@ import {
 } from './retencion/proxima.js';
 import { adnDe, huecosDe } from './retencion/mundos-adn.js';
 import { ofrecerContrato, resolverContrato, PREMIO_CHAPAS } from './retencion/contratos.js';
+import {
+  diasHasta, fechaExamen, fijarExamen, quitarExamen, anotarResultado,
+  examenPendienteDeContar, planDeHoy,
+} from './plan.js';
 
 // URL de pago (Stripe Payment Link). ⚠️ Sustituir por el link real antes de vender (ver tools/VENTA.md).
 const STRIPE_URL = 'https://buy.stripe.com/REEMPLAZAR_LINK_REAL';
@@ -47,7 +51,7 @@ let conBanco = new Set(); // mundos con banco de preguntas disponible
 let CRUCES = [];          // puzzles "¿Quién pasa primero?" (cacheados al arrancar)
 let GARAJE = null;        // catálogo de cosmética
 
-const VERSION_APP = 'cq-v17';
+const VERSION_APP = 'cq-v18';
 
 /** Lee el deep link del hash: '#/next-run' o '#/reto?...'. */
 function leerHash() {
@@ -88,7 +92,7 @@ export async function iniciarUI(ctx) {
   hudEl = $('#hud');
   navEl = $('#nav');
   const cont = $('#screens');
-  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall', 'rush', 'garaje', 'reto']) {
+  for (const id of ['onboarding', 'mapa', 'mundo', 'mision', 'resultado', 'torre', 'taller', 'album', 'perfil', 'paywall', 'rush', 'garaje', 'reto', 'caza']) {
     const sc = el(`<section class="screen" data-screen="${id}"></section>`);
     cont.appendChild(sc);
     pantallas[id] = sc;
@@ -120,6 +124,8 @@ export async function iniciarUI(ctx) {
     abrirRetoDesdeHash();
   } else {
     navegar('mapa');
+    // si la fecha del examen ya pasó, se pregunta qué tal. Una vez, sin insistir.
+    if (examenPendienteDeContar()) setTimeout(() => preguntarPorElExamen(), 700);
   }
   // el jugador puede pegar un enlace con la app ya abierta
   addEventListener('hashchange', () => {
@@ -241,10 +247,288 @@ RENDERS.onboarding = (sc, { ok } = {}) => {
     getEstado().onboarded = true;
     guardar();
     sonido.acierto(); haptic.ok();
+    // la fecha se pide DESPUÉS de haber jugado un cruce (§4.1): primero se juega,
+    // después se planifica. Y es saltable — "todavía no lo sé" es una respuesta.
     navegar('mapa');
+    pedirFechaExamen({ alCerrar: () => navegar('mapa', {}, true) });
   };
   if (jugado) { sonido.sello(); haptic.celebracion(); }
 };
+
+/* ================= FAMILIAS DE TRAMPA ================= */
+
+let TRAMPAS = null;   // módulo diferido: el manifiesto no entra en el arranque
+
+async function modTrampas() {
+  if (!TRAMPAS) {
+    TRAMPAS = await import('./trampas.js');
+    await TRAMPAS.cargarTrampas();
+  }
+  return TRAMPAS;
+}
+
+/** Tarjeta del mapa. Se abre cuando ya hay fallos que analizar. */
+function tarjetaCaza(s) {
+  const fallos = (s.respuestas || []).filter((r) => !r.ok).length + Object.keys(s.taller || {}).length;
+  const abierto = fallos >= 5;
+  return `<button class="card-juego ${abierto ? '' : 'card-juego--cerrada'}" id="caza-card">
+    <span class="card-juego__ico">${abierto ? '🪤' : '🔒'}</span>
+    <span class="card-juego__txt"><b>${t(S, 'trampas.cazaTitulo')}</b><br>
+      <span class="texto-suave">${abierto ? esc(t(S, 'trampas.cazaSub')) : esc(t(S, 'trampas.bloqueado'))}</span></span>
+    <span class="card-juego__go">${abierto ? 'GO' : ''}</span>
+  </button>`;
+}
+
+/** Empieza una tanda de Caza-trampas. */
+async function empezarCaza() {
+  const T = await modTrampas();
+  if (!T.hayManifiesto()) { toast(t(S, 'trampas.bloqueado')); return; }
+  const s = getEstado();
+  const banco = await getBancoCompleto(mundosAccesibles());
+  const lista = T.barajaCazaTrampas(banco, s.respuestas, s.taller, 8);
+  if (lista.length < 3) { toast(t(S, 'trampas.bloqueado')); return; }
+  EV.registrar('caza_started', { metadata: { n: lista.length } });
+  navegar('caza', { lista });
+}
+
+RENDERS.caza = async (sc, { lista } = {}) => {
+  const T = await modTrampas();
+  const estado = { i: 0, aciertos: 0, lista: lista || [] };
+
+  const pintar = () => {
+    if (estado.i >= estado.lista.length) return resultado();
+    const q = estado.lista[estado.i];
+    const real = T.familiaDe(q.id);
+    const opciones = T.opcionesDeFamilia(real);
+    sc.innerHTML = `
+      <div class="mision-top">
+        <button class="btn-salir" id="salir-caza">✕</button>
+        <div class="dashes">${estado.lista.map((_, k) => `<span class="dash ${k < estado.i ? 'dash--ok' : k === estado.i ? 'dash--actual' : ''}"></span>`).join('')}</div>
+        <span class="combo-chip">🪤 ${estado.aciertos}</span>
+      </div>
+      <div class="q-card">
+        <div class="q-card__tema">${esc(q.tema)}</div>
+        <div class="q-card__texto">${esc(q.pregunta)}</div>
+      </div>
+      <div class="caza-correcta">
+        <span class="caza-correcta__sello">✓ ${t(S, 'trampas.cazaCorrecta')}</span>
+        <span>${esc(q.opciones[q.correcta])}</span>
+      </div>
+      <div class="rt-titulo">${t(S, 'trampas.cazaPregunta')}</div>
+      <div id="caza-ops">
+        ${opciones.map((f) => {
+          const info = T.infoFamilia(f);
+          return `<button class="caza-familia" data-f="${f}">
+            <b>${esc(info.nombre)}</b>
+            <span class="texto-suave">${esc(info.corto)}</span>
+          </button>`;
+        }).join('')}
+      </div>
+      <div class="feedback" id="feedback"></div>`;
+    $('#salir-caza', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+    sc.querySelectorAll('.caza-familia').forEach((b) => b.addEventListener('click', () => {
+      const ok = b.dataset.f === real;
+      sc.querySelectorAll('.caza-familia').forEach((x) => {
+        x.disabled = true;
+        if (x.dataset.f === real) x.classList.add('caza-familia--ok');
+        else if (x === b) x.classList.add('caza-familia--ko');
+        else x.classList.add('q-opcion--apagada');
+      });
+      if (ok) { estado.aciertos++; sonido.acierto(); haptic.ok(); }
+      else { sonido.fallo(); haptic.ko(); sacudir($('.q-card', sc)); }
+      EV.registrar('caza_answered', { questionId: q.id, correct: ok, questionFormat: 'caza-trampas' });
+      const info = T.infoFamilia(real);
+      const fb = $('#feedback', sc);
+      fb.innerHTML = `
+        <div class="feedback__titulo ${ok ? 'feedback__titulo--ok' : 'feedback__titulo--ko'}">${ok ? t(S, 'trampas.cazaAcierto') : t(S, 'trampas.cazaFallo')}</div>
+        <div class="feedback__caja feedback__caja--trampa"><b>${t(S, 'mision.trampa')}</b>${esc(q.trampa)}</div>
+        <div class="feedback__caja feedback__caja--info"><b>${esc(info.nombre)}</b>${esc(info.consejo)}</div>
+        <button class="btn ${ok ? 'btn--verde' : 'btn--cian'}" id="caza-sig">${t(S, 'mision.siguiente')} →</button>`;
+      fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      $('#caza-sig', fb).onclick = () => { sonido.tap(); estado.i++; pintar(); };
+    }));
+    sc.scrollTop = 0;
+  };
+
+  const resultado = () => {
+    const total = estado.lista.length;
+    const pleno = estado.aciertos === total;
+    EV.registrar('caza_finished', { metadata: { aciertos: estado.aciertos, total } });
+    if (pleno) { sonido.fanfarria(); confeti(24); }
+    sc.innerHTML = `<div class="resultado">
+      <h1 class="${pleno ? 'ok' : ''}">🪤 ${t(S, 'trampas.cazaTitulo')}</h1>
+      <div class="marcador">${t(S, 'trampas.cazaResultado', { n: estado.aciertos, total })}</div>
+      <div class="acciones">
+        <button class="btn btn--primary" id="caza-otra">${t(S, 'trampas.cazaOtra')}</button>
+        <button class="btn btn--ghost" id="caza-radio">${t(S, 'trampas.verRadiografia')}</button>
+        <button class="btn btn--ghost" id="caza-mapa">${t(S, 'resultado.alMapa')}</button>
+      </div>
+      <p class="texto-suave reto-aviso">${t(S, 'trampas.cazaAviso')}</p>
+    </div>`;
+    $('#caza-otra', sc).onclick = () => { sonido.tap(); empezarCaza(); };
+    $('#caza-radio', sc).onclick = () => { sonido.tap(); navegar('perfil'); };
+    $('#caza-mapa', sc).onclick = () => { sonido.tap(); navegar('mapa', {}, true); };
+  };
+
+  pintar();
+};
+
+/** La radiografía, dentro de Perfil. Se rellena en diferido. */
+async function pintarRadiografia(sc) {
+  const zona = $('#zona-radiografia', sc);
+  if (!zona) return;
+  const T = await modTrampas();
+  const s = getEstado();
+  const r = T.radiografia(s.respuestas, s.taller);
+
+  if (!r.listo) {
+    zona.innerHTML = r.motivo === 'pocos-datos'
+      ? `<p class="texto-suave">${t(S, 'trampas.pocosDatos', { n: r.tiene, min: r.minimo })}</p>`
+      : '';
+    return;
+  }
+  const max = r.reparto[0].n || 1;
+  zona.innerHTML = `
+    ${r.talon
+      ? `<div class="talon">
+           <div class="talon__kicker">${t(S, 'trampas.talon')}</div>
+           <div class="talon__frase">${t(S, 'trampas.talonFrase', { pct: r.talon.pct, familia: esc(r.talon.info.nombre) })}</div>
+           <div class="talon__consejo">${esc(r.talon.info.consejo)}</div>
+         </div>`
+      : `<p class="texto-suave">${t(S, 'trampas.sinTalon')}</p>`}
+    <div class="reparto">
+      ${r.reparto.slice(0, 6).map((x) => `
+        <div class="reparto__fila">
+          <span class="reparto__nombre">${esc(x.info.nombre)}</span>
+          <span class="reparto__barra"><i style="width:${Math.round(100 * x.n / max)}%"></i></span>
+          <span class="reparto__pct">${x.pct} %</span>
+        </div>`).join('')}
+    </div>
+    <p class="legal">${t(S, 'trampas.nota', T.cobertura())}</p>`;
+}
+
+/* ================= PLAN DE EXAMEN ================= */
+
+// Total del banco COMPLETO, cacheado. Ojo con esto: el plan se calcula sobre los
+// quince mundos, no sobre los que el jugador tenga desbloqueados. El examen de la
+// DGT entra entero, así que decirle "vas cómodo" contando solo el Mundo 1 sería
+// mentirle. Es el mismo criterio que ya usa el Predictor para la cobertura.
+// La banda del mapa se pinta en síncrono y no puede esperar a un await, así que
+// se cachea y se repinta cuando llega.
+let TOTAL_BANCO = 0;
+async function totalBancoExamen() {
+  const lista = await getBancoCompleto(DOC.mundos.map((m) => m.n));
+  TOTAL_BANCO = lista.length;
+  return TOTAL_BANCO;
+}
+
+/** Averías pendientes: lo que el Taller tiene esperando. */
+const averiasPendientes = () => Object.keys(getEstado().taller || {}).length;
+
+/**
+ * La banda de arriba del mapa. Con fecha, deja de decir "racha 4" y pasa a
+ * decir cuánto falta, cómo vas y qué toca hoy. Sin fecha, invita a ponerla
+ * pero no insiste ni bloquea.
+ */
+function bandaExamen() {
+  const dias = diasHasta(fechaExamen());
+  const s = getEstado();
+
+  if (dias === null) {
+    return `<button class="banda-examen banda-examen--vacia" id="banda-fecha">
+      <span class="banda-examen__ico">🗓️</span>
+      <span class="banda-examen__txt"><b>${t(S, 'examen.sinFecha')}</b><br>
+        <span class="texto-suave">${t(S, 'examen.sinFechaSub')}</span></span>
+      <span class="card-juego__go">+</span>
+    </button>`;
+  }
+
+  const pred = TOTAL_BANCO ? calcularPredictor(TOTAL_BANCO) : { listo: false };
+  const plan = planDeHoy(TOTAL_BANCO || 856, pred, averiasPendientes());
+  const cuenta = dias === 0 ? t(S, 'examen.esHoy')
+    : dias === 1 ? t(S, 'examen.manana')
+    : t(S, 'examen.faltan', { n: dias });
+  const estado = pred.listo ? t(S, 'examen.vasAl', { n: pred.pct }) : t(S, 'examen.sinPredictor');
+
+  // qué toca hoy: solo lo que de verdad hay pendiente, sin inventar tareas
+  const trozos = [];
+  if (plan.nuevasHoy > 0) trozos.push(t(S, 'examen.hoyPreguntas', { n: plan.nuevasHoy }));
+  if (plan.averiasHoy > 0) trozos.push(t(S, 'examen.hoyAverias', { n: plan.averiasHoy }));
+  if (plan.simulacrosQueFaltan > 0 && (s.simulacros || []).length < 5) trozos.push(t(S, 'examen.hoySimulacro'));
+  const toca = trozos.length ? `${t(S, 'examen.hoyToca')}: ${trozos.join(' · ')}` : t(S, 'examen.hoyNada');
+
+  const urgente = dias <= 3;
+  return `<button class="banda-examen ${urgente ? 'banda-examen--cerca' : ''}" id="banda-fecha">
+    <span class="banda-examen__cuenta">${cuenta}</span>
+    <span class="banda-examen__estado">${estado}</span>
+    <span class="banda-examen__toca">${esc(toca)}</span>
+    ${plan.ritmo === 'imposible' ? `<span class="banda-examen__aviso">${esc(t(S, 'examen.ritmoImposible', { n: plan.nuevasPorDia }))}</span>` : ''}
+  </button>`;
+}
+
+/** Pantalla de poner o cambiar la fecha. Saltable siempre, sin culpa. */
+function pedirFechaExamen({ alCerrar } = {}) {
+  const hoy = HOY();
+  const maxima = (() => { const d = new Date(`${hoy}T00:00:00`); d.setDate(d.getDate() + 365); return d.toISOString().slice(0, 10); })();
+  const actual = fechaExamen();
+  const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true">
+    <div class="contrato-kicker">${t(S, 'examen.titulo')}</div>
+    <p class="texto-suave">${t(S, 'examen.sub')}</p>
+    <input type="date" id="ex-fecha" class="ex-fecha" value="${actual || ''}" min="${hoy}" max="${maxima}">
+    <button class="btn btn--primary" id="ex-ok">${t(S, 'examen.poner')}</button>
+    ${actual ? `<button class="btn btn--ghost" id="ex-quitar">${t(S, 'examen.quitar')}</button>` : ''}
+    <button class="btn btn--ghost" id="ex-luego">${t(S, 'examen.luego')}</button>
+  </div></div>`);
+  document.body.appendChild(ov);
+  const cerrar = () => { ov.remove(); alCerrar?.(); };
+  atraparFoco(ov, cerrar);   // Escape = "todavía no lo sé", la opción neutra
+  $('#ex-luego', ov).onclick = () => { sonido.tap(); cerrar(); };
+  $('#ex-quitar', ov)?.addEventListener('click', () => {
+    sonido.tap();
+    quitarExamen();
+    EV.registrar('exam_date_cleared');
+    toast(t(S, 'examen.quitada'));
+    cerrar();
+  });
+  $('#ex-ok', ov).onclick = () => {
+    const v = $('#ex-fecha', ov).value;
+    if (!fijarExamen(v)) { toast(t(S, 'examen.invalida'), 3400); return; }
+    sonido.acierto(); haptic.ok();
+    const d = diasHasta(v);
+    EV.registrar('exam_date_set', { metadata: { dias: d } });
+    toast(t(S, 'examen.puesta', { n: d }), 3400);
+    cerrar();
+  };
+}
+
+/** Pasó la fecha: se pregunta qué tal, sin puntuar nada. */
+function preguntarPorElExamen() {
+  const ov = el(`<div class="modal-overlay"><div class="modal" role="dialog" aria-modal="true">
+    <div style="font-size:2.6rem">🗓️</div>
+    <div class="contrato-kicker">${t(S, 'examen.pasado')}</div>
+    <p class="texto-suave">${t(S, 'examen.pasadoSub')}</p>
+    <button class="btn btn--verde" id="ex-apto">${t(S, 'examen.apto')}</button>
+    <button class="btn btn--ghost" id="ex-noapto">${t(S, 'examen.noApto')}</button>
+    <button class="btn btn--ghost" id="ex-aplaz">${t(S, 'examen.aplazado')}</button>
+  </div></div>`);
+  document.body.appendChild(ov);
+  const responder = async (r) => {
+    ov.remove();
+    anotarResultado(r);
+    EV.registrar('exam_result_reported', { metadata: { resultado: r } });
+    if (r === 'apto') {
+      sonido.fanfarria(); haptic.celebracion(); confeti(50);
+      await sello(t(S, 'examen.graciasApto'), 'ok', '🎉');
+    } else {
+      toast(t(S, r === 'no-apto' ? 'examen.graciasNoApto' : 'examen.graciasAplazado'), 4200);
+    }
+    navegar('mapa', {}, true);
+  };
+  atraparFoco(ov, () => { ov.remove(); });   // Escape: ya se preguntará otro día
+  $('#ex-apto', ov).onclick = () => responder('apto');
+  $('#ex-noapto', ov).onclick = () => responder('no-apto');
+  $('#ex-aplaz', ov).onclick = () => responder('aplazado');
+}
 
 /* ================= MAPA ================= */
 
@@ -313,6 +597,7 @@ RENDERS.mapa = (sc) => {
   const clipY = alto - fracProgreso * alto;
 
   sc.innerHTML = `
+    ${bandaExamen()}
     <div class="mapa-titulo"><span class="via">N-CQ</span><h1>${t(S, 'mapa.titulo')}</h1></div>
     <div class="mapa-wrap">
     <svg class="mapa-svg" viewBox="0 0 ${W} ${alto}" xmlns="http://www.w3.org/2000/svg">
@@ -356,6 +641,7 @@ RENDERS.mapa = (sc) => {
       <div class="sep"></div>
       ${tarjetaProxima()}
       ${tarjetasDeModo(s)}
+      ${tarjetaCaza(s)}
       ${tarjetaReto()}
     </div>`;
 
@@ -394,13 +680,29 @@ RENDERS.mapa = (sc) => {
   }));
   $('#proxima-card', sc)?.addEventListener('click', () => abrirProximaParada());
   $('#reto-card', sc)?.addEventListener('click', () => { sonido.tap(); haptic.ligero(); crearReto(); });
+  $('#caza-card', sc)?.addEventListener('click', () => {
+    sonido.tap(); haptic.ligero();
+    if ($('#caza-card', sc).classList.contains('card-juego--cerrada')) { toast(t(S, 'trampas.bloqueado')); return; }
+    empezarCaza();
+  });
+  $('#banda-fecha', sc)?.addEventListener('click', () => {
+    sonido.tap(); haptic.ligero();
+    pedirFechaExamen({ alCerrar: () => navegar('mapa', {}, true) });
+  });
+  // el total del banco se calcula una vez; si aún no estaba, se repinta la banda
+  if (!TOTAL_BANCO && fechaExamen()) {
+    totalBancoExamen().then(() => { if (actual === 'mapa') navegar('mapa', {}, true); });
+  }
   // El viaje empieza abajo: el primer mundo queda a la vista al entrar, despejado
   // del nav. Hay que contar el offsetTop del mapa (el título va antes) o el nombre
   // del mundo acaba pisado por la barra inferior.
   requestAnimationFrame(() => {
     const wrap = $('.mapa-wrap', sc);
     const nav = (navEl?.offsetHeight || 76) + 24;
-    sc.scrollTop = Math.max(0, wrap.offsetTop + wrap.offsetHeight - sc.clientHeight + nav);
+    // la banda de examen va pegajosa arriba: hay que descontar su alto o el
+    // nombre del primer mundo queda debajo de ella
+    const banda = $('.banda-examen', sc)?.offsetHeight || 0;
+    sc.scrollTop = Math.max(0, wrap.offsetTop + wrap.offsetHeight - sc.clientHeight + nav + banda);
   });
 };
 
@@ -2416,6 +2718,9 @@ RENDERS.perfil = async (sc) => {
         <div class="consejo">${t(S, 'torre.consejo')}<br>${t(S, 'perfil.predictorSub')}</div>`
       : `<div class="consejo">${t(S, 'perfil.predictorPocosDatos')}<br><b>${pred.hechas}/${pred.minimo}</b></div>`}
     </div>
+    <h2 class="texto-suave" style="margin:20px 0 8px">🪤 ${t(S, 'trampas.titulo')}</h2>
+    <p class="texto-suave" style="margin-bottom:10px">${t(S, 'trampas.sub')}</p>
+    <div id="zona-radiografia"></div>
     <div class="stats-grid">
       <div class="stat-celda"><div class="num">${pred.listo ? pred.precision + '%' : '—'}</div><div class="lbl">${t(S, 'perfil.precision')}</div></div>
       <div class="stat-celda"><div class="num">${pred.listo ? pred.cobertura + '%' : '—'}</div><div class="lbl">${t(S, 'perfil.cobertura')}</div></div>
@@ -2430,6 +2735,7 @@ RENDERS.perfil = async (sc) => {
     </button>
     <h2 class="texto-suave" style="margin-bottom:8px">${t(S, 'perfil.ajustes')}</h2>
     <div class="ajustes">
+      <button class="ajuste-row" id="ajuste-fecha">${fechaExamen() ? t(S, 'examen.cambiar') : t(S, 'examen.poner')} <span>🗓️</span></button>
       <button class="ajuste-row" id="tg-sonido">${t(S, 'perfil.sonido')} <span class="toggle ${s.ajustes.sonido ? 'on' : ''}"></span></button>
       <button class="ajuste-row" id="tg-haptics">${t(S, 'perfil.haptics')} <span class="toggle ${s.ajustes.haptics ? 'on' : ''}"></span></button>
       <button class="ajuste-row" id="exportar">${t(S, 'perfil.exportar')} <span>📤</span></button>
@@ -2440,6 +2746,10 @@ RENDERS.perfil = async (sc) => {
     ${bloquePruebas(s)}
     <p class="legal">${t(S, 'perfil.avisoLegal')}</p>`;
   $('#ir-garaje', sc).onclick = () => { sonido.tap(); haptic.ligero(); navegar('garaje'); };
+  $('#ajuste-fecha', sc).onclick = () => {
+    sonido.tap();
+    pedirFechaExamen({ alCerrar: () => RENDERS.perfil(sc) });
+  };
   $('#tg-sonido', sc).onclick = () => { s.ajustes.sonido = !s.ajustes.sonido; guardar(); sonido.tap(); RENDERS.perfil(sc); };
   $('#tg-haptics', sc).onclick = () => { s.ajustes.haptics = !s.ajustes.haptics; guardar(); haptic.medio(); RENDERS.perfil(sc); };
   $('#exportar', sc).onclick = () => {
@@ -2468,6 +2778,7 @@ RENDERS.perfil = async (sc) => {
     $('#b-si', ov).onclick = async () => { await borrarTodo(); ov.remove(); navegar('onboarding'); };
   };
   engancharPruebas(sc);
+  pintarRadiografia(sc);
 };
 
 /* ---- Modo de prueba: caja negra local, apagada por defecto ---- */
@@ -2538,6 +2849,13 @@ RENDERS.paywall = async (sc) => {
     <h1>${t(S, 'paywall.titulo')}</h1>
     <div class="precio">${t(S, 'paywall.precio')}</div>
     <div class="gancho">${t(S, 'paywall.gancho', { pct })}</div>
+    ${(() => {
+      // La urgencia aquí es REAL y la puso el jugador: es su fecha, no una
+      // cuenta atrás inventada. Por eso se puede enseñar sin remordimiento.
+      const d = diasHasta(fechaExamen());
+      if (d === null || d < 0) return '';
+      return `<div class="gancho gancho--fecha">${d === 0 ? t(S, 'paywall.conFechaHoy') : t(S, 'paywall.conFecha', { n: d })}</div>`;
+    })()}
     <ul class="beneficios">${S.paywall.beneficios.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
     <button class="btn btn--primary" id="comprar">${t(S, 'paywall.comprar')} · ${PRECIO}</button>
     <button class="btn btn--ghost" id="canjear">${t(S, 'paywall.canjear')}</button>

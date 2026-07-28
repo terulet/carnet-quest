@@ -20,6 +20,9 @@ await p.goto(B, { waitUntil: 'networkidle' });
 const sk = p.locator('#salir.btn-saltar');
 if (await sk.count()) { await sk.click(); await p.waitForTimeout(300); }
 const go = p.locator('#ob-go'); if (await go.count()) { await go.click(); await p.waitForTimeout(600); }
+  // tras el onboarding se ofrece poner fecha de examen: la prueba la salta
+  const noFecha = p.locator('#ex-luego');
+  if (await noFecha.count()) { await noFecha.click(); await p.waitForTimeout(500); }
 
 // --- los modos deben estar CERRADOS de inicio (menos cruces)
 const cerradas = await p.locator('.card-juego--cerrada').count();

@@ -4,7 +4,7 @@ Sirve para saber si la capa de retención **funciona de verdad** o solo funciona
 en las pruebas automáticas. Lo segundo ya está comprobado; lo primero solo lo
 pueden decir personas.
 
-Duración: 25–35 minutos por persona. Mínimo recomendado: **5 personas**, y al
+Duración: 35–45 minutos por persona. Mínimo recomendado: **5 personas**, y al
 menos una que se esté sacando el carnet de verdad ahora mismo.
 
 ---
@@ -189,6 +189,71 @@ aceptarlo · el copy de fallo le suena a regañina.
 **Señal de alarma:** cree que el enlace lleva su nombre o su puntuación · no ve
 para qué sirve · dice que lo mandaría "a un grupo" sin nombrar a nadie (eso suele
 significar que no lo mandaría).
+
+---
+
+## H6 · La fecha del examen — 5 min
+
+**Objetivo:** ¿la cuenta atrás motiva o agobia?
+
+**Preparación:** progreso borrado.
+
+1. Dejar que llegue solo hasta la pregunta de la fecha (sale tras el primer
+   cruce y el onboarding).
+2. **No decirle qué poner.** Si dice "no lo sé", que pulse "Todavía no lo sé":
+   cuánta gente lo salta es un dato.
+3. Si pone fecha, dejarle ver el mapa y observar si LEE la banda de arriba.
+
+**Qué medir:**
+
+| Medida | Cómo |
+|---|---|
+| ¿Pone fecha o la salta? | observación |
+| Segundos mirando la banda antes de tocar otra cosa | cronómetro |
+| ¿Menciona los días que faltan sin que se lo preguntes? | observación |
+
+**Preguntas:**
+
+- "¿Qué te dice esa barra de arriba?"
+- "¿Te agobia o te ayuda?" — **la que más importa**. Si dice que agobia, hay que
+  suavizar el copy o quitar el amarillo de los últimos días.
+- "¿Qué pasaría si no llegas a tiempo?" — la respuesta correcta es **nada**.
+
+**Preparación extra (opcional):** ponerle a mano una fecha a 2 días con el
+temario sin ver, para que salga el aviso de ritmo imposible. Preguntar: *"¿Cómo
+te sienta que te diga eso?"* Buscamos "me parece justo", no "me hunde".
+
+**Señal de alarma:** cree que perder días le quita algo · el aviso de ritmo le
+suena a regañina · no ve la banda.
+
+---
+
+## H7 · Radiografía y Caza-trampas — 6 min
+
+**Objetivo:** ¿el diagnóstico le dice algo que no supiera?
+
+**Preparación:** un progreso con al menos 10–15 fallos reales (vale el de H1–H3).
+
+1. "Entra en Tú y baja."
+2. Observar cuando llegue al talón de Aquiles.
+
+**Preguntas:**
+
+- "¿Qué te está diciendo esto?"
+- **La clave:** *"¿Esto te lo había dicho alguien antes?"* — si la respuesta es
+  "sí, mi profesor", el diagnóstico no aporta. Si es "no", tenemos algo.
+- "¿Sabrías qué hacer con esa información?"
+
+Después, Caza-trampas desde el mapa:
+
+- ¿Entiende que la respuesta correcta ya está dada?
+- ¿Entiende qué le están preguntando sin explicación?
+- Al terminar: *"¿Qué crees que ha pasado con tu progreso al jugar esto?"* — la
+  respuesta correcta es **nada**, y está escrito en pantalla.
+
+**Señal de alarma:** cree que Caza-trampas cuenta para el Predictor · el nombre
+de alguna familia no le dice nada · piensa que el porcentaje del talón sale de
+todas sus respuestas y no solo de las clasificadas.
 
 ---
 

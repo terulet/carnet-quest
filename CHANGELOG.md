@@ -2,6 +2,54 @@
 
 Formato: lo que cambia para el jugador primero; lo interno, después.
 
+## [Plan de examen y Familias de trampa] — 2026-07-28 · `cq-v18`
+
+Documentación completa en [`docs/PLAN_Y_TRAMPAS.md`](docs/PLAN_Y_TRAMPAS.md).
+
+### Nuevo
+
+- **La fecha del examen como eje de la app.** En el onboarding —después de haber
+  jugado un cruce, nunca antes— el juego pregunta cuándo te examinas. La cabecera
+  del mapa deja de decir "racha 4" y dice *"Faltan 11 días · vas al 75 % · hoy
+  toca: 40 preguntas nuevas, 6 del Taller, 1 simulacro"*.
+  - La fecha **no mueve el Predictor** ni un punto: cambia lo que se te sugiere
+    hacer, no lo que se te dice que vales.
+  - Ir retrasado **no castiga**. Si el ritmo no es realista, se dice en voz alta
+    en vez de fingir que llegas.
+  - Es opcional, saltable y se puede quitar cuando quieras.
+  - El plan se calcula sobre los 15 mundos, no sobre los desbloqueados: el examen
+    de la DGT entra entero.
+- **Al pasar la fecha se pregunta qué tal fue.** Una vez, sin insistir. Anotarlo
+  no da XP ni toca el historial: es información, no puntuación.
+- **Radiografía de la trampa.** Los 856 campos `trampa` del banco, clasificados
+  por mecanismo en 12 familias. En Perfil: *"El 41 % de tus fallos son de la misma
+  familia: Los absolutos"*, con su consejo. Si el reparto es plano lo dice, en vez
+  de inventarse un patrón.
+- **Caza-trampas.** Modo nuevo: la respuesta correcta ya marcada, y tú aciertas
+  por dónde te la habrían colado. Aprendes el patrón, no la respuesta. **No toca
+  el Predictor, ni el Leitner, ni el Taller, ni da XP** — entrena a leer
+  exámenes, no normativa.
+
+### Arreglado
+
+- `barajaCazaTrampas()` barajaba los mejores candidatos y cortaba, lo que
+  destruía la prioridad que su nombre promete: una pregunta fallada entraba una
+  de cada tres veces. Ahora los fallados entran siempre.
+- La nota de cobertura de la radiografía daba el número de fallos del jugador
+  donde decía "del banco". Ahora da la cobertura real del manifiesto.
+
+### Interno
+
+- Esquema **v2 → v3**: rama `examen`, migración que solo añade.
+- `tools/curar-trampas.mjs` — clasificador determinista, **574 de 856 (67 %)**.
+  Lo que no dispara una regla con evidencia clara se queda sin familia y no entra
+  en el diagnóstico.
+- `tools/serve.mjs`, `js/plan.js`, `js/trampas.js`, `tools/qa/qa-examen.mjs`,
+  `tools/qa/qa-trampas.mjs`.
+- Service Worker `cq-v18`.
+- 55 pruebas unitarias · 12 scripts de integración.
+- Carga inicial **118,0 KB gzip** sobre un tope de 300.
+
 ## [Retención V1] — 2026-07-27 · `cq-v17`
 
 Documentación completa en [`docs/RETENTION_V1.md`](docs/RETENTION_V1.md).

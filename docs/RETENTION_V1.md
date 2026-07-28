@@ -383,6 +383,18 @@ Las zonas táctiles nuevas cumplen el mínimo: los botones heredan `--tap-min`
 de `hover`, y `prefers-reduced-motion` apaga las animaciones nuevas (`.rt-carta`,
 `.fase-rotulo`, `.feedback__caja--protagonista`).
 
+## Lo que vino después
+
+La capa de retención descrita aquí es la V1. Encima de ella se construyó el
+**plan de examen** y las **familias de trampa**, documentados aparte en
+[`PLAN_Y_TRAMPAS.md`](PLAN_Y_TRAMPAS.md). Dos cosas de allí afectan a lo de aquí:
+
+- El onboarding pregunta la fecha del examen **después** del primer cruce
+  jugable. La Próxima Parada y el `.ics` conviven con esa fecha sin depender de
+  ella: quien no la ponga tiene exactamente la misma experiencia de antes.
+- El mapa lleva una banda pegajosa arriba. Las tarjetas de Próxima Parada, modos
+  y reto siguen donde estaban, debajo.
+
 ## Ficheros
 
 ```

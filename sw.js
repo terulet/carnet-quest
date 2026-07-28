@@ -1,6 +1,6 @@
 /* CARNET QUEST — Service Worker offline-first.
    Estrategia: precache del shell + cache-first con actualización en segundo plano. */
-const VERSION = 'cq-v17';
+const VERSION = 'cq-v18';
 const PRECACHE = [
   './',
   'index.html',
@@ -36,6 +36,8 @@ const PRECACHE = [
   'js/retencion/ics.js',
   'js/retencion/reto.js',
   'js/retencion/reglatrampa.js',
+  'js/plan.js',
+  'js/trampas.js',
   'js/screens.js',
   'datos/strings.es.json',
   'datos/mundos.json',
@@ -44,6 +46,7 @@ const PRECACHE = [
   'datos/cruces.json',
   'datos/garaje.json',
   'datos/reglatrampa.json',
+  'datos/trampas.json',
   // banco completo: los 15 mundos
   'datos/preguntas/mundo-01.json',
   'datos/preguntas/mundo-02.json',

@@ -3,7 +3,7 @@
 const DB_NOMBRE = 'carnet-quest';
 const DB_VERSION = 1;
 const STORE = 'jugador';
-const SCHEMA_VERSION = 2;
+const SCHEMA_VERSION = 3;
 
 export const HOY = () => new Date().toISOString().slice(0, 10);
 
@@ -52,6 +52,11 @@ function estadoInicial() {
     contratos: { completados: 0, fallados: 0 },
     // Modo de prueba: caja negra LOCAL, apagada por defecto, sin red jamás
     pruebas: { activo: false },
+
+    /* ---- Plan de examen (esquema 3) ---- */
+    // La fecha convierte el juego en un plan con final. NO toca el Predictor:
+    // solo cambia qué se sugiere hacer y cómo se presenta el progreso.
+    examen: { fecha: null, fijadaEn: null, avisado: false, resultado: null },
     compras: { pase: false, codigo: null },
     ajustes: { sonido: true, haptics: true },
   };
@@ -85,6 +90,14 @@ const MIGRACIONES = {
     s.schemaVersion = 2;
     return s;
   },
+
+  // 2 → 3 · Plan de examen. Añade una rama y nada más: quien ya jugaba se
+  // queda exactamente igual hasta que decida poner fecha, que es opcional.
+  2: (s) => {
+    s.examen = s.examen || { fecha: null, fijadaEn: null, avisado: false, resultado: null };
+    s.schemaVersion = 3;
+    return s;
+  },
 };
 
 function migrar(s) {
@@ -102,7 +115,7 @@ function migrar(s) {
   // ¡copia! Object.assign(base, s) mutaría `base` y entonces los valores de
   // repuesto de abajo ya vendrían dañados: un `racha: null` acababa en `{}`.
   const fusion = Object.assign({}, base, s);
-  for (const clave of ['desbloqueos', 'prefs', 'contratos', 'pruebas', 'garaje', 'racha', 'ajustes', 'compras']) {
+  for (const clave of ['desbloqueos', 'prefs', 'contratos', 'pruebas', 'garaje', 'racha', 'ajustes', 'compras', 'examen']) {
     const guardado = s[clave];
     // solo se fusiona lo que de verdad es un objeto: un string o un null se
     // descartan enteros (Object.assign con un string reparte sus letras)

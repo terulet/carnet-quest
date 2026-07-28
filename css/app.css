@@ -1379,3 +1379,156 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing:
 
 /* Selector de tipo de reto: los botones del modal ya son ≥48 px de alto */
 .modal [data-modo-reto] { width: 100%; }
+
+/* ============ PLAN DE EXAMEN ============ */
+.banda-examen {
+  /* Pegajosa a propósito: el mapa arranca abajo (§F13, el primer mundo a la
+     vista), así que una banda estática arriba no se vería NUNCA. Y la fecha es
+     lo primero que tiene que leer: es el eje de la app, no un adorno. */
+  position: sticky;
+  top: calc(var(--sp-2) * -1);
+  z-index: 5;
+  display: block;
+  width: 100%;
+  margin-bottom: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radio-m);
+  border: 2px solid var(--asfalto-500);
+  /* opaca de verdad: por debajo pasa el SVG del mapa */
+  background: color-mix(in srgb, var(--asfalto-700) 94%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .45);
+  color: var(--linea-blanca);
+  font: inherit;
+  text-align: left;
+  transition: transform var(--dur-corta) var(--ease-out), border-color var(--dur-corta);
+}
+.banda-examen:active { transform: scale(.99); }
+.banda-examen__cuenta {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: var(--fs-h1);
+  line-height: 1;
+  color: var(--amarillo-obras);
+  letter-spacing: .02em;
+}
+.banda-examen__estado {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: var(--fs-small);
+  color: var(--linea-gris);
+}
+.banda-examen__toca {
+  display: block;
+  margin-top: 6px;
+  font-size: var(--fs-small);
+  color: var(--linea-blanca);
+}
+.banda-examen__aviso {
+  display: block;
+  margin-top: 8px;
+  padding-left: 10px;
+  border-left: 3px solid var(--neon-magenta);
+  font-size: var(--fs-tiny);
+  color: var(--linea-gris);
+}
+/* cerca del examen se marca, pero sin rojos de alarma: es información, no miedo */
+.banda-examen--cerca { border-color: var(--amarillo-obras); }
+.banda-examen--cerca .banda-examen__cuenta { color: var(--amarillo-obras); }
+.banda-examen--vacia {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  border-style: dashed;
+}
+.banda-examen--vacia .banda-examen__ico { font-size: 1.6rem; }
+.banda-examen--vacia .banda-examen__txt { flex: 1; font-size: var(--fs-small); }
+
+.ex-fecha {
+  display: block;
+  width: 100%;
+  margin: var(--sp-3) 0;
+  padding: 12px 14px;
+  min-height: var(--tap-min);
+  font: inherit;
+  font-size: var(--fs-body);
+  color: var(--linea-blanca);
+  background: var(--asfalto-800);
+  border: 2px solid var(--asfalto-500);
+  border-radius: var(--radio-s);
+}
+.ex-fecha:focus { outline: 2px solid var(--neon-cian); outline-offset: 2px; }
+
+.gancho--fecha {
+  border-top: 1px dashed var(--asfalto-500);
+  padding-top: var(--sp-3);
+  margin-top: var(--sp-2);
+  color: var(--amarillo-obras);
+}
+@media (prefers-reduced-motion: reduce) { .banda-examen { transition: none; } }
+
+/* ============ FAMILIAS DE TRAMPA ============ */
+.caza-correcta {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  padding: var(--sp-3);
+  margin-bottom: var(--sp-2);
+  border-radius: var(--radio-m);
+  border: 2px solid var(--senal-verde);
+  background: color-mix(in srgb, var(--senal-verde) 10%, transparent);
+  line-height: 1.35;
+}
+.caza-correcta__sello {
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-size: var(--fs-tiny);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--senal-verde-vivo, var(--senal-verde));
+  padding-top: 2px;
+}
+.caza-familia {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--sp-2);
+  padding: var(--sp-3);
+  min-height: var(--tap-min);
+  text-align: left;
+  border-radius: var(--radio-m);
+  border: 2px solid var(--asfalto-500);
+  background: var(--asfalto-700);
+  color: var(--linea-blanca);
+  font: inherit;
+  transition: transform var(--dur-corta) var(--ease-out);
+}
+.caza-familia b { display: block; font-family: var(--font-display); letter-spacing: .02em; }
+.caza-familia span { font-size: var(--fs-small); }
+.caza-familia:active:not(:disabled) { transform: scale(.98); }
+.caza-familia--ok { border-color: var(--senal-verde); }
+.caza-familia--ko { border-color: var(--senal-rojo); }
+
+/* Radiografía */
+.talon {
+  padding: var(--sp-3) var(--sp-4);
+  margin-bottom: var(--sp-3);
+  border-radius: var(--radio-m);
+  border: 2px solid var(--neon-magenta);
+  background: color-mix(in srgb, var(--neon-magenta) 8%, transparent);
+}
+.talon__kicker {
+  font-family: var(--font-display);
+  font-size: var(--fs-tiny);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--neon-magenta);
+}
+.talon__frase { font-size: var(--fs-body); margin: 6px 0 8px; }
+.talon__consejo { font-size: var(--fs-small); color: var(--linea-gris); }
+.reparto { display: grid; gap: 8px; margin-bottom: var(--sp-2); }
+.reparto__fila { display: grid; grid-template-columns: 1fr 84px 42px; align-items: center; gap: 10px; }
+.reparto__nombre { font-size: var(--fs-small); }
+.reparto__barra { height: 8px; border-radius: 4px; background: var(--asfalto-600, var(--asfalto-700)); overflow: hidden; }
+.reparto__barra i { display: block; height: 100%; background: var(--acento); }
+.reparto__pct { font-size: var(--fs-small); color: var(--linea-gris); text-align: right; font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) { .caza-familia { transition: none; } }

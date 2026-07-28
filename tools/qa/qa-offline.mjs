@@ -1,5 +1,13 @@
 // QA Retención V1 · offline real (Service Worker) y WebKit (motor de Safari).
+import { readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { webkit, abrirChromium } from './_navegador.mjs';
+
+// La versión esperada sale de sw.js: escribirla a mano obliga a tocar la prueba
+// en cada release y hace que falle por el motivo equivocado.
+const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const VERSION_SW = (readFileSync(join(RAIZ, 'sw.js'), 'utf8').match(/const VERSION = '([^']+)'/) || [])[1];
 const BASE = process.env.CQ_URL || 'http://localhost:8765/';
 const OUT = process.env.SHOTS || '/tmp/cq-shots';
 await (await import('node:fs/promises')).mkdir(OUT, { recursive: true });
@@ -18,6 +26,9 @@ const ok = (c, m) => { console.log((c ? '✅' : '❌') + ' ' + m); if (!c) fallo
   await p.goto(B, { waitUntil: 'networkidle' });
   const sk = p.locator('#salir.btn-saltar'); if (await sk.count()) { await sk.click(); await p.waitForTimeout(400); }
   const go = p.locator('#ob-go'); if (await go.count()) { await go.click(); await p.waitForTimeout(700); }
+  // tras el onboarding se ofrece poner fecha de examen: la prueba la salta
+  const noFecha = p.locator('#ex-luego');
+  if (await noFecha.count()) { await noFecha.click(); await p.waitForTimeout(500); }
 
   // esperar a que el SW controle la página y termine el precache
   const estado = await p.evaluate(async () => {
@@ -40,7 +51,7 @@ const ok = (c, m) => { console.log((c ? '✅' : '❌') + ' ' + m); if (!c) fallo
     };
   });
   console.log('   caché:', JSON.stringify(cacheado));
-  ok(cacheado.version === 'cq-v17', 'La caché es la versión nueva (cq-v17)');
+  ok(cacheado.version === VERSION_SW, `La caché usa la versión declarada en sw.js (${VERSION_SW})`);
   ok(cacheado.rt && cacheado.reto && cacheado.ics, 'Los módulos diferidos también quedan disponibles sin red');
 
   await ctx.setOffline(true);
@@ -80,6 +91,9 @@ const ok = (c, m) => { console.log((c ? '✅' : '❌') + ' ' + m); if (!c) fallo
     await p.goto(B, { waitUntil: 'networkidle' });
     const sk = p.locator('#salir.btn-saltar'); if (await sk.count()) { await sk.click(); await p.waitForTimeout(400); }
     const go = p.locator('#ob-go'); if (await go.count()) { await go.click(); await p.waitForTimeout(800); }
+  // tras el onboarding se ofrece poner fecha de examen: la prueba la salta
+  const noFecha = p.locator('#ex-luego');
+  if (await noFecha.count()) { await noFecha.click(); await p.waitForTimeout(500); }
     ok(await p.locator('.screen.activa .mapa-svg').count() > 0, 'WebKit: el mapa se pinta');
     await p.screenshot({ path: `${OUT}/webkit-mapa.png` });
 
